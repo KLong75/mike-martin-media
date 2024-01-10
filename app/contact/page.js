@@ -9,7 +9,7 @@ export const metadata = {
 export default function Page() {
   return (
     <main className='bg-slate-50 flex-1'>
-      <h2 className="text-center mt-2">Page 4</h2>
+      <h2 className="text-center mt-2">Contact</h2>
       <div className="flex justify-center items-center mt-4">
         <ContactInfo />
       </div>

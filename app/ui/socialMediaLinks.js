@@ -9,16 +9,16 @@ import Link from "next/link";
 export default function SocialMediaLinks() {
   return (
     <div className="flex justify-center items-center space-x-6">
-      <Link href="https://www.facebook.com/" target="_blank">
+      <Link href="https://www.facebook.com/mikemartinmedia" target="_blank">
         <FaFacebook size={36} />
       </Link>
-      <Link href="https://www.instagram.com/" target="_blank">
+      <Link href="https://www.instagram.com/mikemartinmedia" target="_blank">
         <FaInstagram size={36} />
       </Link>
-      <Link href="https://twitter.com/" target="_blank">
+      {/* <Link href="https://twitter.com/" target="_blank">
         <FaXTwitter size={36} />
-      </Link>
-      <Link href="https://www.linkedin.com/" target="_blank">
+      </Link> */}
+      <Link href="https://www.linkedin.com/company/mike-martin-media/" target="_blank">
         <FaLinkedin size={36} />
       </Link>
     </div>

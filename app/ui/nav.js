@@ -15,19 +15,19 @@ import { HiX } from "react-icons/hi";
 const navLinks = [
   {
     href: "/",
-    label: "Home",
+    label: "About",
   },
   {
-    href: "/page2",
-    label: "Page 2",
+    href: "/our_videos",
+    label: "Videos",
   },
   {
-    href: "/page3",
-    label: "Page 3",
+    href: "/blog",
+    label: "Blog",
   },
   {
-    href: "/page4",
-    label: "Page 4",
+    href: "/contact",
+    label: "Contact",
   },
 ];
 
@@ -36,7 +36,7 @@ export default function Nav() {
   const pathname = usePathname();
   
   const openMenu = () => setMenuOpen(true);
-  const filteredNavLinks = navLinks.filter((link) => link.href !== pathname);
+  // const filteredNavLinks = navLinks.filter((link) => link.href !== pathname);
 
   return (
     <nav className="flex  p-4 z-40 ">
@@ -48,15 +48,16 @@ export default function Nav() {
             <div className="relative bg-white w-full h-full">
               <button
                 onClick={() => setMenuOpen(false)}
-                className="absolute top-0 right-0 mt-6 mr-6">
-                <HiX size={24} />
+                className="absolute top-0 right-0 mt-10 mr-7">
+                <HiX size={28} />
               </button>
-              <div className="flex justify-center items-center mt-36">
+              <div className="mt-60">
+              <div className="flex justify-center items-center p-2">
                 <Image
-                  src="/images/company_logo.png"
+                  src="/branding/mmm_black_x.png"
                   alt="logo"
-                  width={200}
-                  height={200}
+                  width={160}
+                  height={52}
                   className="p-4"
                 />
               </div>
@@ -65,9 +66,9 @@ export default function Nav() {
                   <li
                     key={link.label}
                     className={`text-xl font-bold text-center w-full p-2
-            hover:text-blue-500 
-            transition duration-300 ease-in-out
-            ${pathname === link.href ? 'text-blue-500' : ''}`
+                      hover:text-slate-400 
+                      transition duration-300 ease-in-out
+                      ${pathname === link.href ? 'text-slate-400' : ''}`
                     }
                     onClick={() => {
                       setMenuOpen(false);
@@ -76,30 +77,35 @@ export default function Nav() {
                   </li>
                 ))}
               </ul>
+              </div>
             </div>
           </div>
         </Dialog.Panel>
       </Dialog>
       {/* Mobile Menu Button*/}
-      <div className="-mt-7 -mr-4 md:hidden">
+      <div className=" mt-2 -mr-2 md:hidden">
         <button onClick={openMenu}>
           <MdDehaze
-            size={24}
-            className="hover:text-blue-500"
+            size={28}
+            className="hover:text-slate-500"
             aria-label="Open menu"
           />
         </button>
       </div>
 
       <div
-        className={`ml-auto flex space-x-12 ${
+        className={` flex space-x-24 ${
           menuOpen ? "" : "hidden md:flex"
         }`}>
-        {filteredNavLinks.map((link) => (
+        <ul className="flex flex-row space-x-24">
+        {navLinks.map((link) => (
+          <li key={link.label} className={`${pathname === link.href ? 'text-slate-400' : ''}`}>
           <Link key={link.label} href={link.href}>
             {link.label}
           </Link>
+          </li>
         ))}
+        </ul>
       </div>
     </nav>
   );
