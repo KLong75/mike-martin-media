@@ -12,11 +12,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: {
-    template: '%s | Next.JS Website Template',
-    default: 'Next.JS Website Template',
+    template: '%s | Mike Martin Media',
+    default: 'Mike Martin Media',
   },
-  description: 'Template for building websites with Next.JS by Rhythm Code Studio',
-  metadataBase: new URL("https://yourwebsiteurlgoeshere.com/")
+  description: 'Website For Mike Martin Media',
+  metadataBase: new URL("https://mike-martin-media.vercel.app/")
 }
 
 export default function RootLayout({ children }) {
