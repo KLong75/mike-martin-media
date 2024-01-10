@@ -6,7 +6,7 @@ import ContactUsButton from "./ui/contactUsButton";
 
 export default function Home() {
   return (
-    <main className="bg-slate-50 grid grid-cols-1 gap-4">
+    <main className="bg-gray-200 grid grid-cols-1 gap-4">
       {/* <h1 className="text-center w-full mt-6">Next.JS Website Template</h1>
       <h2 className="text-center w-full">by Rhythm Code Studio</h2> */}
       <div className="flex justify-center mt-6">
