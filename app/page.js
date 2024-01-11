@@ -3,6 +3,7 @@ import Image from "next/image";
 // import components
 import VideoFrame from "./ui/videoFrame";
 import ContactUsButton from "./ui/contactUsButton";
+import TeamGallery from "./ui/teamGallery";
 
 export default function Home() {
   return (
@@ -15,14 +16,43 @@ export default function Home() {
           title="MMM Homepage Vid 2024 Version 2 010524"
         />
       </div>
-      {/* <div className="flex justify-center -mt-6">
-        <Image
-          src="/images/company_logo.png"
-          width={600}
-          height={600}
-          alt="company logo"
-        />
-      </div> */}
+      <div className="flex justify-center items-center">
+        <h1 className="text-4xl font-bold mr-4">About</h1>
+        <div className="flex justify-center items-center w-24 h-8">
+          <Image
+            src="/branding/mmm_black.png"
+            width={294}
+            height={95}
+            alt="company logo"
+          />
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <p className=" w-3/4">
+          Mike Martin Media specializes in video production and creative
+          services for corporations, nonprofits, education and medical
+          institutions. Our mission is to help our clients promote their causes,
+          inform their clients and staff, and inspire with their stories. We
+          deliver dynamic multi-media solutions.
+        </p>
+      </div>
+      <div className="flex justify-center">
+        <div className="flex justify-center w-24 h-8">
+          <Image
+            src="/branding/mmm_black.png"
+            width={294}
+            height={95}
+            alt="company logo"
+          />
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <h1 className="text-4xl font-bold">Our Team</h1>
+      </div>
+      <div className="flex justify-center">
+        <TeamGallery />
+      </div>
+
       <div className="flex justify-center mb-4">
         <ContactUsButton />
       </div>

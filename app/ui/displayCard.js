@@ -6,12 +6,12 @@ export default function DisplayCard({ title, image, text }) {
       <div className="flex p-4">
         <h3 className=" text-sm font-medium">{title}</h3>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center w-24 h-8">
         <Image
           src={image}
           alt={title}
-          width={200}
-          height={200}
+          width={294}
+          height={95}
           className="rounded-xl"
         />
       </div>
