@@ -97,7 +97,7 @@ export default function Nav() {
         className={` flex space-x-24 ${
           menuOpen ? "" : "hidden md:flex"
         }`}>
-        <ul className="flex flex-row space-x-24">
+        <ul className="flex flex-row space-x-12">
         {navLinks.map((link) => (
           <li key={link.label} className={`${pathname === link.href ? 'text-gray-400 font-bold' : ''}`}>
           <Link key={link.label} href={link.href}>
