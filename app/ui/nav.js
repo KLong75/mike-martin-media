@@ -68,7 +68,7 @@ export default function Nav() {
                     className={`text-xl font-bold text-center w-full p-2
                       hover:text-slate-400 
                       transition duration-300 ease-in-out
-                      ${pathname === link.href ? 'text-slate-400' : ''}`
+                      ${pathname === link.href ? 'text-gray-400' : ''}`
                     }
                     onClick={() => {
                       setMenuOpen(false);
@@ -99,7 +99,7 @@ export default function Nav() {
         }`}>
         <ul className="flex flex-row space-x-24">
         {navLinks.map((link) => (
-          <li key={link.label} className={`${pathname === link.href ? 'text-slate-400' : ''}`}>
+          <li key={link.label} className={`${pathname === link.href ? 'text-gray-400 font-bold' : ''}`}>
           <Link key={link.label} href={link.href}>
             {link.label}
           </Link>
