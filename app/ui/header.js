@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="flex items-center"> {/* Flex container */}
-      <div className="p-1 ml-6 w-40 h-12"> 
+      <div className="p-1 ml-6 w-40 h-12 flex items-center"> 
         <Link href='/'>
           <Image src="/branding/mmm_black.png" height={95} width={294}  alt='company logo' priority />
         </Link>
