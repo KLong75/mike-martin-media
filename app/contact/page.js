@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className='bg-gray-200 flex-1'>
+    <main className=' flex-1'>
       <h2 className="text-center mt-2">Contact</h2>
       <div className="flex justify-center items-center mt-4">
         <ContactInfo />

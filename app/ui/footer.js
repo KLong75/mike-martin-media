@@ -6,7 +6,7 @@ import ContactInfo from "./contactInfo";
 
 export default function Footer() {
   return (
-    <footer className="mt-4">
+    <footer className=" bg-gray-200">
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3  justify-items-center">
       <div className="flex justify-center items-center">
                 <Image
@@ -32,7 +32,7 @@ export default function Footer() {
           <span className="text-xs">Website by Rhythm Code Studio</span>
         </Link>
       </div>
-      <div className="flex justify-center items-center -mt-6">
+      <div className="flex justify-center items-center ">
         <Image
           src="/branding/mmm_line_logo.png"
           height={75}

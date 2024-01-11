@@ -51,8 +51,8 @@ export default function Nav() {
                 className="absolute top-0 right-0 mt-10 mr-7">
                 <HiX size={28} />
               </button>
-              <div className="mt-60">
-              <div className="flex justify-center items-center p-2">
+              <div className="mt-40 ">
+              <div className="flex justify-center items-center p-6 mb-6">
                 <Image
                   src="/branding/mmm_black_x.png"
                   alt="logo"
@@ -61,7 +61,7 @@ export default function Nav() {
                   className="p-4"
                 />
               </div>
-              <ul className="flex flex-col space-y-4  items-center">
+              <ul className="flex flex-col space-y-8  items-center">
                 {navLinks.map((link) => (
                   <li
                     key={link.label}

@@ -26,3 +26,8 @@ body {
     rgb(var(--background-start-rgb)); */
     overflow-x: hidden !important;
 }
+
+
+.iframe-height {
+  height: 512px
+}

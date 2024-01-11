@@ -7,9 +7,8 @@ import TeamGallery from "./ui/teamGallery";
 
 export default function Home() {
   return (
-    <main className="grid grid-cols-1 gap-4">
-      {/* <h1 className="text-center w-full mt-6">Next.JS Website Template</h1>
-      <h2 className="text-center w-full">by Rhythm Code Studio</h2> */}
+    <main className="grid grid-cols-1 gap-4 ">
+      {/* <h1 className="text-center w-full mt-6 text-2xl font-bold">Mike Martin Media</h1> */}
       <div className="flex justify-center mt-6">
         <VideoFrame
           src="https://player.vimeo.com/video/900179937?h=3c366b24ba&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
@@ -17,7 +16,15 @@ export default function Home() {
         />
       </div>
       <div className="flex justify-center items-center">
-        <h1 className="text-4xl font-bold mr-4">About</h1>
+        <Image
+          src="/branding/mmm_line_logo.png"
+          height={75}
+          width={1425}
+          alt="MMM logo"
+        />
+      </div>
+      <div className="flex justify-center items-center mt-12">
+        <h2 className="text-4xl font-bold mr-4">About</h2>
         <div className="flex justify-center items-center w-24 h-8">
           <Image
             src="/branding/mmm_black.png"
@@ -36,7 +43,7 @@ export default function Home() {
           deliver dynamic multi-media solutions.
         </p>
       </div>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <div className="flex justify-center w-24 h-8">
           <Image
             src="/branding/mmm_black.png"
@@ -48,8 +55,8 @@ export default function Home() {
       </div>
       <div className="flex justify-center">
         <h1 className="text-4xl font-bold">Our Team</h1>
-      </div>
-      <div className="flex justify-center">
+      </div> */}
+      <div className="flex justify-center mt-12">
         <TeamGallery />
       </div>
 

@@ -31,10 +31,10 @@ export default function ScrollToTopButton() {
   };
 
   return (
-    <div className="flex ml-auto">
+    <div className="flex ml-auto ">
       <button
-        className={`fixed bottom-8 right-4 rounded-full bg-slate-400 p-2 w-12 hover:bg-slate-600 hover:transform hover:scale-110 transition-all duration-300 ease-in-out  ${
-          scrollToTopButtonVisible ? "opacity-100" : "opacity-0"
+        className={`fixed bottom-8 right-4 rounded-full bg-gray-600 p-2 w-12 hover:bg-gray-800 hover:transform hover:scale-110 transition-all duration-300 ease-in-out  ${
+          scrollToTopButtonVisible ? "opacity-98" : "opacity-0"
         }`}
         onClick={scrollToTop}
         style={{
