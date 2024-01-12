@@ -19,7 +19,7 @@ export default function Home() {
     , 4000);
     const videoFadeTimer = setTimeout(() => {
       setShowVideo(true);
-    }, 200);
+    }, 500);
     return () => {
       clearTimeout(hideLogoTimer);
       clearTimeout(videoFadeTimer);
@@ -48,7 +48,7 @@ export default function Home() {
 
       {/* Container for Video and Logo */}
       <div className="relative flex justify-center mt-6">
-      <div className={`w-full max-w-4xl transition-all duration-4000 ease-in-out ${showVideo ? 'opacity-100' : 'opacity-0'}`}>
+      <div className={`w-full max-w-4xl transition-all duration-6000 ease-in-out ${showVideo ? 'opacity-100' : 'opacity-0'}`}>
         {/* Video Frame */}
         
         <VideoFrame
@@ -57,12 +57,12 @@ export default function Home() {
         />
         </div>
         {/* Logo */}
-        <div className={`absolute -mt-14 p-4 transition-opacity duration-8000 ease-in-out ${hideLogo ? 'opacity-0' : 'opacity-100'}`}>
+        <div className={`absolute -mt-14 p-6 transition-opacity duration-8000 ease-in-out ${hideLogo ? 'opacity-0' : 'opacity-100'}`}>
         {/* <div className="absolute -mt-12 p-4"> */}
           <Image
             src="/branding/mmm_logo_with_text_resize.png"
-            width={864}
-            height={648}
+            width={816}
+            height={612}
             alt="Mike Martin Media logo"
           />
         </div>
