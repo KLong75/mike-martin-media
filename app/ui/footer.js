@@ -3,28 +3,29 @@ import Image from "next/image";
 // import components
 import SocialMediaLinks from "./socialMediaLinks";
 import ContactInfo from "./contactInfo";
+import ContactUsButton from "./contactUsButton";
 
 export default function Footer() {
   return (
     <footer className=" bg-gray-200">
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3  justify-items-center">
-      <div className="flex justify-center items-center">
-                <Image
-                  src="/branding/mmm_black_x.png"
-                  alt="logo"
-                  width={160}
-                  height={52}
-                  className="p-4"
-                />
-              </div>
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3  justify-items-center mt-4">
+        <div className="flex justify-center items-center w-52 h-auto">
+          <Image
+            src="/branding/mmm_black.png"
+            alt="logo"
+            width={294}
+            height={95}
+            className="p-4"
+          />
+        </div>
         <div className="">
           <ContactInfo />
         </div>
-        <div className="flex justify-center items-center  w-full">
+        <div className="flex justify-center items-center w-full">
           <SocialMediaLinks />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center py-2">
+      <div className="flex flex-col justify-center items-center py-2 -mb-4">
         <Link href="/">
           <span className="text-xs">©2024 Mike Martin Media</span>
         </Link>

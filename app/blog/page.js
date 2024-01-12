@@ -1,5 +1,7 @@
-import VideoFrame
- from "../ui/videoFrame";
+// import from next
+import Image from "next/image";
+import VideoFrame from "../ui/videoFrame";
+
 export const metadata = {
   title: 'Page 3',
 }
@@ -7,13 +9,19 @@ export const metadata = {
 export default function Page() {
   return (
     <main className='bg-slate-50 flex-1'>
-      <h2 className="text-center">Page 3</h2>
-      <div>
-      <VideoFrame 
-        src="https://player.vimeo.com/video/900179937?h=3c366b24ba&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=1&byline=0&portrait=0"
-        // title="MMM Homepage Vid 2024 Version 2 010524"
-      />
+      <div className="flex justify-center items-center mt-12">
+      <h2 className="text-4xl font-bold mr-2">The </h2>
+        <div className="flex justify-center items-center w-24 h-8 mb-1">
+          <Image
+            src="/branding/mmm_black.png"
+            width={294}
+            height={95}
+            alt="company logo"
+          />
+        </div>
+        <h2 className="text-4xl font-bold ml-2">Blog</h2>
       </div>
+  
     </main>
   );
 }

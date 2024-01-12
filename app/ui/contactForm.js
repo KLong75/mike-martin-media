@@ -1,5 +1,6 @@
 "use client";
-
+// import from next
+import Image from "next/image";
 import { useState } from "react";
 
 // import from utils
@@ -38,7 +39,18 @@ export default function ContactForm() {
 
   return (
     <div className="p-8 m-4 w-full">
-      <h3 className="text-center mb-4">Contact Form</h3>
+    <div className="flex justify-center items-center mt-12 mb-2">
+      <h3 className=" text-xl font-bold mr-1">Send</h3>
+        <div className="flex justify-center items-center w-14 h-auto mb-1">
+          <Image
+            src="/branding/mmm_black.png"
+            width={294}
+            height={95}
+            alt="company logo"
+          />
+        </div>
+        <h3 className="text-xl font-bold ml-1">a Message</h3>
+      </div>
       <form onSubmit={handleFormSubmit} className="border-4 border-black rounded-2xl p-8 bg-gray-400 shadow">
         <div className="flex flex-col justify-center items-center ">
           <label htmlFor="firstName">

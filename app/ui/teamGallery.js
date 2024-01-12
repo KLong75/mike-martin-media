@@ -11,7 +11,7 @@ export default function TeamGallery() {
     <div>
     <div className="flex justify-center items-center">
         <h2 className="text-4xl font-bold">The</h2>
-        <div className="w-24 h-8 mx-2"> {/* Adjust margin (mx-2) as needed */}
+        <div className="w-24 h-8 mx-2 mb-1"> {/* Adjust margin (mx-2) as needed */}
           <Image
             src="/branding/mmm_black.png"
             width={294}
