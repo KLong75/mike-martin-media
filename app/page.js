@@ -29,7 +29,6 @@ export default function Home() {
 
   return (
     <main className="grid grid-cols-1 gap-4 ">
-  
       {/* Container for Video and Logo */}
       <div className="relative flex justify-center mt-3">
       <div className={`w-full max-w-4xl  transition-all duration-8000 ease-in-out ${showVideo ? 'opacity-100' : 'opacity-0'}`}>
@@ -94,7 +93,7 @@ export default function Home() {
       <div className="flex justify-center mt-4 ">
         <TeamGallery />
       </div>
-      <div className="flex justify-center -mt-2 mb-6">
+      <div className="flex justify-center -mt-4 mb-6">
         <ContactUsButton />
       </div>
     </main>
