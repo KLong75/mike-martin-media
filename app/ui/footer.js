@@ -36,8 +36,8 @@ export default function Footer() {
       <div className="flex justify-center items-center ">
         <Image
           src="/branding/mmm_line_logo.png"
-          height={75}
-          width={1425}
+          height={60}
+          width={1140}
           alt="MMM logo"
         />
       </div>
