@@ -24,13 +24,16 @@ export default function Page() {
         </div>
         
       </div>
-      <div className="flex justify-center items-center mt-4">
+      
+      <div className="flex justify-center items-center mt-4 ">
         <ContactInfo />
       </div>
-      <div className="flex justify-center items-center mt-4">
+      
+      <div className="flex justify-center items-center mt-4  z-50">
         <SocialMediaLinks />
       </div>
-      <div className="flex justify-center items-center -mt-16">
+      
+      <div className="flex justify-center items-center -mt-8">
         <ContactForm />
       </div>
     </main>

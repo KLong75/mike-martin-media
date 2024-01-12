@@ -13,10 +13,16 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       height: {
-        
         '128': '32rem',  // 512px
         '144': '36rem',  // 576px
         '160': '40rem',  // 640px
+      },
+      width: {
+        128: '32rem',  // 512px
+        144: '36rem',  // 576px
+        160: '40rem',  // 640px
+        180: '44rem',  // 704px
+        200: '48rem',  // 768px
       },
       transitionDuration: {
         '2000': '2000ms',

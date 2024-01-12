@@ -39,7 +39,7 @@ export default function ContactForm() {
 
   return (
     <div className="p-8 m-4 w-full">
-    <div className="flex justify-center items-center mt-12 mb-2">
+    <div className="flex justify-center items-center mt-6 mb-2">
       <h3 className=" text-xl font-bold mr-1">Send</h3>
         <div className="flex justify-center items-center w-14 h-auto mb-1">
           <Image

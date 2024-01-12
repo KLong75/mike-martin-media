@@ -4,11 +4,17 @@ import Image from "next/image";
 import { Suspense } from "react";
 // import components
 import DisplayCard from "../ui/displayCard";
-import VideoFrame from "../ui/videoFrame";
+// import VideoFrame from "../ui/videoFrame";
+import ClientVideoFrame from "../ui/clientVideoFrame";
+
+import VideoCategories from "../ui/videoCategories";
 // import { DisplayCardSkeleton } from "../ui/skeletons";
+// import data
+import { videoData } from "../lib/data";
+
 
 export const metadata = {
-  title: "Page 2",
+  title: "Videos",
 };
 
 export default function Page() {
@@ -21,45 +27,28 @@ export default function Page() {
             width={294}
             height={95}
             alt="company logo"
+            priority
+            as="image"
           />
         </div>
         <h2 className="text-4xl font-bold ml-1">Videos</h2>
       </div>
       <div>
-      <VideoFrame 
-        src="https://player.vimeo.com/video/900179937?h=3c366b24ba&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=1&byline=0&portrait=0"
-        // title="MMM Homepage Vid 2024 Version 2 010524"
-      />
+        <VideoCategories />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center p-6">
-        <div className="mb-6">
-          <DisplayCard
-            title="Display Card"
-            text="This is display card. It's a good way to show off your content."
-            image="/branding/mmm_black.png"
+      
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mb-6">
+        {videoData.map((video) => (
+          <div key={video.client} className="mb-6">
+          
+          <ClientVideoFrame
+            src={video.src}
+            client={video.client}
+            category={video.category}
           />
-        </div>
-        <div className="mb-6">
-          <DisplayCard
-            title="Display Card"
-            text="This is display card. It's a good way to show off your content."
-            image="/branding/mmm_black.png"
-          />
-        </div>
-        <div className="mb-6">
-          <DisplayCard
-            title="Display Card"
-            text="This is display card. It's a good way to show off your content."
-            image="/branding/mmm_black.png"
-          />
-        </div>
-        <div className="mb-6">
-          <DisplayCard
-            title="Display Card"
-            text="This is display card. It's a good way to show off your content."
-            image="/branding/mmm_black.png"
-          />
-        </div>
+          </div>
+        ))}
+
       </div>
     </main>
   );

@@ -1,26 +1,22 @@
 // import icons
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 // import from nexrt
 import Link from "next/link";
 
 export default function SocialMediaLinks() {
   return (
-    <div className="flex justify-center items-center space-x-6">
-      <Link href="https://www.facebook.com/mikemartinmedia" target="_blank">
+    <div className="flex justify-center items-center space-x-6 z-100">
+      <a href="https://www.facebook.com/mikemartinmedia" target="_blank" rel="noopener noreferrer">
         <FaFacebook size={36} />
-      </Link>
-      <Link href="https://www.instagram.com/mikemartinmedia" target="_blank">
+      </a>
+      <a href="https://www.instagram.com/mikemartinmedia" target="_blank" rel="noopener noreferrer">
         <FaInstagram size={36} />
-      </Link>
-      {/* <Link href="https://twitter.com/" target="_blank">
-        <FaXTwitter size={36} />
-      </Link> */}
-      <Link href="https://www.linkedin.com/company/mike-martin-media/" target="_blank">
+      </a>
+      <a href="https://www.linkedin.com/company/mike-martin-media/" target="_blank" rel="noopener noreferrer">
         <FaLinkedin size={36} />
-      </Link>
+      </a>
     </div>
   );
 }
