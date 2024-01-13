@@ -2,7 +2,7 @@ export const teamData = [
   { name: "Michael Martin",
     role: "President & CEO",
     about: "Mike launched Mike Martin Media in 2008 after 12 years in broadcast television. He has shot, edited, produced, directed, managed, lit, and worked just about every other production position, for numerous clients, on projects of all sizes. Mike is involved in every step of the process, from project pitch to final delivery.",
-    image_src: "/images/team/mike_martin.png",
+    image_src: "/images/team/mike_martin_resize_sm.png",
   },
   { name: "Rachel Lee",
     role: "Executive Producer",
@@ -69,5 +69,11 @@ export const videoData = [
     category: "Nonprofit",
     src:"https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
     thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png"
+  },
+]
+
+export const blogPosts = [
+  {
+
   },
 ]
