@@ -21,14 +21,15 @@ export default function ClientVideoFrame({
       <div className="flex justify-center items-center">
         <h3 className="text-sm font-bold">{client}</h3>
       </div>
-      <div className="flex justify-center items-center -mb-8 sm:-mb-2 md:-mb-4 lg:-mb-2">
-        <h4 className="text-sm font-bold">{category}</h4>
+      <div className="flex justify-center items-center -mb-12  md:-mb-4 lg:-mb-2">
+        <h4 className="text-sm font-bold">{category} Video</h4>
       </div>
 
       <div
-        className="flex justify-center items-center "
+        className="flex justify-center items-center w-full mt-10 md:mt-2 lg:mt-0  cursor-pointer p-4 "
         onClick={() => setVideoWindowOpen(true)}>
         <Image
+          id='video-thumbnail'
           className="cursor-pointer"
           src={thumbnail_src}
           height={250}
@@ -36,41 +37,7 @@ export default function ClientVideoFrame({
           alt="video thumbnail"
         />
       </div>
-
-      <Dialog open={videoWindowOpen} onClose={() => setVideoWindowOpen(false)}>
-  <Dialog.Overlay className="fixed inset-0 bg-black opacity-90" />
-  <Dialog.Panel className="fixed inset-0 z-10 overflow-auto">
-    <div className="flex flex-col justify-center items-center h-full p-4">
-      <div className="flex justify-end items-start w-full">
-        <button
-          onClick={() => setVideoWindowOpen(false)}
-          className="absolute top-0 right-0 mt-4 mr-4">
-          <HiX size={28} color="white" />
-        </button>
-      </div>
-      <div className="w-full h-auto">
-        <iframe
-          src={src}
-          client={client}
-          category={category}
-          allow="autoplay; fullscreen; picture-in-picture"
-          className="w-full gallery-iframe-height"></iframe>
-      </div>
-
-      <div className="w-auto mt-4">
-        <Image
-          src="/branding/mmm_line_logo_white.png"
-          height={60}
-          width={1140}
-          alt="MMM logo"
-        />
-      </div>
-    </div>
-  </Dialog.Panel>
-</Dialog>
-
-
-      <div className="flex justify-center items-center w-auto -mt-10 sm:-mt-8 md:-mt-4 lg:-mt-2">
+      <div className="flex justify-center items-center w-auto">
         <Image
           src="/branding/mmm_line_logo.png"
           height={60}
@@ -78,6 +45,47 @@ export default function ClientVideoFrame({
           alt="MMM logo"
         />
       </div>
+
+      <Dialog open={videoWindowOpen} onClose={() => setVideoWindowOpen(false)}>
+        <Dialog.Overlay className="fixed inset-0 bg-black opacity-95" />
+        <Dialog.Panel className="fixed inset-0 z-10 overflow-auto">
+          <div className="flex flex-col justify-center items-center h-full p-4">
+            <div className="flex justify-end items-start w-full">
+              <button
+                onClick={() => setVideoWindowOpen(false)}
+                className="absolute top-0 right-0 mt-4 mr-4 border border-white">
+                <HiX size={28} color="white" />
+              </button>
+            </div>
+            <div className="flex flex-col justify-center items-center w-full md:mb-10">
+              <h3 className="text-2xl font-bold text-white">{client}</h3>
+              <h4 className="text-xl font-bold text-white">{category} Video</h4>
+              <h5 className="text-sm font-bold text-white">by Mike Martin Media</h5>
+            </div>
+        
+
+            <div className="w-full h-auto sm:-mt-6">
+              <iframe
+                src={src}
+                client={client}
+                category={category}
+                allow="autoplay; fullscreen; picture-in-picture"
+                className="w-full gallery-iframe-height"></iframe>
+            </div>
+
+            <div className="w-auto mt-4">
+              <Image
+                src="/branding/mmm_line_logo_white.png"
+                height={60}
+                width={1140}
+                alt="MMM logo"
+              />
+            </div>
+          </div>
+        </Dialog.Panel>
+      </Dialog>
+
+      
     </>
   );
 }

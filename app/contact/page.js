@@ -12,7 +12,7 @@ export const metadata = {
 export default function Page() {
   return (
     <main className=' flex-1'>
-      <div className="flex justify-center items-center mt-12">
+      <div className="flex justify-center items-center mt-10 mb-2 p-2">
       <h2 className="text-4xl font-bold mr-2">Contact</h2>
         <div className="flex justify-center items-center w-24 h-8 mb-1">
           <Image
@@ -25,7 +25,7 @@ export default function Page() {
         
       </div>
       
-      <div className="flex justify-center items-center mt-4 ">
+      <div className="flex justify-center items-center mt-4 mb-8">
         <ContactInfo />
       </div>
       
