@@ -1,4 +1,10 @@
-
+// import icons
+import { HiAcademicCap } from "react-icons/hi2";
+import { HiBriefcase } from "react-icons/hi2";
+import { HiEnvelope } from "react-icons/hi2";
+import { HiGlobeAlt } from "react-icons/hi2";
+import { FaVideo } from "react-icons/fa6";
+import { FaKitMedical } from "react-icons/fa6";
 
 export default function VideoCategories() {
 

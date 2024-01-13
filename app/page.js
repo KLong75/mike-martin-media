@@ -84,7 +84,7 @@ export default function Home() {
         <h2 className="text-4xl font-bold ml-1">Good...</h2>
       </div>
       <div className="flex justify-center">
-        <p className=" w-3/4">
+        <p className="text-center w-3/4">
           Mike Martin Media specializes in video production and creative
           services for corporations, nonprofits, education and medical
           institutions. Our mission is to help our clients promote their causes,

@@ -17,7 +17,7 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
         />
       </div> */}
       <div className="flex justify-center p-2">
-        <div className="w-48 h-64 sm:w-48 sm:h-64 md:w-64 md:h-96 lg:w-72 lg:h-96  rounded-2xl">
+        <div className="w-48 h-64 sm:w-48 sm:h-64 md:w-64 md:h-96 lg:w-72 lg:h-96 rounded-2xl">
         <Image
           className="object-cover rounded-2xl border-2 border-gray-800"
           src={image_src}
@@ -28,7 +28,7 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
         </div>
       </div>
       <div className="bg-white rounded-2xl p-1 border-2 border-gray-800">
-        <p className="text-left overflow-wrap font-medium">
+        <p className="text-center overflow-wrap font-medium">
           {about}
         </p>
       </div>
