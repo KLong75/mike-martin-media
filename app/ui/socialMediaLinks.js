@@ -8,13 +8,13 @@ import Link from "next/link";
 export default function SocialMediaLinks() {
   return (
     <div className="flex justify-center items-center space-x-6 z-100">
-      <a href="https://www.facebook.com/mikemartinmedia" target="_blank" rel="noopener noreferrer" name='link to Mike Martin Media on Facebook'>
+      <a href="https://www.facebook.com/mikemartinmedia" target="_blank" rel="noopener noreferrer" name='link to Mike Martin Media on Facebook' aria-label='link to Mike Martin Media on Facebook'>
         <FaFacebook size={36} />
       </a>
-      <a href="https://www.instagram.com/mikemartinmedia" target="_blank" rel="noopener noreferrer" name='link to Mike Martin Media on Instagram'>
+      <a href="https://www.instagram.com/mikemartinmedia" target="_blank" rel="noopener noreferrer" name='link to Mike Martin Media on Instagram' aria-label='link to Mike Martin Media on Instagram'>
         <FaInstagram size={36} />
       </a>
-      <a href="https://www.linkedin.com/company/mike-martin-media/" target="_blank" rel="noopener noreferrer" name='link to Mike Martin Media on LinkedIn'>
+      <a href="https://www.linkedin.com/company/mike-martin-media/" target="_blank" rel="noopener noreferrer" name='link to Mike Martin Media on LinkedIn' aria-label='link to Mike Martin Media on LinkedIn'>
         <FaLinkedin size={36} />
       </a>
     </div>
