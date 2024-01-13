@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function TeamMemberCard({ name, role, about, image_src }) {
   return (
-    <div className="text-center rounded-xl bg-gray-400 p-2 shadow border-4 border-black">
+    <div className="text-center rounded-2xl bg-gray-300 p-2 shadow-xl border-4 border-black">
       <h3 className="font-bold">{name}</h3>
       <h4 className="font-bold">{role}</h4>
       
