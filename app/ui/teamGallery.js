@@ -19,7 +19,7 @@ export default function TeamGallery() {
             alt="company logo"
           />
         </div>
-        <h2 className="text-4xl font-bold -ml-3">eet The Team</h2>
+        <h2 className="text-4xl font-bold -ml-2">eet The Team</h2>
       </div>
     <div className="flex justify-center items-center ">
       <p className="text-center w-3/4">Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing.
