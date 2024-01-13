@@ -7,7 +7,7 @@ import ContactUsButton from "./contactUsButton";
 
 export default function Footer() {
   return (
-    <footer className=" bg-gray-200">
+    <footer className=" bg-gray-300">
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3  justify-items-center mt-4">
         <div className="flex justify-center items-center w-52 h-auto">
           <Image
