@@ -10,7 +10,7 @@ export default function TeamGallery() {
   // console.log(teamData);
   return (
     <div className="">
-      <div className="flex justify-center items-center mb-4">
+      <div className="flex justify-center items-center mb-10">
         {/* <h2 className="text-4xl font-bold">The</h2> */}
         <div className="w-24 h-8 mx-2 mb-1">
           {" "}
@@ -30,7 +30,6 @@ export default function TeamGallery() {
     </div> */}
       <TextSegment
         text="Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing."
-        heading="The Team"
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center p-12 mt-4">
         {teamData.map((member) => (

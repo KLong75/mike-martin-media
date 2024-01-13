@@ -9,6 +9,7 @@ import ContactUsButton from "./ui/contactUsButton";
 import TeamGallery from "./ui/teamGallery";
 import TextSegment from "./ui/textSegment";
 import PromoVideo from "./ui/promoVideo";
+import MmmGood from "./ui/mmmMmmMmmGood";
 
 export default function Home() {
   const [hideLogo, setHideLogo] = useState(false);
@@ -69,8 +70,8 @@ export default function Home() {
         />
       </div> */}
 
-      <div className="flex justify-center items-center mt-12">
-        {/* <h2 className="text-4xl font-bold mr-4">About</h2> */}
+      {/* <div className="flex justify-center items-center mt-12">
+      
         <div className="flex justify-center items-center w-24 h-8 mb-1">
           <Image
             src="/branding/mmm_black.png"
@@ -88,6 +89,9 @@ export default function Home() {
           />
         </div>
         <h2 className="text-4xl font-bold ml-1">Good...</h2>
+      </div> */}
+      <div className="mt-6 mb-6">
+      <MmmGood />
       </div>
       {/* <div className="flex justify-center">
         <p className="text-center w-3/4">
@@ -105,13 +109,13 @@ export default function Home() {
           inform their clients and staff, and inspire with their stories. We
           deliver dynamic multi-media solutions."
       />
-      <div className="flex justify-center mt-6 mb-2">
+      <div className="flex justify-center mt-8 mb-2 ">
         <ContactUsButton />
       </div>
       <div className="flex justify-center mt-4 ">
         <TeamGallery />
       </div>
-      <div className="flex justify-center -mt-4 mb-6">
+      <div className="flex justify-center -mt-8 mb-8">
         <ContactUsButton />
       </div>
     </main>
