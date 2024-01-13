@@ -1,6 +1,7 @@
 export default function VideoFrame({ src, client, category }) {
   return (
     <iframe
+      title="Mike Martin Media Promotional Video"
       src={src}
       client={client}
       category={category}

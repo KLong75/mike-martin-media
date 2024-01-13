@@ -26,12 +26,12 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center py-2 -mb-4">
-        <Link href="/">
+        <a href="/" name='link to mikemartinmedia.com'>
           <span className="text-xs">©2024 Mike Martin Media</span>
-        </Link>
-        <Link href="https://kevinlong.dev/" target="_blank" className="">
+        </a>
+        <a href="https://kevinlong.dev/" target="_blank" className="" name="link to kevinlong.dev">
           <span className="text-xs">Website by Rhythm Code Studio</span>
-        </Link>
+        </a>
       </div>
       <div className="flex justify-center items-center w-auto">
         <Image
