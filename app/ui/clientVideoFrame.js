@@ -24,20 +24,19 @@ export default function ClientVideoFrame({
       <div className="flex justify-center items-center -mb-12  md:-mb-4 lg:-mb-2">
         <h4 className="text-sm font-bold">{category} Video</h4>
       </div>
-
       <div
         className="flex justify-center items-center w-full mt-10 md:mt-2 lg:mt-0  cursor-pointer p-4 "
         onClick={() => setVideoWindowOpen(true)}>
         <Image
           id='video-thumbnail'
-          className="cursor-pointer"
+          className="cursor-pointer shadow-lg"
           src={thumbnail_src}
           height={250}
           width={444}
           alt="video thumbnail"
         />
       </div>
-      <div className="flex justify-center items-center w-auto">
+      <div className="p-2 flex justify-center items-center w-auto">
         <Image
           src="/branding/mmm_line_logo.png"
           height={60}
@@ -45,7 +44,6 @@ export default function ClientVideoFrame({
           alt="MMM logo"
         />
       </div>
-
       <Dialog open={videoWindowOpen} onClose={() => setVideoWindowOpen(false)}>
         <Dialog.Overlay className="fixed inset-0 bg-black opacity-95" />
         <Dialog.Panel className="fixed inset-0 z-10 overflow-auto">
@@ -62,8 +60,6 @@ export default function ClientVideoFrame({
               <h4 className="text-xl font-bold text-white">{category} Video</h4>
               <h5 className="text-sm font-bold text-white">by Mike Martin Media</h5>
             </div>
-        
-
             <div className="w-full h-auto sm:-mt-6">
               <iframe
                 src={src}
@@ -72,7 +68,6 @@ export default function ClientVideoFrame({
                 allow="autoplay; fullscreen; picture-in-picture"
                 className="w-full gallery-iframe-height"></iframe>
             </div>
-
             <div className="w-auto mt-4">
               <Image
                 src="/branding/mmm_line_logo_white.png"
@@ -84,8 +79,6 @@ export default function ClientVideoFrame({
           </div>
         </Dialog.Panel>
       </Dialog>
-
-      
     </>
   );
 }
