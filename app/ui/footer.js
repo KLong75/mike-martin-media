@@ -21,15 +21,15 @@ export default function Footer() {
         <div className="">
           <ContactInfo />
         </div>
-        <div className="flex justify-center items-center w-full">
+        <div className="flex justify-center items-center w-full mt-4 mb-4">
           <SocialMediaLinks />
         </div>
       </div>
       <div className="flex flex-col justify-center items-center py-2 -mb-4">
-        <a href="/" name='link to mikemartinmedia.com'>
+        <a href="/" name='link to mikemartinmedia.com' target="_blank" rel="noopener noreferrer">
           <span className="text-xs">©2024 Mike Martin Media</span>
         </a>
-        <a href="https://kevinlong.dev/" target="_blank" className="" name="link to kevinlong.dev">
+        <a href="https://kevinlong.dev/" target="_blank" rel="noopener noreferrer" className="" name="link to kevinlong.dev">
           <span className="text-xs">Website by Rhythm Code Studio</span>
         </a>
       </div>

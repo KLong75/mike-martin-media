@@ -2,13 +2,38 @@
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
-// import from nexrt
-import Link from "next/link";
+import IconLink from "./iconLink";
+
 
 export default function SocialMediaLinks() {
   return (
-    <div className="flex justify-center items-center space-x-6 z-100">
-      <a href="https://www.facebook.com/mikemartinmedia" target="_blank" rel="noopener noreferrer" name='link to Mike Martin Media on Facebook' aria-label='link to Mike Martin Media on Facebook'>
+    <div className="flex justify-center items-center space-x-6 z-100 ">
+      <div className="hover:transform hover:scale-110 hover:font-black">
+      <IconLink
+        href="https://www.facebook.com/mikemartinmedia"
+        icon={<FaFacebook size={36} />}
+        label="link to Mike Martin Media on Facebook"
+        name="link to Mike Martin Media on Facebook"
+        className="hover:transform hover:scale-110 hover:font-black"
+      />
+      </div>
+      <div className="hover:transform hover:scale-110 hover:font-black">
+      <IconLink
+        href="https://www.instagram.com/mikemartinmedia"
+        icon={<FaInstagram size={36} />}
+        label="link to Mike Martin Media on Instagram"
+        name="link to Mike Martin Media on Instagram"
+      />
+      </div>
+      <div className="hover:transform hover:scale-110 hover:font-black">
+      <IconLink
+        href="https://www.linkedin.com/company/mike-martin-media/"
+        icon={<FaLinkedin size={36} />}
+        label="link to Mike Martin Media on LinkedIn"
+        name="link to Mike Martin Media on LinkedIn"
+      />
+      </div>
+      {/* <a href="https://www.facebook.com/mikemartinmedia" target="_blank" rel="noopener noreferrer" name='link to Mike Martin Media on Facebook' aria-label='link to Mike Martin Media on Facebook'>
         <FaFacebook size={36} />
       </a>
       <a href="https://www.instagram.com/mikemartinmedia" target="_blank" rel="noopener noreferrer" name='link to Mike Martin Media on Instagram' aria-label='link to Mike Martin Media on Instagram'>
@@ -16,7 +41,7 @@ export default function SocialMediaLinks() {
       </a>
       <a href="https://www.linkedin.com/company/mike-martin-media/" target="_blank" rel="noopener noreferrer" name='link to Mike Martin Media on LinkedIn' aria-label='link to Mike Martin Media on LinkedIn'>
         <FaLinkedin size={36} />
-      </a>
+      </a> */}
     </div>
   );
 }
