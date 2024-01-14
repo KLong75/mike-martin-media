@@ -51,7 +51,7 @@ export default function ContactForm() {
         </div>
         <h3 className="text-xl font-bold ml-1">a Message</h3>
       </div>
-      <form onSubmit={handleFormSubmit} className="border-4 border-black rounded-2xl p-8 bg-gray-400 shadow">
+      <form onSubmit={handleFormSubmit} className="border-4 border-black rounded-2xl p-8 bg-gray-300 shadow">
         <div className="flex flex-col justify-center items-center ">
           <label htmlFor="firstName">
             First Name*<span className="text-xs"> (required)</span>
