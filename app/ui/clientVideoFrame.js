@@ -51,7 +51,7 @@ export default function ClientVideoFrame({
             <div className="flex justify-end items-start w-full">
               <button
                 onClick={() => setVideoWindowOpen(false)}
-                className="absolute top-0 right-0 mt-4 mr-4 border border-white">
+                className="absolute top-0 right-0 mt-4 mr-4">
                 <HiX size={28} color="white" />
               </button>
             </div>
