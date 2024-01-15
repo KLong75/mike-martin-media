@@ -1,7 +1,7 @@
-"use client";
+'use client';
 // import from next
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // import from utils
 import { validateEmail } from "../lib/utils";
@@ -84,6 +84,7 @@ export default function ContactForm() {
             className="border-2 border-gray-800 rounded-2xl p-2 w-full"
           />
         </div>
+
         <div className="flex flex-col justify-center items-center">
           <label htmlFor="email">
             Email*<span className="text-xs"> (required)</span>
@@ -100,6 +101,7 @@ export default function ContactForm() {
             className="border-2 border-gray-800 rounded-2xl p-2 w-full"
           />
         </div>
+        
         <div className="flex flex-col justify-center items-center">
           <label htmlFor="phone">
             Phone Number<span className="text-xs"> (optional)</span>
@@ -139,6 +141,11 @@ export default function ContactForm() {
           </button>
         </div>
       </form>
+      {errorMessage && (
+        <div className="flex justify-center items-center mt-4">
+          <p className="text-red-500 text-xs">{errorMessage}</p>
+        </div>
+      )}
     </div>
   );
 }
