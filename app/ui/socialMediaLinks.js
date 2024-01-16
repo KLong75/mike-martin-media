@@ -8,7 +8,7 @@ import IconLink from "./iconLink";
 export default function SocialMediaLinks() {
   return (
     <div className="flex justify-center items-center space-x-16 z-100 ">
-      <div className="hover:transform hover:scale-110 transition-transform">
+      <div className="hover:transform hover:scale-125 transition-transform">
       <IconLink
         href="https://www.facebook.com/mikemartinmedia"
         icon={<FaFacebook size={36} />}
@@ -17,7 +17,7 @@ export default function SocialMediaLinks() {
         className="hover:transform hover:scale-110 hover:font-black"
       />
       </div>
-      <div className="hover:transform hover:scale-110 transition-transform">
+      <div className="hover:transform hover:scale-125 transition-transform">
       <IconLink
         href="https://www.instagram.com/mikemartinmedia"
         icon={<FaInstagram size={36} />}
@@ -25,7 +25,7 @@ export default function SocialMediaLinks() {
         name="link to Mike Martin Media on Instagram"
       />
       </div>
-      <div className="hover:transform hover:scale-110 transition-transform">
+      <div className="hover:transform hover:scale-125 transition-transform">
       <IconLink
         href="https://www.linkedin.com/company/mike-martin-media/"
         icon={<FaLinkedin size={36} />}

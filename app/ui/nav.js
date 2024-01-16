@@ -99,7 +99,7 @@ export default function Nav() {
         }`}>
         <ul className="flex flex-row space-x-24">
         {navLinks.map((link) => (
-          <li key={link.label} className={`${pathname === link.href ? 'text-gray-400 font-bold hidden' : ''}`}>
+          <li key={link.label} className={`hover:transform hover:scale-125 transition-transform ${pathname === link.href ? 'text-gray-400 font-bold hidden' : ''}`}>
           <Link key={link.label} href={link.href}>
             {link.label}
           </Link>

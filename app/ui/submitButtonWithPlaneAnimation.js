@@ -6,7 +6,7 @@ export default function SubmitButtonWithPlaneAnimation( { isSubmitted} ) {
       <button
         type="submit"
         disabled={isSubmitted}
-        className={`w-44 relative flex items-center justify-center gap-x-2.5 rounded-full px-6 py-2.5 font-bold transition-all duration-300 ${
+        className={`hover:transform hover:scale-110 transition-transform w-44 relative flex items-center justify-center gap-x-2.5 rounded-full px-6 py-2.5 font-bold transition-all duration-300 ${
           isSubmitted
             ? "bg-green-500 text-white"
             : "bg-black text-white hover:bg-white hover:text-black hover:shadow-lg"

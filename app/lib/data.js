@@ -1,79 +1,132 @@
 export const teamData = [
-  { name: "Michael Martin",
+  {
+    name: "Michael Martin",
     role: "President & CEO",
-    about: "Mike launched Mike Martin Media in 2008 after 12 years in broadcast television. He has shot, edited, produced, directed, managed, lit, and worked just about every other production position, for numerous clients, on projects of all sizes. Mike is involved in every step of the process, from project pitch to final delivery.",
+    about:
+      "Mike launched Mike Martin Media in 2008 after 12 years in broadcast television. He has shot, edited, produced, directed, managed, lit, and worked just about every other production position, for numerous clients, on projects of all sizes. Mike is involved in every step of the process, from project pitch to final delivery.",
     image_src: "/images/team/mike_martin_resize_sm.png",
   },
-  { name: "Rachel Lee",
+  {
+    name: "Rachel Lee",
     role: "Executive Producer",
-    about: "Rachel started working in video production in her hometown of Nashville in 2002. She honed her skill as a project manager, producer, and video editor while working for Barnes-Jewish Hospital and St. Louis Children’s Hospital’s marketing and communications departments. She loves working with clients and helping them bring their ideas to life.",
+    about:
+      "Rachel started working in video production in her hometown of Nashville in 2002. She honed her skill as a project manager, producer, and video editor while working for Barnes-Jewish Hospital and St. Louis Children’s Hospital’s marketing and communications departments. She loves working with clients and helping them bring their ideas to life.",
     image_src: "/images/team/rachel_lee.png",
   },
-  { name: "Mary Scott",
+  {
+    name: "Mary Scott",
     role: "Producer",
-    about: "Mary graduated at the top of her class from Southern Illinois University with a degree in Cinema and Photography.  After graduating, she spent around four and a half years in the news industry at Fox 2 Now and KPLR 11.  She spent her time at the station as a video editor and field videographer.  Her passion in video creation is being able to tell other’s stories and making their creative visions come to life.  In her spare time, Mary enjoys singing, drawing, webcomics, 1,000+ piece puzzles, video games, and snuggling with her cat Kody.",
+    about:
+      "Mary graduated at the top of her class from Southern Illinois University with a degree in Cinema and Photography.  After graduating, she spent around four and a half years in the news industry at Fox 2 Now and KPLR 11.  She spent her time at the station as a video editor and field videographer.  Her passion in video creation is being able to tell other’s stories and making their creative visions come to life.  In her spare time, Mary enjoys singing, drawing, webcomics, 1,000+ piece puzzles, video games, and snuggling with her cat Kody.",
     image_src: "/images/team/mary_scott.png",
   },
-  { name: "Zoë Calsyn",
+  {
+    name: "Tom Young",
+    role: "Director of Production",
+    about: "Tom’s an SIU Saluki graduate, and has a diverse background in the television world. As Director of Production, his eye for detail and passion for quality work match his expertise in the field.",
+    image_src: "",
+  },
+  {
+    name: "Kevin Marshall",
+    role: "Project Manager / Videographer / Editor",
+    about: "Kevin brings 25+ years of experience in broadcast news to the MMM team, including 20 years locally at KPLR/KTVI as a videographer/editor. Kevin enjoys interacting with clients through the entire video production process, bringing creativity, expertise and passion to every project. When not at work, Kevin loves exploring local breweries, savoring the St. Louis food scene, and traveling the globe. Kevin is a passionate soccer fan(can’t wait for STL City SC!), diehard Notre Dame, Orioles and Steelers fan, and an avid golfer.",
+    image_src: "",
+  },
+  {
+    name: "Mikey Ewertz",
+    role: "Director of Post-Production",
+    about: "Mikey is an award-winning shooter/editor with 25+ years of corporate video production experience. Having spent over a decade working in Silicon Valley, for some of the largest Fortune 500 companies, Mikey brings a wealth of experience, creativity and passion to every MMM project. Not only is Mikey comfortable behind the scenes, he is also not afraid to jump in front of the camera and do some acting, voice-over work, or handle the lead singer duties for your local band. To put it simply, Mikey rocks!",
+    image_src: "",
+  },
+  {
+    name: "Adam Buchheit",
     role: "Videographer / Editor",
-    about: "Zoë is a Digital Storytelling graduate from the University of Missouri with a passion for all stages of video production. From post-production editing to camera operation to social media management and content creation, Zoë’s enthusiasm for her craft is evident in all that she does.",
+    about: "Adam’s 10 years of experience in television news and feature programs shines when under tight deadlines. He brings detail and creativity to every project with a time sensitive approach. He loves working with clients and creating amazing content!",
+    image_src: "",
+  },
+  {
+    name: "Zoë Calsyn",
+    role: "Videographer / Editor",
+    about:
+      "Zoë is a Digital Storytelling graduate from the University of Missouri with a passion for all stages of video production. From post-production editing to camera operation to social media management and content creation, Zoë’s enthusiasm for her craft is evident in all that she does.",
     image_src: "/images/team/zoe_calsyn.jpg",
   },
-]
+  {
+    name: "Luke Bradshaw",
+    role: "Videographer / Editor",
+    about: "Luke’s interest in film and editing started when he was in middle school. Much of his spare time was spent making videos with his friends and before long he realized this was what he wanted to do when he grew up! Luke studied Electronic Media Production at Ozarks Technical Community College, in his hometown of Springfield, Missouri. Luke is obsessed with the visual aspects and endless creative possibilities that can be achieved with both the camera and post-production.",
+    image_src: "",
+  },
+  {
+    name: "Paul Baker",
+    role: "Video and Motion Graphics Editor",
+    about: "Paul Baker is an Emmy award-winning, seasoned St. Louis-based motion designer. Over the last two decades, he has honed his abilities by creating animations and motion graphics for numerous entities and platforms including Fortune 500 corporations, television, film, corporate, and start-ups. Paul is a collaborator at heart with a love of visual storytelling as he executes his vision with artful ingenuity and pragmatic execution.",
+    image_src: "",
+  },
+  {
+    name: "Phillip Person",
+    role: "Videographer / Editor",
+    about: "Phillip is a dedicated videographer and editor hailing from Northwest Arkansas. He holds a BFA in Film from the Art Center College of Design in Pasadena, CA. Phillip built an impressive career in the heart of the film industry, serving as an assistant to Creative Executives at DreamWorks and a production assistant at Jerry Bruckheimer Films. In his spare time, Phillip practices as an expert in sleight-of-hand magic and indulges his love for science fiction. His wide range of experiences and passion for storytelling make Phillip a notable addition to the Mike Martin Media team.",
+    image_src: "",
+  },
+  {
+    name: "Ian Ramprashad",
+    role: "Videographer / Editor",
+    about: "Hailing from Virginia, Ian brings a decade of video production experience with him. From independent films to local news outlets, Ian has worked in a myriad of positions such as director, editor, and videographer to name a few. He uses his wide variety of experience to handle any type of project that comes along. From Pre to Post, Ian has a passion for all things storytelling.",
+    image_src: "",
+  },
+  
+];
 
 export const videoData = [
   {
     client: "Spire",
     category: "Corporate",
-    src:"https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png"  
+    src: "https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
   },
   {
     client: "Agilix",
     category: "Corportate",
-    src:"https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png"
+    src: "https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
   },
   {
     client: "Washington University",
     category: "Education",
-    src:"https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png"
+    src: "https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
   },
   {
     client: "St. Louis University",
     category: "Education",
-    src:"https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png"
+    src: "https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
   },
   {
     client: "St. Louis Children's Hospital",
     category: "Medical",
-    src:"https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0", 
-    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png"
+    src: "https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
   },
   {
     client: "Barnes Hospital",
     category: "Medical",
-    src:"https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",  
-    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png"
+    src: "https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
   },
   {
     client: "Kranzberg Arts Foundation",
     category: "Nonprofit",
-    src:"https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png"
+    src: "https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
   },
   {
     client: "Missouri Prairie Foundation",
     category: "Nonprofit",
-    src:"https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png"
+    src: "https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+    thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
   },
-]
+];
 
-export const blogPosts = [
-  {
-
-  },
-]
+export const blogPosts = [{}];
