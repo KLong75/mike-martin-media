@@ -109,7 +109,7 @@ export default function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 mb-6 mt-12 gap-0">
         <div className="flex flex-col justify-center items-center p-6">
           <h4 className="font-bold">WE PROMOTE.</h4>
-          <p className="bg-gray-300 shadow-xl p-2 font-semibold text-left border border-2 border-black rounded-2xl w-full p-4">
+          <p className=" shadow-xl p-2 font-semibold text-left  rounded-2xl w-full p-4">
             Whether you are romoting an event, initiative, product, or
             organization, MMM has you covered. From last minute promos to
             promotional campaigns, we have the experience and team to get you
@@ -119,7 +119,7 @@ export default function Home() {
 
         <div className="flex flex-col justify-center items-center p-6">
           <h4 className="font-bold">WE INFORM.</h4>
-          <p className="bg-gray-300 shadow-xl p-2 font-semibold text-left border border-2 border-black rounded-2xl w-full p-4">
+          <p className=" shadow-xl p-2 font-semibold text-left  rounded-2xl w-full p-4">
             Whether you are romoting an event, initiative, product, or
             organization, MMM has you covered. From last minute promos to
             promotional campaigns, we have the experience and team to get you
@@ -128,7 +128,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center items-center p-6">
           <h4 className="font-bold">WE INSPIRE.</h4>
-          <p className="bg-gray-300 shadow-xl p-2 font-semibold text-left border border-2 border-black rounded-2xl w-full p-4">
+          <p className=" shadow-xl p-2 font-semibold text-left border border-2 rounded-2xl w-full p-4">
             Whether you are romoting an event, initiative, product, or
             organization, MMM has you covered. From last minute promos to
             promotional campaigns, we have the experience and team to get you
