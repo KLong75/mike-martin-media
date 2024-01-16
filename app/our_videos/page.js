@@ -36,7 +36,7 @@ export default function Page() {
         </div>
         <h2 className="text-4xl font-bold ml-1">Videos</h2>
       </div>
-      <div className="mb-4">
+      <div className="mb-12">
       <TextSegment
         title="Video Gallery"
         text="We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process."
