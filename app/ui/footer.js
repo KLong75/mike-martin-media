@@ -34,7 +34,7 @@ export default function Footer() {
           <span className="text-xs">Website by Rhythm Code Studio</span>
         </a>
       </div>
-      <div className="flex justify-center items-center w-auto  lg:-mt-8">
+      <div className="flex justify-center items-center w-auto">
         <Image
           src="/branding/mmm_line_logo.png"
           height={60}
