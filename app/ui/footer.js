@@ -3,7 +3,7 @@ import Image from "next/image";
 // import components
 import SocialMediaLinks from "./socialMediaLinks";
 import ContactInfo from "./contactInfo";
-import ContactUsButton from "./contactUsButton";
+// import ContactUsButton from "./contactUsButton";
 
 export default function Footer() {
   return (
