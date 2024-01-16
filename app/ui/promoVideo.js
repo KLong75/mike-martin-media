@@ -43,7 +43,6 @@ export default function PromoVideo({src, title}) {
         className={`absolute -mt-14 p-6 transition-opacity duration-8000 ease-in-out ${
           hideLogo ? "opacity-0" : "opacity-100"
         }`}>
-        {/* <div className="absolute -mt-12 p-4"> */}
         <Image
           priority
           src="/branding/mmm_logo_with_text_resize.png"

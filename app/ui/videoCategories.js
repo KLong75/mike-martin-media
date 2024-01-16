@@ -9,11 +9,12 @@ import { HiGlobeAlt } from "react-icons/hi2";
 import { FaVideo } from "react-icons/fa6";
 import { FaKitMedical } from "react-icons/fa6";
 
-export default function VideoCategories() {
+export default function VideoCategories( {onCategorySelected}) {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const handleCategorySelected = (category) => {
     setSelectedCategory(category);
+    onCategorySelected(category);
   };
 
   const categoryOptions = [
@@ -46,9 +47,9 @@ export default function VideoCategories() {
           <li
             key={category.name}
             onClick={() => handleCategorySelected(category.name)}
-            className={`flex flex-col items-center justify-center relative z-10 hover:z-20 transition-transform cursor-pointer m-2 ${
+            className={`text-sm flex flex-col items-center justify-center relative z-10 hover:z-20 transition-transform cursor-pointer m-3 ${
               selectedCategory === category.name
-                ? "font-bold scale-125"
+                ? "font-bold scale-110"
                 : "text-black hover:transform hover:scale-110 hover:font-medium hover:rotate-3"
             }`}
           >
@@ -60,7 +61,7 @@ export default function VideoCategories() {
         ))}
       </ul>
       <div className="flex justify-center items-center -mt-4">
-        <h3>Currently Viewing {selectedCategory}</h3>
+        <h3 className="text-xl font-bold">{selectedCategory}</h3>
       </div>
     </section>
   );

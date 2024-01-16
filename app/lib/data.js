@@ -87,7 +87,7 @@ export const videoData = [
   },
   {
     client: "Agilix",
-    category: "Corportate",
+    category: "Corporate",
     src: "https://player.vimeo.com/video/900941357?h=615d0b3a88&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
     thumbnail_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
   },
