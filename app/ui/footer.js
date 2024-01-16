@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className=" bg-gray-300">
       <div className="grid grid-cols-1  justify-items-center mt-4">
-      <div className="flex justify-center items-center w-52 h-auto">
+      <div className="flex justify-center items-center w-40 h-auto">
           <Image
             src="/branding/mmm_black.png"
             alt="logo"

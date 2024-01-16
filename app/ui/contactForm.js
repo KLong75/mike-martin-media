@@ -1,8 +1,9 @@
 "use client";
 // import from next
 import Image from "next/image";
-import { useState, useEffect } from "react";
-
+import { useState } from "react";
+// import components
+import SubmitButtonWithPlaneAnimation from "./submitButtonWithPlaneAnimation";
 // import from utils
 import { validateEmail } from "../lib/utils";
 
@@ -14,26 +15,37 @@ export default function ContactForm() {
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
+  const [buttonSubmitted, setButtonSubmitted] = useState(false);
+
   const handleChange = (e, setState) => {
     setState(e.target.value);
+    // Check if the email is being updated and is valid
+    if (e.target.name === "email" && validateEmail(e.target.value)) {
+      setErrorMessage("");
+    }
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    const isValid = validateEmail(email);
+    const isValid = validateEmail(email); // add validation logic for other inputs, handle errors accordingly
     if (!isValid) {
-      console.log("EMAIL INVALID");
+      console.log("Form validation failed");
       setErrorMessage("Please enter a valid email address.");
       return;
     } else {
       setErrorMessage("");
     }
+    setButtonSubmitted(true);
     console.log("form submitted", firstName, lastName, email, phone, message);
     setFirstName("");
     setLastName("");
     setEmail("");
     setPhone("");
     setMessage("");
+    // Reset the button's submitted state after 5 seconds
+    setTimeout(() => {
+      setButtonSubmitted(false);
+    }, 5000);
   };
 
   return (
@@ -71,7 +83,7 @@ export default function ContactForm() {
         </div>
         <div className="flex flex-col justify-center items-center">
           <label htmlFor="lastName">
-            Last Name*<span className="text-xs"> (required)</span>
+            Last Name*<span className="text-xs">(required)</span>
           </label>
           <input
             autoComplete="family-name"
@@ -140,11 +152,10 @@ export default function ContactForm() {
           />
         </div>
         <div className="flex justify-center items-center mt-4 -mb-4">
-          <button
-            type="submit"
-            className="bg-black text-white rounded-2xl w-32 p-2 shadow-lg">
-            Submit
-          </button>
+          <SubmitButtonWithPlaneAnimation
+            onClick={handleFormSubmit}
+            isSubmitted={buttonSubmitted}
+          />
         </div>
       </form>
     </div>
