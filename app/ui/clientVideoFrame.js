@@ -22,7 +22,7 @@ export default function ClientVideoFrame({
         <h3 className="text-sm font-bold">{client}</h3>
       </div>
       <div className="flex justify-center items-center -mb-12  md:-mb-4 lg:-mb-2">
-        <h4 className="text-sm font-bold">{category} Video</h4>
+        <h4 className="text-sm font-bold">{category}</h4>
       </div>
       <div
         className="flex justify-center items-center w-full mt-10 md:mt-2 lg:mt-0  cursor-pointer p-4 "
@@ -57,7 +57,7 @@ export default function ClientVideoFrame({
             </div>
             <div className="flex flex-col justify-center items-center w-full md:mb-10">
               <h3 className="text-2xl font-bold text-white">{client}</h3>
-              <h4 className="text-xl font-bold text-white">{category} Video</h4>
+              <h4 className="text-xl font-bold text-white">{category}</h4>
               <h5 className="text-sm font-bold text-white">by Mike Martin Media</h5>
             </div>
             <div className="w-full h-auto sm:-mt-6">
