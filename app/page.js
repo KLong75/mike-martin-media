@@ -21,7 +21,7 @@ export default function Home() {
     }, 4000);
     const videoFadeTimer = setTimeout(() => {
       setShowVideo(true);
-    }, 1000);
+    },);
     return () => {
       clearTimeout(hideLogoTimer);
       clearTimeout(videoFadeTimer);
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </div> */}
 
-      <PromoVideo src="https://player.vimeo.com/video/900179937?h=3c366b24ba&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" />
+      <PromoVideo src="https://player.vimeo.com/video/903012192?h=3c366b24ba&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" />
 
       {/* <div className="flex justify-center items-center -mt-3">
         <Image
@@ -128,7 +128,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center items-center p-6">
           <h4 className="font-bold">WE INSPIRE.</h4>
-          <p className=" shadow-xl p-2 font-semibold text-left border border-2 rounded-2xl w-full p-4">
+          <p className=" shadow-xl p-2 font-semibold text-left rounded-2xl w-full p-4">
             Whether you are romoting an event, initiative, product, or
             organization, MMM has you covered. From last minute promos to
             promotional campaigns, we have the experience and team to get you
