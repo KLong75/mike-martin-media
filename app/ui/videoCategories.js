@@ -10,7 +10,7 @@ import { FaVideo } from "react-icons/fa6";
 import { FaKitMedical } from "react-icons/fa6";
 
 export default function VideoCategories( {onCategorySelected}) {
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState("All Videos");
 
   const handleCategorySelected = (category) => {
     setSelectedCategory(category);
@@ -61,7 +61,7 @@ export default function VideoCategories( {onCategorySelected}) {
         ))}
       </ul>
       <div className="flex justify-center items-center -mt-4">
-        <h3 className="text-xl font-bold">{selectedCategory}</h3>
+        <h3 className="text-xl font-bold">Currently Viewing {selectedCategory}</h3>
       </div>
     </section>
   );
