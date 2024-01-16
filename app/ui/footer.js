@@ -8,8 +8,8 @@ import ContactUsButton from "./contactUsButton";
 export default function Footer() {
   return (
     <footer className=" bg-gray-300">
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3  justify-items-center mt-4">
-        <div className="flex justify-center items-center w-52 h-auto">
+      <div className="grid grid-cols-1  justify-items-center mt-4">
+      <div className="flex justify-center items-center w-52 h-auto">
           <Image
             src="/branding/mmm_black.png"
             alt="logo"
@@ -18,14 +18,15 @@ export default function Footer() {
             className="p-4"
           />
         </div>
+        
         <div className="">
           <ContactInfo />
         </div>
-        <div className="flex justify-center items-center w-full mt-4 mb-4">
+        <div className="flex justify-center items-center w-full mt-6 mb-4">
           <SocialMediaLinks />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center py-2 -mb-4">
+      <div className="flex flex-col justify-center items-center py-2 -mb-4  mt-6">
         <a href="/" name='link to mikemartinmedia.com' target="_blank" rel="noopener noreferrer">
           <span className="text-xs">©2024 Mike Martin Media</span>
         </a>
@@ -33,7 +34,7 @@ export default function Footer() {
           <span className="text-xs">Website by Rhythm Code Studio</span>
         </a>
       </div>
-      <div className="flex justify-center items-center w-auto">
+      <div className="flex justify-center items-center w-auto  lg:-mt-8">
         <Image
           src="/branding/mmm_line_logo.png"
           height={60}
