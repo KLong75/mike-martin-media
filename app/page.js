@@ -21,7 +21,7 @@ export default function Home() {
     }, 4000);
     const videoFadeTimer = setTimeout(() => {
       setShowVideo(true);
-    },);
+    }, 0);
     return () => {
       clearTimeout(hideLogoTimer);
       clearTimeout(videoFadeTimer);
