@@ -6,14 +6,14 @@ import ContactInfo from "../ui/contactInfo";
 import SocialMediaLinks from "../ui/socialMediaLinks";
 
 export const metadata = {
-  title: 'Page 4',
-}
+  title: "Page 4",
+};
 
 export default function Page() {
   return (
-    <main className=' flex-1'>
+    <main className=" flex-1">
       <div className="flex justify-center items-center mt-10 mb-2 p-2">
-      <h2 className="text-4xl font-bold mr-2">Contact</h2>
+        <h2 className="text-4xl font-bold mr-2">Contact</h2>
         <div className="flex justify-center items-center w-24 h-8 mb-1">
           <Image
             src="/branding/mmm_black.png"
@@ -22,17 +22,16 @@ export default function Page() {
             alt="company logo"
           />
         </div>
-        
       </div>
-      
+
       <div className="flex justify-center items-center mt-4 mb-8">
         <ContactInfo />
       </div>
-      
+
       <div className="flex justify-center items-center mt-4  z-50">
         <SocialMediaLinks />
       </div>
-      
+
       <div className="flex justify-center items-center -mt-8">
         <ContactForm />
       </div>
