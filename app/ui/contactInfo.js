@@ -32,7 +32,7 @@ export default function ContactInfo() {
           <div className="group hover:transform hover:scale-110 transition-transform mt-4 md:mt-0">
             <div className="flex flex-col items-center">
             <IconLink
-                href="https://www.google.com/maps/place/Mike+Martin+Media..."
+                href="https://www.google.com/maps/place/Mike+Martin+Media,+LLC/@38.6382623,-90.2273243,17z/data=!4m6!3m5!1s0x87d8c6735ac822fb:0x32eff35f341c030b!8m2!3d38.6382623!4d-90.2273243!16s%2Fg%2F11b6c9h53l?entry=ttu"
                 icon={<FaLocationDot size={24} />}
                 label="link to Mike Martin Media on Google Maps"
               />

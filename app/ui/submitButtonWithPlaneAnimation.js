@@ -1,6 +1,5 @@
-export default function SubmitButtonWithPlaneAnimation( { isSubmitted} ) {
+export default function SubmitButtonWithPlaneAnimation( { isSubmitted } ) {
 
-  
   return (
     <div className="flex  m-auto p-8 justify-center items-center">
       <button
