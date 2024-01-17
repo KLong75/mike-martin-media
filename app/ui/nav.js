@@ -1,5 +1,4 @@
 "use client";
-
 // import from react
 import { useState } from "react";
 //  import from next
@@ -18,12 +17,24 @@ const navLinks = [
     label: "About",
   },
   {
-    href: "/our_videos",
+    href: "/the_mmm_team",
+    label: "Meet the Team",
+  },
+  {
+    href: "/mmm_video",
     label: "Videos",
   },
   {
+    href: "/livestream",
+    label: "Livestream",
+  },
+  {
+    href: "/photography",
+    label: "Photography",
+  },
+  {
     href: "/blog",
-    label: "Blog",
+    label: "MMM Blog",
   },
   {
     href: "/contact",
@@ -39,7 +50,7 @@ export default function Nav() {
   // const filteredNavLinks = navLinks.filter((link) => link.href !== pathname);
 
   return (
-    <nav className="flex  p-4 z-40 ">
+    <nav className="flex p-4 z-40 ">
       {/* Mobile Nav Menu */}
       <Dialog open={menuOpen} onClose={() => setMenuOpen(false)}>
         <Dialog.Overlay className="fixed inset-0 bg-black opacity-80" />
@@ -51,7 +62,7 @@ export default function Nav() {
                 className="absolute top-0 right-0 mt-10 mr-7">
                 <HiX size={28} />
               </button>
-              <div className="mt-40 ">
+              <div className="mt-20 ">
               <div className="flex justify-center items-center p-6 mb-6">
                 <Image
                   src="/branding/mmm_black_x.png"
@@ -61,7 +72,7 @@ export default function Nav() {
                   className="p-4"
                 />
               </div>
-              <ul className="flex flex-col space-y-8  items-center">
+              <ul className="flex flex-col space-y-8 items-center">
                 {navLinks.map((link) => (
                   <li
                     key={link.label}
@@ -94,12 +105,12 @@ export default function Nav() {
       </div>
 
       <div
-        className={` flex space-x-24 ${
+        className={` flex  ${
           menuOpen ? "" : "hidden md:flex"
         }`}>
-        <ul className="flex flex-row space-x-24">
+        <ul className="flex flex-row w-full space-x-12">
         {navLinks.map((link) => (
-          <li key={link.label} className={`hover:transform hover:scale-125 transition-transform ${pathname === link.href ? 'text-gray-400 font-bold hidden' : ''}`}>
+          <li key={link.label} className={`flex-grow text-center hover:transform hover:scale-125 transition-transform ${pathname === link.href ? 'text-gray-400 font-bold hidden' : ''}`}>
           <Link key={link.label} href={link.href}>
             {link.label}
           </Link>

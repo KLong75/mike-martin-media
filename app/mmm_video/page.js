@@ -22,7 +22,7 @@ export default function Page() {
         <meta name="description" content="We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process." />
         {/* Other meta tags */}
     </Head>
-    <main className="">
+    <main>
       <div className="flex justify-center items-center mt-12 mb-6">
         <div className="flex justify-center items-center w-24 h-8 mb-1">
           <Image

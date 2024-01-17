@@ -10,7 +10,7 @@ export default function TeamGallery() {
   // console.log(teamData);
   return (
     <div className="">
-      <div className="flex justify-center items-center mb-10">
+      <div className="flex justify-center items-center mt-10 mb-10">
         {/* <h2 className="text-4xl font-bold">The</h2> */}
         <div className="w-24 h-8 mx-2 mb-1">
           {" "}

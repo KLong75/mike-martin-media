@@ -27,7 +27,7 @@ export default function Page() {
         <h2 className="text-4xl font-bold ml-2">Story</h2>
       </div>
       <TextSegment 
-        text="We dedicate our lives to telling your story. We invite you to take a look at ours. Here is a “behind-the-scenes” look as we highlight clients we love and work on projects of all sizes and scopes." 
+        text="We dedicate our lives to telling your story. We invite you to take a look at ours. Here is a “behind-the-scenes” look as we highlight clients we love and work on projects of all sizes, shapes, and scopes." 
       />
       <div className="flex justify-center items-center -mt-2 mb-2">
       <MMMLineLogoBlack />

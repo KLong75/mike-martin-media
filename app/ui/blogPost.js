@@ -31,7 +31,7 @@ export default function BlogPost({ title, image, text, date }) {
         </div>
         
       </div>
-      <div className="flex justify-center items-center -mt-8 mb-6">
+      <div className="flex justify-center items-center -mt-10 mb-6">
       <MMMLineLogoBlack />
       </div>
       </>
