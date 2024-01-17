@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ContactUsButton() {
   return (
     <button
-      className="bg-black hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-full"
+      className="bg-black hover:transform hover:scale-110 transition-transform text-white font-bold py-2 px-4 rounded-full"
       type="button">
       <Link href="/contact">
       <div className="flex justify-center items-center">
