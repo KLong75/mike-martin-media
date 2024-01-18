@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function MmmLivestreamButton() {
+export default function MeetTheTeamButton() {
   return (
     <button
       className="bg-black hover:transform hover:scale-110 transition-transform text-white font-bold py-2 px-4 rounded-full"

@@ -42,8 +42,9 @@ export default function VideoCategories( {onCategorySelected}) {
 
   return (
     <section className="mb-12">
-      <h3 className="text-xl font-bold text-center -mb-4">Please select a category.</h3>
-      <ul className="flex flex-wrap justify-center p-6 m-6  sm:space-x-12 md:space-x-14 lg:space-x-16">
+      <h3 className="text-lg font-bold text-center -mb-8">Select a category.</h3>
+      <h4 className="font-bold text-center text-sm mt-10 -mb-4">Currently Viewing: {selectedCategory}</h4>
+      <ul className="flex flex-wrap justify-center p-6 m-2 sm:space-x-12 md:space-x-14 lg:space-x-16">
         {categoryOptions.map((category) => (
           <li
             key={category.name}
@@ -61,9 +62,6 @@ export default function VideoCategories( {onCategorySelected}) {
           </li>
         ))}
       </ul>
-      <div className="flex justify-center items-center -mt-4">
-        <h3 className="text-xl font-bold">Currently Viewing {selectedCategory}</h3>
-      </div>
     </section>
   );
 }

@@ -42,7 +42,9 @@ export default function Page() {
         text="We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process."
       />
       </div>
+      <section className="-mb-6">
       <VideoCategories onCategorySelected={setSelectedCategory}/>
+      </section>
       <VideoGallery selectedCategory={selectedCategory} />
     </main>
     </>

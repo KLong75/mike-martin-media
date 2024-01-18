@@ -188,12 +188,8 @@ export default function Home() {
         We are easy to communicate with, responsive, and proactive throughout the entire production process.  Our team is both personable and professional, and make sure that our clients enjoy the process. We offer the best value in professional video production."
       />
 
-      <div className="flex justify-center mt-4 mb-8 ">
+      <div className="flex justify-center mt-2 mb-8 ">
         <MeetTheTeamButton />
-      </div>
-
-      <div className="flex justify-center mt-8 mb-8 ">
-        <ContactUsButton />
       </div>
     </main>
   );
