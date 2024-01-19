@@ -19,10 +19,10 @@ export default function MmmGood() {
         src="/branding/mmm_black.png"
         width={294}
         height={95}
-        alt="company logo"
+        alt="MMM logo"
       />
     </div>
-    <h2 className="text-4xl font-bold ml-1">Good...</h2>
+    <h2 className="text-4xl font-bold ml-1">Good</h2>
   </div>
   );
 }

@@ -152,6 +152,7 @@ export default function Home() {
         </div>
       </div> */}
       <div className="">
+        <h3 className="text-center font-bold text-xl mb-2 italic">Our work is</h3>
         <MmmGood />
       </div>
       <TextSegment text="We take pride in every video that we produce.  We partner with clients of all sizes to bring visions to video.  From concept to conclusion, we can write, shoot, edit, produce, animate, hire talent, find locations, and everything else needed for your production.  Take a minute and check out our work! From videos to livestreams, to still photography, we have you covered." />

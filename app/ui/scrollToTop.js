@@ -3,8 +3,8 @@
 // import from react
 import { useState, useEffect } from "react";
 // import icons
-import { MdArrowUpward } from "react-icons/md";
-// import { FaAnglesUp } from "react-icons/fa6";
+// import { MdArrowUpward } from "react-icons/md";
+import { FaAnglesUp } from "react-icons/fa6";
 
 export default function ScrollToTopButton() {
   const [scrollToTopButtonVisible, setScrollToTopButtonVisible] =
@@ -42,7 +42,7 @@ export default function ScrollToTopButton() {
         style={{
           transition: "opacity 0.3s ease-in-out",
         }}>
-        <MdArrowUpward size={24} className="h-8 w-8" color="white"/>
+        <FaAnglesUp size={24} className="h-8 w-8" color="white"/>
       </button>
     </div>
   );
