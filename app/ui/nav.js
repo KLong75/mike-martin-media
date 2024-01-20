@@ -20,7 +20,6 @@ import { FaClapperboard } from "react-icons/fa6";
 // import { FaFileVideo } from "react-icons/fa6";
 // import { RiFolderVideoFill } from "react-icons/ri";
 
-
 const navLinks = [
   {
     href: "/",
@@ -62,7 +61,7 @@ const navLinks = [
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-  
+
   const openMenu = () => setMenuOpen(true);
   // const filteredNavLinks = navLinks.filter((link) => link.href !== pathname);
 
@@ -79,31 +78,32 @@ export default function Nav() {
                 className="absolute top-0 right-0 mt-10 mr-7">
                 <HiX size={28} />
               </button>
-              <div className="mt-10 ">
-              <div className="flex justify-center items-center w-24 mb-6">
-              <Image
-        src="/branding/mmm_black.png"
-        width={294}
-        height={95}
-        alt="MMM logo"
-      />
-              </div>
-              <ul className="flex flex-col space-y-8 items-center">
-                {navLinks.map((link) => (
-                  <li
-                    key={link.label}
-                    className={`font-bold text-center w-full p-2
+              <div className="mt-16 flex flex-col mt-10">
+          
+                <div className="flex justify-center items-center  mb-6">
+                <Image
+                  src="/branding/mmm_black_x.png"
+                  alt="logo"
+                  width={160}
+                  height={52}
+                  className="p-4"
+                />
+                </div>
+                <ul className="flex flex-col space-y-8 items-center">
+                  {navLinks.map((link) => (
+                    <li
+                      key={link.label}
+                      className={`font-bold text-center w-full p-2
                       hover:text-slate-400 
                       transition duration-300 ease-in-out
-                      ${pathname === link.href ? 'text-gray-400' : ''}`
-                    }
-                    onClick={() => {
-                      setMenuOpen(false);
-                    }}>
-                    <Link href={link.href}>{link.label}</Link>
-                  </li>
-                ))}
-              </ul>
+                      ${pathname === link.href ? "text-gray-400" : ""}`}
+                      onClick={() => {
+                        setMenuOpen(false);
+                      }}>
+                      <Link href={link.href}>{link.label}</Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
@@ -136,20 +136,23 @@ export default function Nav() {
         </ul>
       </div> */}
       <div className={`flex ${menuOpen ? "" : "hidden md:flex"} w-full`}>
-  <ul className="flex flex-row w-full space-x-10 justify-center">
-    {navLinks.map((link) => (
-      <li key={link.label} className={`flex flex-col items-center justify-center hover:transform hover:scale-125 transition-transform ${pathname === link.href ? 'text-gray-400 font-bold hidden' : ''}`}>
-        <Link href={link.href}>
-          <div className="flex flex-col items-center justify-center">
-            {link.icon}
-            <span className="mt-2">{link.label}</span>
-          </div>
-        </Link>
-      </li>
-    ))}
-  </ul>
-</div>
-
+        <ul className="flex flex-row w-full space-x-10 justify-center">
+          {navLinks.map((link) => (
+            <li
+              key={link.label}
+              className={`flex flex-col items-center justify-center hover:transform hover:scale-125 transition-transform ${
+                pathname === link.href ? "text-gray-400 font-bold hidden" : ""
+              }`}>
+              <Link href={link.href}>
+                <div className="flex flex-col items-center justify-center">
+                  {link.icon}
+                  <span className="mt-2">{link.label}</span>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 }

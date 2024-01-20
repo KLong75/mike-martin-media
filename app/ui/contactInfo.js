@@ -4,8 +4,8 @@ import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
 export default function ContactInfo() {
   return (
     <div className="justify-items-center">
-      <div className="flex flex-col text-center space-y-4 m-2">
-        <h2 className="text-xl font-bold">Mike Martin Media</h2>
+      <div className="flex flex-col text-center space-y-4">
+        {/* <h2 className=" font-bold">Mike Martin Media</h2> */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-48">
 
           {/* Phone Number Section */}
@@ -21,7 +21,7 @@ export default function ContactInfo() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="call Mike Martin Media"
-                className="mt-2"
+                className="mt-"
               >
                 <span>636-212-0978</span>
               </a>
@@ -41,7 +41,7 @@ export default function ContactInfo() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="link to Mike Martin Media on Google Maps"
-                className="mt-2"
+                className="mt-"
               >
                 <span>3333 Washington Avenue, Suite 201<br />St. Louis, MO 63103</span>
               </a>
@@ -61,7 +61,7 @@ export default function ContactInfo() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="email Mike Martin Media"
-                className="mt-2"
+                className="mt-"
               >
                 <span>mike@mikemartinmedia.com</span>
               </a>
