@@ -7,6 +7,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 // import from headlessui
 import { Dialog } from "@headlessui/react";
+import { Menu } from "@headlessui/react";
 // import icons
 import { MdDehaze } from "react-icons/md";
 import { HiX } from "react-icons/hi";
@@ -32,19 +33,27 @@ const navLinks = [
     icon: <RiTeamFill size={24} />,
   },
   {
-    href: "/mmm_video",
-    label: "Videos",
+    label: "What We Do",
+    href: "#",
     icon: <FaVideo size={24} />,
-  },
-  {
-    href: "/livestream",
-    label: "Livestream",
-    icon: <BsBroadcast size={24} />,
-  },
-  {
-    href: "/photography",
-    label: "Photography",
-    icon: <FaCameraRetro size={24} />,
+    dropdown: true,
+    submenu: [
+      {
+        href: "/mmm_video",
+        label: "Videos",
+        icon: <FaVideo size={24} />,
+      },
+      {
+        href: "/livestream",
+        label: "Livestream",
+        icon: <BsBroadcast size={24} />,
+      },
+      {
+        href: "/photography",
+        label: "Photography",
+        icon: <FaCameraRetro size={24} />,
+      },
+    ],
   },
   {
     href: "/blog",
@@ -72,39 +81,28 @@ export default function Nav() {
         <Dialog.Overlay className="fixed inset-0 bg-black opacity-80" />
         <Dialog.Panel className="fixed inset-0 z-10">
           <div className="flex justify-center items-center h-full">
-            <div className="relative bg-white w-full h-full">
-              <button
-                onClick={() => setMenuOpen(false)}
-                className="absolute top-0 right-0 mt-10 mr-7">
+            <div className="relative bg-white w-full h-full flex flex-col justify-center items-center">
+              {/* Close Button */}
+              <button onClick={() => setMenuOpen(false)} className="absolute top-0 right-0 mt-10 mr-7">
                 <HiX size={28} />
               </button>
-              <div className="mt-16 flex flex-col mt-10">
-          
-                <div className="flex justify-center items-center  mb-6">
-                <Image
-                  src="/branding/mmm_black_x.png"
-                  alt="logo"
-                  width={160}
-                  height={52}
-                  className="p-4"
-                />
-                </div>
-                <ul className="flex flex-col space-y-8 items-center">
-                  {navLinks.map((link) => (
-                    <li
-                      key={link.label}
-                      className={`font-bold text-center w-full p-2
-                      hover:text-slate-400 
-                      transition duration-300 ease-in-out
-                      ${pathname === link.href ? "text-gray-400" : ""}`}
-                      onClick={() => {
-                        setMenuOpen(false);
-                      }}>
-                      <Link href={link.href}>{link.label}</Link>
-                    </li>
-                  ))}
-                </ul>
+              {/* Image Container */}
+              <div className="mb-6">
+                <Image src="/branding/mmm_black_x.png" alt="logo" width={160} height={52} />
               </div>
+              {/* Nav Links */}
+              <ul className="space-y-4">
+                {navLinks.map((link) => (
+                  <li key={link.label} className={`font-bold text-center w-full p-2 hover:text-slate-400 transition duration-300 ease-in-out ${pathname === link.href ? "text-gray-400" : ""}`}>
+                    <Link href={link.href}>
+                      <div className="flex flex-col items-center justify-center cursor-pointer" onClick={() => setMenuOpen(false)}>
+                        {link.icon}
+                        <span>{link.label}</span>
+                      </div>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </Dialog.Panel>
@@ -119,22 +117,7 @@ export default function Nav() {
           />
         </button>
       </div>
-
-      {/* <div
-        className={` flex  ${
-          menuOpen ? "" : "hidden md:flex"
-        }`}>
-        <ul className="flex flex-row w-full space-x-12">
-        {navLinks.map((link) => (
-          <li key={link.label} className={`flex-grow hover:transform hover:scale-125 transition-transform ${pathname === link.href ? 'text-gray-400 font-bold hidden' : ''}`}>
-          <Link key={link.label} href={link.href}>
-            {link.label}
-            {link.icon}
-          </Link>
-          </li>
-        ))}
-        </ul>
-      </div> */}
+      {/* Desktop Nav Menu */}
       <div className={`flex ${menuOpen ? "" : "hidden md:flex"} w-full`}>
         <ul className="flex flex-row w-full space-x-10 justify-center">
           {navLinks.map((link) => (
