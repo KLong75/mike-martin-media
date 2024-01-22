@@ -156,14 +156,15 @@ export default function Home() {
         <MmmGood />
       </div>
       <TextSegment text="We take pride in every video that we produce.  We partner with clients of all sizes to bring visions to video.  From concept to conclusion, we can write, shoot, edit, produce, animate, hire talent, find locations, and everything else needed for your production.  Take a minute and check out our work! From videos to livestreams, to still photography, we have you covered." />
+
       <div className="grid grid cols-1 md:grid-cols-3 mb-4">
-        <div className="flex justify-center items-center mt-4 mb-4">
+        <div className="flex justify-center items-center mt-4 mb-4 md:order-2">
           <MmmVideoButton />
         </div>
-        <div className="flex justify-center items-center mt-4 mb-4">
+        <div className="flex justify-center items-center mt-4 mb-4 md:order-1">
           <MmmLivestreamButton />
         </div>
-        <div className="flex justify-center items-center mt-4 mb-4">
+        <div className="flex justify-center items-center mt-4 mb-4 md:order-3">
           <MmmPhotographyButton />
         </div>
       </div>

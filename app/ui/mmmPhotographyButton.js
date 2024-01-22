@@ -9,6 +9,9 @@ export default function MmmPhotographyButton() {
       type="button">
       <Link href="/photography">
       <div className="flex justify-center items-center">
+        <span>Check out</span>
+      </div>
+      <div className="flex justify-center items-center">
       <div className="flex justify-center items-center w-14 h-auto mr-2 mb-1">
           <Image
             src="/branding/mmm_logo_white.png"

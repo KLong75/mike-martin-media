@@ -8,17 +8,19 @@ export default function MmmLivestreamButton() {
       className="bg-black hover:transform hover:scale-110 transition-transform text-white font-bold py-2 px-4 rounded-full"
       type="button">
       <Link href="/livestream">
-      <div className="flex justify-center items-center">
-        
-      <div className="flex justify-center items-center w-14 h-auto mr-2 mb-1">
-          <Image
-            src="/branding/mmm_logo_white.png"
-            width={294}
-            height={95}
-            alt="company logo"
-          />
+        <div className="flex justify-center items-center">
+          <span>Check out</span>
         </div>
-        <span>Livestream</span>
+        <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center w-14 h-auto mr-2 mb-1">
+            <Image
+              src="/branding/mmm_logo_white.png"
+              width={294}
+              height={95}
+              alt="company logo"
+            />
+          </div>
+          <span>Livestream</span>
         </div>
       </Link>
     </button>

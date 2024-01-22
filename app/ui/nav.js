@@ -180,7 +180,7 @@ export default function Nav() {
                 <Menu
                   as="li"
                   key={link.label}
-                  className="relative flex flex-col items-center justify-center hover:font-bold hover:transform hover:scale-125 transition-transform">
+                  className="z-50 relative flex flex-col items-center justify-center hover:font-bold hover:transform hover:scale-125 transition-transform">
                   <Menu.Button
                     as="div"
                     className="flex flex-col items-center justify-center cursor-pointer">
