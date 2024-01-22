@@ -18,7 +18,7 @@ import { RiTeamFill } from "react-icons/ri";
 import { RiBallPenFill } from "react-icons/ri";
 import { FaEnvelope } from "react-icons/fa6";
 import { FaClapperboard } from "react-icons/fa6";
-import { FaFileVideo } from "react-icons/fa6";
+// import { FaFileVideo } from "react-icons/fa6";
 import { RiFolderVideoFill } from "react-icons/ri";
 
 const navLinks = [
@@ -104,7 +104,7 @@ export default function Nav() {
                       <Menu
                         as="li"
                         key={link.label}
-                        className="relative font-bold text-center w-full ">
+                        className=" relative font-bold text-center w-full ">
                         <Menu.Button
                           as="div"
                           className="flex flex-col items-center justify-center cursor-pointer hover:transform hover:scale-125 transition-transform">
@@ -180,14 +180,14 @@ export default function Nav() {
                 <Menu
                   as="li"
                   key={link.label}
-                  className="z-50 relative flex flex-col items-center justify-center hover:font-bold hover:transform hover:scale-125 transition-transform">
+                  className="relative flex flex-col items-center justify-center hover:font-bold hover:transform hover:scale-125 transition-transform">
                   <Menu.Button
                     as="div"
-                    className="flex flex-col items-center justify-center cursor-pointer">
+                    className=" flex flex-col items-center justify-center cursor-pointer">
                     {link.icon}
                     <span className="mt-2">{link.label}</span>
                   </Menu.Button>
-                  <Menu.Items className="absolute top-full mt-2 bg-white shadow-md rounded-md">
+                  <Menu.Items className="z-50 absolute top-full mt-2 bg-white shadow-md rounded-md">
                     {link.submenu.map((subLink) => (
                       <Menu.Item key={subLink.label} className="border border-2 border-gray-800">
                         {({ active }) => (
