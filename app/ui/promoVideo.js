@@ -16,7 +16,7 @@ export default function PromoVideo({src, title}) {
     }, 4000);
     const videoFadeTimer = setTimeout(() => {
       setShowVideo(true);
-    }, 0);
+    }, 500);
     return () => {
       clearTimeout(hideLogoTimer);
       clearTimeout(videoFadeTimer);
