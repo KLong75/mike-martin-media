@@ -29,9 +29,9 @@ export default function Page() {
       <TextSegment 
         text="We dedicate our lives to telling your story. We invite you to take a look at ours. Here is a “behind-the-scenes” look as we highlight clients we love and work on projects of all sizes, shapes, and scopes." 
       />
-      <div className="flex justify-center items-center -mt-2 mb-2">
+      {/* <div className="flex justify-center items-center -mt-2 mb-2">
       <MMMLineLogoBlack />
-      </div>
+      </div> */}
       
       <div className="flex flex-col gap-12 justify-center items-center mt-12">
         {blogPosts.map((post) => (
