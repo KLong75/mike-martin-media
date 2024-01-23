@@ -7,7 +7,6 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 // import from headlessui
 import { Dialog } from "@headlessui/react";
-import { Menu } from "@headlessui/react";
 // import icons
 import { MdDehaze } from "react-icons/md";
 import { HiX } from "react-icons/hi";
@@ -47,14 +46,6 @@ const navLinks = [
     label: "Photography",
     icon: <FaCameraRetro size={24} />,
   },
-  // {
-  //   label: "What We Do",
-  //   href: "#",
-  //   icon: <RiFolderVideoFill size={24} />,
-  //   dropdown: true,
-  //   submenu: [
-  //   ],
-  // },
   {
     href: "/blog",
     label: "MMM Blog",
@@ -70,9 +61,7 @@ const navLinks = [
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
-
   const openMenu = () => setMenuOpen(true);
-  // const filteredNavLinks = navLinks.filter((link) => link.href !== pathname);
 
   return (
     <nav className="flex p-4 z-40 ">
