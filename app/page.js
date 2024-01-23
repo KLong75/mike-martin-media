@@ -74,7 +74,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <TextSegment text="Whatever your needs, we've got you covered. Reach out today to see how we can help you with your next project. lorem impsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" />
+      <TextSegment text="Whatever your needs, we've got you covered. Reach out today to see how we can help you with your next project. lorem impsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud" />
       <div className="flex justify-center mb-8 ">
         <ContactUsButton />
       </div>
