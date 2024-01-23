@@ -19,7 +19,7 @@ import { RiBallPenFill } from "react-icons/ri";
 import { FaEnvelope } from "react-icons/fa6";
 import { FaClapperboard } from "react-icons/fa6";
 // import { FaFileVideo } from "react-icons/fa6";
-import { RiFolderVideoFill } from "react-icons/ri";
+// import { RiFolderVideoFill } from "react-icons/ri";
 
 const navLinks = [
   {
@@ -33,28 +33,28 @@ const navLinks = [
     icon: <RiTeamFill size={24} />,
   },
   {
-    label: "What We Do",
-    href: "#",
-    icon: <RiFolderVideoFill size={24} />,
-    dropdown: true,
-    submenu: [
-      {
-        href: "/mmm_video",
-        label: "Video",
-        icon: <FaVideo size={20} />,
-      },
-      {
-        href: "/livestream",
-        label: "Livestream",
-        icon: <BsBroadcast size={20} />,
-      },
-      {
-        href: "/photography",
-        label: "Photography",
-        icon: <FaCameraRetro size={20} />,
-      },
-    ],
+    href: "/mmm_video",
+    label: "Video",
+    icon: <FaVideo size={24} />,
   },
+  {
+    href: "/livestream",
+    label: "Livestream",
+    icon: <BsBroadcast size={24} />,
+  },
+  {
+    href: "/photography",
+    label: "Photography",
+    icon: <FaCameraRetro size={24} />,
+  },
+  // {
+  //   label: "What We Do",
+  //   href: "#",
+  //   icon: <RiFolderVideoFill size={24} />,
+  //   dropdown: true,
+  //   submenu: [
+  //   ],
+  // },
   {
     href: "/blog",
     label: "MMM Blog",
@@ -95,66 +95,24 @@ export default function Nav() {
                   height={52}
                 />
               </div>
-              {/* Nav Links */}
-              <ul className="space-y-4">
-                {navLinks.map((link) => {
-                  if (link.dropdown) {
-                    // Render dropdown menu
-                    return (
-                      <Menu
-                        as="li"
-                        key={link.label}
-                        className=" relative font-bold text-center w-full ">
-                        <Menu.Button
-                          as="div"
-                          className="flex flex-col items-center justify-center cursor-pointer hover:transform hover:scale-125 transition-transform">
-                          {link.icon}
-                          <span>{link.label}</span>
-                        </Menu.Button>
-                        <Menu.Items className="absolute mt-2 bg-white">
-                          {link.submenu.map((subLink) => (
-                            <Menu.Item key={subLink.label} className="">
-                              {({ active }) => (
-                                <Link href={subLink.href}>
-                                  <div
-                                    className={`bg-black text-white border-2 border-gray-800  flex flex-col items-center justify-center cursor-pointer ${
-                                      active
-                                        ? "bg-gray-300 hover:text-black hover:transform hover:scale-110 transition-transform"
-                                        : ""
-                                    }`}
-                                    onClick={() => setMenuOpen(false)}>
-                                    <span className="mt-1">{subLink.icon}</span>
-                                    <span className="mb-1">
-                                      {subLink.label}
-                                    </span>
-                                  </div>
-                                </Link>
-                              )}
-                            </Menu.Item>
-                          ))}
-                        </Menu.Items>
-                      </Menu>
-                    );
-                  } else {
-                    // Render regular link
-                    return (
-                      <li
-                        key={link.label}
-                        className={`font-bold text-center w-full p-2 hover:transform hover:scale-125 transition-transform ${
-                          pathname === link.href ? "hidden" : ""
-                        }`}>
-                        <Link href={link.href}>
-                          <div
-                            className="flex flex-col items-center justify-center cursor-pointer"
-                            onClick={() => setMenuOpen(false)}>
-                            {link.icon}
-                            <span>{link.label}</span>
-                          </div>
-                        </Link>
-                      </li>
-                    );
-                  }
-                })}
+             {/* Nav Links */}
+             <ul className="space-y-4">
+                {navLinks.map((link) => (
+                  <li
+                    key={link.label}
+                    className={`font-bold text-center w-full p-2 hover:transform hover:scale-125 transition-transform ${
+                      pathname === link.href ? "hidden" : ""
+                    }`}>
+                    <Link href={link.href}>
+                      <div
+                        className="flex flex-col items-center justify-center cursor-pointer"
+                        onClick={() => setMenuOpen(false)}>
+                        {link.icon}
+                        <span>{link.label}</span>
+                      </div>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -173,56 +131,20 @@ export default function Nav() {
       {/* Desktop Nav Menu */}
       <div className={`flex ${menuOpen ? "" : "hidden md:flex"} w-full`}>
         <ul className="flex flex-row w-full space-x-10 justify-center">
-          {navLinks.map((link) => {
-            if (link.dropdown) {
-              // Dropdown menu rendering
-              return (
-                <Menu
-                  as="li"
-                  key={link.label}
-                  className="relative flex flex-col items-center justify-center hover:font-bold hover:transform hover:scale-125 transition-transform">
-                  <Menu.Button
-                    as="div"
-                    className=" flex flex-col items-center justify-center cursor-pointer">
-                    {link.icon}
-                    <span className="mt-2">{link.label}</span>
-                  </Menu.Button>
-                  <Menu.Items className="z-50 absolute top-full mt-2 bg-white shadow-md rounded-md">
-                    {link.submenu.map((subLink) => (
-                      <Menu.Item key={subLink.label} className="border border-2 border-gray-800">
-                        {({ active }) => (
-                          <Link
-                            href={subLink.href}
-                            className={`block px-4 py-2 ${
-                              active ? "bg-gray-300 hover:transform hover:scale-110 transition-transform" : "bg-black text-white "
-                            } text-sm`}>
-                            {subLink.icon}
-                            {subLink.label}
-                          </Link>
-                        )}
-                      </Menu.Item>
-                    ))}
-                  </Menu.Items>
-                </Menu>
-              );
-            } else {
-              // Regular link rendering
-              return (
-                <li
-                  key={link.label}
-                  className={`flex flex-col items-center justify-center hover:font-bold hover:transform hover:scale-125 transition-transform ${
-                    pathname === link.href ? "hidden" : ""
-                  }`}>
-                  <Link href={link.href}>
-                    <div className="flex flex-col items-center justify-center cursor-pointer">
-                      {link.icon}
-                      <span className="mt-2">{link.label}</span>
-                    </div>
-                  </Link>
-                </li>
-              );
-            }
-          })}
+          {navLinks.map((link) => (
+            <li
+              key={link.label}
+              className={`flex flex-col items-center justify-center hover:font-bold hover:transform hover:scale-125 transition-transform ${
+                pathname === link.href ? "hidden" : ""
+              }`}>
+              <Link href={link.href}>
+                <div className="flex flex-col items-center justify-center cursor-pointer">
+                  {link.icon}
+                  <span className="mt-2">{link.label}</span>
+                </div>
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
