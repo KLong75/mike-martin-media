@@ -23,38 +23,42 @@ import { FaClapperboard } from "react-icons/fa6";
 const navLinks = [
   {
     href: "/",
-    label: "About",
-    icon: <FaClapperboard size={24} />,
+    label: "Home",
+    // icon: <FaClapperboard size={24} />,
   },
   {
-    href: "/the_mmm_team",
-    label: "The Team",
-    icon: <RiTeamFill size={24} />,
+    href: "/about_us",
+    label: "About Us",
   },
+  // {
+  //   href: "/the_mmm_team",
+  //   label: "The Team",
+  //   // icon: <RiTeamFill size={24} />,
+  // },
   {
     href: "/mmm_video",
-    label: "Video",
-    icon: <FaVideo size={24} />,
+    label: "Our Videos",
+    // icon: <FaVideo size={24} />,
   },
-  {
-    href: "/livestream",
-    label: "Livestream",
-    icon: <BsBroadcast size={24} />,
-  },
-  {
-    href: "/photography",
-    label: "Photography",
-    icon: <FaCameraRetro size={24} />,
-  },
+  // {
+  //   href: "/livestream",
+  //   label: "Livestream",
+  //   // icon: <BsBroadcast size={24} />,
+  // },
+  // {
+  //   href: "/photography",
+  //   label: "Photography",
+  //   // icon: <FaCameraRetro size={24} />,
+  // },
   {
     href: "/blog",
-    label: "MMM Blog",
-    icon: <RiBallPenFill size={24} />,
+    label: "Blog",
+    // icon: <RiBallPenFill size={24} />,
   },
   {
     href: "/contact",
-    label: "Contact",
-    icon: <FaEnvelope size={24} />,
+    label: "Contact Us",
+    // icon: <FaEnvelope size={24} />,
   },
 ];
 
