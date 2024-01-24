@@ -8,7 +8,7 @@ export default function BannerVideo({src, title}) {
   return (
     <section className="grid grid-cols-1 gap-4">
       <div className="relative flex justify-center">
-        <div className="w-full aspect-ratio-container"> 
+        <div className="w-full banner-video-aspect-ratio-container"> 
           <iframe
             title={title}
             src={src}
