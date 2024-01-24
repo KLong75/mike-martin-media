@@ -27,8 +27,8 @@ const navLinks = [
     // icon: <FaClapperboard size={24} />,
   },
   {
-    href: "/about_us",
-    label: "About Us",
+    href: "/about_mmm",
+    label: "About MMM",
   },
   // {
   //   href: "/the_mmm_team",

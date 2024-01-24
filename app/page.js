@@ -15,22 +15,37 @@ import MMMLineLogoBlack from "./ui/mmmLineLogoBlack";
 import { FaVideo, FaCameraRetro } from "react-icons/fa6";
 import { BsBroadcast } from "react-icons/bs";
 import { RiTeamFill } from "react-icons/ri";
+import MmmSiteButton from "./ui/mmmSiteButton";
 
 export default function Home() {
   return (
     <main className="grid grid-cols-1 gap-4 ">
       <BannerVideo src="https://player.vimeo.com/video/903012192?h=3c366b24ba&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" />
-      <div className="flex justify-center items-center mt-6 mb-2">
-        <h2 className="text-4xl font-bold mr-2">About </h2>
-        <div className="flex justify-center items-center w-24 h-8 mb-1">
-          <Image
-            src="/branding/mmm_black.png"
-            width={294}
-            height={95}
-            alt="company logo"
+
+      <div className="bg-black text-white flex flex-col justify-center items-center w-full h-32 -mt-4">
+        <div className="flex justify-center items-center p-1">
+          <h2 className="text-4xl font-bold mr-1">YOUR IDEAS,</h2>
+          <div className="flex justify-center items-center w-9 h-8 mb-1">
+            <Image
+              src="/branding/whiteM.png"
+              width={101}
+              height={95}
+              alt="company logo"
+            />
+          </div>
+          <h2 className="text-4xl font-bold mr-2">ADE</h2>
+        </div>
+        <div className="flex justify-center items-center p-1">
+          <MmmSiteButton
+            href="about_mmm"
+            label="ABOUT "
+            backgroundColor="bg-white"
+            textColor="text-black"
+            imgSrc="/branding/mmm_black.png"
           />
         </div>
       </div>
+
       <TextSegment
         text="Mike Martin Media (MMM) specializes in video production and creative
           services for corporations, nonprofits, education and medical

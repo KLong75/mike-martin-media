@@ -17,9 +17,6 @@ export default function BannerVideo({src, title}) {
           ></iframe>
         </div>
       </div>
-      <div className="">
-        <MMMLineLogoBlack />
-      </div>
     </section>
   );
   
