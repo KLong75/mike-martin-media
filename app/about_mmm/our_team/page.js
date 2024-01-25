@@ -1,9 +1,9 @@
 // import from next
 import Image from "next/image";
 // import components
-import ContactUsButton from "../ui/contactUsButton";
-import TeamGallery from "../ui/teamGallery";
-import TextSegment from "../ui/textSegment.js";
+import ContactUsButton from "../../ui/contactUsButton";
+import TeamGallery from "../../ui/teamGallery";
+import TextSegment from "../../ui/textSegment.js";
 // import Icons
 import { RiTeamFill } from "react-icons/ri";
 

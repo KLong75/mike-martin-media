@@ -110,6 +110,24 @@ export const teamData = [
   },
 ];
 
+export const weTextBlockData = [
+  {
+    headline: "WE PROMOTE.",
+    text:
+      "Whether you are promoting an event, initiative, product, or organization, MMM has you covered. From quick-turnaround promos to multi-stage campaigns, we have the experience and the team to get you outstanding results.",
+  },
+  {
+    headline: "WE INFORM.",
+    text:
+      "From scripted narratives to testimonial-driven spots, webinars to customer education, we give your message the medium it needs to impact (reach?) your audience.",
+  },
+  {
+    headline: "WE INSPIRE.",
+    text:
+      "We create the content that motivates your audience to smile or shed a tear, to reach out to loved ones or to make a change. Together, we can inspire them to take action. Your passion can become their passion, and we can make it happen.",
+  },
+];
+
 export const videoData = [
   {
     client: "Spire",
