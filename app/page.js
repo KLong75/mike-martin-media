@@ -11,18 +11,21 @@ import MmmGood from "./ui/mmmMmmMmmGood";
 import MeetTheTeamButton from "./ui/meetTheTeamButton";
 import WorkCategorySection from "./ui/workCategorySection";
 import MMMLineLogoBlack from "./ui/mmmLineLogoBlack";
+import TeamGallery from "./ui/teamGallery";
 // import Icons
 import { FaVideo, FaCameraRetro } from "react-icons/fa6";
 import { BsBroadcast } from "react-icons/bs";
 import { RiTeamFill } from "react-icons/ri";
 import MmmSiteButton from "./ui/mmmSiteButton";
+import OurWorkTiles from "./ui/ourWorkTiles";
+import MmmSiteButtonTextOnly from "./ui/mmmSiteButtonTextOnly";
 
 export default function Home() {
   return (
     <main className="grid grid-cols-1 gap-4 ">
       <BannerVideo src="https://player.vimeo.com/video/903012192?h=3c366b24ba&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" />
 
-      <div className="bg-black text-white flex flex-col justify-center items-center w-full h-32 -mt-4">
+      <div className="bg-black text-white flex flex-col justify-center items-center w-full h-36 -mt-4">
         <div className="flex justify-center items-center p-1">
           <h2 className="text-4xl font-bold mr-1">YOUR IDEAS,</h2>
           <div className="flex justify-center items-center w-9 h-8 mb-1">
@@ -35,7 +38,7 @@ export default function Home() {
           </div>
           <h2 className="text-4xl font-bold mr-2">ADE</h2>
         </div>
-        <div className="flex justify-center items-center p-1">
+        <div className="flex justify-center items-center p-2">
           <MmmSiteButton
             href="about_mmm"
             label="ABOUT "
@@ -45,8 +48,33 @@ export default function Home() {
           />
         </div>
       </div>
-
-      <TextSegment
+      <div className="flex justify-center items-center w-full h-10">
+        <h3 className="text-center font-bold text-2xl ">OUR WORK</h3>
+      </div>
+      <OurWorkTiles />
+      <div className="flex justify-center items-center p-2 ">
+      <MmmSiteButtonTextOnly
+        href="mmm_video"
+        label="LEARN MORE"
+        backgroundColor="bg-black"
+        textColor="text-white"
+      />
+       </div>
+       <div className="flex justify-center items-center mt-10">
+        {/* <div className="w-24 h-8 mx-2 mb-1">
+          <Image
+            src="/branding/mmm_black.png"
+            width={294}
+            height={95}
+            alt="company logo"
+          />
+        </div> */}
+        <h2 className="text-4xl font-bold -ml-2">Our Team</h2>
+      </div>
+       <div>
+        <TeamGallery />
+      </div>
+      {/* <TextSegment
         text="Mike Martin Media (MMM) specializes in video production and creative
           services for corporations, nonprofits, education and medical
           institutions. Our mission is to help our clients promote their causes,
@@ -121,7 +149,7 @@ export default function Home() {
 
       <div className="flex justify-center mt-2 mb-8 ">
         <MeetTheTeamButton />
-      </div>
+      </div> */}
     </main>
   );
 }

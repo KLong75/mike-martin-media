@@ -1,7 +1,7 @@
 export default function EducationalVideos() {
   return (
     <div>
-      <h1>Educational Videos</h1>
+      <h1>Education Videos</h1>
     </div>
   )
 } 

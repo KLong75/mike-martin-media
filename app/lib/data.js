@@ -1,3 +1,36 @@
+export const ourWorkTilesData = [
+  {
+    title: "Medical",
+    image_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
+    href: "/mmm_video/medical_videos",
+  },
+  {
+    title: "Nonprofit",
+    image_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
+    href: "/mmm_video/nonprofit_videos",
+  },
+  {
+    title: "Corporate",
+    image_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
+    href: "/mmm_video/corporate_content",
+  },
+  {
+    title: "Education",
+    image_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
+    href: "/mmm_video/education_videos",
+  },
+  {
+    title: "Livestreaming",
+    image_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
+    href: "/mmm_video/livestreaming",
+  },
+  {
+    title: "Photography",
+    image_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
+    href: "/mmm_video/photography",
+  },
+];
+
 export const teamData = [
   {
     name: "Michael Martin",
