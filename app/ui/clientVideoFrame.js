@@ -18,32 +18,28 @@ export default function ClientVideoFrame({
 
   return (
     <>
-      <div className="flex justify-center items-center">
-        <h3 className="text-sm font-bold">{client}</h3>
-      </div>
-      <div className="flex justify-center items-center -mb-12  md:-mb-4 lg:-mb-2">
-        <h4 className="text-sm font-bold">{category}</h4>
-      </div>
       <div
-        className="flex justify-center items-center w-full mt-10 md:mt-2 lg:mt-0  cursor-pointer p-4 "
+        className="relative flex justify-center items-center w-full h-auto cursor-pointer p-4 md:p-0"
         onClick={() => setVideoWindowOpen(true)}>
         <Image
-          id='video-thumbnail'
+          id="video-thumbnail"
           className="cursor-pointer shadow-lg"
           src={thumbnail_src}
-          height={250}
-          width={444}
+          height={540}
+          width={960}
           alt="video thumbnail"
         />
+        <span
+          className="absolute font-bold text-center text-xl"
+          style={{
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}>
+          {client}
+        </span>
       </div>
-      <div className="p-2 flex justify-center items-center w-auto">
-        <Image
-          src="/branding/mmm_line_logo.png"
-          height={60}
-          width={1140}
-          alt="MMM logo"
-        />
-      </div>
+
       <Dialog open={videoWindowOpen} onClose={() => setVideoWindowOpen(false)}>
         <Dialog.Overlay className="fixed inset-0 bg-black opacity-95" />
         <Dialog.Panel className="fixed inset-0 z-10 overflow-auto">
@@ -55,10 +51,8 @@ export default function ClientVideoFrame({
                 <HiX size={28} color="white" />
               </button>
             </div>
-            <div className="flex flex-col justify-center items-center w-full md:mb-10">
-              <h3 className="text-2xl font-bold text-white">{client}</h3>
-              <h4 className="text-xl font-bold text-white">{category}</h4>
-              <h5 className="text-sm font-bold text-white">by Mike Martin Media</h5>
+            <div className="flex flex-col justify-center items-center w-full md:mb-16">
+              <h2 className="text-2xl font-bold text-white">{client}</h2>
             </div>
             <div className="w-full h-auto sm:-mt-6">
               <iframe

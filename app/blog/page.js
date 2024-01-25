@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <main className="bg-slate-50 flex-1 ">
       <div className="flex justify-center items-center mt-6 mb-2">
-        <h2 className="text-4xl font-bold mr-2">The </h2>
+       
         <div className="flex justify-center items-center w-24 h-8 mb-1">
           <Image
             src="/branding/mmm_black.png"
@@ -24,10 +24,10 @@ export default function Page() {
             alt="company logo"
           />
         </div>
-        <h2 className="text-4xl font-bold ml-2">Story</h2>
+        <h2 className="text-4xl font-bold ml-2">Beyond the Lens</h2>
       </div>
       <TextSegment 
-        text="We dedicate our lives to telling your story. We invite you to take a look at ours. Here is a “behind-the-scenes” look as we highlight clients we love and work on projects of all sizes, shapes, and scopes." 
+        text="Venture beyond the lens and take a look behind the scenes." 
       />
       {/* <div className="flex justify-center items-center -mt-2 mb-2">
       <MMMLineLogoBlack />

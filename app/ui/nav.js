@@ -37,7 +37,7 @@ const navLinks = [
   // },
   {
     href: "/mmm_video",
-    label: "Our Videos",
+    label: "Our Work",
     // icon: <FaVideo size={24} />,
   },
   // {
