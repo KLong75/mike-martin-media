@@ -14,7 +14,7 @@ export default function Page() {
       <h2 className="text-center font-bold text-4xl mt-4">About MMM</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:p-16">
         <div className="flex flex-col justify-center items-center h-full p-6">
-          <div className=" lg:h-3/4 ">
+          <div className="lg:h-3/4">
             <p className="text-left lg:text-2xl w-full shadow-2xl p-6">
               For over 15 years, MMM has combined the latest technology with the
               best in-house talent to create impactful videos for organizations
@@ -29,21 +29,22 @@ export default function Page() {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center p-6">
-          <div className="mb-6 w-full flex justify-center lg:w-3/4">
+          <div className="shadow-2xl mb-6 w-full flex justify-center lg:w-3/4">
             <Image
               src="/images/aboutPage/mike-van.jpg"
               width={2048}
               height={1363}
               alt="Mike in van with camera"
-             
+              className="shadow-xl"
             />
           </div>
-          <div className="w-full flex justify-center lg:w-1/2 ">
+          <div className="shadow-2xl w-full flex justify-center lg:w-1/2 ">
             <Image
               src="/images/aboutPage/mike-standing-camera.jpg"
               width={1152}
               height={2048}
               alt="Mike standing with camera"
+              className="shadow-xl"
             />
           </div>
         </div>

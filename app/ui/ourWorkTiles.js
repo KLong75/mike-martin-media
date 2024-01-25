@@ -10,16 +10,16 @@ export default function OurWorkTiles() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-0 w-10/12 md:w-full">
         {ourWorkTilesData.map((tile) => (
           <Link href={tile.href} key={tile.title}>
-          <div className="relative pb-8 md:pb-0">
+          <div className="relative pb-8 md:pb-0 hover:transform hover:scale-110 hover:z-40 transition-transform">
             <div className="w-full h-auto ">
               <Image
                 src={tile.image_src}
-                width={593}
-                height={334}
+                width={960}
+                height={540}
                 alt={tile.title}
               />
             </div>
-            <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl font-bold text-white">{tile.title}</span>
+            <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl lg:text-4xl font-bold text-white ">{tile.title}</span>
           </div>
           </Link>
         ))}

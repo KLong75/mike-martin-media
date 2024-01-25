@@ -1,32 +1,32 @@
 export const ourWorkTilesData = [
   {
     title: "Medical",
-    image_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
+    image_src: "/images/ourWorkTileImages/medical.jpg",
     href: "/mmm_video/medical_videos",
   },
   {
-    title: "Nonprofit",
-    image_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
-    href: "/mmm_video/nonprofit_videos",
-  },
-  {
-    title: "Corporate",
-    image_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
-    href: "/mmm_video/corporate_content",
-  },
-  {
     title: "Education",
-    image_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
+    image_src: "/images/ourWorkTileImages/education.jpg",
     href: "/mmm_video/education_videos",
   },
   {
+    title: "Corporate",
+    image_src: "/images/ourWorkTileImages/corporate.jpg",
+    href: "/mmm_video/corporate_content",
+  },
+  {
+    title: "Nonprofit",
+    image_src: "/images/ourWorkTileImages/nonprofit.jpg",
+    href: "/mmm_video/nonprofit_videos",
+  },
+  {
     title: "Livestreaming",
-    image_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
+    image_src: "/images/ourWorkTileImages/livestreaming.jpg",
     href: "/mmm_video/livestreaming",
   },
   {
     title: "Photography",
-    image_src: "/images/video-thumbnails/mmm_test_thumbnail.png",
+    image_src: "/images/ourWorkTileImages/photography.jpg",
     href: "/mmm_video/photography",
   },
 ];
