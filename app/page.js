@@ -1,6 +1,7 @@
 "use client";
 // import from next
 import Image from "next/image";
+import Link from "next/link";
 // import from react
 // import { useState, useEffect } from "react";
 // import components
@@ -12,6 +13,7 @@ import MeetTheTeamButton from "./ui/meetTheTeamButton";
 import WorkCategorySection from "./ui/workCategorySection";
 import MMMLineLogoBlack from "./ui/mmmLineLogoBlack";
 import TeamGallery from "./ui/teamGallery";
+import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
 // import Icons
 import { FaVideo, FaCameraRetro } from "react-icons/fa6";
 import { BsBroadcast } from "react-icons/bs";
@@ -24,7 +26,6 @@ export default function Home() {
   return (
     <main className="grid grid-cols-1 gap-4 ">
       <BannerVideo src="https://player.vimeo.com/video/903012192?h=3c366b24ba&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" />
-
       <div className="bg-black text-white flex flex-col justify-center items-center w-full h-36 -mt-4">
         <div className="flex justify-center items-center p-1">
           <h2 className="text-4xl font-bold mr-2">YOUR IDEAS,</h2>
@@ -78,6 +79,30 @@ export default function Home() {
       </section>
       <section>
         <BannerVideo src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" />
+      </section>
+
+      <section>
+        <div className="flex justify-center items-center mt-10">
+          <div className="w-24 h-8 mx-2 mb-1">
+            <Image
+              src="/branding/mmm_black.png"
+              width={294}
+              height={95}
+              alt="company logo"
+            />
+          </div>
+          <h2 className="text-4xl font-bold -ml-2">Blog</h2>
+        </div>
+        <TextSegment text=" Check out some of our latest adventures as we film and travel across town and around the country. Try to keep up, we move fast!" />
+        <div className="flex justify-center items-center p-2 ">
+          <MmmSiteButtonLogoFirst
+            href="blog"
+            label="BLOG"
+            backgroundColor="bg-black"
+            textColor="text-white"
+            imgSrc="/branding/mmm_logo_white.png"
+          />
+        </div>
       </section>
       {/* <TextSegment
         text="Mike Martin Media (MMM) specializes in video production and creative
