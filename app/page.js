@@ -27,7 +27,7 @@ export default function Home() {
 
       <div className="bg-black text-white flex flex-col justify-center items-center w-full h-36 -mt-4">
         <div className="flex justify-center items-center p-1">
-          <h2 className="text-4xl font-bold mr-1">YOUR IDEAS,</h2>
+          <h2 className="text-4xl font-bold mr-2">YOUR IDEAS,</h2>
           <div className="flex justify-center items-center w-9 h-8 mb-1">
             <Image
               src="/branding/whiteM.png"
@@ -36,7 +36,7 @@ export default function Home() {
               alt="company logo"
             />
           </div>
-          <h2 className="text-4xl font-bold mr-2">ADE</h2>
+          <h2 className="text-4xl font-bold ml-1">ADE</h2>
         </div>
         <div className="flex justify-center items-center p-2">
           <MmmSiteButton
@@ -53,28 +53,32 @@ export default function Home() {
       </div>
       <OurWorkTiles />
       <div className="flex justify-center items-center p-2 ">
-      <MmmSiteButtonTextOnly
-        href="mmm_video"
-        label="LEARN MORE"
-        backgroundColor="bg-black"
-        textColor="text-white"
-      />
-       </div>
-       <div className="flex justify-center items-center mt-10">
-        {/* <div className="w-24 h-8 mx-2 mb-1">
-          <Image
-            src="/branding/mmm_black.png"
-            width={294}
-            height={95}
-            alt="company logo"
-          />
-        </div> */}
-        <h2 className="text-4xl font-bold -ml-2">Our Team</h2>
+        <MmmSiteButtonTextOnly
+          href="mmm_video"
+          label="LEARN MORE"
+          backgroundColor="bg-black"
+          textColor="text-white"
+        />
       </div>
-       <div>
-        <TeamGallery />
-      </div>
-      <BannerVideo src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" />
+      <section>
+        <div className="flex justify-center items-center mt-10">
+          <div className="w-24 h-8 mx-2 mb-1">
+            <Image
+              src="/branding/mmm_black.png"
+              width={294}
+              height={95}
+              alt="company logo"
+            />
+          </div>
+          <h2 className="text-4xl font-bold -ml-2">eet the Team</h2>
+        </div>
+        <div className="">
+          <TeamGallery />
+        </div>
+      </section>
+      <section>
+        <BannerVideo src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" />
+      </section>
       {/* <TextSegment
         text="Mike Martin Media (MMM) specializes in video production and creative
           services for corporations, nonprofits, education and medical
