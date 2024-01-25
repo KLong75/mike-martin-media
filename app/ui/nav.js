@@ -71,25 +71,25 @@ export default function Nav() {
     <nav className="flex p-4 z-40 ">
       {/* Mobile Nav Menu */}
       <Dialog open={menuOpen} onClose={() => setMenuOpen(false)}>
-        <Dialog.Overlay className="fixed inset-0 bg-black opacity-80" />
+        <Dialog.Overlay className="fixed inset-0 bg-black " />
         <Dialog.Panel className="fixed inset-0 z-10">
           <div className="flex justify-center items-center h-full">
-            <div className="relative bg-white w-full h-full flex flex-col justify-center items-center">
+            <div className="relative text-white bg:black w-full h-full flex flex-col justify-center items-center">
               <button
                 onClick={() => setMenuOpen(false)}
                 className="absolute top-0 right-0 mt-10 mr-7">
                 <HiX size={28} />
               </button>
-              <div className="mb-6">
+              <div className="mb-6 w-72 h-auto">
                 <Image
-                  src="/branding/mmm_black_x.png"
+                  src="/branding/whiteMmmLogo.png"
                   alt="logo"
-                  width={160}
-                  height={52}
+                  width={9337}
+                  height={3798}
                 />
               </div>
              {/* Nav Links */}
-             <ul className="space-y-4">
+             <ul className="space-y-4 text-xl">
                 {navLinks.map((link) => (
                   <li
                     key={link.label}
