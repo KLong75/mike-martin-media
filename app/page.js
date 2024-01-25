@@ -74,6 +74,7 @@ export default function Home() {
        <div>
         <TeamGallery />
       </div>
+      <BannerVideo src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" />
       {/* <TextSegment
         text="Mike Martin Media (MMM) specializes in video production and creative
           services for corporations, nonprofits, education and medical
