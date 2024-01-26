@@ -13,10 +13,11 @@ export default function OurWorkTiles() {
           <div className="text-white relative pb-8 md:pb-0 hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform">
             <div className="w-full h-auto ">
               <Image
+                priority
                 src={tile.image_src}
                 width={960}
                 height={540}
-                alt={tile.title}
+                alt={`thumbnail image for ${tile.title} category`}
               />
             </div>
             <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl lg:text-4xl font-bold  ">{tile.title}</span>
