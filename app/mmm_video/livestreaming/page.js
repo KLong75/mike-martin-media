@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <div className="flex justify-center items-center mt-12 mb-6">
+    <main className="flex justify-center items-center mt-12 mb-6">
         <div className="flex justify-center items-center w-24 h-8 mb-1">
           <Image
             src="/branding/mmm_black.png"
@@ -16,6 +16,6 @@ export default function Page() {
           />
         </div>
         <h2 className="text-4xl font-bold ml-1">Livestream</h2>
-      </div>
+      </main>
   );
 }
