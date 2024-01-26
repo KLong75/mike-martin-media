@@ -52,7 +52,7 @@ export default function ClientVideoFrame({
       </div>
 
       <Dialog open={videoWindowOpen} onClose={() => setVideoWindowOpen(false)}>
-        <Dialog.Overlay className="fixed inset-0 bg-black opacity-95" />
+        <Dialog.Overlay className="fixed inset-0 bg-black opacity-98" />
         <Dialog.Panel className="fixed inset-0 z-10 overflow-auto">
           <div className="flex flex-col justify-center items-center h-full p-4">
             <div className="flex justify-end items-start w-full">
