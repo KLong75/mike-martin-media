@@ -10,13 +10,13 @@ import { Dialog } from "@headlessui/react";
 // import icons
 import { MdDehaze } from "react-icons/md";
 import { HiX } from "react-icons/hi";
-import { FaVideo } from "react-icons/fa6";
-import { BsBroadcast } from "react-icons/bs";
-import { FaCameraRetro } from "react-icons/fa6";
-import { RiTeamFill } from "react-icons/ri";
-import { RiBallPenFill } from "react-icons/ri";
-import { FaEnvelope } from "react-icons/fa6";
-import { FaClapperboard } from "react-icons/fa6";
+// import { FaVideo } from "react-icons/fa6";
+// import { BsBroadcast } from "react-icons/bs";
+// import { FaCameraRetro } from "react-icons/fa6";
+// import { RiTeamFill } from "react-icons/ri";
+// import { RiBallPenFill } from "react-icons/ri";
+// import { FaEnvelope } from "react-icons/fa6";
+// import { FaClapperboard } from "react-icons/fa6";
 // import { FaFileVideo } from "react-icons/fa6";
 // import { RiFolderVideoFill } from "react-icons/ri";
 
@@ -24,41 +24,22 @@ const navLinks = [
   {
     href: "/",
     label: "Home",
-    // icon: <FaClapperboard size={24} />,
   },
   {
     href: "/about_mmm",
     label: "About MMM",
   },
-  // {
-  //   href: "/the_mmm_team",
-  //   label: "The Team",
-  //   // icon: <RiTeamFill size={24} />,
-  // },
   {
     href: "/mmm_video",
     label: "Our Work",
-    // icon: <FaVideo size={24} />,
   },
-  // {
-  //   href: "/livestream",
-  //   label: "Livestream",
-  //   // icon: <BsBroadcast size={24} />,
-  // },
-  // {
-  //   href: "/photography",
-  //   label: "Photography",
-  //   // icon: <FaCameraRetro size={24} />,
-  // },
   {
     href: "/blog",
     label: "Blog",
-    // icon: <RiBallPenFill size={24} />,
   },
   {
     href: "/contact",
     label: "Contact Us",
-    // icon: <FaEnvelope size={24} />,
   },
 ];
 
@@ -127,13 +108,13 @@ export default function Nav() {
           {navLinks.map((link) => (
             <li
               key={link.label}
-              className={`flex flex-col items-center justify-center hover:font-bold hover:transform hover:scale-125 transition-transform ${
+              className={`flex flex-col items-center justify-center  ${
                 pathname === link.href ? "hidden" : ""
               }`}>
               <Link href={link.href}>
                 <div className="flex flex-col items-center justify-center cursor-pointer">
                   {link.icon}
-                  <span className="mt-2">{link.label}</span>
+                  <span className="mt-2 hover:font-medium hover:transform hover:scale-125 transition-transform">{link.label}</span>
                 </div>
               </Link>
             </li>

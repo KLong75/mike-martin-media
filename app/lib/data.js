@@ -162,7 +162,7 @@ export const videoData = [
     category: "Medical",
     client: "BJC AMHF Duck Pluckers Ball",
     thumbnail_src: "/images/ourWorkTileImages/medical.jpg",
-    src: "https://player.vimeo.com/video/900179612?h=690b0e7751&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+    src: "https://player.vimeo.com/video/905668122?h=44f7031f29&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Medical",
