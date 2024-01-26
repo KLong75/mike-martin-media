@@ -7,7 +7,7 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
       <div className="flex justify-center p-4">
         <div className="mt-4 w-72 h-auto ">
           <Image
-            className="shadow-xl border-2 border-black"
+            className="shadow-2xl border-2 border-black"
             src={image_src}
             alt={name}
             width={900}

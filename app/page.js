@@ -25,7 +25,10 @@ import MmmSiteButtonTextOnly from "./ui/mmmSiteButtonTextOnly";
 export default function Home() {
   return (
     <main className="grid grid-cols-1 gap-4 ">
-      <BannerVideo src="https://player.vimeo.com/video/906520722?h=fe8eda318f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" />
+      <BannerVideo 
+        src="https://player.vimeo.com/video/906520722?h=fe8eda318f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" 
+        title="MMM Promotional Video"
+      />
       <div className="bg-black text-white flex flex-col justify-center items-center w-full h-36 -mt-4">
         <div className="flex justify-center items-center p-1">
           <h2 className="text-4xl font-bold mr-2">YOUR IDEAS,</h2>
@@ -78,9 +81,11 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <BannerVideo src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" />
+        <BannerVideo 
+          src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" 
+          title="MMM Travel Video"
+        />
       </section>
-
       <section>
         <div className="flex justify-center items-center mt-10">
           <div className="w-24 h-8 mx-2 mb-1">
