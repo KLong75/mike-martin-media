@@ -41,7 +41,7 @@ export default function ClientVideoFrame({
           alt="video thumbnail"
         />
         <span
-          className="absolute font-bold text-center text-xl"
+          className={`absolute font-bold text-center text-xl ${imageVisible ? '' : 'hidden'}`}
           style={{
             top: "50%",
             left: "50%",
@@ -63,7 +63,7 @@ export default function ClientVideoFrame({
               </button>
             </div>
             <div className="z-40 flex flex-col justify-center items-center w-full mt-24 md:mt-10">
-              <h2 className="text-center text-2xl font-bold text-white">{client}</h2>
+              <Dialog.Title className="text-center text-2xl font-bold text-white">{client}</Dialog.Title>
             </div>
              <div className="w-full h-full flex justify-center items-center -mt-36 md:mt-0">
               <iframe
@@ -71,7 +71,7 @@ export default function ClientVideoFrame({
                 client={client}
                 category={category}
                 allow="autoplay; fullscreen; picture-in-picture"
-                className="w-full gallery-iframe-height"></iframe>
+                className="w-full gallery-iframe-height z-40"></iframe>
             </div>
             <div className="w-auto ">
               <Image
