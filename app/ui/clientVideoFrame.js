@@ -15,15 +15,26 @@ export default function ClientVideoFrame({
   thumbnail_src,
 }) {
   const [videoWindowOpen, setVideoWindowOpen] = useState(false);
+  const [imageVisible, setImageVisible] = useState(true);
+
+  const handleClick = () => {
+    setImageVisible(false);
+    setVideoWindowOpen(true);
+  }
+
+  const handleDialogClose = () => {
+    setImageVisible(true);
+    setVideoWindowOpen(false);
+  }
 
   return (
     <>
       <div
         className="relative flex justify-center items-center w-full h-auto cursor-pointer p-4 md:p-0"
-        onClick={() => setVideoWindowOpen(true)}>
+        onClick={handleClick}>
         <Image
           id="video-thumbnail"
-          className="cursor-pointer shadow-lg"
+          className={`cursor-pointer shadow-lg ${imageVisible ? '' : 'hidden'}`}
           src={thumbnail_src}
           height={540}
           width={960}
@@ -46,15 +57,15 @@ export default function ClientVideoFrame({
           <div className="flex flex-col justify-center items-center h-full p-4">
             <div className="flex justify-end items-start w-full">
               <button
-                onClick={() => setVideoWindowOpen(false)}
+                onClick={handleDialogClose}
                 className="absolute top-0 right-0 mt-4 mr-4">
                 <HiX size={28} color="white" />
               </button>
             </div>
-            <div className="flex flex-col justify-center items-center w-full md:mb-16">
-              <h2 className="text-2xl font-bold text-white">{client}</h2>
+            <div className="z-40 flex flex-col justify-center items-center w-full mt-24 md:mt-10">
+              <h2 className="text-center text-2xl font-bold text-white">{client}</h2>
             </div>
-            <div className="w-full h-auto sm:-mt-6">
+             <div className="w-full h-full flex justify-center items-center -mt-28 md:mt-0">
               <iframe
                 src={src}
                 client={client}
@@ -62,7 +73,7 @@ export default function ClientVideoFrame({
                 allow="autoplay; fullscreen; picture-in-picture"
                 className="w-full gallery-iframe-height"></iframe>
             </div>
-            <div className="w-auto mt-4">
+            <div className="w-auto ">
               <Image
                 src="/branding/mmm_line_logo_white.png"
                 height={60}

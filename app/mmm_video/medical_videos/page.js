@@ -1,4 +1,4 @@
-import MmmSiteButton from "@/app/ui/mmmSiteButton";
+// import components
 import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
 import VideoGallery from "@/app/ui/videoGallery";
 
@@ -10,13 +10,13 @@ export default function MedicalVideos() {
         <VideoGallery selectedCategory="Medical" />
       </section>
       <div className="flex justify-center items-center p-12">
-      <MmmSiteButtonTextOnly
-        href="/mmm_video"
-        label="WATCH MORE"
-        backgroundColor="bg-black"
-        textColor="text-white"
+        <MmmSiteButtonTextOnly
+          href="/mmm_video"
+          label="WATCH MORE"
+          backgroundColor="bg-black"
+          textColor="text-white"
         />
-        </div>
+      </div>
     </main>
   );
 }
