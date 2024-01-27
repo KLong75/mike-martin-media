@@ -19,7 +19,7 @@ export default function Footer() {
           />
         </div>
 
-        <div className=" mt-">
+        <div className=" mt-6 md:mt-0">
           <ContactInfo />
         </div>
         <div className="flex justify-center items-center w-full mt-4 mb-4">
