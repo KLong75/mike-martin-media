@@ -8,18 +8,18 @@ import ContactInfo from "./contactInfo";
 export default function Footer() {
   return (
     <footer className=" bg-black text-white">
-      <div className="grid grid-cols-1  justify-items-center">
-        {/* <div className="flex justify-center items-center w-32 h-auto">
+      <div className="grid grid-cols-1  justify-items-center mt-2">
+        <div className="hidden md:flex justify-center items-center w-32 h-auto">
           <Image
-            src="/branding/mmm_black.png"
+            src="/branding/mmm_logo_white.png"
             alt="logo"
             width={294}
             height={95}
             className="p-4"
           />
-        </div> */}
+        </div>
 
-        <div className=" mt-6">
+        <div className=" mt-">
           <ContactInfo />
         </div>
         <div className="flex justify-center items-center w-full mt-4 mb-4">
@@ -32,14 +32,14 @@ export default function Footer() {
         </div>
         <span className="text-xs">Website by Rhythm Code Studio</span>
       </div>
-      {/* <div className="flex justify-center items-center w-full">
+      <div className="flex  md:hidden justify-center items-center w-full">
         <Image
-          src="/branding/mmm_white_line_crop.png"
-          height={252}
-          width={1600}
+          src="/branding/mmm_line_logo_white.png"
+          height={60}
+          width={1140}
           alt="MMM logo"
         />
-      </div> */}
+      </div>
     </footer>
   );
 }

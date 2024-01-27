@@ -3,13 +3,12 @@ import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
 
 export default function ContactInfo() {
   return (
-    <div className="justify-items-center">
+    <div className="justify-items-center md:mt-">
       <div className="flex flex-col text-center space-y-4">
         {/* <h2 className=" font-bold">Mike Martin Media</h2> */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-48">
-
           {/* Phone Number Section */}
-          <div className="group hover:transform hover:scale-110 transition-transform">
+          <div className="group hover:transform hover:scale-110 transition-transform md:mt-6">
             <div className="flex flex-col items-center">
             <IconLink
                 href="tel:636-212-0978"
@@ -27,7 +26,6 @@ export default function ContactInfo() {
               </a>
             </div>
           </div>
-
           {/* Address Section */}
           <div className="group hover:transform hover:scale-110 transition-transform mt-4 md:mt-0">
             <div className="flex flex-col items-center">
@@ -47,9 +45,8 @@ export default function ContactInfo() {
               </a>
             </div>
           </div>
-
           {/* Email Section */}
-          <div className="group hover:transform hover:scale-110 transition-transform mt-4 md:mt-0">
+          <div className="group hover:transform hover:scale-110 transition-transform mt-4 md:mt-6">
             <div className="flex flex-col items-center">
             <IconLink
                 href="mailto:mike@mikemartinmedia.com"
@@ -67,7 +64,6 @@ export default function ContactInfo() {
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </div>

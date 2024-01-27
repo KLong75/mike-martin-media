@@ -1,6 +1,11 @@
+// import from next
+import Image from "next/image";
 // import components
 import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideo from "../../ui/bannerVideo";
+// import data
+import { livestreamWorkSampleData } from "../../lib/data";
+import VideoGallery from "@/app/ui/videoGallery";
 
 export default function Page() {
   return (
@@ -24,16 +29,17 @@ export default function Page() {
             that works for you.
           </p>
         </div>
-        <div className="flex justify-center items-center p-4 ">
+        <div className="flex justify-center items-center p-4 lg:-mt-6">
           <ContactUsButton />
         </div>
       </section>
-      <section className=" justify-center items-center mt-2">
+      <section className=" justify-center items-center mt-2 lg:mt-12">
         <div className="flex justify-center">
-          <h3 className="text-lg font-bold">Available Streaming Services</h3>
+          <h3 className="text-xl font-bold">Available Streaming Services</h3>
         </div>
+
         <div className="flex justify-center items-center -mt-12">
-          <ul className="list-disc p-16 columns-1 md:columns-2">
+          <ul className="list-disc p-16 columns-1 md:columns-2 lg:ml-40">
             <li>Streaming capable on various platforms</li>
             <li>In-studio or on-site streaming</li>
             <li>Optimized for travel</li>
@@ -47,12 +53,25 @@ export default function Page() {
             <li>Collaboration with in-house or third party vendors</li>
             <li>Long-term livestream hosting</li>
             <li>Interactive options</li>
-            <li>
-              Will collaborate with your events team to ensure a smooth process
-            </li>
+            <li>Will collaborate with your team to ensure a smooth process</li>
             <li>Small to large audience size</li>
             <li>Online, in-person, and hybrid</li>
           </ul>
+        </div>
+      </section>
+      <section className="">
+        <div className="grid grid-cols-1">
+          <h4 className="text-xl text-center font-bold md:mb-12 lg:mb-20 ">
+            Recent Streams
+          </h4>
+          <div className="flex justify-center items-center">
+            <p className="text-left p-8 md:-mt-12 md:px-48 lg:-mt-24 lg:px-60 lg:mr-24 lg:ml-24">
+              Check out some recent live streams we have hosted.
+            </p>
+          </div>
+        </div>
+        <div className="mb-12 md:mb-16 lg:mb-24">
+          <VideoGallery selectedCategory="Livestreaming" />
         </div>
       </section>
     </main>
