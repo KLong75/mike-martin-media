@@ -15,7 +15,7 @@ export default function Page() {
           title="MMM Photography Slide Show"
         />
       </section>
-      <h2 className="p-6 md:p-8 lg:p-12 text-center text-3xl md:text-4xl font-extrabold ">
+      <h2 className="p-6 md:p-8 lg:p-12 md:mb-6 text-center text-3xl md:text-4xl font-extrabold ">
         Photography
       </h2>
       <section className="grid grid-cols-1">
