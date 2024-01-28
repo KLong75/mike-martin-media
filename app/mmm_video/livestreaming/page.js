@@ -1,10 +1,7 @@
-// import from next
-import Image from "next/image";
 // import components
 import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideo from "../../ui/bannerVideo";
 // import data
-import { livestreamWorkSampleData } from "../../lib/data";
 import VideoGallery from "@/app/ui/videoGallery";
 
 export default function Page() {

@@ -138,48 +138,48 @@ export const videoData = [
     category: "Medical",
     client: "SSM Cardinal Glennon Residency Recruitment Kayla Heller",
     src: "https://player.vimeo.com/video/872654095?h=2fbe224539&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-    thumbnail_src: "/images/ourWorkTileImages/medical.jpg",
+    thumbnail_src: "/images/video-thumbnails/medical/ssmCardinalGlennon.jpg",
   },
   {
     category: "Medical",
     client: "WUSM Emergency Medicine Residency Recruitment",
-    thumbnail_src: "/images/ourWorkTileImages/medical.jpg",
+    thumbnail_src: "/images/video-thumbnails/medical/ssmCardinalGlennon.jpg",
     src: "https://player.vimeo.com/video/866533299?h=90843c1f39&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Medical",
     client: "WUSM Neuromuscular Medicine Fellowship",
     src: "https://player.vimeo.com/video/900179612?h=690b0e7751&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-    thumbnail_src: "/images/ourWorkTileImages/medical.jpg",
+    thumbnail_src: "/images/video-thumbnails/medical/ssmCardinalGlennon.jpg",
   },
   {
     category: "Medical",
     client: "Siteman BTC Research",
-    thumbnail_src: "/images/ourWorkTileImages/medical.jpg",
+    thumbnail_src: "/images/video-thumbnails/medical/ssmCardinalGlennon.jpg",
     src: "https://player.vimeo.com/video/842642479?h=a33d343fee&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Medical",
     client: "BJC AMHF Duck Pluckers Ball",
-    thumbnail_src: "/images/ourWorkTileImages/medical.jpg",
+    thumbnail_src: "/images/video-thumbnails/medical/ssmCardinalGlennon.jpg",
     src: "https://player.vimeo.com/video/905668122?h=44f7031f29&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Medical",
     client: "St Louis Children's Hospital Employee Giving 2023",
-    thumbnail_src: "/images/ourWorkTileImages/medical.jpg",
+    thumbnail_src: "/images/video-thumbnails/medical/ssmCardinalGlennon.jpg",
     src: "https://player.vimeo.com/video/790947100?h=a476fa3e19&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Medical",
     client: "AHC PACT NASHVILLE_JOIN_AHC_TODAY",
-    thumbnail_src: "/images/ourWorkTileImages/medical.jpg",
+    thumbnail_src: "/images/video-thumbnails/medical/ssmCardinalGlennon.jpg",
     src: "https://player.vimeo.com/video/871994336?h=87fd41e833&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Medical",
     client: "Ascension Healthcare - St. Vincent",
-    thumbnail_src: "/images/ourWorkTileImages/medical.jpg",
+    thumbnail_src: "/images/video-thumbnails/medical/ssmCardinalGlennon.jpg",
     src: "https://player.vimeo.com/video/350343774?h=5211a400f9&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
@@ -364,25 +364,16 @@ export const videoData = [
   },
 ];
 
-export const livestreamWorkSampleData = [
-  {
-    category: "Livestreaming",
-    client: "WUSTL 2023 Spring Parents Council - Saturday",
-    thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
-    src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
-  {
-    category: "Livestreaming",
-    client: "PBH 2022 Livestream Spirit of Provident Gala",
-    thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
-    src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
-];
-
-
 export const photographyWorkSampleData = [
   {
-
+    client: "CCSTL Headshots",
+    thumbnail_src: "/images/ourWorkTileImages/photography.jpg",
+    images: [
+      {
+        title: "ccstl-1",
+        src: "/images/photographyWorkSamples/ccstl/ccstl-1.jpg",
+      }
+    ]
   },
 ];
 
