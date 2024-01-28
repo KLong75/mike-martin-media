@@ -10,7 +10,7 @@ export default function BannerVideo({src, title}) {
       <div className="relative flex justify-center">
         <div className="w-full banner-video-aspect-ratio-container"
         style={{
-          paddingTop: title === 'MMM Livestreaming Video' ? '42%' : '56.25%',
+          paddingTop: title === 'MMM Livestreaming Video' || "MMM Photography Slide Show" ? '42%' : '56.25%',
         }}
         > 
           <iframe

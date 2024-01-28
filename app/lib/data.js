@@ -190,25 +190,25 @@ export const videoData = [
   },
   {
     category: "Corporate",
-    client: "a",
+    client: "SCI_ARTCO_Recruitment ",
     thumbnail_src: "/images/ourWorkTileImages/corporate.jpg",
     src: "https://player.vimeo.com/video/&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Corporate",
-    client: "b",
+    client: "MMM in Grand Center",
     thumbnail_src: "/images/ourWorkTileImages/corporate.jpg",
     src: "https://player.vimeo.com/video/&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Corporate",
-    client: "c",
+    client: "GSEM Paddle Raise 2023",
     thumbnail_src: "/images/ourWorkTileImages/corporate.jpg",
     src: "https://player.vimeo.com/video/&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Corporate",
-    client: "d",
+    client: "Agilix FAQ Series Video",
     thumbnail_src: "/images/ourWorkTileImages/corporate.jpg",
     src: "https://player.vimeo.com/video/&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
@@ -367,17 +367,220 @@ export const videoData = [
 export const photographyWorkSampleData = [
   {
     client: "CCSTL Headshots",
-    thumbnail_src: "/images/ourWorkTileImages/photography.jpg",
+    thumbnail_src: "/images/photographyWorkSamples/ccstl/01.png",
+    width: 437,
+    height: 655,
     images: [
       {
-        title: "ccstl-1",
-        src: "/images/photographyWorkSamples/ccstl/ccstl-1.jpg",
-      }
+        title: "01",
+        src: "/images/photographyWorkSamples/ccstl/01.png",
+      },
+      {
+        title: "02",
+        src: "/images/photographyWorkSamples/ccstl/02.png",
+      },
+      {
+        title: "03",
+        src: "/images/photographyWorkSamples/ccstl/03.png",
+      },
+      {
+        title: "04",
+        src: "/images/photographyWorkSamples/ccstl/04.png",
+      },
+      {
+        title: "05",
+        src: "/images/photographyWorkSamples/ccstl/05.png",
+      },
+      {
+        title: "06",
+        src: "/images/photographyWorkSamples/ccstl/06.png",
+      },
+      {
+        title: "07",
+        src: "/images/photographyWorkSamples/ccstl/07.png",
+      },
+      {
+        title: "08",
+        src: "/images/photographyWorkSamples/ccstl/08.png",
+      },
+      {
+        title: "09",
+        src: "/images/photographyWorkSamples/ccstl/09.png",
+      },
+      {
+        title: "10",
+        src: "/images/photographyWorkSamples/ccstl/10.png",
+      },
+      {
+        title: "11",
+        src: "/images/photographyWorkSamples/ccstl/11.png",
+      },
+      {
+        title: "12",
+        src: "/images/photographyWorkSamples/ccstl/12.png",
+      },
+      {
+        title: "13",
+        src: "/images/photographyWorkSamples/ccstl/13.png",
+      },
+      {
+        title: "14",
+        src: "/images/photographyWorkSamples/ccstl/14.png",
+      },
+      {
+        title: "15",
+        src: "/images/photographyWorkSamples/ccstl/15.png",
+      },
+      {
+        title: "16",
+        src: "/images/photographyWorkSamples/ccstl/16.png",
+      },
+      {
+        title: "17",
+        src: "/images/photographyWorkSamples/ccstl/17.png",
+      },
+      {
+        title: "18",
+        src: "/images/photographyWorkSamples/ccstl/18.png",
+      },
+      {
+        title: "19",
+        src: "/images/photographyWorkSamples/ccstl/19.png",
+      },
+      {
+        title: "20",
+        src: "/images/photographyWorkSamples/ccstl/20.png",
+      },
+      {
+        title: "21",
+        src: "/images/photographyWorkSamples/ccstl/21.png",
+      },
+      {
+        title: "22",
+        src: "/images/photographyWorkSamples/ccstl/22.png",
+      },
+      {
+        title: "23",
+        src: "/images/photographyWorkSamples/ccstl/23.png",
+      },
+      {
+        title: "24",
+        src: "/images/photographyWorkSamples/ccstl/24.png",
+      },
+    ]
+  },
+  {
+    client: "Club Fitness",
+    thumbnail_src: "/images/photographyWorkSamples/clubFitness/01.png",
+    width: 374,
+    height: 536,
+    images: [
+      {
+        title: "01",
+        src: "/images/photographyWorkSamples/clubFitness/01.png",
+      },
+      {
+        title: "02",
+        src: "/images/photographyWorkSamples/clubFitness/02.png",
+      },
+      {
+        title: "03",
+        src: "/images/photographyWorkSamples/clubFitness/03.png",
+      },
+      {
+        title: "04",
+        src: "/images/photographyWorkSamples/clubFitness/04.png",
+      },
+      {
+        title: "05",
+        src: "/images/photographyWorkSamples/clubFitness/05.png",
+      },
+      {
+        title: "06",
+        src: "/images/photographyWorkSamples/clubFitness/06.png",
+      },
+      {
+        title: "07",
+        src: "/images/photographyWorkSamples/clubFitness/07.png",
+      },
+      {
+        title: "08",
+        src: "/images/photographyWorkSamples/clubFitness/08.png",
+      },
+      {
+        title: "09",
+        src: "/images/photographyWorkSamples/clubFitness/09.png",
+      },
+      {
+        title: "10",
+        src: "/images/photographyWorkSamples/clubFitness/10.png",
+      },
+    ]
+  },
+  {
+    client: "Prasino",
+    thumbnail_src: "/images/photographyWorkSamples/prasino/01.png",
+    width: 500,
+    height: 333,
+    images: [
+      {
+        title: "01",
+        src: "/images/photographyWorkSamples/prasino/01.png",
+      },
+      {
+        title: "02",
+        src: "/images/photographyWorkSamples/prasino/02.png",
+      },
+      {
+        title: "03",
+        src: "/images/photographyWorkSamples/prasino/03.png",
+      },
+      {
+        title: "04",
+        src: "/images/photographyWorkSamples/prasino/04.png",
+      },
+      {
+        title: "05",
+        src: "/images/photographyWorkSamples/prasino/05.png",
+      },
+      {
+        title: "06",
+        src: "/images/photographyWorkSamples/prasino/06.png",
+      },
+      {
+        title: "07",
+        src: "/images/photographyWorkSamples/prasino/07.png",
+      },
+      {
+        title: "08",
+        src: "/images/photographyWorkSamples/prasino/08.png",
+      },
+      {
+        title: "09",
+        src: "/images/photographyWorkSamples/prasino/09.png",
+      },
+      {
+        title: "10",
+        src: "/images/photographyWorkSamples/prasino/10.png",
+      },
+      {
+        title: "11",
+        src: "/images/photographyWorkSamples/prasino/11.png",
+      },
+      {
+        title: "12",
+        src: "/images/photographyWorkSamples/prasino/12.png",
+      },
+      {
+        title: "13",
+        src: "/images/photographyWorkSamples/prasino/13.png",
+      },
     ]
   },
 ];
 
 
+  
 export const blogPosts = [
   {
     title: "Inside MMM's Arizona Trip",
