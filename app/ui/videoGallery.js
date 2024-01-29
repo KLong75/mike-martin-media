@@ -29,7 +29,7 @@ export default function VideoGallery( {selectedCategory}) {
           <div key={video.client} className="text-white w-full h-auto hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform">
             <ClientVideoFrame
               src={video.src}
-              client={video.client}
+              client={video.client.toUpperCase()}
               category={video.category}
               thumbnail_src={video.thumbnail_src}
             />
