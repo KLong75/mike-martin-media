@@ -5,6 +5,7 @@ import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideo from "../../ui/bannerVideo";
 // import data
 import { photographyWorkSampleData } from "@/app/lib/data";
+import PhotographyGallery from "@/app/ui/photographyGallery";
 
 export default function Page() {
   return (
@@ -30,7 +31,13 @@ export default function Page() {
       <div className=" flex justify-center items-center ">
         {/* prasino */}
         <div className="grid grid-cols-1">
-          <div className="text-white relative justify-center items-center w-full h-auto p-6 hover:cursor-pointer hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform">
+          <PhotographyGallery
+            client={"Prasino"}
+            thumbnail_src={"/images/photographyWorkSamples/prasino/01.png"}
+            width={500}
+            height={333}
+          />
+          {/* <div className="text-white relative justify-center items-center w-full h-auto p-6 hover:cursor-pointer hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform">
             <Image
               src={photographyWorkSampleData[2].thumbnail_src}
               alt={photographyWorkSampleData[2].client}
@@ -39,14 +46,16 @@ export default function Page() {
             />
             <h3 className=" text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl lg:text-4xl font-bold  ">
               {photographyWorkSampleData[2].client}
-            </h3>
-          </div>
+            </h3> */}
+          {/* </div> */}
         </div>
       </div>
-        {/* ccstl */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-4 ">
+      {/* ccstl */}
+      <div className="flex flex-col md:flex-row justify-center items-center gap-4 ">
         {/* Container for each image ensuring they have the same size */}
-        <div className="text-white relative w-96 h-144 hover:cursor-pointer hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform"> {/* Adjust 'w-96 h-96' to desired size */}
+        <div className="text-white relative w-96 h-144 hover:cursor-pointer hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform">
+          {" "}
+          {/* Adjust 'w-96 h-96' to desired size */}
           <Image
             src={photographyWorkSampleData[0].thumbnail_src}
             alt={photographyWorkSampleData[0].client}
@@ -59,7 +68,9 @@ export default function Page() {
           </h3>
         </div>
 
-        <div className="text-white relative w-96 h-144 hover:transform hover:cursor-pointer hover:scale-110 hover:z-40 hover:text-black transition-transform"> {/* Adjust 'w-96 h-96' to desired size */}
+        <div className="text-white relative w-96 h-144 hover:transform hover:cursor-pointer hover:scale-110 hover:z-40 hover:text-black transition-transform">
+          {" "}
+          {/* Adjust 'w-96 h-96' to desired size */}
           <Image
             src={photographyWorkSampleData[1].thumbnail_src}
             alt={photographyWorkSampleData[1].client}
@@ -79,4 +90,3 @@ export default function Page() {
     </main>
   );
 }
-
