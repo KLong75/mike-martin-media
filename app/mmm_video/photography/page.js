@@ -1,11 +1,11 @@
 // import from next
-import Image from "next/image";
+import Link from "next/link";
 // import components
 import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideo from "../../ui/bannerVideo";
-// import data
-import { photographyWorkSampleData } from "@/app/lib/data";
 import PhotographyGallery from "@/app/ui/photographyGallery";
+// import icons
+import { BiArrowBack } from "react-icons/bi";
 
 export default function Page() {
   return (
@@ -16,6 +16,12 @@ export default function Page() {
           title="MMM Photography Slide Show"
         />
       </section>
+      <Link href="/mmm_video">
+        <div className="mt-12 ml-4 md:ml-12 flex ">
+          <BiArrowBack className="text-4xl " />
+          <span className="mt-1 md:mt-1.5">Back to Our Work</span>
+        </div>
+      </Link>
       <h2 className="p-6 md:p-8 lg:p-12 md:mb-6 text-center text-3xl md:text-4xl font-extrabold ">
         Photography
       </h2>
@@ -28,63 +34,46 @@ export default function Page() {
           </p>
         </div>
       </section>
+      {/* <section> */}
       <div className=" flex justify-center items-center ">
         {/* prasino */}
-        <div className="grid grid-cols-1">
+        <div className="grid grid-cols-1 w-144 h-auto">
           <PhotographyGallery
             client={"Prasino"}
-            thumbnail_src={"/images/photographyWorkSamples/prasino/01.png"}
-            width={500}
-            height={333}
+            cover_img_src={"/images/photographyWorkSamples/prasino/01.jpg"}
+            width={5002}
+            height={3335}
           />
-          {/* <div className="text-white relative justify-center items-center w-full h-auto p-6 hover:cursor-pointer hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform">
-            <Image
-              src={photographyWorkSampleData[2].thumbnail_src}
-              alt={photographyWorkSampleData[2].client}
-              width={photographyWorkSampleData[2].width}
-              height={photographyWorkSampleData[2].height}
-            />
-            <h3 className=" text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl lg:text-4xl font-bold  ">
-              {photographyWorkSampleData[2].client}
-            </h3> */}
-          {/* </div> */}
         </div>
       </div>
       {/* ccstl */}
-      <div className="flex flex-col md:flex-row justify-center items-center gap-4 ">
+      <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-4 md:gap-0 h-full">
         {/* Container for each image ensuring they have the same size */}
-        <div className="text-white relative w-96 h-144 hover:cursor-pointer hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform">
-          {" "}
-          {/* Adjust 'w-96 h-96' to desired size */}
-          <Image
-            src={photographyWorkSampleData[0].thumbnail_src}
-            alt={photographyWorkSampleData[0].client}
-            layout="fill" // Use 'fill' to make the image cover the container
-            objectFit="cover" // Adjust how the image fits within the container
-            className="p-4"
+        <div className="text-white relative w-96 h-128 hover:cursor-pointer hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform ">
+          <PhotographyGallery
+            client={"CCSTL"}
+            cover_img_src={"/images/photographyWorkSamples/ccstl/01.png"}
+            width={437}
+            height={655}
           />
-          <h3 className="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl lg:text-4xl font-bold">
-            {photographyWorkSampleData[0].client}
-          </h3>
         </div>
-
-        <div className="text-white relative w-96 h-144 hover:transform hover:cursor-pointer hover:scale-110 hover:z-40 hover:text-black transition-transform">
-          {" "}
-          {/* Adjust 'w-96 h-96' to desired size */}
-          <Image
-            src={photographyWorkSampleData[1].thumbnail_src}
-            alt={photographyWorkSampleData[1].client}
-            layout="fill" // Use 'fill' to make the image cover the container
-            objectFit="cover" // Adjust how the image fits within the container
-            className="p-4"
+        <div className="text-white relative w-96 h-128 hover:transform hover:cursor-pointer hover:scale-110 hover:z-40 hover:text-black transition-transform">
+          <PhotographyGallery
+            client={"Club Fitness"}
+            cover_img_src={"/images/photographyWorkSamples/clubFitness/01.png"}
+            width={374}
+            height={536}
           />
-          <h3 className="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl lg:text-4xl font-bold ">
-            {photographyWorkSampleData[1].client}
-          </h3>
         </div>
       </div>
+      <Link href="/mmm_video">
+        <div className="mt-12 ml-4 md:ml-12 flex ">
+          <BiArrowBack className="text-4xl " />
+          <span className="mt-1 md:mt-1.5">Back to Our Work</span>
+        </div>
+      </Link>
       {/* </section> */}
-      <div className="flex justify-center items-center p-4 mt-6 mb-6">
+      <div className="flex justify-center items-center p-4 mt-40 mb-6">
         <ContactUsButton />
       </div>
     </main>

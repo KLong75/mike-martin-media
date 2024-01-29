@@ -25,12 +25,49 @@ html {
   height: 500px
 }
 
+/* swiper slide */
+.swiper {
+  width: 100%;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  /* width: 300px; */
+  /* height: 300px; */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #fff;
+  cursor: pointer;
+}
+
+
 /* submit button animation */
 .svg-animate {
   animation: takeoff 1s linear forwards;
   transform-origin: top left;
   transform-style: preserve-3d;
 }
+
+@media (max-width: 768px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: none !important;
+  }
+  
+}
+
+.swiper-pagination {
+  color: white !important;
+}
+
 
 @keyframes scale-in {
   from {
