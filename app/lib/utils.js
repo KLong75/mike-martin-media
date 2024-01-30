@@ -3,3 +3,18 @@ export function validateEmail(email) {
   
   return re.test(String(email).toLowerCase());
 }
+
+export function formatDate(post_date) {
+  let date = new Date(post_date);
+
+  let monthNames = [
+      'January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+
+  let day = date.getDate();
+  let monthIndex = date.getMonth();
+  let year = date.getFullYear();
+
+  return `${monthNames[monthIndex]} ${day}, ${year}`;
+}
