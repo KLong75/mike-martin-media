@@ -50,7 +50,8 @@ export default function ContactForm() {
 
   return (
     <div className="p-8 m-4 w-full">
-      <div className="flex justify-center items-center mt-6 mb-2">
+    
+      <div className="flex justify-center items-center mt-6 mb-2 md:mb-6">
         <h3 className=" text-xl font-bold mr-1">Send</h3>
         <div className="flex justify-center items-center w-14 h-auto mb-1">
           <Image
@@ -62,102 +63,126 @@ export default function ContactForm() {
         </div>
         <h3 className="text-xl font-bold ml-1">a Message</h3>
       </div>
-      <form
-        onSubmit={handleFormSubmit}
-        className="border-4 border-black rounded-2xl p-8 bg-gray-300 shadow">
-        <div className="flex flex-col justify-center items-center ">
-          <label htmlFor="firstName">
-            First Name*<span className="text-xs"> (required)</span>
-          </label>
-          <input
-            autoComplete="given-name"
-            placeholder="First Name"
-            onChange={(e) => handleChange(e, setFirstName)}
-            value={firstName}
-            required
-            type="text"
-            name="firstName"
-            id="firstName"
-            className="border-2 border-gray-800 rounded-2xl p-2 w-full"
+      <div>
+      {/* <div className="flex mt-6 mb-2 justify-center items-center max-w-160">
+        <h3 className=" text-xl font-bold mr-1">Send</h3>
+        <div className="flex justify-center items-center w-14 h-auto mb-1">
+          <Image
+            src="/branding/mmm_black.png"
+            width={294}
+            height={95}
+            alt="company logo"
           />
         </div>
-        <div className="flex flex-col justify-center items-center">
-          <label htmlFor="lastName">
-            Last Name*<span className="text-xs">(required)</span>
-          </label>
-          <input
-            autoComplete="family-name"
-            placeholder="Last Name"
-            onChange={(e) => handleChange(e, setLastName)}
-            value={lastName}
-            required
-            type="text"
-            name="lastName"
-            id="lastName"
-            className="border-2 border-gray-800 rounded-2xl p-2 w-full"
-          />
-        </div>
-
-        <div className="flex flex-col justify-center items-center">
-          <label htmlFor="email">
-            Email*<span className="text-xs"> (required)</span>
-          </label>
-          <input
-            autoComplete="email"
-            placeholder="Email"
-            onChange={(e) => handleChange(e, setEmail)}
-            value={email}
-            required
-            type="email"
-            name="email"
-            id="email"
-            className="border-2 border-gray-800 rounded-2xl p-2 w-full"
-          />
-          {errorMessage && (
-            <div className="flex justify-center items-center mt-2 mb-4">
-              <p className="text-red-500 text-xs">{errorMessage}</p>
+        <h3 className="text-xl font-bold ml-1">a Message</h3>
+      </div> */}
+        <form onSubmit={handleFormSubmit} className="p-8 shadow-2xl max-w-160">
+          {/* <div className="flex justify-center items-center mt-6 mb-2">
+            <h3 className=" text-xl font-bold mr-1">Send</h3>
+            <div className="flex justify-center items-center w-14 h-auto mb-1">
+              <Image
+                src="/branding/mmm_black.png"
+                width={294}
+                height={95}
+                alt="company logo"
+              />
             </div>
-          )}
-        </div>
+            <h3 className="text-xl font-bold ml-1">a Message</h3>
+          </div> */}
+          <div className="flex flex-col justify-center">
+            <label htmlFor="firstName">
+              First Name*<span className="text-xs"> (required)</span>
+            </label>
+            <input
+              autoComplete="given-name"
+              placeholder="First Name"
+              onChange={(e) => handleChange(e, setFirstName)}
+              value={firstName}
+              required
+              type="text"
+              name="firstName"
+              id="firstName"
+              className="border-2 border-gray-800 p-2 w-full"
+            />
+          </div>
+          <div className="flex flex-col justify-center ">
+            <label htmlFor="lastName">
+              Last Name*<span className="text-xs"> (required)</span>
+            </label>
+            <input
+              autoComplete="family-name"
+              placeholder="Last Name"
+              onChange={(e) => handleChange(e, setLastName)}
+              value={lastName}
+              required
+              type="text"
+              name="lastName"
+              id="lastName"
+              className="border-2 border-gray-800 p-2 w-full"
+            />
+          </div>
 
-        <div className="flex flex-col justify-center items-center">
-          <label htmlFor="phone">
-            Phone Number<span className="text-xs"> (optional)</span>
-          </label>
-          <input
-            autoComplete="tel"
-            placeholder="Phone Number"
-            onChange={(e) => handleChange(e, setPhone)}
-            value={phone}
-            type="tel"
-            name="phone"
-            id="phone"
-            className="border-2 border-gray-800 rounded-2xl p-2 w-full"
-          />
-        </div>
-        <div className="flex flex-col justify-center items-center">
-          <label htmlFor="message">
-            Message*<span className="text-xs"> (required)</span>
-          </label>
-          <textarea
-            autoComplete="off"
-            maxLength={1000}
-            placeholder="How can we help you?"
-            onChange={(e) => handleChange(e, setMessage)}
-            value={message}
-            required
-            name="message"
-            id="message"
-            className="border-2 border-gray-800 rounded-2xl p-2 h-60 w-60 resize-none w-full"
-          />
-        </div>
-        <div className="flex justify-center items-center mt-4 -mb-4">
-          <SubmitButtonWithPlaneAnimation
-            onClick={handleFormSubmit}
-            isSubmitted={buttonSubmitted}
-          />
-        </div>
-      </form>
+          <div className="flex flex-col justify-center">
+            <label htmlFor="email">
+              Email*<span className="text-xs"> (required)</span>
+            </label>
+            <input
+              autoComplete="email"
+              placeholder="Email"
+              onChange={(e) => handleChange(e, setEmail)}
+              value={email}
+              required
+              type="email"
+              name="email"
+              id="email"
+              className="border-2 border-gray-800 p-2 w-full"
+            />
+            {errorMessage && (
+              <div className="flex justify-center items-center mt-2 mb-4">
+                <p className="text-red-500 text-xs">{errorMessage}</p>
+              </div>
+            )}
+          </div>
+
+          <div className="flex flex-col justify-center">
+            <label htmlFor="phone">
+              Phone Number<span className="text-xs"> (optional)</span>
+            </label>
+            <input
+              autoComplete="tel"
+              placeholder="Phone Number"
+              onChange={(e) => handleChange(e, setPhone)}
+              value={phone}
+              type="tel"
+              name="phone"
+              id="phone"
+              className="border-2 border-gray-800 p-2 w-full"
+            />
+          </div>
+          <div className="flex flex-col justify-center">
+            <label htmlFor="message">
+              Message*<span className="text-xs"> (required)</span>
+            </label>
+            <textarea
+              autoComplete="off"
+              maxLength={1000}
+              placeholder="How can we help you?"
+              onChange={(e) => handleChange(e, setMessage)}
+              value={message}
+              required
+              name="message"
+              id="message"
+              className="border-2 border-gray-800 p-2 h-60 w-60 resize-none w-full"
+            />
+          </div>
+          <div className="flex justify-center items-center mt-4 -mb-4">
+            <SubmitButtonWithPlaneAnimation
+              onClick={handleFormSubmit}
+              isSubmitted={buttonSubmitted}
+            />
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
