@@ -185,7 +185,7 @@ export const videoData = [
   {
     category: "Medical",
     client: "SSM Health - Demonstration/Evaluation Video ",
-    thumbnail_src: "/images/video-cover-images/medical/ssmHealth.png",
+    thumbnail_src: "/images/video-thumbnails/medical/ssmHealth.png",
     src: "https://player.vimeo.com/video/299104420?h=93e27c251b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
