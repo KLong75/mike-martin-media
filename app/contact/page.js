@@ -6,7 +6,7 @@ import ContactInfo from "../ui/contactInfo";
 import SocialMediaLinks from "../ui/socialMediaLinks";
 
 export const metadata = {
-  title: "Page 4",
+  title: "Contact",
 };
 
 export default function Page() {

@@ -8,6 +8,10 @@ import WeTextBlock from "../ui/weTextBlock";
 import MeetTheTeamButton from "../ui/meetTheTeamButton";
 // import TeamGallery from "../ui/teamGallery";
 
+export const metadata = {
+  title: "About MMM",
+};
+
 export default function Page() {
   return (
     <main>

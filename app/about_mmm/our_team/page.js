@@ -7,6 +7,10 @@ import TextSegment from "../../ui/textSegment.js";
 // import Icons
 import { RiTeamFill } from "react-icons/ri";
 
+export const metadata = {
+  title: "The MMM Team",
+};
+
 export default function Page() {
   return (
     <main>

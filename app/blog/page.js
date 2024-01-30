@@ -9,7 +9,7 @@ import { blogPosts } from "../lib/data";
 
 
 export const metadata = {
-  title: "Page 3",
+  title: "Blog",
 };
 
 export default function Page() {

@@ -154,11 +154,13 @@ export default function BlogPost({
           <p className="mb-6 text-pretty text-balance text-wrap text-left text-md mt-2">
             {shortenPostText(text[0], 200)}
             <span
-              className="inline-flex items-center font-bold text-yellow-800 hover:cursor-pointer"
-              onClick={() => setBlogPostOpen(true)}>
+              className="inline-flex items-center font-bold text-yellow-800 hover:cursor-pointer">
               READ MORE <IoIosArrowRoundForward className="text-2xl" />
             </span>
           </p>
+          <div className="absolute bottom-0 left-0 right-0">
+            <MMMLineLogoBlack />
+          </div>
         </div>
       </div>
 
@@ -170,20 +172,14 @@ export default function BlogPost({
         <Dialog.Overlay className="fixed inset-0 bg-black opacity-75" />
         <div className="min-h-screen px-4 text-center">
           <Dialog.Panel className="w-full max-w-3xl mx-auto my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
-            {/* <div className="flex justify-between items-start p-4 border-b"> */}
             <div className="flex flex-col items-center p-4 mt-8 ">
               <Dialog.Title className="text-lg font-medium text-gray-900">
                 {title}
               </Dialog.Title>
               <span className="text-sm mt-2">{formatDate(post_date)}</span>
-              {/* <MMMLineLogoBlack /> */}
-              {/* <div className="ml-3 h-7 flex items-center">
-                <button
-                  onClick={handleDialogClose}
-                  className="rounded-md text-gray-400 hover:text-gray-500 focus:outline-none">
-                  <HiX className="h-6 w-6" />
-                </button>
-              </div> */}
+            </div>
+            <div className="-mt-8 mb-4 md:hidden">
+            <MMMLineLogoBlack />
             </div>
             <div className="flex flex-col ">
               <div className="flex justify-center items-center">
@@ -194,10 +190,10 @@ export default function BlogPost({
                     height={image_height}
                     alt={`Image for ${title} blog post`}
                   />
-                  {/* <span className="text-sm ">{formatDate(post_date)}</span> */}
-                  {/* <MMMLineLogoBlack /> */}
                 </div>
+                
               </div>
+             
               <div className=" p-6 overflow-auto">
                 {text.map((paragraph, index) => (
                   <p key={index} className="mb-4">
