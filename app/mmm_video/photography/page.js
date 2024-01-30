@@ -12,7 +12,7 @@ import { IoIosArrowBack } from "react-icons/io";
 export default function Page() {
   return (
     <main className="grid grid-cols-1 ">
-      <section className="">
+      <section >
         <BannerVideo
           src="https://player.vimeo.com/video/905365877?h=71828ac5c8&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Photography Slide Show"

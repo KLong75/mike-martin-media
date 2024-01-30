@@ -76,7 +76,7 @@ export default function Home() {
           </div>
           <h2 className="text-4xl font-bold -ml-2">eet the Team</h2>
         </div>
-        <div className="">
+        <div>
           <TeamGallery />
         </div>
       </section>
@@ -119,7 +119,7 @@ export default function Home() {
       <div className="flex justify-center mt-8 mb-8 ">
         <ContactUsButton />
       </div>
-      <div className="">
+      <div>
         <h3 className="text-center font-bold text-xl mb-2 italic">
           Our work is
         </h3>
