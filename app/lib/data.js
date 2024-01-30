@@ -185,7 +185,7 @@ export const videoData = [
   {
     category: "Medical",
     client: "SSM Health - Demonstration/Evaluation Video ",
-    thumbnail_src: "/images/video-cover-images/medical/ssmHealth.png",
+    thumbnail_src: "/images/video-thumbnails/medical/ssmHealth.png",
     src: "https://player.vimeo.com/video/299104420?h=93e27c251b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
@@ -287,7 +287,7 @@ export const videoData = [
   {
     category: "Education",
     client: "Holy Childhood of Jesus School",
-    thumbnail_src: "/images/video-thumbnails/education/holyCHildJesus.png",
+    thumbnail_src: "/images/video-thumbnails/education/holyChildJesus.png",
     src: "https://player.vimeo.com/video/505369654?h=e907fbe200&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
@@ -317,7 +317,7 @@ export const videoData = [
   {
     category: "Nonprofit",
     client: "Central Institute for the Deaf: CID Out Loud 2023",
-    thumbnail_src: "/images/video-thumbnails/nonprofit/cidOutLoud2023.png",
+    thumbnail_src: "/images/video-thumbnails/nonprofit/cidOutLoud.png",
     src: "https://player.vimeo.com/video/825959288?h=46ba69e53b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
