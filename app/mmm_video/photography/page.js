@@ -5,7 +5,9 @@ import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideo from "../../ui/bannerVideo";
 import PhotographyGallery from "@/app/ui/photographyGallery";
 // import icons
-import { BiArrowBack } from "react-icons/bi";
+// import { BiArrowBack } from "react-icons/bi";
+import { IoIosArrowBack } from "react-icons/io";
+
 
 export default function Page() {
   return (
@@ -17,9 +19,9 @@ export default function Page() {
         />
       </section>
       <Link href="/mmm_video">
-        <div className="mt-12 ml-4 md:ml-12 flex ">
-          <BiArrowBack className="text-4xl " />
-          <span className="mt-1 md:mt-1.5">Back to Our Work</span>
+        <div className="mt-12 ml-4 md:ml-12 flex">
+          <IoIosArrowBack className="text-3xl mt-"/>
+          <span style={{marginTop: ".2rem"}}>Back to Our Work</span>
         </div>
       </Link>
       <h2 className="p-6 md:p-8 lg:p-12 md:mb-6 text-center text-3xl md:text-4xl font-extrabold ">
@@ -67,9 +69,9 @@ export default function Page() {
         </div>
       </div>
       <Link href="/mmm_video">
-        <div className="mt-12 ml-4 md:ml-12 flex ">
-          <BiArrowBack className="text-4xl " />
-          <span className="mt-1 md:mt-1.5">Back to Our Work</span>
+        <div className="mt-12 ml-4 md:ml-12 flex">
+          <IoIosArrowBack className="text-3xl"/>
+          <span style={{marginTop: ".25rem"}}>Back to Our Work</span>
         </div>
       </Link>
       {/* </section> */}
