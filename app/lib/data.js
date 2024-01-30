@@ -579,8 +579,6 @@ export const photographyWorkSampleData = [
   },
 ];
 
-
-  
 export const blogPosts = [
   {
     title: "Inside MMM's Arizona Trip",
@@ -588,7 +586,14 @@ export const blogPosts = [
     image_src: "/images/blogPics/arizonaPic.png",
     image_width: 1140,
     image_height: 1070,
-    text: "Spring is one of MMM’s busiest times of the year, perhaps even the busiest. This month has certainly been no exception. Last week we had a team fly out to Arizona for a 3-day conference, and today we touched down in China — more on that later.The leadership conference that our team captured in Phoenix is a perfect example of the full-service video support we offer for events, including everything from photography to live-streaming. Conferences are all-encompassing and we specialize in creating the pre-produced content, capturing day-long sessions, and anything else in between. Whether the objective was honoring award winners or gathering footage for future projects, we are always able to meet changing requests with ease.Four days spent across the country flew by fast with this team. Mikey, Tom, and Zoë, thank you for your time and talents! Check out some highlights from our trip on Instagram and Facebook and we’ll see you on our next trips. Kentucky, Massachusetts, Texas, and Georgia, we are ready for you!",
+    text: [
+      "Spring is one of MMM’s busiest times of the year, perhaps even the busiest. This month has certainly been no exception. Last week we had a team fly out to Arizona for a 3-day conference, and today we touched down in China — more on that later.",
+      "The leadership conference that our team captured in Phoenix provided the perfect example of the full service events we can cover, including everything from photography to live-streaming. Whether the objective was honoring award winners or recording day-long sessions, we were able to meet changing requests with ease.",
+      "The leadership conference that our team captured in Phoenix is a perfect example of the full-service video support we offer for events, including everything from photography to live-streaming. Conferences are all-encompassing and we specialize in creating the pre-produced content, capturing day-long sessions, and anything else in between. Whether the objective was honoring award winners or gathering footage for future projects, we are always able to meet changing requests with ease.",
+      "Four days spent across the country flew by fast with this team. Mikey, Tom, and Zoë, thank you for your time and talents! Check out some highlights from our trip on Instagram and Facebook and we’ll see you on our next trips. Kentucky, Massachusetts, Texas, and Georgia, we’re ready for you!",
+    ],
+    closing_tag: "Until next time,",
+    author: "MMM"
   },
   {
     title: "Reflecting on the Season",
@@ -596,7 +601,17 @@ export const blogPosts = [
     image_src: "/images/blogPics/reflectingSeasonPic.jpg",
     image_width: 1140,
     image_height: 855,
-    text: "It’s that time of year again, that beautiful, special time of year where we all gather around to celebrate what truly matters… Mario Kart. The 2nd Annual MMM Mario Kart $100 Confrontation went DOWN earlier this month! After last year’s close finish, this year’s Confrontation was highly anticipated and extremely competitive. With twice as many races and racers as last year, tensions were high. The skill level of competitors ranged from total newbies to seasoned veterans, making for a truly entertaining event. Who won, you ask?",
+    text: [
+      "It’s that time of year again… that beautiful, special time of year where we all gather around to celebrate what truly matters… Mario Kart.",
+      "The 2nd Annual MMM Mario Kart $100 Confrontation went DOWN earlier this month! After last year’s close finish, this year’s Confrontation was highly anticipated and extremely competitive. With twice as many races and racers as last year, tensions were high. The skill level of competitors ranged from total newbies to seasoned veterans, making for a truly entertaining event.",
+      "Who won, you ask? Before someone won the 2nd Annual MMM Mario Kart $100 Confrontation, we all won one of our very own MMM awards. Throughout the past two years or so, various MMM employees have been bestowed a range of awards. Mike took time this year to give everyone an award, fit just for them. Awards ranged from “Social Influencer of the Year” for our social media manager, and “Longest Commute to Work of 2022  Award” to our newest addition, Ian Ramprashad, before he moved to St. Louis. Thank you Mike, for making sure we all are recognized and appreciated.",
+      "This year’s confrontation started off strong, with twelve total racers. But in the end, there could only be one winner.. Some stand out games included Josh vs. Rachel (she claims to be helpless but she absolutely held her own), as well as Nicole vs. Tom — the reigning champ versus Rachel’s wife. “She’s great, but usually on Nintendo 64” Rachel said of Nicole. Tom didn’t hold back, but Nicole managed to pull out a win. Tom won that round but Nicole qualified for a position in Round 3. In Round 2 we saw Adam and Zoë face off in a heated and very close race that ended up going to Adam — before he had to leave for the night, reallocating his MMMario Kart Confrontation ranking to the loser of the race after his. No mercy for Zoë. Somehow the races of Josh vs. Paul were some of the most intense races of the night! Paul pulled ahead, giving Josh what was Adam’s position.",
+      "Round 3 was between Josh vs. Tom and Nicole vs. Paul. In a desperate fight to the finish, Round 4 was left to the two domineering players of the day, Tom and Paul.  The Final Confrontation was the most intense tournament of the night despite the dwindling number of attendees. Every move mattered, every trick and turn could make or break the racer’s race. Lo and behold, the MMMember that claimed the first place prize this year was Tom Young, for the second year in a row! The $100 advertised for this Confrontation was divided into $75 for first place (Tom) and $25 for second place (Paul).",
+      "We are so grateful to all of our talented participants for making this year another smashing success.",
+      "Who will win next year’s Confrontation? Will Tom be dethroned? When is this event usually held???"
+    ],
+    closing_tag: "Stay tuned to find out!",
+    author: "MMM"
   },
   {
     title: "Six Months Down, Six More to Go!",
@@ -604,20 +619,36 @@ export const blogPosts = [
     image_src: "/images/blogPics/sixMonthsDownPic.jpg",
     image_width: 1140,
     image_height: 855,
-    text: "Can you believe it? We’re already halfway through the year! As we reflect on the past six months and look forward to the next six, there’s one thing for certain — we are busy. From constructing sets for in-house filming, to recording and producing two podcast series, to our usual — flying all over the country to meet any and all of your video production needs. Since our last post, we’ve packed in another handful of trips and fun projects.  Back in March, Rachel got to experience her first travel trip with Mikey and Dave to Indianapolis while Kevin and Adam filmed in Minneapolis. In April, Mikey, Tom, and Zoë enjoyed conducting a livestream recording in Chicago the same week that Kevin and Mike were in DC for a separate livestream! And the travel doesn’t stop there… we have a crew in Chattanooga and New York this week, we are sending off another team to Nashville next week, and a team in Santa Clara at the end of the month. Additionally, there’s no shortage of exciting events to cover in our own town of St. Louis. We are honored to have partnered with one of our clients to cover the NASCAR Enjoy Illinois 300 race that took place at World Wide Technology Raceway in early June. From the Driver Salute to the race on Sunday, it was a great event to be a part of! We would tell you some of the other fun projects we have lined up this year but, then what fun would that be? Follow our Facebook, Instagram and LinkedIn to stay up to date on all things MMM. We’re @mikemartinmedia everywhere, and follow the #mmmgood hashtag! Post with #mmmgood when we film together and we’ll repost your pic. Until next time,-MMM",
+    text: [
+      "Can you believe it? We’re already halfway through the year! As we reflect on the past six months and look forward to the next six, there’s one thing for certain — we are busy. From constructing sets for in-house filming, to recording and producing two podcast series, to our usual — flying all over the country to meet any and all of your video production needs.",
+      "Since our last post, we’ve packed in another handful of trips and fun projects.  Back in March, Rachel got to experience her first travel trip with Mikey and Dave to Indianapolis while Kevin and Adam filmed in Minneapolis. In April, Mikey, Tom, and Zoë enjoyed conducting a livestream recording in Chicago the same week that Kevin and Mike were in DC for a separate livestream! And the travel doesn’t stop there… we have a crew in Chattanooga and New York this week, we are sending off another team to Nashville next week, and a team in Santa Clara at the end of the month.",
+      "Additionally, there’s no shortage of exciting events to cover in our own town of St. Louis. We are honored to have partnered with one of our clients to cover the NASCAR Enjoy Illinois 300 race that took place at World Wide Technology Raceway in early June. From the Driver Salute to the race on Sunday, it was a great event to be a part of!",
+      "We would tell you some of the other fun projects we have lined up this year but, then what fun would that be? Follow our Facebook, Instagram and LinkedIn to stay up to date on all things MMM. We’re @mikemartinmedia everywhere, and follow the #mmmgood hashtag! Post with #mmmgood when we film together and we’ll repost your pic."
+    ],
+    closing_tag: "Until next time,",
+    author: "MMM"
   },
   {
-    title: "A letter from Kevin, “I’m Lucky”",
+    title: "A Letter from Kevin",
     post_date: "2022-4-7",
-    image_src: "/images/blogPics/",
+    image_src: "/images/blogPics/luckyKevinPic.jpg",
     image_width: 1140,
     image_height: 855,
     text: [
-      "I’m lucky.I’m lucky to have an amazing daughter who is in her junior year at Murray State.",
-      "I’m lucky to have an amazing job at Mike Martin Media. I’m lucky to have a job where I wake up every day and love going to work.",
-      "I’m lucky to get to travel all over the country as part of that job. I mean we even have a hashtag we use, #MMMgood.",
-
-    ]
+      "I’m lucky. I’m lucky to have an amazing daughter who is in her junior year at Murray State. I’m lucky to have an amazing job at Mike Martin Media. I’m lucky to have a job where I wake up every day and love going to work. I’m lucky to get to travel all over the country as part of that job. I mean we even have a hashtag we use, #MMMgood.",
+      "My work trips with Mike Martin Media come with a lot of perks. MMM client trips have taken me to cities I have been to, cities I have never been to, and cities I have always wanted to go to. Some of the best trips are when they are close to my hometown of Hagerstown, Maryland, because I can meet up with my parents for lunch or dinner after work is done.",
+      "I usually have some free time in the cities I visit and I love immersing myself in the local culture of a city. One rule I have on the road is to only visit local places. I love starting at a local brewery, talking to the home-towners, getting advice on where to eat, where to visit, and any hidden gems that I might need to see.  People are always more than willing to help me out.",
+      "I really enjoy drinking local beer and eating at local restaurants. I love searching for what food a local city is known for and finding the best local spot to have that food. Ever had a “juicy lucy”, invented in Minneapolis? Do you love comparing the best crab cake places in Baltimore, MD like me? Hint, my favorite is Faidley’s Seafood.",
+      "This country has some pretty amazing breweries and restaurants that I would have never been to, if not for my MMM work travel. One example is Tulsa, Oklahoma. Not sure it would have been on my radar before but work from several of our clients has sent me there close to 20 times. Tulsa has an outstanding beer and food scene! I highly recommend it if you haven’t been before.",
+      "This country also has some beautiful destinations. I love finding unique and quirky places to check out in the cities I’m visiting. How can you pass up The American Gothic Museum in Eldon, Iowa, the Ft. Worth Water Gardens, the Google Emoji playground in Palo Alto, CA, the 60 ft “Driller” statue in Tulsa, the Santa Monica pier, which is the end of Route 66, and the stunning views of coastlines up and down the East and West Coast? I love capturing my visits to those places with selfies of myself and co-workers who are on the trips with me. Of course, even have a hashtag for those, #KevinSelfies.", 
+      "I’ll be documenting my trips on social media so feel free to follow along on my MMM adventures:",
+      "Facebook: www.facebook.com/kevin.marshall.7524",
+      "Instagram: @kevinusmarshall",
+      "Twitter: @kevinUSmarshall",
+      "I'm lucky.",      
+    ],
+    closing_tag: "Until next time,",
+    author: "Kevin"
   },
   {
     title: "A Note from Rachel",
@@ -625,7 +656,14 @@ export const blogPosts = [
     image_src: "/images/blogPics/rachelNotePic.jpg",
     image_width: 1140,
     image_height: 855,
-    text: "For years, I had the pleasure of working with MMM as a client and when I made the move to being a producer on the team, it felt like I had come home. Small businesses are so integral in every workforce sector and I’m so proud of the work we do for corporations, non-profits, and educational and medical institutions around the world. The work is fast-paced and we are so nimble and able to pivot at a moment’s notice. This is rare and something our clients love.My favorite part of working at MMM is interviewing. I have always loved talking to people and now I get paid to do it, how cool! We are able to really get to the heart of a story and share all the wonderful things everyday people are doing or overcoming. I am consistently blown away at our team’s photography skills, or motion graphics editing and our kick-ass video production.I knew video production was going to be in my life when I took my first high school media class and I consider it a true blessing that I’m able to do it every day. I am passionate about storytelling and everyone at MMM does it with intention, clarity and quality.  This is such a special place and I feel privileged to be on the team."
+    text: [
+      "For years, I had the pleasure of working with MMM as a client and when I made the move to being a producer on the team, it felt like I had come home.",
+      "Small businesses are so integral in every workforce sector and I’m so proud of the work we do for corporations, non-profits, and educational and medical institutions around the world. The work is fast-paced and we are so nimble and able to pivot at a moment’s notice. This is rare and something our clients love.",
+      "My favorite part of working at MMM is interviewing. I have always loved talking to people and now I get paid to do it, how cool! We are able to really get to the heart of a story and share all the wonderful things everyday people are doing or overcoming. I am consistently blown away at our team’s photography skills, or motion graphics editing and our kick-ass video production.",
+      "I knew video production was going to be in my life when I took my first high school media class and I consider it a true blessing that I’m able to do it every day. I am passionate about storytelling and everyone at MMM does it with intention, clarity and quality.  This is such a special place and I feel privileged to be on the team.",
+    ],
+    closing_tag: "",
+    author: "Rachel"
   },
   {
     title: "A Note from Mike",
@@ -633,37 +671,12 @@ export const blogPosts = [
     image_src: "/images/blogPics/mikeNotePic.jpg",
     image_width: 1140,
     image_height: 855,
-    text: "MMM is in full swing to start 2022!  Local shoots in St. Louis, Zoom recordings, Live Stream events and shoots from Texas to Nevada have highlighted the start to our year. We are booked for shoots from coast to coast over the next couple of months and we are looking forward to sharing our journey with all of you.",
+    text: [
+      "MMM is in full swing to start 2022!  Local shoots in St. Louis, Zoom recordings, Live Stream events and shoots from Texas to Nevada have highlighted the start to our year. We are booked for shoots from coast to coast over the next couple of months and we are looking forward to sharing our journey with all of you.",
+      "Our new Midtown studio has proven to be a huge benefit for our local clients. This week, we are shooting a podcast in our brand new podcast studio. If you haven’t been here yet, just reach out and we’ll set up a time for a tour and grab you some lunch at one of our neighborhood favorites!",
+      "Our team continues to grow, and we look forward to producing awesome content for our clients this year. We’re happy to hop on a call or virtual meeting to help you with your next video project, so don’t hesitate to reach out for a free consultation. Let us help you reach your goals in 2022!"
+    ],
+    closing_tag: "Until next time,",
+    author: "Mike Martin"
   },
 ];
-//   {
-//     title: "",
-//     post_date: "",
-//     image_src: "/images/blogPics/arizonaPic.png",
-//     text: ""
-//   },
-//   {
-//     title: "",
-//     date: "",
-//     image_src: "/images/blogPics/arizonaPic.png",
-//     text: ""
-//   },
-//   {
-//     title: "",
-//     date: "",
-//     image_src: "/images/blogPics/arizonaPic.png",
-//     text: ""
-//   },
-//   {
-//     title: "",
-//     date: "",
-//     image_src: "/images/blogPics/arizonaPic.png",
-//     text: ""
-//   },
-//   {
-//     title: "",
-//     date: "",
-//     image_src: "/images/blogPics/arizonaPic.png",
-//     text: ""
-//   },
-// ];

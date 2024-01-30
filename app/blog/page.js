@@ -40,6 +40,8 @@ export default function Page() {
             image_height={post.image_height}
             text={post.text}
             post_date={post.post_date}
+            closing_tag={post.closing_tag}
+            author={post.author}
           />
         ))}
       </div>
