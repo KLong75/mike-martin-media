@@ -39,7 +39,6 @@ export default function Page() {
       {/* </div> */}
       <div className="mb-12 ">
       <TextSegment
-      className=""
         text="We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, to Livestreaming, and Photography, we are your partner through every step of the process."
       />
       </div>

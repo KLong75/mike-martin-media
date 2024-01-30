@@ -7,7 +7,7 @@ import VideoGallery from "@/app/ui/videoGallery";
 export default function Page() {
   return (
     <main className="grid grid-cols-1 ">
-      <section className="">
+      <section>
         <BannerVideo
           src="https://player.vimeo.com/video/904181398?h=c0efc97d6f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Livestreaming Video"
@@ -56,7 +56,7 @@ export default function Page() {
           </ul>
         </div>
       </section>
-      <section className="">
+      <section>
         <div className="grid grid-cols-1">
           <h4 className="text-xl text-center font-bold md:mb-12 lg:mb-20 ">
             Recent Streams

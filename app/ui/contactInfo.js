@@ -94,7 +94,7 @@ export default function ContactInfo() {
               className=" hover:font-black">
               <span>3333 Washington Avenue, Suite 201</span>
               <br />
-              <span className="">St. Louis, MO 63103</span>
+              <span>St. Louis, MO 63103</span>
             </a>
             <div className="flex justify-center items-center space-x-2">
               <IconLink
@@ -102,7 +102,6 @@ export default function ContactInfo() {
                 icon={<FaLocationDot size={24} />}
                 label="link to Mike Martin Media on Google Maps"
                 name="link to Mike Martin Media on Google Maps"
-                className=""
               />
             </div>
           </div>
@@ -113,8 +112,8 @@ export default function ContactInfo() {
               rel="noopener noreferrer"
               name="call Mike Martin Media"
               aria-label="call Mike Martin Media"
-              className="">
-              <span className="">636-212-0978</span>
+              >
+              <span>636-212-0978</span>
             </a>
             <div className="flex justify-center items-center space-x-2">
               <IconLink
@@ -134,7 +133,7 @@ export default function ContactInfo() {
               name="email Mike Martin Media"
               aria-label="email Mike Martin Media"
               className="hover:font-black">
-              <span className="">mike@mikemartinmedia.com</span>
+              <span>mike@mikemartinmedia.com</span>
             </a>
             <div className="flex justify-center items-center space-x-2">
               <IconLink

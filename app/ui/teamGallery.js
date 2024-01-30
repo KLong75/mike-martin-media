@@ -9,7 +9,7 @@ import TeamMemberCard from "./teamMemberCard";
 
 export default function TeamGallery() {
   return (
-    <div className="">
+    <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center p-12 mt-4">
         {teamData.map((member) => (
           <TeamMemberCard
