@@ -586,13 +586,17 @@ export const blogPosts = [
     title: "Inside MMM's Arizona Trip",
     date: "2023-03-27",
     image_src: "/images/blogPics/arizonaPic.png",
+    image_width: 1140,
+    image_height: 1070,
     text: "Spring is one of MMM’s busiest times of the year, perhaps even the busiest. This month has certainly been no exception. Last week we had a team fly out to Arizona for a 3-day conference, and today we touched down in China — more on that later.The leadership conference that our team captured in Phoenix is a perfect example of the full-service video support we offer for events, including everything from photography to live-streaming. Conferences are all-encompassing and we specialize in creating the pre-produced content, capturing day-long sessions, and anything else in between. Whether the objective was honoring award winners or gathering footage for future projects, we are always able to meet changing requests with ease.Four days spent across the country flew by fast with this team. Mikey, Tom, and Zoë, thank you for your time and talents! Check out some highlights from our trip on Instagram and Facebook and we’ll see you on our next trips. Kentucky, Massachusetts, Texas, and Georgia, we are ready for you!",
   },
   {
     title: "Reflecting on the Season",
     date: "2023-01-18",
     image_src: "/images/blogPics/reflectingSeasonPic.jpg",
-    text: "It’s that time of year again… that beautiful, special time of year where we all gather around to celebrate what truly matters… Mario Kart. The 2nd Annual MMM Mario Kart $100 Confrontation went DOWN earlier this month! After last year’s close finish, this year’s Confrontation was highly anticipated and extremely competitive. With twice as many races and racers as last year, tensions were high. The skill level of competitors ranged from total newbies to seasoned veterans, making for a truly entertaining event. Who won, you ask?",
+    image_width: 1140,
+    image_height: 855,
+    text: "It’s that time of year again, that beautiful, special time of year where we all gather around to celebrate what truly matters… Mario Kart. The 2nd Annual MMM Mario Kart $100 Confrontation went DOWN earlier this month! After last year’s close finish, this year’s Confrontation was highly anticipated and extremely competitive. With twice as many races and racers as last year, tensions were high. The skill level of competitors ranged from total newbies to seasoned veterans, making for a truly entertaining event. Who won, you ask?",
   },
 ];
 //   {

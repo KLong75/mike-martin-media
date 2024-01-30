@@ -3,37 +3,42 @@ import Image from "next/image";
 // import components
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 
-export default function BlogPost({ title, image, text, date }) {
-    return (
-      <>
-      <div className="bg-gray-300 border border-2 border-gray-800 rounded-2xl w-3/4 ">
-        <div className="flex flex-col justify-center items-center mt-3">
-          <h3 className=" text-xl sm:text-2xl font-bold">{title}</h3>
-         
-          <h5 className=" font-light ">{date}</h5>
-        </div>
-        <div className="flex flex-col justify-center items-center">
-        <div className="flex justify-center w-10/12 md:w-8/12 lg:w-6/12 h-auto ">
-          <Image
-            src={image}
-            alt={title}
-            width={1140}
-            height={1007}
-            className="rounded-xl "
-          />
-        </div>
-        </div>
-        <div className="flex justify-center items-center mb-3 mt-3">
-        <p
-          className='w-3/4 rounded-xl bg-white border border-2 border-gray-800 p-4 text-center overflow-wrap break-words m-2'>
-          {text}
+export default function BlogPost({
+  title,
+  image_src,
+  image_width,
+  image_height,
+  text,
+  date,
+}) {
+  const shortenPostText = (text, num) => {
+    if (text.length > num) {
+      return text.slice(0, num) + "...";
+    } else {
+      return text;
+    }
+  };
+
+  return (
+    <div className="flex flex-col items-center w-full h-auto mb-12 shadow-2xl ">
+      <div id="image-div" className="w-72 h-72 mb-1">
+        <Image
+        className="shadow-xl mt-6"
+          priority
+          src={image_src}
+          width={image_width}
+          height={image_height}
+          alt={`Image for ${title} blog post`}
+        />
+      </div>
+      <div className="text-center w-72">
+        <h2 className="text-xl font-bold">{title}</h2>
+        <span className="text-sm mt-2 text-center">{date}</span>
+        <p className="mb-6 text-pretty text-balance text-wrap text-left text-md mt-2">
+          {shortenPostText(text, 300)}
+          <span className="font-bold text-yellow-800">READ MORE</span>
         </p>
-        </div>
-        
       </div>
-      <div className="flex justify-center items-center -mt-10 mb-6">
-      <MMMLineLogoBlack />
-      </div>
-      </>
-    );
+    </div>
+  );
 }

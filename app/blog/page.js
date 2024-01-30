@@ -13,9 +13,8 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className="bg-slate-50 flex-1 ">
+    <main className="flex-1 ">
       <div className="flex justify-center items-center mt-6 mb-2">
-       
         <div className="flex justify-center items-center w-24 h-8 mb-1">
           <Image
             src="/branding/mmm_black.png"
@@ -24,29 +23,25 @@ export default function Page() {
             alt="company logo"
           />
         </div>
-        <h2 className="text-4xl font-bold ml-2">Beyond the Lens</h2>
+        <h2 className=" text-3xl md:text-4xl font-bold ml-2">
+          Beyond the Lens
+        </h2>
       </div>
-      <TextSegment 
-        text="Venture beyond the lens and take a look behind the scenes." 
-      />
-      {/* <div className="flex justify-center items-center -mt-2 mb-2">
-      <MMMLineLogoBlack />
-      </div> */}
-      
-      <div className="flex flex-col gap-12 justify-center items-center mt-12">
-        {blogPosts.map((post) => (
+      <TextSegment text="Venture beyond the lens and take a look behind the scenes." />
+
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
+        {blogPosts.map((post, index) => (
           <BlogPost
-            key={post.title}
+            key={index}
             title={post.title}
-            author={post.author}
+            image_src={post.image_src}
+            image_width={post.image_width}
+            image_height={post.image_height}
             text={post.text}
             date={post.date}
-            image={post.image_src}
           />
         ))}
       </div>
-     
-      
     </main>
   );
 }
