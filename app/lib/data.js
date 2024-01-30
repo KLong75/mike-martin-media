@@ -143,7 +143,7 @@ export const videoData = [
   {
     category: "Medical",
     client: "WUSM Emergency Medicine Residency Recruitment",
-    thumbnail_src: "/images/video-thumbnails/medical/washUemergencyMedicine.png",
+    thumbnail_src: "/images/video-thumbnails/medical/washUEmergencyMedicine.png",
     src: "https://player.vimeo.com/video/866533299?h=90843c1f39&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
