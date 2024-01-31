@@ -4,9 +4,18 @@ import Link from "next/link";
 import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideo from "../../ui/bannerVideo";
 import PhotographyGallery from "@/app/ui/photographyGallery";
+import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
+import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
+import TextSegment from "@/app/ui/textSegment";
 // import icons
 // import { BiArrowBack } from "react-icons/bi";
 import { IoIosArrowBack } from "react-icons/io";
+
+export const metadata = {
+  title: "Photography",
+  description:
+    "We offer a wide range of photography services. From headshots to events, we can help you capture the moment. Check out our work and then contact us to see how we can help you.",
+};
 
 
 export default function Page() {
@@ -18,12 +27,9 @@ export default function Page() {
           title="MMM Photography Slide Show"
         />
       </section>
-      <Link href="/mmm_video">
-        <div className="mt-12 ml-4 md:ml-12 flex">
-          <IoIosArrowBack className="text-3xl mt-"/>
-          <span style={{marginTop: ".2rem"}}>Back to Our Work</span>
-        </div>
-      </Link>
+      <div className="mt-6">
+        <BackToOurWorkLink />
+      </div>
       <h2 className="p-6 md:p-8 lg:p-12 md:mb-6 text-center text-3xl md:text-4xl font-extrabold ">
         Photography
       </h2>
@@ -68,15 +74,19 @@ export default function Page() {
           />
         </div>
       </div>
-      <Link href="/mmm_video">
-        <div className="mt-12 ml-4 md:ml-12 flex">
-          <IoIosArrowBack className="text-3xl"/>
-          <span style={{marginTop: ".25rem"}}>Back to Our Work</span>
-        </div>
-      </Link>
-      {/* </section> */}
-      <div className="flex justify-center items-center p-4 mt-40 mb-6">
-        <ContactUsButton />
+      <div className="mt-24">
+        <TextSegment text="Contact us today to get started on your Photography project. This text can change. Here we need to invite visitors to contact MMM." />
+      </div>
+      <div className="flex justify-center items-center p-2 mb-6">
+        <MmmSiteButtonTextOnly
+          href="/contact"
+          label="Contact Us"
+          backgroundColor="bg-black"
+          textColor="text-white"
+        />
+      </div>
+      <div className="mb-3 ">
+        <BackToOurWorkLink />
       </div>
     </main>
   );

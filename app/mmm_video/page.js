@@ -1,21 +1,23 @@
-"use client";
+// "use client";
 // import from next
 import Image from "next/image";
 import Head from "next/head";
 // import from react
-import { useState } from "react";
+// import { useState } from "react";
 // import components
 import VideoGallery from "../ui/videoGallery";
 import VideoCategories from "../ui/videoCategories";
 import TextSegment from "../ui/textSegment";
 import OurWorkTiles from "../ui/ourWorkTiles";
+import MmmSiteButtonTextOnly from "../ui/mmmSiteButtonTextOnly";
 
-// export const metadata = {
-//   title: "Videos",
-// };
+export const metadata = {
+  title: "Our Work",
+  description: "We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process.",
+};
 
 export default function Page() {
-  const [selectedCategory, setSelectedCategory] = useState("All Videos");
+  // const [selectedCategory, setSelectedCategory] = useState("All Videos");
   return (
     <>
     <Head>
@@ -39,8 +41,9 @@ export default function Page() {
       {/* </div> */}
       <div className="mb-12 ">
       <TextSegment
-        text="We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, to Livestreaming, and Photography, we are your partner through every step of the process."
+        text="We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, to Livestreaming, and Photography, we are your partner through every step of the process. Check out our work below and contact us today to get started on your project."
       />
+
       </div>
       <div>
         <OurWorkTiles />
@@ -49,6 +52,17 @@ export default function Page() {
       <VideoCategories onCategorySelected={setSelectedCategory}/>
       </section>
       <VideoGallery selectedCategory={selectedCategory} /> */}
+      <div className="mt-6">
+        <TextSegment text="Contact us today to get started on your Corporate video project. This text can change. Here we need to invite visitors to contact MMM." />
+      </div>
+      <div className="flex justify-center items-center p-2 mb-6">
+        <MmmSiteButtonTextOnly
+          href="/contact"
+          label="Contact Us"
+          backgroundColor="bg-black"
+          textColor="text-white"
+        />
+      </div>
     </main>
     </>
   );

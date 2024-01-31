@@ -3,10 +3,19 @@ import Link from "next/link";
 // import components
 import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideo from "../../ui/bannerVideo";
+import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
+import TextSegment from "@/app/ui/textSegment";
+import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
 // import data
 import VideoGallery from "@/app/ui/videoGallery";
 // import icons
 import { IoIosArrowBack } from "react-icons/io";
+
+export const metadata = {
+  title: "Livestreaming",
+  description:
+    "Wherever you are, we can help you stream to anywhere. Livestreaming is an invaluable resource that can catapult your organization and message farther. Contact us today to create a livestreaming solution that works for you.",
+};
 
 export default function Page() {
   return (
@@ -17,12 +26,9 @@ export default function Page() {
           title="MMM Livestreaming Video"
         />
       </section>
-      <Link href="/mmm_video">
-        <div className="mt-12 ml-4 md:ml-12 flex">
-          <IoIosArrowBack className="text-3xl mt-"/>
-          <span style={{marginTop: ".2rem"}}>Back to Our Work</span>
-        </div>
-      </Link>
+      <div className="mt-6">
+        <BackToOurWorkLink />
+      </div>
       <h2 className="mt-6 -mb-4 md:mb-8 lg:mb-20 md:mt- text-center text-3xl md:text-4xl font-extrabold ">
         Livestreaming
       </h2>
@@ -81,14 +87,14 @@ export default function Page() {
           <VideoGallery selectedCategory="Livestreaming" />
         </div>
       </section>
-      <Link href="/mmm_video">
-        <div className="mt-12 ml-4 md:ml-12 flex">
-          <IoIosArrowBack className="text-3xl mt-"/>
-          <span style={{marginTop: ".2rem"}}>Back to Our Work</span>
-        </div>
-      </Link>
-      <div className="flex justify-center items-center mb-12">
+      <div className="">
+        <TextSegment text="Contact us today to get started on your Livestreaming project. This text can change. Here we need to invite visitors to contact MMM." />
+      </div>
+      <div className="flex justify-center items-center mb-12 mt-2">
         <ContactUsButton />
+      </div>
+      <div className="mb-3 ">
+        <BackToOurWorkLink />
       </div>
     </main>
   );
