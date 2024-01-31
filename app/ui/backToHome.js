@@ -9,7 +9,7 @@ export default function BackToHomeLink() {
     <Link href="/">
       <div className="ml-2 flex">
         <IoIosArrowBack className="text-3xl "/>
-        <span className="text-xs mt-2 -ml-1 md:text-sm md:mt-1.5">Back</span>
+        <span className="text-xs mt-2 -ml-1 md:text-sm md:mt-1.5">Back to Home</span>
       </div>
     </Link>
   );
