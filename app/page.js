@@ -31,8 +31,8 @@ export default function Home() {
       />
       <div className="bg-black text-white flex flex-col justify-center items-center w-full h-36 -mt-4">
         <div className="flex justify-center items-center p-1">
-          <h2 className="text-4xl font-bold mr-2">YOUR IDEAS,</h2>
-          <div className="flex justify-center items-center w-9 h-8 mb-1">
+          <h2 className="text-2xl md:text-4xl font-bold mr-2">YOUR IDEAS,</h2>
+          <div className="flex justify-center items-center w-7  md:w-10 h-auto mb-1">
             <Image
               src="/branding/whiteM.png"
               width={101}
@@ -40,7 +40,7 @@ export default function Home() {
               alt="company logo"
             />
           </div>
-          <h2 className="text-4xl font-bold ml-1">ADE</h2>
+          <h2 className="text-2xl md:text-4xl font-bold ml-1">ADE</h2>
         </div>
         <div className="flex justify-center items-center p-2">
           <MmmSiteButton
