@@ -87,7 +87,7 @@ export default function Page() {
           <VideoGallery selectedCategory="Livestreaming" />
         </div>
       </section>
-      <div className="">
+      <div>
         <TextSegment text="Contact us today to get started on your Livestreaming project. This text can change. Here we need to invite visitors to contact MMM." />
       </div>
       <div className="flex justify-center items-center mb-12 mt-2">
