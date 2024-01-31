@@ -9,7 +9,7 @@ export default function BannerVideo({ src, title }) {
           style={{
             paddingTop:
               title === "MMM Livestreaming Video"
-                ? "42.45%"
+                ? "42.5%"
                 : title === "MMM Photography Slide Show"
                 ? "42.25%"
                 : "56.25%",
