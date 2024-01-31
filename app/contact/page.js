@@ -27,24 +27,24 @@ export default function Page() {
         </div>
       </div>
 
-      {/* <div className="flex justify-center items-center mt-4 mb-8">
+      <div className="flex justify-center items-center mt-4 mb-8">
         <ContactInfo />
-      </div> */}
+      </div>
 
-      {/* <div className="flex justify-center items-center mt-4  z-50">
+      <div className="flex justify-center items-center mt-4  z-50">
         <SocialMediaLinks />
-      </div> */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-        <div className="flex justify-center items-center -mt-8"></div>
+      </div>
+      
         <div className="flex justify-center items-center -mt-8">
           <ContactForm />
         </div>
+       
         {/* <div className="flex justify-center items-center"> */}
-        <div className="grid grid-cols-1 mt-24">
+        {/* <div className="grid grid-cols-1 -mt-8">
           <div className="flex flex-col text-center">
-            {/* <h2 className=" font-bold">Mike Martin Media</h2> */}
+           
             <div className="grid grid-cols-1 gap-6">
-              {/* Phone Number Section */}
+           
               <h2 className="text-xl font-bold">Mike Martin Media</h2>
               <div className="group hover:transform hover:scale-110 transition-transform ">
                 <div className="flex flex-col items-center">
@@ -63,7 +63,7 @@ export default function Page() {
                   </a>
                 </div>
               </div>
-              {/* Address Section */}
+             
               <div className="group hover:transform hover:scale-110 transition-transform ">
                 <div className="flex flex-col items-center">
                   <IconLink
@@ -85,7 +85,7 @@ export default function Page() {
                   </a>
                 </div>
               </div>
-              {/* Email Section */}
+             
               <div className="group hover:transform hover:scale-110 transition-transform ">
                 <div className="flex flex-col items-center">
                   <IconLink
@@ -108,8 +108,8 @@ export default function Page() {
               <SocialMediaLinks />
             </div>
           </div>
-        </div>
-      </div>
+        </div> */}
+     
       {/* </div> */}
     </main>
   );

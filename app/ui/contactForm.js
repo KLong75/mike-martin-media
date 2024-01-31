@@ -50,7 +50,6 @@ export default function ContactForm() {
 
   return (
     <div className="p-8 m-4 w-full">
-    
       <div className="flex justify-center items-center mt-6 mb-2 md:mb-6">
         <h3 className=" text-xl font-bold mr-1">Send</h3>
         <div className="flex justify-center items-center w-14 h-auto mb-1">
@@ -63,8 +62,8 @@ export default function ContactForm() {
         </div>
         <h3 className="text-xl font-bold ml-1">a Message</h3>
       </div>
-      <div>
-      {/* <div className="flex mt-6 mb-2 justify-center items-center max-w-160">
+      {/* <div className="flex justify-center items-center"> */}
+        {/* <div className="flex mt-6 mb-2 justify-center items-center max-w-160">
         <h3 className=" text-xl font-bold mr-1">Send</h3>
         <div className="flex justify-center items-center w-14 h-auto mb-1">
           <Image
@@ -76,7 +75,9 @@ export default function ContactForm() {
         </div>
         <h3 className="text-xl font-bold ml-1">a Message</h3>
       </div> */}
-        <form onSubmit={handleFormSubmit} className="p-8 shadow-2xl max-w-160">
+     
+      
+        <form onSubmit={handleFormSubmit} className="p-8 shadow-2xl max-w-200 mx-auto">
           {/* <div className="flex justify-center items-center mt-6 mb-2">
             <h3 className=" text-xl font-bold mr-1">Send</h3>
             <div className="flex justify-center items-center w-14 h-auto mb-1">
@@ -183,6 +184,6 @@ export default function ContactForm() {
           </div>
         </form>
       </div>
-    </div>
+     
   );
 }
