@@ -6,6 +6,7 @@ import { useState } from "react";
 import SubmitButtonWithPlaneAnimation from "./submitButtonWithPlaneAnimation";
 // import from utils
 import { validateEmail } from "../lib/utils";
+import MMMLineLogoBlack from "./mmmLineLogoBlack";
 
 export default function ContactForm() {
   const [firstName, setFirstName] = useState("");
@@ -77,7 +78,7 @@ export default function ContactForm() {
       </div> */}
      
       
-        <form onSubmit={handleFormSubmit} className="p-8 shadow-2xl max-w-200 mx-auto">
+        <form onSubmit={handleFormSubmit} className="p-8 shadow-2xl max-w-200 mx-auto relative">
           {/* <div className="flex justify-center items-center mt-6 mb-2">
             <h3 className=" text-xl font-bold mr-1">Send</h3>
             <div className="flex justify-center items-center w-14 h-auto mb-1">
@@ -181,6 +182,9 @@ export default function ContactForm() {
               onClick={handleFormSubmit}
               isSubmitted={buttonSubmitted}
             />
+          </div>
+          <div className="absolute bottom-0 right-0 left-0">
+          <MMMLineLogoBlack />
           </div>
         </form>
       </div>
