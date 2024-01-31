@@ -32,7 +32,7 @@ export default function Page() {
       <h2 className="mt-6 -mb-4 md:mb-8 lg:mb-20 md:mt- text-center text-3xl md:text-4xl font-extrabold ">
         Livestreaming
       </h2>
-      <section className>
+      <section>
         <div className="flex justify-center items-center">
           <p className="text-left p-8 md:-mt-12 md:px-48 lg:-mt-24 lg:px-60 lg:mr-24 lg:ml-24">
             Wherever you are, we can help you stream to{" "}
@@ -46,7 +46,7 @@ export default function Page() {
           <ContactUsButton />
         </div>
       </section>
-      <section className=" justify-center items-center mt-2">
+      <section className="justify-center items-center mt-2">
         <div className="flex justify-center">
           <h3 className="text-xl font-bold">Available Streaming Services</h3>
         </div>
