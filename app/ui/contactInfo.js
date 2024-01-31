@@ -6,10 +6,10 @@ export default function ContactInfo() {
     <div className="justify-items-center md:mt-">
       <div className="flex flex-col text-center space-y-4">
         <h2 className=" font-bold">Mike Martin Media</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-48">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0  md:gap-24 lg:gap-52">
           {/* Phone Number Section */}
           <div className="group hover:transform hover:scale-110 transition-transform md:mt-6">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center md:ml-6">
             <IconLink
                 href="tel:636-212-0978"
                 icon={<FaPhone size={24} />}
@@ -47,7 +47,7 @@ export default function ContactInfo() {
           </div>
           {/* Email Section */}
           <div className="group hover:transform hover:scale-110 transition-transform mt-4 md:mt-6">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center md:mr-6">
             <IconLink
                 href="mailto:mike@mikemartinmedia.com"
                 icon={<FaEnvelope size={24} />}
@@ -58,7 +58,7 @@ export default function ContactInfo() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="email Mike Martin Media"
-                className="mt-"
+                
               >
                 <span>mike@mikemartinmedia.com</span>
               </a>

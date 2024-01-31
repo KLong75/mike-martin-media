@@ -8,8 +8,8 @@ import ContactInfo from "./contactInfo";
 export default function Footer() {
   return (
     <footer className=" bg-black text-white">
-      <div className="grid grid-cols-1  justify-items-center mt-2">
-        <div className="hidden md:flex justify-center items-center w-32 h-auto">
+      <div className="grid grid-cols-1  justify-items-center">
+        <div className=" justify-center items-center w-32 h-auto -mb-3">
           <Image
             src="/branding/mmm_logo_white.png"
             alt="logo"
@@ -19,20 +19,20 @@ export default function Footer() {
           />
         </div>
 
-        <div className=" mt-6 md:mt-0">
+        <div >
           <ContactInfo />
         </div>
-        <div className="flex justify-center items-center w-full mt-4 mb-4">
+        <div className="flex justify-center items-center w-full mt-4 mb-2">
           <SocialMediaLinks />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center py-2">
-        <div className="mb-">
+      <div className="flex flex-col justify-center items-center py-2 -mb-4 sm:-mb-0">
+        <div>
           <span className="text-xs ">©2024 Mike Martin Media</span>
         </div>
-        <span className="text-xs">Website by Rhythm Code Studio</span>
+        <a href="https://kevinlong.dev" target="_blank" rel="noopener noreferrer"><span className="text-xs">Website by Rhythm Code Studio</span></a>
       </div>
-      <div className="flex  md:hidden justify-center items-center w-full">
+      <div className="flex md:hidden justify-center items-center w-full">
         <Image
           src="/branding/mmm_line_logo_white.png"
           height={60}
