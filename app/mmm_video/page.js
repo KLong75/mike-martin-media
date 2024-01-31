@@ -5,11 +5,12 @@ import Head from "next/head";
 // import from react
 // import { useState } from "react";
 // import components
-import VideoGallery from "../ui/videoGallery";
-import VideoCategories from "../ui/videoCategories";
+// import VideoGallery from "../ui/videoGallery";
+// import VideoCategories from "../ui/videoCategories";
 import TextSegment from "../ui/textSegment";
 import OurWorkTiles from "../ui/ourWorkTiles";
 import MmmSiteButtonTextOnly from "../ui/mmmSiteButtonTextOnly";
+import BackToHomeLink from "../ui/backToHome";
 
 export const metadata = {
   title: "Our Work",
@@ -20,11 +21,10 @@ export default function Page() {
   // const [selectedCategory, setSelectedCategory] = useState("All Videos");
   return (
     <>
-    <Head>
+    {/* <Head>
         <title>Videos</title>
         <meta name="description" content="We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process." />
-        {/* Other meta tags */}
-    </Head>
+    </Head> */}
     <main>
       {/* <div className="flex justify-center items-center mt-12 mb-6"> */}
         {/* <div className="flex justify-center items-center w-24 h-8 mb-1">
@@ -53,7 +53,7 @@ export default function Page() {
       </section>
       <VideoGallery selectedCategory={selectedCategory} /> */}
       <div className="mt-6">
-        <TextSegment text="Contact us today to get started on your Corporate video project. This text can change. Here we need to invite visitors to contact MMM." />
+        <TextSegment text="From Corporate, Education, Medical and Nonprofit videos, to Livestreaming, and Photography, we are your partner through every step of the process. Check out our work below and contact us today to get started on your project. This text can change. What we need here is an invitation for visitors to contact MMM." />
       </div>
       <div className="flex justify-center items-center p-2 mb-6">
         <MmmSiteButtonTextOnly
@@ -62,6 +62,9 @@ export default function Page() {
           backgroundColor="bg-black"
           textColor="text-white"
         />
+      </div>
+      <div className="mb-4">
+      <BackToHomeLink />
       </div>
     </main>
     </>

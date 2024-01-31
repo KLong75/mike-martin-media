@@ -55,7 +55,9 @@ export default function Home() {
       <div className="flex justify-center items-center w-full h-10">
         <h3 className="text-center font-bold text-2xl ">OUR WORK</h3>
       </div>
+      <div className="flex justify-center items-center mb-12 ">
       <OurWorkTiles />
+      </div>
       <div className="flex justify-center items-center p-2 ">
         <MmmSiteButtonTextOnly
           href="mmm_video"
@@ -80,13 +82,13 @@ export default function Home() {
           <TeamGallery />
         </div>
       </section>
-      <section>
+      <section className="mt-12">
         <BannerVideo 
           src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" 
           title="MMM Travel Video"
         />
       </section>
-      <section>
+      <section className="mb-12">
         <div className="flex justify-center items-center mt-10">
           <div className="w-24 h-8 mx-2 mb-1">
             <Image

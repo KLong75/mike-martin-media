@@ -6,6 +6,8 @@ import { weTextBlockData } from "../lib/data";
 import ContactUsButton from "../ui/contactUsButton";
 import WeTextBlock from "../ui/weTextBlock";
 import MeetTheTeamButton from "../ui/meetTheTeamButton";
+import TeamGallery from "../ui/teamGallery";
+import BackToHomeLink from "../ui/backToHome";
 // import TeamGallery from "../ui/teamGallery";
 
 export const metadata = {
@@ -15,7 +17,10 @@ export const metadata = {
 export default function Page() {
   return (
     <main>
-      <h2 className="text-center font-bold text-4xl mt-4">About MMM</h2>
+      <div className="mt-4 ">
+        <BackToHomeLink />
+      </div>
+      <h2 className="text-center font-bold text-4xl mt-6">About MMM</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:p-16">
         <div className="flex flex-col justify-center items-center h-full p-6">
           <div className="lg:h-3/4">
@@ -52,8 +57,6 @@ export default function Page() {
             />
           </div>
         </div>
-      
-
       </div>
       <section>
         <div className="grid grid-cols-1 lg:grid-cols-3 w-full">
@@ -69,11 +72,13 @@ export default function Page() {
       {/* <div className="w-full">
         <MMMLineLogoBlack />
       </div> */}
-      <div className="flex justify-center items-center mb-4 p-6">
+      {/* <div className="flex justify-center items-center mb-4 p-6">
         <ContactUsButton />
-      </div>
+      </div> */}
+   
       <div className="flex justify-center items-center mb-4 p-6">
         <MeetTheTeamButton />
+        {/* <TeamGallery /> */}
       </div>
       {/* <section>
         <div>
@@ -91,6 +96,9 @@ export default function Page() {
           <TeamGallery />
         </div>
       </section> */}
+      <div className="mb-4">
+        <BackToHomeLink />
+      </div>
     </main>
   );
 }
