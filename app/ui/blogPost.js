@@ -138,7 +138,11 @@ export default function BlogPost({
       <div
         className="flex flex-col items-center w-full h-auto mb-12 shadow-2xl relative"
         onClick={() => setBlogPostOpen(true)}>
-        <div id="image-div" className="w-72 h-72 sm:w-72 sm:h-72 mb-1">
+        <div className="text-center w-72 hover:cursor-pointer mt-3 -mb-4">
+          <h2 className="font-bold text-wrap">{title}</h2>
+          <span className="text-sm mt-2">{formatDate(post_date)}</span>
+        </div>
+        <div id="image-div" className="w-72 h-72 -mb-2">
           <Image
             className="shadow-xl mt-6"
             priority
@@ -148,13 +152,12 @@ export default function BlogPost({
             alt={`Image for ${title} blog post`}
           />
         </div>
-        <div className="text-center w-72 hover:cursor-pointer">
-          <h2 className="font-bold text-wrap">{title}</h2>
-          <span className="text-sm mt-2">{formatDate(post_date)}</span>
+        <div className="text-center w-72 hover:cursor-pointer mb-4">
+          {/* <h2 className="font-bold text-wrap">{title}</h2>
+          <span className="text-sm mt-2">{formatDate(post_date)}</span> */}
           <p className="mb-6 text-pretty text-balance text-wrap text-left text-md mt-2">
             {shortenPostText(text[0], 200)}
-            <span
-              className="inline-flex items-center font-bold text-yellow-800 hover:cursor-pointer">
+            <span className="inline-flex items-center font-bold text-yellow-800 hover:cursor-pointer">
               READ MORE <IoIosArrowRoundForward className="text-2xl" />
             </span>
           </p>
@@ -179,7 +182,7 @@ export default function BlogPost({
               <span className="text-sm mt-2">{formatDate(post_date)}</span>
             </div>
             <div className="-mt-8 mb-4 md:hidden">
-            <MMMLineLogoBlack />
+              <MMMLineLogoBlack />
             </div>
             <div className="flex flex-col ">
               <div className="flex justify-center items-center">
@@ -191,9 +194,8 @@ export default function BlogPost({
                     alt={`Image for ${title} blog post`}
                   />
                 </div>
-                
               </div>
-             
+
               <div className=" p-6 overflow-auto">
                 {text.map((paragraph, index) => (
                   <p key={index} className="mb-4">

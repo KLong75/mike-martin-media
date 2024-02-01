@@ -26,7 +26,7 @@ export default function Footer() {
           <SocialMediaLinks />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center py-2 -mb-4 sm:-mb-0">
+      <div className="flex flex-col justify-center items-center py-2 -mb-4 sm:mb- md:mb-0">
         <div>
           <span className="text-xs ">©2024 Mike Martin Media</span>
         </div>

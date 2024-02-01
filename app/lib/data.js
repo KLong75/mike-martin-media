@@ -669,8 +669,8 @@ export const blogPosts = [
     title: "A Note from Mike",
     post_date: "2022-2-10",
     image_src: "/images/blogPics/mikeNotePic.jpg",
-    image_width: 1140,
-    image_height: 855,
+    image_width: 1000,
+    image_height: 667,
     text: [
       "MMM is in full swing to start 2022!  Local shoots in St. Louis, Zoom recordings, Live Stream events and shoots from Texas to Nevada have highlighted the start to our year. We are booked for shoots from coast to coast over the next couple of months and we are looking forward to sharing our journey with all of you.",
       "Our new Midtown studio has proven to be a huge benefit for our local clients. This week, we are shooting a podcast in our brand new podcast studio. If you haven’t been here yet, just reach out and we’ll set up a time for a tour and grab you some lunch at one of our neighborhood favorites!",

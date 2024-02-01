@@ -24,13 +24,13 @@ export default function Page() {
             alt="company logo"
           />
         </div> */}
-        <h2 className=" text-3xl md:text-4xl font-bold ml-2">
+        <h2 className=" text-3xl md:text-4xl font-bold">
           Beyond the Lens
         </h2>
       </div>
       <TextSegment text="Venture beyond the lens and take a look behind the scenes." />
 
-      <div className="md:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+      <div className="md:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 p-6">
         {blogPosts.map((post, index) => (
           <BlogPost
             key={index}
