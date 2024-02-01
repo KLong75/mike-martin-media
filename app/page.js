@@ -52,11 +52,9 @@ export default function Home() {
           />
         </div>
       </div>
+      <section id="our-work-section">
       <div className="flex justify-center items-center w-full h-10">
         <h3 className="text-center font-bold text-2xl ">OUR WORK</h3>
-      </div>
-      <div className="flex justify-center items-center mb-12 ">
-      <OurWorkTiles />
       </div>
       <div className="flex justify-center items-center p-2 ">
         <MmmSiteButtonTextOnly
@@ -66,22 +64,8 @@ export default function Home() {
           textColor="text-white"
         />
       </div>
-      <section>
-        <div className="flex justify-center items-center mt-10">
-          <div className="w-24 h-8 mx-2 mb-1">
-            <Image
-              src="/branding/mmm_black.png"
-              width={294}
-              height={95}
-              alt="company logo"
-            />
-          </div>
-          <h2 className="text-4xl font-bold -ml-2">eet the Team</h2>
-        </div>
-        <div>
-          <TeamGallery />
-        </div>
       </section>
+      
       <section className="mt-12">
         <BannerVideo 
           src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0" 
@@ -187,6 +171,9 @@ export default function Home() {
       <div className="flex justify-center mt-2 mb-8 ">
         <MeetTheTeamButton />
       </div> */}
+      <div className="w-full">
+        <MMMLineLogoBlack />
+      </div>
     </main>
   );
 }

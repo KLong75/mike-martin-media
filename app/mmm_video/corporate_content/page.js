@@ -3,6 +3,7 @@ import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
 import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
 import TextSegment from "@/app/ui/textSegment";
 import VideoGallery from "@/app/ui/videoGallery";
+import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 
 export const metadata = {
   title: "Corporate Videos",
@@ -20,10 +21,7 @@ export default function CorporateContent() {
       <section className="mt-12">
         <VideoGallery selectedCategory="Corporate" />
       </section>
-      {/* <div className="mb-3 mt-6">
-        <BackToOurWorkLink />
-      </div> */}
-      <div className="mt-6">
+      <div className="mt-12">
         <TextSegment text="Contact us today to get started on your Corporate video project. This text can change. Here we need to invite visitors to contact MMM." />
       </div>
       <div className="flex justify-center items-center p-2 mb-6">
@@ -34,8 +32,12 @@ export default function CorporateContent() {
           textColor="text-white"
         />
       </div>
-      <div className="mb-3 ">
+      <div className="mb-3">
         <BackToOurWorkLink />
+      </div>
+      
+      <div className="w-full">
+        <MMMLineLogoBlack />
       </div>
     </main>
   );

@@ -45,6 +45,9 @@ export default function Page() {
           />
         ))}
       </div>
+      <div className="w-full">
+        <MMMLineLogoBlack />
+      </div>
     </main>
   );
 }

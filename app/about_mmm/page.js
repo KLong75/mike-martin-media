@@ -8,6 +8,7 @@ import WeTextBlock from "../ui/weTextBlock";
 import MeetTheTeamButton from "../ui/meetTheTeamButton";
 import TeamGallery from "../ui/teamGallery";
 import BackToHomeLink from "../ui/backToHome";
+import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 // import TeamGallery from "../ui/teamGallery";
 
 export const metadata = {
@@ -69,18 +70,13 @@ export default function Page() {
           ))}
         </div>
       </section>
-      {/* <div className="w-full">
-        <MMMLineLogoBlack />
-      </div> */}
-      {/* <div className="flex justify-center items-center mb-4 p-6">
-        <ContactUsButton />
-      </div> */}
-   
+      
       <div className="flex justify-center items-center mb-4 p-6">
-        <MeetTheTeamButton />
-        {/* <TeamGallery /> */}
+        <ContactUsButton />
       </div>
-      {/* <section>
+   
+      
+      <section>
         <div>
           <div className="flex justify-center items-center">
             <div className="w-24 h-8 mx-2 mb-1">
@@ -95,9 +91,12 @@ export default function Page() {
           </div>
           <TeamGallery />
         </div>
-      </section> */}
+      </section>
       <div className="mb-4">
         <BackToHomeLink />
+      </div>
+      <div className="w-full">
+        <MMMLineLogoBlack />
       </div>
     </main>
   );

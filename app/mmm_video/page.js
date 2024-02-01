@@ -11,6 +11,7 @@ import TextSegment from "../ui/textSegment";
 import OurWorkTiles from "../ui/ourWorkTiles";
 import MmmSiteButtonTextOnly from "../ui/mmmSiteButtonTextOnly";
 import BackToHomeLink from "../ui/backToHome";
+import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 
 export const metadata = {
   title: "Our Work",
@@ -75,6 +76,9 @@ export default function Page() {
         <div className="mb-4">
           <BackToHomeLink />
         </div>
+        <div className="w-full">
+        <MMMLineLogoBlack />
+      </div>
       </main>
     </>
   );

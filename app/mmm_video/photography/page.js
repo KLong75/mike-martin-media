@@ -7,6 +7,7 @@ import PhotographyGallery from "@/app/ui/photographyGallery";
 import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
 import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
 import TextSegment from "@/app/ui/textSegment";
+import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 // import icons
 // import { BiArrowBack } from "react-icons/bi";
 import { IoIosArrowBack } from "react-icons/io";
@@ -87,6 +88,9 @@ export default function Page() {
       </div>
       <div className="mb-3 ">
         <BackToOurWorkLink />
+      </div>
+      <div className="w-full">
+        <MMMLineLogoBlack />
       </div>
     </main>
   );

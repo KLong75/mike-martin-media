@@ -6,6 +6,7 @@ import BannerVideo from "../../ui/bannerVideo";
 import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
 import TextSegment from "@/app/ui/textSegment";
 import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
+import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 // import data
 import VideoGallery from "@/app/ui/videoGallery";
 // import icons
@@ -95,6 +96,9 @@ export default function Page() {
       </div>
       <div className="mb-3 ">
         <BackToOurWorkLink />
+      </div>
+      <div className="w-full">
+        <MMMLineLogoBlack />
       </div>
     </main>
   );

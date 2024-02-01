@@ -41,7 +41,7 @@ export default function Page() {
           <ContactForm />
         </div>
   
-        <div className="mb-24 w-full h-auto">
+        <div className="-mb-12 w-full h-auto">
         <InstagramWidget />
         </div>
         {/* <div className="flex justify-center items-center"> */}

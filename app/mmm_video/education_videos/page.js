@@ -3,6 +3,7 @@ import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
 import VideoGallery from "@/app/ui/videoGallery";
 import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
 import TextSegment from "@/app/ui/textSegment";
+import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 
 export const metadata = {
   title: "Education Videos",
@@ -33,6 +34,9 @@ export default function EducationContent() {
       </div>
       <div className="mb-3 ">
         <BackToOurWorkLink />
+      </div>
+      <div className="w-full">
+        <MMMLineLogoBlack />
       </div>
     </main>
   );
