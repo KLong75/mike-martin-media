@@ -12,6 +12,7 @@ import OurWorkTiles from "../ui/ourWorkTiles";
 import MmmSiteButtonTextOnly from "../ui/mmmSiteButtonTextOnly";
 import BackToHomeLink from "../ui/backToHome";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
+import ContactUsButton from "../ui/contactUsButton";
 
 export const metadata = {
   title: "Our Work",
@@ -66,12 +67,13 @@ export default function Page() {
           <TextSegment text="From Corporate, Education, Medical and Nonprofit videos, to Livestreaming, and Photography, we are your partner through every step of the process. Contact us today to get started on your project. This text can change. What we need here is an invitation for visitors to contact MMM." />
         </div>
         <div className="flex justify-center items-center p-2 mb-6">
-          <MmmSiteButtonTextOnly
+          {/* <MmmSiteButtonTextOnly
             href="/contact"
             label="Contact Us"
             backgroundColor="bg-black"
             textColor="text-white"
-          />
+          /> */}
+          <ContactUsButton />
         </div>
         <div className="mb-4">
           <BackToHomeLink />

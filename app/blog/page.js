@@ -4,6 +4,7 @@ import Image from "next/image";
 import BlogPost from "../ui/blogPost";
 import TextSegment from "../ui/textSegment";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
+import BackToHomeLink from "../ui/backToHome";
 // import data
 import { blogPosts } from "../lib/data";
 
@@ -15,6 +16,9 @@ export const metadata = {
 export default function Page() {
   return (
     <main className="flex-1 ">
+   <div className="mt-4 ">
+        <BackToHomeLink />
+      </div>
       <div className="flex justify-center items-center mt-6 mb-2">
         {/* <div className="flex justify-center items-center w-24 h-8 mb-1">
           <Image
@@ -45,9 +49,13 @@ export default function Page() {
           />
         ))}
       </div>
+      <div className="mt-4 ">
+        <BackToHomeLink />
+      </div>
       <div className="w-full">
         <MMMLineLogoBlack />
       </div>
+      
     </main>
   );
 }

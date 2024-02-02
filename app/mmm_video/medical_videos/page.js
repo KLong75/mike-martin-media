@@ -4,6 +4,7 @@ import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
 import TextSegment from "@/app/ui/textSegment";
 import VideoGallery from "@/app/ui/videoGallery";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
+import ContactUsButton from "@/app/ui/contactUsButton";
 
 export const metadata = {
   title: "Medical Videos",
@@ -26,12 +27,7 @@ export default function MedicalVideos() {
         <TextSegment text="Contact us today to get started on your Education video project. This text can change. Here we need to invite visitors to contact MMM." />
       </div>
       <div className="flex justify-center items-center p-2 mb-6">
-        <MmmSiteButtonTextOnly
-          href="/contact"
-          label="Contact Us"
-          backgroundColor="bg-black"
-          textColor="text-white"
-        />
+        <ContactUsButton />
       </div>
       <div className="mb-3 ">
         <BackToOurWorkLink />

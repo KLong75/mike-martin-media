@@ -41,7 +41,7 @@ const InstagramWidget = () => {
             }}></iframe>
         </div>
       </div>
-      <div className="flex justify-center items-center w-full -mt-36 mb-6">
+      <div className="flex justify-center items-center w-full -mt-6 sm:-mt-6 md:-mt-20 lg:-mt-28 xl:-mt-40 mb-6 sm:mb-28 md:mb-40">
         <span className="text-center text-lg font-bold mr-4">#mmmgood</span>
         <a href="https://www.instagram.com/explore/tags/mmmmidtown/" target="_blank" rel="noopener noreferrer" className="hover:transform hover:scale-110 transition-transform hover:cursor-pointer">
         <span className="text-center text-lg font-bold ml-3 ">#mmmmidtown</span>

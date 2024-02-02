@@ -18,7 +18,7 @@ export const metadata = {
 export default function Page() {
   return (
     <main className=" flex-1">
-      <div className="flex justify-center items-center mt-10 mb-2 p-2">
+      <div className="flex justify-center items-center mt-10 -mb-6 p-2">
         <h2 className="text-4xl font-bold mr-2">Contact</h2>
         <div className="flex justify-center items-center w-24 h-8 mb-1">
           <Image
@@ -30,8 +30,10 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center mt-4 mb-8">
-        <ContactInfo />
+      <div className="flex justify-center items-center mb-8">
+        <ContactInfo 
+        m_src="/branding/singleMBlack.png"
+        />
       </div>
 
       <div className="flex justify-center items-center mt-4  z-50">
@@ -42,10 +44,10 @@ export default function Page() {
           <ContactForm />
         </div>
   
-        <div className="md:-mb-16 lg:-mb-28 w-full h-auto ">
+        <div className="mb-20 md:-mb-16 lg:-mb-28 w-full h-auto ">
         <InstagramWidget />
         </div>
-        <div className="w-full">
+        <div className="w-full mt-6">
         <MMMLineLogoBlack />
       </div>
         {/* <div className="flex justify-center items-center"> */}

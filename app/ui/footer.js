@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className=" bg-black text-white">
       {/* <InstagramSlider /> */}
       <div className="grid grid-cols-1  justify-items-center">
-        <div className=" justify-center items-center w-32 h-auto -mb-3">
+        <div className=" justify-center items-center w-32 h-auto -mb-12">
           <Image
             src="/branding/mmm_logo_white.png"
             alt="logo"
@@ -22,7 +22,9 @@ export default function Footer() {
         </div>
 
         <div>
-          <ContactInfo />
+          <ContactInfo 
+          m_src="/branding/singleMWhite.png"
+          />
         </div>
         <div className="flex justify-center items-center w-full mt-4 mb-2">
           <SocialMediaLinks />
