@@ -4,6 +4,8 @@ import Footer from './ui/footer'
 import ScrollToTopButton from './ui/scrollToTop'
 // import styles
 import './globals.css'
+import InstagramSlider from './ui/instagramSlider'
+import MMMLineLogoBlack from './ui/mmmLineLogoBlack'
 
 
 // const inter = Inter({ subsets: ['latin'] })

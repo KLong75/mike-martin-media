@@ -9,6 +9,7 @@ import IconLink from "../ui/iconLink";
 import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
 import InstagramWidget from "../ui/instagramWidget";
 import MMMInstaLogo from "../ui/mmmInstaLogo";
+import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 
 export const metadata = {
   title: "Contact",
@@ -41,9 +42,12 @@ export default function Page() {
           <ContactForm />
         </div>
   
-        <div className="-mb-12 w-full h-auto">
+        <div className="md:-mb-16 lg:-mb-28 w-full h-auto ">
         <InstagramWidget />
         </div>
+        <div className="w-full">
+        <MMMLineLogoBlack />
+      </div>
         {/* <div className="flex justify-center items-center"> */}
         {/* <div className="grid grid-cols-1 -mt-8">
           <div className="flex flex-col text-center">

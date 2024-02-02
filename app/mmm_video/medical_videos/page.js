@@ -18,7 +18,7 @@ export default function MedicalVideos() {
     <div className="mt-3 -mb-9">
         <BackToOurWorkLink />
       </div>
-      <h2 className="mt-12 text-center text-3xl md:text-4xl font-bold">Medical Content</h2>
+      <h2 className="mt-12 text-center text-3xl md:text-4xl font-bold">Medical Videos</h2>
       <section className="mt-12">
         <VideoGallery selectedCategory="Medical" />
       </section>

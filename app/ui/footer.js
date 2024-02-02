@@ -3,11 +3,13 @@ import Image from "next/image";
 // import components
 import SocialMediaLinks from "./socialMediaLinks";
 import ContactInfo from "./contactInfo";
+import InstagramSlider from "./instagramSlider";
 // import ContactUsButton from "./contactUsButton";
 
 export default function Footer() {
   return (
     <footer className=" bg-black text-white">
+      {/* <InstagramSlider /> */}
       <div className="grid grid-cols-1  justify-items-center">
         <div className=" justify-center items-center w-32 h-auto -mb-3">
           <Image
@@ -19,7 +21,7 @@ export default function Footer() {
           />
         </div>
 
-        <div >
+        <div>
           <ContactInfo />
         </div>
         <div className="flex justify-center items-center w-full mt-4 mb-2">
@@ -30,7 +32,12 @@ export default function Footer() {
         <div>
           <span className="text-xs ">©2024 Mike Martin Media</span>
         </div>
-        <a href="https://kevinlong.dev" target="_blank" rel="noopener noreferrer"><span className="text-xs">Website by Rhythm Code Studio</span></a>
+        <a
+          href="https://kevinlong.dev"
+          target="_blank"
+          rel="noopener noreferrer">
+          <span className="text-xs">Website by Rhythm Code Studio</span>
+        </a>
       </div>
       <div className="flex md:hidden justify-center items-center w-full">
         <Image

@@ -9,7 +9,8 @@ import MeetTheTeamButton from "../ui/meetTheTeamButton";
 import TeamGallery from "../ui/teamGallery";
 import BackToHomeLink from "../ui/backToHome";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
-// import TeamGallery from "../ui/teamGallery";
+import TextSegment from "../ui/textSegment";
+import InstagramWidget from "../ui/instagramWidget";
 
 export const metadata = {
   title: "About MMM",
@@ -70,15 +71,18 @@ export default function Page() {
           ))}
         </div>
       </section>
-      
+
       <div className="flex justify-center items-center mb-4 p-6">
         <ContactUsButton />
       </div>
-   
-      
+
+      <section className="my-12">
+        <InstagramWidget />
+      </section>
+
       <section>
         <div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center ">
             <div className="w-24 h-8 mx-2 mb-1">
               <Image
                 src="/branding/mmm_black.png"
@@ -89,8 +93,14 @@ export default function Page() {
             </div>
             <h2 className="text-4xl font-bold -ml-2">eet The Team</h2>
           </div>
-          <TeamGallery />
+          <TextSegment text="Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing." />
+          <div className="-mt-8">
+            <TeamGallery />
+          </div>
         </div>
+      </section>
+      <section>
+        <InstagramWidget />
       </section>
       <div className="mb-4">
         <BackToHomeLink />
