@@ -2,32 +2,32 @@ export const ourWorkTilesData = [
   {
     title: "Medical",
     image_src: "/images/ourWorkTileImages/medical.jpg",
-    href: "/mmm_video/medical_videos",
+    href: "/our_work/medical_videos",
   },
   {
     title: "Education",
     image_src: "/images/ourWorkTileImages/education.jpg",
-    href: "/mmm_video/education_videos",
+    href: "/our_work/education_videos",
   },
   {
     title: "Corporate",
     image_src: "/images/ourWorkTileImages/corporate.jpg",
-    href: "/mmm_video/corporate_content",
+    href: "/our_work/corporate_content",
   },
   {
     title: "Nonprofit",
     image_src: "/images/ourWorkTileImages/nonprofit.jpg",
-    href: "/mmm_video/nonprofit_videos",
+    href: "/our_work/nonprofit_videos",
   },
   {
     title: "Livestreaming",
     image_src: "/images/ourWorkTileImages/livestreaming.jpg",
-    href: "/mmm_video/livestreaming",
+    href: "/our_work/livestreaming",
   },
   {
     title: "Photography",
     image_src: "/images/ourWorkTileImages/photography.jpg",
-    href: "/mmm_video/photography",
+    href: "/our_work/photography",
   },
 ];
 

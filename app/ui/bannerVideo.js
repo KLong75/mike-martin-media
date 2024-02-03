@@ -9,9 +9,9 @@ export default function BannerVideo({ src, title }) {
           style={{
             paddingTop:
               title === "MMM Livestreaming Video"
-                ? "42.35%"
+                ? "42.2%"
                 : title === "MMM Photography Slide Show"
-                ? "42.25%"
+                ? "42.2%"
                 : "56.25%",
           }}>
           <iframe

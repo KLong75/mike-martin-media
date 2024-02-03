@@ -30,7 +30,7 @@ const navLinks = [
     label: "About MMM",
   },
   {
-    href: "/mmm_video",
+    href: "/our_work",
     label: "Our Work",
   },
   {
