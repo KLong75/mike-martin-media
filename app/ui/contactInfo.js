@@ -9,15 +9,15 @@ export default function ContactInfo({ m_src }) {
     <div className="justify-items-center">
       <div className="flex flex-col text-center space-y-4">
         <div className="flex justify-center items-center mt-10 p-2">
-          <div className="flex justify-center items-center w-8 h-auto mb-2 ">
+          <div className="flex justify-center items-center w-8 h-auto mb-2.5 ">
             <ColorChangeM src={m_src} />
           </div>
           <h2 className="text-xl font-bold mr-2 -ml-">ike</h2>
-          <div className="flex justify-center items-center w-8 h-auto mb-2">
+          <div className="flex justify-center items-center w-8 h-auto mb-2.5">
             <ColorChangeM src={m_src} />
           </div>
           <h2 className="text-xl font-bold mr-2 -ml-">artin</h2>
-          <div className="flex justify-center items-center w-8 h-auto mb-2">
+          <div className="flex justify-center items-center w-8 h-auto mb-2.5">
             <ColorChangeM src={m_src} />
           </div>
           <h2 className="text-xl font-bold mr-2">edia</h2>

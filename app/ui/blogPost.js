@@ -214,7 +214,16 @@ export default function BlogPost({
                 <HiX className="h-6 w-6" />
               </button>
             </div>
+            <div className="mb-4">
             <MMMLineLogoBlack />
+            </div>
+            <div className="flex justify-center items-center mb-2">
+              <button
+                onClick={handleDialogClose}
+                className="rounded-md  hover:text-gray-500 focus:outline-none">
+                <HiX className="h-6 w-6"/>
+              </button>
+            </div>
           </Dialog.Panel>
         </div>
       </Dialog>
