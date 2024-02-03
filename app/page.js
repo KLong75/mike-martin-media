@@ -161,10 +161,10 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center items-center p-1 -mt-2 md:mt-4 -mb-1">
-          <h3 className="text-2xl md:text-4xl font-bold mr-2">And</h3>
+          <h3 className="text-3xl md:text-4xl font-bold mr-2">And</h3>
           <div
-            className="flex justify-center items-center w-7 md:w-10 h-auto "
-            style={{ marginRight: "-.1rem", marginBottom: ".25rem" }}>
+            className="flex justify-center items-center w-8 md:w-10 h-auto "
+            style={{ marginRight: "-.1rem", marginBottom: ".2rem" }}>
             <Image
               src="/branding/singleMBlack.png"
               width={3492}
@@ -172,7 +172,7 @@ export default function Home() {
               alt="company logo"
             />
           </div>
-          <h2 className="text-2xl md:text-4xl font-bold">ore!</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">ore!</h2>
         </div>
         <div>
           <TextSegment text="Whatever your needs, we've got you covered. Reach out today to see how we can help you with your next project. lorem impsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore." />
