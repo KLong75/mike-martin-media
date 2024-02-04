@@ -19,6 +19,7 @@ import { FaVideo, FaCameraRetro } from "react-icons/fa6";
 import { BsBroadcast } from "react-icons/bs";
 import { RiTeamFill } from "react-icons/ri";
 import { FaClapperboard } from "react-icons/fa6";
+import BannerImage from "./ui/bannerImg";
 
 export default function Home() {
   return (
@@ -64,7 +65,7 @@ export default function Home() {
               services for corporations, nonprofits, education and medical
               institutions. Our mission is to help our clients promote their causes,
               inform their clients, and inspire with their stories. We
-              deliver dynamic multi-media solutions. Visit our about page to learn more about our mission and our team."
+              deliver dynamic multi-media solutions. Visit the About MMM page to learn more about our mission and meet our team."
             />
           </div>
           <div className="flex justify-center items-center pb-6 -mt-6 ">
@@ -76,16 +77,29 @@ export default function Home() {
               imgSrc="/branding/mmm_logo_white.png"
             />
           </div>
-          <div className="flex justify-center items-center w-128 h-auto p-20 pt-0 -mb-8 lg:mb-8">
+          {/* <div className="flex justify-center items-center w-128 h-auto p-20 pt-0 -mb-8 lg:mb-8">
             <Image
               src="/images/workSectionImages/work_section_img.jpg"
               width={960}
               height={840}
               alt="MMM at work"
             />
-          </div>
+          </div> */}
+          <div
+          className="flex justify-center items-center max-w-4xl mx-auto"
+          id="blog-section-image-container"
+          style={{ maxWidth: '1024px' }} // Set the max-width to match the image's intrinsic width or any other desired value
+        >
+          <BannerImage
+            id="blog-section-image"
+            src="/images/aboutPage/mike-van.jpg"
+            alt="Mike in van with camera"
+            width={2048}
+            height={1363}
+          />
+        </div>
 
-          <div className="flex justify-center items-center p-2 mb-6 -mt-12">
+          <div className="flex justify-center items-center p-2 mb-6 ">
             <TextSegment text="Our team brings decades of combined experience from the broadcast and production industries. Contact us today to see what we can do for you." />
           </div>
           <div className="flex justify-center -mt-6">
@@ -102,22 +116,20 @@ export default function Home() {
           <MMMLineLogoBlack />
         </div>
       </section>
-
-      <section>
+      <section className="-mt-4" id="our-work-section">
+        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-36">
+          <h3 className="text-center font-bold text-2xl md:text-4xl mt-2">
+            OUR WORK
+          </h3>
+        </div>
         <BannerVideo
           src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Travel Video"
         />
-      </section>
-      <section className="-mt-4">
-        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-36">
-          <h3 className="text-center font-bold text-2xl md:text-4xl mt-2">OUR WORK</h3>
-        </div>
-
         <div className="flex justify-center items-center p-2 mb-6">
-          <TextSegment text="We take pride in every project.  We partner with clients of all sizes to bring their ideas to life.  From concept to conclusion, we write, shoot, edit, direct, produce, animate, hire talent, find locations, and everything else needed for your production. From videos to livestreams, to animations, to photography we have you covered. Check out our work and then contact us to see what we can do for you!" />
+          <TextSegment text="We take pride in every project.  We partner with clients of all sizes to bring their ideas to life.  From concept to conclusion, we write, shoot, edit, direct, produce, animate, hire talent, find locations, and everything else needed for your production. From videos to livestreams, to animations, to photography we have you covered. Check out Our Work and then contact us to see what we can do for you!" />
         </div>
-        <div className="flex justify-center items-center pb-6 -mt-6 mb-2 w-full">
+        <div className="flex justify-center items-center pb-6 -mt-4 mb-2 w-full">
           <MmmSiteButtonTextOnly
             href="our_work"
             label="Our Work"
@@ -160,7 +172,7 @@ export default function Home() {
             <span className="text-2xl font-bold mr-2">And</span>
             <div
               className="flex justify-center items-center w-6 h-auto "
-              style={{ marginRight: "-.1rem", marginBottom: ".2rem" }}>
+              style={{ marginRight: "-.1rem", marginBottom: ".1rem" }}>
               <Image
                 src="/branding/singleMBlack.png"
                 width={3492}
@@ -175,33 +187,43 @@ export default function Home() {
           <TextSegment text="Whatever your needs, we've got you covered. Contact us today to see how we can help you with your next project. lorem ipsum blah keywords" />
         </div>
         <div className="flex justify-center mb-2 mt-2">
-        <MmmSiteButton
-              href="/contact"
-              label="Contact "
-              backgroundColor="bg-black"
-              textColor="text-white"
-              imgSrc="/branding/mmm_logo_white.png"
-            />
+          <MmmSiteButton
+            href="/contact"
+            label="Contact "
+            backgroundColor="bg-black"
+            textColor="text-white"
+            imgSrc="/branding/mmm_logo_white.png"
+          />
         </div>
-        
         <div className="w-full mt-4">
           <MMMLineLogoBlack />
         </div>
       </section>
-      <section className="mb-12">
-        <div className="flex justify-center items-center mt-10">
-          <div className="w-24 h-8 mx-2 mb-1">
-            <Image
-              src="/branding/mmm_black.png"
-              width={294}
-              height={95}
-              alt="company logo"
-            />
-          </div>
-          <h2 className="text-4xl font-bold -ml-2">Blog</h2>
+      <section className="mb-4" id="blog-section">
+        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-36">
+          <h3 className="text-center font-bold text-2xl md:text-4xl mt-2">
+            BEYOND THE LENS
+          </h3>
         </div>
-        <TextSegment text=" Check out our latest adventures as we film and travel across town and around the country. Try to keep up, we move fast!" />
-        <div className="flex justify-center items-center p-2 ">
+        <BannerVideo
+          src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          title="MMM Travel Video"
+        />
+        {/* <div
+          className="flex justify-center items-center max-w-4xl mx-auto"
+          id="blog-section-image-container"
+          style={{ maxWidth: '1024px' }} // Set the max-width to match the image's intrinsic width or any other desired value
+        >
+          <BannerImage
+            id="blog-section-image"
+            src="/images/aboutPage/mike-van.jpg"
+            alt="Mike in van with camera"
+            width={2048}
+            height={1363}
+          />
+        </div> */}
+        <TextSegment text=" Check out our latest adventures in the MMM Blog as we film and travel across town and around the country. Try to keep up, we move fast!" />
+        <div className="flex justify-center items-center  mb-2 mt-2">
           <MmmSiteButtonLogoFirst
             href="blog"
             label="Blog"
@@ -210,9 +232,16 @@ export default function Home() {
             imgSrc="/branding/mmm_logo_white.png"
           />
         </div>
+        <div className="w-full mt-4">
+        <MMMLineLogoBlack />
+      </div>
       </section>
+    </main>
+  );
+}
 
-      {/*  
+{
+  /*  
       <div className="mb-2 p-2">
         <div className="flex justify-center items-center mb-1">
           <h2 className="text-4xl font-bold mr-2">The</h2>
@@ -237,12 +266,7 @@ export default function Home() {
 
         We are easy to communicate with, responsive, and proactive throughout the entire production process.  Our team is both personable and professional, and make sure that our clients enjoy the process. We offer the best value in professional video production."
       />
-    */}
-      <div className="w-full">
-        <MMMLineLogoBlack />
-      </div>
-    </main>
-  );
+    */
 }
 
 {
