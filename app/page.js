@@ -9,18 +9,16 @@ import ContactUsButton from "./ui/contactUsButton";
 import TextSegment from "./ui/textSegment";
 import BannerVideo from "./ui/bannerVideo";
 import MmmGood from "./ui/mmmGood";
-import MeetTheTeamButton from "./ui/meetTheTeamButton";
+import MmmSiteButton from "./ui/mmmSiteButton";
+import MmmSiteButtonTextOnly from "./ui/mmmSiteButtonTextOnly";
 import WorkCategorySection from "./ui/workCategorySection";
 import MMMLineLogoBlack from "./ui/mmmLineLogoBlack";
-import TeamGallery from "./ui/teamGallery";
 import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
 // import Icons
 import { FaVideo, FaCameraRetro } from "react-icons/fa6";
 import { BsBroadcast } from "react-icons/bs";
 import { RiTeamFill } from "react-icons/ri";
-import MmmSiteButton from "./ui/mmmSiteButton";
-import OurWorkTiles from "./ui/ourWorkTiles";
-import MmmSiteButtonTextOnly from "./ui/mmmSiteButtonTextOnly";
+import { FaClapperboard } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -32,9 +30,8 @@ export default function Home() {
       {/* About Section */}
       <section id="home-page-about-section">
         <div className="flex flex-col justify-center items-center w-full h-auto -mt-4">
-          <div className="bg-black text-white w-full h-36 mb-6">
-            <div className="flex justify-center items-center mt-2 -mb-6 p-2">
-              {/* <h3 className="text-4xl font-bold mr-2">About</h3> */}
+          <div className="bg-black text-white w-full h-20 md:h-36 mb-6">
+            <div className="hidden md:flex justify-center items-center mt-2 -mb-6 p-2">
               <div className="flex justify-center items-center w-36 h-auto mb-1 mt-2">
                 <Image
                   src="/branding/mmm_logo_white.png"
@@ -61,25 +58,25 @@ export default function Home() {
               <h2 className="text-2xl md:text-4xl font-bold ml-1">ADE</h2>
             </div>
           </div>
-          <div className="flex justify-center items-center p-2 mb-6 -mt-4 text-red-500">
+          <div className="flex justify-center items-center p-2 mb-6 -mt-4">
             <TextSegment
-              text="Mike Martin Media specializes in video production and creative
+              text="MMM specializes in video production and creative
               services for corporations, nonprofits, education and medical
               institutions. Our mission is to help our clients promote their causes,
-              inform their clients and staff, and inspire with their stories. We
-              deliver dynamic multi-media solutions. Visit our about page to learn more about our team and our mission."
+              inform their clients, and inspire with their stories. We
+              deliver dynamic multi-media solutions. Visit our about page to learn more about our mission and our team."
             />
           </div>
-          <div className="flex justify-center items-center pb-6 -mt-6">
+          <div className="flex justify-center items-center pb-6 -mt-6 ">
             <MmmSiteButton
-              href="about_mmm"
+              href="/about_mmm"
               label="About "
               backgroundColor="bg-black"
               textColor="text-white"
               imgSrc="/branding/mmm_logo_white.png"
             />
           </div>
-          <div className="flex justify-center items-center w-128 h-auto p-20 -mt-20 -mb-8 lg:mb-8">
+          <div className="flex justify-center items-center w-128 h-auto p-20 pt-0 -mb-8 lg:mb-8">
             <Image
               src="/images/workSectionImages/work_section_img.jpg"
               width={960}
@@ -88,14 +85,12 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex justify-center items-center p-2 mb-6 -mt-12 text-red-500">
-            <TextSegment
-              text="Contact us today to see what we can do for you."
-            />
+          <div className="flex justify-center items-center p-2 mb-6 -mt-12">
+            <TextSegment text="Our team brings decades of combined experience from the broadcast and production industries. Contact us today to see what we can do for you." />
           </div>
-          <div className="flex justify-center -mt-6 mb-2 ">
+          <div className="flex justify-center -mt-6">
             <MmmSiteButton
-              href="contact"
+              href="/contact"
               label="Contact "
               backgroundColor="bg-black"
               textColor="text-white"
@@ -103,7 +98,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="w-full mb-6">
+        <div className="w-full mb-6 mt-4">
           <MMMLineLogoBlack />
         </div>
       </section>
@@ -114,17 +109,15 @@ export default function Home() {
           title="MMM Travel Video"
         />
       </section>
-      <section>
-        <div>
-          <h3 className="text-center font-bold text-2xl mb-2 italic">
-            Our work is
-          </h3>
-          <MmmGood />
+      <section className="-mt-4">
+        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-36">
+          <h3 className="text-center font-bold text-2xl md:text-4xl mt-2">OUR WORK</h3>
         </div>
-        <div className="flex justify-center items-center p-2 -mt-2 md:mt-0 mb-6">
+
+        <div className="flex justify-center items-center p-2 mb-6">
           <TextSegment text="We take pride in every project.  We partner with clients of all sizes to bring their ideas to life.  From concept to conclusion, we write, shoot, edit, direct, produce, animate, hire talent, find locations, and everything else needed for your production. From videos to livestreams, to animations, to photography we have you covered. Check out our work and then contact us to see what we can do for you!" />
         </div>
-        <div className="flex justify-center items-center pb-6 -mt-6 mb-2">
+        <div className="flex justify-center items-center pb-6 -mt-6 mb-2 w-full">
           <MmmSiteButtonTextOnly
             href="our_work"
             label="Our Work"
@@ -133,54 +126,65 @@ export default function Home() {
             imgSrc="/branding/mmm_logo_white.png"
           />
         </div>
-        <div className="grid grid cols-1 md:grid-cols-3 mb-2 ">
-          <div className="flex justify-center items-center -mt-6 md:order-2  ">
+        <div className="grid grid cols-3 md:grid-cols-3 mb-2 ">
+          <div className="flex justify-center items-center md:order-2  ">
             <WorkCategorySection
               categoryName="Video"
               categoryIcon={<FaVideo />}
               categoryImage="/images/workSectionImages/work_section_img.jpg"
-              categoryText="Videos and stuff lorem impsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+              categoryText="Video lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
             />
           </div>
-          <div className="flex justify-center items-center -mt-6  md:order-1">
+          <div className="flex justify-center items-center   md:order-1">
             <WorkCategorySection
               categoryName="Livestream"
               categoryIcon={<BsBroadcast />}
               // categoryImage="/images/workSectionImages/work_section_img.jpg"
-              categoryText="Livestream lorem impsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+              categoryText="Livestream lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
             />
           </div>
-          <div className="flex justify-center items-center -mt-6 md:order-3">
+          <div className="flex justify-center items-center md:order-3">
             <WorkCategorySection
               categoryName="Photography"
               categoryIcon={<FaCameraRetro />}
               categoryImage="/images/workSectionImages/work_section_img.jpg"
-              categoryText="Photography lorem impsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+              categoryText="Photography lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
             />
           </div>
         </div>
-
-        <div className="flex justify-center items-center p-1 -mt-2 md:mt-4 -mb-1">
-          <h3 className="text-3xl md:text-4xl font-bold mr-2">And</h3>
-          <div
-            className="flex justify-center items-center w-8 md:w-10 h-auto "
-            style={{ marginRight: "-.1rem", marginBottom: ".2rem" }}>
-            <Image
-              src="/branding/singleMBlack.png"
-              width={3492}
-              height={2716}
-              alt="company logo"
-            />
+        <div className="justify-center items-center md:mt-6">
+          <div className="flex justify-center ">
+            <FaClapperboard size={28} />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold">ore!</h2>
+          <div className="flex justify-center items-center -mb-1">
+            <span className="text-2xl font-bold mr-2">And</span>
+            <div
+              className="flex justify-center items-center w-6 h-auto "
+              style={{ marginRight: "-.1rem", marginBottom: ".2rem" }}>
+              <Image
+                src="/branding/singleMBlack.png"
+                width={3492}
+                height={2716}
+                alt="company logo"
+              />
+            </div>
+            <span className="text-2xl font-bold">ore!</span>
+          </div>
         </div>
         <div>
-          <TextSegment text="Whatever your needs, we've got you covered. Reach out today to see how we can help you with your next project. lorem impsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore." />
+          <TextSegment text="Whatever your needs, we've got you covered. Contact us today to see how we can help you with your next project. lorem ipsum blah keywords" />
         </div>
-        <div className="flex justify-center mb-8 mt-2 ">
-          <ContactUsButton />
+        <div className="flex justify-center mb-2 mt-2">
+        <MmmSiteButton
+              href="/contact"
+              label="Contact "
+              backgroundColor="bg-black"
+              textColor="text-white"
+              imgSrc="/branding/mmm_logo_white.png"
+            />
         </div>
-        <div className="w-full">
+        
+        <div className="w-full mt-4">
           <MMMLineLogoBlack />
         </div>
       </section>
@@ -196,11 +200,11 @@ export default function Home() {
           </div>
           <h2 className="text-4xl font-bold -ml-2">Blog</h2>
         </div>
-        <TextSegment text=" Check out some of our latest adventures as we film and travel across town and around the country. Try to keep up, we move fast!" />
+        <TextSegment text=" Check out our latest adventures as we film and travel across town and around the country. Try to keep up, we move fast!" />
         <div className="flex justify-center items-center p-2 ">
           <MmmSiteButtonLogoFirst
             href="blog"
-            label="BLOG"
+            label="Blog"
             backgroundColor="bg-black"
             textColor="text-white"
             imgSrc="/branding/mmm_logo_white.png"

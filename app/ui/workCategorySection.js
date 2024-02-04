@@ -13,14 +13,14 @@ export default function WorkCategorySection({
   categoryImage,
   categoryIcon,
 }) {
-  const iconSize = 32;
+  const iconSize = 28;
 
   return (
-    <div className="flex flex-col justify-center items-center mt-6 mb-2">
+    <div className="flex flex-col justify-center items-center">
       <div>
         {React.cloneElement(categoryIcon, { size: iconSize })}
       </div>
-      <h2 className="text-3xl font-bold"> {categoryName} </h2>
+      <span className="text-2xl font-bold"> {categoryName} </span>
       <TextSegment text={categoryText} />
     </div>
   );
