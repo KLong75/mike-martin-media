@@ -86,18 +86,18 @@ export default function Home() {
             />
           </div> */}
           <div
-          className="flex justify-center items-center max-w-4xl mx-auto"
-          id="blog-section-image-container"
-          style={{ maxWidth: '1024px' }} // Set the max-width to match the image's intrinsic width or any other desired value
-        >
-          <BannerImage
-            id="blog-section-image"
-            src="/images/aboutPage/mike-van.jpg"
-            alt="Mike in van with camera"
-            width={2048}
-            height={1363}
-          />
-        </div>
+            className="flex justify-center items-center max-w-4xl mx-auto"
+            id="blog-section-image-container"
+            style={{ maxWidth: "1024px" }} // Set the max-width to match the image's intrinsic width or any other desired value
+          >
+            <BannerImage
+              id="blog-section-image"
+              src="/images/aboutPage/mike-van.jpg"
+              alt="Mike in van with camera"
+              width={2048}
+              height={1363}
+            />
+          </div>
 
           <div className="flex justify-center items-center p-2 mb-6 ">
             <TextSegment text="Our team brings decades of combined experience from the broadcast and production industries. Contact us today to see what we can do for you." />
@@ -117,6 +117,10 @@ export default function Home() {
         </div>
       </section>
       <section className="-mt-4" id="our-work-section">
+        {/* <BannerVideo
+          src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          title="MMM Travel Video"
+        /> */}
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-36">
           <h3 className="text-center font-bold text-2xl md:text-4xl mt-2">
             OUR WORK
@@ -200,6 +204,10 @@ export default function Home() {
         </div>
       </section>
       <section className="mb-4" id="blog-section">
+        {/* <BannerVideo
+          src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          title="MMM Travel Video"
+        /> */}
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-36">
           <h3 className="text-center font-bold text-2xl md:text-4xl mt-2">
             BEYOND THE LENS
@@ -233,8 +241,8 @@ export default function Home() {
           />
         </div>
         <div className="w-full mt-4">
-        <MMMLineLogoBlack />
-      </div>
+          <MMMLineLogoBlack />
+        </div>
       </section>
     </main>
   );

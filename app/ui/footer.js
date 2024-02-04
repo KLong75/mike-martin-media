@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className=" bg-black text-white">
       {/* <InstagramSlider /> */}
       <div className="grid grid-cols-1  justify-items-center">
-        <div className=" justify-center items-center w-32 h-auto -mb-12">
+        <div className=" justify-center items-center w-32 h-auto -mt-1 -mb-8">
           <Image
             src="/branding/mmm_logo_white.png"
             alt="logo"

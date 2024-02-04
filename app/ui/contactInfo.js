@@ -7,8 +7,9 @@ import ColorChangeM from "./colorChangeM";
 export default function ContactInfo({ m_src }) {
   return (
     <div className="justify-items-center">
+    
       <div className="flex flex-col text-center space-y-4">
-        <div className="flex justify-center items-center mt-10 p-2">
+        {/* <div className="flex justify-center items-center mt-10 p-2">
           <div className="flex justify-center items-center w-8 h-auto mb-2.5 ">
             <ColorChangeM src={m_src} />
           </div>
@@ -21,9 +22,9 @@ export default function ContactInfo({ m_src }) {
             <ColorChangeM src={m_src} />
           </div>
           <h2 className="text-xl font-bold mr-2">edia</h2>
-        </div>
+        </div> */}
         {/* <h2 className=" font-bold">Mike Martin Media</h2> */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0  md:gap-24 lg:gap-52 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0  md:gap-24 lg:gap-72 mt-12">
           {/* Phone Number Section */}
           <div className="group hover:transform hover:scale-110 transition-transform -mt-4 md:mt-6">
             <div className="flex flex-col items-center md:ml-6">

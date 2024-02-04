@@ -6,7 +6,7 @@ export default function MMMInstaLogo() {
     <div className="flex justify-center items-center w-full hover:transform hover:scale-110 transition-transform mb-4">
       <div className="flex flex-col items-center ">
       <a href="https://www.instagram.com/mikemartinmedia/" target="_blank" rel="noopener noreferrer">
-        <div className="flex justify-center items-center mt-6 mb-2 md:mb-6">
+        <div className="flex justify-center items-center mt-6 mb-3 md:mb-6">
         
           <h6 className="md:text-xl font-bold mr-1">Follow</h6>
           <div className="flex justify-center items-center w-12 md:w-14 h-auto mb-1">
@@ -22,7 +22,7 @@ export default function MMMInstaLogo() {
         </div>
         </a>
         <a href="https://www.instagram.com/mikemartinmedia/" target="_blank" rel="noopener noreferrer">
-        <div className="bg-black rounded-full w-16 h-16 md:w-20 md:h-20 -mt-2 md:-mt-6">
+        <div className="bg-black rounded-full w-16 h-16 md:w-20 md:h-20 -mt-2 md:-mt-6 mb-1">
           <div className="flex justify-center items-center w-full h-auto ">
             
             <Image
