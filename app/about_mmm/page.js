@@ -140,25 +140,23 @@ export default function Page() {
       </section> */}
 
       <section className="mt-8 md:mt-12">
-       
-          <div className="flex justify-center items-center ">
-            <div className="w-12 h-8 mx-2 mb-4">
-              <Image
-                src="/branding/singleMBlack.png"
-                width={3492}
-                height={2716}
-                alt="company logo"
-              />
-            </div>
-            <h2 className="text-4xl font-bold -ml-2">eet The Team</h2>
+        <div className="flex justify-center items-center ">
+          <div className="w-12 h-8 mx-2 mb-4">
+            <Image
+              src="/branding/singleMBlack.png"
+              width={3492}
+              height={2716}
+              alt="company logo"
+            />
           </div>
-          <div className="flex justify-center items-center mb-4">
+          <h2 className="text-4xl font-bold -ml-2">eet The Team</h2>
+        </div>
+        <div className="flex justify-center items-center mb-4">
           <TextSegment text="Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing." />
-          </div>
-          <div className="-mt-14">
-            <TeamGallery />
-          </div>
-        
+        </div>
+        <div className="-mt-14">
+          <TeamGallery />
+        </div>
       </section>
       <section>
         <InstagramWidget />
