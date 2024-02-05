@@ -7,35 +7,38 @@ import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
 import TextSegment from "@/app/ui/textSegment";
 import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
-// import data
 import VideoGallery from "@/app/ui/videoGallery";
+// import data
+
 // import icons
 import { IoIosArrowBack } from "react-icons/io";
 
 export const metadata = {
-  title: "Livestreaming",
+  title: "Video",
   description:
     "Wherever you are, we can help you stream to anywhere. Livestreaming is an invaluable resource that can catapult your organization and message farther. Contact us today to create a livestreaming solution that works for you.",
 };
 
 export default function Page() {
   return (
-    <main className="grid grid-cols-1 ">
-      <section>
+    <main>
+      <section className="grid grid-cols-1">
         <BannerVideo
           src="https://player.vimeo.com/video/904181398?h=c0efc97d6f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Livestreaming Video"
         />
       </section>
-      <div className="mt-6">
+      <div className="mt-4 mb-4">
         <BackToOurWorkLink />
       </div>
-      <h2 className="mt-6 -mb-4 md:mb-8 lg:mb-20 md:mt- text-center text-3xl md:text-4xl font-extrabold ">
-        Livestreaming
-      </h2>
+      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+        <h2 className="text-center font-bold text-2xl md:text-4xl mt-2">
+          LIVESTREAMING
+        </h2>
+      </div>
       <section>
         <div className="flex justify-center items-center">
-          <p className="text-left p-8 md:-mt-12 md:px-48 lg:-mt-24 lg:px-60 lg:mr-24 lg:ml-24">
+          <p className="text-left p-8 md:p-32 md:-mt-20">
             Wherever you are, we can help you stream to{" "}
             <span className="italic font-bold">anywhere</span>. Livestreaming is
             an invaluable resource that can catapult your organization and
@@ -43,7 +46,7 @@ export default function Page() {
             that works for you.
           </p>
         </div>
-        <div className="flex justify-center items-center p-4 lg:-mt-6 mb-6">
+        <div className="flex justify-center items-center p-4 md:-mt-6 lg:-mt-24 mb-6">
           <ContactUsButton />
         </div>
       </section>

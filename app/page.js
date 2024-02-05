@@ -161,29 +161,35 @@ export default function Home() {
           />
         </div>
         <div className="grid grid cols-3 md:grid-cols-3 mb-2 ">
-          <div className="flex justify-center items-center md:order-2  ">
+          <div className="flex justify-center items-center md:order-2 ">
+          <Link href="/our_work/mmm-video">
             <WorkCategorySection
               categoryName="Video"
               categoryIcon={<FaVideo />}
               categoryImage="/images/workSectionImages/work_section_img.jpg"
               categoryText="Video lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
             />
+           </Link>
           </div>
-          <div className="flex justify-center items-center   md:order-1">
+          <div className="flex justify-center items-center  md:order-1">
+          <Link href="/our_work/livestreaming">
             <WorkCategorySection
               categoryName="Livestream"
               categoryIcon={<BsBroadcast />}
               // categoryImage="/images/workSectionImages/work_section_img.jpg"
               categoryText="Livestream lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
             />
+            </Link>
           </div>
           <div className="flex justify-center items-center md:order-3">
+          <Link href="/our_work/photography">
             <WorkCategorySection
               categoryName="Photography"
               categoryIcon={<FaCameraRetro />}
               categoryImage="/images/workSectionImages/work_section_img.jpg"
               categoryText="Photography lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
             />
+            </Link>
           </div>
         </div>
         <div className="justify-center items-center md:mt-6">

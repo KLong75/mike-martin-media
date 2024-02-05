@@ -28,12 +28,14 @@ export default function Page() {
           title="MMM Photography Slide Show"
         />
       </section>
-      <div className="mt-6">
+      <div className="mt-4 mb-4">
         <BackToOurWorkLink />
       </div>
-      <h2 className="p-6 md:p-8 lg:p-12 md:mb-6 text-center text-3xl md:text-4xl font-extrabold ">
-        Photography
-      </h2>
+      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 mb-6">
+          <h2 className="text-center font-bold text-2xl md:text-4xl mt-2">
+            PHOTOGRAPHY
+          </h2>
+        </div>
       <section className="grid grid-cols-1">
         <div className="flex justify-center items-center">
           <p className="text-left p-8 -mt-10 md:-mt-12 md:px-48 lg:-mt-24 lg:px-60 lg:mr-24 lg:ml-24">

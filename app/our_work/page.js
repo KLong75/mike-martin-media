@@ -46,14 +46,11 @@ export default function Page() {
         </div> */}
         {/* <h2 className=" text-center text-4xl font-bold mt-12 ">Our Work</h2> */}
         {/* </div> */}
-
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <h3 className="text-center font-bold text-2xl md:text-4xl mt-2">
             OUR WORK
           </h3>
         </div>
-
-
         <div className="mt-6 mb-6 text-sm md:text-base">
           <TextSegment text="From Corporate, Education, Medical and Nonprofit videos, to Livestreaming, and Photography, we are your partner through every step of the process. Check out our work below and contact us today to get started on your project." />
         </div>

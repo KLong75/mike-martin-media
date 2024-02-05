@@ -24,8 +24,8 @@ export default function Page() {
         <BackToHomeLink />
       </div>
     <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2 className="text-4xl font-bold mr-2">CONTACT </h2>
-        <div className="flex justify-center items-center w-24 h-8 mb-1">
+        <h2 className="text-2xl md:text-4xl font-bold mr-2">CONTACT </h2>
+        <div className="flex justify-center items-center w-20 md:w-28 h-auto mb-2">
           <Image
             src="/branding/mmm_logo_white.png"
             width={294}
@@ -51,18 +51,18 @@ export default function Page() {
       </div> */}
 
       <div className="flex justify-center items-center mt-6 -mb-6 p-2">
-          <div className="flex justify-center items-center w-8 h-auto mb-2.5 ">
+          <div className="flex justify-center items-center w-8 md:w-10 h-auto mb-2.5 md:mb-2">
             <ColorChangeM src="/branding/singleMBlack.png"/>
           </div>
-          <h2 className="text-xl font-bold mr-2 -ml-">ike</h2>
-          <div className="flex justify-center items-center w-8 h-auto mb-2.5">
+          <h2 className="text-xl md:text-3xl font-bold mr-2 -ml-">ike</h2>
+          <div className="flex justify-center items-center w-8 md:w-10 h-auto mb-2.5 md:mb-2 ">
             <ColorChangeM src="/branding/singleMBlack.png"/>
           </div>
-          <h2 className="text-xl font-bold mr-2 -ml-">artin</h2>
-          <div className="flex justify-center items-center w-8 h-auto mb-2.5">
+          <h2 className="text-xl md:text-3xl font-bold mr-2 -ml-">artin</h2>
+          <div className="flex justify-center items-center w-8 md:w-10 h-auto mb-2.5 md:mb-2 ">
             <ColorChangeM src="/branding/singleMBlack.png"/>
           </div>
-          <h2 className="text-xl font-bold mr-2">edia</h2>
+          <h2 className="text-xl md:text-3xl font-bold mr-2">edia</h2>
         </div>
 
       <div className="flex justify-center items-center mb-8">
