@@ -88,7 +88,7 @@ export default function Home() {
           <div
             className="flex justify-center items-center max-w-4xl mx-auto"
             id="blog-section-image-container"
-            style={{ maxWidth: "1024px" }} // Set the max-width to match the image's intrinsic width or any other desired value
+            style={{ maxWidth: "1024px" }} // Set the max-width to desired value
           >
             <BannerImage
               id="blog-section-image"
@@ -230,7 +230,9 @@ export default function Home() {
             height={1363}
           />
         </div> */}
+        <div>
         <TextSegment text=" Check out our latest adventures in the MMM Blog as we film and travel across town and around the country. Try to keep up, we move fast!" />
+        </div>
         <div className="flex justify-center items-center  mb-2 mt-2">
           <MmmSiteButtonLogoFirst
             href="blog"
