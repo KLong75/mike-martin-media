@@ -12,6 +12,7 @@ import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import TextSegment from "../ui/textSegment";
 import InstagramWidget from "../ui/instagramWidget";
 import BannerImage from "../ui/bannerImg";
+import BannerVideo from "../ui/bannerVideo";
 
 export const metadata = {
   title: "About MMM",
@@ -20,24 +21,31 @@ export const metadata = {
 export default function Page() {
   return (
     <main>
-      <div className="mt-2 mb-1 ">
-        <BackToHomeLink />
-      </div>
-      <div className="bg-black text-white flex justify-center items-center w-full h-20 ">
-        <h2 className="text-4xl font-bold mr-2">About </h2>
+      <BannerVideo
+        src="https://player.vimeo.com/video/906520722?h=fe8eda318f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        title="MMM Promotional Video"
+      />
+      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+        <h2 className="text-4xl font-bold mr-2">ABOUT </h2>
         <div className="flex justify-center items-center w-24 h-8 mb-1">
           <Image
             src="/branding/mmm_logo_white.png"
             width={294}
             height={95}
             alt="company logo"
+            priority
+            as="image"
           />
         </div>
       </div>
-      <div
+      
+      <div className="mt-2 mb-1 ">
+        <BackToHomeLink />
+      </div>
+      {/* <div
         className="flex justify-center items-center max-w-4xl mx-auto pt-6 pb-2"
         id="blog-section-image-container"
-        style={{ maxWidth: "275px" }} // Set the max-width to match the image's intrinsic width or any other desired value
+        style={{ maxWidth: "275px" }} 
       >
         <BannerImage
           id="blog-section-image"
@@ -46,7 +54,7 @@ export default function Page() {
           width={1100}
           height={1600}
         />
-      </div>
+      </div> */}
       <div>
         <TextSegment
           text="For over 15 years, MMM has combined the latest technology with the
@@ -63,7 +71,7 @@ export default function Page() {
       <div
         className="flex justify-center items-center max-w-4xl mx-auto"
         id="blog-section-image-container"
-        style={{ maxWidth: "1024px" }} // Set the max-width to match the image's intrinsic width or any other desired value
+        style={{ maxWidth: "1024px" }} // Set the max-width to match desired value
       >
         <BannerImage
           id="blog-section-image"
@@ -140,7 +148,18 @@ export default function Page() {
       </section> */}
 
       <section className="mt-8 md:mt-12">
-        <div className="flex justify-center items-center ">
+      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+      <div className="w-12 h-8 mx-2 mb-4">
+            <Image
+              src="/branding/singleMWhite.png"
+              width={3492}
+              height={2716}
+              alt="company logo"
+            />
+          </div>
+          <h2 className="text-4xl font-bold -ml-2" id='mmm-team'>eet The Team</h2>
+      </div>
+        {/* <div className="flex justify-center items-center ">
           <div className="w-12 h-8 mx-2 mb-4">
             <Image
               src="/branding/singleMBlack.png"
@@ -150,7 +169,7 @@ export default function Page() {
             />
           </div>
           <h2 className="text-4xl font-bold -ml-2">eet The Team</h2>
-        </div>
+        </div> */}
         <div className="flex justify-center items-center mb-4">
           <TextSegment text="Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing." />
         </div>

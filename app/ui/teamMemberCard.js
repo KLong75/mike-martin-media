@@ -5,7 +5,7 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
   return (
     <div className="text-left shadow-2xl bg-white">
       <div className="flex justify-center p-4">
-        <div className="mt-4 w-72 h-auto ">
+        <div className="w-72 h-auto">
           <Image
             className="shadow-2xl border-2 border-black"
             src={image_src}

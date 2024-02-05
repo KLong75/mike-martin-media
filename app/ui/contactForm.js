@@ -177,7 +177,7 @@ export default function ContactForm() {
               className="border-2 border-gray-800 p-2 h-60 w-60 resize-none w-full"
             />
           </div>
-          <div className="flex justify-center items-center mt- -mb-4">
+          <div className="flex justify-center items-center -mb-4">
             <SubmitButtonWithPlaneAnimation
               onClick={handleFormSubmit}
               isSubmitted={buttonSubmitted}

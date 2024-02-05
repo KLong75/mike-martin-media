@@ -39,6 +39,8 @@ export default function Home() {
                   width={294}
                   height={95}
                   alt="company logo"
+                  priority
+                  as="image"
                 />
               </div>
             </div>
@@ -100,8 +102,24 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center items-center p-2 mb-6 ">
-            <TextSegment text="Our team brings decades of combined experience from the broadcast and production industries. Contact us today to see what we can do for you." />
+            <p className="p-2 text-sm md:text-base text-center text-pretty text-balance text-wrap w-10/12 md:w-1/2">
+              Our{" "}
+              <a href="/about_mmm#mmm-team" className="hover-effect">
+                <span className="font-bold hover:scale-110 transition-transform inline-block">
+                  team
+                </span>
+              </a>
+              {" "}brings decades of combined experience from the broadcast and
+              production industries. Contact us today to see what we can do for
+              you.
+            </p>
           </div>
+
+          {/* <div className="flex justify-center items-center p-2 mb-6 ">
+            <a href="/about_mmm#mmm-team">
+              <TextSegment text="Our team brings decades of combined experience from the broadcast and production industries. Contact us today to see what we can do for you." />
+            </a>
+          </div> */}
           <div className="flex justify-center -mt-6">
             <MmmSiteButton
               href="/contact"
@@ -121,7 +139,7 @@ export default function Home() {
           src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Travel Video"
         /> */}
-        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-36">
+        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <h3 className="text-center font-bold text-2xl md:text-4xl mt-2">
             OUR WORK
           </h3>
@@ -173,7 +191,7 @@ export default function Home() {
             <FaClapperboard size={28} />
           </div>
           <div className="flex justify-center items-center -mb-1">
-            <span className="text-2xl font-bold mr-2">And</span>
+            <span className="text-2xl font-semibold mr-2">And</span>
             <div
               className="flex justify-center items-center w-6 h-auto "
               style={{ marginRight: "-.1rem", marginBottom: ".1rem" }}>
@@ -184,7 +202,7 @@ export default function Home() {
                 alt="company logo"
               />
             </div>
-            <span className="text-2xl font-bold">ore!</span>
+            <span className="text-2xl font-semibold">ore!</span>
           </div>
         </div>
         <div>
@@ -208,7 +226,7 @@ export default function Home() {
           src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Travel Video"
         /> */}
-        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-36">
+        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <h3 className="text-center font-bold text-2xl md:text-4xl mt-2">
             BEYOND THE LENS
           </h3>
@@ -231,7 +249,7 @@ export default function Home() {
           />
         </div> */}
         <div>
-        <TextSegment text=" Check out our latest adventures in the MMM Blog as we film and travel across town and around the country. Try to keep up, we move fast!" />
+          <TextSegment text=" Check out our latest adventures in the MMM Blog as we film and travel across town and around the country. Try to keep up, we move fast!" />
         </div>
         <div className="flex justify-center items-center  mb-2 mt-2">
           <MmmSiteButtonLogoFirst

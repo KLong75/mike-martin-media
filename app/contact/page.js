@@ -10,6 +10,8 @@ import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
 import InstagramWidget from "../ui/instagramWidget";
 import MMMInstaLogo from "../ui/mmmInstaLogo";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
+import BackToHomeLink from "../ui/backToHome";
+import ColorChangeM from "../ui/colorChangeM";
 
 export const metadata = {
   title: "Contact",
@@ -18,7 +20,23 @@ export const metadata = {
 export default function Page() {
   return (
     <main className=" flex-1">
-      <div className="flex justify-center items-center mt-10 -mb-6 p-2">
+    <div className="mt-2 mb-1 ">
+        <BackToHomeLink />
+      </div>
+    <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+        <h2 className="text-4xl font-bold mr-2">CONTACT </h2>
+        <div className="flex justify-center items-center w-24 h-8 mb-1">
+          <Image
+            src="/branding/mmm_logo_white.png"
+            width={294}
+            height={95}
+            alt="company logo"
+            priority
+            as="image"
+          />
+        </div>
+      </div>
+      {/* <div className="flex justify-center items-center mt-10 -mb-6 p-2">
         <h2 className="text-4xl font-bold mr-2">Contact</h2>
         <div className="flex justify-center items-center w-24 h-8 mb-1">
           <Image
@@ -26,32 +44,47 @@ export default function Page() {
             width={294}
             height={95}
             alt="company logo"
+            priority
+            as="image"
           />
         </div>
-      </div>
+      </div> */}
+
+      <div className="flex justify-center items-center mt-6 -mb-6 p-2">
+          <div className="flex justify-center items-center w-8 h-auto mb-2.5 ">
+            <ColorChangeM src="/branding/singleMBlack.png"/>
+          </div>
+          <h2 className="text-xl font-bold mr-2 -ml-">ike</h2>
+          <div className="flex justify-center items-center w-8 h-auto mb-2.5">
+            <ColorChangeM src="/branding/singleMBlack.png"/>
+          </div>
+          <h2 className="text-xl font-bold mr-2 -ml-">artin</h2>
+          <div className="flex justify-center items-center w-8 h-auto mb-2.5">
+            <ColorChangeM src="/branding/singleMBlack.png"/>
+          </div>
+          <h2 className="text-xl font-bold mr-2">edia</h2>
+        </div>
 
       <div className="flex justify-center items-center mb-8">
-        <ContactInfo 
-        m_src="/branding/singleMBlack.png"
-        />
+        <ContactInfo m_src="/branding/singleMBlack.png" />
       </div>
 
       <div className="flex justify-center items-center mt-4  z-50">
         <SocialMediaLinks />
       </div>
-      
-        <div className="flex justify-center items-center -mt-8">
-          <ContactForm />
-        </div>
-  
-        <div className="mb-20 md:-mb-16 lg:-mb-28 w-full h-auto ">
+
+      <div className="flex justify-center items-center -mt-8">
+        <ContactForm />
+      </div>
+
+      <div className="mb-20 md:-mb-16 lg:-mb-28 w-full h-auto ">
         <InstagramWidget />
-        </div>
-        <div className="w-full mt-6">
+      </div>
+      <div className="w-full mt-6">
         <MMMLineLogoBlack />
       </div>
-        {/* <div className="flex justify-center items-center"> */}
-        {/* <div className="grid grid-cols-1 -mt-8">
+      {/* <div className="flex justify-center items-center"> */}
+      {/* <div className="grid grid-cols-1 -mt-8">
           <div className="flex flex-col text-center">
            
             <div className="grid grid-cols-1 gap-6">
@@ -120,7 +153,7 @@ export default function Page() {
             </div>
           </div>
         </div> */}
-     
+
       {/* </div> */}
     </main>
   );

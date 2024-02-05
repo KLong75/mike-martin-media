@@ -20,7 +20,7 @@ export default function WorkCategorySection({
       <div>
         {React.cloneElement(categoryIcon, { size: iconSize })}
       </div>
-      <span className="text-2xl font-bold"> {categoryName} </span>
+      <span className="text-2xl font-semibold"> {categoryName} </span>
       <TextSegment text={categoryText} />
     </div>
   );
