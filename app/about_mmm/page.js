@@ -27,7 +27,7 @@ export default function Page() {
       />
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
         <h2 className="text-2xl md:text-4xl font-bold mr-2">ABOUT </h2>
-        <div className="flex justify-center items-center w-20 md:w-24 h-auto mb-1">
+        <div className="flex justify-center items-center w-20 md:w-24 h-auto mb-1 md:mb-.5">
           <Image
             src="/branding/mmm_logo_white.png"
             width={294}
@@ -149,7 +149,7 @@ export default function Page() {
 
       <section className="mt-8 md:mt-12">
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-      <div className="w-8 md:w-12 h-8 mx-2 md:mb-4">
+      <div className="w-8 md:w-10 h-auto mx-2 mb-1 md:mb-0 ">
             <Image
               src="/branding/singleMWhite.png"
               width={3492}

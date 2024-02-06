@@ -49,8 +49,8 @@ export default function Home() {
                 YOUR IDEAS,
               </h3>
               <div
-                className="flex justify-center items-center w-7 md:w-10 h-auto mb-1 "
-                style={{ marginRight: "-.2rem" }}>
+                className="flex justify-center items-center w-8 md:w-10 h-auto mb-1 md:mb-0"
+                style={{ marginRight: "-.1rem" }}>
                 <Image
                   src="/branding/singleMWhite.png"
                   width={3492}
