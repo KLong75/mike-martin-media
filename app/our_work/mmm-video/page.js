@@ -12,19 +12,19 @@ import VideoCategories from "@/app/ui/videoCategories";
 import VideoGallery from "@/app/ui/videoGallery";
 import MmmSiteButton from "@/app/ui/mmmSiteButton";
 
-
 export default function Page() {
- 
-
   const [selectedCategory, setSelectedCategory] = useState("All Videos");
 
   return (
     <>
-     <Head>
-      <title>Video</title>
-      <meta property="description" content="Mike Martin Media Video Production Services. Contact us today to get started on your Video project." />
-     </Head>
-      
+      <Head>
+        <title>Video</title>
+        <meta
+          name="description"
+          content="Mike Martin Media Video Production Services. Contact us today to get started on your Video project."
+        />
+      </Head>
+
       <main className="grid grid-cols-1 ">
         <section>
           <BannerVideo
@@ -52,7 +52,6 @@ export default function Page() {
           <VideoCategories onCategorySelected={setSelectedCategory} />
         </section>
         <VideoGallery selectedCategory={selectedCategory} />
-
         <div>
           <TextSegment text="Contact us today to get started on your Video project. This text can change. Here we need to invite visitors to contact MMM." />
         </div>

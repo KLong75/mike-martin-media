@@ -38,7 +38,7 @@ export default function Page() {
           />
         </div>
       </div>
-      
+
       <div className="mt-2 mb-1 ">
         <BackToHomeLink />
       </div>
@@ -55,7 +55,7 @@ export default function Page() {
           height={1600}
         />
       </div> */}
-      <div>
+      <div className="mt-2 mb-2">
         <TextSegment
           text="For over 15 years, MMM has combined the latest technology with the
               best in-house talent to create impactful videos for organizations
@@ -79,6 +79,7 @@ export default function Page() {
           alt="Mike in van with camera"
           width={2048}
           height={1363}
+          priority
         />
       </div>
 
@@ -148,8 +149,8 @@ export default function Page() {
       </section> */}
 
       <section className="mt-8 md:mt-12">
-      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-      <div className="w-8 md:w-10 h-auto mx-2 mb-1 md:mb-0 ">
+        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+          <div className="w-8 md:w-10 h-auto mx-2 mb-1 md:mb-0 ">
             <Image
               src="/branding/singleMWhite.png"
               width={3492}
@@ -157,8 +158,10 @@ export default function Page() {
               alt="company logo"
             />
           </div>
-          <h2 className="text-2xl md:text-4xl font-bold -ml-2" id='mmm-team'>eet The Team</h2>
-      </div>
+          <h2 className="text-2xl md:text-4xl font-bold -ml-2" id="mmm-team">
+            eet The Team
+          </h2>
+        </div>
         {/* <div className="flex justify-center items-center ">
           <div className="w-12 h-8 mx-2 mb-4">
             <Image
@@ -170,7 +173,7 @@ export default function Page() {
           </div>
           <h2 className="text-4xl font-bold -ml-2">eet The Team</h2>
         </div> */}
-        <div className="flex justify-center items-center mb-4">
+        <div className="flex justify-center items-center mb-4 mt-2">
           <TextSegment text="Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing." />
         </div>
         <div className="-mt-14">

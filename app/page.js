@@ -20,6 +20,9 @@ import { BsBroadcast } from "react-icons/bs";
 import { RiTeamFill } from "react-icons/ri";
 import { FaClapperboard } from "react-icons/fa6";
 import BannerImage from "./ui/bannerImg";
+// import fonts
+import { dm_serif_display } from "./fonts";
+
 
 export default function Home() {
   return (
@@ -45,12 +48,12 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center items-center p-1 mt-6">
-              <h3 className="text-2xl md:text-4xl font-bold mr-2">
+              <h3 className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold mr-2`}>
                 YOUR IDEAS,
               </h3>
               <div
-                className="flex justify-center items-center w-8 md:w-10 h-auto mb-1 md:mb-0"
-                style={{ marginRight: "-.1rem" }}>
+                className="flex justify-center items-center w-8 md:w-10 h-auto md:mb-0"
+                style={{ marginRight: "-.1rem", marginBottom:".15rem" }}>
                 <Image
                   src="/branding/singleMWhite.png"
                   width={3492}
@@ -58,7 +61,7 @@ export default function Home() {
                   alt="company logo"
                 />
               </div>
-              <h2 className="text-2xl md:text-4xl font-bold ml-1">ADE</h2>
+              <h2 className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold ml-1`}>ADE</h2>
             </div>
           </div>
           <div className="flex justify-center items-center p-2 mb-6 -mt-4">
@@ -102,7 +105,7 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center items-center p-2 mb-6 ">
-            <p className="p-2 text-sm md:text-base text-center text-pretty text-balance text-wrap w-10/12 md:w-1/2">
+            <p className="p-2 text-sm md:text-base text-center text-balance w-10/12 md:w-1/2">
               Our{" "}
               <a href="/about_mmm#mmm-team" className="hover-effect">
                 <span className="font-bold hover:scale-110 transition-transform inline-block">
