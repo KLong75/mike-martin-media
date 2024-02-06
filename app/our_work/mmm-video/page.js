@@ -51,7 +51,10 @@ export default function Page() {
       <section className="mb-0">
         <VideoCategories onCategorySelected={setSelectedCategory} />
       </section>
-      <VideoGallery selectedCategory={selectedCategory} />
+      <VideoGallery 
+        selectedCategory={selectedCategory} 
+        excludedCategories={["Livestreaming"]}
+      />
 
       <div>
         <TextSegment text="Contact us today to get started on your Video project. This text can change. Here we need to invite visitors to contact MMM." />

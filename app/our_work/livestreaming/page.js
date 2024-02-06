@@ -88,7 +88,9 @@ export default function Page() {
           </div>
         </div>
         <div className="mb-8 md:mb-12 lg:mb-18">
-          <VideoGallery selectedCategory="Livestreaming" />
+          <VideoGallery selectedCategory="Livestreaming" 
+            excludedCategories={[]}
+          />
         </div>
       </section>
       <div>
