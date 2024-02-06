@@ -1,5 +1,6 @@
-// import components
+// import from next
 import Script from "next/script";
+// import components
 import MMMInstaLogo from "./mmmInstaLogo";
 
 const InstagramWidget = () => {
@@ -9,8 +10,6 @@ const InstagramWidget = () => {
         src="https://cdn.lightwidget.com/widgets/lightwidget.js"
         strategy="lazyOnload"
       />
-      {/* <Head>
-      </Head> */}
       <div className="flex justify-center items-center w-full lg:-mt-36 ">
         <div className="flex flex-col items-center p-6 md:p-12 md:mb-8 lg:p-20 lg:mt-20 xl:p-80 xl:-mt-40 xl:-mb-40 w-full lg:w-3/4 ">
           {/* <div className="flex justify-center items-center mt-6 mb-2 md:mb-6">

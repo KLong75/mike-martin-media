@@ -8,10 +8,8 @@ import TextSegment from "@/app/ui/textSegment";
 import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 import VideoGallery from "@/app/ui/videoGallery";
-// import data
 
-// import icons
-import { IoIosArrowBack } from "react-icons/io";
+
 
 export const metadata = {
   title: "Video",
