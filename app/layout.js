@@ -4,11 +4,15 @@ import Footer from './ui/footer'
 import ScrollToTopButton from './ui/scrollToTop'
 // import styles
 import './globals.css'
-import InstagramSlider from './ui/instagramSlider'
-import MMMLineLogoBlack from './ui/mmmLineLogoBlack'
+// import fonts
+import { DM_Sans } from "next/font/google";
+
+const dm_sans = DM_Sans({
+  subsets: ["latin"],
+  variable: '--font-dm-sans',
+});
 
 
-// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: {
@@ -21,13 +25,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="overflow-x-hidden">
-      <body className="flex flex-col min-h-screen">
+    <html lang="en" className={`overflow-x-hidden ${dm_sans.variable} font-sans`}>
+      <body className={`flex flex-col min-h-screen`}>
         <Header />
           {children}
           <ScrollToTopButton />
         <Footer />
       </body>
     </html>
-  )
+  );
 }

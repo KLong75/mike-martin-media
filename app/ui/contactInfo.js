@@ -1,8 +1,7 @@
-// import from next
-import Image from "next/image";
+
 import IconLink from "./iconLink";
 import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
-import ColorChangeM from "./colorChangeM";
+
 
 export default function ContactInfo({ m_src }) {
   return (
@@ -24,7 +23,7 @@ export default function ContactInfo({ m_src }) {
           <h2 className="text-xl font-bold mr-2">edia</h2>
         </div> */}
         {/* <h2 className=" font-bold">Mike Martin Media</h2> */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0  md:gap-24 lg:gap-72 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4  md:gap-24 lg:gap-72 mt-12">
           {/* Phone Number Section */}
           <div className="group hover:transform hover:scale-110 transition-transform -mt-4 md:mt-6">
             <div className="flex flex-col items-center md:ml-6">
@@ -66,7 +65,7 @@ export default function ContactInfo({ m_src }) {
             </div>
           </div>
           {/* Email Section */}
-          <div className="group hover:transform hover:scale-110 transition-transform mt-2 md:mt-6">
+          <div className="group hover:transform hover:scale-110 transition-transform mt-2 md:mt-6 ">
             <div className="flex flex-col items-center md:mr-6">
               <IconLink
                 href="mailto:mike@mikemartinmedia.com"

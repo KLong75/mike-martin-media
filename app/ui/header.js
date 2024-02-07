@@ -10,9 +10,9 @@ export default function Header() {
       <div className="ml-6 w-40 h-12 flex items-center">
         <Link href="/">
           <Image
-            src="/branding/whiteMmmLogo.png"
-            height={9337}
-            width={3798}
+            src="/branding/mmm_logo_white.png"
+            width={294}
+            height={95}
             alt="company logo"
             priority
             as="image"

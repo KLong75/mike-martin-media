@@ -9,11 +9,12 @@ import Head from "next/head";
 // import VideoCategories from "../ui/videoCategories";
 import TextSegment from "../ui/textSegment";
 import OurWorkTiles from "../ui/ourWorkTiles";
-import MmmSiteButtonTextOnly from "../ui/mmmSiteButtonTextOnly";
 import BackToHomeLink from "../ui/backToHome";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
-import ContactUsButton from "../ui/contactUsButton";
 import MmmSiteButton from "../ui/mmmSiteButton";
+// import fonts
+import { dm_serif_display } from "../fonts";
+
 
 export const metadata = {
   title: "Our Work",
@@ -47,11 +48,11 @@ export default function Page() {
         {/* <h2 className=" text-center text-4xl font-bold mt-12 ">Our Work</h2> */}
         {/* </div> */}
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <h3 className="text-center font-bold text-2xl md:text-4xl mt-2">
+          <h3 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl mt-2`}>
             OUR WORK
           </h3>
         </div>
-        <div className="mt-6 mb-6 text-sm md:text-base">
+        <div className="mt-6 mb-6 text-sm md:text-base font-bold">
           <TextSegment text="From Corporate, Education, Medical and Nonprofit videos, to Livestreaming, and Photography, we are your partner through every step of the process. Check out our work below and contact us today to get started on your project." />
         </div>
         <div>

@@ -3,9 +3,7 @@ import Image from "next/image";
 // import data
 import { weTextBlockData } from "../lib/data";
 // import components
-import ContactUsButton from "../ui/contactUsButton";
 import WeTextBlock from "../ui/weTextBlock";
-import MeetTheTeamButton from "../ui/meetTheTeamButton";
 import TeamGallery from "../ui/teamGallery";
 import BackToHomeLink from "../ui/backToHome";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
@@ -13,6 +11,9 @@ import TextSegment from "../ui/textSegment";
 import InstagramWidget from "../ui/instagramWidget";
 import BannerImage from "../ui/bannerImg";
 import BannerVideo from "../ui/bannerVideo";
+import MmmSiteButton from "../ui/mmmSiteButton";
+// import fonts
+import { dm_serif_display } from "../fonts";
 
 export const metadata = {
   title: "About MMM",
@@ -26,8 +27,11 @@ export default function Page() {
         title="MMM Promotional Video"
       />
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2 className="text-2xl md:text-4xl font-bold mr-2">ABOUT </h2>
-        <div className="flex justify-center items-center w-20 md:w-24 h-auto mb-1">
+        <h2
+          className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold mr-2`}>
+          ABOUT{" "}
+        </h2>
+        <div className="flex justify-center items-center w-20 md:w-24 h-auto mb-1 md:mb-.5">
           <Image
             src="/branding/mmm_logo_white.png"
             width={294}
@@ -38,7 +42,7 @@ export default function Page() {
           />
         </div>
       </div>
-      
+
       <div className="mt-2 mb-1 ">
         <BackToHomeLink />
       </div>
@@ -55,7 +59,7 @@ export default function Page() {
           height={1600}
         />
       </div> */}
-      <div>
+      <div className="mt-2 mb-2">
         <TextSegment
           text="For over 15 years, MMM has combined the latest technology with the
               best in-house talent to create impactful videos for organizations
@@ -68,8 +72,17 @@ export default function Page() {
               will bring growth and success."
         />
       </div>
+      <div className="flex justify-center mb-6">
+        <MmmSiteButton
+          href="/contact"
+          label="Contact "
+          backgroundColor="bg-black"
+          textColor="text-white"
+          imgSrc="/branding/mmm_logo_white.png"
+        />
+      </div>
       <div
-        className="flex justify-center items-center max-w-4xl mx-auto"
+        className="flex justify-center items-center mx-auto pl-4 pr-4"
         id="blog-section-image-container"
         style={{ maxWidth: "1024px" }} // Set the max-width to match desired value
       >
@@ -79,6 +92,7 @@ export default function Page() {
           alt="Mike in van with camera"
           width={2048}
           height={1363}
+          priority
         />
       </div>
 
@@ -148,17 +162,21 @@ export default function Page() {
       </section> */}
 
       <section className="mt-8 md:mt-12">
-      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-      <div className="w-8 md:w-12 h-8 mx-2 md:mb-4">
+        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+          <div className="w-8 md:w-10 h-auto mx-2 mb-1">
             <Image
-              src="/branding/singleMWhite.png"
-              width={3492}
-              height={2716}
+              src="/branding/singleMWhiteResizeSmall.png"
+              width={349}
+              height={271}
               alt="company logo"
             />
           </div>
-          <h2 className="text-2xl md:text-4xl font-bold -ml-2" id='mmm-team'>eet The Team</h2>
-      </div>
+          <h2
+            className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold -ml-2`}
+            id="mmm-team">
+            eet The Team
+          </h2>
+        </div>
         {/* <div className="flex justify-center items-center ">
           <div className="w-12 h-8 mx-2 mb-4">
             <Image
@@ -170,14 +188,15 @@ export default function Page() {
           </div>
           <h2 className="text-4xl font-bold -ml-2">eet The Team</h2>
         </div> */}
-        <div className="flex justify-center items-center mb-4">
+        <div className="flex justify-center items-center mb-4 mt-2">
           <TextSegment text="Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing." />
         </div>
         <div className="-mt-14">
           <TeamGallery />
         </div>
       </section>
-      <section>
+
+      <section className="-mt-6 md:mt-0">
         <InstagramWidget />
       </section>
       <div className="mb-4">

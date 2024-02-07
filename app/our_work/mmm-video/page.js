@@ -4,24 +4,17 @@ import { useState } from "react";
 // import from next
 import Head from "next/head";
 // import components
-import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideo from "../../ui/bannerVideo";
 import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
 import TextSegment from "@/app/ui/textSegment";
-import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 import VideoCategories from "@/app/ui/videoCategories";
 import VideoGallery from "@/app/ui/videoGallery";
 import MmmSiteButton from "@/app/ui/mmmSiteButton";
+// import fonts
+import { dm_serif_display } from "../../fonts";
 
 export default function Page() {
-  <Head>
-    <title>Videos</title>
-    <meta
-      name="description"
-      content="We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process."
-    />
-  </Head>;
   const [selectedCategory, setSelectedCategory] = useState("All Videos");
 
   return (

@@ -61,16 +61,18 @@ export default function Nav() {
                 className="absolute top-0 right-0 mt-10 mr-7">
                 <HiX size={28} />
               </button>
-              <div className="mb-6 w-72 h-auto">
+              <div className="mb-6 w-60 h-auto">
                 <Image
-                  src="/branding/whiteMmmLogo.png"
-                  alt="logo"
-                  width={9337}
-                  height={3798}
+                  src="/branding/mmm_logo_white.png"
+                  width={294}
+                  height={95}
+                  alt="company logo"
+                  priority
+                  as="image"
                 />
               </div>
-             {/* Nav Links */}
-             <ul className="space-y-4 text-xl">
+              {/* Nav Links */}
+              <ul className="space-y-4 text-xl">
                 {navLinks.map((link) => (
                   <li
                     key={link.label}
@@ -114,7 +116,9 @@ export default function Nav() {
               <Link href={link.href}>
                 <div className="flex flex-col items-center justify-center cursor-pointer">
                   {link.icon}
-                  <span className="mt-2 hover:font-medium hover:transform hover:scale-125 transition-transform">{link.label}</span>
+                  <span className="mt-2 hover:font-medium hover:transform hover:scale-125 transition-transform">
+                    {link.label}
+                  </span>
                 </div>
               </Link>
             </li>

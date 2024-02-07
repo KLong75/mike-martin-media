@@ -5,8 +5,8 @@ export default function ColorChangeM({ src }) {
   return (
     <Image
       src={src}
-      width={3492}
-      height={2716}
+      width={349}
+      height={271}
       alt="company logo"
       priority={true}
     />
