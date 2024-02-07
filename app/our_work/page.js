@@ -9,10 +9,9 @@ import Head from "next/head";
 // import VideoCategories from "../ui/videoCategories";
 import TextSegment from "../ui/textSegment";
 import OurWorkTiles from "../ui/ourWorkTiles";
-import MmmSiteButtonTextOnly from "../ui/mmmSiteButtonTextOnly";
+
 import BackToHomeLink from "../ui/backToHome";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
-import ContactUsButton from "../ui/contactUsButton";
 import MmmSiteButton from "../ui/mmmSiteButton";
 // import fonts
 import { dm_serif_display } from "../fonts";

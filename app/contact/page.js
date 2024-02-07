@@ -8,6 +8,8 @@ import InstagramWidget from "../ui/instagramWidget";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BackToHomeLink from "../ui/backToHome";
 import ColorChangeM from "../ui/colorChangeM";
+// import fonts
+import { dm_serif_display } from "../fonts";
 
 export const metadata = {
   title: "Contact",
@@ -21,8 +23,8 @@ export default function Page() {
         <BackToHomeLink />
       </div>
     <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2 className="text-2xl md:text-4xl font-bold mr-2">CONTACT </h2>
-        <div className="flex justify-center items-center w-20 md:w-28 h-auto mb-2">
+        <h2 className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold mr-2`}>CONTACT </h2>
+        <div className="flex justify-center items-center w-20 md:w-28 h-auto mb-1">
           <Image
             src="/branding/mmm_logo_white.png"
             width={294}

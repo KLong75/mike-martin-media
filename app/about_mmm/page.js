@@ -3,9 +3,7 @@ import Image from "next/image";
 // import data
 import { weTextBlockData } from "../lib/data";
 // import components
-import ContactUsButton from "../ui/contactUsButton";
 import WeTextBlock from "../ui/weTextBlock";
-import MeetTheTeamButton from "../ui/meetTheTeamButton";
 import TeamGallery from "../ui/teamGallery";
 import BackToHomeLink from "../ui/backToHome";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
@@ -29,7 +27,10 @@ export default function Page() {
         title="MMM Promotional Video"
       />
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2 className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold mr-2`}>ABOUT </h2>
+        <h2
+          className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold mr-2`}>
+          ABOUT{" "}
+        </h2>
         <div className="flex justify-center items-center w-20 md:w-24 h-auto mb-1 md:mb-.5">
           <Image
             src="/branding/mmm_logo_white.png"
@@ -72,16 +73,16 @@ export default function Page() {
         />
       </div>
       <div className="flex justify-center mb-6">
-          <MmmSiteButton
-            href="/contact"
-            label="Contact "
-            backgroundColor="bg-black"
-            textColor="text-white"
-            imgSrc="/branding/mmm_logo_white.png"
-          />
-        </div>
+        <MmmSiteButton
+          href="/contact"
+          label="Contact "
+          backgroundColor="bg-black"
+          textColor="text-white"
+          imgSrc="/branding/mmm_logo_white.png"
+        />
+      </div>
       <div
-        className="flex justify-center items-center max-w-4xl mx-auto"
+        className="flex justify-center items-center max-w-4xl mx-auto pl-4 pr-4"
         id="blog-section-image-container"
         style={{ maxWidth: "1024px" }} // Set the max-width to match desired value
       >
@@ -170,7 +171,9 @@ export default function Page() {
               alt="company logo"
             />
           </div>
-          <h2 className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold -ml-2`} id="mmm-team">
+          <h2
+            className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold -ml-2`}
+            id="mmm-team">
             eet The Team
           </h2>
         </div>
@@ -191,9 +194,8 @@ export default function Page() {
         <div className="-mt-14">
           <TeamGallery />
         </div>
-    
       </section>
-      
+
       <section className="-mt-6 md:mt-0">
         <InstagramWidget />
       </section>

@@ -1,11 +1,8 @@
-// import from next
-import Link from "next/link";
 // import components
 import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideo from "../../ui/bannerVideo";
 import PhotographyGallery from "@/app/ui/photographyGallery";
 import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
-import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
 import TextSegment from "@/app/ui/textSegment";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 // import fonts
@@ -31,13 +28,13 @@ export default function Page() {
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 mb-6">
-          <h2 className={`${dm_serif_display.className}text-center font-bold text-3xl md:text-4xl mt-2`}>
+          <h2 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl`}>
             PHOTOGRAPHY
           </h2>
         </div>
-      <section className="grid grid-cols-1">
+      <section className="grid grid-cols-1 -mb-8 md:mb-0">
         <div className="flex justify-center items-center">
-          <p className="text-left p-8 -mt-10 md:-mt-12 md:px-48 lg:-mt-24 lg:px-60 lg:mr-24 lg:ml-24">
+          <p className="text-center text-balance font-bold p-8 -mt-10 lg:px-60 lg:mr-24 lg:ml-24">
             We offer a wide range of photography services. From headshots to
             events, we can help you capture the moment. Check out our work below
             and then contact us to see how we can help you.
@@ -76,7 +73,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <div className="mt-24">
+      <div className="md:mt-32">
         <TextSegment text="Contact us today to get started on your Photography project. This text can change. Here we need to invite visitors to contact MMM." />
       </div>
       <div className="flex justify-center items-center p-2 mb-6">

@@ -34,8 +34,8 @@ export default function Home() {
       {/* About Section */}
       <section id="home-page-about-section">
         <div className="flex flex-col justify-center items-center w-full h-auto -mt-4">
-          <div className="bg-black text-white w-full h-20 md:h-36 mb-6">
-            <div className="hidden md:flex justify-center items-center mt-2 -mb-6 p-2">
+          <div className="bg-black text-white w-full h-20 md:h-24">
+            {/* <div className="hidden md:flex justify-center items-center mt-2 -mb-6 p-2">
               <div className="flex justify-center items-center w-36 h-auto mb-1 mt-2">
                 <Image
                   src="/branding/mmm_logo_white.png"
@@ -46,8 +46,8 @@ export default function Home() {
                   as="image"
                 />
               </div>
-            </div>
-            <div className="flex justify-center items-center p-1 mt-6">
+            </div> */}
+            <div className="flex justify-center items-center p-1 mt-5">
               <h3 className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold mr-2`}>
                 YOUR IDEAS,
               </h3>
@@ -64,7 +64,7 @@ export default function Home() {
               <h2 className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold ml-1`}>ADE</h2>
             </div>
           </div>
-          <div className="flex justify-center items-center p-2 mb-6 -mt-4">
+          <div className="flex justify-center items-center p-2 mb-6 md:-mt-4">
             <TextSegment
               text="MMM specializes in video production and creative
               services for corporations, nonprofits, education and medical
@@ -73,7 +73,7 @@ export default function Home() {
               deliver dynamic multi-media solutions. Visit the About MMM page to learn more about our mission and meet our team."
             />
           </div>
-          <div className="flex justify-center items-center pb-6 -mt-6 ">
+          <div className="flex justify-center items-center pb-6 -mt-6">
             <MmmSiteButton
               href="/about_mmm"
               label="About "
@@ -91,7 +91,7 @@ export default function Home() {
             />
           </div> */}
           <div
-            className="flex justify-center items-center max-w-4xl mx-auto"
+            className="flex justify-center items-center max-w-4xl mx-auto p-4 md:p-0"
             id="blog-section-image-container"
             style={{ maxWidth: "1024px" }} // Set the max-width to desired value
           >
@@ -104,7 +104,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex justify-center items-center p-2 mb-6 ">
+          <div className="flex justify-center items-center p-2 mb-6 -mt-4">
             <p className="p-2 text-sm md:text-base text-center text-balance w-10/12 md:w-1/2">
               Our{" "}
               <a href="/about_mmm#mmm-team" className="hover-effect">
@@ -143,7 +143,7 @@ export default function Home() {
           title="MMM Travel Video"
         /> */}
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <h3 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl mt-2`}>
+          <h3 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl`}>
             OUR WORK
           </h3>
         </div>
@@ -154,7 +154,7 @@ export default function Home() {
         <div className="flex justify-center items-center p-2 mb-6">
           <TextSegment text="We take pride in every project.  We partner with clients of all sizes to bring their ideas to life.  From concept to conclusion, we write, shoot, edit, direct, produce, animate, hire talent, find locations, and everything else needed for your production. From videos to livestreams, to animations, to photography we have you covered. Check out Our Work and then contact us to see what we can do for you!" />
         </div>
-        <div className="flex justify-center items-center pb-6 -mt-4 mb-2 w-full">
+        <div className="flex justify-center items-center pb-6 -mt-6 md:-mt-4 mb-2 w-full">
           <MmmSiteButtonTextOnly
             href="our_work"
             label="Our Work"
@@ -163,7 +163,7 @@ export default function Home() {
             imgSrc="/branding/mmm_logo_white.png"
           />
         </div>
-        <div className="grid grid cols-3 md:grid-cols-3 mb-2 ">
+        <div className="grid grid cols-3 md:grid-cols-3 mb-2 -mt-2 md:-mt-0">
           <div className="flex justify-center items-center md:order-2 ">
           <Link href="/our_work/mmm-video">
             <WorkCategorySection
@@ -174,7 +174,7 @@ export default function Home() {
             />
            </Link>
           </div>
-          <div className="flex justify-center items-center  md:order-1">
+          <div className="flex justify-center items-center mt-2 md:mt-0 md:order-1">
           <Link href="/our_work/livestreaming">
             <WorkCategorySection
               categoryName="Livestream"
@@ -184,7 +184,7 @@ export default function Home() {
             />
             </Link>
           </div>
-          <div className="flex justify-center items-center md:order-3">
+          <div className="flex justify-center items-center md:order-3 mt-2 md:mt-0">
           <Link href="/our_work/photography">
             <WorkCategorySection
               categoryName="Photography"
@@ -236,7 +236,7 @@ export default function Home() {
           title="MMM Travel Video"
         /> */}
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <h3 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl mt-2`}>
+          <h3 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl`}>
             BEYOND THE LENS
           </h3>
         </div>
