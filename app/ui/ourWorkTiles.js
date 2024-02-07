@@ -20,7 +20,7 @@ export default function OurWorkTiles() {
                 alt={`thumbnail image for ${tile.title} category`}
               />
             </div>
-            <span className="absolute top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl lg:text-4xl font-bold pb-8 md:pb-0 ">{tile.title}</span>
+            <span className="absolute top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl lg:text-4xl font-bold pb-8 md:pb-0 ">{tile.title.toUpperCase()}</span>
           </div>
           </Link>
         ))}

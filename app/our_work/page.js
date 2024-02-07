@@ -9,7 +9,6 @@ import Head from "next/head";
 // import VideoCategories from "../ui/videoCategories";
 import TextSegment from "../ui/textSegment";
 import OurWorkTiles from "../ui/ourWorkTiles";
-
 import BackToHomeLink from "../ui/backToHome";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import MmmSiteButton from "../ui/mmmSiteButton";
@@ -53,7 +52,7 @@ export default function Page() {
             OUR WORK
           </h3>
         </div>
-        <div className="mt-6 mb-6 text-sm md:text-base">
+        <div className="mt-6 mb-6 text-sm md:text-base font-bold">
           <TextSegment text="From Corporate, Education, Medical and Nonprofit videos, to Livestreaming, and Photography, we are your partner through every step of the process. Check out our work below and contact us today to get started on your project." />
         </div>
         <div>

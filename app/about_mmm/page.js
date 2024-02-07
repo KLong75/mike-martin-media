@@ -82,7 +82,7 @@ export default function Page() {
         />
       </div>
       <div
-        className="flex justify-center items-center max-w-4xl mx-auto pl-4 pr-4"
+        className="flex justify-center items-center mx-auto pl-4 pr-4"
         id="blog-section-image-container"
         style={{ maxWidth: "1024px" }} // Set the max-width to match desired value
       >
