@@ -11,7 +11,7 @@ export default function VideoGallery( {selectedCategory, excludedCategories}) {
         
         .filter(video => 
       (selectedCategory === "All Videos" || video.category === selectedCategory) &&
-      !excludedCategories.includes(video.category) // Exclude videos based on the 'categry' property 
+      {/* !excludedCategories.includes(video.category)  */}
     )
         .map((video) => (
           <div key={video.client} className="text-white w-full h-auto hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform">

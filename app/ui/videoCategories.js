@@ -43,10 +43,10 @@ export default function VideoCategories({ onCategorySelected }) {
           </li>
         ))}
       </ul>
-      <div className="bg-black text-white grid grid-cols-1 w-full h-24 md:h-28 text-center -mt-4">
+      <div className="bg-black text-2xl text-white grid grid-cols-1 w-full h-24 md:h-28 text-center -mt-4">
       <div>
-        <h4 className="font-bold text-xl mt-2 ">Currently Viewing:</h4>
-        <div className="flex justify-center items-center mt-1">
+        <h4 className="font-bold text-xl mt-1 ">Currently Viewing:</h4>
+        <div className="flex  justify-center items-center mt-1">
         {selectedCategoryObject && selectedCategoryObject.icon}
         </div>
         {selectedCategory === 'All Videos' ? selectedCategory : `${selectedCategory} Videos`}
