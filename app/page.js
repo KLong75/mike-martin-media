@@ -99,10 +99,9 @@ export default function Home() {
               alt="Mike in van with camera"
               width={410}
               height={273}
-              priority
+              priority={true} 
             />
           </div>
-
           <div className="flex justify-center items-center p-2 mb-6 -mt-4 md:mt-0">
             <p className="p-2 text-sm md:text-base text-center text-balance w-10/12 md:w-1/2 ">
               Our{" "}
