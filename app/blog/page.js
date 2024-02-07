@@ -7,8 +7,6 @@ import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BackToHomeLink from "../ui/backToHome";
 // import data
 import { blogPosts } from "../lib/data";
-// import font
-import { dm_serif_display } from "../fonts";
 
 export const metadata = {
   title: "Blog",
@@ -22,7 +20,7 @@ export default function Page() {
         <BackToHomeLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h3 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl mt-2`}>
+        <h3 className="text-center font-bold text-3xl md:text-4xl mt-2">
           BEYOND THE LENS
         </h3>
       </div>

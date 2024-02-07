@@ -12,8 +12,6 @@ import InstagramWidget from "../ui/instagramWidget";
 import BannerImage from "../ui/bannerImg";
 import BannerVideo from "../ui/bannerVideo";
 import MmmSiteButton from "../ui/mmmSiteButton";
-// import fonts
-import { dm_serif_display } from "../fonts";
 
 export const metadata = {
   title: "About MMM",
@@ -28,7 +26,7 @@ export default function Page() {
       />
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
         <h2
-          className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold mr-2`}>
+          className="text-3xl md:text-4xl font-bold mr-2">
           ABOUT{" "}
         </h2>
         <div className="flex justify-center items-center w-20 md:w-24 h-auto mb-1 md:mb-.5">
@@ -43,7 +41,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="mt-2 mb-1 ">
+      <div className="mt-2 mb-2 ">
         <BackToHomeLink />
       </div>
       {/* <div
@@ -59,7 +57,7 @@ export default function Page() {
           height={1600}
         />
       </div> */}
-      <div className="mt-2 mb-2">
+      <div className="md:-mt-4 mb-4">
         <TextSegment
           text="For over 15 years, MMM has combined the latest technology with the
               best in-house talent to create impactful videos for organizations
@@ -172,7 +170,7 @@ export default function Page() {
             />
           </div>
           <h2
-            className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold -ml-2`}
+            className="text-3xl md:text-4xl font-bold -ml-2"
             id="mmm-team">
             eet The Team
           </h2>
@@ -196,7 +194,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="-mt-6 md:mt-0">
+      <section className="-mt-6 md:mt-0 md:-mb-20">
         <InstagramWidget />
       </section>
       <div className="mb-4">

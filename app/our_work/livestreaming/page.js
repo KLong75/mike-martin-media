@@ -5,8 +5,7 @@ import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
 import TextSegment from "@/app/ui/textSegment";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 import VideoGallery from "@/app/ui/videoGallery";
-// import fonts
-import { dm_serif_display } from "../../fonts";
+
 
 export const metadata = {
   title: "Livestreaming",
@@ -27,7 +26,7 @@ export default function Page() {
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl mt-2`}>
+        <h2 className="text-center font-bold text-3xl md:text-4xl mt-2">
           LIVESTREAMING
         </h2>
       </div>

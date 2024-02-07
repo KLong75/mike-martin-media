@@ -7,8 +7,7 @@ import { HiBriefcase } from "react-icons/hi2";
 import { HiGlobeAlt } from "react-icons/hi2";
 import { FaVideo } from "react-icons/fa6";
 import { FaKitMedical } from "react-icons/fa6";
-// import fonts
-import { dm_serif_display } from "../fonts";
+
 
 export default function VideoCategories({ onCategorySelected }) {
   const [selectedCategory, setSelectedCategory] = useState("All Videos");
@@ -44,7 +43,7 @@ export default function VideoCategories({ onCategorySelected }) {
           </li>
         ))}
       </ul>
-      <div className={`${dm_serif_display.className} bg-black text-white grid grid-cols-1 w-full h-24 md:h-28 text-center -mt-4`}>
+      <div className="bg-black text-white grid grid-cols-1 w-full h-24 md:h-28 text-center -mt-4">
       <div>
         <h4 className="font-bold text-xl mt-2 ">Currently Viewing:</h4>
         <div className="flex justify-center items-center mt-1">

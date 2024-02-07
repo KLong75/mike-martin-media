@@ -5,8 +5,7 @@ import PhotographyGallery from "@/app/ui/photographyGallery";
 import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
 import TextSegment from "@/app/ui/textSegment";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
-// import fonts
-import { dm_serif_display } from "../../fonts";
+
 
 export const metadata = {
   title: "Photography",
@@ -28,7 +27,7 @@ export default function Page() {
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 mb-6">
-          <h2 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl`}>
+          <h2 className="text-center font-bold text-3xl md:text-4xl">
             PHOTOGRAPHY
           </h2>
         </div>

@@ -11,8 +11,7 @@ import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 import VideoCategories from "@/app/ui/videoCategories";
 import VideoGallery from "@/app/ui/videoGallery";
 import MmmSiteButton from "@/app/ui/mmmSiteButton";
-// import fonts
-import { dm_serif_display } from "../../fonts";
+
 
 export default function Page() {
   const [selectedCategory, setSelectedCategory] = useState("All Videos");
@@ -29,13 +28,13 @@ export default function Page() {
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2 className="text-center font-bold text-2xl md:text-4xl mt-2">
+        <h2 className="text-center font-bold text-4xl  mt-2">
           VIDEO
         </h2>
       </div>
       <section className="-mt-4">
         <div className="flex justify-center items-center -mb-2">
-          <p className="text-left p-8 ">
+          <p className="text-center text-balance font-bold p-8 ">
             Video lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             keywords about video production. Lorem ipsum dolor sit amet,
           </p>

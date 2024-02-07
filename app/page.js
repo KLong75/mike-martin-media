@@ -20,8 +20,6 @@ import { BsBroadcast } from "react-icons/bs";
 import { RiTeamFill } from "react-icons/ri";
 import { FaClapperboard } from "react-icons/fa6";
 import BannerImage from "./ui/bannerImg";
-// import fonts
-import { dm_serif_display } from "./fonts";
 
 
 export default function Home() {
@@ -34,7 +32,7 @@ export default function Home() {
       {/* About Section */}
       <section id="home-page-about-section">
         <div className="flex flex-col justify-center items-center w-full h-auto -mt-4">
-          <div className="bg-black text-white w-full h-20 md:h-24">
+          <div className="bg-black text-white w-full h-20 md:h-24 flex items-center justify-center">
             {/* <div className="hidden md:flex justify-center items-center mt-2 -mb-6 p-2">
               <div className="flex justify-center items-center w-36 h-auto mb-1 mt-2">
                 <Image
@@ -47,8 +45,8 @@ export default function Home() {
                 />
               </div>
             </div> */}
-            <div className="flex justify-center items-center p-1 mt-5">
-              <h3 className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold mr-2`}>
+            <div className="flex justify-center items-center p-1 ">
+              <h3 className="text-3xl md:text-4xl font-bold mr-2">
                 YOUR IDEAS,
               </h3>
               <div
@@ -61,10 +59,10 @@ export default function Home() {
                   alt="company logo"
                 />
               </div>
-              <h2 className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold ml-1`}>ADE</h2>
+              <h2 className="text-3xl md:text-4xl font-bold ml-1">ADE</h2>
             </div>
           </div>
-          <div className="flex justify-center items-center p-2 mb-6 md:-mt-4">
+          <div className="flex justify-center items-center p-2 mb-6">
             <TextSegment
               text="MMM specializes in video production and creative
               services for corporations, nonprofits, education and medical
@@ -104,8 +102,8 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex justify-center items-center p-2 mb-6 -mt-4">
-            <p className="p-2 text-sm md:text-base text-center text-balance w-10/12 md:w-1/2">
+          <div className="flex justify-center items-center p-2 mb-6 -mt-4 md:mt-0">
+            <p className="p-2 text-sm md:text-base text-center text-balance w-10/12 md:w-1/2 ">
               Our{" "}
               <a href="/about_mmm#mmm-team" className="hover-effect">
                 <span className="font-bold hover:scale-110 transition-transform inline-block">
@@ -143,7 +141,7 @@ export default function Home() {
           title="MMM Travel Video"
         /> */}
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <h3 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl`}>
+          <h3 className="text-center font-bold text-3xl md:text-4xl">
             OUR WORK
           </h3>
         </div>
@@ -236,7 +234,7 @@ export default function Home() {
           title="MMM Travel Video"
         /> */}
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <h3 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl`}>
+          <h3 className="text-center font-bold text-3xl md:text-4xl">
             BEYOND THE LENS
           </h3>
         </div>
