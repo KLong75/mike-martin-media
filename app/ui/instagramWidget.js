@@ -30,6 +30,7 @@ const InstagramWidget = () => {
           {/* <h6 className="text-center text-xl font-bold">@mikemartinmedia</h6> */}
 
           <iframe
+            title="Follow MMM on Instagram"
             scrolling="no"
             src="//lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html"
             className="lightwidget-widget overflow-hidden shadow-2xl -mt-2"
@@ -41,9 +42,17 @@ const InstagramWidget = () => {
         </div>
       </div>
       <div className="flex justify-center items-center w-full -mt-6 sm:-mt-6 md:-mt-20 lg:-mt-28 xl:-mt-40 mb-6 sm:mb-28 md:mb-40">
-        <span className="text-center text-lg font-bold mr-4 mt-2">#mmmgood</span>
-        <a href="https://www.instagram.com/explore/tags/mmmmidtown/" target="_blank" rel="noopener noreferrer" className="hover:transform hover:scale-110 transition-transform hover:cursor-pointer mt-2">
-        <span className="text-center text-lg font-bold ml-3 ">#mmmmidtown</span>
+        <span className="text-center text-lg font-bold mr-4 mt-2">
+          #mmmgood
+        </span>
+        <a
+          href="https://www.instagram.com/explore/tags/mmmmidtown/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:transform hover:scale-110 transition-transform hover:cursor-pointer mt-2">
+          <span className="text-center text-lg font-bold ml-3 ">
+            #mmmmidtown
+          </span>
         </a>
       </div>
     </>

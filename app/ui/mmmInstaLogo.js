@@ -8,8 +8,8 @@ export default function MMMInstaLogo() {
       <a href="https://www.instagram.com/mikemartinmedia/" target="_blank" rel="noopener noreferrer">
         <div className="flex justify-center items-center mt-6 mb-4 md:mb-8">
         
-          <h6 className="text-xl md:text-3xl font-bold mr-1">Follow</h6>
-          <div className="flex justify-center items-center w-12 md:w-20 h-auto mb-1">
+          <span className="text-xl md:text-3xl font-bold mr-1">Follow</span>
+          <div className="flex justify-center items-center w-12 md:w-20 h-auto md:mb-1">
             <Image
               src="/branding/mmm_black.png"
               width={294}
@@ -17,7 +17,7 @@ export default function MMMInstaLogo() {
               alt="company logo"
             />
           </div>
-          <h6 className="text-xl md:text-3xl font-bold ml-1">on Instagram</h6>
+          <span className="text-xl md:text-3xl font-bold ml-1">on Instagram</span>
 
         </div>
         </a>

@@ -165,9 +165,9 @@ export default function Page() {
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <div className="w-8 md:w-10 h-auto mx-2 mb-1">
             <Image
-              src="/branding/singleMWhite.png"
-              width={3492}
-              height={2716}
+              src="/branding/singleMWhiteResizeSmall.png"
+              width={349}
+              height={271}
               alt="company logo"
             />
           </div>

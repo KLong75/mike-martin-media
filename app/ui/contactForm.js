@@ -57,7 +57,7 @@ export default function ContactForm() {
         <div
           className="flex justify-center items-center w-6 h-auto mb-1"
           style={{ marginRight: "-0.05rem", marginTop: ".2rem" }}>
-          <ColorChangeM src="/branding/singleMBlack.png" />
+          <ColorChangeM src="/branding/singleMBlackResizeSmall.png" />
         </div>
         <h3 className="text-xl font-bold">essage</h3>
       </div>

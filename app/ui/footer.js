@@ -23,7 +23,7 @@ export default function Footer() {
 
         <div>
           <ContactInfo 
-          m_src="/branding/singleMWhite.png"
+          m_src="/branding/singleMWhiteResizeSmall.png"
           />
         </div>
         <div className="flex justify-center items-center w-full mt-4 mb-2">

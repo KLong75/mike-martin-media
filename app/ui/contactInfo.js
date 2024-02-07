@@ -1,8 +1,7 @@
-// import from next
-import Image from "next/image";
+
 import IconLink from "./iconLink";
 import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
-import ColorChangeM from "./colorChangeM";
+
 
 export default function ContactInfo({ m_src }) {
   return (

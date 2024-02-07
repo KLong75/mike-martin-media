@@ -43,7 +43,7 @@ export default function Page() {
         <BackToHomeLink />
       </div> */}
       <div className="flex justify-center items-center -mt-12 md:mb-8 p-12">
-        <ContactInfo m_src="/branding/singleMBlack.png" />
+        <ContactInfo />
       </div>
       <div className="flex justify-center items-center md:mt-4 z-50">
         <SocialMediaLinks />
@@ -52,7 +52,7 @@ export default function Page() {
         <ContactForm />
       </div>
 
-      <div className="mb-20 md:-mb-16 lg:-mb-28 w-full h-auto ">
+      <div className="mb-12 md:-mb-16 lg:-mb-28 w-full h-auto ">
         <InstagramWidget />
       </div>
       <div className="hidden pl-36 pr-36 md:block md:mb-16">

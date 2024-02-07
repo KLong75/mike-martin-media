@@ -55,9 +55,9 @@ export default function Home() {
                 className="flex justify-center items-center w-8 md:w-10 h-auto md:mb-0"
                 style={{ marginRight: "-.1rem", marginBottom:".13rem" }}>
                 <Image
-                  src="/branding/singleMWhite.png"
-                  width={3492}
-                  height={2716}
+                  src="/branding/singleMWhiteResizeSmall.png"
+                  width={349}
+                  height={271}
                   alt="company logo"
                 />
               </div>
@@ -205,9 +205,9 @@ export default function Home() {
               className="flex justify-center items-center w-6 h-auto "
               style={{ marginRight: "-.1rem", marginBottom: ".1rem" }}>
               <Image
-                src="/branding/singleMBlack.png"
-                width={3492}
-                height={2716}
+                src="/branding/singleMBlackResizeSmall.png"
+                width={349}
+                height={271}
                 alt="company logo"
               />
             </div>
