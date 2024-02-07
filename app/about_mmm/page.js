@@ -25,10 +25,7 @@ export default function Page() {
         title="MMM Promotional Video"
       />
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2
-          className="text-3xl md:text-4xl font-bold mr-2">
-          ABOUT{" "}
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-bold mr-2">ABOUT </h2>
         <div className="flex justify-center items-center w-20 md:w-24 h-auto mb-1 md:mb-.5">
           <Image
             src="/branding/mmm_logo_white.png"
@@ -88,8 +85,8 @@ export default function Page() {
           id="blog-section-image"
           src="/images/aboutPage/mike-van.jpg"
           alt="Mike in van with camera"
-          width={2048}
-          height={1363}
+          width={410}
+          height={273}
           priority
         />
       </div>
@@ -169,9 +166,7 @@ export default function Page() {
               alt="company logo"
             />
           </div>
-          <h2
-            className="text-3xl md:text-4xl font-bold -ml-2"
-            id="mmm-team">
+          <h2 className="text-3xl md:text-4xl font-bold -ml-2" id="mmm-team">
             eet The Team
           </h2>
         </div>

@@ -97,8 +97,8 @@ export default function Home() {
               id="blog-section-image"
               src="/images/aboutPage/mike-van.jpg"
               alt="Mike in van with camera"
-              width={2048}
-              height={1363}
+              width={410}
+              height={273}
               priority
             />
           </div>
