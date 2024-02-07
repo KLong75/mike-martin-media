@@ -8,6 +8,8 @@ import InstagramWidget from "../ui/instagramWidget";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BackToHomeLink from "../ui/backToHome";
 import GoogleMap from "../ui/googleMap";
+// import fonts
+import { dm_serif_display } from "../fonts";
 
 export const metadata = {
   title: "Contact",
@@ -17,17 +19,18 @@ export const metadata = {
 export default function Page() {
   return (
     <main className=" flex-1">
+
       <div className="md:hidden">
-        <GoogleMap />
+        <GoogleMap/>
       </div>
-      <div className="mt-2 mb-1 ">
+      <div className="mt-2 mb-2 hidden md:block">
         <BackToHomeLink />
       </div>
-      <div className=" text-white flex justify-center items-center w-full h-20 md:h-24 -mt-2">
-        {/* <h2 className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold mr-2`}>CONTACT </h2> */}
-        <div className="flex justify-center items-center w-40 md:w-48 h-auto -mb-4">
+      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 ">
+        <h2 className={`${dm_serif_display.className} text-3xl md:text-4xl font-bold mr-2`}>CONTACT </h2>
+        <div className="flex justify-center items-center w-20 md:w-24 h-auto mb-1 ">
           <Image
-            src="/branding/mmm_black.png"
+            src="/branding/mmm_logo_white.png"
             width={294}
             height={95}
             alt="company logo"
@@ -36,11 +39,13 @@ export default function Page() {
           />
         </div>
       </div>
-
+      {/* <div className="mt-2 mb-2 md:hidden">
+        <BackToHomeLink />
+      </div> */}
       <div className="flex justify-center items-center -mt-12 md:mb-8 p-12">
         <ContactInfo m_src="/branding/singleMBlack.png" />
       </div>
-      <div className="flex justify-center items-center -mt-4 md:mt-4 z-50">
+      <div className="flex justify-center items-center md:mt-4 z-50">
         <SocialMediaLinks />
       </div>
       <div className="flex justify-center items-center -mt-8">
