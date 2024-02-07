@@ -8,6 +8,8 @@ import TextSegment from "@/app/ui/textSegment";
 import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 import VideoGallery from "@/app/ui/videoGallery";
+// import fonts
+import { dm_serif_display } from "../../fonts";
 
 
 
@@ -30,7 +32,7 @@ export default function Page() {
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2 className="text-center font-bold text-2xl md:text-4xl mt-2">
+        <h2 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl mt-2`}>
           LIVESTREAMING
         </h2>
       </div>
@@ -76,11 +78,11 @@ export default function Page() {
       </section>
       <section>
         <div className="grid grid-cols-1">
-          <h4 className="text-xl text-center font-bold md:mb-12 lg:mb-20 ">
+          <h4 className="text-xl text-center font-bold -mb-6 md:mb-12 lg:mb-20 ">
             Recent Streams
           </h4>
           <div className="flex justify-center items-center">
-            <p className="text-left p-8 md:-mt-12 md:px-48 lg:-mt-24 lg:px-60 lg:mr-24 lg:ml-24">
+            <p className="text-left p-8 -mb-6 md:-mt-12 md:px-48 lg:-mt-24 lg:px-60 lg:mr-24 lg:ml-24">
               Check out some recent live streams we have hosted.
             </p>
           </div>

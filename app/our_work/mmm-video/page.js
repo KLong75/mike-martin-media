@@ -11,6 +11,8 @@ import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 import VideoCategories from "@/app/ui/videoCategories";
 import VideoGallery from "@/app/ui/videoGallery";
 import MmmSiteButton from "@/app/ui/mmmSiteButton";
+// import fonts
+import { dm_serif_display } from "../../fonts";
 
 export default function Page() {
   const [selectedCategory, setSelectedCategory] = useState("All Videos");
@@ -36,7 +38,7 @@ export default function Page() {
           <BackToOurWorkLink />
         </div>
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <h2 className="text-center font-bold text-2xl md:text-4xl mt-2">
+          <h2 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl mt-2`}>
             VIDEO
           </h2>
         </div>

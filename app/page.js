@@ -53,7 +53,7 @@ export default function Home() {
               </h3>
               <div
                 className="flex justify-center items-center w-8 md:w-10 h-auto md:mb-0"
-                style={{ marginRight: "-.1rem", marginBottom:".15rem" }}>
+                style={{ marginRight: "-.1rem", marginBottom:".13rem" }}>
                 <Image
                   src="/branding/singleMWhite.png"
                   width={3492}
@@ -143,7 +143,7 @@ export default function Home() {
           title="MMM Travel Video"
         /> */}
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <h3 className="text-center font-bold text-2xl md:text-4xl mt-2">
+          <h3 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl mt-2`}>
             OUR WORK
           </h3>
         </div>
@@ -236,7 +236,7 @@ export default function Home() {
           title="MMM Travel Video"
         /> */}
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <h3 className="text-center font-bold text-2xl md:text-4xl mt-2">
+          <h3 className={`${dm_serif_display.className} text-center font-bold text-3xl md:text-4xl mt-2`}>
             BEYOND THE LENS
           </h3>
         </div>

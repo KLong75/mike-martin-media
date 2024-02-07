@@ -8,9 +8,8 @@ import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
 import MmmSiteButtonTextOnly from "@/app/ui/mmmSiteButtonTextOnly";
 import TextSegment from "@/app/ui/textSegment";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
-// import icons
-// import { BiArrowBack } from "react-icons/bi";
-import { IoIosArrowBack } from "react-icons/io";
+// import fonts
+import { dm_serif_display } from "../../fonts";
 
 export const metadata = {
   title: "Photography",
@@ -32,7 +31,7 @@ export default function Page() {
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 mb-6">
-          <h2 className="text-center font-bold text-2xl md:text-4xl mt-2">
+          <h2 className={`${dm_serif_display.className}text-center font-bold text-3xl md:text-4xl mt-2`}>
             PHOTOGRAPHY
           </h2>
         </div>

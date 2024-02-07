@@ -10,8 +10,8 @@ const InstagramWidget = () => {
         src="https://cdn.lightwidget.com/widgets/lightwidget.js"
         strategy="lazyOnload"
       />
-      <div className="flex justify-center items-center w-full lg:-mt-36 ">
-        <div className="flex flex-col items-center p-6 md:p-12 md:mb-8 lg:p-20 lg:mt-20 xl:p-80 xl:-mt-40 xl:-mb-40 w-full lg:w-3/4 ">
+      <div className="flex justify-center items-center w-full lg:-mt-36 z-30 ">
+        <div className="flex flex-col items-center p-6 md:p-12  md:mb-8 lg:p-20 lg:mt-20 xl:p-80  xl:-mt-40 xl:-mb-40 w-full lg:w-3/4 ">
           {/* <div className="flex justify-center items-center mt-6 mb-2 md:mb-6">
         <h6 className=" text-xl font-bold mr-1">Follow</h6>
         <div className="flex justify-center items-center w-14 h-auto mb-1">
