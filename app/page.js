@@ -99,6 +99,7 @@ export default function Home() {
               alt="Mike in van with camera"
               width={2048}
               height={1363}
+              priority
             />
           </div>
 

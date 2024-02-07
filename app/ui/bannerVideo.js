@@ -7,6 +7,16 @@ export default function BannerVideo({ src, title }) {
       <Head>
         <link
           rel="preconnect"
+          href="https://player.vimeo.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://i.vimeocdn.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
           href="https://f.vimeocdn.com"
           crossOrigin="anonymous"
         />
