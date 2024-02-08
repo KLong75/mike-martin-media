@@ -46,9 +46,9 @@ export default function Page() {
         <div className="grid grid-cols-1 w-144 h-auto">
           <PhotographyGallery
             client={"Prasino"}
-            cover_img_src={"/images/photographyWorkSamples/prasino/01.jpg"}
-            width={5002}
-            height={3335}
+            cover_img_src={"/images/photographyWorkSamples/prasino/01_15percent.png"}
+            width={750}
+            height={500}
           />
         </div>
       </div>
