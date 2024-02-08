@@ -5,7 +5,7 @@ export default function WeTextBlock({ headline, text }) {
     <div className="flex flex-col justify-center items-center h-full p-6 lg:-mb-0">
       <div className="flex flex-col justify-between h-full shadow-2xl">
         <div>
-          <h4 className="font-bold mr-auto p-4 -mb-4">{headline}</h4>
+          <span className="font-bold mr-auto p-4 -mb-4">{headline}</span>
           <p className="text-left w-full p-4">
             {text}
           </p>
