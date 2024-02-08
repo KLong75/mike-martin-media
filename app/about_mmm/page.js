@@ -83,7 +83,7 @@ export default function Page() {
       >
         <BannerImage
           id="blog-section-image"
-          src="/images/aboutPage/mike-van.jpg"
+          src="/images/aboutPage/mike-van-min.jpg"
           alt="Mike in van with camera"
           width={410}
           height={273}
