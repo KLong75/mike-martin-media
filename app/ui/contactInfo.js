@@ -1,12 +1,9 @@
-
 import IconLink from "./iconLink";
 import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
-
 
 export default function ContactInfo({ m_src }) {
   return (
     <div className="justify-items-center">
-    
       <div className="flex flex-col text-center space-y-4">
         {/* <div className="flex justify-center items-center mt-10 p-2">
           <div className="flex justify-center items-center w-8 h-auto mb-2.5 ">
@@ -23,67 +20,57 @@ export default function ContactInfo({ m_src }) {
           <h2 className="text-xl font-bold mr-2">edia</h2>
         </div> */}
         {/* <h2 className=" font-bold">Mike Martin Media</h2> */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4  md:gap-24 lg:gap-72 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-24 lg:gap-72 mt-12">
           {/* Phone Number Section */}
           <div className="group hover:transform hover:scale-110 transition-transform -mt-4 md:mt-6">
-          <a
-                href="tel:636-212-0978"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="call Mike Martin Media"
-                className="mt-">
-            <div className="flex flex-col items-center md:ml-6">
-              {/* <IconLink
+            <a
+              href="tel:636-212-0978"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="call Mike Martin Media"
+              className="mt-">
+              <div className="flex flex-col items-center md:ml-6">
+                {/* <IconLink
                 href="tel:636-212-0978"
                 icon={<FaPhone size={24} />}
                 label="call Mike Martin Media"
               /> */}
-              
-              <FaPhone size={24} />
-              
+                <FaPhone size={24} />
                 <span>636-212-0978</span>
-             
-            </div>
+              </div>
             </a>
           </div>
           {/* Address Section */}
-          <div className="group hover:transform hover:scale-110 transition-transform mt-2 md:mt-0">
-            <div className="flex flex-col items-center">
-              <IconLink
-                href="https://maps.app.goo.gl/Uptcidd5RbhV8Ke57"
-                icon={<FaLocationDot size={24} />}
-                label="link to Mike Martin Media on Google Maps"
-              />
-              <a
-                href="https://maps.app.goo.gl/Uptcidd5RbhV8Ke57"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="link to Mike Martin Media on Google Maps"
-                className="mt-">
+          <div className="group hover:transform hover:scale-110 transition-transform mt-2 md:mt-6">
+            <a
+              href="https://maps.app.goo.gl/Uptcidd5RbhV8Ke57"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="link to Mike Martin Media on Google Maps"
+              className="mt-">
+              <div className="flex flex-col items-center">
+                <FaLocationDot size={24} />
+
                 <span>
                   3333 Washington Avenue, Suite 201
                   <br />
                   St. Louis, MO 63103
                 </span>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
           {/* Email Section */}
           <div className="group hover:transform hover:scale-110 transition-transform mt-2 md:mt-6 ">
-            <div className="flex flex-col items-center md:mr-6">
-              <IconLink
-                href="mailto:mike@mikemartinmedia.com"
-                icon={<FaEnvelope size={24} />}
-                label="email Mike Martin Media"
-              />
-              <a
-                href="mailto:mike@mikemartinmedia.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="email Mike Martin Media">
+            <a
+              href="mailto:mike@mikemartinmedia.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="email Mike Martin Media">
+              <div className="flex flex-col items-center md:mr-6">
+                <FaEnvelope size={24} />
                 <span>mike@mikemartinmedia.com</span>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
