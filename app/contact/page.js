@@ -41,7 +41,7 @@ export default function Page() {
       {/* <div className="mt-2 mb-2 md:hidden">
         <BackToHomeLink />
       </div> */}
-      <div className="flex justify-center items-center -mt-12 md:mb-8 p-12">
+      <div className="flex justify-center items-center -mt-20 md:mb-8 p-12">
         <ContactInfo />
       </div>
       <div className="flex justify-center items-center md:mt-4 z-50">
