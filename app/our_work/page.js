@@ -62,18 +62,6 @@ export default function Page() {
         <div>
           <OurWorkTiles />
         </div>
-        {/* <section className="-mb-6">
-      <VideoCategories onCategorySelected={setSelectedCategory}/>
-      </section>
-      <VideoGallery selectedCategory={selectedCategory} /> */}
-      {/* <div className="flex justify-center items-center p-2 mb-6 mt-6">
-          <MmmSiteButtonTextOnly
-            href="/contact"
-            label="Contact Us"
-            backgroundColor="bg-black"
-            textColor="text-white"
-          />
-        </div> */}
         <div className=" text-sm md:text-base -mt-6 md:mt-6">
           <TextSegment text="From Corporate, Education, Medical and Nonprofit videos, to Livestreaming, and Photography, we are your partner through every step of the process. Contact us today to get started on your project. This text can change. What we need here is an invitation for visitors to contact MMM." />
         </div>
