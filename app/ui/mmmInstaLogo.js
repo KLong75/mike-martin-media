@@ -37,7 +37,7 @@ export default function MMMInstaLogo() {
         </div>
         </a>
         <a href="https://www.instagram.com/mikemartinmedia/" target="_blank" rel="noopener noreferrer">
-        <h6 className="text-center md:text-xl font-bold">@mikemartinmedia</h6>
+        <span className="text-center md:text-xl font-bold">@mikemartinmedia</span>
        </a>
       </div>
     </div>
