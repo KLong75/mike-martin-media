@@ -48,7 +48,7 @@ export default function PhotographyGallery({
               alt={client}
               width={width}
               height={height}
-              priotity
+              priority
             />
             <h3 className=" text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl lg:text-4xl font-bold  ">
               {client}
@@ -105,7 +105,12 @@ export default function PhotographyGallery({
                     <SwiperSlide key={index}>
                       <div className="ml-4 mr-4">
                         <div className="flex justify-center items-center">
-                          <div className={client === "Prasino" ? "grid grid-cols-1 w-full" : "grid grid-cols-1 w-80"}>
+                          <div
+                            className={
+                              client === "Prasino"
+                                ? "grid grid-cols-1 w-full"
+                                : "grid grid-cols-1 w-80"
+                            }>
                             <Image
                               className={
                                 client === "Prasino"
