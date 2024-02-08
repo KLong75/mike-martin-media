@@ -5,6 +5,7 @@ import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
 import TextSegment from "@/app/ui/textSegment";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 import VideoGallery from "@/app/ui/videoGallery";
+import LivestreamGallery from "@/app/ui/livestreamGallery";
 
 
 export const metadata = {
@@ -82,9 +83,10 @@ export default function Page() {
           </div>
         </div>
         <div className="mb-8 md:mb-12 lg:mb-18">
-          <VideoGallery selectedCategory="Livestreaming" 
+          {/* <VideoGallery selectedCategory="Livestreaming" 
             includedCategories={["Livestreaming"]}
-          />
+          /> */}
+          <LivestreamGallery />
         </div>
       </section>
       <div className="-mt-10 md:mt-4">

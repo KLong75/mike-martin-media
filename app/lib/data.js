@@ -352,18 +352,18 @@ export const videoData = [
     thumbnail_src: "/images/video-thumbnails/nonprofit/kitmMission.png",
     src: "https://player.vimeo.com/video/862525134?h=722087be67&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
-  {
-    category: "Livestreaming",
-    client: "WUSTL 2023 Spring Parents Council - Saturday",
-    thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
-    src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
-  {
-    category: "Livestreaming",
-    client: "PBH 2022 Livestream Spirit of Provident Gala",
-    thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
-    src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
+  // {
+  //   category: "Livestreaming",
+  //   client: "WUSTL 2023 Spring Parents Council - Saturday",
+  //   thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
+  //   src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+  // },
+  // {
+  //   category: "Livestreaming",
+  //   client: "PBH 2022 Livestream Spirit of Provident Gala",
+  //   thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
+  //   src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+  // },
 ];
 
 export const livestreamData = [
