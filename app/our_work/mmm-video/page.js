@@ -13,8 +13,10 @@ import VideoGallery from "@/app/ui/videoGallery";
 import MmmSiteButton from "@/app/ui/mmmSiteButton";
 
 
+
 export default function Page() {
   const [selectedCategory, setSelectedCategory] = useState("All Videos");
+
 
   return (
     <main className="grid grid-cols-1 ">
@@ -45,9 +47,7 @@ export default function Page() {
       </section>
       <VideoGallery 
         selectedCategory={selectedCategory} 
-        includedCategories={["Medical", "Corporate", "Education", "Nonprofit"]}
       />
-
       <div>
         <TextSegment text="Contact us today to get started on your Video project. This text can change. Here we need to invite visitors to contact MMM." />
       </div>
