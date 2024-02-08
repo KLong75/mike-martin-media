@@ -26,21 +26,25 @@ export default function ContactInfo({ m_src }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4  md:gap-24 lg:gap-72 mt-12">
           {/* Phone Number Section */}
           <div className="group hover:transform hover:scale-110 transition-transform -mt-4 md:mt-6">
-            <div className="flex flex-col items-center md:ml-6">
-              <IconLink
-                href="tel:636-212-0978"
-                icon={<FaPhone size={24} />}
-                label="call Mike Martin Media"
-              />
-              <a
+          <a
                 href="tel:636-212-0978"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="call Mike Martin Media"
                 className="mt-">
+            <div className="flex flex-col items-center md:ml-6">
+              {/* <IconLink
+                href="tel:636-212-0978"
+                icon={<FaPhone size={24} />}
+                label="call Mike Martin Media"
+              /> */}
+              
+              <FaPhone size={24} />
+              
                 <span>636-212-0978</span>
-              </a>
+             
             </div>
+            </a>
           </div>
           {/* Address Section */}
           <div className="group hover:transform hover:scale-110 transition-transform mt-2 md:mt-0">
