@@ -542,7 +542,7 @@ export const photographyWorkSampleData = [
     images: [
       {
         title: "01",
-        src: "/images/photographyWorkSamples/prasino/01.jpg",
+        src: "/images/photographyWorkSamples/prasino/01_resize_sm.png",
       },
       {
         title: "02",
