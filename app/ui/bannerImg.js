@@ -11,7 +11,7 @@ export default function BannerImage({ src, alt, width, height }) {
           //   paddingTop: "56.25%",
           // }}
           >
-          <Image src={src} alt={alt} width={width} height={height} />
+          <Image src={src} alt={alt} width={width} height={height} priority/>
         </div>
       </div>
     </section>
