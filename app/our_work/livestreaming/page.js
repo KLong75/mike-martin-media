@@ -83,11 +83,11 @@ export default function Page() {
         </div>
         <div className="mb-8 md:mb-12 lg:mb-18">
           <VideoGallery selectedCategory="Livestreaming" 
-            excludedCategories={[]}
+            includedCategories={["Livestreaming"]}
           />
         </div>
       </section>
-      <div className="-mt-2 md:mt-4">
+      <div className="-mt-10 md:mt-4">
         <TextSegment text="Contact us today to get started on your Livestreaming project. This text can change. Here we need to invite visitors to contact MMM." />
       </div>
       <div className="flex justify-center items-center mb-12 mt-2">

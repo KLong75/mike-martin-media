@@ -45,7 +45,7 @@ export default function Page() {
       </section>
       <VideoGallery 
         selectedCategory={selectedCategory} 
-        excludedCategories={["Livestreaming"]}
+        includedCategories={["Medical", "Corporate", "Education", "Nonprofit"]}
       />
 
       <div>
