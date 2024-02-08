@@ -536,7 +536,7 @@ export const photographyWorkSampleData = [
   },
   {
     client: "Prasino",
-    thumbnail_src: "/images/photographyWorkSamples/prasino/01.jpg",
+    thumbnail_src: "/images/photographyWorkSamples/01_15percent.png",
     width: 5002,
     height: 3335,
     images: [
