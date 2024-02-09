@@ -8,6 +8,9 @@ import ColorChangeM from "./colorChangeM";
 import MMMLineLogoBlack from "./mmmLineLogoBlack";
 // import from utils
 import { validateEmail } from "../lib/utils";
+// import from emailjs
+import emailjs from '@emailjs/browser'
+
 
 export default function ContactForm() {
   const [firstName, setFirstName] = useState("");
@@ -48,6 +51,26 @@ export default function ContactForm() {
     setTimeout(() => {
       setButtonSubmitted(false);
     }, 5000);
+
+    const emailTemplateParams = {
+      first_name: firstName,
+      last_name: lastName,
+      email: email,
+      phone_number: phone,
+      message: message,
+    };
+
+    emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+      emailTemplateParams,
+      process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+    ).then((result) => {
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text);
+    });
+
   };
 
   return (
