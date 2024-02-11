@@ -27,9 +27,9 @@ export default function BannerVideo({ src, title }) {
             className="w-full banner-video-aspect-ratio-container"
             style={{
               paddingTop:
-                title === "MMM Livestreaming Video"
+                title === "MMM_Livestreaming_Video" || title === "MMM_Our_Work_Video"
                   ? "42.2%"
-                  : title === "MMM Photography Slide Show"
+                  : title === "MMM_Photography_Slide_Show"
                   ? "42.2%"
                   : "56.25%",
             }}>

@@ -26,8 +26,8 @@ export default function Home() {
   return (
     <main className="grid grid-cols-1 gap-4 ">
       <BannerVideo
-        src="https://player.vimeo.com/video/906520722?h=fe8eda318f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-        title="MMM Promotional Video"
+        src="https://player.vimeo.com/video/911653748?h=25830c4348&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        title="MMM_Home_Page_Banner_Video"
       />
       {/* About Section */}
       <section id="home-page-about-section">
@@ -146,8 +146,8 @@ export default function Home() {
           </h3>
         </div>
         <BannerVideo
-          src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-          title="MMM Travel Video"
+          src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          title="MMM_Our_Work_Video"
         />
         <div className="flex justify-center items-center p-2 mb-6">
           <TextSegment text="We take pride in every project.  We partner with clients of all sizes to bring their ideas to life.  From concept to conclusion, we write, shoot, edit, direct, produce, animate, hire talent, find locations, and everything else needed for your production. From videos to livestreams, to animations, to photography we have you covered. Check out Our Work and then contact us to see what we can do for you!" />

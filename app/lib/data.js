@@ -151,7 +151,7 @@ export const videoData = [
     category: "Medical",
     client: "WUSM Neuromuscular Medicine Fellowship",
     src: "https://player.vimeo.com/video/900179612?h=690b0e7751&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-    thumbnail_src: "/images/video-thumbnails/medical/washUNeuroMusc.png",
+    thumbnail_src: "/images/video-thumbnails/medical/washUNeuromuscular.png",
   },
   {
     category: "Medical",
@@ -325,7 +325,7 @@ export const videoData = [
   {
     category: "Nonprofit",
     client: "Evntiv JCS Gala 2023",
-    thumbnail_src: "/images/video-thumbnails/nonprofit/csGala.png",
+    thumbnail_src: "/images/video-thumbnails/nonprofit/jcsGala.png",
     src: "https://player.vimeo.com/video/838407827?h=3668c77c36&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
