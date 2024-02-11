@@ -17,15 +17,14 @@ import MmmSiteButton from "@/app/ui/mmmSiteButton";
 export default function Page() {
   const [selectedCategory, setSelectedCategory] = useState("All Videos");
 
-
   return (
     <main className="grid grid-cols-1 ">
-      <section>
+      {/* <section>
         <BannerVideo
           src="https://player.vimeo.com/video/906520722?h=fe8eda318f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Promotional Video"
         />
-      </section>
+      </section> */}
       <div className="mt-4 mb-4">
         <BackToOurWorkLink />
       </div>

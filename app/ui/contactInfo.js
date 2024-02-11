@@ -39,7 +39,7 @@ export default function ContactInfo({ m_src }) {
                 <span>636-212-0978</span>
               </div>
             </a>
-            <span className="text-xs">(click/tap to call)</span>
+            {/* <span className="text-xs">click/tap to call</span> */}
           </div>
           {/* Address Section */}
           <div className="group mt-2 md:mt-6">
@@ -61,7 +61,7 @@ export default function ContactInfo({ m_src }) {
                 
               </div>
             </a>
-            <span className="text-xs">(click/tap for directions)</span>
+            {/* <span className="text-xs">click/tap for directions</span> */}
           </div>
           {/* Email Section */}
           <div className="group  mt-2 md:mt-6 ">
@@ -75,7 +75,7 @@ export default function ContactInfo({ m_src }) {
                 <span>mike@mikemartinmedia.com</span>
               </div>
             </a>
-            <span className="text-xs">(click/tap to email)</span>
+            {/* <span className="text-xs">click/tap to email</span> */}
           </div>
         </div>
       </div>

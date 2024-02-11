@@ -61,7 +61,7 @@ export default function Nav() {
                 className="absolute top-0 right-0 mt-10 mr-7">
                 <HiX size={28} />
               </button>
-              <div className="mb-6 w-60 h-auto">
+              <div className="mb-6 w-40 h-auto">
                 <Image
                   src="/branding/mmm_logo_white.png"
                   width={294}

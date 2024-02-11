@@ -21,7 +21,7 @@ export default function Page() {
   return (
     <main>
       <BannerVideo
-        src="https://player.vimeo.com/video/906520722?h=fe8eda318f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        src="https://placehold.co/1920x1080.mp4?text=MMM+About+Video"
         title="MMM Promotional Video"
       />
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">

@@ -50,12 +50,11 @@ export default function Page() {
       <div className="flex justify-center items-center -mt-8">
         <ContactForm />
       </div>
-
-      <div className="mb-12 md:-mb-16 lg:-mb-28 w-full h-auto ">
-        <InstagramWidget />
-      </div>
       <div className="hidden pl-36 pr-36 md:block md:mb-16">
         <GoogleMap />
+      </div>
+      <div className="mb-12 md:-mb-16 lg:-mb-28 w-full h-auto ">
+        <InstagramWidget />
       </div>
       <div className="w-full mt-6 md:hidden">
         <MMMLineLogoBlack />

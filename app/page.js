@@ -71,7 +71,7 @@ export default function Home() {
               deliver dynamic multi-media solutions. Visit the About MMM page to learn more about our mission and meet our team."
             />
           </div>
-          <div className="flex justify-center items-center pb-6 -mt-6">
+          <div className="flex justify-center items-center pb-6 -mt-6 -mb-6">
             <MmmSiteButton
               href="/about_mmm"
               label="About "
@@ -95,8 +95,8 @@ export default function Home() {
           >
             <BannerImage
               id="blog-section-image"
-              src="/images/aboutPage/mike-van.jpg"
-              alt="Mike in van with camera"
+              src="https://placehold.co/410x273/png?text=MMM+About+Image"
+              alt="placeholder image"
               width={410}
               height={273}
               priority={true} 
@@ -256,7 +256,7 @@ export default function Home() {
           />
         </div> */}
         <div>
-          <TextSegment text=" Check out our latest adventures in the MMM Blog as we film and travel across town and around the country. Try to keep up, we move fast!" />
+          <TextSegment text="Go Beyond the lens and check out our latest adventures in the MMM Blog as we film and travel across town across the country, and around the world. Try to keep up, we move fast!" />
         </div>
         <div className="flex justify-center items-center  mb-2 mt-2">
           <MmmSiteButtonLogoFirst

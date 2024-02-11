@@ -47,7 +47,7 @@ export default function VideoCategories({ onCategorySelected }) {
           </li>
         ))}
       </ul>
-      <div className="bg-black text-2xl text-white grid grid-cols-1 w-full h-24 md:h-28 text-center -mt-4">
+      <div className="bg-black text-white text-2xl grid grid-cols-1 w-full h-24 md:h-28 text-center -mt-4">
         <h4 className="font-bold text-xl mt-1 ">Currently Viewing:</h4>
         <div className="flex  justify-center items-center ">
           {selectedCategoryObject && selectedCategoryObject.icon}
