@@ -64,7 +64,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center p-2 mb-6">
             <TextSegment
-              text="MMM specializes in video production and creative
+              text="HOME PAGE - 'ABOUT' TEXT: MMM specializes in video production and creative
               services for corporations, nonprofits, education and medical
               institutions. Our mission is to help our clients promote their causes,
               inform their clients, and inspire with their stories. We
@@ -104,6 +104,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center p-2 mb-6 -mt-4 md:mt-0">
             <p className="p-2 text-sm md:text-base text-center text-balance w-10/12 md:w-1/2 ">
+            HOME PAGE ABOUT SECTION CONTACT CTA<br />
               Our{" "}
               <a href="/about_mmm#mmm-team" className="hover-effect">
                 <span className="font-bold hover:scale-110 transition-transform inline-block">
@@ -150,7 +151,7 @@ export default function Home() {
           title="MMM_Our_Work_Video"
         />
         <div className="flex justify-center items-center p-2 mb-6">
-          <TextSegment text="We take pride in every project.  We partner with clients of all sizes to bring their ideas to life.  From concept to conclusion, we write, shoot, edit, direct, produce, animate, hire talent, find locations, and everything else needed for your production. From videos to livestreams, to animations, to photography we have you covered. Check out Our Work and then contact us to see what we can do for you!" />
+          <TextSegment text="HOME PAGE 'OUR WORK' TEXT: We take pride in every project.  We partner with clients of all sizes to bring their ideas to life.  From concept to conclusion, we write, shoot, edit, direct, produce, animate, hire talent, find locations, and everything else needed for your production. From videos to livestreams, to animations, to photography we have you covered. Check out Our Work and then contact us to see what we can do for you!" />
         </div>
         <div className="flex justify-center items-center pb-6 -mt-6 md:-mt-4 mb-2 w-full">
           <MmmSiteButtonTextOnly
@@ -168,7 +169,7 @@ export default function Home() {
               categoryName="Video"
               categoryIcon={<FaVideo />}
               categoryImage="/images/workSectionImages/work_section_img.jpg"
-              categoryText="Video lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+              categoryText="HOME PAGE 'OUR WORK' SECTION VIDEO TEXT lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
             />
            </Link>
           </div>
@@ -178,7 +179,7 @@ export default function Home() {
               categoryName="Livestream"
               categoryIcon={<BsBroadcast />}
               // categoryImage="/images/workSectionImages/work_section_img.jpg"
-              categoryText="Livestream lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+              categoryText="HOME PAGE 'OUR WORK' SECTION LIVESTREAM TEXT lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
             />
             </Link>
           </div>
@@ -188,7 +189,7 @@ export default function Home() {
               categoryName="Photography"
               categoryIcon={<FaCameraRetro />}
               categoryImage="/images/workSectionImages/work_section_img.jpg"
-              categoryText="Photography lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+              categoryText="HOME PAGE 'OUR WORK' SECTION PHOTOGRAPHY TEXT lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
             />
             </Link>
           </div>
@@ -213,7 +214,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <TextSegment text="Whatever your needs, we've got you covered. Contact us today to see how we can help you with your next project. lorem ipsum blah keywords" />
+          <TextSegment text="HOME PAGE 'OUR WORK' SECTION CONTACT CTA: Whatever your needs, we've got you covered. Contact us today to see how we can help you with your next project. lorem ipsum blah keywords" />
         </div>
         <div className="flex justify-center mb-2 mt-2">
           <MmmSiteButton
@@ -256,7 +257,7 @@ export default function Home() {
           />
         </div> */}
         <div>
-          <TextSegment text="Go Beyond the lens and check out our latest adventures in the MMM Blog as we film and travel across town across the country, and around the world. Try to keep up, we move fast!" />
+          <TextSegment text="HOME PAGE BLOG SECTION TEXT: Go Beyond the lens and check out our latest adventures in the MMM Blog as we film and travel across town across the country, and around the world. Try to keep up, we move fast!" />
         </div>
         <div className="flex justify-center items-center  mb-2 mt-2">
           <MmmSiteButtonLogoFirst

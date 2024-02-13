@@ -16,7 +16,7 @@ export const ourWorkTilesData = [
   // },
   {
     title: "Video",
-    image_src: "https://placehold.co/960x540/png",
+    image_src: "https://placehold.co/960x540/png?text=Video+Cover+Image",
     href: "/our_work/mmm-video",
   },
   {

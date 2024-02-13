@@ -56,7 +56,7 @@ export default function Page() {
       </div> */}
       <div className="md:-mt-4 mb-4">
         <TextSegment
-          text="For over 15 years, MMM has combined the latest technology with the
+          text="ABOUT PAGE 'ABOUT' TEXT: For over 15 years, MMM has combined the latest technology with the
               best in-house talent to create impactful videos for organizations
               all over the United States and the world. We partner with
               corporations, medical and educational institutions, and nonprofit
@@ -182,7 +182,7 @@ export default function Page() {
           <h2 className="text-4xl font-bold -ml-2">eet The Team</h2>
         </div> */}
         <div className="flex justify-center items-center mb-4 mt-2">
-          <TextSegment text="Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing." />
+          <TextSegment text="ABOUT PAGE 'TEAM' TEXT: Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing." />
         </div>
         <div className="-mt-14">
           <TeamGallery />
