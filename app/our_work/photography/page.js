@@ -33,7 +33,7 @@ export default function Page() {
         </div>
       <section className="grid grid-cols-1 -mb-8 md:mb-0">
         <div className="flex justify-center items-center">
-          <p className="text-center text-balance font-bold p-8 -mt-10 lg:px-60 lg:mr-24 lg:ml-24">
+          <p className="text-center text-balance font-bold p-8 -mt-10 md:-mt-8 lg:px-60 lg:mr-24 lg:ml-24">
             We offer a wide range of photography services. From headshots to
             events, we can help you capture the moment. Check out our work below
             and then contact us to see how we can help you.
@@ -43,7 +43,7 @@ export default function Page() {
       {/* <section> */}
       <div className=" flex justify-center items-center ">
         {/* prasino */}
-        <div className="grid grid-cols-1 w-144 h-auto">
+        <div className="grid grid-cols-1 w-128 h-auto">
           <PhotographyGallery
             client={"Prasino"}
             cover_img_src={"/images/photographyWorkSamples/prasino/01_15percent.png"}
@@ -55,15 +55,15 @@ export default function Page() {
       {/* ccstl */}
       <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-4 md:gap-0 h-full">
         {/* Container for each image ensuring they have the same size */}
-        <div className="text-white relative w-96 h-128 hover:cursor-pointer hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform ">
+        <div className="text-white relative w-96 h-auto hover:cursor-pointer hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform ">
           <PhotographyGallery
             client={"CCSTL"}
-            cover_img_src={"/images/photographyWorkSamples/ccstl/01.png"}
+            cover_img_src={"/images/photographyWorkSamples/ccstl/01_crop.png"}
             width={437}
             height={655}
           />
         </div>
-        <div className="text-white relative w-96 h-128 hover:transform hover:cursor-pointer hover:scale-110 hover:z-40 hover:text-black transition-transform">
+        <div className="text-white relative w-96 h-auto hover:transform hover:cursor-pointer hover:scale-110 hover:z-40 hover:text-black transition-transform">
           <PhotographyGallery
             client={"Club Fitness"}
             cover_img_src={"/images/photographyWorkSamples/clubFitness/01.png"}
@@ -72,7 +72,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <div className="md:mt-32">
+      <div className="md:mt-6">
         <TextSegment text="Contact us today to get started on your Photography project. This text can change. Here we need to invite visitors to contact MMM." />
       </div>
       <div className="flex justify-center items-center p-2 mb-6">

@@ -89,7 +89,7 @@ export default function Home() {
             />
           </div> */}
           <div
-            className="flex justify-center items-center max-w-4xl mx-auto p-4 md:p-0"
+            className="flex justify-center items-center max-w-4xl mx-auto p-4 md:p-0 md:mt-4"
             id="blog-section-image-container"
             style={{ maxWidth: "1024px" }} // Set the max-width to desired value
           >

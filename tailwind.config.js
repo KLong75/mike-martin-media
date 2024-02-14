@@ -21,6 +21,7 @@ module.exports = {
         '160': '40rem',  // 640px
       },
       width: {
+        100: '25rem',   // 400px
         128: '32rem',  // 512px
         144: '36rem',  // 576px
         160: '40rem',  // 640px
