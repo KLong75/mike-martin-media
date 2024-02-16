@@ -12,9 +12,11 @@ import InstagramWidget from "../ui/instagramWidget";
 import BannerImage from "../ui/bannerImg";
 import BannerVideo from "../ui/bannerVideo";
 import MmmSiteButton from "../ui/mmmSiteButton";
+import ContactUsButton from "../ui/contactUsButton";
 
 export const metadata = {
   title: "About MMM",
+  description: "For over 15 years, MMM has combined the latest technology with the best in-house talent to create impactful videos for organizations all over the United States and the world. We partner with corporations, medical and educational institutions, and nonprofit organizations to bring their vision to life. Our expertise provides a seamless production experience that you probably didn’t know could exist. We produce the quality work and client experience that you need along with a valuable partnership that will bring growth and success.",
 };
 
 export default function Page() {
@@ -67,7 +69,10 @@ export default function Page() {
               will bring growth and success."
         />
       </div>
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-center mt-4 mb-6">
+          <ContactUsButton />
+        </div>
+      {/* <div className="flex justify-center mb-6">
         <MmmSiteButton
           href="/contact"
           label="Contact "
@@ -75,7 +80,7 @@ export default function Page() {
           textColor="text-white"
           imgSrc="/branding/mmm_logo_white.png"
         />
-      </div>
+      </div> */}
       <div
         className="flex justify-center items-center mx-auto pl-4 pr-4"
         id="blog-section-image-container"

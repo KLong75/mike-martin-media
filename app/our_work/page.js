@@ -57,13 +57,13 @@ export default function Page() {
         <div className="mt-2 mb-2">
           <BackToHomeLink />
       </div>
-        <div className="md:-mt-4 mb-6 text-sm md:text-base font-bold">
+        <div className="md:-mt-4 mb-6 font-bold">
           <TextSegment text="From Corporate, Education, Medical and Nonprofit videos, to Livestreaming, and Photography, we are your partner through every step of the process. Check out our work below and contact us today to get started on your project." />
         </div>
         <div>
           <OurWorkTiles />
         </div>
-        <div className=" text-sm md:text-base -mt-6 md:mt-6">
+        <div className="-mt-6 md:mt-6">
           <TextSegment text="From Corporate, Education, Medical and Nonprofit videos, to Livestreaming, and Photography, we are your partner through every step of the process. Contact us today to get started on your project. This text can change. What we need here is an invitation for visitors to contact MMM." />
         </div>
         <div className="flex justify-center items-center p-2 mb-6 md:mb-12">

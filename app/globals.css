@@ -12,8 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 .banner-video-aspect-ratio-container {
   position: relative;
   width: 100%;
@@ -49,7 +47,6 @@ html {
   cursor: pointer;
 }
 
-
 /* submit button animation */
 .svg-animate {
   animation: takeoff 1s linear forwards;
@@ -60,14 +57,12 @@ html {
 @media (max-width: 768px) {
   .swiper-button-next, .swiper-button-prev {
     display: none !important;
-  }
-  
+  } 
 }
 
 .swiper-pagination {
   color: white !important;
 }
-
 
 @keyframes scale-in {
   from {
