@@ -1,3 +1,5 @@
+// import from next
+import Link from "next/link";
 // import components
 import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideo from "../../ui/bannerVideo";
@@ -6,7 +8,6 @@ import TextSegment from "@/app/ui/textSegment";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 import VideoGallery from "@/app/ui/videoGallery";
 import LivestreamGallery from "@/app/ui/livestreamGallery";
-
 
 export const metadata = {
   title: "Livestreaming",
@@ -33,12 +34,18 @@ export default function Page() {
       </div>
       <section>
         <div className="flex justify-center items-center">
-          <p className="text-center text-balance font-bold p-8 md:p-32 -mt-4 md:-mt-20">
+          <p className="text-center text-balance p-6 md:p-32 -mt-2 md:-mt-20">
             Wherever you are, we can help you stream to{" "}
             <span className="italic font-bold">ANYWHERE</span>. Livestreaming is
             an invaluable resource that can catapult your organization and
-            message farther. Contact us today to create a livestreaming solution
-            that works for you.
+            message farther.{" "}
+            <Link href="/contact">
+              {" "}
+              <span className="font-bold hover:scale-105 transition-transform inline-block">
+                Contact Us{" "}
+              </span>{" "}
+            </Link>
+            today to create a livestreaming solution that works for you.
           </p>
         </div>
         <div className="flex justify-center items-center p-4 -mt-6 lg:-mt-24 mb-6">
@@ -49,7 +56,6 @@ export default function Page() {
         <div className="flex justify-center">
           <h3 className="text-xl font-bold">Available Streaming Services</h3>
         </div>
-
         <div className="flex justify-center items-center -mt-12">
           <ul className="list-disc p-16 columns-1 md:columns-2 lg:ml-40">
             <li>Streaming capable on various platforms</li>
@@ -89,10 +95,21 @@ export default function Page() {
           <LivestreamGallery />
         </div>
       </section>
-      <div className="-mt-10 md:mt-4">
-        <TextSegment text="Contact us today to get started on your Livestreaming project. This text can change. Here we need to invite visitors to contact MMM." />
+
+      <div className="flex justify-center items-center  -mt-8">
+        <p className=" text-center text-balance w-10/12 md:w-1/2 ">
+          <Link href="/contact">
+            <span className="font-bold hover:scale-105 transition-transform inline-block">
+              Contact Us{" "}
+            </span>{" "}
+          </Link>
+          today to get started on your Livestreaming project. Livestreaming text
+          with related keywords telling people how awesome your livestream work
+          is lorem ipsum
+        </p>
       </div>
-      <div className="flex justify-center items-center mb-12 mt-2">
+
+      <div className="flex justify-center items-center mb-12 mt-4">
         <ContactUsButton />
       </div>
       <div className="mb-3 ">

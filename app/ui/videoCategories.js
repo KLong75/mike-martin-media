@@ -30,7 +30,7 @@ export default function VideoCategories({ onCategorySelected }) {
   return (
     <section>
       <h3 className="text-lg font-bold text-center -mb-6">
-        Select a category:
+        SELECT A CATEGORY:
       </h3>
       <ul className="flex flex-wrap justify-center gap-4 p-6">
         {categoryOptions.map((category) => (

@@ -1,3 +1,5 @@
+// import from Link
+import Link from "next/link";
 // import components
 import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideo from "../../ui/bannerVideo";
@@ -32,13 +34,27 @@ export default function Page() {
           </h2>
         </div>
       <section className="grid grid-cols-1 -mb-8 md:mb-0">
-        <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center p-2 mb-4">
+          <p className="-mt-4 text-center text-balance w-10/12 md:w-1/2 ">
+          We offer a wide range of photography services. From headshots to
+            events, we can help you capture the moment. Check out our work below
+            and then {" "}
+            <Link href="/contact">
+              {" "}
+              <span className="font-bold hover:scale-105 transition-transform inline-block">
+                Contact Us{" "}
+              </span>{" "}
+            </Link>
+            today to get started on your project.
+          </p>
+        </div>
+        {/* <div className="flex justify-center items-center">
           <p className="text-center text-balance font-bold p-8 -mt-10 md:-mt-8 lg:px-60 lg:mr-24 lg:ml-24">
             We offer a wide range of photography services. From headshots to
             events, we can help you capture the moment. Check out our work below
             and then contact us to see how we can help you.
           </p>
-        </div>
+        </div> */}
       </section>
       {/* <section> */}
       <div className=" flex justify-center items-center ">
@@ -72,8 +88,19 @@ export default function Page() {
           />
         </div>
       </div>
-      <div className="md:mt-6">
-        <TextSegment text="Contact us today to get started on your Photography project. This text can change. Here we need to invite visitors to contact MMM." />
+      <div className="flex justify-center items-center p-2">
+        <p className=" text-center text-balance w-10/12 md:w-1/2 ">
+          <Link href="/contact">
+            {" "}
+            <span className="font-bold hover:scale-105 transition-transform inline-block">
+              Contact Us{" "}
+            </span>{" "}
+          </Link>
+          today to get started on your Video project. Video text with related
+          keywords telling people how awesome your video work is lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Nulla keywords about
+          video production.
+        </p>
       </div>
       <div className="flex justify-center items-center p-2 mb-6">
         <ContactUsButton />
