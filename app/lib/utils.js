@@ -3,6 +3,21 @@ export function validateEmail(email) {
   
   return re.test(String(email).toLowerCase());
 }
+export function validateName(name) {
+  var re = /^[a-zA-Z]+$/;
+  return re.test(String(name));
+}
+export function validateMessage(message) {
+  return message.length > 0;
+}
+export function validatePhone(phone) {
+  // Regular expression to match the 3 usual formats of US phone numbers
+  var re = /^(?:\(\d{3}\)\s?|\d{3}-)?\d{3}-?\d{4}$/;
+  return phone === "" || re.test(String(phone));
+}
+export function validateForm(firstName, lastName, email, phone, message) {
+  return validateName(firstName) && validateName(lastName) && validateEmail(email) && validatePhone(phone) && validateMessage(message);
+}
 
 export function formatDate(post_date) {
   let date = new Date(post_date);
