@@ -101,10 +101,10 @@ export default function ContactForm() {
       try {
         emailjs
           .send(
-            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-            emailTemplateParams,
-            process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+            // process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+            // process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+            // emailTemplateParams,
+            // process.env.NEXT_PUBLIC_EMAILJS_USER_ID
           )
           .then(
             (result) => {
@@ -142,9 +142,8 @@ export default function ContactForm() {
         console.log(deliveryErrorMessage);
         // setButtonSubmitted(false);
         setDeliveryErrorMessage(
-          "There was an error delivering your message. Please email us @ mmmcontact@mikemartinmedia.com. We apologize for the inconvenience."
+          "There was an error delivering your message. Please click to email us at mmmcontact@mikemartinmedia.com. We apologize for the inconvenience."
         );
-        
       }
     }
   };
@@ -200,7 +199,7 @@ export default function ContactForm() {
             className="border-2 border-gray-800 p-2 w-full"
           />
           {lastNameErrorMessage && (
-            <div className="flex justify-center items-center mt-2 mb-4">
+            <div className="flex justify-center text-center text-balance items-center mt-2 mb-4">
               <p className="text-red-500 text-xs">{lastNameErrorMessage}</p>
             </div>
           )}
@@ -276,8 +275,16 @@ export default function ContactForm() {
           />
         </div>
         {deliveryErrorMessage && (
-          <div className="flex text-balance justify-center items-center mt-2 mb-4">
-            <p className="text-red-500 text-balance text-xs">{deliveryErrorMessage}</p>
+          <div className="flex text-balance text-center justify-center items-center mt-2 mb-4">
+            <a
+              href="mailto:mmmcontact@mikemartinmedia.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="email Mike Martin Media">
+              <p className="text-red-500 text-xs font-bold hover:transform hover:scale-105 transition-transform">
+                {deliveryErrorMessage}
+              </p>
+            </a>
           </div>
         )}
         <div className="absolute bottom-0 right-0 left-0">
