@@ -11,7 +11,6 @@ import {
   validatePhone,
   validateMessage,
 } from "../lib/utils";
-// import { validateForm } from "../lib/utils";
 // import from emailjs
 import emailjs from "@emailjs/browser";
 
@@ -51,7 +50,8 @@ export default function ContactForm() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    const isEmailValid = validateEmail(email); // add validation logic for other inputs, handle errors accordingly
+    // validation  for inputs, handle errors accordingly
+    const isEmailValid = validateEmail(email); 
     const isPhoneValid = validatePhone(phone);
     const isFirstNameValid = validateName(firstName);
     const isLastNameValid = validateName(lastName);
@@ -101,10 +101,10 @@ export default function ContactForm() {
       try {
         emailjs
           .send(
-            // process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-            // process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-            // emailTemplateParams,
-            // process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+            emailTemplateParams,
+            process.env.NEXT_PUBLIC_EMAILJS_USER_ID
           )
           .then(
             (result) => {
@@ -128,19 +128,10 @@ export default function ContactForm() {
                 setButtonSubmitted(false);
               }, 5000);
             }
-            // (error) => {
-            //   console.log("error text", error.text);
-            //   console.log(deliveryErrorMessage)
-            //   // setButtonSubmitted(false);
-            //   setDeliveryErrorMessage(
-            //     "There was an error delivering your message. Please email us @ mmmcontact@mikemartinmedia.com. We apologize for the inconvenience."
-            //   );
-            // }
           );
       } catch (error) {
         console.log("error text", error.text);
         console.log(deliveryErrorMessage);
-        // setButtonSubmitted(false);
         setDeliveryErrorMessage(
           "There was an error delivering your message. Please click to email us at mmmcontact@mikemartinmedia.com. We apologize for the inconvenience."
         );
@@ -204,7 +195,6 @@ export default function ContactForm() {
             </div>
           )}
         </div>
-
         <div className="flex flex-col justify-center">
           <label htmlFor="email">
             Email*<span className="text-xs"> (required)</span>
@@ -226,7 +216,6 @@ export default function ContactForm() {
             </div>
           )}
         </div>
-
         <div className="flex flex-col justify-center">
           <label htmlFor="phone">
             Phone Number<span className="text-xs"> (optional)</span>

@@ -8,7 +8,7 @@ export default function SubmitButtonWithPlaneAnimation( { isSubmitted } ) {
         className={`hover:transform hover:scale-110 transition-transform w-44 relative flex items-center justify-center gap-x-2.5 rounded-full px-6 py-2.5 font-bold transition-all duration-300 ${
           isSubmitted
             ? "bg-green-500 text-black"
-            : "bg-black text-white hover:bg-gray-400 hover:text-black hover:shadow-lg"
+            : "bg-black text-white  hover:shadow-lg"
         }`}>
         <span>
           {isSubmitted ? "Thank you!" : "Send"}
