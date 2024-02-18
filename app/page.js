@@ -118,16 +118,6 @@ export default function Home() {
               to put our team to work for you.
             </p>
           </div>
-
-          {/* <div className="flex justify-center -mt-6">
-            <MmmSiteButton
-              href="/contact"
-              label="Contact "
-              backgroundColor="bg-black"
-              textColor="text-white"
-              imgSrc="/branding/mmm_logo_white.png"
-            />
-          </div> */}
           <div className="flex justify-center -mt-4 mb-12">
             <ContactUsButton />
           </div>
@@ -137,22 +127,27 @@ export default function Home() {
         </div> */}
       </section>
       <section className="-mt-4" id="our-work-section">
-        {/* <BannerVideo
-          src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-          title="MMM Travel Video"
-        /> */}
+        <BannerVideo
+          src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          title="MMM_Our_Work_Video"
+        />
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <h3 className="text-center font-bold text-3xl md:text-4xl">
             OUR WORK
           </h3>
         </div>
-        <BannerVideo
+        {/* <BannerVideo
           src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM_Our_Work_Video"
-        />
+        /> */}
         <div className="flex justify-center items-center p-2 mb-6">
           <p className="p-2 text-center text-balance w-10/12 md:w-1/2 ">
-          HOME PAGE OUR WORK TEXT: We take pride in every project.  We partner with clients of all sizes to bring their ideas to life.  From concept to conclusion, we write, shoot, edit, direct, produce, animate, hire talent, find locations, and everything else needed for your production. From videos to livestreams, to animations, to photography we have you covered. Check out 
+            HOME PAGE OUR WORK TEXT: We take pride in every project. We partner
+            with clients of all sizes to bring their ideas to life. From concept
+            to conclusion, we write, shoot, edit, direct, produce, animate, hire
+            talent, find locations, and everything else needed for your
+            production. From videos to livestreams, to animations, to
+            photography we have you covered. Check out
             <Link href="/our_work">
               {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">
@@ -257,19 +252,19 @@ export default function Home() {
         </div> */}
       </section>
       <section className="mb-4" id="blog-section">
-        {/* <BannerVideo
+        <BannerVideo
           src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Travel Video"
-        /> */}
+        />
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <h3 className="text-center font-bold text-3xl md:text-4xl">
             BEYOND THE LENS
           </h3>
         </div>
-        <BannerVideo
+        {/* <BannerVideo
           src="https://player.vimeo.com/video/719179719?h=8b8c5ebc86&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Travel Video"
-        />
+        /> */}
         {/* <div
           className="flex justify-center items-center max-w-4xl mx-auto"
           id="blog-section-image-container"
@@ -302,4 +297,3 @@ export default function Home() {
     </main>
   );
 }
-
