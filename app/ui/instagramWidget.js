@@ -32,7 +32,7 @@ const InstagramWidget = () => {
           <iframe
             title="Follow MMM on Instagram"
             scrolling="no"
-            src="//lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html"
+            src="https://cdn.lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html"
             className="lightwidget-widget overflow-hidden shadow-2xl -mt-2"
             style={{
               width: "100%",
@@ -68,3 +68,6 @@ export default InstagramWidget;
 {
   /* <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe> */
 }
+
+
+{/* <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe> */}
