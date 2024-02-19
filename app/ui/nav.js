@@ -116,7 +116,7 @@ export default function Nav() {
               <Link href={link.href}>
                 <div className="flex flex-col items-center justify-center cursor-pointer">
                   {link.icon}
-                  <span className="mt-2 hover:font-medium hover:transform hover:scale-125 transition-transform">
+                  <span className="text-lg lg:text-xl mt-2 hover:font-medium hover:transform hover:scale-125 transition-transform">
                     {link.label}
                   </span>
                 </div>

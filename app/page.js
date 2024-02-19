@@ -131,7 +131,7 @@ export default function Home() {
           src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM_Our_Work_Video"
         />
-        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 -mt-1">
           <h3 className="text-center font-bold text-3xl md:text-4xl">
             OUR WORK
           </h3>
@@ -192,16 +192,18 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center md:order-3 mt-2 md:mt-0">
             <Link href="/our_work/photography">
+            
               <WorkCategorySection
                 categoryName="Photography"
                 categoryIcon={<FaCameraRetro />}
                 categoryImage="/images/workSectionImages/work_section_img.jpg"
                 categoryText="HOME PAGE 'OUR WORK' SECTION PHOTOGRAPHY TEXT lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
               />
+           
             </Link>
           </div>
         </div>
-        <div className="justify-center items-center md:mt-6">
+        <div className="justify-center items-center md:mt-10">
           <div className="flex justify-center ">
             <FaClapperboard size={28} />
           </div>
