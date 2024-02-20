@@ -1,6 +1,7 @@
 // "use client";
 // import from next
 import Link from "next/link";
+import Image from "next/image";
 // import from react
 // import { useState } from "react";
 // import components
@@ -34,19 +35,7 @@ export default function Page() {
             title="MMM_Our_Work_Video"
           />
         </div>
-        {/* <div className="flex justify-center items-center mt-12 mb-6"> */}
-        {/* <div className="flex justify-center items-center w-24 h-8 mb-1">
-          <Image
-            src="/branding/mmm_black.png"
-            width={294}
-            height={95}
-            alt="company logo"
-            priority
-            as="image"
-          />
-        </div> */}
-        {/* <h2 className=" text-center text-4xl font-bold mt-12 ">Our Work</h2> */}
-        {/* </div> */}
+       
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <h3 className="text-center font-bold text-3xl md:text-4xl mt-2">
             OUR WORK
@@ -55,11 +44,9 @@ export default function Page() {
         <div className="mt-2 mb-2">
           <BackToHomeLink />
         </div>
-        <div className="flex justify-center items-center p-2 mb-6">
-          <p className="text-center text-balance w-10/12 md:w-1/2 ">
-            From Corporate, Education, Medical and Nonprofit videos, to
-            Livestreaming, and Photography, we are your partner through every
-            step of the process. Check out our work below and
+        <div className="flex justify-center items-center mb-6">
+          <p className="p-2 text-center text-balance w-10/12 md:w-1/2 ">
+          From corporate, educational, medical, or nonprofit videos to livestreaming, drone work, and photography, MMM is your partner through every step of the process. Check out our work below and
             <Link href="/contact">
               {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">
@@ -68,6 +55,17 @@ export default function Page() {
             </Link>
             today to get started on your project.
           </p>
+        </div>
+        <div className="mb-12">
+        <Link href="/our_work/mmm-video">
+          <Image
+            src="/images/home_page/video_banner_image.png"
+            alt="MMM Video Production at work"
+            width={5008}
+            height={1996}
+            priority={true}
+          />
+          </Link>
         </div>
         <div>
           <OurWorkTiles />

@@ -83,24 +83,22 @@ export default function Home() {
             />
           </div> */}
           <div
-            className="flex justify-center items-center max-w-4xl mx-auto p-4 md:p-0 md:mt-4"
+            className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4"
             id="blog-section-image-container"
             style={{ maxWidth: "1024px" }} // Set the max-width to desired value
           >
             <BannerImage
               id="blog-section-image"
-              src="https://placehold.co/410x273/png?text=MMM+About+Image"
-              alt="placeholder image"
-              width={410}
-              height={273}
+              src="/images/home_page/about_mmm_pic.jpg"
+              alt="MMM at work"
+              width={3242}
+              height={2022}
               priority={true}
             />
           </div>
           <div className="flex justify-center items-center p-2 mb-6 -mt-4 md:mt-0">
             <p className="p-2 text-center text-balance w-10/12 md:w-1/2 ">
-              HOME PAGE ABOUT SECTION CONTACT CTA
-              <br />
-              Our{" "}
+              HOME PAGE ABOUT SECTION CONTACT CTA Our{" "}
               <Link href="/about_mmm#mmm-team" className="">
                 <span className="font-bold hover:scale-110 transition-transform inline-block">
                   team
@@ -141,7 +139,7 @@ export default function Home() {
           title="MMM_Our_Work_Video"
         /> */}
         <div className="flex justify-center items-center p-2 mb-6">
-          <p className="p-2 text-center text-balance w-10/12 md:w-1/2 ">
+          <p className="p-2 md:p-6 text-center text-balance w-10/12 md:w-1/2 ">
             HOME PAGE OUR WORK TEXT: We take pride in every project. We partner
             with clients of all sizes to bring their ideas to life. From concept
             to conclusion, we write, shoot, edit, direct, produce, animate, hire
@@ -154,7 +152,7 @@ export default function Home() {
                 Our Work{" "}
               </span>
             </Link>{" "}
-            and then contact us to see what we can do for you!
+           and contact us to see what we can do for you.
           </p>
         </div>
         {/* <div className="flex justify-center items-center p-2 mb-6">
@@ -169,6 +167,9 @@ export default function Home() {
             imgSrc="/branding/mmm_logo_white.png"
           />
         </div>
+
+     
+
         <div className="grid grid cols-3 md:grid-cols-3 mb-2 -mt-2 md:-mt-0">
           <div className="flex justify-center items-center md:order-2 ">
             <Link href="/our_work/mmm-video">
@@ -192,14 +193,12 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center md:order-3 mt-2 md:mt-0">
             <Link href="/our_work/photography">
-            
               <WorkCategorySection
                 categoryName="Photography"
                 categoryIcon={<FaCameraRetro />}
                 categoryImage="/images/workSectionImages/work_section_img.jpg"
                 categoryText="HOME PAGE 'OUR WORK' SECTION PHOTOGRAPHY TEXT lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
               />
-           
             </Link>
           </div>
         </div>

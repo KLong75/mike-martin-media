@@ -72,15 +72,6 @@ export default function Page() {
       <div className="flex justify-center mt-4 mb-6">
           <ContactUsButton />
         </div>
-      {/* <div className="flex justify-center mb-6">
-        <MmmSiteButton
-          href="/contact"
-          label="Contact "
-          backgroundColor="bg-black"
-          textColor="text-white"
-          imgSrc="/branding/mmm_logo_white.png"
-        />
-      </div> */}
       <div
         className="flex justify-center items-center mx-auto pl-4 pr-4"
         id="blog-section-image-container"
