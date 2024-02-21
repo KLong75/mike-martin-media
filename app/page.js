@@ -98,16 +98,14 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center p-2 mb-6 -mt-4 md:mt-0">
             <p className="p-2 text-center text-balance w-10/12 md:w-1/2 ">
-              HOME PAGE ABOUT SECTION CONTACT CTA Our{" "}
+              HOME PAGE ABOUT SECTION CONTACT: Our{" "}
               <Link href="/about_mmm#mmm-team" className="">
                 <span className="font-bold hover:scale-110 transition-transform inline-block">
                   team
                 </span>
               </Link>{" "}
               brings decades of combined experience from the broadcast and
-              production industries. We are a tight-knit team, and we keep our
-              work in-house. We work hard, play hard, and spend a lot of time
-              laughing.{" "}
+              production industries.{" "}
               <Link href="/contact">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
                   Contact us today
@@ -155,9 +153,6 @@ export default function Home() {
            and contact us to see what we can do for you.
           </p>
         </div>
-        {/* <div className="flex justify-center items-center p-2 mb-6">
-          <TextSegment text="HOME PAGE 'OUR WORK' TEXT: We take pride in every project.  We partner with clients of all sizes to bring their ideas to life.  From concept to conclusion, we write, shoot, edit, direct, produce, animate, hire talent, find locations, and everything else needed for your production. From videos to livestreams, to animations, to photography we have you covered. Check out Our Work and then contact us to see what we can do for you!" />
-        </div> */}
         <div className="flex justify-center items-center pb-6 -mt-6 md:-mt-4 mb-2 w-full">
           <MmmSiteButtonTextOnly
             href="our_work"
@@ -167,84 +162,15 @@ export default function Home() {
             imgSrc="/branding/mmm_logo_white.png"
           />
         </div>
-
-     
-
-        <div className="grid grid cols-3 md:grid-cols-3 mb-2 -mt-2 md:-mt-0">
-          <div className="flex justify-center items-center md:order-2 ">
-            <Link href="/our_work/mmm-video">
-              <WorkCategorySection
-                categoryName="Video"
-                categoryIcon={<FaVideo />}
-                categoryImage="/images/workSectionImages/work_section_img.jpg"
-                categoryText="HOME PAGE 'OUR WORK' SECTION VIDEO TEXT lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
-              />
-            </Link>
-          </div>
-          <div className="flex justify-center items-center mt-2 md:mt-0 md:order-1">
-            <Link href="/our_work/livestreaming">
-              <WorkCategorySection
-                categoryName="Livestream"
-                categoryIcon={<BsBroadcast />}
-                // categoryImage="/images/workSectionImages/work_section_img.jpg"
-                categoryText="HOME PAGE 'OUR WORK' SECTION LIVESTREAM TEXT lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
-              />
-            </Link>
-          </div>
-          <div className="flex justify-center items-center md:order-3 mt-2 md:mt-0">
-            <Link href="/our_work/photography">
-              <WorkCategorySection
-                categoryName="Photography"
-                categoryIcon={<FaCameraRetro />}
-                categoryImage="/images/workSectionImages/work_section_img.jpg"
-                categoryText="HOME PAGE 'OUR WORK' SECTION PHOTOGRAPHY TEXT lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
-              />
-            </Link>
-          </div>
-        </div>
-        <div className="justify-center items-center md:mt-10">
-          <div className="flex justify-center ">
-            <FaClapperboard size={28} />
-          </div>
-          <div className="flex justify-center items-center -mb-1">
-            <span className="text-2xl font-semibold mr-2">And</span>
-            <div
-              className="flex justify-center items-center w-6 h-auto "
-              style={{ marginRight: "-.1rem", marginBottom: ".1rem" }}>
-              <Image
-                src="/branding/singleMBlackResizeSmall.png"
-                width={349}
-                height={271}
-                alt="company logo"
-              />
-            </div>
-            <span className="text-2xl font-semibold">ore!</span>
-          </div>
-        </div>
-        <div className="flex justify-center items-center p-2 mb-6 -mt-4 md:mt-0">
-          <p className="p-2 md:text-base text-center text-balance w-10/12 md:w-1/2 ">
-            HOME PAGE OUR WORK SECTION CONTACT CTA: Whatever your needs,
-            we&apos;ve got you covered.
-            <Link href="/contact">
-              {" "}
-              <span className="font-bold hover:scale-105 transition-transform inline-block">
-                Contact us today
-              </span>
-            </Link>{" "}
-            to see how we can help you with your next project. lorem ipsum blah
-            keywords
-          </p>
-        </div>
-
-        {/* <div className="flex justify-center mb-2 mt-2">
-          <MmmSiteButton
-            href="/contact"
-            label="Contact "
-            backgroundColor="bg-black"
-            textColor="text-white"
-            imgSrc="/branding/mmm_logo_white.png"
+        <div className="flex justify-center items-center p-2 mb-6">
+          <TextSegment text="HOME PAGE 'OUR WORK' CONTACT TEXT: lorem ipsum 
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo" 
           />
-        </div> */}
+        </div>
+        
+        
         <div className="flex justify-center -mt-4 md:mt-4 mb-12">
           <ContactUsButton />
         </div>

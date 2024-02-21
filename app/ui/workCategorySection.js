@@ -10,7 +10,7 @@ export default function WorkCategorySection({
   categoryText,
   categoryIcon,
 }) {
-  const iconSize = 28;
+  const iconSize = 36;
 
   return (
     <>
@@ -18,9 +18,11 @@ export default function WorkCategorySection({
       <div>
         {React.cloneElement(categoryIcon, { size: iconSize })}
       </div>
-      <span className="text-2xl font-semibold"> {categoryName} </span>
+      <span className="text-4xl font-semibold"> {categoryName} </span>
     </div>
-    <TextSegment text={categoryText} />
+    <div className="flex justify-center items-center ">
+      <p className="p-2 text-lg text-center text-balance w-10/12 md:w-1/2 ">{categoryText}</p>
+    </div>
     </>
   );
 }
