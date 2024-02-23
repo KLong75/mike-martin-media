@@ -12,6 +12,7 @@ import OurWorkTiles from "../ui/ourWorkTiles";
 import BackToHomeLink from "../ui/backToHome";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BannerVideo from "../ui/bannerVideo";
+import BannerImage from "../ui/bannerImage";
 import ContactUsButton from "../ui/contactUsButton";
 import WorkCategorySection from "../ui/workCategorySection";
 // import icons
@@ -35,9 +36,12 @@ export default function Page() {
     </Head> */}
       <main>
         <div className="-mt-1">
-          <BannerVideo
-            src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-            title="MMM_Our_Work_Video"
+          <BannerImage
+            src="/images/ourWorkPage/our_work_banner_image.jpg"
+            alt="MMM Video Production at work"
+            width={5008}
+            height={1996}
+            priority={true}
           />
         </div>
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
@@ -72,7 +76,7 @@ export default function Page() {
             </div>
             <div className=" z-20">
               <Image
-                src="/images/home_page/video_banner_image.png"
+                src="/images/ourWorkPage/video_banner_image.png"
                 alt="MMM Video Production at work"
                 width={5008}
                 height={1996}
@@ -129,19 +133,19 @@ export default function Page() {
           </p>
         </div> */}
         <div className="flex justify-center items-center">
-            <h4 className="text-xl font-bold">
-              Get started on your project today!
-            </h4>
+          <h4 className="text-xl font-bold">
+            Get started on your project today!
+          </h4>
         </div>
         <div className="flex justify-center items-center p-2 mb-6 md:mb-12">
           <div className="mt-2 flex justify-center">
             <ContactUsButton />
           </div>
         </div>
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <BackToHomeLink />
-        </div>
-        <div className="w-full">
+        </div> */}
+        <div className="w-full md:hidden">
           <MMMLineLogoBlack />
         </div>
       </main>

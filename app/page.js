@@ -19,7 +19,7 @@ import { FaVideo, FaCameraRetro } from "react-icons/fa6";
 import { BsBroadcast } from "react-icons/bs";
 // import { RiTeamFill } from "react-icons/ri";
 import { FaClapperboard } from "react-icons/fa6";
-import BannerImage from "./ui/bannerImg";
+import BannerImage from "./ui/bannerImage";
 
 export default function Home() {
   return (

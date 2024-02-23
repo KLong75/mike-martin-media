@@ -51,7 +51,7 @@ const InstagramWidget = () => {
           rel="noopener noreferrer"
           className="hover:transform hover:scale-110 transition-transform hover:cursor-pointer mt-2">
           <span className="text-center text-lg font-bold ml-3 ">
-            #mmmmidtown
+            #mmmidtown
           </span>
         </a>
       </div>
