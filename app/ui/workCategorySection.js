@@ -18,10 +18,10 @@ export default function WorkCategorySection({
       <div>
         {React.cloneElement(categoryIcon, { size: iconSize })}
       </div>
-      <span className="text-4xl font-semibold"> {categoryName} </span>
+      <span className="text-3xl md:text-4xl font-semibold"> {categoryName} </span>
     </div>
     <div className="flex justify-center items-center ">
-      <p className="p-2 text-lg text-center text-balance w-10/12 md:w-1/2 ">{categoryText}</p>
+      <p className="p-2 md:text-lg text-center text-balance w-10/12 md:w-1/2 ">{categoryText}</p>
     </div>
     </>
   );

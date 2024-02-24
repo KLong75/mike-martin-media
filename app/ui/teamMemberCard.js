@@ -18,7 +18,7 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
       <div className="bg-white p-2 m-4 mt-0">
         <h3 className="font-bold">{name}</h3>
         <h4 className="font-bold">{role}</h4>
-        <p className="text-left overflow-wrap text-sm md:text-base">{about}</p>
+        <p className="text-left overflow-wrap">{about}</p>
       </div>
     </div>
   );

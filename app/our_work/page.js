@@ -45,25 +45,21 @@ export default function Page() {
           />
         </div>
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <h3 className="text-center font-bold text-3xl md:text-4xl mt-2">
+          <h3 className="text-center font-bold text-4xl md:text-6xl mt-2">
             OUR WORK
           </h3>
         </div>
-        {/* <div className="mt-2 mb-2">
-          <BackToHomeLink />
-        </div> */}
-        <div className="flex justify-center items-center mb-6 mt-6 md:mb-12 md:mt-12">
-          <p className="text-lg text-center text-balance w-10/12 md:w-1/2 ">
-            <strong>This text block should focus on video work.</strong> From
-            corporate, education, medical, or nonprofit videos, MMM is your
-            partner through every step of the process. Check out work and
+        <div className="flex justify-center items-center mt-6 mb-6">
+          <p className="md:text-lg text-center text-balance w-10/12 p-2">
+            From corporate, education, medical, or nonprofit videos, to livestreaming, drone work, and photography, MMM is your
+            partner through every step of the process. Check out work below and
             <Link href="/contact">
               {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">
                 Contact Us{" "}
               </span>{" "}
             </Link>
-            today to get started on your project.
+            to get started on your project today.
           </p>
         </div>
         <div className="mb-6 relative ">
@@ -72,7 +68,7 @@ export default function Page() {
               <div>
                 <FaVideo size={36} />
               </div>
-              <h3 className="text-6xl md:text-8xl font-semibold z-50">VIDEO</h3>
+              <h3 className="text-4xl md:text-6xl font-semibold z-50">VIDEO</h3>
             </div>
             <div className=" z-20">
               <Image
@@ -86,14 +82,14 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex justify-center items-center ">
-          <p className="p-2 text-lg text-center text-balance w-10/12 md:w-1/2 ">
+          <p className="p-2 md:text-lg text-center text-balance w-10/12 md:w-1/2 ">
             We have more than one way to get you what you need. Let us know if
             one of our other services fits your needs.
           </p>
         </div>
         <div className="grid grid cols-3 md:grid-cols-3 mb-6 mt-4 md:mt-12 md:mb-12">
           <div className="flex justify-center items-center mt-2 md:mt-0 order-1">
-            <Link href="/our_work/mmm-video">
+            <Link href="/our_work/drone">
               <WorkCategorySection
                 categoryName="DRONE"
                 categoryIcon={<TbDrone />}
@@ -120,31 +116,16 @@ export default function Page() {
             </Link>
           </div>
         </div>
-        {/* <div className="flex justify-center items-center p-2 mb-6 -mt-4 md:mt-0">
-          <p className="p-2 md:text-base text-center text-balance w-10/12 md:w-1/2 ">
-            Whatever your needs, we&apos;ve got you covered.
-            <Link href="/contact">
-              {" "}
-              <span className="font-bold hover:scale-105 transition-transform inline-block">
-                Contact us today
-              </span>
-            </Link>{" "}
-            to see how we can help you with your next project.
-          </p>
-        </div> */}
         <div className="flex justify-center items-center">
           <h4 className="text-xl font-bold">
             Get started on your project today!
           </h4>
         </div>
-        <div className="flex justify-center items-center p-2 mb-6 md:mb-12">
+        <div className="flex justify-center items-center p-2 mt-6 mb-6 md:mb-12">
           <div className="mt-2 flex justify-center">
             <ContactUsButton />
           </div>
         </div>
-        {/* <div className="mb-4">
-          <BackToHomeLink />
-        </div> */}
         <div className="w-full md:hidden">
           <MMMLineLogoBlack />
         </div>

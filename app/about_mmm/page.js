@@ -33,8 +33,8 @@ export default function Page() {
         />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2 className="text-3xl md:text-4xl font-bold mr-2">ABOUT </h2>
-        <div className="flex justify-center items-center w-20 md:w-24 h-auto mb-1 md:mb-.5">
+        <h2 className="text-4xl md:text-6xl font-bold mr-2">ABOUT </h2>
+        <div className="flex justify-center items-center w-24 md:w-40 h-auto mb-1 md:mb-.5 md:p-1">
           <Image
             src="/branding/mmm_logo_white.png"
             width={294}
@@ -47,7 +47,7 @@ export default function Page() {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 p-6 md:mt-6">
       <div className="flex justify-center items-center">
-        <p className="md:text-lg p-1 md:p-6 text-center text-balance mb-6" id='about-text'>
+        <p className="md:text-lg p-2 md:p-6 text-center text-balance mb-6" id='about-text'>
           For over 15 years, MMM has combined the latest technology with the
           best in-house talent to create impactful videos for organizations all
           over the United States and the world. We partner with corporations,
@@ -91,7 +91,7 @@ export default function Page() {
       </section>
       <section className="mt-8 md:mt-12">
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <div className="w-8 md:w-10 h-auto mx-2 mb-1">
+          <div className="w-8 md:w-10 h-auto mx-2 mb-.95 md:mb-1">
             <Image
               src="/branding/singleMWhiteResizeSmall.png"
               width={349}
@@ -103,8 +103,11 @@ export default function Page() {
             eet The Team
           </h2>
         </div>
-        <div className="flex justify-center items-center mb-4 mt-2">
-          <TextSegment text="ABOUT PAGE 'TEAM' TEXT: Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing." />
+        <div className="flex justify-center items-center mb-4 mt-2 md:mt-4 md:mb-8">
+        <div className="flex justify-center items-center ">
+      <p className="p-2 text-center text-balance ">Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing.</p>
+    </div>
+          {/* <TextSegment text="Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing." /> */}
         </div>
         <div className="-mt-14">
           <TeamGallery />

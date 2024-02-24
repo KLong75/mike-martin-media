@@ -135,61 +135,6 @@ export const weTextBlockData = [
 
 export const videoData = [
   {
-    category: "Medical",
-    client: "SSM Cardinal Glennon Residency Recruitment Kayla Heller",
-    src: "https://player.vimeo.com/video/872654095?h=2fbe224539&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-    thumbnail_src: "/images/video-thumbnails/medical/ssmCardinalGlennon.png",
-  },
-  {
-    category: "Medical",
-    client: "WUSM Emergency Medicine Residency Recruitment",
-    thumbnail_src:
-      "/images/video-thumbnails/medical/washUEmergencyMedicine.png",
-    src: "https://player.vimeo.com/video/866533299?h=90843c1f39&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
-  {
-    category: "Medical",
-    client: "WUSM Neuromuscular Medicine Fellowship",
-    src: "https://player.vimeo.com/video/900179612?h=690b0e7751&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-    thumbnail_src: "/images/video-thumbnails/medical/washUNeuromuscular.png",
-  },
-  {
-    category: "Medical",
-    client: "Siteman BTC Research",
-    thumbnail_src: "/images/video-thumbnails/medical/siteman.png",
-    src: "https://player.vimeo.com/video/842642479?h=a33d343fee&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
-  {
-    category: "Medical",
-    client: "BJC AMHF Duck Pluckers Ball",
-    thumbnail_src: "/images/video-thumbnails/medical/duckPluckers.png",
-    src: "https://player.vimeo.com/video/905668122?h=44f7031f29&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
-  {
-    category: "Medical",
-    client: "St Louis Children's Hospital Employee Giving 2023",
-    thumbnail_src: "/images/video-thumbnails/medical/stLouisChildrens.png",
-    src: "https://player.vimeo.com/video/790947100?h=a476fa3e19&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
-  {
-    category: "Medical",
-    client: "AHC PACT NASHVILLE_JOIN_AHC_TODAY",
-    thumbnail_src: "/images/video-thumbnails/medical/pactNashville.png",
-    src: "https://player.vimeo.com/video/871994336?h=87fd41e833&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
-  {
-    category: "Medical",
-    client: "Ascension Healthcare - St. Vincent",
-    thumbnail_src: "/images/video-thumbnails/medical/ascension.png",
-    src: "https://player.vimeo.com/video/350343774?h=5211a400f9&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
-  {
-    category: "Medical",
-    client: "SSM Health - Demonstration/Evaluation Video ",
-    thumbnail_src: "/images/video-thumbnails/medical/ssmHealth.png",
-    src: "https://player.vimeo.com/video/299104420?h=93e27c251b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
-  {
     category: "Corporate",
     client: "ART CO RECRUITMENT",
     thumbnail_src: "/images/video-thumbnails/corporate/artCoRecruitment.png",
@@ -203,7 +148,7 @@ export const videoData = [
   },
   {
     category: "Corporate",
-    client: "GSEM PADDLE RAISE 2023",
+    client: "Girl Scouts of Eastern Missouri, Paddle Raise 2023",
     thumbnail_src: "/images/video-thumbnails/corporate/paddleRaise.png",
     src: "https://player.vimeo.com/video/796701498?h=2711ae04fb&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
@@ -215,7 +160,7 @@ export const videoData = [
   },
   {
     category: "Corporate",
-    client: "MITEK HOUSTON GROUNDBREAKING",
+    client: "MITEK HOUSTON",
     thumbnail_src: "/images/video-thumbnails/corporate/miTekHouston.png",
     src: "https://player.vimeo.com/video/779302587?h=59cf20066f&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
@@ -227,7 +172,7 @@ export const videoData = [
   },
   {
     category: "Corporate",
-    client: "MUSIC AT THE INTERSECTION",
+    client: "MUSIC AT THE INTERSECTION 2023",
     thumbnail_src: "/images/video-thumbnails/corporate/musicIntersection.png",
     src: "https://player.vimeo.com/video/862940886?h=48731807d6&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
@@ -245,32 +190,32 @@ export const videoData = [
   },
   {
     category: "Education",
-    client: "Eden Theological Seminary Student Recruitment Video",
+    client: "Eden Theological Seminary",
     thumbnail_src: "/images/video-thumbnails/education/edenTheological.png",
     src: "https://player.vimeo.com/video/829943828?h=c4be815d3e&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Education",
-    client: "SLSS MAA Training Filler Demo",
+    client: "Medical Aesthetics Academy Demo",
     thumbnail_src: "/images/video-thumbnails/education/medicalAesthetics.png",
     src: "https://player.vimeo.com/video/798921790?h=7d1e24dd8b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Education",
-    client: "Murphy, Education Training Example 1",
+    client: "Murphy Education Training Example 1",
     thumbnail_src: "/images/video-thumbnails/education/educationExampleOne.png",
     src: "https://player.vimeo.com/video/823476966?h=4efdfbf093&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Education",
-    client: "Education Training Example 4",
+    client: "Murphy Education Training Example 4",
     thumbnail_src:
       "/images/video-thumbnails/education/educationExampleFour.png",
     src: "https://player.vimeo.com/video/823478141?h=2becf8c74f&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Education",
-    client: "Washington University, St. Louis - Founders Day 2023",
+    client: "Washington University Founder's Day",
     thumbnail_src: "/images/video-thumbnails/education/washUFoundersDay.png",
     src: "https://player.vimeo.com/video/880289545?h=3226a6bf33&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
@@ -282,7 +227,7 @@ export const videoData = [
   },
   {
     category: "Education",
-    client: "WUSTL Olin PQ Big Idea Bounce",
+    client: "Olin Business School's Big Idea Bounce",
     thumbnail_src: "/images/video-thumbnails/education/washUOlin.png",
     src: "https://player.vimeo.com/video/820666152?h=e4f8f6c5f6&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
@@ -299,8 +244,64 @@ export const videoData = [
     src: "https://player.vimeo.com/video/348393021?h=556e4defec&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
+    category: "Medical",
+    client: "SSM Cardinal Glennon Residency Recruitment",
+    src: "https://player.vimeo.com/video/872654095?h=2fbe224539&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+    thumbnail_src: "/images/video-thumbnails/medical/ssmCardinalGlennon.png",
+  },
+  {
+    category: "Medical",
+    client: "Washington University Emergency Medicine Residency Recruitment",
+    thumbnail_src:
+      "/images/video-thumbnails/medical/washUEmergencyMedicine.png",
+    src: "https://player.vimeo.com/video/866533299?h=90843c1f39&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+  },
+  {
+    category: "Medical",
+    client: "Washington University Neuromuscular Medicine Fellowship",
+    src: "https://player.vimeo.com/video/900179612?h=690b0e7751&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+    thumbnail_src: "/images/video-thumbnails/medical/washUNeuromuscular.png",
+  },
+  {
+    category: "Medical",
+    client: "Siteman Brain Tumor Center Research",
+    thumbnail_src: "/images/video-thumbnails/medical/siteman.png",
+    src: "https://player.vimeo.com/video/842642479?h=a33d343fee&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+  },
+  {
+    category: "Medical",
+    client: "Alton Memorial Hospital Foundation's Duck Pluckers Ball",
+    thumbnail_src: "/images/video-thumbnails/medical/duckPluckers.png",
+    src: "https://player.vimeo.com/video/905668122?h=44f7031f29&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+  },
+  {
+    category: "Medical",
+    client: "St Louis Children's Hospital Employee Giving 2023",
+    thumbnail_src: "/images/video-thumbnails/medical/stLouisChildrens.png",
+    src: "https://player.vimeo.com/video/790947100?h=a476fa3e19&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+  },
+  {
+    category: "Medical",
+    client: "Ascension Nashville, Join Today",
+    thumbnail_src: "/images/video-thumbnails/medical/pactNashville.png",
+    src: "https://player.vimeo.com/video/871994336?h=87fd41e833&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+  },
+  {
+    category: "Medical",
+    client: "Ascension Healthcare, St. Vincent",
+    thumbnail_src: "/images/video-thumbnails/medical/ascension.png",
+    src: "https://player.vimeo.com/video/350343774?h=5211a400f9&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+  },
+  {
+    category: "Medical",
+    client: "SSM Health, Demonstration and Evaluation",
+    thumbnail_src: "/images/video-thumbnails/medical/ssmHealth.png",
+    src: "https://player.vimeo.com/video/299104420?h=93e27c251b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+  },
+
+  {
     category: "Nonprofit",
-    client: "BJHF 2023 Gala Highlight Video",
+    client: "Barnes Jewish Hospital Foundation Gala Highlight Video",
     thumbnail_src: "/images/video-thumbnails/nonprofit/bjhfGala.png",
     src: "https://player.vimeo.com/video/840455005?h=8cf0180342&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
@@ -318,13 +319,13 @@ export const videoData = [
   },
   {
     category: "Nonprofit",
-    client: "Central Institute for the Deaf: CID Out Loud 2023",
+    client: "Central Institute for the Deaf, Out Loud 2023",
     thumbnail_src: "/images/video-thumbnails/nonprofit/cidOutLoud.png",
     src: "https://player.vimeo.com/video/825959288?h=46ba69e53b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: "Nonprofit",
-    client: "Evntiv JCS Gala 2023",
+    client: "JCS Gala 2023",
     thumbnail_src: "/images/video-thumbnails/nonprofit/jcsGala.png",
     src: "https://player.vimeo.com/video/838407827?h=3668c77c36&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
@@ -336,7 +337,7 @@ export const videoData = [
   },
   {
     category: "Nonprofit",
-    client: "Cardinal Ritter Senior Services 2022 Gala",
+    client: "Cardinal Ritter Senior Services Gala 2022",
     thumbnail_src: "/images/video-thumbnails/nonprofit/crss.png",
     src: "https://player.vimeo.com/video/700538510?h=350078ccdd&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },

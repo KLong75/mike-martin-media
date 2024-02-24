@@ -18,21 +18,24 @@ export default function Page() {
 
   return (
     <main className="grid grid-cols-1 ">
-      {/* <section>
-        <BannerVideo
-          src="https://player.vimeo.com/video/906520722?h=fe8eda318f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-          title="MMM Promotional Video"
-        />
-      </section> */}
+      <BannerVideo
+        src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        title="MMM_Our_Work_Video"
+      />
       <div className="mt-4 mb-4">
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2 className="text-center font-bold text-4xl  mt-2">VIDEO</h2>
+        <h2 className="text-center font-bold text-4xl md:text-6xl mt-2">
+          VIDEO
+        </h2>
       </div>
-      <section className="-mt-4">
-        <div className="flex justify-center items-center p-2 mb-6">
-          <p className="mt-6 text-center text-balance w-10/12 md:w-1/2 ">
+      {/* <div className="mt-4 -mb-8">
+        <BackToOurWorkLink />
+      </div> */}
+      <section className="">
+        <div className="flex justify-center items-center p-2 mb-6 md:mb-8">
+          <p className="mt-6 md:text-lg text-center text-balance md:w-10/12 p-2">
             Video text with related keywords telling people how awesome your
             video work is lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Nulla keywords about video production.{" "}
@@ -50,8 +53,8 @@ export default function Page() {
         <VideoCategories onCategorySelected={setSelectedCategory} />
       </section>
       <VideoGallery selectedCategory={selectedCategory} />
-      <div className="flex justify-center items-center p-2">
-        <p className=" text-center text-balance w-10/12 md:w-1/2 ">
+      <div className="flex justify-center items-center mt-6 mb-6">
+        <p className="md:text-lg text-center text-balance w-10/12 p-2">
           <Link href="/contact">
             {" "}
             <span className="font-bold hover:scale-105 transition-transform inline-block">
