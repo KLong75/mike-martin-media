@@ -52,7 +52,7 @@ export default function Page() {
       <section className="-mt-4">
         <VideoCategories onCategorySelected={setSelectedCategory} />
       </section>
-      <VideoGallery selectedCategory={selectedCategory} />
+      <VideoGallery selectedCategory={selectedCategory} excludedCategory={'Drone'}/>
       <div className="flex justify-center items-center mt-6 mb-6">
         <p className="md:text-lg text-center text-balance w-10/12 p-2">
           <Link href="/contact">

@@ -27,6 +27,20 @@ export default function Page() {
           DRONE
         </h2>
       </div>
+      <section>
+        <div className="">
+          <p className="text-center text-balance p-2">
+          Drone content is highly requested and incredibly powerful for a project. We use it in most projects. 
+          <Link href="/contact">
+              {" "}
+              <span className="font-bold hover:scale-105 transition-transform inline-block">
+                Contact Us{" "}
+              </span>{" "}
+            </Link>
+            to see how our licensed drone pilots can take your video to the next level.
+          </p>
+        </div>
+      </section>
     </main>
   )
 }
