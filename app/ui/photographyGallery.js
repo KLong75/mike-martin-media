@@ -46,8 +46,8 @@ export default function PhotographyGallery({
               client={client}
               src={cover_img_src}
               alt={client}
-              width={width}
-              height={height}
+              width={4366}
+              height={6546}
               priority
             />
             <h3 className=" text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl lg:text-4xl font-bold  ">

@@ -4,7 +4,7 @@ import Image from "next/image";
 import BlogPost from "../ui/blogPost";
 import TextSegment from "../ui/textSegment";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
-import BackToHomeLink from "../ui/backToHome";
+import BannerImage from "../ui/bannerImage";
 // import data
 import { blogPosts } from "../lib/data";
 
@@ -16,8 +16,14 @@ export const metadata = {
 export default function Page() {
   return (
     <main className="flex-1 ">
-      <div className="mt-2 mb-2">
-        <BackToHomeLink />
+     <div className="-mt-1">
+        <BannerImage
+          src="/images/blog-page/blog-banner-image.jpg"
+          alt="Blog Banner Image"
+          width={5008}
+          height={1996}
+          priority={true}
+        />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
         <h3 className="text-center font-bold text-3xl md:text-4xl mt-2">
@@ -29,8 +35,8 @@ export default function Page() {
           Beyond the Lens
         </h2>
       </div> */}
-      <div className="font-bold text-xl text-center justify-center items-center p-4 text-balance">
-        <h4 className="">
+      <div className="md:mt-10 font-bold text-2xl text-center justify-center items-center p-4 text-balance">
+        <h4>
           Venture beyond the lens and take a look behind the scenes.
         </h4>
       </div>
@@ -48,9 +54,6 @@ export default function Page() {
             author={post.author}
           />
         ))}
-      </div>
-      <div className="mt-4 ">
-        <BackToHomeLink />
       </div>
       <div className="w-full">
         <MMMLineLogoBlack />

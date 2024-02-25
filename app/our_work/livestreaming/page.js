@@ -4,10 +4,8 @@ import Link from "next/link";
 import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideo from "../../ui/bannerVideo";
 import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
-import TextSegment from "@/app/ui/textSegment";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 import VideoGallery from "@/app/ui/videoGallery";
-import LivestreamGallery from "@/app/ui/livestreamGallery";
 
 export const metadata = {
   title: "Livestreaming",
@@ -89,15 +87,14 @@ export default function Page() {
           </div>
         </div>
         <div className="mb-8 md:mb-12 lg:mb-18">
-          {/* <VideoGallery selectedCategory="Livestreaming" 
-            includedCategories={["Livestreaming"]}
-          /> */}
-          <LivestreamGallery />
+          <VideoGallery selectedCategory="Livestreaming" 
+            excludedCategory={["Corporate", "Education", "Medical", "Nonprofit", "Drone"]}
+          />
         </div>
       </section>
 
-      <div className="flex justify-center items-center  -mt-8">
-        <p className=" text-center text-balance w-10/12 md:w-1/2 ">
+      <div className="flex justify-center items-center  -mt-4 md:mt-0">
+        <p className=" text-center text-balance w-10/12">
           <Link href="/contact">
             <span className="font-bold hover:scale-105 transition-transform inline-block">
               Contact Us{" "}
@@ -109,7 +106,7 @@ export default function Page() {
         </p>
       </div>
 
-      <div className="flex justify-center items-center mb-12 mt-4">
+      <div className="flex justify-center items-center mb-12 mt-6">
         <ContactUsButton />
       </div>
       <div className="mb-3 ">

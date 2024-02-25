@@ -27,16 +27,14 @@ export default function VideoGallery({ selectedCategory, excludedCategory }) {
         .map((video) => ( */}
 
         {videoData
-        // Filter based on the selectedCategory and handle exclusion logic more selectively
         .filter(video => {
-          // Condition for selectedCategory
+          // Check if video should be displayed based on selectedCategory
           const isSelectedCategory = selectedCategory === "All Videos" || video.category.includes(selectedCategory);
-          
-          // Ensure video is not excluded if it has more than one category,
-          // even if one of them is the excludedCategory
-          const isNotExclusivelyExcludedCategory = !(video.category.length === 1 && video.category.includes(excludedCategory));
-          
-          return isSelectedCategory && isNotExclusivelyExcludedCategory;
+
+          // Check if video is not exclusively in excluded categories
+          const isNotExclusivelyExcluded = !video.category.every(cat => excludedCategory.includes(cat));
+
+          return isSelectedCategory && isNotExclusivelyExcluded;
         })
         .map((video) => (
 

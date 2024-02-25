@@ -190,7 +190,7 @@ export const videoData = [
   },
   {
     category: ["Drone"],
-    client: "Missouri Baptist Blues Drone",
+    client: "MITEK ST. LOUIS",
     thumbnail_src: "/images/video-thumbnails/drone/bluesDrone.jpg",
     src: "https://player.vimeo.com/video/339585435?h=bc28655b80&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
@@ -359,39 +359,39 @@ export const videoData = [
     thumbnail_src: "/images/video-thumbnails/nonprofit/kitmMission.png",
     src: "https://player.vimeo.com/video/862525134?h=722087be67&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
-  // {
-  //   category: ["Livestreaming"],
-  //   client: "WUSTL 2023 Spring Parents Council - Saturday",
-  //   thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
-  //   src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  // },
-  // {
-  //   category: ["Livestreaming"],
-  //   client: "PBH 2022 Livestream Spirit of Provident Gala",
-  //   thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
-  //   src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  // },
+   {
+     category: ["Livestreaming"],
+     client: "Washington Universty Spring Parents Council Livestream",
+     thumbnail_src: "/images/video-thumbnails/livestream/wash-u-parents-council.png",
+     src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+   },
+   {
+    category: ["Livestreaming"],
+     client: "Spirit of Provident Gala Livestream",
+     thumbnail_src: "/images/video-thumbnails/livestream/provident-gala.png",
+     src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+   },
 ];
 
-export const livestreamData = [
-  {
-    category: "Livestreaming",
-    client: "WUSTL 2023 Spring Parents Council - Saturday",
-    thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
-    src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
-  {
-    category: "Livestreaming",
-    client: "PBH 2022 Livestream Spirit of Provident Gala",
-    thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
-    src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
-];
+// export const livestreamData = [
+//   {
+//     category: "Livestreaming",
+//     client: "WUSTL 2023 Spring Parents Council - Saturday",
+//     thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
+//     src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+//   },
+//   {
+//     category: "Livestreaming",
+//     client: "PBH 2022 Livestream Spirit of Provident Gala",
+//     thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
+//     src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+//   },
+// ];
 
 export const photographyWorkSampleData = [
   {
-    client: "CCSTL",
-    thumbnail_src: "/images/photographyWorkSamples/ccstl/01.png",
+    client: "Catholic Charities of St. Louis",
+    thumbnail_src: "/images/photography-coverimages-catholic-charities.png",
     width: 437,
     height: 655,
     images: [
@@ -495,7 +495,7 @@ export const photographyWorkSampleData = [
   },
   {
     client: "Club Fitness",
-    thumbnail_src: "/images/photographyWorkSamples/clubFitness/01.png",
+    thumbnail_src: "/images/photography-cover-images/club-fitness.jpg",
     width: 374,
     height: 536,
     images: [
