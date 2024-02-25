@@ -9,7 +9,7 @@ export default function ContactUsButton() {
       type="button">
       <Link href="/contact">
       <div className="flex justify-center items-center">
-        <span className="text-2xl md:text-2xl">Contact</span>
+        <span className="text-xl md:text-2xl">Contact</span>
         <div className="flex justify-center items-center w-14 ml-2 h-auto mb-1">
           <Image
             src="/branding/mmm_logo_white.png"
