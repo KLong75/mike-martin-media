@@ -50,7 +50,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-6 flex justify-center items-center">
-            <p className="p-2 text-center text-balance">
+            <p className="p-2 md:text-lg text-center text-balance">
               MMM specializes in video production and creative services for
               corporations, nonprofits, education, medical institutions. Our
               mission is to help our clients promote their causes, inform their
@@ -58,7 +58,7 @@ export default function Home() {
               multi-media solutions.
             </p>
           </div>
-          <div className="flex justify-center items-center mb-6">
+          <div className="md:text-lg flex justify-center items-center mb-6">
             <p className="p-2 text-center text-balance ">
               Our{" "}
               <Link href="/about_mmm#mmm-team" className="">
@@ -99,7 +99,7 @@ export default function Home() {
               priority={true}
             />
           </div>
-          <div className="flex justify-center items-center">
+          <div className="md:text-lg flex justify-center items-center">
           <p className="text-center text-balance p-2">
               Like what you see?{" "}
               <Link href="/contact">
@@ -132,7 +132,7 @@ export default function Home() {
             OUR WORK
           </h3>
         </div>
-        <div className="flex justify-center items-center mt-6">
+        <div className="md:text-lg flex justify-center items-center mt-6">
           <p className="p-2 text-center text-balance ">
             We take pride in every project. We partner with clients of all sizes
             to bring their ideas to life. From concept to conclusion, we write,
@@ -162,9 +162,9 @@ export default function Home() {
         {/* <div className="flex justify-center items-center mb-6 mt-6">
           <p>WE NEED AN IMAGE HERE</p>
         </div> */}
-        <div className="flex justify-center items-center">
+        <div className="md:text-lg flex justify-center items-center">
           <p className="p-2 text-center text-balance">
-            Whatever you need, we’ve got you covered.{" "}
+            Whatever you need, we&apos;ve got you covered.{" "}
             <Link href="/contact">
               <span className="font-bold hover:scale-105 transition-transform inline-block">
                 Contact us
@@ -196,8 +196,8 @@ export default function Home() {
             BEYOND THE LENS
           </h3>
         </div>
-        <div className="flex justify-center items-center mt-6 mb-6">
-          <p className="p-2 text-center text-balance">
+        <div className="md:text-lg flex justify-center items-center mt-6 mb-6">
+          <p className="p-2 text-center text-balance w-10/12">
             Go Beyond the lens and check out our latest adventures in the MMM
             Blog as we film and travel across town across the country, and
             around the world. Try to keep up, we move fast!
