@@ -22,7 +22,7 @@ export default function Page() {
           title="MMM_Livestreaming_Video"
         />
       </section>
-      <div className="mt-4 mb-4">
+      <div className="mt-4 mb-4 flex md:hidden">
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
@@ -30,9 +30,12 @@ export default function Page() {
           LIVESTREAMING
         </h2>
       </div>
-      <section>
+      <div className="mt-4 -mb-8 hidden md:flex z-50">
+        <BackToOurWorkLink />
+      </div>
+      <section className="md:mt-12">
         <div className="md:text-lg flex justify-center items-center">
-          <p className="text-center text-balance p-6 md:p-32 -mt-2 md:-mt-20">
+          <p className="text-center text-balance p-6">
             Wherever you are, we can help you stream to{" "}
             <span className="italic font-bold">ANYWHERE</span>. Livestreaming is
             an invaluable resource that can catapult your organization and
@@ -46,7 +49,7 @@ export default function Page() {
             today to create a livestreaming solution that works for you.
           </p>
         </div>
-        <div className="flex justify-center items-center p-4 -mt-6 lg:-mt-24 mb-6">
+        <div className="flex justify-center items-center p-4 mb-6 md:mb-10">
           <ContactUsButton />
         </div>
       </section>
@@ -76,7 +79,7 @@ export default function Page() {
         </div>
       </section>
       <section>
-        <div className="grid grid-cols-1 -mt-8">
+        <div className="grid grid-cols-1 -mt-8 md:mt-0">
           <h4 className="text-xl md:text-2xl text-center font-bold -mb-6 md:mb-12 lg:mb-20 ">
             Recent Streams
           </h4>

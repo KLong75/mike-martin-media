@@ -20,33 +20,37 @@ export default function Page() {
         src="https://player.vimeo.com/video/914904466?h=4da6b8b38e&&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="MMM_Livestreaming_Video"
       />
+      
+      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+        <h1 className="text-center font-bold text-4xl md:text-6xl mt-2">
+          DRONE
+        </h1>
+      </div>
       <div className="mt-4 mb-4">
         <BackToOurWorkLink />
       </div>
-      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2 className="text-center font-bold text-3xl md:text-4xl mt-2">
-          DRONE
-        </h2>
-      </div>
       <section>
-        <div className="">
-          <p className="md:text-lg text-center text-balance p-2">
+        <div className="flex justify-center items-center">
+          <p className="md:text-lg text-center text-balance p-2 w-10/12">
             Drone content is highly requested and incredibly powerful for a
-            project. We use it in most projects.
-          </p>
-          <p className="text-center text-balance p-2">
+            project. We use drone videoography in most projects.
+          {/* </p>
+          </div>
+          <div className="md:text-lg flex justify-center items-center">
+          <p className="text-center text-balance p-2 w-10/12"> */}
             <Link href="/contact">
               {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">
                 Contact Us{" "}
               </span>{" "}
             </Link>
-            to see how our licensed drone pilots can take your video to the next
+            to see how our licensed (licensed by who) drone pilots can take your video to the next
             level.
           </p>
-          <div className="mt-4 mb-4 flex justify-center"> <ContactUsButton />
-          </div>
-         
+        </div>
+        <div className="mt-4 mb-4 md:mb-8 flex justify-center">
+          {" "}
+          <ContactUsButton />
         </div>
         <VideoGallery selectedCategory="Drone" excludedCategory={[]} />
       </section>
@@ -57,9 +61,9 @@ export default function Page() {
               Contact Us{" "}
             </span>{" "}
           </Link>
-          today to see how our certified drone pilots can take your project to the next level. Drone text
-          with related keywords telling people how awesome your livestream work
-          is lorem ipsum
+          today to see how our licensed drone videoegraphers can take your project to
+          the next level. Drone text with related keywords telling people how
+          awesome your livestream work is lorem ipsum
         </p>
       </div>
 

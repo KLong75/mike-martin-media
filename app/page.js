@@ -33,12 +33,12 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center w-full h-auto -mt-4">
           <div className="bg-black text-white w-full h-20 md:h-24 flex items-center justify-center">
             <div className="flex justify-center items-center p-1 ">
-              <h3 className="text-4xl md:text-6xl font-bold mr-2">
+              <h3 className="text-4xl md:text-5xl font-bold mr-2">
                 YOUR IDEAS,
               </h3>
               <div
-                className="flex justify-center items-center w-10 md:w-16 h-auto "
-                style={{ marginRight: "-.1rem", marginBottom: ".2rem" }}>
+                className="flex justify-center items-center w-10 md:w-14 h-auto mb-1 md:mb-2"
+                style={{ marginRight: "-.1rem"}}>
                 <Image
                   src="/branding/singleMWhiteResizeSmall.png"
                   width={349}
@@ -46,11 +46,11 @@ export default function Home() {
                   alt="company logo"
                 />
               </div>
-              <h2 className="text-4xl md:text-6xl font-bold ml-1">ADE</h2>
+              <h2 className="text-4xl md:text-5xl font-bold ml-1">ADE</h2>
             </div>
           </div>
-          <div className="mt-6 flex justify-center items-center">
-            <p className="p-2 md:text-lg text-center text-balance">
+          <div className="mt-6 md:text-lg flex justify-center items-center">
+            <p className="p-2 text-center text-balance">
               MMM specializes in video production and creative services for
               corporations, nonprofits, education, medical institutions. Our
               mission is to help our clients promote their causes, inform their
@@ -59,7 +59,7 @@ export default function Home() {
             </p>
           </div>
           <div className="md:text-lg flex justify-center items-center mb-6">
-            <p className="p-2 text-center text-balance ">
+            <p className="p-2 text-center text-balance" id='team-paragraph'>
               Our{" "}
               <Link href="/about_mmm#mmm-team" className="">
                 <span className="font-bold hover:scale-110 transition-transform inline-block">
@@ -133,7 +133,7 @@ export default function Home() {
           </h3>
         </div>
         <div className="md:text-lg flex justify-center items-center mt-6">
-          <p className="p-2 text-center text-balance ">
+          <p className="p-4 text-center text-balance" id='work-paragraph'>
             We take pride in every project. We partner with clients of all sizes
             to bring their ideas to life. From concept to conclusion, we write,
             shoot, edit, direct, produce, animate, hire talent, find locations,

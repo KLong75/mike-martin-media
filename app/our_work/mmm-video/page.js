@@ -22,20 +22,20 @@ export default function Page() {
         src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="MMM_Our_Work_Video"
       />
-      <div className="mt-4 mb-4">
+      <div className="mt-4 mb-4 flex md:hidden">
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2 className="text-center font-bold text-4xl md:text-6xl mt-2">
+        <h2 className="text-center font-bold text-4xl md:text-6xl">
           VIDEO
         </h2>
       </div>
-      {/* <div className="mt-4 -mb-8">
+      <div className="mt-4 -mb-8 hidden md:flex">
         <BackToOurWorkLink />
-      </div> */}
-      <section className="">
+      </div>
+      <section className="md:mt-6">
         <div className="md:text-lg flex justify-center items-center p-2 mb-6 md:mb-8">
-          <p className="mt-6 text-center text-balance md:w-10/12 p-2">
+          <p className="mt-2 text-center text-balance md:w-10/12 p-2">
             Video text with related keywords telling people how awesome your
             video work is lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Nulla keywords about video production.{" "}

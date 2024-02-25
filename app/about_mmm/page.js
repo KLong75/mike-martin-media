@@ -17,24 +17,24 @@ import ContactUsButton from "../ui/contactUsButton";
 export const metadata = {
   title: "About MMM",
   description:
-    "For over 15 years, MMM has combined the latest technology with the best in-house talent to create impactful videos for organizations all over the United States and the world. We partner with corporations, medical and educational institutions, and nonprofit organizations to bring their vision to life. Our expertise provides a seamless production experience that you probably didn’t know could exist. We produce the quality work and client experience that you need along with a valuable partnership that will bring growth and success.",
+    "For over 15 years, Mike Martin Media has combined the latest technology with the best in-house talent to create impactful videos for organizations all over the United States and the world. We partner with corporations, medical and educational institutions, and nonprofit organizations to bring their vision to life. Our expertise provides a seamless production experience that you probably didn't know could exist. We produce the quality work and client experience that you need along with a valuable partnership that will bring growth and success.",
 };
 
 export default function Page() {
   return (
     <main>
       <div className="-mt-1">
-        <BannerImage
-          src="/images/aboutPage/about_banner_image.jpg"
-          alt="About Page Banner Image"
-          width={5008}
-          height={1996}
-          priority={true}
-        />
-      </div>
+          <BannerImage
+            src="/images/ourWorkPage/our_work_banner_image.jpg"
+            alt="MMM Video Production at work"
+            width={5008}
+            height={1996}
+            priority={true}
+          />
+        </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2 className="text-4xl md:text-6xl font-bold mr-2">ABOUT </h2>
-        <div className="flex justify-center items-center w-24 md:w-40 h-auto mb-1 md:mb-.5 md:p-1">
+        <h2 className="text-4xl md:text-5xl font-bold mr-2">ABOUT </h2>
+        <div className="flex justify-center items-center w-24 md:w-32 h-auto mb-1.5 md:mb-1  md:p-1">
           <Image
             src="/branding/mmm_logo_white.png"
             width={294}
@@ -46,9 +46,9 @@ export default function Page() {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 p-6 md:mt-6">
-      <div className="flex justify-center items-center">
-        <p className="md:text-lg p-2 md:p-6 text-center text-balance mb-6" id='about-text'>
-          For over 15 years, MMM has combined the latest technology with the
+      <div className="flex justify-center items-center mb-6 md:mb-0">
+        <p className="md:text-2xl text-center text-balance w-10/12" id='about-text'>
+          For over 15 years, Mike Martin Media has combined the latest technology with the
           best in-house talent to create impactful videos for organizations all
           over the United States and the world. We partner with corporations,
           medical and educational institutions, and nonprofit organizations to
@@ -91,7 +91,7 @@ export default function Page() {
       </section>
       <section className="mt-8 md:mt-12">
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <div className="w-8 md:w-10 h-auto mx-2 mb-.95 md:mb-1">
+          <div className="w-8 md:w-10 h-auto mx-2 mb-1 md:mb-1">
             <Image
               src="/branding/singleMWhiteResizeSmall.png"
               width={349}
@@ -105,7 +105,7 @@ export default function Page() {
         </div>
         <div className="flex justify-center items-center mb-4 mt-2 md:mt-4 md:mb-8">
         <div className="flex justify-center items-center ">
-      <p className="p-2 text-center text-balance ">Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing.</p>
+      <p className="md:text-lg p-2 text-center text-balance ">Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing.</p>
     </div>
           {/* <TextSegment text="Our team brings decades of combined experience from the broadcast and production industries.  We are a tight-knit team, and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing." /> */}
         </div>
@@ -116,9 +116,6 @@ export default function Page() {
       <section className="-mt-6 md:mt-0 md:-mb-20">
         <InstagramWidget />
       </section>
-      <div className="mb-4">
-        <BackToHomeLink />
-      </div>
       <div className="w-full">
         <MMMLineLogoBlack />
       </div>

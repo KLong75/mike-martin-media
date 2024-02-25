@@ -7,42 +7,24 @@ export default function VideoGallery({ selectedCategory, excludedCategory }) {
   return (
     <div
       className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 ${
-        selectedCategory === "Livestream"
-          ? "lg:grid-cols-2"
-          : "lg:grid-cols-3"
+        selectedCategory === "Livestream" ? "lg:grid-cols-2" : "lg:grid-cols-3"
       } gap-0`}>
-      {/* {videoData
-        .filter(
-          (video) =>
-            (selectedCategory === "All Videos" ||
-              video.category === selectedCategory) 
-        )
-        .map((video) => ( */}
-       
-        {/* {videoData
-        .filter(video => 
-          selectedCategory === "All Videos" ||
-          video.category.indexOf(selectedCategory) !== -1 // Using indexOf instead of includes
-        )
-        .map((video) => ( */}
-
-        {videoData
-        .filter(video => {
-          // Check if video should be displayed based on selectedCategory
-          const isSelectedCategory = selectedCategory === "All Videos" || video.category.includes(selectedCategory);
-
+      {videoData
+        .filter((video) => {
+          // Check if video is in selectedCategory
+          const isSelectedCategory =
+            selectedCategory === "All Videos" ||
+            video.category.includes(selectedCategory);
           // Check if video is not exclusively in excluded categories
-          const isNotExclusivelyExcluded = !video.category.every(cat => excludedCategory.includes(cat));
-
+          const isNotExclusivelyExcluded = !video.category.every((cat) =>
+            excludedCategory.includes(cat)
+          );
           return isSelectedCategory && isNotExclusivelyExcluded;
         })
         .map((video) => (
-
-
-
           <div
             key={video.client}
-            className="text-white w-full h-auto hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform">
+            className="text-white w-full h-auto hover:transform md:hover:scale-110 hover:z-40 hover:text-black transition-transform">
             <ClientVideoFrame
               src={video.src}
               client={video.client.toUpperCase()}

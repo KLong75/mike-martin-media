@@ -32,7 +32,7 @@ export default function VideoCategories({ onCategorySelected }) {
       <h3 className="text-lg font-bold text-center -mb-6">
         SELECT A CATEGORY:
       </h3>
-      <ul className="flex flex-wrap justify-center gap-4 p-6">
+      <ul className="flex flex-wrap justify-center gap-4 p-6 md:mb-4">
         {categoryOptions.map((category) => (
           <li
             key={category.name}

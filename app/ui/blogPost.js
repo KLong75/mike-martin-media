@@ -24,6 +24,9 @@ export default function BlogPost({
   author,
 }) {
   const shortenPostText = (text, num) => {
+    if (text.length < num){
+      return text + "..";
+    }
     if (text.length > num) {
       return text.slice(0, num) + "...";
     } else {
@@ -58,11 +61,10 @@ export default function BlogPost({
           />
         </div>
         <div className="text-center w-72 hover:cursor-pointer mb-4">
-          {/* <h2 className="font-bold text-wrap">{title}</h2>
-          <span className="text-sm mt-2">{formatDate(post_date)}</span> */}
           <p className="mb-6 text-balance text-left text-md mt-2">
             {shortenPostText(text[0], 200)}
-            <span className="inline-flex items-center font-bold text-yellow-800 hover:cursor-pointer">
+            <br />
+            <span className="inline-flex items-center font-bold text-blue-600 hover:cursor-pointer mt-1">
               READ MORE <IoIosArrowRoundForward className="text-2xl" />
             </span>
           </p>
@@ -100,7 +102,6 @@ export default function BlogPost({
                   />
                 </div>
               </div>
-
               <div className=" p-6 overflow-auto">
                 {text.map((paragraph, index) => (
                   <p key={index} className="mb-4">

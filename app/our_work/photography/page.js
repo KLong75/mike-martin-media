@@ -33,7 +33,7 @@ export default function Page() {
       </div>
       <section className="grid grid-cols-1 -mb-8 md:mb-0">
         <div className="md:text-lg flex justify-center items-center p-2 mb-8">
-          <p className="-mt-4 md:mt-0 md:text-lg text-center text-balance w-10/12  ">
+          <p className=" md:text-lg text-center text-balance w-10/12  ">
             We offer a wide range of photography services. From headshots to
             events, we can help you capture the moment. Check out our work below
             and then{" "}
@@ -49,7 +49,7 @@ export default function Page() {
       </section>
       <div className="flex justify-center items-center w-full h-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 w-10/12 md:w-full">
-          <div className="text-white relative hover:transform hover:cursor-pointer hover:scale-105 hover:text-black hover:z-50 transition-transform">
+          <div className="text-white relative  transition-transform">
             <PhotographyGallery
               client={"Catholic Charities of St. Louis"}
               cover_img_src={
@@ -59,7 +59,7 @@ export default function Page() {
               height={655}
             />
           </div>
-          <div className="text-white relative hover:transform hover:cursor-pointer hover:scale-105 hover:text-black hover:z-50 transition-transform">
+          <div className="text-white relative">
             <PhotographyGallery
               client={"Prasino"}
               cover_img_src={"/images/photography-cover-images/prasino.jpg"}
@@ -68,7 +68,7 @@ export default function Page() {
             />
           </div>
 
-          <div className="text-white relative hover:transform hover:cursor-pointer hover:scale-105 hover:text-black hover:z-50 transition-transform">
+          <div className="text-white relative">
             <PhotographyGallery
               client={"Club Fitness"}
               cover_img_src={
@@ -81,7 +81,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center p-2 md:mt-6">
+      <div className="flex justify-center items-center p-2 md:mt-12 md:mb-6">
         <p className="md:text-lg text-center text-balance w-10/12 md:w-1/2 ">
           <Link href="/contact">
             {" "}

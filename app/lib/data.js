@@ -125,7 +125,7 @@ export const weTextBlockData = [
   },
   {
     headline: "WE INFORM.",
-    text: "From scripted narratives to testimonial-driven spots, webinars to customer education, we give your message the medium it needs to impact (reach?) your audience.",
+    text: "From scripted narratives to testimonial-driven spots, webinars to customer education, we give your message the medium it needs to reach your audience.",
   },
   {
     headline: "WE INSPIRE.",
@@ -187,12 +187,6 @@ export const videoData = [
     client: "MCCARTHY SPOTLIGHT SOLAR",
     thumbnail_src: "/images/video-thumbnails/corporate/spotlightSolar.png",
     src: "https://player.vimeo.com/video/605026819?h=e686314ea0&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
-  {
-    category: ["Drone"],
-    client: "MITEK ST. LOUIS",
-    thumbnail_src: "/images/video-thumbnails/drone/bluesDrone.jpg",
-    src: "https://player.vimeo.com/video/339585435?h=bc28655b80&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
     category: ["Education"],
@@ -371,22 +365,13 @@ export const videoData = [
      thumbnail_src: "/images/video-thumbnails/livestream/provident-gala.png",
      src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
    },
+   {
+    category: ["Drone"],
+    client: "Missouri Baptist Blues Drone",
+    thumbnail_src: "/images/video-thumbnails/drone/bluesDrone.jpg",
+    src: "https://player.vimeo.com/video/339585435?h=bc28655b80&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+  },
 ];
-
-// export const livestreamData = [
-//   {
-//     category: "Livestreaming",
-//     client: "WUSTL 2023 Spring Parents Council - Saturday",
-//     thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
-//     src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-//   },
-//   {
-//     category: "Livestreaming",
-//     client: "PBH 2022 Livestream Spirit of Provident Gala",
-//     thumbnail_src: "/images/ourWorkTileImages/livestreaming.jpg",
-//     src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-//   },
-// ];
 
 export const photographyWorkSampleData = [
   {
@@ -626,7 +611,7 @@ export const blogPosts = [
     image_width: 1140,
     image_height: 855,
     text: [
-      "It's that time of year again… that beautiful, special time of year where we all gather around to celebrate what truly matters… Mario Kart.",
+      "It's that time of year again, that beautiful, special time of year when we all gather around to celebrate what truly matters: Mario Kart.",
       "The 2nd Annual MMM Mario Kart $100 Confrontation went DOWN earlier this month! After last year's close finish, this year's Confrontation was highly anticipated and extremely competitive. With twice as many races and racers as last year, tensions were high. The skill level of competitors ranged from total newbies to seasoned veterans, making for a truly entertaining event.",
       "Who won, you ask? Before someone won the 2nd Annual MMM Mario Kart $100 Confrontation, we all won one of our very own MMM awards. Throughout the past two years or so, various MMM employees have been bestowed a range of awards. Mike took time this year to give everyone an award, fit just for them. Awards ranged from “Social Influencer of the Year” for our social media manager, and “Longest Commute to Work of 2022  Award” to our newest addition, Ian Ramprashad, before he moved to St. Louis. Thank you Mike, for making sure we all are recognized and appreciated.",
       "This year's confrontation started off strong, with twelve total racers. But in the end, there could only be one winner.. Some stand out games included Josh vs. Rachel (she claims to be helpless but she absolutely held her own), as well as Nicole vs. Tom — the reigning champ versus Rachel's wife. “She's great, but usually on Nintendo 64” Rachel said of Nicole. Tom didn't hold back, but Nicole managed to pull out a win. Tom won that round but Nicole qualified for a position in Round 3. In Round 2 we saw Adam and Zoë face off in a heated and very close race that ended up going to Adam — before he had to leave for the night, reallocating his MMMario Kart Confrontation ranking to the loser of the race after his. No mercy for Zoë. Somehow the races of Josh vs. Paul were some of the most intense races of the night! Paul pulled ahead, giving Josh what was Adam's position.",
