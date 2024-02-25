@@ -7,7 +7,7 @@ export default function VideoGallery({ selectedCategory, excludedCategory }) {
   return (
     <div
       className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 ${
-        selectedCategory === "Livestreaming"
+        selectedCategory === "Livestream"
           ? "lg:grid-cols-2"
           : "lg:grid-cols-3"
       } gap-0`}>
@@ -27,16 +27,16 @@ export default function VideoGallery({ selectedCategory, excludedCategory }) {
         .map((video) => ( */}
 
         {videoData
-  .filter(video => {
-    // Check if video should be displayed based on selectedCategory
-    const isSelectedCategory = selectedCategory === "All Videos" || video.category.indexOf(selectedCategory) !== -1;
+        .filter(video => {
+          // Check if video should be displayed based on selectedCategory
+          const isSelectedCategory = selectedCategory === "All Videos" || video.category.includes(selectedCategory);
 
-    // Check if video is not exclusively in excluded categories
-    const isNotExclusivelyExcluded = !video.category.every(cat => excludedCategory.indexOf(cat) !== -1);
+          // Check if video is not exclusively in excluded categories
+          const isNotExclusivelyExcluded = !video.category.every(cat => excludedCategory.includes(cat));
 
-    return isSelectedCategory && isNotExclusivelyExcluded;
-  })
-  .map((video) => (
+          return isSelectedCategory && isNotExclusivelyExcluded;
+        })
+        .map((video) => (
 
 
 
