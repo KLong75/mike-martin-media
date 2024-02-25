@@ -34,8 +34,8 @@ export default function Page() {
         <BackToOurWorkLink />
       </div> */}
       <section className="">
-        <div className="flex justify-center items-center p-2 mb-6 md:mb-8">
-          <p className="mt-6 md:text-lg text-center text-balance md:w-10/12 p-2">
+        <div className="md:text-lg flex justify-center items-center p-2 mb-6 md:mb-8">
+          <p className="mt-6 text-center text-balance md:w-10/12 p-2">
             Video text with related keywords telling people how awesome your
             video work is lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Nulla keywords about video production.{" "}
@@ -53,8 +53,8 @@ export default function Page() {
         <VideoCategories onCategorySelected={setSelectedCategory} />
       </section>
       <VideoGallery selectedCategory={selectedCategory} excludedCategory={['Drone']}/>
-      <div className="flex justify-center items-center mt-6 mb-6">
-        <p className="md:text-lg text-center text-balance w-10/12 p-2">
+      <div className="md:text-lg flex justify-center items-center mt-6 mb-6">
+        <p className="text-center text-balance w-10/12 p-2">
           <Link href="/contact">
             {" "}
             <span className="font-bold hover:scale-105 transition-transform inline-block">

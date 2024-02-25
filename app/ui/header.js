@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex items-center bg-black text-white h-30">
+    <header className="flex items-center bg-black text-white h-30 z-50">
       {" "}
       {/* Flex container */}
       <div className="ml-6 w-40 h-12 flex items-center">

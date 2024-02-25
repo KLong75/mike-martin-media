@@ -49,8 +49,8 @@ export default function Page() {
             OUR WORK
           </h3>
         </div>
-        <div className="flex justify-center items-center mt-6 mb-6">
-          <p className="md:text-lg text-center text-balance w-10/12 p-2">
+        <div className="md:text-lg flex justify-center items-center mt-6 mb-6">
+          <p className="text-center text-balance w-10/12 p-2">
             From corporate, education, medical, or nonprofit videos, to livestreaming, drone work, and photography, MMM is your
             partner through every step of the process. Check out work below and
             <Link href="/contact">
@@ -81,8 +81,8 @@ export default function Page() {
             </div>
           </Link>
         </div>
-        <div className="flex justify-center items-center ">
-          <p className="p-2 md:text-lg text-center text-balance w-10/12 md:w-1/2 ">
+        <div className="md:text-lg flex justify-center items-center ">
+          <p className="p-2 text-center text-balance w-10/12 md:w-1/2 ">
             We have more than one way to get you what you need. Let us know if
             one of our other services fits your needs.
           </p>

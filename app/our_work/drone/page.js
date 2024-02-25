@@ -30,7 +30,7 @@ export default function Page() {
       </div>
       <section>
         <div className="">
-          <p className="text-center text-balance p-2">
+          <p className="md:text-lg text-center text-balance p-2">
             Drone content is highly requested and incredibly powerful for a
             project. We use it in most projects.
           </p>
@@ -50,7 +50,7 @@ export default function Page() {
         </div>
         <VideoGallery selectedCategory="Drone" excludedCategory={[]} />
       </section>
-      <div className="flex justify-center items-center mt-6 md:mt-12">
+      <div className="md:text-lg flex justify-center items-center mt-6 md:mt-12">
         <p className=" text-center text-balance w-10/12">
           <Link href="/contact">
             <span className="font-bold hover:scale-105 transition-transform inline-block">

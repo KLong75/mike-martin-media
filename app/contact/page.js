@@ -19,12 +19,12 @@ export default function Page() {
   return (
     <main className=" flex-1">
 
-      <div className="md:hidden">
+      <div className="z-10">
         <GoogleMap/>
       </div>
-      <div className="mt-2 mb-2 hidden md:block">
+      {/* <div className="mt-2 mb-2 hidden md:block">
         <BackToHomeLink />
-      </div>
+      </div> */}
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 ">
         <h2 className="text-3xl md:text-4xl font-bold mr-2">CONTACT </h2>
         <div className="flex justify-center items-center w-20 md:w-24 h-auto mb-1 ">
@@ -50,9 +50,9 @@ export default function Page() {
       <div className="flex justify-center items-center -mt-8">
         <ContactForm />
       </div>
-      <div className="hidden pl-36 pr-36 md:block md:mb-16">
+      {/* <div className="hidden pl-36 pr-36 md:block md:mb-16">
         <GoogleMap />
-      </div>
+      </div> */}
       <div className="mb-12 md:-mb-16 lg:-mb-28 w-full h-auto ">
         <InstagramWidget />
       </div>
