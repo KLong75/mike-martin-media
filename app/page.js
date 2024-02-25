@@ -38,7 +38,7 @@ export default function Home() {
               </h3>
               <div
                 className="flex justify-center items-center w-10 md:w-14 h-auto mb-1 md:mb-2"
-                style={{ marginRight: "-.1rem"}}>
+                style={{ marginRight: "-.1rem" }}>
                 <Image
                   src="/branding/singleMWhiteResizeSmall.png"
                   width={349}
@@ -52,23 +52,24 @@ export default function Home() {
           <div className="mt-6 md:text-lg flex justify-center items-center">
             <p className="p-2 text-center text-balance">
               MMM specializes in video production and creative services for
-              corporations, nonprofits, education, medical institutions. Our
+              corporations, nonprofits, education, and medical institutions. Our
               mission is to help our clients promote their causes, inform their
               clients, and inspire with their stories. We deliver dynamic
               multi-media solutions.
             </p>
           </div>
           <div className="md:text-lg flex justify-center items-center mb-6">
-            <p className="p-2 text-center text-balance" id='team-paragraph'>
+            <p className="p-2 text-center text-balance" id="team-paragraph">
               Our{" "}
               <Link href="/about_mmm#mmm-team" className="">
                 <span className="font-bold hover:scale-110 transition-transform inline-block">
                   team
                 </span>
               </Link>{" "}
-              brings decades of combined experience from the broadcast and
-              production industries. together to create the content that you&apos;re
-              looking for. Get to know the team that you&apos;ll be working with at{" "}
+              brings expertise from decades of combined experience in the
+              broadcast and production industries to create the quality content
+              that you are looking for. Get to know the team that you will be
+              working with at{" "}
               <Link href="/contact">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
                   About MMM.
@@ -100,7 +101,7 @@ export default function Home() {
             />
           </div>
           <div className="md:text-lg flex justify-center items-center">
-          <p className="text-center text-balance p-2">
+            <p className="text-center text-balance p-2">
               Like what you see?{" "}
               <Link href="/contact">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
@@ -133,7 +134,7 @@ export default function Home() {
           </h3>
         </div>
         <div className="md:text-lg flex justify-center items-center mt-6">
-          <p className="p-4 text-center text-balance" id='work-paragraph'>
+          <p className="p-4 text-center text-balance" id="work-paragraph">
             We take pride in every project. We partner with clients of all sizes
             to bring their ideas to life. From concept to conclusion, we write,
             shoot, edit, direct, produce, animate, hire talent, find locations,
@@ -203,7 +204,7 @@ export default function Home() {
             around the world. Try to keep up, we move fast!
           </p>
         </div>
-        <div className="flex justify-center items-center mb-6">
+        <div className="flex justify-center items-center mb-12">
           <MmmSiteButtonLogoFirst
             href="blog"
             label="Blog"
@@ -212,7 +213,7 @@ export default function Home() {
             imgSrc="/branding/mmm_logo_white.png"
           />
         </div>
-        <div className="w-full mt-4 md:hidden">
+        <div className="w-full mt-4">
           <MMMLineLogoBlack />
         </div>
       </section>

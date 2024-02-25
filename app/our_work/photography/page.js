@@ -9,21 +9,19 @@ import TextSegment from "@/app/ui/textSegment";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 
 export const metadata = {
-  title: "Photography",
+  title: "Photography Services",
   description:
-    "We offer a wide range of photography services. From headshots to events, we can help you capture the moment. Check out our work and then contact us to see how we can help you.",
+    "We offer a wide range of photography services. From headshots to events, candid shots, and group pictures we can help you capture the moment.",
 };
 
 export default function Page() {
   return (
     <main className="grid grid-cols-1 ">
-      <section>
         <BannerVideo
           src="https://player.vimeo.com/video/905365877?h=71828ac5c8&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM_Photography_Slide_Show"
         />
-      </section>
-      <div className="mt-4 mb-4">
+      <div className="mt-4 mb-4 flex md:hidden">
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 mb-6">
@@ -31,8 +29,11 @@ export default function Page() {
           PHOTOGRAPHY
         </h2>
       </div>
+      <div className="mt-4 mb-8 hidden md:flex">
+        <BackToOurWorkLink />
+      </div>
       <section className="grid grid-cols-1 -mb-8 md:mb-0">
-        <div className="md:text-lg flex justify-center items-center p-2 mb-8">
+        <div className="md:text-lg flex justify-center items-center p-2">
           <p className=" md:text-lg text-center text-balance w-10/12  ">
             We offer a wide range of photography services. From headshots to
             events, we can help you capture the moment. Check out our work below
@@ -45,6 +46,9 @@ export default function Page() {
             </Link>
             today to get started on your project.
           </p>
+        </div>
+        <div className="flex justify-center items-center p-4 mb-6 md:mb-10">
+          <ContactUsButton />
         </div>
       </section>
       <div className="flex justify-center items-center w-full h-auto">
@@ -67,7 +71,6 @@ export default function Page() {
               height={500}
             />
           </div>
-
           <div className="text-white relative">
             <PhotographyGallery
               client={"Club Fitness"}
@@ -80,7 +83,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-
       <div className="flex justify-center items-center p-2 md:mt-12 md:mb-6">
         <p className="md:text-lg text-center text-balance w-10/12 md:w-1/2 ">
           <Link href="/contact">
@@ -95,7 +97,7 @@ export default function Page() {
           video production.
         </p>
       </div>
-      <div className="flex justify-center items-center p-2 mt-6 mb-6">
+      <div className="flex justify-center items-center p-2 mt-6 mb-6 md:mb-12">
         <ContactUsButton />
       </div>
       <div className="mb-3 ">

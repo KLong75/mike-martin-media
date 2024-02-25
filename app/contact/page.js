@@ -12,7 +12,7 @@ import GoogleMap from "../ui/googleMap";
 
 export const metadata = {
   title: "Contact",
-  description: "Contact Mike Martin Media",
+  description: "Contact information for Mike Martin Media. Email. Phone. Address. Social Media. Contact Form. Google Map. Instagram Widget. Mike Martin Media. Video Production and Creative Services.",
 };
 
 export default function Page() {

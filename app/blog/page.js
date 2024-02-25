@@ -11,7 +11,7 @@ import { blogPosts } from "../lib/data";
 export const metadata = {
   title: "Blog",
   description:
-    "Mike Martin Media Blog. Venture beyond the lens and take a look behind the scenes.",
+    "Go Beyond the lens and check out our latest adventures in the MMM Blog as we film and travel across town across the country, and around the world. Try to keep up, we move fast!",
 };
 
 export default function Page() {
@@ -32,20 +32,6 @@ export default function Page() {
         </h1>
       </div>
       <div className="font-bold text-xl md:text-2xl text-center justify-center items-center p-4 text-balance">
-        {/* <div className=" flex justify-center items-center w-full ">
-          <h2 className="text-2xl md:text-3xl font-bold">The </h2>
-          <div className="flex justify-center items-center w-16 md:w-24 md:w-20 mb-1 ml-1 mr-1 md:p-1">
-            <Image
-              src="/branding/mmm_black.png"
-              width={294}
-              height={95}
-              alt="company logo"
-              priority
-              as="image"
-            />
-          </div>
-          <h2 className="text-2xl md:text-3xl font-bold">Blog</h2>
-        </div> */}
         <p>Venture beyond the lens and take a look behind the scenes.</p>
       </div>
       <div className="-mt-8 font-semibold md:text-lg text-center justify-center items-center p-4 text-balance ">
@@ -55,7 +41,7 @@ export default function Page() {
         </p>
         <p >Try to keep up, we move fast!</p>
       </div>
-      <div className="md:mt-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 p-6">
+      <div className="-mt-2 md:mt-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 p-6">
         {blogPosts.map((post, index) => (
           <BlogPost
             key={index}

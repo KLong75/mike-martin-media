@@ -30,7 +30,7 @@ export default function Page() {
           VIDEO
         </h2>
       </div>
-      <div className="mt-4 -mb-8 hidden md:flex">
+      <div className="mt-4 hidden md:flex">
         <BackToOurWorkLink />
       </div>
       <section className="md:mt-6">
@@ -67,7 +67,7 @@ export default function Page() {
           video production.
         </p>
       </div>
-      <div className="mt-2 flex justify-center">
+      <div className="mt-2 mb-12 flex justify-center">
         <ContactUsButton />
       </div>
       <div className="mb-3 mt-12">

@@ -1,12 +1,7 @@
-// "use client";
 // import from next
 import Link from "next/link";
 import Image from "next/image";
-// import from react
-// import { useState } from "react";
 // import components
-// import VideoGallery from "../ui/videoGallery";
-// import VideoCategories from "../ui/videoCategories";
 import TextSegment from "../ui/textSegment";
 import OurWorkTiles from "../ui/ourWorkTiles";
 import BackToHomeLink from "../ui/backToHome";
@@ -23,17 +18,12 @@ import { BsBroadcast } from "react-icons/bs";
 export const metadata = {
   title: "Our Work",
   description:
-    "We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process.",
+    "We take pride in every project. We partner with clients of all sizes to bring their ideas to life. From concept to conclusion, we write, shoot, edit, direct, produce, animate, hire talent, find locations, and everything else needed for your production. From videos to livestreams, to animations, to photography, to licensed drone photography, and licensed drone videography, we have you covered.",
 };
 
 export default function Page() {
-  // const [selectedCategory, setSelectedCategory] = useState("All Videos");
   return (
     <>
-      {/* <Head>
-        <title>Videos</title>
-        <meta name="description" content="We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process." />
-    </Head> */}
       <main>
         <div className="-mt-1">
           <BannerImage
@@ -126,7 +116,7 @@ export default function Page() {
             <ContactUsButton />
           </div>
         </div>
-        <div className="w-full md:hidden">
+        <div className="w-full">
           <MMMLineLogoBlack />
         </div>
       </main>

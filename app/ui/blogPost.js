@@ -64,7 +64,7 @@ export default function BlogPost({
           <p className="mb-6 text-balance text-left text-md mt-2">
             {shortenPostText(text[0], 200)}
             <br />
-            <span className="inline-flex items-center font-bold text-blue-600 hover:cursor-pointer mt-1">
+            <span className="inline-flex items-center font-bold text-blue-600 hover:cursor-pointer hover:scale-105 transition-transform mt-1">
               READ MORE <IoIosArrowRoundForward className="text-2xl" />
             </span>
           </p>
@@ -81,7 +81,7 @@ export default function BlogPost({
         className="fixed inset-0 z-50 overflow-y-auto">
         <Dialog.Overlay className="fixed inset-0 bg-black opacity-75" />
         <div className="min-h-screen px-4 text-center">
-          <Dialog.Panel className="w-full max-w-3xl mx-auto my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+          <Dialog.Panel className="w-full max-w-3xl mx-auto my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl border-2 md:border-4 border-black">
             <div className="flex flex-col items-center p-4 mt-8 ">
               <Dialog.Title className="text-lg font-medium text-gray-900">
                 {title}

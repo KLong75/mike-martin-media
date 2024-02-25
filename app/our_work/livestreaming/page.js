@@ -8,7 +8,7 @@ import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 import VideoGallery from "@/app/ui/videoGallery";
 
 export const metadata = {
-  title: "Livestreaming",
+  title: "Our Work | Livestream Services",
   description:
     "Wherever you are, we can help you stream to anywhere. Livestreaming is an invaluable resource that can catapult your organization and message farther. Contact us today to create a livestreaming solution that works for you.",
 };
@@ -16,12 +16,10 @@ export const metadata = {
 export default function Page() {
   return (
     <main>
-      <section className="grid grid-cols-1">
         <BannerVideo
           src="https://player.vimeo.com/video/904181398?h=c0efc97d6f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM_Livestreaming_Video"
         />
-      </section>
       <div className="mt-4 mb-4 flex md:hidden">
         <BackToOurWorkLink />
       </div>
@@ -30,7 +28,7 @@ export default function Page() {
           LIVESTREAMING
         </h2>
       </div>
-      <div className="mt-4 -mb-8 hidden md:flex z-50">
+      <div className="mt-4 -mb-8 hidden md:flex">
         <BackToOurWorkLink />
       </div>
       <section className="md:mt-12">

@@ -15,9 +15,9 @@ import MmmSiteButton from "../ui/mmmSiteButton";
 import ContactUsButton from "../ui/contactUsButton";
 
 export const metadata = {
-  title: "About MMM",
+  title: "About",
   description:
-    "For over 15 years, Mike Martin Media has combined the latest technology with the best in-house talent to create impactful videos for organizations all over the United States and the world. We partner with corporations, medical and educational institutions, and nonprofit organizations to bring their vision to life. Our expertise provides a seamless production experience that you probably didn't know could exist. We produce the quality work and client experience that you need along with a valuable partnership that will bring growth and success.",
+    "For over 15 years, Mike Martin Media has combined the latest technology with the best in-house talent to create impactful videos for organizations all over the United States and the world. We partner with corporations, medical institutions, education institutions, and nonprofit organizations to bring their vision to life. Our expertise provides a seamless production experience that you probably didn't know could exist. We produce the quality work and client experience that you need along with a valuable partnership that will bring growth and success.",
 };
 
 export default function Page() {
@@ -25,8 +25,8 @@ export default function Page() {
     <main>
       <div className="-mt-1">
           <BannerImage
-            src="/images/ourWorkPage/our_work_banner_image.jpg"
-            alt="MMM Video Production at work"
+            src="/images/aboutPage/"
+            alt="The Mike Martin Media Office"
             width={5008}
             height={1996}
             priority={true}
@@ -91,7 +91,7 @@ export default function Page() {
       </section>
       <section className="mt-8 md:mt-12">
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <div className="w-8 md:w-10 h-auto mx-2 mb-1 md:mb-1">
+          <div className="w-8 md:w-10 h-auto mx-2  " style={{marginBottom: '.2rem'}}>
             <Image
               src="/branding/singleMWhiteResizeSmall.png"
               width={349}
