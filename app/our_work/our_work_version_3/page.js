@@ -7,14 +7,14 @@ import Image from "next/image";
 // import components
 // import VideoGallery from "../ui/videoGallery";
 // import VideoCategories from "../ui/videoCategories";
-import TextSegment from "../ui/textSegment";
-import OurWorkTiles from "../ui/ourWorkTiles";
-import BackToHomeLink from "../ui/backToHome";
-import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
-import BannerVideo from "../ui/bannerVideo";
-import BannerImage from "../ui/bannerImage";
-import ContactUsButton from "../ui/contactUsButton";
-import WorkCategorySection from "../ui/workCategorySection";
+import TextSegment from "../../ui/textSegment";
+import OurWorkTiles from "../../ui/ourWorkTiles";
+import BackToHomeLink from "../../ui/backToHome";
+import MMMLineLogoBlack from "../../ui/mmmLineLogoBlack";
+import BannerVideo from "../../ui/bannerVideo";
+import BannerImage from "../../ui/bannerImage";
+import ContactUsButton from "../../ui/contactUsButton";
+import WorkCategorySection from "../../ui/workCategorySection";
 // import icons
 import { TbDrone } from "react-icons/tb";
 import { FaVideo, FaCameraRetro } from "react-icons/fa6";
