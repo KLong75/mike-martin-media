@@ -27,7 +27,7 @@ export default function Page() {
       <main>
         <div className="-mt-1">
           <BannerImage
-            src="/images/ourWorkPage/our_work_banner_image.jpg"
+            src="/images/ourWorkPage/our_work_video_banner_image.jpg"
             alt="MMM Video Production at work"
             width={5008}
             height={1996}
@@ -71,8 +71,8 @@ export default function Page() {
             </div>
           </Link>
         </div>
-        <div className="md:text-xl flex justify-center items-center ">
-          <p className="p-2 text-center text-balance w-10/12 md:w-1/2">
+        <div className="md:text-xl flex justify-center items-center md:mt-12 md:mb-12">
+          <p className="p-2  text-center text-balance w-10/12 md:w-1/2">
             We have more than one way to get you what you need. Let us know if
             one of our other services fits your needs.
           </p>
