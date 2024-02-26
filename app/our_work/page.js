@@ -27,7 +27,7 @@ export default function Page() {
       <main>
         <div className="-mt-1">
           <BannerImage
-            src="/images/ourWorkPage/our_work_video_banner_image.jpg"
+            src="/images/ourWorkPage/our_work_banner_image.jpg"
             alt="MMM Video Production at work"
             width={5008}
             height={1996}
@@ -39,8 +39,8 @@ export default function Page() {
             OUR WORK
           </h3>
         </div>
-        <div className="md:text-xl flex justify-center items-center mt-6 mb-6">
-          <p className="text-center text-balance w-10/12 p-2">
+        <div className="md:text-xl flex justify-center items-center mt-6 md:mt-12 mb-6 md:mb-12">
+          <p className="text-center text-balance w-10/12 md:w-1/2 p-2">
             From corporate, education, medical, or nonprofit videos, to livestreaming, drone work, and photography, MMM is your
             partner through every step of the process. Check out work below and
             <Link href="/contact">
@@ -62,7 +62,7 @@ export default function Page() {
             </div>
             <div className=" z-20">
               <Image
-                src="/images/ourWorkPage/video_banner_image.png"
+                src="/images/ourWorkPage/our_work_video_banner_image.png"
                 alt="MMM Video Production at work"
                 width={5008}
                 height={1996}
