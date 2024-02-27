@@ -37,11 +37,11 @@ export default function Page() {
       <main>
         <div className="-mt-1">
           <BannerImage
-            src="/images/ourWorkPage/our_work_banner_image.jpg"
+            src="/images/ourWorkPage/our_work_video_banner_image.png"
             alt="MMM Video Production at work"
-            width={5008}
-            height={1996}
-            priority={true}
+            width={4320}
+            height={1584}
+            priority
           />
         </div>
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
@@ -51,8 +51,9 @@ export default function Page() {
         </div>
         <div className="md:text-lg flex justify-center items-center mt-6 mb-6">
           <p className="text-center text-balance w-10/12 p-2">
-            From corporate, education, medical, or nonprofit videos, to livestreaming, drone work, and photography, MMM is your
-            partner through every step of the process. Check out work below and
+            From corporate, education, medical, or nonprofit videos, to
+            livestreaming, drone work, and photography, MMM is your partner
+            through every step of the process. Check out work below and
             <Link href="/contact">
               {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">

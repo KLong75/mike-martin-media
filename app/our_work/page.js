@@ -31,7 +31,7 @@ export default function Page() {
             alt="MMM Video Production at work"
             width={5008}
             height={1996}
-            priority={true}
+            priority
           />
         </div>
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
