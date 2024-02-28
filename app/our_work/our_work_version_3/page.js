@@ -102,7 +102,7 @@ export default function Page() {
         <section id="our-work-video-section" className="md:hidden mt-12 mb-12 md:mb-20">
           <div>
             <Link href="/our_work/mmm-video">
-              <div className="flex flex-col justify-center items-center hover:transform hover:scale-110 transition-transform">
+              <div className="flex flex-col justify-center items-center hover:transform hover:scale-105 transition-transform">
                 <div>
                   <FaVideo size={36} />
                 </div>

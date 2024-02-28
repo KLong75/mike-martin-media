@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function MMMInstaLogo() {
   return (
-    <div className="flex justify-center items-center w-full hover:transform hover:scale-110 transition-transform mb-4">
+    <div className="flex justify-center items-center w-full hover:transform hover:scale-105 transition-transform mb-4">
       <div className="flex flex-col items-center mb-2 ">
       <a href="https://www.instagram.com/mikemartinmedia/" target="_blank" rel="noopener noreferrer">
         <div className="flex justify-center items-center mt-6 mb-4 md:mb-8">

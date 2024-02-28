@@ -14,7 +14,7 @@ export default function WorkCategorySection({
 
   return (
     <>
-    <div className="flex flex-col justify-center items-center hover:transform hover:scale-110 transition-transform">
+    <div className="flex flex-col justify-center items-center hover:transform hover:scale-105 transition-transform">
       <div>
         {React.cloneElement(categoryIcon, { size: iconSize })}
       </div>

@@ -29,7 +29,7 @@ export default function ContactInfo({ m_src }) {
               rel="noopener noreferrer"
               aria-label="call Mike Martin Media"
               className="mt-">
-              <div className="flex flex-col items-center hover:transform hover:scale-110 transition-transform">
+              <div className="flex flex-col items-center hover:transform hover:scale-105 transition-transform">
                 {/* <IconLink
                 href="tel:636-212-0978"
                 icon={<FaPhone size={24} />}
@@ -49,7 +49,7 @@ export default function ContactInfo({ m_src }) {
               rel="noopener noreferrer"
               aria-label="link to Mike Martin Media on Google Maps"
               className="mt-">
-              <div className="flex flex-col items-center  hover:transform hover:scale-110 transition-transform">
+              <div className="flex flex-col items-center  hover:transform hover:scale-105 transition-transform">
               
                 <FaLocationDot size={24} />
 
@@ -70,7 +70,7 @@ export default function ContactInfo({ m_src }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="email Mike Martin Media">
-              <div className="flex flex-col items-center  hover:transform hover:scale-110 transition-transform">
+              <div className="flex flex-col items-center  hover:transform hover:scale-105 transition-transform">
                 <FaEnvelope size={24} />
                 <span>mike@mikemartinmedia.com</span>
               </div>
@@ -85,7 +85,7 @@ export default function ContactInfo({ m_src }) {
 
 {
   /* <div>
-          <div className="mt-4 mb-4 hover:transform hover:scale-110 hover:font-black focus:transform focus:scale-110">
+          <div className="mt-4 mb-4 hover:transform hover:scale-105 hover:font-black focus:transform focus:scale-105">
             <a
               href="https://www.google.com/maps/place/Mike+Martin+Media,+LLC/@38.6382665,-90.2298992,17z/data=!3m1!4b1!4m6!3m5!1s0x87d8c6735ac822fb:0x32eff35f341c030b!8m2!3d38.6382623!4d-90.2273243!16s%2Fg%2F11b6c9h53l?entry=ttu"
               target="_blank"

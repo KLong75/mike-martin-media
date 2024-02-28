@@ -49,7 +49,7 @@ const InstagramWidget = () => {
           href="https://www.instagram.com/explore/tags/mmmmidtown/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:transform hover:scale-110 transition-transform hover:cursor-pointer mt-2">
+          className="hover:transform hover:scale-105 transition-transform hover:cursor-pointer mt-2">
           <span className="text-center text-lg font-bold ml-3 ">
             #mmmidtown
           </span>

@@ -9,7 +9,7 @@ export default function LivestreamGallery() {
       {livestreamData.map((stream) => (
         <div
           key={stream.client}
-          className="text-white w-full h-auto hover:transform hover:scale-110 hover:z-40 hover:text-black transition-transform">
+          className="text-white w-full h-auto hover:transform hover:scale-105 hover:z-40 hover:text-black transition-transform">
           <ClientVideoFrame
             src={stream.src}
             client={stream.client.toUpperCase()}

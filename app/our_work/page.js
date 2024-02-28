@@ -54,7 +54,7 @@ export default function Page() {
         </div>
         <div className="mb-6 relative ">
           <Link href="/our_work/mmm-video">
-            <div className="flex flex-col justify-center items-center  absolute top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white hover:transform hover:scale-125 transition-transform">
+            <div className="flex flex-col justify-center items-center  absolute top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white hover:transform hover:scale-105 transition-transform">
               <div>
                 <FaVideo size={36} />
               </div>

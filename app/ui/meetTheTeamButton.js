@@ -8,7 +8,7 @@ export default function MeetTheTeamButton() {
     //   className="bg-black hover:transform hover:scale-110 transition-transform text-white font-bold py-2 px-4 rounded-full cursor-pointer"
     //   type="button">
       <Link href="/about_mmm/our_team">
-      <div className="flex justify-center items-center bg-black hover:transform hover:scale-110 transition-transform text-white font-bold py-2 px-4 rounded-full cursor-pointer">
+      <div className="flex justify-center items-center bg-black hover:transform hover:scale-105 transition-transform text-white font-bold py-2 px-4 rounded-full cursor-pointer">
         
       <div className="flex justify-center items-center w-14 h-auto mr-2 mb-1">
           <Image

@@ -76,7 +76,7 @@ export default function Nav() {
                 {navLinks.map((link) => (
                   <li
                     key={link.label}
-                    className={`font-bold text-center w-full p-2 hover:transform hover:scale-125 transition-transform ${
+                    className={`font-bold text-center w-full p-2 hover:transform hover:scale-105 transition-transform ${
                       pathname === link.href ? "hidden" : ""
                     }`}>
                     <Link href={link.href}>

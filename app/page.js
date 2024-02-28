@@ -67,7 +67,7 @@ export default function Home() {
             <p className="p-2 text-center text-balance" id="team-paragraph">
               Our{" "}
               <Link href="/about_mmm#mmm-team" className="">
-                <span className="font-bold hover:scale-110 transition-transform inline-block">
+                <span className="font-bold hover:scale-105 transition-transform inline-block">
                   team
                 </span>
               </Link>{" "}

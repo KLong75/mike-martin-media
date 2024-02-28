@@ -39,8 +39,8 @@ export default function VideoCategories({ onCategorySelected }) {
             onClick={() => handleCategorySelected(category.name)}
             className={`text-sm flex flex-col items-center justify-center relative transition-transform cursor-pointer m-3 ${
               selectedCategory === category.name
-                ? "font-bold scale:110"
-                : "text-black hover:transform hover:scale-110 hover:rotate-3 hover:font-medium"
+                ? "font-bold scale:105"
+                : "text-black hover:transform hover:scale-105 hover:rotate-3 hover:font-medium"
             }`}>
             {category.icon}
             <span className="mt-2">{category.name}</span>
