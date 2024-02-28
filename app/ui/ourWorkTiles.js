@@ -10,7 +10,7 @@ export default function OurWorkTiles() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-0 w-10/12 md:w-full">
         {ourWorkTilesData.map((tile) => (
           <Link href={tile.href} key={tile.title}>
-          <div className="text-white relative pb-8 md:pb-0 hover:transform md:hover:scale-110 hover:z-40 hover:text-black transition-transform">
+          <div className="text-white relative pb-8 md:pb-0 hover:transform md:hover:scale-105 hover:z-40 hover:text-black transition-transform">
             <div className="w-full h-auto ">
               <Image
                 priority

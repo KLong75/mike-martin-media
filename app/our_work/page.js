@@ -77,7 +77,7 @@ export default function Page() {
             one of our other services fits your needs.
           </p>
         </div>
-        <div className="grid grid cols-3 md:grid-cols-3 mb-6 mt-4 md:mt-12 md:mb-16">
+        <div className="grid grid cols-3 md:grid-cols-3 mb-6 mt-4 md:mt-12 md:mb-16 gap-8 md:gap-12">
           <div className="flex justify-center items-center mt-2 md:mt-0 order-1">
             <Link href="/our_work/drone">
               <WorkCategorySection
