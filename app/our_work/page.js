@@ -53,26 +53,26 @@ export default function Page() {
           <ContactUsButton />
         </div>
 
-        <section id="our-work-video-section" className="mt-12 mb-12 md:mb-20">
+        <section id="our-work-video-section" className="mt-12 mb-6 md:mb-20">
           <div>
             <Link href="/our_work/mmm-video">
               <div className="flex flex-col justify-center items-center hover:transform hover:scale-110 transition-transform">
                 <div>
                   <FaVideo size={36} />
                 </div>
-                <h3 className="text-4xl md:text-6xl font-bold underline">
+                <h3 className="text-3xl md:text-6xl font-bold underline">
                   VIDEO
                 </h3>
               </div>
             </Link>
           </div>
           <div className="md:text-2xl flex justify-center items-center ">
-          <p className="p-2 text-center text-balance w-10/12 md:w-1/2">
+          <p className="p-2 text-center text-balance w-10/12 md:w-1/2 font-semibold">
            Our video production is awesome beyond awesome and here in this text block we are going to tell you all about it using keywords that search engines like. lorem ipsum blah blah blah. 
           </p>
         </div>
         </section>
-        <div className="grid grid cols-3 md:grid-cols-3 mb-6 mt-4 md:mt-12 md:mb-20 gap-8">
+        <div className="grid grid cols-3 md:grid-cols-3 mb-6 mt-4 md:mt-12 md:mb-20 gap-6 md:gap-8">
           <div className="flex justify-center items-center mt-2 md:mt-0 order-1">
             <Link href="/our_work/drone">
               <WorkCategorySection
