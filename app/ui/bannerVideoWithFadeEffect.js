@@ -11,10 +11,10 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
   useEffect(() => {
     const hideLogoTimer = setTimeout(() => {
       setHideLogo(true);
-    }, 800);
+    }, 0);
     const videoFadeTimer = setTimeout(() => {
       setShowVideo(true);
-    }, 0);
+    }, 800);
     return () => {
       clearTimeout(hideLogoTimer);
       clearTimeout(videoFadeTimer);
@@ -23,7 +23,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
 
   return (
     <section className="grid grid-cols-1 gap-4 ">
-      <div className="relative flex justify-center">
+      <div className="relative flex justify-center bg-black">
         <div
           className={`banner-video-aspect-ratio-container w-full transition-all duration-8000 ease-in-out ${
             showVideo ? "opacity-100" : "opacity-0"
@@ -45,19 +45,19 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
         </div>
         {/* Logo */}
         <div
-          className={`mt-12 sm:mt-24 w-16  w-72 sm:w-100 md:w-144 lg:w-200 xl:w-400 2xl:w-600 justify-center items-center absolute transition-opacity duration-8000 ease-in-out ${
+          className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16  w-72 sm:w-100 md:w-144 lg:w-200  justify-center items-center absolute transition-opacity duration-6000 ease-in-out ${
             hideLogo ? "opacity-0" : "opacity-100"
           }`}>
           <Image
             priority
-            src="/branding/black_mmm_large_crop_resize.png"
-            width={1642}
-            height={560}
+            src="/branding/whiteMMMLogo-1200x488.png"
+            width={1200}
+            height={488}
             alt="Mike Martin Media logo"
           />
           <h1 className="text-center text-2xl hidden ">
               MIKE MARTIN MEDIA | VIDEO PRODUCTION AND CREATIVE SERVICES
-            </h1>
+          </h1>
         </div>
       </div>
       {/* <div className="-mt-4 lg:-mt-12">
