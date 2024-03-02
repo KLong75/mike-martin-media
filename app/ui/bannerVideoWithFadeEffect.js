@@ -1,9 +1,8 @@
 // import from next
 import Image from "next/image";
-import Head from "next/head";
 // import from react
 import { useState, useEffect } from "react";
-import MMMLineLogoBlack from "./mmmLineLogoBlack";
+
 
 export default function BannerVideoWithFadeEffect({ src, title }) {
   const [hideLogo, setHideLogo] = useState(false);
@@ -15,7 +14,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
     }, 800);
     const videoFadeTimer = setTimeout(() => {
       setShowVideo(true);
-    },0);
+    }, 0);
     return () => {
       clearTimeout(hideLogoTimer);
       clearTimeout(videoFadeTimer);
@@ -23,66 +22,47 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
   }, []);
 
   return (
-    <>
-      <Head>
-        <link
-          rel="preconnect"
-          href="https://player.vimeo.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preconnect"
-          href="https://i.vimeocdn.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preconnect"
-          href="https://f.vimeocdn.com"
-          crossOrigin="anonymous"
-        />
-      </Head>
-      <section className="grid grid-cols-1 gap-4 ">
-        <div className="relative flex justify-center">
-          <div
-            className={`banner-video-aspect-ratio-container w-full transition-all duration-8000 ease-in-out ${
-              showVideo ? "opacity-100" : "opacity-0"
-            }`}
-            style={{
-              paddingTop:
-                title === "MMM_Livestreaming_Video" ||
-                title === "MMM_Our_Work_Video"
-                  ? "42.2%"
-                  : title === "MMM_Photography_Slide_Show"
-                  ? "42.2%"
-                  : "56.25%",
-            }}>
-            <iframe
-              title={title}
-              src={src}
-              allow="autoplay; fullscreen; picture-in-picture"
-              className="absolute top-0 left-0 w-full h-full"></iframe>
-          </div>
-          {/* Logo */}
-          <div
-            className={`mt-12 sm:mt-24 w-16  w-72 sm:w-100 md:w-144 lg:w-200 xl:w-400 2xl:w-600 justify-center items-center absolute transition-opacity duration-8000 ease-in-out ${
-              hideLogo ? "opacity-0" : "opacity-100"
-            }`}>
-            <Image
-              priority
-              src="/branding/black_mmm_large_crop_resize.png"
-              width={1642}
-              height={560}
-              alt="Mike Martin Media logo"
-            />
-            {/* <h1 className="text-center text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mt-4">
-              MIKE MARTIN MEDIA
-            </h1> */}
-          </div>
+    <section className="grid grid-cols-1 gap-4 ">
+      <div className="relative flex justify-center">
+        <div
+          className={`banner-video-aspect-ratio-container w-full transition-all duration-8000 ease-in-out ${
+            showVideo ? "opacity-100" : "opacity-0"
+          }`}
+          style={{
+            paddingTop:
+              title === "MMM_Livestreaming_Video" ||
+              title === "MMM_Our_Work_Video"
+                ? "42.2%"
+                : title === "MMM_Photography_Slide_Show"
+                ? "42.2%"
+                : "56.25%",
+          }}>
+          <iframe
+            title={title}
+            src={src}
+            allow="autoplay; fullscreen; picture-in-picture"
+            className="absolute top-0 left-0 w-full h-full"></iframe>
         </div>
-        {/* <div className="-mt-4 lg:-mt-12">
+        {/* Logo */}
+        <div
+          className={`mt-12 sm:mt-24 w-16  w-72 sm:w-100 md:w-144 lg:w-200 xl:w-400 2xl:w-600 justify-center items-center absolute transition-opacity duration-8000 ease-in-out ${
+            hideLogo ? "opacity-0" : "opacity-100"
+          }`}>
+          <Image
+            priority
+            src="/branding/black_mmm_large_crop_resize.png"
+            width={1642}
+            height={560}
+            alt="Mike Martin Media logo"
+          />
+          <h1 className="text-center text-2xl hidden ">
+              MIKE MARTIN MEDIA | VIDEO PRODUCTION AND CREATIVE SERVICES
+            </h1>
+        </div>
+      </div>
+      {/* <div className="-mt-4 lg:-mt-12">
     <MMMLineLogoBlack />
     </div> */}
-      </section>
-    </>
+    </section>
   );
 }

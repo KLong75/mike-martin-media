@@ -5,13 +5,9 @@ import { weTextBlockData } from "../lib/data";
 // import components
 import WeTextBlock from "../ui/weTextBlock";
 import TeamGallery from "../ui/teamGallery";
-import BackToHomeLink from "../ui/backToHome";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
-import TextSegment from "../ui/textSegment";
 import InstagramWidget from "../ui/instagramWidget";
 import BannerImage from "../ui/bannerImage";
-import BannerVideo from "../ui/bannerVideo";
-import MmmSiteButton from "../ui/mmmSiteButton";
 import ContactUsButton from "../ui/contactUsButton";
 
 export const metadata = {
