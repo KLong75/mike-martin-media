@@ -3,7 +3,6 @@ import Image from "next/image";
 // import from react
 import { useState, useEffect } from "react";
 
-
 export default function BannerVideoWithFadeEffect({ src, title }) {
   const [hideLogo, setHideLogo] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
@@ -14,7 +13,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
     }, 1000);
     const videoFadeTimer = setTimeout(() => {
       setShowVideo(true);
-    }, 1000);
+    }, 800);
     return () => {
       clearTimeout(hideLogoTimer);
       clearTimeout(videoFadeTimer);
@@ -23,19 +22,13 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
 
   return (
     <section className="grid grid-cols-1 gap-4 ">
-      <div className="relative flex justify-center bg-black">
+     <div className={`relative flex justify-center transition-colors duration-8000 ease-in-out ${hideLogo ? 'bg-white' : 'bg-black'}`}>
         <div
-          className={`banner-video-aspect-ratio-container w-full transition-all duration-8000 ease-in-out ${
+          className={`banner-video-aspect-ratio-container w-full transition-all duration-6000 ease-in-out ${
             showVideo ? "opacity-100" : "opacity-0"
           }`}
           style={{
-            paddingTop:
-              title === "MMM_Livestreaming_Video" ||
-              title === "MMM_Our_Work_Video"
-                ? "42.2%"
-                : title === "MMM_Photography_Video"
-                ? "42.2%"
-                : "56.25%",
+            paddingTop: "56.25%",
           }}>
           <iframe
             title={title}
@@ -56,7 +49,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
             alt="Mike Martin Media logo"
           />
           <h1 className="text-center text-2xl hidden ">
-              MIKE MARTIN MEDIA | VIDEO PRODUCTION AND CREATIVE SERVICES
+            MIKE MARTIN MEDIA | VIDEO PRODUCTION AND CREATIVE SERVICES
           </h1>
         </div>
       </div>
