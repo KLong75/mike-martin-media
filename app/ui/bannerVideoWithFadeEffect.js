@@ -50,7 +50,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
           }`}>
           <Image
             priority
-            src="/branding/whiteMMMLogo-1200x488.png"
+            src="/branding/whiteMmmLogo-1200x488.png"
             width={1200}
             height={488}
             alt="Mike Martin Media logo"

@@ -61,7 +61,7 @@ export default function Home() {
             </p>
           </div>
           <div className="md:text-lg flex justify-center items-center mb-6">
-            <p className="p-4 text-center text-balance" id="team-paragraph">
+            <p className="p-2 text-center text-balance" id="team-paragraph">
               Our{" "}
               <Link href="/about_mmm#mmm-team" className="">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
