@@ -38,7 +38,7 @@ export default function Footer() {
           href="https://www.rhythmcodestudio.tech/"
           target="_blank"
           rel="noopener noreferrer">
-          <span className="text-xs">Website by Rhythm Code Studio</span>
+          <span className="text-xs underline">Website by Rhythm Code Studio</span>
         </a>
       </div>
       <div className="flex md:hidden justify-center items-center w-full">

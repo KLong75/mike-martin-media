@@ -25,7 +25,7 @@ export default function Page() {
     <main>
       <div className="-mt-1">
           <BannerImage
-            src="/images/aboutPage/"
+            src="/images/aboutPage/fountain-banner-img.jpg"
             alt="The Mike Martin Media Office"
             width={5008}
             height={1996}
