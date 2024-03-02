@@ -39,7 +39,7 @@ const navLinks = [
   },
   {
     href: "/contact",
-    label: "Contact Us",
+    label: "Contact",
   },
 ];
 
