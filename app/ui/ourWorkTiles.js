@@ -11,7 +11,7 @@ export default function OurWorkTiles() {
         {ourWorkTilesData.map((tile) => (
           <Link href={tile.href} key={tile.title}>
           <div className="text-white relative pb-8 md:pb-0 hover:transform md:hover:scale-105 hover:z-40 hover:text-black transition-transform">
-            <div className="w-full h-auto ">
+            <div className="w-full h-auto">
               <Image
                 priority
                 src={tile.image_src}

@@ -36,18 +36,18 @@ export default function PhotographyGallery({
 
   return (
     <>
-      <div className="grid grid-cols-1">
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center w-full h-auto">
+        <div className="grid grid-cols-1">
           <div
-            className="text-white relative justify-center items-center w-full h-auto p-8 md:p-0 md:hover:cursor-pointer md:hover:transform md:hover:scale-105 hover:z-40 md:transition-transform"
+            className="w-full h-auto text-white relative justify-center items-center md:hover:cursor-pointer md:hover:transform md:hover:scale-105 hover:z-40 md:transition-transform "
             onClick={handleCoverImageClick}>
             <Image
               id="gallery-cover-image"
               client={client}
               src={cover_img_src}
-              alt={client}
-              width={4366}
-              height={6546}
+              alt={`${client} photo gallery`}
+              width={width}
+              height={height}
               priority
             />
             <h3 className=" text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl lg:text-4xl font-bold">

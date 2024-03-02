@@ -51,13 +51,13 @@ export default function Page() {
           <ContactUsButton />
         </div>
       </section>
-      <div className="flex justify-center items-center w-full h-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 w-10/12 md:w-full">
-          <div className="text-white relative  transition-transform">
+      <div className="mt-6 mb-6 flex justify-center items-center w-full h-auto">
+        <div className=" grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0 w-10/12 md:w-full">
+          <div className="text-white relative transition-transform w-full h-auto">
             <PhotographyGallery
               client={"Catholic Charities of St. Louis"}
               cover_img_src={
-                "/images/photography-cover-images/catholic-charities-cover-img.png"
+                "/images/photography-cover-images/catholic-charities-437x655.png"
               }
               width={437}
               height={655}
@@ -66,19 +66,19 @@ export default function Page() {
           <div className="text-white relative">
             <PhotographyGallery
               client={"Prasino"}
-              cover_img_src={"/images/photography-cover-images/prasino-cover-img.png"}
-              width={750}
-              height={500}
+              cover_img_src={"/images/photography-cover-images/prasino-cover-img-437x655.png"}
+              width={437}
+              height={655}
             />
           </div>
           <div className="text-white relative">
             <PhotographyGallery
               client={"Club Fitness"}
               cover_img_src={
-                "/images/photography-cover-images/club-fitness-cover-img.png"
+                "/images/photography-cover-images/club-fitness-cover-img-437x655.png"
               }
-              width={374}
-              height={536}
+              width={437}
+              height={655}
             />
           </div>
         </div>

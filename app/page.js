@@ -52,7 +52,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-6 md:text-lg flex justify-center items-center">
-            <p className="p-4 text-center text-balance ">
+            <p className="p-2 text-center text-balance ">
               MMM specializes in video production and creative services for
               corporations, nonprofits, education, and medical institutions. Our
               mission is to help our clients promote their causes, inform their

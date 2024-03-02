@@ -376,7 +376,6 @@ export const videoData = [
 export const photographyWorkSampleData = [
   {
     client: "Catholic Charities of St. Louis",
-    thumbnail_src: "/images/photography-coverimages-catholic-charities.png",
     width: 437,
     height: 655,
     images: [
@@ -480,7 +479,6 @@ export const photographyWorkSampleData = [
   },
   {
     client: "Club Fitness",
-    thumbnail_src: "/images/photography-cover-images/club-fitness.jpg",
     width: 374,
     height: 536,
     images: [
@@ -528,7 +526,6 @@ export const photographyWorkSampleData = [
   },
   {
     client: "Prasino",
-    thumbnail_src: "/images/photographyWorkSamples/01_15percent.png",
     width: 5002,
     height: 3335,
     images: [
