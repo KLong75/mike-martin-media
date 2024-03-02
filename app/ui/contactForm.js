@@ -142,17 +142,18 @@ export default function ContactForm() {
   return (
     <div className="p-8 m-4 w-full">
       <div className="flex justify-center items-center mt-6 mb-2 md:mb-6">
-        <h3 className=" text-xl font-bold mr-1">Send us a</h3>
-        <div
+        
+        {/* <div
           className="flex justify-center items-center w-6 h-auto mb-1"
           style={{ marginRight: "-0.05rem", marginTop: ".2rem" }}>
           <ColorChangeM src="/branding/singleMBlackResizeSmall.png" />
         </div>
-        <h3 className="text-xl font-bold">essage</h3>
+        <h3 className="text-xl font-bold">essage</h3> */}
       </div>
       <form
         onSubmit={handleFormSubmit}
         className="p-8 shadow-2xl max-w-200 mx-auto relative">
+        <h3 className="-mt-6 mb-3 text-center text-xl font-bold">Send us a message</h3>
         <div className="flex flex-col justify-center">
           <label htmlFor="firstName">
             First Name*<span className="text-xs"> (required)</span>

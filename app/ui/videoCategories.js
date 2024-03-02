@@ -29,9 +29,9 @@ export default function VideoCategories({ onCategorySelected }) {
 
   return (
     <section>
-      <h3 className="text-lg font-bold text-center -mb-6">
+      <h2 className="text-lg font-bold text-center -mb-6">
         SELECT A CATEGORY:
-      </h3>
+      </h2>
       <ul className="flex flex-wrap justify-center gap-4 p-6 md:mb-4">
         {categoryOptions.map((category) => (
           <li
@@ -47,14 +47,16 @@ export default function VideoCategories({ onCategorySelected }) {
           </li>
         ))}
       </ul>
-      <div className="bg-black text-white text-2xl grid grid-cols-1 w-full h-24 md:h-28 text-center -mt-4">
-        <h4 className="font-bold text-xl mt-1 ">Currently Viewing:</h4>
-        <div className="flex  justify-center items-center ">
+      <div className="bg-black text-white text-xl md:text-2xl grid grid-cols-1 w-full h-28 md:h-32 text-center -mt-4">
+        <h3 className="font-bold  mt-2 ">Currently Viewing:</h3>
+        <div className="flex justify-center items-center ">
           {selectedCategoryObject && selectedCategoryObject.icon}
         </div>
+        <h4 className="font-bold  mb-2 ">
         {selectedCategory === "All Videos"
           ? selectedCategory
           : `${selectedCategory} Videos`}
+          </h4>
       </div>
     </section>
   );

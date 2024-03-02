@@ -77,7 +77,7 @@ export default function Nav() {
                   <li
                     key={link.label}
                     className={`font-bold text-center w-full p-2 hover:transform hover:scale-105 transition-transform ${
-                      pathname === link.href ? "hidden" : ""
+                      pathname === link.href ? "scale-110 text-gray-400" : ""
                     }`}>
                     <Link href={link.href}>
                       <div
@@ -111,15 +111,12 @@ export default function Nav() {
             <li
               key={link.label}
               className={`flex flex-col items-center justify-center  ${
-                pathname === link.href ? "hidden" : ""
+                pathname === link.href ? "scale-110 text-gray-400" : "hover:scale-125"
               }`}>
               <Link href={link.href}>
-                <div className="flex flex-col items-center justify-center cursor-pointer">
-                  {link.icon}
-                  <span className="text-lg lg:text-xl mt-2 hover:font-medium hover:transform hover:scale-125 transition-transform">
+                  <span className="text-lg lg:text-xl mt-2 hover:text-gray-400 hover:scale-110 hover:transform transition-transform cursor-pointer">
                     {link.label}
                   </span>
-                </div>
               </Link>
             </li>
           ))}

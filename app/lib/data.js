@@ -135,6 +135,12 @@ export const weTextBlockData = [
 
 export const videoData = [
   {
+    category: ["Drone"],
+    client: "Missouri Baptist Blues Drone",
+    thumbnail_src: "/images/video-thumbnails/drone/bluesDrone.jpg",
+    src: "https://player.vimeo.com/video/339585435?h=bc28655b80&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
+  },
+  {
     category: ["Corporate", "Drone"],
     client: "ART CO RECRUITMENT",
     thumbnail_src: "/images/video-thumbnails/corporate/artCoRecruitment.png",
@@ -189,7 +195,7 @@ export const videoData = [
     src: "https://player.vimeo.com/video/605026819?h=e686314ea0&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
   },
   {
-    category: ["Education"],
+    category: ["Education", "Drone"],
     client: "Eden Theological Seminary",
     thumbnail_src: "/images/video-thumbnails/education/edenTheological.png",
     src: "https://player.vimeo.com/video/829943828?h=c4be815d3e&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
@@ -365,12 +371,6 @@ export const videoData = [
      thumbnail_src: "/images/video-thumbnails/livestream/provident-gala.png",
      src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
    },
-   {
-    category: ["Drone"],
-    client: "Missouri Baptist Blues Drone",
-    thumbnail_src: "/images/video-thumbnails/drone/bluesDrone.jpg",
-    src: "https://player.vimeo.com/video/339585435?h=bc28655b80&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&muted=0&byline=0&portrait=0",
-  },
 ];
 
 export const photographyWorkSampleData = [

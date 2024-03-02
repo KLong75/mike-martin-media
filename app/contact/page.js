@@ -26,8 +26,8 @@ export default function Page() {
         <BackToHomeLink />
       </div> */}
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 ">
-        <h2 className="text-3xl md:text-4xl font-bold mr-2">CONTACT </h2>
-        <div className="flex justify-center items-center w-20 md:w-24 h-auto mb-1 ">
+        <h2 className="font-bold text-4xl md:text-6xl font-bold mr-2">CONTACT </h2>
+        <div className="flex justify-center items-center w-24 md:w-36 h-auto mb-1.5 md:mb-1 ">
           <Image
             src="/branding/mmm_logo_white.png"
             width={294}

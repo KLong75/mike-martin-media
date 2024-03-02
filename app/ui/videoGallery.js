@@ -24,7 +24,7 @@ export default function VideoGallery({ selectedCategory, excludedCategory }) {
         .map((video) => (
           <div
             key={video.client}
-            className="text-white w-full h-auto hover:transform md:hover:scale-105 hover:z-40 hover:text-black transition-transform">
+            className="text-white w-full h-auto ">
             <ClientVideoFrame
               src={video.src}
               client={video.client.toUpperCase()}

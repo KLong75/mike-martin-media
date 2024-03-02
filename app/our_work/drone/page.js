@@ -28,7 +28,7 @@ export default function Page() {
           DRONE
         </h1>
       </div>
-      <div className="mt-4 md:mb-12 hidden md:flex ">
+      <div className="mt-4 md:mb-6 hidden md:flex ">
         <BackToOurWorkLink />
       </div>
       <section>

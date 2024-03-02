@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'light-green': '#a4b555',
+        'dark-green': '#4d6710'
+      },  
       fontFamily: {
         sans: ['var(--font-dm-sans)', 'sans-serif'],
       },

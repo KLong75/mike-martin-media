@@ -10,7 +10,7 @@ export default function ContactUsButton() {
       <Link href="/contact">
       <div className="flex justify-center items-center">
         <span className="text-xl md:text-2xl">Contact</span>
-        <div className="flex justify-center items-center w-14 ml-2 h-auto mb-1">
+        <div className="flex justify-center items-center w-14 md:w-16 ml-2 h-auto" style={{marginBottom: '.2rem'}}>
           <Image
             src="/branding/mmm_logo_white.png"
             width={294}

@@ -57,7 +57,7 @@ export default function Page() {
             <PhotographyGallery
               client={"Catholic Charities of St. Louis"}
               cover_img_src={
-                "/images/photography-cover-images/catholic-charities.jpg"
+                "/images/photography-cover-images/catholic-charities-cover-img.png"
               }
               width={437}
               height={655}
@@ -66,7 +66,7 @@ export default function Page() {
           <div className="text-white relative">
             <PhotographyGallery
               client={"Prasino"}
-              cover_img_src={"/images/photography-cover-images/prasino.jpg"}
+              cover_img_src={"/images/photography-cover-images/prasino-cover-img.png"}
               width={750}
               height={500}
             />
@@ -75,7 +75,7 @@ export default function Page() {
             <PhotographyGallery
               client={"Club Fitness"}
               cover_img_src={
-                "/images/photography-cover-images/club-fitness.jpg"
+                "/images/photography-cover-images/club-fitness-cover-img.png"
               }
               width={374}
               height={536}
@@ -91,10 +91,10 @@ export default function Page() {
               Contact Us{" "}
             </span>{" "}
           </Link>
-          today to get started on your Video project. Video text with related
-          keywords telling people how awesome your video work is lorem ipsum
+          today to get started on your Photography project. Photography text with related
+          keywords telling people how awesome your photography work is lorem ipsum
           dolor sit amet, consectetur adipiscing elit. Nulla keywords about
-          video production.
+          photography.
         </p>
       </div>
       <div className="flex justify-center items-center p-2 mt-6 mb-6 md:mb-12">

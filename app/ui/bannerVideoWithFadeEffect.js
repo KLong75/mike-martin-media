@@ -64,7 +64,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
           </div>
           {/* Logo */}
           <div
-            className={`mt-12 sm:mt-24 lg:mt-28 xl:mt-32 2xl:mt-52 w-72 sm:w-100 md:w-144 lg:w-200 xl:w-400 2xl:w-600 justify-center items-center absolute transition-opacity duration-8000 ease-in-out ${
+            className={`mt-12 sm:mt-24 w-16  w-72 sm:w-100 md:w-144 lg:w-200 xl:w-400 2xl:w-600 justify-center items-center absolute transition-opacity duration-8000 ease-in-out ${
               hideLogo ? "opacity-0" : "opacity-100"
             }`}>
             <Image
@@ -74,9 +74,9 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
               height={560}
               alt="Mike Martin Media logo"
             />
-            <h1 className="text-center text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mt-4">
+            {/* <h1 className="text-center text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mt-4">
               MIKE MARTIN MEDIA
-            </h1>
+            </h1> */}
           </div>
         </div>
         {/* <div className="-mt-4 lg:-mt-12">
