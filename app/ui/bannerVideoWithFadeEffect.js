@@ -11,10 +11,10 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
   useEffect(() => {
     const hideLogoTimer = setTimeout(() => {
       setHideLogo(true);
-    }, 600);
+    }, 1000);
     const videoFadeTimer = setTimeout(() => {
       setShowVideo(true);
-    }, 600);
+    }, 1000);
     return () => {
       clearTimeout(hideLogoTimer);
       clearTimeout(videoFadeTimer);
@@ -25,7 +25,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
     <section className="grid grid-cols-1 gap-4 ">
       <div className="relative flex justify-center bg-black">
         <div
-          className={`banner-video-aspect-ratio-container w-full transition-all duration-6000 ease-in-out ${
+          className={`banner-video-aspect-ratio-container w-full transition-all duration-8000 ease-in-out ${
             showVideo ? "opacity-100" : "opacity-0"
           }`}
           style={{
@@ -45,7 +45,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
         </div>
         {/* Logo */}
         <div
-          className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 sm:w-100 md:w-144 lg:w-200  justify-center items-center absolute transition-opacity duration-6000 ease-in-out ${
+          className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 sm:w-100 md:w-144 lg:w-200  justify-center items-center absolute transition-opacity duration-8000 ease-in-out ${
             hideLogo ? "opacity-0" : "opacity-100"
           }`}>
           <Image
