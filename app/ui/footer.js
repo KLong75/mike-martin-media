@@ -34,12 +34,12 @@ export default function Footer() {
         <div>
           <span className="text-xs ">©2024 Mike Martin Media</span>
         </div>
-        {/* <a
-          href="https://kevinlong.dev"
+        <a
+          href="https://www.rhythmcodestudio.tech/"
           target="_blank"
-          rel="noopener noreferrer"> */}
+          rel="noopener noreferrer">
           <span className="text-xs">Website by Rhythm Code Studio</span>
-        {/* </a> */}
+        </a>
       </div>
       <div className="flex md:hidden justify-center items-center w-full">
         <Image
