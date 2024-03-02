@@ -22,7 +22,7 @@ export default function Page() {
   return (
     <>
       <main>
-        <div className="">
+        <div className="pb-20">
           <BannerImage
             src="/images/ourWorkPage/our_work_video_banner_image.png"
             alt="MMM Video Production at work"
@@ -31,7 +31,7 @@ export default function Page() {
             priority
           />
         </div>
-        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+        <div className="-mt-20 bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <h3 className="text-center font-bold text-4xl md:text-6xl">
             OUR WORK
           </h3>

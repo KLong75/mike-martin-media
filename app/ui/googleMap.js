@@ -5,7 +5,7 @@ export default function GoogleMap() {
         <div
           className="w-full banner-video-aspect-ratio-container"
           style={{
-            paddingTop: "56.25%",
+            paddingTop: "36%",
           }}>
           <iframe
             title="Mike Martin Media on Google Maps"

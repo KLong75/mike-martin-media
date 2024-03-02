@@ -19,13 +19,13 @@ export default function Page() {
     <main className="grid grid-cols-1 ">
         <BannerVideo
           src="https://player.vimeo.com/video/905365877?h=71828ac5c8&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-          title="MMM_Photography_Slide_Show"
+          title="MMM_Photography_Video"
         />
       <div className="mt-4 mb-4 flex md:hidden">
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 mb-6">
-        <h2 className="text-center font-bold text-3xl md:text-4xl">
+        <h2 className="text-center font-bold text-4xl md:text-6xl">
           PHOTOGRAPHY
         </h2>
       </div>

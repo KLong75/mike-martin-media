@@ -7,9 +7,6 @@ export default function BannerImage({ src, alt, width, height }) {
       <div className="relative flex justify-center">
         <div
           className="w-full banner-video-aspect-ratio-container"
-          // style={{
-          //   paddingTop: "56.25%",
-          // }}
           >
           <Image src={src} alt={alt} width={width} height={height} priority/>
         </div>

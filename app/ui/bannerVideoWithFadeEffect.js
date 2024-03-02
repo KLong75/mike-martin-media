@@ -33,7 +33,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
               title === "MMM_Livestreaming_Video" ||
               title === "MMM_Our_Work_Video"
                 ? "42.2%"
-                : title === "MMM_Photography_Slide_Show"
+                : title === "MMM_Photography_Video"
                 ? "42.2%"
                 : "56.25%",
           }}>
@@ -45,7 +45,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
         </div>
         {/* Logo */}
         <div
-          className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16  w-72 sm:w-100 md:w-144 lg:w-200  justify-center items-center absolute transition-opacity duration-6000 ease-in-out ${
+          className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16  w-72 sm:w-100 md:w-144 lg:w-200  justify-center items-center absolute transition-opacity duration-5500 ease-in-out ${
             hideLogo ? "opacity-0" : "opacity-100"
           }`}>
           <Image

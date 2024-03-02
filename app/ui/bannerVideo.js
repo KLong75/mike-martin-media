@@ -9,9 +9,9 @@ export default function BannerVideo({ src, title }) {
               title === "MMM_Livestreaming_Video" ||
               title === "MMM_Our_Work_Video"
                 ? "42.2%"
-                : title === "MMM_Photography_Slide_Show"
+                : title === "MMM_Photography_Video"
                 ? "42.2%"
-                : "56.25%",
+                : "56.25%"
           }}>
           <iframe
             title={title}
