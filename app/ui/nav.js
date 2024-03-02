@@ -27,7 +27,7 @@ const navLinks = [
   },
   {
     href: "/about_mmm",
-    label: "About MMM",
+    label: "About",
   },
   {
     href: "/our_work",
