@@ -35,7 +35,7 @@ export default function Page() {
         <div className="flex justify-center items-center">
           <p className="md:text-lg text-center text-balance p-2 md:w-10/12">
             Drone content is highly requested and incredibly powerful for a
-            project. We use drone videoography in most projects.
+            project. We use drone videography in most projects.
             <Link href="/contact">
               {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">
