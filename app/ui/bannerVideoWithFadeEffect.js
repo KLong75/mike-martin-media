@@ -13,7 +13,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
     }, 1000);
     const videoFadeTimer = setTimeout(() => {
       setShowVideo(true);
-    }, 500);
+    }, 800);
     return () => {
       clearTimeout(hideLogoTimer);
       clearTimeout(videoFadeTimer);
@@ -22,7 +22,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
 
   return (
     <section className="grid grid-cols-1 gap-4 ">
-     <div className={`relative flex justify-center transition-colors duration-10000 ease-in-out ${showVideo ? 'bg-white' : 'bg-black'}`}>
+     <div className={`relative flex justify-center transition-colors duration-16000 ease-in-out ${showVideo ? 'bg-white' : 'bg-black'}`}>
         <div
           className={`banner-video-aspect-ratio-container w-full transition-opacity duration-8000 ease-in-out ${
             showVideo ? "opacity-100" : "opacity-0"
