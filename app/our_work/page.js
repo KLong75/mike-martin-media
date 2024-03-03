@@ -68,7 +68,7 @@ export default function Page() {
           </div>
           <div className="md:text-2xl flex justify-center items-center ">
           <p className="p-2 text-center text-balance w-10/12 md:w-1/2">
-          Award winning, professional video production. Content creation, live recording, post-production editing, color grading, audio engineering, on screen graphics, visual effects, commercials, and so much more. 
+          Award winning, professional video production. Content creation, live recording, post-production editing, color grading, audio engineering, on screen graphics, green screen, visual effects, commercials, promotions, and so much more. 
           </p>
         </div>
         </section>
