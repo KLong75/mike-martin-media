@@ -22,8 +22,6 @@ import { BsBroadcast } from "react-icons/bs";
 // import { RiTeamFill } from "react-icons/ri";
 import { FaClapperboard } from "react-icons/fa6";
 
-
-
 export default function Home() {
   return (
     <main className="grid grid-cols-1 gap-4 ">
@@ -52,7 +50,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-6 md:text-lg flex justify-center items-center">
-            <p className="p-2 text-center text-balance ">
+            <p className="p-2 text-center text-balance w-10/12">
               MMM specializes in video production and creative services for
               corporations, nonprofits, education, and medical institutions. Our
               mission is to help our clients promote their causes, inform their
@@ -61,7 +59,7 @@ export default function Home() {
             </p>
           </div>
           <div className="md:text-lg flex justify-center items-center mb-6">
-            <p className="p-2 text-center text-balance" id="team-paragraph">
+            <p className="p-2 text-center text-balance w-10/12" id="team-paragraph">
               Our{" "}
               <Link href="/about_mmm#mmm-team" className="">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
@@ -69,14 +67,14 @@ export default function Home() {
                 </span>
               </Link>{" "}
               brings expertise from decades of combined experience in the
-              broadcast and production industries to create the quality content
-              that you are looking for. Get to know the team that you will be
-              working with at{" "}
-              <Link href="/contact">
+              broadcast and production industries to create the high quality,
+              professional content that you are looking for. Visit the{" "}
+              <Link href="/about_mmm">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
-                  About MMM.
+                  About
                 </span>
               </Link>{" "}
+              page to learn more.
             </p>
           </div>
           <div className="flex justify-center items-center pb-6 ">
@@ -102,18 +100,18 @@ export default function Home() {
               priority={true}
             />
           </div>
-          <div className="md:text-lg flex justify-center items-center">
+
+          <div className="text-xl md:text-2xl flex justify-center items-center md:mt-6">
             <p className="text-center text-balance p-2">
-              Like what you see?{" "}
               <Link href="/contact">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
                   Contact us
                 </span>
               </Link>{" "}
-              to get started on your next project today.
+              today to put our experience to work for you.
             </p>
           </div>
-          <div className="flex justify-center items-center mt-6">
+          <div className="flex justify-center items-center mt-6 ">
             <MmmSiteButton
               href="/contact"
               label="Contact"
@@ -130,30 +128,27 @@ export default function Home() {
           src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM_Our_Work_Video"
         />
-        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+        <div className="-mt-1 bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <h3 className="text-center font-bold text-3xl md:text-4xl">
             OUR WORK
           </h3>
         </div>
         <div className="md:text-lg flex justify-center items-center mt-6">
-          <p className="p-4 text-center text-balance" id="work-paragraph">
+          <p className="p-2 text-center text-balance w-10/12" id="work-paragraph">
             We take pride in every project. We partner with clients of all sizes
             to bring their ideas to life. From concept to conclusion, we write,
             shoot, edit, direct, produce, animate, hire talent, find locations,
-            and everything else needed for your production. From videos to
-            livestreams, to animations, to photography we have you covered.
-            Check out
+            and everything else needed for your production. Check out
             <Link href="/our_work">
               {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">
                 Our Work{" "}
               </span>
             </Link>{" "}
-            to view recent projects and contact us to get started on your next
-            project today.
+            and contact us to get started on your next project today.
           </p>
         </div>
-        <div className="flex justify-center items-center  mb-6 mt-6 w-full">
+        <div className="flex justify-center items-center mb-6 mt-6 w-full">
           <MmmSiteButtonTextOnly
             href="our_work"
             label="Our Work"
@@ -165,10 +160,14 @@ export default function Home() {
         {/* <div className="flex justify-center items-center mb-6 mt-6">
           <p>WE NEED AN IMAGE HERE</p>
         </div> */}
-        <div className="md:text-lg flex justify-center items-center">
-          <p className="p-2 text-center text-balance">
-            Whatever you need, we&apos;ve got you covered.{" "}
+        <div className="md:text-lg flex justify-center items-center md:mt-12">
+          <p className="p-2 text-center text-balance w-10/12">
+            We offer more than award winning video production. Our services also
+            include livestreaming, photography, FCC licensed drone videography, animation,
+            and graphic effects. Whatever your needs, we&apos;ve got you
+            covered.
             <Link href="/contact">
+              {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">
                 Contact us
               </span>
@@ -176,6 +175,7 @@ export default function Home() {
             now to get started on your next project.
           </p>
         </div>
+        
         <div className="flex justify-center items-center mt-6 mb-6">
           <MmmSiteButton
             href="/contact"
@@ -184,6 +184,11 @@ export default function Home() {
             textColor="text-white"
             imgSrc="/branding/mmm_logo_white.png"
           />
+        </div>
+        <div className="flex justify-center items-center mb-6 mt-6">
+          <p className="text-xl md:text-2xl">
+            
+          </p>
         </div>
         {/* <div className="w-full mt-4">
           <MMMLineLogoBlack />

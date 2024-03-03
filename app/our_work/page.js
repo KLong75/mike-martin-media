@@ -60,29 +60,29 @@ export default function Page() {
                 <div>
                   <FaVideo size={36} />
                 </div>
-                <h3 className="text-3xl md:text-6xl font-bold underline">
+                <h3 className="text-3xl md:text-6xl font-semibold underline">
                   VIDEO
                 </h3>
               </div>
             </Link>
           </div>
           <div className="md:text-2xl flex justify-center items-center ">
-          <p className="p-2 text-center text-balance w-10/12 md:w-1/2 font-semibold">
-           Our video production is awesome beyond awesome and here in this text block we are going to tell you all about it using keywords that search engines like. lorem ipsum blah blah blah. 
+          <p className="p-2 text-center text-balance w-10/12 md:w-1/2">
+          Award winning, professional video production. Content creation, live recording, post-production editing, color grading, audio engineering, on screen graphics, visual effects, commercials, and so much more. 
           </p>
         </div>
         </section>
         <div className="grid grid cols-3 md:grid-cols-3 mb-6 mt-4 md:mt-12 md:mb-20 gap-6 md:gap-8">
-          <div className="flex justify-center items-center mt-2 md:mt-0 order-1">
+          <div className="flex justify-center items-center mt-2 md:mt-0 order-1 md:h-52">
             <Link href="/our_work/drone">
               <WorkCategorySection
                 categoryName="DRONE"
                 categoryIcon={<TbDrone />}
-                categoryText="Going where we can't, our certified drone pilots capture the aerial shots of your dreams."
+                categoryText="FCC licensed drone pilots capture the shots of your dreams with aerial videography and photography."
               />
             </Link>
           </div>
-          <div className="flex justify-center items-center mt-2 md:mt-0 order-2">
+          <div className="flex justify-center items-center mt-2 md:mt-0 order-2 md:h-52">
             <Link href="/our_work/livestreaming">
               <WorkCategorySection
                 categoryName="LIVESTREAM"
@@ -91,12 +91,12 @@ export default function Page() {
               />
             </Link>
           </div>
-          <div className="flex justify-center items-center mt-2 md:mt-0 order-3">
+          <div className="flex justify-center items-center mt-2 md:mt-0 order-3 md:h-52">
             <Link href="/our_work/photography">
               <WorkCategorySection
                 categoryName="PHOTOGRAPHY"
                 categoryIcon={<FaCameraRetro />}
-                categoryText="Capture your event with easy to share candid photos, headshots, and group pictures."
+                categoryText="Easy to share candid photos, headshots, and group pictures. In studio or on location."
               />
             </Link>
           </div>

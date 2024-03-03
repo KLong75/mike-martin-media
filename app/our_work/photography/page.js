@@ -36,7 +36,7 @@ export default function Page() {
         <div className="md:text-lg flex justify-center items-center p-2">
           <p className=" md:text-lg text-center text-balance w-10/12  ">
             We offer a wide range of photography services. From headshots to
-            events, we can help you capture the moment. Check out our work below
+            events, in studio or on location, we can help you capture the moment. Check out our work below
             and then{" "}
             <Link href="/contact">
               {" "}
@@ -91,10 +91,7 @@ export default function Page() {
               Contact Us{" "}
             </span>{" "}
           </Link>
-          today to get started on your Photography project. Photography text with related
-          keywords telling people how awesome your photography work is lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Nulla keywords about
-          photography.
+          today to get started on your Photography project.
         </p>
       </div>
       <div className="flex justify-center items-center p-2 mt-6 mb-6 md:mb-12">

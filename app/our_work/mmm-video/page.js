@@ -36,9 +36,7 @@ export default function Page() {
       <section className="md:mt-6">
         <div className="md:text-lg flex justify-center items-center p-2 mb-6 md:mb-8">
           <p className="mt-2 text-center text-balance md:w-10/12 p-2">
-            Video text with related keywords telling people how awesome your
-            video work is lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Nulla keywords about video production.{" "}
+          Award winning, professional video production. Content creation, live recording, post-production editing, color grading, audio engineering, on screen graphics, visual effects, commercials, and so much more.{" "}
             <Link href="/contact">
               {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">

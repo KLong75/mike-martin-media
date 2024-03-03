@@ -10,7 +10,7 @@ import ContactUsButton from "@/app/ui/contactUsButton";
 export const metadata = {
   title: "Our Work | Drone Videography and Photography",
   description:
-    "Aerial footage can add a unique perspective to your project. Our drone services provide stunning visuals. Contact us today to see how our licensed drone pilots can take your project to the next level with Drone Videography and Photography Services.",
+    "Aerial footage can add a unique perspective to your project. Our drone services provide stunning visuals. Contact us today to see how our FCC licensed drone pilots can take your project to the next level with Drone Videography and Photography Services.",
 };
 
 export default function Page() {
@@ -46,7 +46,7 @@ export default function Page() {
                 Contact Us{" "}
               </span>{" "}
             </Link>
-            to see how our licensed drone pilots can take your video to the next level.
+            to see how our FCC licensed drone pilots can take your video to the next level.
           </p>
         </div>
         <div className="mt-4 mb-4 md:mb-8 flex justify-center">

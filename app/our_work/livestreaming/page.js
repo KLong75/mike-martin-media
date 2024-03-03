@@ -101,9 +101,7 @@ export default function Page() {
               Contact Us{" "}
             </span>{" "}
           </Link>
-          today to get started on your Livestreaming project. Livestreaming text
-          with related keywords telling people how awesome your livestream work
-          is lorem ipsum
+          today to get started on your Livestreaming project.
         </p>
       </div>
 
