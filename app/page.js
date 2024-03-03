@@ -2,25 +2,15 @@
 // import from next
 import Image from "next/image";
 import Link from "next/link";
-// import from react
-// import { useState, useEffect } from "react";
 // import components
-import ContactUsButton from "./ui/contactUsButton";
-import TextSegment from "./ui/textSegment";
 import BannerVideo from "./ui/bannerVideo";
-import MmmGood from "./ui/mmmGood";
 import MmmSiteButton from "./ui/mmmSiteButton";
 import MmmSiteButtonTextOnly from "./ui/mmmSiteButtonTextOnly";
-import WorkCategorySection from "./ui/workCategorySection";
 import MMMLineLogoBlack from "./ui/mmmLineLogoBlack";
 import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerImage from "./ui/bannerImage";
-// import Icons
-import { FaVideo, FaCameraRetro } from "react-icons/fa6";
-import { BsBroadcast } from "react-icons/bs";
-// import { RiTeamFill } from "react-icons/ri";
-import { FaClapperboard } from "react-icons/fa6";
+
 
 export default function Home() {
   return (
