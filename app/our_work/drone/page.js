@@ -42,7 +42,8 @@ export default function Page() {
                 Contact Us{" "}
               </span>{" "}
             </Link>
-            to see how our FCC licensed drone pilots can take your video to the next level.
+            to see how our FCC licensed drone pilots can take your video to the
+            next level.
           </p>
         </div>
         <div className="mt-4 mb-4 md:mb-8 flex justify-center">
@@ -58,8 +59,8 @@ export default function Page() {
               Contact Us{" "}
             </span>{" "}
           </Link>
-          today to see how FCC licensed drone videoegraphers can take your project to
-          the new heights.
+          today to see how our FCC licensed drone videographers can take your
+          project to new heights.
         </p>
       </div>
       <div className="flex justify-center items-center mb-24 mt-6">
