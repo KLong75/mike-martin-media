@@ -58,9 +58,8 @@ export default function Page() {
               Contact Us{" "}
             </span>{" "}
           </Link>
-          today to see how our licensed drone videoegraphers can take your project to
-          the next level. Drone text with related keywords telling people how
-          awesome your livestream work is lorem ipsum
+          today to see how FCC licensed drone videoegraphers can take your project to
+          the new heights.
         </p>
       </div>
       <div className="flex justify-center items-center mb-24 mt-6">
