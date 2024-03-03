@@ -1,3 +1,5 @@
+// import analytics
+import { Analytics } from '@vercel/analytics/react';
 // import components
 import Header from './ui/header'
 import Footer from './ui/footer'
@@ -30,6 +32,7 @@ export default function RootLayout({ children }) {
           {children}
           <ScrollToTopButton />
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
