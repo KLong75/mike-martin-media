@@ -19,7 +19,7 @@ export const metadata = {
     default: 'Mike Martin Media | Video Production and Creative Services',
   },
   description: 'Mike Martin Media specializes in video production and creative services for corporations, nonprofits, education, and medical institutions. Our mission is to help our clients promote their causes, inform their clients, and inspire with their stories. We deliver dynamic multi-media solutions. Our team brings decades of combined experience from the broadcast and production industries to create high quality content for your organization.',
-  metadataBase: new URL("https://mike-martin-media.vercel.app/"),
+  metadataBase: new URL("https://mikemartinmedia.com/"),
 }
 
 export default function RootLayout({ children }) {
