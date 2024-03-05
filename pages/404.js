@@ -9,7 +9,7 @@ export default function FourZeroFour() {
   }, [router]);
 
   return (
-    <div className='bg-black text-white'>
+    <div>
       404 - page not found
       Redirecting...
     </div>
