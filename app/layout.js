@@ -24,8 +24,13 @@ export const metadata = {
   metadataBase: new URL("https://mikemartinmedia.com/"),
   alternates: {
     canonical: "/",
+  },
+  verification: {
+    google: "An5ZltC5TJiquLvxw_Va-z7nL4lI8A_xBgeJVOQgToQ"
   }
 }
+
+{/* <meta name= content="An5ZltC5TJiquLvxw_Va-z7nL4lI8A_xBgeJVOQgToQ" /> */}
 
 export default function RootLayout({ children }) {
   return (
