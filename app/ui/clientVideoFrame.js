@@ -1,4 +1,6 @@
 "use client";
+// import from vercel
+import { track } from '@vercel/analytics';
 // import from next
 import Image from "next/image";
 // import from react
@@ -20,6 +22,7 @@ export default function ClientVideoFrame({
   const handleClick = () => {
     setImageVisible(false);
     setVideoWindowOpen(true);
+    track(`video view - ${client} `);
   }
 
   const handleDialogClose = () => {
