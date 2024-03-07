@@ -1,8 +1,10 @@
 "use client";
+// import from vercel
+import { track } from '@vercel/analytics';
+// import from react
 import { useState } from "react";
 // import components
 import SubmitButtonWithPlaneAnimation from "./submitButtonWithPlaneAnimation";
-import ColorChangeM from "./colorChangeM";
 import MMMLineLogoBlack from "./mmmLineLogoBlack";
 // import from utils
 import {
@@ -108,6 +110,7 @@ export default function ContactForm() {
           )
           .then(
             (result) => {
+              track("Contact form submission");
               console.log(result.text);
               setButtonSubmitted(true);
               console.log(
@@ -156,7 +159,7 @@ export default function ContactForm() {
         <h3 className="-mt-6 mb-3 text-center text-xl font-bold">Send us a message</h3>
         <div className="flex flex-col justify-center">
           <label htmlFor="firstName">
-            First Name*<span className="text-xs"> (required)</span>
+            First Name*<span className="text-xs">(required)</span>
           </label>
           <input
             autoComplete="given-name"

@@ -1,4 +1,6 @@
 "use client";
+// import from vercel
+import { track } from '@vercel/analytics';
 // import from react
 import { useState } from "react";
 // import from next
@@ -28,6 +30,7 @@ export default function PhotographyGallery({
 
   const handleCoverImageClick = () => {
     setPhotoGalleryOpen(true);
+    track(`photo gallery view - ${client} `);
   };
 
   const handleCloseButtonClicked = () => {
