@@ -59,10 +59,7 @@ export default function Page() {
               Contact Us{" "}
             </span>{" "}
           </Link>
-          today to get started on your Video project. Video text with related
-          keywords telling people how awesome your video work is lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Nulla keywords about
-          video production.
+          today to get started on your Video project.
         </p>
       </div>
       <div className="mt-2 mb-12 flex justify-center">
