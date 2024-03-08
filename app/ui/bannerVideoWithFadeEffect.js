@@ -44,9 +44,9 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
           }`}>
           <Image
             priority
-            src="/branding/whiteMmmLogo-981x399.png"
-            width={981}
-            height={399}
+            src="/branding/whiteMmmLogo-1200x488.png"
+            width={1200}
+            height={488}
             alt="Mike Martin Media logo"
           />
           <h1 className="text-center text-2xl hidden ">
