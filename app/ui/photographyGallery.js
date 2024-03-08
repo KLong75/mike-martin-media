@@ -30,7 +30,7 @@ export default function PhotographyGallery({
 
   const handleCoverImageClick = () => {
     setPhotoGalleryOpen(true);
-    track(`photo gallery view - ${client} `);
+    track(`photo gallery view - ${client}`);
   };
 
   const handleCloseButtonClicked = () => {
