@@ -83,7 +83,7 @@ export default function Home() {
           >
             <BannerImage
               id="blog-section-image"
-              src="/images/home_page/about_mmm_pic.jpg"
+              src="/images/home_page/about_mmm_pic_resize_jpg.jpg"
               alt="MMM at work"
               width={3242}
               height={2022}
