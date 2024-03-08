@@ -85,8 +85,8 @@ export default function Home() {
               id="blog-section-image"
               src="/images/home_page/about_mmm_pic_resize_jpg.jpg"
               alt="MMM at work"
-              width={3242}
-              height={2022}
+              width={1297}
+              height={809}
               priority={true}
             />
           </div>
