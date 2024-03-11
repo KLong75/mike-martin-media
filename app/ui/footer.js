@@ -1,4 +1,5 @@
-import Link from "next/link";
+// import from vercel
+import { track } from '@vercel/analytics';
 import Image from "next/image";
 // import components
 import SocialMediaLinks from "./socialMediaLinks";
@@ -37,7 +38,10 @@ export default function Footer() {
           href="https://www.rhythmcodestudio.tech/"
           target="_blank"
           rel="noopener noreferrer">
-          <span className="text-xs underline">Website by Rhythm Code Studio</span>
+           <span 
+            className="text-xs underline" onClick={() => track('rhythm code studio link clicked')}
+          >Website by Rhythm Code Studio
+          </span>
         </a>
       </div>
       <div className="flex md:hidden justify-center items-center w-full">
