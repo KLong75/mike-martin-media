@@ -10,7 +10,6 @@ import ContactInfo from "./contactInfo";
 export default function Footer() {
   return (
     <footer className=" bg-black text-white">
-      {/* <InstagramSlider /> */}
       <div className="grid grid-cols-1  justify-items-center">
         <div className=" justify-center items-center w-32 h-auto mt-2 -mb-12 md:-mb-20">
           <Image
