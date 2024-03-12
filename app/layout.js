@@ -1,5 +1,7 @@
 // import analytics
 import { Analytics } from '@vercel/analytics/react';
+// import PreloadResources from './preload-resources'
+import { PreloadResources } from './preload-resources'
 // import components
 import Header from './ui/header'
 import Footer from './ui/footer'
@@ -35,6 +37,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`overflow-x-hidden ${dm_sans.variable} font-sans`}>
+      <PreloadResources />
       <body className={`flex flex-col min-h-screen`}>
         <Header />
           {children}
