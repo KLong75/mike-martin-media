@@ -11,15 +11,13 @@ A fully responsive website for Mike Martin Media, a video production company in 
 ## Screenshots of Application
 
 ### Mobile View
-
+<p float="left>
 ![mmm-mobile-home-page](https://github.com/KLong75/mike-martin-media/assets/98487770/383fedce-daf6-4410-922f-909ee584a012)
-
 
 ![mmm_livestream_mobile](https://github.com/KLong75/mike-martin-media/assets/98487770/737396fa-a315-40d2-86a6-f9aef621f4b2)
 
-
 ![mmm-our-work-mobile](https://github.com/KLong75/mike-martin-media/assets/98487770/5229b612-5813-4f54-acbf-a49ab5ea2c9c)
-
+</p>
 
 
 ### Desktop View
