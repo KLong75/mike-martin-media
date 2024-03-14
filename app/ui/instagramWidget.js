@@ -20,7 +20,7 @@ const InstagramWidget = () => {
           <iframe
             title="Follow MMM on Instagram"
             scrolling="no"
-            src={process.env.NEXT_PUBLIC_LIGHTWIDGET_SRC}
+            src="https://cdn.lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html"
             className="lightwidget-widget overflow-hidden shadow-2xl -mt-2"
             style={{
               width: "100%",
