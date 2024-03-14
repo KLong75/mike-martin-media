@@ -12,8 +12,6 @@ A fully responsive website for Mike Martin Media, a video production company in 
 
 ### Mobile View
 
-
-
 ## Contact
 
 [kevin@rhythmcodestudio.tech](mailto:kevin@rhythmcodestudio.tech)
