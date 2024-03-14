@@ -6,7 +6,6 @@ import ContactInfo from "../ui/contactInfo";
 import SocialMediaLinks from "../ui/socialMediaLinks";
 import InstagramWidget from "../ui/instagramWidget";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
-import BackToHomeLink from "../ui/backToHome";
 import GoogleMap from "../ui/googleMap";
 
 
@@ -18,13 +17,9 @@ export const metadata = {
 export default function Page() {
   return (
     <main className=" flex-1">
-
       <div className="z-10">
         <GoogleMap/>
       </div>
-      {/* <div className="mt-2 mb-2 hidden md:block">
-        <BackToHomeLink />
-      </div> */}
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 ">
         <h2 className="font-bold text-4xl md:text-6xl font-bold mr-2">CONTACT </h2>
         <div className="flex justify-center items-center w-24 md:w-36 h-auto mb-1.5 md:mb-1 ">
@@ -38,9 +33,6 @@ export default function Page() {
           />
         </div>
       </div>
-      {/* <div className="mt-2 mb-2 md:hidden">
-        <BackToHomeLink />
-      </div> */}
       <div className="flex justify-center items-center -mt-20 md:mb-8 p-12">
         <ContactInfo />
       </div>
@@ -50,9 +42,6 @@ export default function Page() {
       <div className="flex justify-center items-center -mt-8">
         <ContactForm />
       </div>
-      {/* <div className="hidden pl-36 pr-36 md:block md:mb-16">
-        <GoogleMap />
-      </div> */}
       <div className="mb-12 md:-mb-16 lg:-mb-28 w-full h-auto ">
         <InstagramWidget />
       </div>
@@ -61,21 +50,4 @@ export default function Page() {
       </div>
     </main>
   );
-}
-
-{
-  /* <div className="flex justify-center items-center mt-6 -mb-6 p-2">
-          <div className="flex justify-center items-center w-8 md:w-10 h-auto mb-2 md:mb-1.5">
-            <ColorChangeM src="/branding/singleMBlack.png"/>
-          </div>
-          <h2 className="text-xl md:text-3xl font-bold mr-2 -ml-">ike</h2>
-          <div className="flex justify-center items-center w-8 md:w-10 h-auto mb-2 md:mb-1.5 ">
-            <ColorChangeM src="/branding/singleMBlack.png"/>
-          </div>
-          <h2 className="text-xl md:text-3xl font-bold mr-2 -ml-">artin</h2>
-          <div className="flex justify-center items-center w-8 md:w-10 h-auto mb-2 md:mb-1.5 ">
-            <ColorChangeM src="/branding/singleMBlack.png"/>
-          </div>
-          <h2 className="text-xl md:text-3xl font-bold mr-2">edia</h2>
-        </div> */
 }
