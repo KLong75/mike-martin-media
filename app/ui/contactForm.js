@@ -59,27 +59,22 @@ export default function ContactForm() {
     const isLastNameValid = validateName(lastName);
     const isMessageValid = validateMessage(message);
     if (!isEmailValid) {
-      console.log("Form validation failed");
       setEmailErrorMessage("Please enter a valid email address.");
       return;
     }
     if (!isFirstNameValid) {
-      console.log("Form validation failed");
       setFirstNameErrorMessage("Please enter a valid first name.");
       return;
     }
     if (!isLastNameValid) {
-      console.log("Form validation failed");
       setLastNameErrorMessage("Please enter a valid last name.");
       return;
     }
     if (!isPhoneValid) {
-      console.log("Form validation failed");
       setPhoneErrorMessage("Please enter a valid phone number.");
       return;
     }
     if (!isMessageValid) {
-      console.log("Form validation failed");
       setMessageErrorMessage("Please enter a message.");
       return;
     }
@@ -90,8 +85,6 @@ export default function ContactForm() {
       isLastNameValid &&
       isMessageValid
     ) {
-      console.log("Form validation passed");
-
       const emailTemplateParams = {
         first_name: firstName,
         last_name: lastName,
@@ -113,14 +106,6 @@ export default function ContactForm() {
               track("Contact form submission");
               console.log(result.text);
               setButtonSubmitted(true);
-              console.log(
-                "form submitted",
-                firstName,
-                lastName,
-                email,
-                phone,
-                message
-              );
               setFirstName("");
               setLastName("");
               setEmail("");
