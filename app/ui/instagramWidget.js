@@ -31,11 +31,11 @@ const InstagramWidget = () => {
       </div>
       <div className="flex justify-center items-center w-full -mt-6 sm:-mt-6 md:-mt-20 lg:-mt-28 xl:-mt-40 mb-6 sm:mb-28 md:mb-40">
         <a
-          href="https://www.instagram.com/explore/tags/mmmidtown/"
+          href={process.env.NEXT_PUBLIC_LIGHTWIDGET_SRC}
           target="_blank"
           rel="noopener noreferrer"
           className="hover:transform hover:scale-105 transition-transform hover:cursor-pointer mt-2">
-          <span className="text-center text-lg font-bold ml-3 ">
+          <span className="text-center text-lg md:text-xl lg:text-2xl font-bold ml-3 ">
             #mmmidtown
           </span>
         </a>

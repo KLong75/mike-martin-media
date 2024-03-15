@@ -133,8 +133,6 @@ export default function ContactForm() {
             }
           );
       } catch (error) {
-        console.log("error text", error.text);
-        console.log(deliveryErrorMessage);
         setDeliveryErrorMessage(
           "There was an error delivering your message. Please click to email us at mmmcontact@mikemartinmedia.com. We apologize for the inconvenience."
         );
@@ -144,15 +142,6 @@ export default function ContactForm() {
 
   return (
     <div className="p-8 m-4 w-full">
-      <div className="flex justify-center items-center mt-6 mb-2 md:mb-6">
-        
-        {/* <div
-          className="flex justify-center items-center w-6 h-auto mb-1"
-          style={{ marginRight: "-0.05rem", marginTop: ".2rem" }}>
-          <ColorChangeM src="/branding/singleMBlackResizeSmall.png" />
-        </div>
-        <h3 className="text-xl font-bold">essage</h3> */}
-      </div>
       <form
         onSubmit={handleFormSubmit}
         className="p-8 shadow-2xl max-w-200 mx-auto relative">
