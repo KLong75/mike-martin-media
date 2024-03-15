@@ -9,7 +9,7 @@ const InstagramWidget = () => {
   return (
     <>
       <Script
-        src="https://cdn.lightwidget.com/widgets/lightwidget.js"
+        src={process.env.NEXT_PUBLIC_LIGHTWIDGET_SCRIPT_SRC}
         strategy="lazyOnload"
       />
       <div className="flex justify-center items-center w-full lg:-mt-36 z-30 ">
