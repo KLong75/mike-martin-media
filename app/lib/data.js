@@ -1,19 +1,4 @@
 export const ourWorkTilesData = [
-  // {
-  //   title: "Medical",
-  //   image_src: "/images/ourWorkTileImages/medical.jpg",
-  //   href: "/our_work/medical_videos",
-  // },
-  // {
-  //   title: "Education",
-  //   image_src: "/images/ourWorkTileImages/education.jpg",
-  //   href: "/our_work/education_videos",
-  // },
-  // {
-  //   title: "Corporate",
-  //   image_src: "/images/ourWorkTileImages/corporate.jpg",
-  //   href: "/our_work/corporate_content",
-  // },
   {
     title: "Video",
     image_src: "https://placehold.co/960x540/png?text=Video+Cover+Image",
@@ -125,11 +110,11 @@ export const weTextBlockData = [
   },
   {
     headline: "WE INFORM.",
-    text: "From scripted narratives to testimonial-driven spots, webinars to customer education, we give your message the medium it needs to reach your audience.",
+    text: "From scripted narratives to testimonial-driven spots, webinars to customer education, we give your message the medium it needs to reach your audience. We offer script writing, storyboard drafting, collaborative editing sessions and in-person or virtual meetings to broadcast your message.",
   },
   {
     headline: "WE INSPIRE.",
-    text: "We create the content that motivates your audience to smile or shed a tear, to reach out to loved ones or to make a change. Together, we can inspire them to take action. Your passion can become their passion, and we can make it happen.",
+    text: "We create the visual content that motivates your audience to smile or shed a tear, to reach out to loved ones or to make a change. Together, we can inspire them to take action. Your passion can become their passion, and we can make it happen.",
   },
 ];
 

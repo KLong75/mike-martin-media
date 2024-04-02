@@ -48,13 +48,19 @@ export default function Page() {
             id="about-text">
             For over 15 years, Mike Martin Media has combined the latest
             technology with the best in-house talent to create impactful videos
-            for organizations all over the United States and the world. We
-            partner with corporations, medical and educational institutions, and
-            nonprofit organizations to bring their vision to life. Our expertise
-            provides a seamless production experience that you probably
-            didn&apos;t know could exist. We produce the quality work and client
-            experience that you need along with a valuable partnership that will
-            bring growth and success.
+            for organizations all over the United States and the world.
+          </p>
+        </div>
+        <div className="flex justify-center items-center mb-6 md:mb-0">
+          <p
+            className="md:text-2xl text-center text-balance w-10/12"
+            id="about-text">
+            We partner with corporations, medical and educational institutions,
+            and nonprofit organizations to bring their vision to life. Our
+            expertise provides a seamless production experience that you
+            probably didn&apos;t know could exist. We provide the quality work
+            and client experience that you need along with a valuable
+            partnership that will bring growth and success.
           </p>
         </div>
         <div
@@ -108,9 +114,10 @@ export default function Page() {
         <div className="flex justify-center items-center mb-4 mt-2 md:mt-4 md:mb-8 ">
           <p className="md:text-lg p-6 text-center text-balance ">
             Our team brings decades of combined experience from the broadcast
-            and production industries. We are a tight-knit team, and we keep our
-            work in-house. We work hard, play hard, and spend a lot of time
-            laughing.
+            and production industries to produce your ideal content. We are a
+            tight-knit team and we keep our work in-house. We work hard, play
+            hard, and spend a lot of time laughing. Get to know our dream-team
+            and then contact us to create your next project together.
           </p>
         </div>
 

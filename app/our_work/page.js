@@ -38,15 +38,18 @@ export default function Page() {
         </div>
         <div className="md:text-lg flex justify-center items-center mt-6 md:mt-12 mb-6 md:mb-12">
           <p className="md:text-xl text-center text-balance w-10/12 p-2">
-          From corporate, education, medical, or nonprofit videos, to livestreaming, drone work, and photography, MMM is your
-            partner through every step of the process. Check out work below and
+            From corporate, educational, medical, and nonprofit videos, to
+            whatever category your content could fit into, we would love to
+            create with you. We utilize video, livestreaming, drone work, and
+            photography in all that we do. MMM is your partner for every step of
+            the process. Check out our work below and
             <Link href="/contact">
               {" "}
               <span className="font-bold hover:scale-110 transition-transform inline-block">
                 Contact Us{" "}
               </span>{" "}
             </Link>
-            to get started on your project today.
+            to get started on your next project.
           </p>
         </div>
         <div className="mt-2 mb-4 md:mb-20 flex justify-center">
@@ -67,10 +70,13 @@ export default function Page() {
             </Link>
           </div>
           <div className="md:text-2xl flex justify-center items-center ">
-          <p className="p-2 text-center text-balance w-10/12 md:w-1/2">
-          Award winning, professional video production. Content creation, live recording, post-production editing, color grading, audio engineering, on screen graphics, green screen, visual effects, commercials, promotions, and so much more. 
-          </p>
-        </div>
+            <p className="p-2 text-center text-balance w-10/12 md:w-1/2">
+              Award winning, professional video production. Content creation,
+              live recording, post-production editing, color grading, audio
+              engineering, on screen graphics, green screen, visual effects,
+              commercials, promotions, and so much more.
+            </p>
+          </div>
         </section>
         <div className="grid grid cols-3 md:grid-cols-3 mb-6 mt-4 md:mt-12 md:mb-20 gap-6 md:gap-8">
           <div className="flex justify-center items-center mt-2 md:mt-0 order-1 md:h-52">
@@ -101,14 +107,6 @@ export default function Page() {
             </Link>
           </div>
         </div>
-        
-        {/* <div className="mt-12 md:text-lg flex justify-center items-center ">
-          <p className="p-2 text-center text-balance w-10/12 md:w-1/2 ">
-            We have more than one way to get you what you need. Let us know if
-            one of our other services fits your needs. 
-          </p>
-        </div> */}
-
         <div className="flex justify-center items-center p-2 mt-12 mb-2">
           <div className="mt-2 flex justify-center">
             <ContactUsButton />

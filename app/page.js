@@ -11,7 +11,6 @@ import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerImage from "./ui/bannerImage";
 
-
 export default function Home() {
   return (
     <main className="grid grid-cols-1 gap-4 ">
@@ -41,30 +40,34 @@ export default function Home() {
           </div>
           <div className="mt-6 md:text-lg flex justify-center items-center">
             <p className="p-2 text-center text-balance w-10/12">
-              MMM specializes in video production and creative services for
+              MMM specializes in video production and media services for
               corporations, nonprofits, education, and medical institutions. Our
               mission is to help our clients promote their causes, inform their
-              clients, and inspire with their stories. We deliver dynamic
-              multi-media solutions.
+              audience, and inspire them with their stories. We deliver dynamic
+              multi-media solutions from our hometown of St. Louis, Missouri, to
+              all over the globe.
             </p>
           </div>
           <div className="md:text-lg flex justify-center items-center mb-6">
-            <p className="p-2 text-center text-balance w-10/12" id="team-paragraph">
+            <p
+              className="p-2 text-center text-balance w-10/12"
+              id="team-paragraph">
               Our{" "}
               <Link href="/about_mmm#mmm-team" className="">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
                   team
                 </span>
               </Link>{" "}
-              brings expertise from decades of combined experience in the
-              broadcast and production industries to create the high quality,
-              professional content that you are looking for. Visit the{" "}
+              brings decades of combined experience from the broadcast and video
+              production industries to produce your ideal content. We are a
+              tight-knit team and we keep our work in-house. We work hard, play
+              hard, and spend a lot of time laughing. Visit the{" "}
               <Link href="/about_mmm">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
                   About
                 </span>
               </Link>{" "}
-              page to learn more.
+              page to get to know our dream team.
             </p>
           </div>
           <div className="flex justify-center items-center pb-6 ">
@@ -98,7 +101,7 @@ export default function Home() {
                   Contact us
                 </span>
               </Link>{" "}
-              today to put our experience to work for you.
+              today to work on your project together tomorrow.
             </p>
           </div>
           <div className="flex justify-center items-center mt-6 ">
@@ -124,18 +127,21 @@ export default function Home() {
           </h3>
         </div>
         <div className="md:text-lg flex justify-center items-center mt-6">
-          <p className="p-2 text-center text-balance w-10/12" id="work-paragraph">
+          <p
+            className="p-2 text-center text-balance w-10/12"
+            id="work-paragraph">
             We take pride in every project. We partner with clients of all sizes
             to bring their ideas to life. From concept to conclusion, we write,
-            shoot, edit, direct, produce, animate, hire talent, find locations,
-            and everything else needed for your production. Check out
+            shoot, direct, produce, edit, animate, and everything else needed
+            for your production. We utilize cinematography, drones,
+            livestreaming and photography to their fullest potential. Check out
             <Link href="/our_work">
               {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">
                 Our Work{" "}
               </span>
             </Link>{" "}
-            and contact us to get started on your next project today.
+            and contact us to get started on your project today.
           </p>
         </div>
         <div className="flex justify-center items-center mb-6 mt-6 w-full">
@@ -147,15 +153,12 @@ export default function Home() {
             imgSrc="/branding/mmm_logo_white.png"
           />
         </div>
-        {/* <div className="flex justify-center items-center mb-6 mt-6">
-          <p>WE NEED AN IMAGE HERE</p>
-        </div> */}
         <div className="md:text-lg flex justify-center items-center md:mt-12">
           <p className="p-2 text-center text-balance w-10/12">
-            We offer more than award winning video production. Our services also
-            include livestreaming, photography, FCC licensed drone videography, animation,
-            and graphic effects. Whatever your needs, we&apos;ve got you
-            covered.
+            We offer more than award winning video production. Our services
+            include full event coverage, teleprompter support, photography, FCC
+            licensed drone videography, animation, and graphic effects. <br /> Whatever
+            you need, we&apos;ve got you covered.
             <Link href="/contact">
               {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">
@@ -165,7 +168,7 @@ export default function Home() {
             now to get started on your next project.
           </p>
         </div>
-        
+
         <div className="flex justify-center items-center mt-6 mb-6">
           <MmmSiteButton
             href="/contact"
@@ -176,9 +179,7 @@ export default function Home() {
           />
         </div>
         <div className="flex justify-center items-center mb-6 mt-6">
-          <p className="text-xl md:text-2xl">
-            
-          </p>
+          <p className="text-xl md:text-2xl"></p>
         </div>
         {/* <div className="w-full mt-4">
           <MMMLineLogoBlack />
@@ -196,9 +197,9 @@ export default function Home() {
         </div>
         <div className="md:text-lg flex justify-center items-center mt-6 mb-6">
           <p className="p-2 text-center text-balance w-10/12">
-            Go Beyond the lens and check out our latest adventures in the MMM
-            Blog as we film and travel across town across the country, and
-            around the world. Try to keep up, we move fast!
+            Still looking for more? Go beyond the lens and check out our latest
+            adventures in the MMM Blog as we film and travel across town, across
+            the country, and around the world. Try to keep up, we move fast!
           </p>
         </div>
         <div className="flex justify-center items-center mb-12">
