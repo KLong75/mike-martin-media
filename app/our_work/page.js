@@ -84,7 +84,7 @@ export default function Page() {
               <WorkCategorySection
                 categoryName="DRONE"
                 categoryIcon={<TbDrone />}
-                categoryText="FCC licensed drone pilots capture the shots of your dreams with aerial videography and photography."
+                categoryText="Going where we can't, our certified drone pilots capture the aerial shots of your dreams."
               />
             </Link>
           </div>
