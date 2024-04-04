@@ -9,7 +9,7 @@ import ScrollToTopButton from './ui/scrollToTop'
 // import styles
 import './globals.css'
 // import fonts
-import { DM_Sans } from "next/font/google";
+import { DM_Sans } from 'next/font/google';
 
 const dm_sans = DM_Sans({
   subsets: ["latin"],
