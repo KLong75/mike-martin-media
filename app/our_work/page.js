@@ -41,7 +41,7 @@ export default function Page() {
             {ourWorkPageText.our_work_text}
             <Link href="/contact">
               {" "}
-              <span className="font-bold hover:scale-110 transition-transform inline-block">
+              <span className="font-bold hover:scale-105 transition-transform inline-block">
                 Contact Us{" "}
               </span>{" "}
             </Link>
