@@ -31,10 +31,10 @@ export default function Page() {
           BEYOND THE LENS
         </h1>
       </div>
-      <div className="font-bold text-xl md:text-2xl text-center justify-center items-center p-4 text-balance">
+      <div className="font-bold text-xl md:text-2xl lg:text-3xl text-center justify-center items-center p-4 text-balance mb-4">
         <p>Venture beyond the lens and take a look behind the scenes.</p>
       </div>
-      <div className="-mt-8 font-semibold md:text-lg text-center justify-center items-center p-4 text-balance ">
+      <div className="-mt-8 font-semibold md:text-lg lg:text-xl text-center justify-center items-center p-4 text-balance">
         <p>
           Read up on our latest adventures as we film across town, across the
           country, and around the world.

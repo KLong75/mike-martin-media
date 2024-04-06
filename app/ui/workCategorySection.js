@@ -18,7 +18,7 @@ export default function WorkCategorySection({
         </span>
       </div>
       <div className="flex justify-center items-center ">
-        <p className="p-2 md:text-xl text-center text-balance w-10/12">
+        <p className="p-2 md:text-xl xl:text-2xl text-center text-balance w-10/12">
           {categoryText}
         </p>
       </div>

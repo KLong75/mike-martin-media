@@ -112,17 +112,11 @@ export default function Page() {
             eet The Team
           </h2>
         </div>
-
         <div className="flex justify-center items-center mb-4 mt-2 md:mt-4 md:mb-8 ">
-          <p className="md:text-lg p-6 text-center text-balance ">
-            Our team brings decades of combined experience from the broadcast
-            and production industries to produce your ideal content. We are a
-            tight-knit team and we keep our work in-house. We work hard, play
-            hard, and spend a lot of time laughing. Get to know our dream-team
-            and then contact us to create your next project together.
+          <p className="md:text-lg xl:text-2xl p-6 text-center text-balance xl:mt-6 xl:mb-6">
+            {aboutPageText.meet_the_team_text}
           </p>
         </div>
-
         <div className="-mt-14">
           <TeamGallery />
         </div>

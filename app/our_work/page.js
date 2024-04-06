@@ -1,7 +1,5 @@
 // import from next
 import Link from "next/link";
-import Image from "next/image";
-
 // import components
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BannerImage from "../ui/bannerImage";
@@ -12,7 +10,7 @@ import { TbDrone } from "react-icons/tb";
 import { FaVideo, FaCameraRetro } from "react-icons/fa6";
 import { BsBroadcast } from "react-icons/bs";
 // import text
-import { our_work_page_text } from "../lib/siteText";
+import { ourWorkPageText, our_work_page_text } from "../lib/siteText";
 
 export const metadata = {
   title: "Our Work",
@@ -39,19 +37,15 @@ export default function Page() {
           </h3>
         </div>
         <div className="md:text-lg flex justify-center items-center mt-6 md:mt-12 mb-6 md:mb-12">
-          <p className="md:text-xl text-center text-balance w-10/12 p-2">
-            From corporate, educational, medical, and nonprofit videos, to
-            whatever category your content could fit into, we would love to
-            create with you. We utilize video, livestreaming, drone work, and
-            photography in all that we do. MMM is your partner for every step of
-            the process. Check out our work below and
+          <p className="md:text-xl xl:text-2xl text-center text-balance w-10/12 p-2">
+            {ourWorkPageText.our_work_text}
             <Link href="/contact">
               {" "}
               <span className="font-bold hover:scale-110 transition-transform inline-block">
                 Contact Us{" "}
               </span>{" "}
             </Link>
-            to get started on your next project.
+            to get started on your project.
           </p>
         </div>
         <div className="mt-2 mb-4 md:mb-20 flex justify-center">
@@ -71,22 +65,19 @@ export default function Page() {
               </div>
             </Link>
           </div>
-          <div className="md:text-2xl flex justify-center items-center ">
+          <div className="md:text-2xl xl:text-3xl flex justify-center items-center mt-4">
             <p className="p-2 text-center text-balance w-10/12 md:w-1/2">
-              Award winning, professional video production. Content creation,
-              live recording, post-production editing, color grading, audio
-              engineering, on screen graphics, green screen, visual effects,
-              commercials, promotions, and so much more.
+              {ourWorkPageText. video_text_a}
             </p>
           </div>
         </section>
-        <div className="grid grid cols-3 md:grid-cols-3 mb-6 mt-4 md:mt-12 md:mb-20 gap-6 md:gap-8">
+        <div className="grid grid cols-3 md:grid-cols-3 mb-6 mt-4 md:mt-12 md:mb-20 gap-6 md:gap-8 ">
           <div className="flex justify-center items-center mt-2 md:mt-0 order-1 md:h-52">
             <Link href="/our_work/drone">
               <WorkCategorySection
                 categoryName="DRONE"
                 categoryIcon={<TbDrone />}
-                categoryText="Going where we can't, our certified drone pilots capture the aerial shots of your dreams."
+                categoryText={ourWorkPageText.drone_text}
               />
             </Link>
           </div>
@@ -95,7 +86,7 @@ export default function Page() {
               <WorkCategorySection
                 categoryName="LIVESTREAM"
                 categoryIcon={<BsBroadcast />}
-                categoryText="Livestream from anywhere to anywhere, amplifying your message like never before."
+                categoryText={ourWorkPageText.livestream_text}
               />
             </Link>
           </div>
@@ -104,7 +95,7 @@ export default function Page() {
               <WorkCategorySection
                 categoryName="PHOTOGRAPHY"
                 categoryIcon={<FaCameraRetro />}
-                categoryText="Easy to share candid photos, headshots, and group pictures. In studio or on location."
+                categoryText={ourWorkPageText.photo_text}
               />
             </Link>
           </div>
@@ -115,7 +106,7 @@ export default function Page() {
           </div>
         </div>
         <div className="flex justify-center items-center mb-12">
-          <h4 className="text-xl md:text-2xl font-bold">
+          <h4 className="text-xl md:text-2xl lg:text-4xl lg:mt-6 font-bold">
             Get started on your project today!
           </h4>
         </div>
