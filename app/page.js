@@ -10,6 +10,8 @@ import MMMLineLogoBlack from "./ui/mmmLineLogoBlack";
 import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerImage from "./ui/bannerImage";
+// import text
+import {homePageText} from "./lib/siteText";
 
 export default function Home() {
   return (
@@ -40,12 +42,7 @@ export default function Home() {
           </div>
           <div className="mt-6 md:text-lg flex justify-center items-center">
             <p className="p-2 text-center text-balance w-10/12">
-              MMM specializes in video production and media services for
-              corporations, nonprofits, education, and medical institutions. Our
-              mission is to help our clients promote their causes, inform their
-              audience, and inspire them with their stories. We deliver dynamic
-              multi-media solutions from our hometown of St. Louis, Missouri, to
-              all over the globe.
+              {homePageText.about_section_text_a}
             </p>
           </div>
           <div className="md:text-lg flex justify-center items-center mb-6">
@@ -58,10 +55,7 @@ export default function Home() {
                   team
                 </span>
               </Link>{" "}
-              brings decades of combined experience from the broadcast and video
-              production industries to produce your ideal content. We are a
-              tight-knit team and we keep our work in-house. We work hard, play
-              hard, and spend a lot of time laughing. Visit the{" "}
+              {homePageText. about_section_text_b}{" "}
               <Link href="/about_mmm">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
                   About
@@ -130,11 +124,7 @@ export default function Home() {
           <p
             className="p-2 text-center text-balance w-10/12"
             id="work-paragraph">
-            We take pride in every project. We partner with clients of all sizes
-            to bring their ideas to life. From concept to conclusion, we write,
-            shoot, direct, produce, edit, animate, and everything else needed
-            for your production. We utilize cinematography, drones,
-            livestreaming and photography to their fullest potential. Check out
+            {homePageText.our_work_section_text}
             <Link href="/our_work">
               {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">
@@ -155,10 +145,7 @@ export default function Home() {
         </div>
         <div className="md:text-lg flex justify-center items-center md:mt-12">
           <p className="p-2 text-center text-balance w-10/12">
-            We offer more than award winning video production. Our services
-            include full event coverage, teleprompter support, photography, FCC
-            licensed drone videography, animation, and graphic effects. <br /> Whatever
-            you need, we&apos;ve got you covered.
+            {homePageText.our_work_section_contact_text}
             <Link href="/contact">
               {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">
@@ -181,9 +168,6 @@ export default function Home() {
         <div className="flex justify-center items-center mb-6 mt-6">
           <p className="text-xl md:text-2xl"></p>
         </div>
-        {/* <div className="w-full mt-4">
-          <MMMLineLogoBlack />
-        </div> */}
       </section>
       <section className="mb-4" id="blog-section">
         <BannerVideo
@@ -197,9 +181,7 @@ export default function Home() {
         </div>
         <div className="md:text-lg flex justify-center items-center mt-6 mb-6">
           <p className="p-2 text-center text-balance w-10/12">
-            Still looking for more? Go beyond the lens and check out our latest
-            adventures in the MMM Blog as we film and travel across town, across
-            the country, and around the world. Try to keep up, we move fast!
+            {homePageText.blog_section_text}
           </p>
         </div>
         <div className="flex justify-center items-center mb-12">

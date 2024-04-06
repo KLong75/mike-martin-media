@@ -11,6 +11,8 @@ import WorkCategorySection from "../ui/workCategorySection";
 import { TbDrone } from "react-icons/tb";
 import { FaVideo, FaCameraRetro } from "react-icons/fa6";
 import { BsBroadcast } from "react-icons/bs";
+// import text
+import { our_work_page_text } from "../lib/siteText";
 
 export const metadata = {
   title: "Our Work",

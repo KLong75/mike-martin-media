@@ -9,6 +9,8 @@ import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import InstagramWidget from "../ui/instagramWidget";
 import BannerImage from "../ui/bannerImage";
 import ContactUsButton from "../ui/contactUsButton";
+// import text
+import { aboutPageText } from "../lib/siteText";
 
 export const metadata = {
   title: "About",
@@ -42,28 +44,7 @@ export default function Page() {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 p-6 md:mt-6">
-        <div className="flex justify-center items-center mb-6 md:mb-0">
-          <p
-            className="md:text-2xl text-center text-balance w-10/12"
-            id="about-text">
-            For over 15 years, Mike Martin Media has combined the latest
-            technology with the best in-house talent to create impactful videos
-            for organizations all over the United States and the world.
-          </p>
-        </div>
-        <div className="flex justify-center items-center mb-6 md:mb-0">
-          <p
-            className="md:text-2xl text-center text-balance w-10/12"
-            id="about-text">
-            We partner with corporations, medical and educational institutions,
-            and nonprofit organizations to bring their vision to life. Our
-            expertise provides a seamless production experience that you
-            probably didn&apos;t know could exist. We provide the quality work
-            and client experience that you need along with a valuable
-            partnership that will bring growth and success.
-          </p>
-        </div>
-        <div
+      <div
           className="flex justify-center items-center"
           id="blog-section-image-container"
           style={{ maxWidth: "" }} // Set the max-width to match desired value
@@ -78,6 +59,27 @@ export default function Page() {
               priority
             />
           </div>
+        </div>
+        <div className="grid grid-cols-1">
+        <div className="flex justify-center items-center mb-12 3xl:-mb-6">
+          <p
+            className="md:text-2xl xl:text-3xl text-center lg:text-left text-balance w-10/12"
+            id="about-text">
+            {aboutPageText.about_text_a}
+          </p>
+          {/* <p
+            className="md:text-2xl text-center text-balance w-10/12"
+            id="about-text">
+            {aboutPageText.about_text_b}
+          </p> */}
+        </div>
+        <div className="flex justify-center items-center mb-12 ">
+          <p
+            className="md:text-2xl xl:text-3xl text-center lg:text-left text-balance w-10/12"
+            id="about-text">
+            {aboutPageText.about_text_b}
+          </p>
+        </div>
         </div>
       </div>
       <div className="flex justify-center mt-4 mb-6">
