@@ -52,10 +52,12 @@ export default function ContactForm() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    // trim form data
+    const trimmedFirstName = firstName.trim();
     // validation  for inputs, handle errors accordingly
     const isEmailValid = validateEmail(email); 
     const isPhoneValid = validatePhone(phone);
-    const isFirstNameValid = validateName(firstName);
+    const isFirstNameValid = validateName(trimmedFirstName);
     const isLastNameValid = validateName(lastName);
     const isMessageValid = validateMessage(message);
     if (!isEmailValid) {
@@ -86,7 +88,7 @@ export default function ContactForm() {
       isMessageValid
     ) {
       const emailTemplateParams = {
-        first_name: firstName.trim(),
+        first_name: trimmedFirstName,
         last_name: lastName,
         email: email,
         phone_number: phone,
@@ -104,7 +106,6 @@ export default function ContactForm() {
           .then(
             (result) => {
               track("Contact form submission");
-              console.log(result.text);
               setButtonSubmitted(true);
               setFirstName("");
               setLastName("");
