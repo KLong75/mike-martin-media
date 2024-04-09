@@ -54,11 +54,14 @@ export default function ContactForm() {
     e.preventDefault();
     // trim form data
     const trimmedFirstName = firstName.trim();
+    const trimmedLastName = lastName.trim();
+    const trimmedEmail= email.trim();
+    const trimmedPhone = phone.trim();
     // validation  for inputs, handle errors accordingly
-    const isEmailValid = validateEmail(email); 
-    const isPhoneValid = validatePhone(phone);
+    const isEmailValid = validateEmail(trimmedEmail); 
+    const isPhoneValid = validatePhone(trimmedPhone);
     const isFirstNameValid = validateName(trimmedFirstName);
-    const isLastNameValid = validateName(lastName);
+    const isLastNameValid = validateName(trimmedLastName);
     const isMessageValid = validateMessage(message);
     if (!isEmailValid) {
       setEmailErrorMessage("Please enter a valid email address.");
@@ -89,9 +92,9 @@ export default function ContactForm() {
     ) {
       const emailTemplateParams = {
         first_name: trimmedFirstName,
-        last_name: lastName,
-        email: email,
-        phone_number: phone,
+        last_name: trimmedLastName,
+        email: trimmedEmail,
+        phone_number: trimmedPhone,
         message: message,
       };
 
