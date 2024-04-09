@@ -86,7 +86,7 @@ export default function ContactForm() {
       isMessageValid
     ) {
       const emailTemplateParams = {
-        first_name: firstName,
+        first_name: firstName.trim(),
         last_name: lastName,
         email: email,
         phone_number: phone,
@@ -138,7 +138,7 @@ export default function ContactForm() {
           <input
             autoComplete="given-name"
             placeholder="First Name"
-            onChange={(e) => handleChange(e.trim(), setFirstName)}
+            onChange={(e) => handleChange(e, setFirstName)}
             value={firstName}
             required
             type="text"
