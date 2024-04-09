@@ -138,7 +138,7 @@ export default function ContactForm() {
           <input
             autoComplete="given-name"
             placeholder="First Name"
-            onChange={(e) => handleChange(e.target.value.trim(), setFirstName)}
+            onChange={(e) => handleChange(e.trim(), setFirstName)}
             value={firstName}
             required
             type="text"
