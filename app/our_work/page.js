@@ -37,7 +37,7 @@ export default function Page() {
           </h3>
         </div>
         <div className="md:text-lg flex justify-center items-center mt-6 md:mt-12 mb-6 md:mb-12">
-          <p className="md:text-xl xl:text-2xl text-center text-balance w-10/12 p-2">
+          <p className="md:text-xl xl:text-2xl 2xl:text-3xl text-center text-balance w-10/12 p-2">
             {ourWorkPageText.our_work_text}
             <Link href="/contact">
               {" "}
@@ -65,7 +65,7 @@ export default function Page() {
               </div>
             </Link>
           </div>
-          <div className="md:text-2xl xl:text-3xl flex justify-center items-center mt-4">
+          <div className="md:text-xl xl:text-2xl 2xl:text-3xl flex justify-center items-center mt-4">
             <p className="p-2 text-center text-balance w-10/12 md:w-1/2">
               {ourWorkPageText. video_text_a}
             </p>
