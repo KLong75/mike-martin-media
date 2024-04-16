@@ -670,4 +670,18 @@ export const blogPosts = [
     closing_tag: "Until next time,",
     author: "Mike Martin",
   },
+  {
+    title: "",
+    post_date: "2024-4-15",
+    image_src: "/images/blogPics/spring2024.png",
+    image_width: 1140,
+    image_height: 904,
+    text: [
+      "We're only about four months into 2024, but the MMM team has been keeping busy during the short timeframe.  Our travels have taken us all over the US map, from California to New York and everywhere in between.  We even took a few trips just outside of our borders to Canada and Mexico.  The MMMileage won't be stopping anytime soon! This year we're looking forward to potential adventures in Germany and India.  More to come on those endeavors later this year!",
+      "More recently, the team took the opportunity to gather around outside to catch the eclipse on April 8th.  Some of us were even adventurous enough to climb up to the rooftop to get a better look of the dimming sky.  Although the view from St. Louis wasn't 100% full coverage of the sun, it was still a pretty spectacular 99.1% view.  It was also a great excuse for us to go outside and eat barbeque.  A big shout out to our videographer Adam for cooking up some stellar burgers.",
+      "Amongst other MMM shenanigans, the team has been participating in an internal sticker competition! With the arrival of some new St. Louis themed MMM stickers, the team has been challenged to place them all around the public (in acceptable locations of course).  If you spot any in the wild, let us know!",
+    ],
+    closing_tag: "Until next time,",
+    author: "Mary Scott",
+  },
 ];
