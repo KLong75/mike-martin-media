@@ -671,7 +671,7 @@ export const blogPosts = [
     author: "Mike Martin",
   },
   {
-    title: "",
+    title: "Out and About in 2024",
     post_date: "2024-4-15",
     image_src: "/images/blogPics/spring2024.png",
     image_width: 1140,
