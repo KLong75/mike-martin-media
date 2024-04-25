@@ -23,15 +23,13 @@ export default function Page() {
   return (
     <>
       <main>
-      
-        <div className="pb-20">
-        <BannerVideoWithFadeNoLogo
-        src="https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-        title="Our_Work_Page_Banner_Video"
-      />
-          
+        <div className="pb-20 ">
+          <BannerVideoWithFadeNoLogo
+            src="https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+            title="Our_Work_Page_Banner_Video"
+          />
         </div>
-        <div className="-mt-20 bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+        <div className="-mt-20 bg-black text-white flex justify-center items-center w-full md:h-24 lg:h-28">
           <h3 className="text-center font-bold text-4xl md:text-5xl">
             OUR WORK
           </h3>
@@ -67,7 +65,7 @@ export default function Page() {
           </div>
           <div className="md:text-xl xl:text-2xl 2xl:text-3xl flex justify-center items-center mt-4">
             <p className="p-2 text-center text-balance w-10/12 md:w-1/2">
-              {ourWorkPageText. video_text_a}
+              {ourWorkPageText.video_text_a}
             </p>
           </div>
         </section>
