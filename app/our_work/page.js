@@ -5,12 +5,13 @@ import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BannerImage from "../ui/bannerImage";
 import ContactUsButton from "../ui/contactUsButton";
 import WorkCategorySection from "../ui/workCategorySection";
+import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
 // import icons
 import { TbDrone } from "react-icons/tb";
 import { FaVideo, FaCameraRetro } from "react-icons/fa6";
 import { BsBroadcast } from "react-icons/bs";
 // import text
-import { ourWorkPageText, our_work_page_text } from "../lib/siteText";
+import { ourWorkPageText } from "../lib/siteText";
 
 export const metadata = {
   title: "Our Work",
@@ -22,17 +23,16 @@ export default function Page() {
   return (
     <>
       <main>
+      
         <div className="pb-20">
-          <BannerImage
-            src="/images/ourWorkPage/our_work_video_banner_image.png"
-            alt="MMM Video Production at work"
-            width={4320}
-            height={1584}
-            priority
-          />
+        <BannerVideoWithFadeNoLogo
+        src="https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        title="Our_Work_Page_Banner_Video"
+      />
+          
         </div>
         <div className="-mt-20 bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <h3 className="text-center font-bold text-4xl md:text-6xl">
+          <h3 className="text-center font-bold text-4xl md:text-5xl">
             OUR WORK
           </h3>
         </div>

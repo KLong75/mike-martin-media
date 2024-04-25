@@ -11,13 +11,13 @@ import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerImage from "./ui/bannerImage";
 // import text
-import {homePageText} from "./lib/siteText";
+import { homePageText } from "./lib/siteText";
 
 export default function Home() {
   return (
     <main className="grid grid-cols-1 gap-4 ">
       <BannerVideoWithFadeEffect
-        src="https://player.vimeo.com/video/911653748?h=25830c4348&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        src="https://player.vimeo.com/video/938224346?h=85055436bd&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="MMM_Home_Page_Banner_Video"
       />
       <section id="home-page-about-section">
@@ -55,7 +55,7 @@ export default function Home() {
                   team
                 </span>
               </Link>{" "}
-              {homePageText. about_section_text_b}{" "}
+              {homePageText.about_section_text_b}{" "}
               <Link href="/about_mmm">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
                   About
@@ -143,7 +143,21 @@ export default function Home() {
             imgSrc="/branding/mmm_logo_white.png"
           />
         </div>
-        <div className="md:text-lg flex justify-center items-center md:mt-12">
+        <div
+          className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4 md:mb-4"
+          id="blog-section-image-container"
+          style={{ maxWidth: "1200px" }} // Set the max-width to desired value
+        >
+          <BannerImage
+            id="blog-section-image"
+            src="/images/home_page/home-page-our-work-img.png"
+            alt="MMM at work"
+            width={2100}
+            height={900}
+            priority={true}
+          />
+        </div>
+        <div className="md:text-lg flex justify-center items-center mt-2 md:mt-6">
           <p className="p-2 text-center text-balance w-10/12">
             {homePageText.our_work_section_contact_text}
             <Link href="/contact">

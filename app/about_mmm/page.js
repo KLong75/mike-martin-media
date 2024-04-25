@@ -1,3 +1,4 @@
+
 // import from next
 import Image from "next/image";
 // import data
@@ -9,6 +10,7 @@ import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import InstagramWidget from "../ui/instagramWidget";
 import BannerImage from "../ui/bannerImage";
 import ContactUsButton from "../ui/contactUsButton";
+import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
 // import text
 import { aboutPageText } from "../lib/siteText";
 
@@ -22,13 +24,10 @@ export default function Page() {
   return (
     <main>
       <div className="-mt-1">
-        <BannerImage
-          src="/images/aboutPage/fountain-banner-img.jpg"
-          alt="The Mike Martin Media Office"
-          width={5008}
-          height={1996}
-          priority={true}
-        />
+      <BannerVideoWithFadeNoLogo
+        src="https://player.vimeo.com/video/933469700?h=110c6f60a1&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        title="About_Page_Banner_Video"
+      />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
         <h2 className="text-4xl md:text-5xl font-bold mr-2">ABOUT </h2>
@@ -43,7 +42,7 @@ export default function Page() {
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 p-6 md:mt-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 p-6 mt-2 md:mt-6">
       <div
           className="flex justify-center items-center"
           id="blog-section-image-container"
@@ -61,19 +60,14 @@ export default function Page() {
           </div>
         </div>
         <div className="grid grid-cols-1">
-        <div className="flex justify-center items-center mb-12 3xl:-mb-6">
+        <div className="flex justify-center items-center mt-6 mb-6 sm:mb-12 3xl:-mb-6">
           <p
             className="md:text-2xl xl:text-3xl text-center lg:text-left text-balance w-10/12"
             id="about-text">
             {aboutPageText.about_text_a}
           </p>
-          {/* <p
-            className="md:text-2xl text-center text-balance w-10/12"
-            id="about-text">
-            {aboutPageText.about_text_b}
-          </p> */}
         </div>
-        <div className="flex justify-center items-center mb-12 ">
+        <div className="flex justify-center items-center sm:mb-12 ">
           <p
             className="md:text-2xl xl:text-3xl text-center lg:text-left text-balance w-10/12"
             id="about-text">
