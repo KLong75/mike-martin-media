@@ -26,8 +26,8 @@ export default function Page() {
           priority={true}
         />
       </div>
-      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h1 className="text-center font-bold text-4xl md:text-5xl mt-2">
+      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
+        <h1 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl mt-2">
           BEYOND THE LENS
         </h1>
       </div>

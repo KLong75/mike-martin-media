@@ -22,13 +22,13 @@ export default function Home() {
       />
       <section id="home-page-about-section">
         <div className="flex flex-col justify-center items-center w-full h-auto -mt-4">
-          <div className="bg-black text-white w-full h-20 md:h-24 flex items-center justify-center">
+          <div className="bg-black text-white w-full h-20 md:h-24 lg:h-28 flex items-center justify-center">
             <div className="flex justify-center items-center p-1 ">
-              <h3 className="text-4xl md:text-5xl font-bold mr-2">
+              <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2">
                 YOUR IDEAS,
               </h3>
               <div
-                className="flex justify-center items-center w-10 md:w-14 h-auto mb-1 md:mb-2"
+                className="flex justify-center items-center w-10 md:w-14 lg:w-16 h-auto mb-1 md:mb-2 lg:mb-1"
                 style={{ marginRight: "-.1rem" }}>
                 <Image
                   src="/branding/singleMWhiteResizeSmall.png"
@@ -37,7 +37,7 @@ export default function Home() {
                   alt="company logo"
                 />
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold ml-1">ADE</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold ml-1">ADE</h2>
             </div>
           </div>
           <div className="mt-6 md:text-lg flex justify-center items-center">

@@ -29,8 +29,8 @@ export default function Page() {
             title="Our_Work_Page_Banner_Video"
           />
         </div>
-        <div className="-mt-20 bg-black text-white flex justify-center items-center w-full md:h-24 lg:h-28">
-          <h3 className="text-center font-bold text-4xl md:text-5xl">
+        <div className="-mt-20 bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
+          <h3 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl">
             OUR WORK
           </h3>
         </div>

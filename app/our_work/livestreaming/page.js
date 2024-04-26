@@ -23,8 +23,8 @@ export default function Page() {
       <div className="mt-4 mb-4 flex md:hidden">
         <BackToOurWorkLink />
       </div>
-      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-        <h2 className="text-center font-bold text-3xl md:text-4xl mt-2">
+      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
+        <h2 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl mt-2">
           LIVESTREAMING
         </h2>
       </div>
