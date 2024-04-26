@@ -1,7 +1,7 @@
 // import from next
 import Link from "next/link";
 // import components
-import BannerVideo from "../../ui/bannerVideo";
+import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
 import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 import VideoGallery from "@/app/ui/videoGallery";
@@ -16,7 +16,7 @@ export const metadata = {
 export default function Page() {
   return (
     <main>
-      <BannerVideo
+      <BannerVideoWithFadeNoLogo
         src="https://player.vimeo.com/video/914904466?h=4da6b8b38e&&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="MMM_Livestreaming_Video"
       />

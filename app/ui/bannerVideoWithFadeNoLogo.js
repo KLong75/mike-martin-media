@@ -1,4 +1,3 @@
-// import from next
 "use client";
 // import from react
 import { useState, useEffect } from "react";
@@ -20,17 +19,17 @@ export default function BannerVideoWithFadeNoLogo({ src, title }) {
     <section className="grid grid-cols-1">
      <div className={`relative flex justify-center transition-colors duration-18000 ease-in-out ${showVideo ? 'bg-black' : 'bg-black'}`}>
         <div
-          className={`banner-video-aspect-ratio-container w-full transition-opacity duration-3000 ease-in-out ${
+          className={`banner-video-aspect-ratio-container w-full transition-opacity duration-2000 ease-in-out ${
             showVideo ? "opacity-100" : "opacity-0"
           }`}
           style={{
             
-            paddingTop:
-              title === "About_Page_Banner_Video"
-                ? "42.19%"
-                :  title === "Our_Work_Page_Banner_Video"
-                ? "42.19%"  
-                : "" 
+            paddingTop: "42.19%"
+              // title === "About_Page_Banner_Video"
+              //   ? "42.19%"
+              //   :  title === "Our_Work_Page_Banner_Video"
+              //   ? "42.19%"  
+              //   : "" 
           }}>
           <iframe
             title={title}

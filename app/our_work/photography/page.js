@@ -2,10 +2,9 @@
 import Link from "next/link";
 // import components
 import ContactUsButton from "@/app/ui/contactUsButton";
-import BannerVideo from "../../ui/bannerVideo";
+import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
 import PhotographyGallery from "@/app/ui/photographyGallery";
 import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
-import TextSegment from "@/app/ui/textSegment";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 
 export const metadata = {
@@ -17,7 +16,7 @@ export const metadata = {
 export default function Page() {
   return (
     <main className="grid grid-cols-1 ">
-        <BannerVideo
+        <BannerVideoWithFadeNoLogo
           src="https://player.vimeo.com/video/905365877?h=71828ac5c8&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM_Photography_Video"
         />
