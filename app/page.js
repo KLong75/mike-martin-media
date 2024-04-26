@@ -76,7 +76,7 @@ export default function Home() {
           <div
             className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4"
             id="blog-section-image-container"
-            style={{ maxWidth: "2100px" }} // Set the max-width to desired value
+            style={{ maxWidth: "1800px" }} // Set the max-width to desired value
           >
             <BannerImage
               id="blog-section-image"
@@ -146,7 +146,7 @@ export default function Home() {
         <div
           className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4 md:mb-4"
           id="blog-section-image-container"
-          style={{ maxWidth: "2100px" }} // Set the max-width to desired value
+          style={{ maxWidth: "1800px" }} // Set the max-width to desired value
         >
           <BannerImage
             id="blog-section-image"

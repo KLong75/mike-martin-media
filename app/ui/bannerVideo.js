@@ -7,7 +7,8 @@ export default function BannerVideo({ src, title }) {
           style={{
             paddingTop:
               title === "MMM_Livestreaming_Video" ||
-              title === "Video_Page_Banner_Video"
+              title === "Video_Page_Banner_Video" ||
+              title === "MMM_Our_Work_Video"
                 ? "42.19%"
                 : title === "MMM_Photography_Video"
                 ? "42.19%"
