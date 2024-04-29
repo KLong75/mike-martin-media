@@ -94,13 +94,13 @@ export const teamData = [
       "Phillip is a dedicated videographer and editor hailing from Northwest Arkansas. He holds a BFA in Film from the Art Center College of Design in Pasadena, CA. Phillip built an impressive career in the heart of the film industry, serving as an assistant to Creative Executives at DreamWorks and a production assistant at Jerry Bruckheimer Films. In his spare time, Phillip practices as an expert in sleight-of-hand magic and indulges his love for science fiction. His wide range of experiences and passion for storytelling make Phillip a notable addition to the Mike Martin Media team.",
     image_src: "/images/team/phillipPersonPic.png",
   },
-  {
-    name: "Ian Ramprashad",
-    role: "Videographer / Editor",
-    about:
-      "Hailing from Virginia, Ian brings a decade of video production experience with him. From independent films to local news outlets, Ian has worked in a myriad of positions such as director, editor, and videographer to name a few. He uses his wide variety of experience to handle any type of project that comes along. From Pre to Post, Ian has a passion for all things storytelling.",
-    image_src: "/images/team/ianRamprashadPic.png",
-  },
+  // {
+  //   name: "Ian Ramprashad",
+  //   role: "Videographer / Editor",
+  //   about:
+  //     "Hailing from Virginia, Ian brings a decade of video production experience with him. From independent films to local news outlets, Ian has worked in a myriad of positions such as director, editor, and videographer to name a few. He uses his wide variety of experience to handle any type of project that comes along. From Pre to Post, Ian has a passion for all things storytelling.",
+  //   image_src: "/images/team/ianRamprashadPic.png",
+  // },
 ];
 
 export const weTextBlockData = [
