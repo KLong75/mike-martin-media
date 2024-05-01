@@ -88,13 +88,6 @@ export const teamData = [
     image_src: "/images/team/paulBakerPic.png",
   },
   {
-    name: "",
-    role: "",
-    about:
-      "",
-    image_src: "",
-  },
-  {
     name: "Phillip Person",
     role: "Videographer / Editor",
     about:

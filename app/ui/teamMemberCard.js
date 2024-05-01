@@ -2,13 +2,13 @@
 import Image from "next/image";
 
 export default function TeamMemberCard({ name, role, about, image_src }) {
-  if (image_src === "")
-    return (
-      <div>
+  // if (image_src === "")
+  //   return (
+  //     <div>
        
-      </div>
-    );
-  else {
+  //     </div>
+  //   );
+  // else {
     return (
       <div className="text-left shadow-2xl bg-white">
         <div className="flex justify-center p-8">
@@ -30,4 +30,4 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
       </div>
     );
   }
-}
+// }
