@@ -10,15 +10,6 @@ import { Dialog } from "@headlessui/react";
 // import icons
 import { MdDehaze } from "react-icons/md";
 import { HiX } from "react-icons/hi";
-// import { FaVideo } from "react-icons/fa6";
-// import { BsBroadcast } from "react-icons/bs";
-// import { FaCameraRetro } from "react-icons/fa6";
-// import { RiTeamFill } from "react-icons/ri";
-// import { RiBallPenFill } from "react-icons/ri";
-// import { FaEnvelope } from "react-icons/fa6";
-// import { FaClapperboard } from "react-icons/fa6";
-// import { FaFileVideo } from "react-icons/fa6";
-// import { RiFolderVideoFill } from "react-icons/ri";
 
 const navLinks = [
   {
@@ -95,7 +86,7 @@ export default function Nav() {
         </Dialog.Panel>
       </Dialog>
       {/* Mobile Menu Button*/}
-      <div className=" mt-2 -mr-2 md:hidden">
+      <div className=" mt-2 -mr-2 lg:hidden">
         <button onClick={openMenu}>
           <MdDehaze
             size={28}
@@ -105,7 +96,7 @@ export default function Nav() {
         </button>
       </div>
       {/* Desktop Nav Menu */}
-      <div className={`flex ${menuOpen ? "" : "hidden md:flex"} w-full`}>
+      <div className={`flex ${menuOpen ? "" : "hidden lg:flex"} w-full`}>
         <ul className="flex flex-row w-full space-x-10 justify-center gap-4">
           {navLinks.map((link) => (
             <li

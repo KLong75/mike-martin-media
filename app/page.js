@@ -185,7 +185,7 @@ export default function Home() {
       </section>
       <section className="mb-4" id="blog-section">
         <BannerVideo
-          src="https://player.vimeo.com/video/914955209?h=f60c29d735&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          src="https://player.vimeo.com/video/941626512?h=769940057f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Travel Video"
         />
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
