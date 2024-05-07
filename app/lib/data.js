@@ -199,7 +199,7 @@ export const videoData = [
   },
   {
     category: ["Education"],
-    client: "Murphy Education Training Example 4",
+    client: "St. Louis Children's Hospital - My Name Matters",
     thumbnail_src:
       "/images/video-thumbnails/education/educationExampleFour.png",
     src: "https://player.vimeo.com/video/823478141?h=2becf8c74f&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
