@@ -173,12 +173,12 @@ export const videoData = [
     thumbnail_src: "/images/video-thumbnails/corporate/fiveStarAuto.png",
     src: "https://player.vimeo.com/video/755292157?h=e641dc365b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
   },
-  // {
-  //   category: ["Corporate"],
-  //   client: "MCCARTHY SPOTLIGHT SOLAR",
-  //   thumbnail_src: "/images/video-thumbnails/corporate/spotlightSolar.png",
-  //   src: "https://player.vimeo.com/video/605026819?h=e686314ea0&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
-  // },
+  {
+    category: ["Corporate"],
+    client: "MCCARTHY SPOTLIGHT SOLAR",
+    thumbnail_src: "/images/video-thumbnails/corporate/spotlightSolar.png",
+    src: "https://player.vimeo.com/video/942506956?h=e686314ea0&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+  },
   {
     category: ["Education", "Drone"],
     client: "Eden Theological Seminary",
@@ -222,18 +222,18 @@ export const videoData = [
     thumbnail_src: "/images/video-thumbnails/education/washUOlin.png",
     src: "https://player.vimeo.com/video/820666152?h=e4f8f6c5f6&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
   },
-  // {
-  //   category: ["Education"],
-  //   client: "Holy Childhood of Jesus School",
-  //   thumbnail_src: "/images/video-thumbnails/education/holyChildJesus.png",
-  //   src: "https://player.vimeo.com/video/505369654?h=e907fbe200&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
-  // },
-  // {
-  //   category: ["Education"],
-  //   client: "Indiana University School of Medicine",
-  //   thumbnail_src: "/images/video-thumbnails/education/indianaSchoolMed.png",
-  //   src: "https://player.vimeo.com/video/348393021?h=556e4defec&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
-  // },
+  {
+    category: ["Education"],
+    client: "Holy Childhood of Jesus School",
+    thumbnail_src: "/images/video-thumbnails/education/holyChildJesus.png",
+    src: "https://player.vimeo.com/video/942507318?badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+  },
+  {
+    category: ["Education"],
+    client: "Indiana University School of Medicine",
+    thumbnail_src: "/images/video-thumbnails/education/indianaSchoolMed.png",
+    src: "https://player.vimeo.com/video/942507138?h=556e4defec&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+  },
   {
     category: ["Medical"],
     client: "SSM Cardinal Glennon Residency Recruitment",
@@ -271,17 +271,17 @@ export const videoData = [
     thumbnail_src: "/images/video-thumbnails/medical/stLouisChildrens.png",
     src: "https://player.vimeo.com/video/790947100?h=a476fa3e19&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
   },
-  // {
-  //   category: ["Medical"],
-  //   client: "Ascension Nashville, Join Today",
-  //   thumbnail_src: "/images/video-thumbnails/medical/pactNashville.png",
-  //   src: "https://player.vimeo.com/video/871994336?h=87fd41e833&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
-  // },
+  {
+    category: ["Medical"],
+    client: "Ascension Nashville, Join Today",
+    thumbnail_src: "/images/video-thumbnails/medical/pactNashville.png",
+    src: "https://player.vimeo.com/video/871994336?h=87fd41e833&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+  },
   {
     category: ["Medical"],
     client: "Ascension Healthcare, St. Vincent",
     thumbnail_src: "/images/video-thumbnails/medical/ascension.png",
-    src: "https://player.vimeo.com/video/350343774?h=5211a400f9&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+    src: "https://player.vimeo.com/video/942507749?h=5211a400f9&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
   },
   // {
   //   category: ["Medical"],
@@ -295,18 +295,18 @@ export const videoData = [
     thumbnail_src: "/images/video-thumbnails/nonprofit/bjhfGala.png",
     src: "https://player.vimeo.com/video/840455005?h=8cf0180342&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
   },
-  // {
-  //   category: ["Nonprofit"],
-  //   client: "Back to China",
-  //   thumbnail_src: "/images/video-thumbnails/nonprofit/backToChina.png",
-  //   src: "https://player.vimeo.com/video/322810665?h=ba57cdf21e&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
-  // },
-  // {
-  //   category: ["Nonprofit"],
-  //   client: "Ollie Hinkle Heart Foundation",
-  //   thumbnail_src: "/images/video-thumbnails/nonprofit/ollieHinkle.png",
-  //   src: "https://player.vimeo.com/video/240905519?h=b4cb94c097&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
-  // },
+  {
+    category: ["Nonprofit"],
+    client: "Back to China",
+    thumbnail_src: "/images/video-thumbnails/nonprofit/backToChina.png",
+    src: "https://player.vimeo.com/video/942508083?h=ba57cdf21e&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+  },
+  {
+    category: ["Nonprofit"],
+    client: "Ollie Hinkle Heart Foundation",
+    thumbnail_src: "/images/video-thumbnails/nonprofit/ollieHinkle.png",
+    src: "https://player.vimeo.com/video/812985606?h=a0fe83b76b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+  },
   {
     category: ["Nonprofit"],
     client: "Central Institute for the Deaf, Out Loud 2023",
