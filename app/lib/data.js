@@ -283,12 +283,12 @@ export const videoData = [
     thumbnail_src: "/images/video-thumbnails/medical/ascension.png",
     src: "https://player.vimeo.com/video/942507749?h=5211a400f9&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
   },
-  // {
-  //   category: ["Medical"],
-  //   client: "SSM Health, Demonstration and Evaluation",
-  //   thumbnail_src: "/images/video-thumbnails/medical/ssmHealth.png",
-  //   src: "https://player.vimeo.com/video/299104420?h=93e27c251b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
-  // },
+  {
+    category: ["Medical"],
+    client: "SSM Health, Demonstration and Evaluation",
+    thumbnail_src: "/images/video-thumbnails/medical/ssmHealth.png",
+    src: "https://player.vimeo.com/video/943675631?h=5cd1437083&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+  },
   {
     category: ["Nonprofit"],
     client: "Barnes Jewish Hospital Foundation Gala Highlight Video",
