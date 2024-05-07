@@ -16,7 +16,7 @@ export default function ContactInfo({ m_src }) {
               className="mt-">
               <div className="flex flex-col items-center hover:transform hover:scale-110 transition-transform">
                 <FaPhone size={24} />
-                <span>636-212-0978</span>
+                <span>636-212-4019</span>
               </div>
             </a>
             {/* <span className="text-xs">click/tap to call</span> */}
