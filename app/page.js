@@ -76,7 +76,7 @@ export default function Home() {
           <div
             className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4"
             id="blog-section-image-container"
-            style={{ maxWidth: "1800px" }} // Set the max-width to desired value
+            style={{ maxWidth: "1400px" }} // Set the max-width to desired value
           >
             <BannerImage
               id="blog-section-image"
@@ -146,14 +146,14 @@ export default function Home() {
         <div
           className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4 md:mb-4"
           id="blog-section-image-container"
-          style={{ maxWidth: "1800px" }} // Set the max-width to desired value
+          style={{ maxWidth: "1400px" }} // Set the max-width to desired value
         >
           <BannerImage
             id="blog-section-image"
-            src="/images/home_page/home-page-our-work-img.png"
+            src="/images/home_page/home-page-our-work.jpg"
             alt="MMM at work"
-            width={2100}
-            height={900}
+            width={3013}
+            height={1555}
             priority={true}
           />
         </div>
@@ -185,7 +185,7 @@ export default function Home() {
       </section>
       <section className="mb-4" id="blog-section">
         <BannerVideo
-          src="https://player.vimeo.com/video/941626512?h=769940057f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          src="https://player.vimeo.com/video/943724347?h=791f0d08b9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Travel Video"
         />
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">

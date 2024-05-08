@@ -571,14 +571,31 @@ export const photographyWorkSampleData = [
 
 export const blogPosts = [
   {
+    title: "Dayton, Ohio Adventure - From Video Shoots to Bar Arcades",
+    post_date: "2024-5-8",
+    image_src: "/images/blogPics/philMay.jpg",
+    image_width: 4032,
+    image_height: 2268,
+    text: [
+      "Hello and thank you for reading my blogpost! I'm Phillip, a passionate videographer and editor with Mike Martin Media. I recently embarked on a memorable work trip to Dayton, Ohio. Dayton greeted us with open arms. Although the weather was bitter cold, the welcome from our client and the town was warm. This wasn't just a business trip; it was the beginning of a story waiting to be told through our lenses.",
+      "Our client's vision for corporate videos aimed at recruitment came to life over a focused three-day shoot. They shared their insights, enhancing the promotional pieces we crafted. This collaborative spirit affirmed that impactful video storytelling is as much about the message as it is about the medium.",
+      "Dayton's bar arcades were a nostalgic playground where I unwound each night. Stepping into the vibrant buzz of arcade machines, I was instantly transported back to the carefree days of my youth. The mix of classic games and the social atmosphere provided the perfect counterbalance to the focus required for video editing services during the day.",
+      "Having the chance to edit the videos we shot in Dayton was an honor that deepened my connection to the project. Often, the task of video editing services is passed to other team members, but this time, I was the storyteller piecing together the narrative. This role allowed me to immerse myself fully in the material, ensuring that each frame, transition, and audio cue conveyed the desired emotion and message.",
+     "The pinnacle of any project is the moment you reveal the final product to the client. This project was no different. After intensive days of shooting, followed by meticulous video editing, the satisfaction of the client was paramount. Their response to our video production services was more than just an approval; it was an affirmation of the hard work and passion invested into their promotional videos",
+     "It's these successful outcomes that drive our commitment to excellence in every aspect of our video marketing services.",
+    ],
+    closing_tag: "Until next time,",
+    author: "Phillip Person",
+  },
+  {
     title: "Out and About in 2024",
     post_date: "2024-4-15",
     image_src: "/images/blogPics/spring2024.png",
     image_width: 1140,
     image_height: 904,
     text: [
-      "We're only about four months into 2024, but the MMM team has been keeping busy during the short timeframe.  Our travels have taken us all over the US map, from California to New York and everywhere in between.  We even took a few trips just outside of our borders to Canada and Mexico.  The MMMileage won't be stopping anytime soon! This year we're looking forward to potential adventures in Germany and India.  More to come on those endeavors later this year!",
-      "More recently, the team took the opportunity to gather around outside to catch the eclipse on April 8th.  Some of us were even adventurous enough to climb up to the rooftop to get a better look of the dimming sky.  Although the view from St. Louis wasn't 100% full coverage of the sun, it was still a pretty spectacular 99.1% view.  It was also a great excuse for us to go outside and eat barbeque.  A big shout out to our videographer Adam for cooking up some stellar burgers.",
+      "We're only about four months into 2024, but the MMM team has been keeping busy during the short timeframe.  Our travels have taken us all over the US map, from California to New York and everywhere in between.  We even took a few trips just outside of our borders to Canada and Mexico.  The MMMileage will not be stopping anytime soon! This year we are looking forward to potential adventures in Germany and India. More to come on those endeavors later this year!",
+      "More recently, the team took the opportunity to gather around outside to catch the eclipse on April 8th.  Some of us were even adventurous enough to climb up to the rooftop to get a better look of the dimming sky.  Although the view from St. Louis was not full 100% coverage of the sun, it was still a pretty spectacular 99.1% view.  It was also a great excuse for us to go outside and eat barbeque.  A big shout out to our videographer Adam for cooking up some stellar burgers.",
       "Amongst other MMM shenanigans, the team has been participating in an internal sticker competition! With the arrival of some new St. Louis themed MMM stickers, the team has been challenged to place them all around the public (in acceptable locations of course).  If you spot any in the wild, let us know!",
     ],
     closing_tag: "Until next time,",
