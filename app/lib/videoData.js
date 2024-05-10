@@ -126,13 +126,6 @@ export const videoData = [
     thumbnail_src: "/images/video-thumbnails/education/holyChildJesus.png",
     src: "https://player.vimeo.com/video/942507318?badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
   },
-  // {
-  //   id: 19,
-  //   category: ["Education"],
-  //   client: "Indiana University School of Medicine",
-  //   thumbnail_src: "/images/video-thumbnails/education/indianaSchoolMed.png",
-  //   src: "https://player.vimeo.com/video/942507138?h=556e4defec&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
-  // },
   {
     id: 19,
     category: ["Education"],
@@ -183,13 +176,6 @@ export const videoData = [
     thumbnail_src: "/images/video-thumbnails/medical/stLouisChildrens.png",
     src: "https://player.vimeo.com/video/790947100?h=a476fa3e19&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
   },
-  // {
-  //   id: 26,
-  //   category: ["Medical"],
-  //   client: "PROVIDENT BEHAVIORAL HEALTH LIVE GALA ",
-  //   thumbnail_src: "/images/video-thumbnails/medical/pbhLivestream.jpg",
-  //   src: "https://player.vimeo.com/video/676469724?h=86dadc6885&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
-  // },
   {
     id: 26,
     category: ["Medical"],
