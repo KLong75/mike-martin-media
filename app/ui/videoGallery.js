@@ -1,7 +1,7 @@
 // import components
 import ClientVideoFrame from "../ui/clientVideoFrame";
 // import data
-import { videoData } from "../lib/data";
+import { videoData } from "../lib/videoData";
 
 export default function VideoGallery({ selectedCategory, excludedCategory }) {
   return (
@@ -29,7 +29,7 @@ export default function VideoGallery({ selectedCategory, excludedCategory }) {
               src={video.src}
               client={video.client.toUpperCase()}
               category={video.category}
-              thumbnail_src={video.thumbnail_src}
+              image_src={video.image_src}
             />
           </div>
         ))}

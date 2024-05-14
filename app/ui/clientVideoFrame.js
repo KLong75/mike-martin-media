@@ -14,7 +14,7 @@ export default function ClientVideoFrame({
   src,
   client,
   category,
-  thumbnail_src,
+  image_src,
 }) {
   const [videoWindowOpen, setVideoWindowOpen] = useState(false);
   const [imageVisible, setImageVisible] = useState(true);
@@ -38,7 +38,7 @@ export default function ClientVideoFrame({
         <Image
           id="video-thumbnail"
           className={`cursor-pointer shadow-lg ${imageVisible ? '' : 'hidden'}`}
-          src={thumbnail_src}
+          src={image_src}
           height={540}
           width={960}
           alt="video thumbnail"
