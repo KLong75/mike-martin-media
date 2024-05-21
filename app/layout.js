@@ -32,8 +32,6 @@ export const metadata = {
   }
 }
 
-{/* <meta name= content="An5ZltC5TJiquLvxw_Va-z7nL4lI8A_xBgeJVOQgToQ" /> */}
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`overflow-x-hidden ${dm_sans.variable} font-sans`}>

@@ -1,11 +1,11 @@
 export const videoData = [
-  // {
-  //   id: 1,
-  //   category: ["Drone"],
-  //   client: "Missouri Baptist Blues Drone",
-  //   thumbnail_src: "/images/video-thumbnails/drone/bluesDrone.jpg",
-  //   src: "https://player.vimeo.com/video/339585435?h=bc28655b80&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
-  // },
+  {
+    id: 1,
+    category: ["Drone"],
+    client: "Missouri Baptist Blues Drone",
+    thumbnail_src: "/images/video-thumbnails/drone/video/thumbnails/drone/bluesDrone.jpg",
+    src: "https://player.vimeo.com/video/943728497?h=2a1e0843fa&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+  },
   {
     id: 2,
     category: ["Corporate", "Drone"],
