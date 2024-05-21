@@ -28,6 +28,7 @@ export default function VideoGallery({ selectedCategory, excludedCategory }) {
             <ClientVideoFrame
               src={video.src}
               client={video.client.toUpperCase()}
+              title={video.title.toUpperCase()}
               category={video.category}
               image_src={video.image_src}
             />

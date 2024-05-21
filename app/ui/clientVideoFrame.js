@@ -13,6 +13,7 @@ import { HiX } from "react-icons/hi";
 export default function ClientVideoFrame({
   src,
   client,
+  title,
   category,
   image_src,
 }) {
@@ -33,7 +34,7 @@ export default function ClientVideoFrame({
   return (
     <>
       <div
-        className="relative flex justify-center items-center w-full h-auto cursor-pointer p-4 md:p-0 hover:transform md:hover:scale-105 hover:z-40 transition-transform"
+        className="relative flex justify-center items-center w-full h-auto cursor-pointer p-4 md:p-0 hover:transform md:hover:scale-105 hover:z-40 transition-transform duration-300 ease-in-out"
         onClick={handleClick}>
         <Image
           id="video-thumbnail"
@@ -44,13 +45,22 @@ export default function ClientVideoFrame({
           alt="video thumbnail"
         />
         <span
-          className={`absolute font-bold text-center text-xl md:text-2xl ${imageVisible ? '' : 'hidden'}` }
+          className={`absolute font-bold text-center text-lg md:text-md lg:text-sm xl:text-lg 2xl:text-xl ${imageVisible ? '' : 'hidden'}` }
           style={{
-            top: "50%",
+            top: "33%",
             left: "50%",
             transform: "translate(-50%, -50%)",
           }}>
           {client}
+        </span>
+        <span
+          className={`absolute font-bold text-center text-lg md:text-md lg:text-sm xl:text-lg 2xl:text-xl ${imageVisible ? '' : 'hidden'}` }
+          style={{
+            top: "66%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }}>
+          {title}
         </span>
       </div>
 
