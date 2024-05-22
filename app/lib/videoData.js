@@ -164,8 +164,7 @@ export const videoData = [
     category: ["Medical"],
     client: "Washington University Emergency Medicine",
     title: "Residency Recruitment",
-    image_src:
-      "/images/video-thumbnails/medical/washUEmergencyMedicine.png",
+    image_src: "/images/video-thumbnails/medical/washUEmergencyMedicine.png",
     src: "https://player.vimeo.com/video/866533299?h=90843c1f39&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
   },
   {
@@ -288,20 +287,30 @@ export const videoData = [
     image_src: "/images/video-thumbnails/nonprofit/kitmMission.png",
     src: "https://player.vimeo.com/video/862525134?h=722087be67&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
   },
-   {
-     id: 37,
-     category: ["Livestream", "Education"],
-     client: "Washington Universty",
-     title: "Spring Parents Council Livestream",
-     image_src: "/images/video-thumbnails/livestream/wash-u-parents-council.png",
-     src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
-   },
-   {
-     id: 38,
-     category: ["Livestream"],
-     client: "Spirit of Provident",
-     title: "Gala Livestream",
-     image_src: "/images/video-thumbnails/livestream/provident-gala.png",
-     src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
-   },
+  {
+    id: 37,
+    category: ["Education"],
+    client: "Washington Universty",
+    title: "Spring Parents Council Livestream",
+    image_src: "/images/video-thumbnails/education/springParentsCouncil.jpg",
+    alt_image_src:
+      "/images/video-thumbnails/livestream/wash-u-parents-council.png",
+    src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+  },
+  {
+    id: 38,
+    category: ["Livestream"],
+    client: "Washington Universty",
+    title: "Spring Parents Council Livestream",
+    image_src:"/images/video-thumbnails/livestream/wash-u-parents-council.png",
+    src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+  },
+  {
+    id: 39,
+    category: ["Livestream"],
+    client: "Spirit of Provident",
+    title: "Gala Livestream",
+    image_src: "/images/video-thumbnails/livestream/provident-gala.png",
+    src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+  },
 ];

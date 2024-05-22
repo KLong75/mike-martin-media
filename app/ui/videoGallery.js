@@ -23,17 +23,17 @@ export default function VideoGallery({ selectedCategory, excludedCategory }) {
         })
         .map((video) => (
           <div
-            key={video.client}
+            key={video.id}
             className="text-white w-full h-auto ">
             <ClientVideoFrame
               src={video.src}
               client={video.client.toUpperCase()}
               title={video.title.toUpperCase()}
               category={video.category}
-              image_src={video.image_src}
+              image_src={ video.image_src }
             />
           </div>
         ))}
     </div>
   );
-}
+};

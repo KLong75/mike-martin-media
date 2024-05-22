@@ -34,7 +34,7 @@ export default function ClientVideoFrame({
   return (
     <>
       <div
-        className="relative flex justify-center items-center w-full h-auto cursor-pointer p-4 md:p-0 hover:transform md:hover:scale-105 hover:z-40 transition-transform duration-300 ease-in-out"
+        className="relative flex justify-center items-center w-full h-auto cursor-pointer p-4 md:p-0 6xl:p-16 hover:transform md:hover:scale-105 hover:z-40 transition-transform duration-300 ease-in-out"
         onClick={handleClick}>
         <Image
           id="video-thumbnail"
@@ -42,10 +42,10 @@ export default function ClientVideoFrame({
           src={image_src}
           height={540}
           width={960}
-          alt="video thumbnail"
+          alt={client}
         />
         <span
-          className={`absolute font-bold text-center text-lg md:text-md lg:text-sm xl:text-lg 2xl:text-xl ${imageVisible ? '' : 'hidden'}` }
+          className={`absolute font-bold text-center text-xl  lg:text-sm xl:text-lg 2xl:text-xl 3xl:text-3xl 4xl:text-4xl  5xl:text-5xl ${imageVisible ? '' : 'hidden'}` }
           style={{
             top: "33%",
             left: "50%",
@@ -54,7 +54,7 @@ export default function ClientVideoFrame({
           {client}
         </span>
         <span
-          className={`absolute font-bold text-center text-lg md:text-md lg:text-sm xl:text-lg 2xl:text-xl ${imageVisible ? '' : 'hidden'}` }
+          className={`absolute font-bold text-center text-xl  lg:text-sm xl:text-lg 2xl:text-xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl ${imageVisible ? '' : 'hidden'}` }
           style={{
             top: "66%",
             left: "50%",
