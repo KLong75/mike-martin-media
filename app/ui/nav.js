@@ -43,7 +43,7 @@ export default function Nav() {
     <nav className="flex p-4 z-40 ">
       {/* Mobile Nav Menu */}
       <Dialog open={menuOpen} onClose={() => setMenuOpen(false)}>
-        <Dialog.Overlay className="fixed inset-0 bg-black " />
+        <Dialog.Overlay className="fixed inset-0 bg-black" />
         <Dialog.Panel className="fixed inset-0 z-10">
           <div className="flex justify-center items-center h-full">
             <div className="relative text-white bg:black w-full h-full flex flex-col justify-center items-center">
