@@ -25,12 +25,12 @@ export default function Page() {
     <main>
       <div className="">
       <BannerVideoWithFadeNoLogo
-        src="https://player.vimeo.com/video/933469700?h=110c6f60a1&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        src="https://player.vimeo.com/video/953317163?h=21c26f1413&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="About_Page_Banner_Video"
       />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2">ABOUT </h2>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2">ABOUT</h2>
         <div className="flex justify-center items-center w-24 md:w-36 lg:w-40 h-auto mb-1.5 md:p-1">
           <Image
             src="/branding/mmm_logo_white.png"
