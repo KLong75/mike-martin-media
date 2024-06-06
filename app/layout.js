@@ -1,7 +1,7 @@
 // import analytics
 import { Analytics } from '@vercel/analytics/react';
 // import from next
-import { GoogleAnalytics } from '@next/third-parties/google'
+// import { GoogleAnalytics } from '@next/third-parties/google'
 // import PreloadResources from './preload-resources'
 import { PreloadResources } from './preload-resources'
 // import components
@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <Analytics />
       </body>
-      <GoogleAnalytics gaId={process.env.GA_ID}/>
+      {/* <GoogleAnalytics gaId={process.env.GA_ID}/> */}
     </html>
   );
 }
