@@ -13,7 +13,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
     }, 1000);
     const videoFadeTimer = setTimeout(() => {
       setShowVideo(true);
-    }, 50);
+    }, 100);
     return () => {
       clearTimeout(hideLogoTimer);
       clearTimeout(videoFadeTimer);
