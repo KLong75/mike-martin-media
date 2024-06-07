@@ -134,7 +134,7 @@ export default function ContactForm() {
       <form
         onSubmit={handleFormSubmit}
         className="p-8 shadow-2xl max-w-200 mx-auto relative">
-        <h3 className="-mt-6 mb-3 text-center text-xl font-bold">Send us a message</h3>
+        <h3 className="-mt-6 mb-3 text-center text-xl text-2xl xl:text-3xl font-bold">Send us a message</h3>
         <div className="flex flex-col justify-center">
           <label htmlFor="firstName">
             First Name*<span className="text-xs">(required)</span>

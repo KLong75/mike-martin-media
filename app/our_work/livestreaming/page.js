@@ -32,7 +32,7 @@ export default function Page() {
         <BackToOurWorkLink />
       </div>
       <section className="md:mt-12">
-        <div className="md:text-lg flex justify-center items-center">
+        <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center">
           <p className="text-center text-balance p-6">
             Wherever you are, we can help you stream to{" "}
             <span className="italic font-bold">ANYWHERE</span>. Livestreaming is
@@ -53,9 +53,9 @@ export default function Page() {
       </section>
       <section className="justify-center items-center mt-2">
         <div className="flex justify-center">
-          <h3 className="text-xl font-bold">Available Streaming Services</h3>
+          <h3 className="text-2xl xl:text-3xl 2xl:text-4xl font-bold">Available Streaming Services</h3>
         </div>
-        <div className="md:text-lg flex justify-center items-center -mt-12">
+        <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center -mt-12">
           <ul className="list-disc p-16 columns-1 md:columns-2 lg:ml-40">
             <li>Streaming capable on various platforms</li>
             <li>In-studio or on-site streaming</li>
@@ -78,10 +78,10 @@ export default function Page() {
       </section>
       <section>
         <div className="grid grid-cols-1 -mt-8 md:mt-0">
-          <h4 className="text-xl md:text-2xl text-center font-bold -mb-6 md:mb-12 lg:mb-20 ">
+          <h4 className="text-2xl xl:text-3xl 2xl:text-4xl text-center font-bold -mb-6 md:mb-12 lg:mb-20 ">
             Recent Streams
           </h4>
-          <div className="md:text-lg flex justify-center items-center md:-mt-6">
+          <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center md:-mt-6">
             <p className="text-balance text-center p-8 -mb-6 md:-mt-12 md:px-48 lg:-mt-24 lg:px-60 lg:mr-24 lg:ml-24">
               Check out some recent live streams we have hosted.
             </p>
@@ -94,7 +94,7 @@ export default function Page() {
         </div>
       </section>
 
-      <div className="md:text-lg flex justify-center items-center -mt-4 md:mt-0">
+      <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center -mt-4 md:mt-0">
         <p className=" text-center text-balance w-10/12">
           <Link href="/contact">
             <span className="font-bold hover:scale-105 transition-transform inline-block">

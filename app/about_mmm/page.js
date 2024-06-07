@@ -62,14 +62,14 @@ export default function Page() {
         <div className="grid grid-cols-1">
         <div className="flex justify-center items-center mt-6 mb-6 sm:mb-12 3xl:-mb-6">
           <p
-            className="md:text-2xl xl:text-3xl text-center lg:text-left text-balance w-10/12"
+            className="md:text-2xl xl:text-2xl 3xl:text-4xl text-center lg:text-left text-balance w-10/12"
             id="about-text">
             {aboutPageText.about_text_a}
           </p>
         </div>
         <div className="flex justify-center items-center sm:mb-12 ">
           <p
-            className="md:text-2xl xl:text-3xl text-center lg:text-left text-balance w-10/12"
+            className="md:text-2xl xl:text-2xl 3xl:text-4xl text-center lg:text-left text-balance w-10/12"
             id="about-text">
             {aboutPageText.about_text_b}
           </p>
@@ -107,7 +107,7 @@ export default function Page() {
           </h2>
         </div>
         <div className="flex justify-center items-center mb-4 mt-2 md:mt-4 md:mb-8 ">
-          <p className="md:text-lg xl:text-2xl p-6 text-center text-balance xl:mt-6 xl:mb-6">
+          <p className="md:text-lg xl:text-xl 3xl:text-2xl p-6 text-center text-balance xl:mt-6 xl:mb-6">
             {aboutPageText.meet_the_team_text}
           </p>
         </div>

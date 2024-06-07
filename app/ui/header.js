@@ -10,12 +10,11 @@ export default function Header() {
       <div className="ml-2 sm:ml-6 md:ml-12 2xl:ml-20 w-40 md:w-48 lg:w-52 xl:w-60 2xl:w-64 3xl:w-72 h-auto flex items-center p-4">
         <Link href="/">
           <Image
+          priority
             src="/branding/mmm_logo_white.png"
             width={294}
             height={95}
-            alt="company logo"
-            priority
-            as="image"
+            alt="MMM logo"
           />
         </Link>
       </div>
