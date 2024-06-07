@@ -40,7 +40,7 @@ export default function Nav() {
   const openMenu = () => setMenuOpen(true);
 
   return (
-    <nav className="flex p-4 z-40 ">
+    <nav className="flex p-4 z-40">
       {/* Mobile Nav Menu */}
       <Dialog open={menuOpen} onClose={() => setMenuOpen(false)}>
         <Dialog.Overlay className="fixed inset-0 bg-black" />
@@ -105,7 +105,7 @@ export default function Nav() {
                 pathname === link.href ? "scale-125 text-gray-400" : "hover:scale-110"
               }`}>
               <Link href={link.href}>
-                  <span className="text-lg lg:text-xl mt-2 hover:text-gray-400 hover:scale-110 hover:transform transition-transform cursor-pointer">
+                  <span className="text-lg lg:text-xl 3xl:text-2xl mt-2 hover:text-gray-400 hover:scale-110 hover:transform transition-transform cursor-pointer">
                     {link.label}
                   </span>
               </Link>

@@ -35,7 +35,7 @@ export default function Page() {
         <BackToOurWorkLink />
       </div>
       <section className="md:mt-6">
-        <div className="md:text-lg flex justify-center items-center mb-6 md:mb-8">
+        <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center mb-6 md:mb-8">
           <p className="mt-2 text-center text-balance md:w-10/12 p-8">
           Award winning, professional video production. Content creation, live recording, post-production editing, color grading, audio engineering, on screen graphics, green screen, visual effects, commercials, promotions, and so much more.{" "}
             <Link href="/contact">
@@ -52,7 +52,7 @@ export default function Page() {
         <VideoCategories onCategorySelected={setSelectedCategory} />
       </section>
       <VideoGallery selectedCategory={selectedCategory} excludedCategory={['Drone', 'Livestream']}/>
-      <div className="md:text-lg flex justify-center items-center mt-6 mb-6">
+      <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center mt-6 mb-6">
         <p className="text-center text-balance w-10/12 p-2">
           <Link href="/contact">
             {" "}

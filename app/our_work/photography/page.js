@@ -33,13 +33,13 @@ export default function Page() {
       </div>
       <section className="grid grid-cols-1 -mb-8 md:mb-0">
         <div className="md:text-lg flex justify-center items-center p-2">
-          <p className=" md:text-lg text-center text-balance w-10/12  ">
+          <p className="md:text-xl xl:text-2xl 3xl:text-3xl text-center text-balance w-10/12  ">
             We offer a wide range of photography services. From headshots to
             events, in studio or on location, we can help you capture the moment. Check out our work below
             and then{" "}
             <Link href="/contact">
               {" "}
-              <span className="md:text-lg font-bold hover:scale-105 transition-transform inline-block">
+              <span className="md:text-xl xl:text-2xl 3xl:text-3xl font-bold hover:scale-105 transition-transform inline-block">
                 Contact Us{" "}
               </span>{" "}
             </Link>
@@ -83,10 +83,10 @@ export default function Page() {
         </div>
       </div>
       <div className="flex justify-center items-center p-2 md:mt-12 md:mb-6">
-        <p className="md:text-lg text-center text-balance w-10/12 md:w-1/2 ">
+        <p className="md:text-xl xl:text-2xl 3xl:text-3xl text-center text-balance w-10/12 md:w-1/2 ">
           <Link href="/contact">
             {" "}
-            <span className="md:text-lg font-bold hover:scale-105 transition-transform inline-block">
+            <span className="font-bold hover:scale-105 transition-transform inline-block">
               Contact Us{" "}
             </span>{" "}
           </Link>

@@ -7,7 +7,7 @@ import ContactUsButton from "../ui/contactUsButton";
 import WorkCategorySection from "../ui/workCategorySection";
 import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
 // import icons
-import { TbDrone } from "react-icons/tb";
+// import { TbDrone } from "react-icons/tb";
 import { FaVideo, FaCameraRetro } from "react-icons/fa6";
 import { BsBroadcast } from "react-icons/bs";
 // import text
@@ -35,7 +35,7 @@ export default function Page() {
           </h3>
         </div>
         <div className="md:text-lg flex justify-center items-center mt-6 md:mt-12 mb-6 md:mb-12">
-          <p className="md:text-xl xl:text-2xl 2xl:text-3xl text-center text-balance w-10/12 p-2">
+          <p className="md:text-lg xl:text-xl 3xl:text-3xl text-center text-balance w-10/12 p-2">
             {ourWorkPageText.our_work_text}
             <Link href="/contact">
               {" "}
@@ -63,14 +63,14 @@ export default function Page() {
               </div>
             </Link>
           </div>
-          <div className="md:text-xl xl:text-2xl 2xl:text-3xl flex justify-center items-center mt-4">
+          <div className="md:text-lg xl:text-xl 3xl:text-3xl flex justify-center items-center mt-4">
             <p className="p-2 text-center text-balance w-10/12 md:w-1/2">
               {ourWorkPageText.video_text_a}
             </p>
           </div>
         </section>
-        <div className="grid grid cols-3 md:grid-cols-3 mb-6 mt-4 md:mt-12 md:mb-20 gap-6 md:gap-8 ">
-          <div className="flex justify-center items-center mt-2 md:mt-0 order-1 md:h-52">
+        <div className="grid grid-cols-1 md:grid-cols-2 mb-6 mt-4 md:mt-12 md:mb-20 gap-6 md:gap-8 ">
+          {/* <div className="flex justify-center items-center mt-2 md:mt-0 order-1 md:h-52">
             <Link href="/our_work/drone">
               <WorkCategorySection
                 categoryName="DRONE"
@@ -78,7 +78,7 @@ export default function Page() {
                 categoryText={ourWorkPageText.drone_text}
               />
             </Link>
-          </div>
+          </div> */}
           <div className="flex justify-center items-center mt-2 md:mt-0 order-2 md:h-52">
             <Link href="/our_work/livestreaming">
               <WorkCategorySection

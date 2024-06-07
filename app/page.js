@@ -40,12 +40,12 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold ml-1">ADE</h2>
             </div>
           </div>
-          <div className="mt-6 md:text-lg flex justify-center items-center">
+          <div className="mt-6 mb-3 md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center">
             <p className="p-2 text-center text-balance w-10/12">
               {homePageText.about_section_text_a}
             </p>
           </div>
-          <div className="md:text-lg flex justify-center items-center mb-6">
+          <div className="md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center mb-6">
             <p
               className="p-2 text-center text-balance w-10/12"
               id="team-paragraph">
@@ -88,7 +88,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="text-xl md:text-2xl flex justify-center items-center md:mt-6">
+          <div className="text-xl xl:text-2xl 3xl:text-4xl flex justify-center items-center md:mt-6">
             <p className="text-center text-balance p-2">
               <Link href="/contact">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
@@ -120,7 +120,7 @@ export default function Home() {
             OUR WORK
           </h3>
         </div>
-        <div className="md:text-lg flex justify-center items-center mt-6">
+        <div className="md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center mt-6">
           <p
             className="p-2 text-center text-balance w-10/12"
             id="work-paragraph">
@@ -157,7 +157,7 @@ export default function Home() {
             priority={true}
           />
         </div>
-        <div className="md:text-lg flex justify-center items-center mt-2 md:mt-6">
+        <div className="md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center mt-2 md:mt-6">
           <p className="p-2 text-center text-balance w-10/12">
             {homePageText.our_work_section_contact_text}
             <Link href="/contact">
@@ -188,12 +188,12 @@ export default function Home() {
           src="https://player.vimeo.com/video/943724347?h=791f0d08b9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Travel Video"
         />
-        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 -mt-1">
           <h3 className="text-center font-bold text-3xl md:text-4xl">
             BEYOND THE LENS
           </h3>
         </div>
-        <div className="md:text-lg flex justify-center items-center mt-6 mb-6">
+        <div className="md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center mt-6 mb-6">
           <p className="p-2 text-center text-balance w-10/12">
             {homePageText.blog_section_text}
           </p>
