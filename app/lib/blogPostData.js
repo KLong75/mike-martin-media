@@ -16,7 +16,7 @@ export const blogPosts = [
     post_date: "6/7/2024",
     image_src: "/images/blogPics/lukeBlogPostPic-6-2024.jpg",
     image_width: 1920,
-    image_height: 1300,
+    image_height: 1450,
     text: [
       "Hey everyone, it's Luke!  I'm an editor and videographer with MMM, and I'm proud to be here every day.  When I wake up in the morning, I find myself excited to walk into the office to see my favorite coworkers and tackle whatever is on my plate that day.  Personally, I find work can sometimes be a meditative experience.  Sure, sometimes the project can be difficult, emotional, or long.  But once the project is finished and approved, it's hard not to feel a sense of accomplishment and growth.",
       "Now that I'm done sapping about my job, let's talk about when we get to experience spending time with our coworkers outside of work!  Twice a year, sometimes more, we plan a camping or float trip to get the whole office to come outside, smell the grass, and get to know each other outside of the screens and rolling chairs.  We get to see who can build a fire, who can canoe without tipping, and who can design the most luxurious camping space.  It's an opportunity to show your true colors and separate from the work mindset.  The only time I've sang karaoke was at a work camping trip!",
