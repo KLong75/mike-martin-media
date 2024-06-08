@@ -277,7 +277,7 @@ export const videoData = [
     client: " CYSTIC FIBROSIS FOUNDATION",
     title: "GALA FUND-A-NEED",
     image_src: "/images/video-thumbnails/nonprofit/cysticFibrosisGala.png",
-    src: "https://player.vimeo.com/video/884469475?h=38bff527f4&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+    src: "https://player.vimeo.com/video/884469475?h=38bff527f4&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&0&byline=0&portrait=0",
   },
   {
     id: 36,
@@ -285,7 +285,7 @@ export const videoData = [
     client: "Kids in the Middle",
     title: "Mission Promo",
     image_src: "/images/video-thumbnails/nonprofit/kitmMission.png",
-    src: "https://player.vimeo.com/video/862525134?h=722087be67&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+    src: "https://player.vimeo.com/video/862525134?h=722087be67&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&0&byline=0&portrait=0",
   },
   {
     id: 37,
@@ -295,7 +295,7 @@ export const videoData = [
     image_src: "/images/video-thumbnails/education/springParentsCouncil.jpg",
     alt_image_src:
       "/images/video-thumbnails/livestream/wash-u-parents-council.png",
-    src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+    src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&0&byline=0&portrait=0",
   },
   {
     id: 38,
@@ -303,7 +303,7 @@ export const videoData = [
     client: "Washington Universty",
     title: "Spring Parents Council Livestream",
     image_src:"/images/video-thumbnails/livestream/wash-u-parents-council.png",
-    src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+    src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&0&byline=0&portrait=0",
   },
   {
     id: 39,
@@ -311,7 +311,7 @@ export const videoData = [
     client: "Spirit of Provident",
     title: "Gala Livestream",
     image_src: "/images/video-thumbnails/livestream/provident-gala.png",
-    src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+    src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&0&byline=0&portrait=0",
   },
   {
     id: 40,
@@ -319,7 +319,7 @@ export const videoData = [
     client: "St. Louis Children's Hospital",
     title: "",
     image_src: "",
-    src: "https://player.vimeo.com/video/823498854?h=49fb6c4ebf&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+    src: "https://player.vimeo.com/video/823498854?h=49fb6c4ebf&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&0&byline=0&portrait=0",
   },
   {
     id: 41,
@@ -327,7 +327,7 @@ export const videoData = [
     client: "",
     title: "",
     image_src: "",
-    src: "https://player.vimeo.com/video/823498876?h=ccba5f8a3b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+    src: "https://player.vimeo.com/video/823498876?h=ccba5f8a3b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&0&byline=0&portrait=0",
   },
   {
     id: 42,
@@ -335,7 +335,7 @@ export const videoData = [
     client: "Washington University Online MBA",
     title: "Digital Impact Project",
     image_src: "",
-    src: "https://player.vimeo.com/video/823498955?h=815218068d&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+    src: "https://player.vimeo.com/video/823498955?h=815218068d&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&0&byline=0&portrait=0",
   },
   {
     id: 43,
@@ -343,7 +343,7 @@ export const videoData = [
     client: "Washington University",
     title: "Big Idea Bounce",
     image_src: "",
-    src: "https://player.vimeo.com/video/930759771?h=7af899a007&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+    src: "https://player.vimeo.com/video/930759771?h=7af899a007&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&0&byline=0&portrait=0",
   },
   // {
   //   id: 0,
