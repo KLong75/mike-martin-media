@@ -6,7 +6,7 @@ import TextSegment from "../ui/textSegment";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BannerImage from "../ui/bannerImage";
 // import data
-import { blogPosts } from "../lib/data";
+import { blogPosts } from "../lib/blogPostData";
 
 export const metadata = {
   title: "Blog",
