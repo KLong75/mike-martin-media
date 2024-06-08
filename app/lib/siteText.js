@@ -25,12 +25,14 @@ export const aboutPageText = {
 export const ourWorkPageText = {
   our_work_text:
     "From corporate, educational, medical, and nonprofit videos, to whatever category your content could fit into, we would love to create with you. We utilize video, livestreaming, drone work, and photography in all that we do. MMM is your partner for every step of the process. Check out our work below and",
-  video_text_a:
-    "We produce award winning, professional video production without any of the behind-the-scenes drama. Whether it’s content creation, post-production editing, color-grading, audio engineering, visual effects, podcasts, or animation, we deliver the media you want to see. From commercials to broadcast programs, social media posts to feature-length productions, we’ve got you covered.",
+  video_text:
+    "We produce award winning, professional video production without any of the behind-the-scenes drama. Whether it’s content creation, post-production editing, color-grading, audio engineering, visual effects, podcasts, or animation, we deliver the media you want to see. From commercials to broadcast programs, social media posts to feature-length productions, we've got you covered.",
   drone_text:
     "Going where you can't, our FCC certified drone pilots will capture the aerial shots of your dreams. Inside or outside, we will get that clip.",
   livestream_text:
     "Livestream from anywhere to anywhere, amplifying your message like never before. Full-service streaming capabilities available.",
+  animation_motion_graphic_text:
+    "Elevate your brand with our dynamic animation and motion graphics capabilities. From captivating 2D illustrations to immersive 3D experiences, we bring your vision to life with creativity and precision.",
   photo_text:
     "Capture your event with easy to share candid photos, professional headshots, and group pictures, In-studio or on location.",
   our_work_contact_text:

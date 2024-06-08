@@ -50,13 +50,13 @@ export default function Home() {
               className="p-2 text-center text-balance w-10/12"
               id="team-paragraph">
               Our{" "}
-              <Link href="/about_mmm#mmm-team" className="">
+              <Link href="/about#mmm-team" className="">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
                   team
                 </span>
               </Link>{" "}
               {homePageText.about_section_text_b}{" "}
-              <Link href="/about_mmm">
+              <Link href="/about">
                 <span className="font-bold hover:scale-105 transition-transform inline-block">
                   About
                 </span>
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center pb-6 ">
             <MmmSiteButton
-              href="/about_mmm"
+              href="/about"
               label="About "
               backgroundColor="bg-black"
               textColor="text-white"
