@@ -46,7 +46,7 @@ export default function Page() {
         <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center">
           <p className="text-center text-pretty text-balance px-14">
             We stay up to date on the latest and greatest in the animation and
-            editing worlds so that you don't have to. Growing with the rapidly
+            editing worlds so that you do not have to. Growing with the rapidly
             advancing world around us keeps us on our toes, flexible, and always
             ready for what's next.
           </p>
