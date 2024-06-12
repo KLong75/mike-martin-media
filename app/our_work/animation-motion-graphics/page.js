@@ -33,7 +33,7 @@ export default function Page() {
       </div>
       <section className="md:mt-12">
         <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center">
-          <p className="text-center text-balance p-6 2xl:p-12">
+          <p className="text-center text-balance p-6 2xl:p-12 3xl:px-72 4xl:px-96">
             Elevate your organization&apos;s message with our dynamic animation and
             motion graphics capabilities. From captivating 2D illustrations to
             immersive 3D experiences, we bring your vision to life with
@@ -44,7 +44,7 @@ export default function Page() {
           <ContactUsButton />
         </div>
         <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center">
-          <p className="text-center text-balance p-6 2xl:p-12">
+          <p className="text-center text-balance p-6 2xl:p-12 3xl:px-72 4xl:px-96">
             We stay up to date on the latest and greatest in the animation and
             editing worlds so that you don&apos;t have to. Growing with the rapidly
             advancing world around us keeps us on our toes, flexible, and always
@@ -74,7 +74,7 @@ export default function Page() {
       </section>
 
       <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center">
-        <p className="text-center text-balance p-6 2xl:p-12">
+        <p className="text-center text-balance p-6 2xl:p-12 3xl:px-72 4xl:px-96">
           Our visual effects services are individually designed to enhance your
           message with captivating motion graphics and animations. From animated
           intros and outros to fully animated videos, our adept editors will
