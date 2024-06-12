@@ -316,8 +316,8 @@ export const videoData = [
   {
     id: 40,
     category: ["Animation"],
-    client: "MMM",
-    title: "Animation Example",
+    client: "St. Louis Children's Hospital",
+    title: "What to Expect - Colonoscopy",
     image_src: "/images/video-thumbnails/animation/animation-example.jpg",
     src: "https://player.vimeo.com/video/823498854?h=49fb6c4ebf&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
