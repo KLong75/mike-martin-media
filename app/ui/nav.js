@@ -32,6 +32,10 @@ const navLinks = [
     href: "/contact",
     label: "Contact",
   },
+  {
+    href: "/careers",
+    label: "Careers",
+  },
 ];
 
 export default function Nav() {
