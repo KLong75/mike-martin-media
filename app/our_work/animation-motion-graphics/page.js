@@ -74,7 +74,7 @@ export default function Page() {
       </section>
 
       <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center">
-        <p className="text-center text-balance  px-14">
+        <p className="text-center text-balance p-6 2xl:p-12">
           Our visual effects services are individually designed to enhance your
           message with captivating motion graphics and animations. From animated
           intros and outros to fully animated videos, our adept editors will
