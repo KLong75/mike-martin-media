@@ -33,7 +33,7 @@ export default function Page() {
       </div>
       <section className="md:mt-12">
         <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center">
-          <p className="text-center text-balance pt-6">
+          <p className="text-center text-balance p-6 2xl:p-12">
             Elevate your organization&apos;s message with our dynamic animation and
             motion graphics capabilities. From captivating 2D illustrations to
             immersive 3D experiences, we bring your vision to life with
@@ -44,7 +44,7 @@ export default function Page() {
           <ContactUsButton />
         </div>
         <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center">
-          <p className="text-center text-pretty text-balance px-14">
+          <p className="text-center text-balance p-6 2xl:p-12">
             We stay up to date on the latest and greatest in the animation and
             editing worlds so that you don&apos;t have to. Growing with the rapidly
             advancing world around us keeps us on our toes, flexible, and always
