@@ -31,6 +31,7 @@ export default function Home() {
                 className="flex justify-center items-center w-10 md:w-14 lg:w-16 h-auto mb-1 md:mb-2 lg:mb-1"
                 style={{ marginRight: "-.1rem" }}>
                 <Image
+                  priority
                   src="/branding/singleMWhiteResizeSmall.png"
                   width={349}
                   height={271}
@@ -84,7 +85,7 @@ export default function Home() {
               alt="MMM at work"
               width={3242}
               height={2022}
-              priority={true}
+              priority
             />
           </div>
 
