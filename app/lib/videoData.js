@@ -323,7 +323,7 @@ export const videoData = [
   },
   {
     id: 41,
-    category: ["Animation", "Corporate"],
+    category: ["Animation"],
     client: "Washington University",
     title: "Always Olin",
     image_src: "/images/video-thumbnails/animation/always-olin.jpg",
@@ -331,7 +331,7 @@ export const videoData = [
   },
   {
     id: 42,
-    category: ["Animation", "Education"],
+    category: ["Animation"],
     client: "Washington University",
     title: "Olin MBA",
     image_src: "/images/video-thumbnails/animation/olin-mba.jpg",
@@ -339,7 +339,7 @@ export const videoData = [
   },
   {
     id: 43,
-    category: ["Animation", "Education"],
+    category: ["Animation"],
     client: "Washington University",
     title: "Big Idea Bounce",
     image_src: "/images/video-thumbnails/animation/big-idea-bounce.jpg",
