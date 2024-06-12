@@ -42,7 +42,7 @@ export default function ClientVideoFrame({
           src={image_src}
           height={540}
           width={960}
-          alt={client}
+          alt={`${client} ${title}`}
         />
         <span
           className={`absolute font-bold text-center text-xl  lg:text-sm xl:text-lg 2xl:text-xl 3xl:text-3xl 4xl:text-4xl  5xl:text-5xl ${imageVisible ? '' : 'hidden'}` }

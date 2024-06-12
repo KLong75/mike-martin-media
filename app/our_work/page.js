@@ -10,6 +10,8 @@ import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
 // import { TbDrone } from "react-icons/tb";
 import { FaVideo, FaCameraRetro } from "react-icons/fa6";
 import { BsBroadcast } from "react-icons/bs";
+import { GoPaperAirplane } from "react-icons/go";
+import { HiPaperAirplane } from "react-icons/hi2";
 // import text
 import { ourWorkPageText } from "../lib/siteText";
 
@@ -65,11 +67,11 @@ export default function Page() {
           </div>
           <div className="md:text-lg xl:text-xl 3xl:text-3xl flex justify-center items-center mt-4">
             <p className="p-2 text-center text-balance w-10/12 md:w-1/2">
-              {ourWorkPageText.video_text_a}
+              {ourWorkPageText.video_text}
             </p>
           </div>
         </section>
-        <div className="grid grid-cols-1 md:grid-cols-2 mb-6 mt-4 md:mt-12 md:mb-20 gap-6 md:gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 mb-6 mt-4 md:mt-12 md:mb-20 gap-6 md:gap-8 ">
           {/* <div className="flex justify-center items-center mt-2 md:mt-0 order-1 md:h-52">
             <Link href="/our_work/drone">
               <WorkCategorySection
@@ -85,6 +87,15 @@ export default function Page() {
                 categoryName="LIVESTREAM"
                 categoryIcon={<BsBroadcast />}
                 categoryText={ourWorkPageText.livestream_text}
+              />
+            </Link>
+          </div>
+          <div className="flex justify-center items-center mt-2 md:mt-0 order-2 md:h-52">
+            <Link href="/our_work/animation-motion-graphics">
+              <WorkCategorySection
+                categoryName="ANIMATION"
+                categoryIcon={<HiPaperAirplane />}
+                categoryText={ourWorkPageText.animation_motion_graphic_text}
               />
             </Link>
           </div>
