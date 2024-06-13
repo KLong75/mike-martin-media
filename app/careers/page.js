@@ -1,20 +1,19 @@
 // import components
-import  WereHiring  from "../ui/wereHiring";
+import WereHiring from "../ui/wereHiring";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BannerImage from "../ui/bannerImage";
+import JobPosting from "../ui/jobPosting";
 // import data
-
 
 export const metadata = {
   title: "Careers",
-  description:
-    "Work at MMM! Apply on ZipRecruiter. We are hiring!",
+  description: "Work at MMM! Apply on ZipRecruiter. We are hiring!",
 };
 
 export default function Page() {
   return (
     <main className="flex flex-col justify-center items-center ">
-      <div className="w-48 h-full py-12">
+      <div className="w-52 sm:w-72 md:w-128 lg:w-144 py-12">
         <BannerImage
           src="/branding/black_mmm_large_crop_resize.png"
           alt=""
@@ -27,14 +26,13 @@ export default function Page() {
           CAREERS
         </h1>
       </div>
-     
-      <div className="">
-        
-        </div>
-        <WereHiring />
-        <div className="w-full">
-          <MMMLineLogoBlack />
-        </div>
-      </main>
+      <div className="max-w-600 mt-6">
+        <JobPosting />
+      </div>
+      <WereHiring />
+      <div className="w-full">
+        <MMMLineLogoBlack />
+      </div>
+    </main>
   );
 }
