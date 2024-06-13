@@ -1,8 +1,5 @@
-// import from next
-import Image from "next/image";
 // import components
 import BlogPost from "../ui/blogPost";
-import TextSegment from "../ui/textSegment";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BannerImage from "../ui/bannerImage";
 // import data

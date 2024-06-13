@@ -1,4 +1,3 @@
-
 // import from next
 import Image from "next/image";
 // import data
@@ -11,6 +10,7 @@ import InstagramWidget from "../ui/instagramWidget";
 import BannerImage from "../ui/bannerImage";
 import ContactUsButton from "../ui/contactUsButton";
 import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
+import WereHiring from "../ui/wereHiring";
 // import text
 import { aboutPageText } from "../lib/siteText";
 
@@ -24,13 +24,15 @@ export default function Page() {
   return (
     <main>
       <div className="">
-      <BannerVideoWithFadeNoLogo
-        src="https://player.vimeo.com/video/953317163?h=21c26f1413&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-        title="About_Page_Banner_Video"
-      />
+        <BannerVideoWithFadeNoLogo
+          src="https://player.vimeo.com/video/953317163?h=21c26f1413&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          title="About_Page_Banner_Video"
+        />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2">ABOUT</h2>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2">
+          ABOUT
+        </h2>
         <div className="flex justify-center items-center w-24 md:w-36 lg:w-40 h-auto mb-1.5 md:p-1">
           <Image
             src="/branding/mmm_logo_white.png"
@@ -43,7 +45,7 @@ export default function Page() {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 p-6 mt-2 md:mt-6">
-      <div
+        <div
           className="flex justify-center items-center"
           id="blog-section-image-container"
           style={{ maxWidth: "" }} // Set the max-width to match desired value
@@ -60,20 +62,20 @@ export default function Page() {
           </div>
         </div>
         <div className="grid grid-cols-1">
-        <div className="flex justify-center items-center mt-6 mb-6 sm:mb-12 3xl:-mb-6">
-          <p
-            className="md:text-2xl xl:text-2xl 3xl:text-4xl text-center lg:text-left text-balance w-10/12"
-            id="about-text">
-            {aboutPageText.about_text_a}
-          </p>
-        </div>
-        <div className="flex justify-center items-center sm:mb-12 ">
-          <p
-            className="md:text-2xl xl:text-2xl 3xl:text-4xl text-center lg:text-left text-balance w-10/12"
-            id="about-text">
-            {aboutPageText.about_text_b}
-          </p>
-        </div>
+          <div className="flex justify-center items-center mt-6 mb-6 sm:mb-12 3xl:-mb-6">
+            <p
+              className="md:text-2xl xl:text-2xl 3xl:text-4xl text-center lg:text-left text-balance w-10/12"
+              id="about-text">
+              {aboutPageText.about_text_a}
+            </p>
+          </div>
+          <div className="flex justify-center items-center sm:mb-12 ">
+            <p
+              className="md:text-2xl xl:text-2xl 3xl:text-4xl text-center lg:text-left text-balance w-10/12"
+              id="about-text">
+              {aboutPageText.about_text_b}
+            </p>
+          </div>
         </div>
       </div>
       <div className="flex justify-center mt-4 mb-6">
@@ -90,6 +92,9 @@ export default function Page() {
           ))}
         </div>
       </section>
+      <div className="">
+        <WereHiring />
+      </div>
       <section className="mt-8 md:mt-12">
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <div
