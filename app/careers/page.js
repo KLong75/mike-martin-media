@@ -8,19 +8,18 @@ import BannerImage from "../ui/bannerImage";
 export const metadata = {
   title: "Careers",
   description:
-    "Work at MMM.",
+    "Work at MMM! Apply on ZipRecruiter. We are hiring!",
 };
 
 export default function Page() {
   return (
-    <main className="flex-1 ">
-      <div className="-mt-1">
+    <main className="flex flex-col justify-center items-center ">
+      <div className="w-48 h-full py-12">
         <BannerImage
-          src=""
+          src="/branding/black_mmm_large_crop_resize.png"
           alt=""
-          width={5008}
-          height={1996}
-          priority={true}
+          width={1642}
+          height={560}
         />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
@@ -30,7 +29,7 @@ export default function Page() {
       </div>
      
       <div className="">
-        <a href="/c/Mike-Martin-Media/Jobs?hiring_company=102ff8a1?source=hiring_badge&amp;tsid=100002000" title="Mike Martin Media Jobs" target="_blank"><img src="https://www.ziprecruiter.com/assets/static/img/badge-hiring-2-300px.png" width="300" height="240" alt="We're Hiring on ZipRecruiter"/></a>
+        
         </div>
         <WereHiring />
         <div className="w-full">

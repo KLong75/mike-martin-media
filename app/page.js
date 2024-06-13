@@ -10,6 +10,7 @@ import MMMLineLogoBlack from "./ui/mmmLineLogoBlack";
 import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerImage from "./ui/bannerImage";
+import WereHiring from "./ui/wereHiring";
 // import text
 import { homePageText } from "./lib/siteText";
 
@@ -73,6 +74,7 @@ export default function Home() {
               imgSrc="/branding/mmm_logo_white.png"
             />
           </div>
+          
           <div
             className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4"
             id="blog-section-image-container"
@@ -198,7 +200,7 @@ export default function Home() {
             {homePageText.blog_section_text}
           </p>
         </div>
-        <div className="flex justify-center items-center mb-12">
+        <div className="flex flex-col justify-center items-center ">
           <MmmSiteButtonLogoFirst
             href="blog"
             label="Blog"
@@ -206,8 +208,12 @@ export default function Home() {
             textColor="text-white"
             imgSrc="/branding/mmm_logo_white.png"
           />
+          <div className="w-10/12">
+          <WereHiring />
+          </div>
         </div>
-        <div className="w-full mt-4">
+        
+        <div className="w-full">
           <MMMLineLogoBlack />
         </div>
       </section>
