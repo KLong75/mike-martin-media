@@ -13,8 +13,8 @@ const JoinTheTeam = () => {
         </p>
         <p className="px-8 py-4 md:px-24 lg:px-52 lg:px-72 2xl:px-96">
           As we continue to grow, positions for videographers, editors, motion
-          graphic artists and producers become available. If you'd like to join
-          our team, please contact us with your resume and reel. We'll take a
+          graphic artists and producers become available. If you would like to join
+          our team, please contact us with your resume and reel. We will take a
           look even if positions aren't available at the moment.
         </p>
 
