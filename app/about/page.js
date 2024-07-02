@@ -10,7 +10,6 @@ import InstagramWidget from "../ui/instagramWidget";
 import BannerImage from "../ui/bannerImage";
 import ContactUsButton from "../ui/contactUsButton";
 import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
-import WereHiring from "../ui/wereHiring";
 // import text
 import { aboutPageText } from "../lib/siteText";
 
@@ -92,9 +91,6 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <div className="">
-        <WereHiring />
-      </div>
       <section className="mt-8 md:mt-12">
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <div

@@ -1,6 +1,6 @@
-import Image from "next/image";
 
-const JobPosting = ({ job }) => {
+
+const JobPosting = () => {
   return (
     <div className="flex flex-col justify-center ">
       <h2 className="font-semibold text-center text-2xl md:text-3xl lg:text-4xl mt-4">

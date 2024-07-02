@@ -1,8 +1,8 @@
 // import components
-import WereHiring from "../ui/wereHiring";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BannerImage from "../ui/bannerImage";
-import JobPosting from "../ui/jobPosting";
+
+import JoinTheTeam from "../ui/joinTheTeam";
 // import data
 
 export const metadata = {
@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className="flex flex-col justify-center items-center ">
+    <main className="flex flex-col justify-center items-center min-h-screen">
       <div className="w-52 sm:w-72 md:w-128 lg:w-144 py-12">
         <BannerImage
           src="/branding/black_mmm_large_crop_resize.png"
@@ -26,11 +26,10 @@ export default function Page() {
           CAREERS
         </h1>
       </div>
-      <div className="max-w-600 mt-6">
-        <JobPosting />
+      <div className="flex-grow flex flex-col justify-center max-w-600 mt-6">
+        <JoinTheTeam />
       </div>
-      <WereHiring />
-      <div className="w-full">
+      <div className="w-full mt-auto">
         <MMMLineLogoBlack />
       </div>
     </main>

@@ -10,7 +10,7 @@ import MMMLineLogoBlack from "./ui/mmmLineLogoBlack";
 import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerImage from "./ui/bannerImage";
-import WereHiring from "./ui/wereHiring";
+
 // import text
 import { homePageText } from "./lib/siteText";
 
@@ -209,11 +209,7 @@ export default function Home() {
             textColor="text-white"
             imgSrc="/branding/mmm_logo_white.png"
           />
-          <div className="w-10/12">
-          <WereHiring />
-          </div>
         </div>
-        
         <div className="w-full">
           <MMMLineLogoBlack />
         </div>
