@@ -12,7 +12,7 @@ export default function WorkCategorySection({
     <>
       <div className="flex flex-col justify-center items-center hover:transform hover:scale-110 transition-transform">
         <div>{React.cloneElement(categoryIcon, { size: iconSize })}</div>
-        <span className="text-2xl md:text-3xl 2xl:text-4xl font-semibold underline">
+        <span className="text-xl md:text-3xl 2xl:text-4xl font-semibold underline">
           {" "}
           {categoryName}{" "}
         </span>

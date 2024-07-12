@@ -71,7 +71,7 @@ export default function Page() {
             </p>
           </div>
         </section>
-        <div className="grid grid-cols-1 md:grid-cols-3 mb-6 mt-4 md:mt-12 md:mb-20 gap-6 md:gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 mb-6 mt-4 md:mt-12 mb:4 md:mb-28 gap-6 md:gap-8 ">
           <div className="flex justify-center items-center mt-2 md:mt-0 order-1 md:h-52">
             <Link href="/our_work/drone">
               <WorkCategorySection
@@ -90,15 +90,6 @@ export default function Page() {
               />
             </Link>
           </div>
-          {/* <div className="flex justify-center items-center mt-2 md:mt-0 order-2 md:h-52">
-            <Link href="/our_work/animation-motion-graphics">
-              <WorkCategorySection
-                categoryName="ANIMATION"
-                categoryIcon={<HiPaperAirplane />}
-                categoryText={ourWorkPageText.animation_motion_graphic_text}
-              />
-            </Link>
-          </div> */}
           <div className="flex justify-center items-center mt-2 md:mt-0 order-3 md:h-52">
             <Link href="/our_work/photography">
               <WorkCategorySection
@@ -109,23 +100,26 @@ export default function Page() {
             </Link>
           </div>
         </div>
-        <div>
-            <Link href="/our_work/mmm-video">
-              <div className="flex flex-col justify-center items-center hover:transform hover:scale-110 transition-transform">
-                <div>
-                  <HiPaperAirplane size={36} />
-                </div>
-                <h3 className="ext-2xl md:text-3xl 2xl:text-4xl font-semibold underline">
-                  ANIMATION
-                </h3>
+        <div >
+          <Link href="/our_work/animation-motion-graphics">
+            <div className="flex flex-col justify-center items-center hover:transform hover:scale-110 transition-transform">
+              <div>
+                <HiPaperAirplane size={36} />
               </div>
-            </Link>
-          </div>
-          <div className="md:text-lg xl:text-xl 3xl:text-3xl flex justify-center items-center mt-4">
-            <p className="p-2 text-center text-balance w-10/12 md:w-1/2">
-            Elevate your brand with our dynamic animation and motion graphics capabilities. From captivating 2D illustrations to immersive 3D experiences, we bring your vision to life with creativity and precision.
-            </p>
-          </div>
+              <h3 className="text-xl md:text-3xl 2xl:text-4xl font-semibold underline">
+                ANIMATION & MOTION GRAPHICS
+              </h3>
+            </div>
+          </Link>
+        </div>
+        <div className="md:text-lg xl:text-xl 3xl:text-3xl flex justify-center items-center mt-4">
+          <p className="p-2 text-center text-balance w-10/12 md:w-1/2">
+            Elevate your brand with our dynamic animation and motion graphics
+            capabilities. From captivating 2D illustrations to immersive 3D
+            experiences, we bring your vision to life with creativity and
+            precision.
+          </p>
+        </div>
         <div className="flex justify-center items-center p-2 mt-12 mb-2">
           <div className="mt-2 flex justify-center">
             <ContactUsButton />
