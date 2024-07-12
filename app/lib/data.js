@@ -1,20 +1,20 @@
-export const ourWorkTilesData = [
-  {
-    title: "Video",
-    image_src: "https://placehold.co/960x540/png?text=Video+Cover+Image",
-    href: "/our_work/mmm-video",
-  },
-  {
-    title: "Livestreaming",
-    image_src: "/images/ourWorkTileImages/livestreaming.jpg",
-    href: "/our_work/livestreaming",
-  },
-  {
-    title: "Photography",
-    image_src: "/images/ourWorkTileImages/photography.jpg",
-    href: "/our_work/photography",
-  },
-];
+// export const ourWorkTilesData = [
+//   {
+//     title: "Video",
+//     image_src: "https://placehold.co/960x540/png?text=Video+Cover+Image",
+//     href: "/our_work/mmm-video",
+//   },
+//   {
+//     title: "Livestreaming",
+//     image_src: "/images/ourWorkTileImages/livestreaming.jpg",
+//     href: "/our_work/livestreaming",
+//   },
+//   {
+//     title: "Photography",
+//     image_src: "/images/ourWorkTileImages/photography.jpg",
+//     href: "/our_work/photography",
+//   },
+// ];
 
 export const teamData = [
   {
@@ -87,13 +87,6 @@ export const teamData = [
       "Paul Baker is an Emmy award-winning, seasoned St. Louis-based motion designer. Over the last two decades, he has honed his abilities by creating animations and motion graphics for numerous entities and platforms including Fortune 500 corporations, television, film, corporate, and start-ups. Paul is a collaborator at heart with a love of visual storytelling as he executes his vision with artful ingenuity and pragmatic execution.",
     image_src: "/images/team/paulBakerPic.png",
   },
-  // {
-  //   name: "Phillip Person",
-  //   role: "Videographer / Editor",
-  //   about:
-  //     "Phillip is a dedicated videographer and editor hailing from Northwest Arkansas. He holds a BFA in Film from the Art Center College of Design in Pasadena, CA. Phillip built an impressive career in the heart of the film industry, serving as an assistant to Creative Executives at DreamWorks and a production assistant at Jerry Bruckheimer Films. In his spare time, Phillip practices as an expert in sleight-of-hand magic and indulges his love for science fiction. His wide range of experiences and passion for storytelling make Phillip a notable addition to the Mike Martin Media team.",
-  //   image_src: "/images/team/phillipPersonPic.png",
-  // },
 ];
 
 export const weTextBlockData = [
