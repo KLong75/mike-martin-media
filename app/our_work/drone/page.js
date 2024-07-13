@@ -10,7 +10,7 @@ import ContactUsButton from "@/app/ui/contactUsButton";
 export const metadata = {
   title: "Our Work | Drone Videography and Photography",
   description:
-    "Aerial footage can add a unique perspective to your project. Our drone services provide stunning visuals. Contact us today to see how our FCC licensed drone pilots can take your project to the next level with Drone Videography and Photography Services.",
+    "Aerial footage can add a unique perspective to your project. Our drone services provide stunning visuals. Contact us today to see how our FAA licensed drone pilots can take your project to the next level with Drone Videography and Photography Services.",
 };
 
 export default function Page() {
@@ -32,8 +32,8 @@ export default function Page() {
         <BackToOurWorkLink />
       </div>
       <section>
-        <div className="flex justify-center items-center">
-          <p className="md:text-lg text-center text-balance p-2 md:w-10/12">
+        <div className="mt-4 flex justify-center items-center">
+          <p className="md:text-xl xl:text-2xl 3xl:text-3xl text-center text-balance p-4 md:w-10/12">
             Drone content is highly requested and incredibly powerful for a
             project. We use drone videography in most projects.
             <Link href="/contact">
@@ -42,28 +42,28 @@ export default function Page() {
                 Contact Us{" "}
               </span>{" "}
             </Link>
-            to see how our FCC licensed drone pilots can take your video to the
+            to see how our FAA licensed drone pilots can take your video to the
             next level.
           </p>
         </div>
-        <div className="mt-4 mb-4 md:mb-8 flex justify-center">
+        <div className="mt-4 lg:mt-8 mb-4 lg:mb-10 md:mb-8 flex justify-center">
           {" "}
           <ContactUsButton />
         </div>
         <VideoGallery selectedCategory="Drone" excludedCategory={[]} />
       </section>
       <div className="md:text-lg flex justify-center items-center mt-6 md:mt-12">
-        <p className=" text-center text-balance w-10/12">
+        <p className="md:text-xl xl:text-2xl 3xl:text-3xl text-center text-balance w-10/12">
           <Link href="/contact">
             <span className="font-bold hover:scale-105 transition-transform inline-block">
               Contact Us{" "}
             </span>{" "}
           </Link>
-          today to see how our FCC licensed drone videographers can take your
+          today to see how our FAA licensed drone videographers can take your
           project to new heights.
         </p>
       </div>
-      <div className="flex justify-center items-center mb-24 mt-6">
+      <div className="flex justify-center items-center mb-24 mt-10">
         <ContactUsButton />
       </div>
       <div className="mb-3">

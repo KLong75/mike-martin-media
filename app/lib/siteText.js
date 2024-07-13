@@ -28,7 +28,7 @@ export const ourWorkPageText = {
   video_text:
     "We produce award winning, professional video production without any of the behind-the-scenes drama. Whether it’s content creation, post-production editing, color-grading, audio engineering, visual effects, podcasts, or animation, we deliver the media you want to see. From commercials to broadcast programs, social media posts to feature-length productions, we've got you covered.",
   drone_text:
-    "Going where you can't, our FCC certified drone pilots will capture the aerial shots of your dreams. Inside or outside, we will get that clip.",
+    "Going where you can't, our FAA certified drone pilots will capture the aerial shots of your dreams. Inside or outside, we will get that clip.",
   livestream_text:
     "Livestream from anywhere to anywhere, amplifying your message like never before. Full-service streaming capabilities available.",
   animation_motion_graphic_text:
@@ -48,7 +48,7 @@ export const ourWorkVideoPageText = {
 
 export const ourWorkDronePageText = {
   drone_page_text:
-    "Drone content is highly requested and incredibly powerful for a project, and anyone can see why. We use drone footage in most projects and stay up to date on the latest developments in drone technology. Inside or outside, we adhere to federal rules and guidelines while delivering the content that you are looking for. Contact us to see how our FCC licensed drone pilots can take your video to the next level.",
+    "Drone content is highly requested and incredibly powerful for a project, and anyone can see why. We use drone footage in most projects and stay up to date on the latest developments in drone technology. Inside or outside, we adhere to federal rules and guidelines while delivering the content that you are looking for. Contact us to see how our FAA licensed drone pilots can take your video to the next level.",
   drone_page_contact_text:
     "Contact Us to see how our drone pilots can take your video to new heights.",
 };
