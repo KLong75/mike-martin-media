@@ -1,5 +1,5 @@
 export const blogPosts = [
-   // {
+  // {
   //   title: "",
   //   post_date: "",
   //   image_src: "/images/blogPics/",
@@ -11,6 +11,21 @@ export const blogPosts = [
   //   closing_tag: "Until next time,",
   //   author: "",
   // },
+    {
+  title: "A Note from Tom",
+    post_date: "7/18/2024",
+    image_src: "/images/blogPics/germanyCollage.png",
+    image_width: 2100,
+    image_height: 1500,
+    text: [
+      "Travel is in MMM's DNA, and this month Mike and I were able to add two new countries to the list: Germany and France. We are fortunate to have the trust of our clients that allows us to explore the globe, and we are grateful for the opportunity.",
+      "When it was time for work, we loved touring our client's amazing factory in Neckartenzlingen, and hosted a livestream out of their state-of-the-art facility. It's an honor to be a trusted partner delivering messaging to their global workforce.",
+      "But after the event ended, we weren't quite ready to head back State-side. As an avid cyclist, I had been glued to the Tour de France that was currently underway. It took very little convincing to get Mike onboard with a quick stop over to Dijon, France to catch Stage 6 of the tour. It was an experience I'll never forget, and I'm so appreciative to work in a company that has a default attitude of: “yes, let's go for it!”",
+      "I felt the trip fully embodied who we are as an organization. We explore, collaborate, and energize one another.  Every day is a new adventure, and we're always eager to go."
+    ],
+    closing_tag: "Until next time,",
+    author: "Tom Young",
+  },
   {
     title: "A Note from Luke",
     post_date: "6/7/2024",
