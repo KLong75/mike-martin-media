@@ -1,11 +1,10 @@
-'use client';
+"use client";
 // import from vercel
-import { track } from '@vercel/analytics';
+import { track } from "@vercel/analytics";
 import Image from "next/image";
 // import components
 import SocialMediaLinks from "./socialMediaLinks";
 import ContactInfo from "./contactInfo";
-
 
 export default function Footer() {
   return (
@@ -21,16 +20,14 @@ export default function Footer() {
           />
         </div>
 
-        <div>
-          <ContactInfo 
-          m_src="/branding/singleMWhiteResizeSmall.png"
-          />
+        <div className="mb-4">
+          <ContactInfo m_src="/branding/singleMWhiteResizeSmall.png" />
         </div>
         <div className="flex justify-center items-center w-full mt-4 mb-2">
           <SocialMediaLinks />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center py-2 -mb-4 sm:mb- md:mb-0">
+      <div className="flex flex-col justify-center items-center py-2 mt-4 -mb-4 sm:mb- md:mb-0">
         <div>
           <span className="text-xs ">©2024 Mike Martin Media</span>
         </div>
@@ -38,9 +35,10 @@ export default function Footer() {
           href="https://www.rhythmcodestudio.tech/"
           target="_blank"
           rel="noopener noreferrer">
-           <span 
-            className="text-xs underline" onClick={() => track('rhythm code studio link clicked')}
-          >Website by Rhythm Code Studio
+          <span
+            className="text-xs underline"
+            onClick={() => track("rhythm code studio link clicked")}>
+            Website by Rhythm Code Studio
           </span>
         </a>
       </div>
