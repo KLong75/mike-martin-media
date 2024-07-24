@@ -5,6 +5,7 @@ import { track } from '@vercel/analytics';
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
 import IconLink from "./iconLink";
 
 
@@ -42,6 +43,17 @@ export default function SocialMediaLinks() {
         icon={<FaLinkedin size={36} />}
         label="link to Mike Martin Media on LinkedIn"
         name="link to Mike Martin Media on LinkedIn"
+      />
+      </div>
+      <div 
+        className="hover:transform hover:scale-125 transition-transform"
+        onClick={() => track('linkedin link clicked')}
+      >
+        <IconLink
+        href="https://www.youtube.com/channel/UC9YeMwSvCRKJBGeIoi1n97Q"
+        icon={<FaYoutube size={36} />}
+        label="link to Mike Martin Media on YouTube"
+        name="link to Mike Martin Media on YouTube"
       />
       </div>
     </div>
