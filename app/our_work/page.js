@@ -126,7 +126,7 @@ export default function Page() {
           </div>
         </div>
         <div className="flex justify-center items-center mb-12">
-          <h4 className="text-xl md:text-2xl lg:text-4xl lg:mt-6 font-bold">
+          <h4 className="text-xl md:text-2xl 3xl:text-3xl lg:mt-6 font-bold">
             Get started on your project today!
           </h4>
         </div>

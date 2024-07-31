@@ -1,21 +1,3 @@
-// export const ourWorkTilesData = [
-//   {
-//     title: "Video",
-//     image_src: "https://placehold.co/960x540/png?text=Video+Cover+Image",
-//     href: "/our_work/mmm-video",
-//   },
-//   {
-//     title: "Livestreaming",
-//     image_src: "/images/ourWorkTileImages/livestreaming.jpg",
-//     href: "/our_work/livestreaming",
-//   },
-//   {
-//     title: "Photography",
-//     image_src: "/images/ourWorkTileImages/photography.jpg",
-//     href: "/our_work/photography",
-//   },
-// ];
-
 export const teamData = [
   {
     name: "Michael Martin",
