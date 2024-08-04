@@ -17,7 +17,7 @@ export default function Page() {
       <div className="-mt-1">
         <BannerImage
           src="/images/blog-page/blog-banner-image.jpg"
-          alt="Blog Banner Image"
+          alt="The Golden Gate Bridge"
           width={5008}
           height={1996}
           priority={true}
