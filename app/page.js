@@ -25,9 +25,9 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center w-full h-auto -mt-4">
           <div className="bg-black text-white w-full h-20 md:h-24 lg:h-28 flex items-center justify-center">
             <div className="flex justify-center items-center p-1 ">
-              <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2">
                 YOUR IDEAS,
-              </h3>
+              </h2>
               <div
                 className="flex justify-center items-center w-10 md:w-14 lg:w-16 h-auto mb-1 md:mb-2 lg:mb-1"
                 style={{ marginRight: "-.1rem" }}>
@@ -84,7 +84,7 @@ export default function Home() {
             <BannerImage
               id="blog-section-image"
               src="/images/home_page/about_mmm_pic.jpg"
-              alt="MMM at work"
+              alt="The MMM Team shooting a medical video"
               width={3242}
               height={2022}
               priority
@@ -93,12 +93,7 @@ export default function Home() {
 
           <div className="text-xl xl:text-2xl 3xl:text-4xl flex justify-center items-center md:mt-6">
             <p className="text-center text-balance p-2">
-              <Link href="/contact">
-                <span className="font-bold hover:scale-105 transition-transform inline-block">
-                  Contact us
-                </span>
-              </Link>{" "}
-              today to work on your project together tomorrow.
+              Contact us today to work on your project together tomorrow.
             </p>
           </div>
           <div className="flex justify-center items-center mt-6 ">
@@ -127,14 +122,7 @@ export default function Home() {
           <p
             className="p-2 text-center text-balance w-10/12"
             id="work-paragraph">
-            {homePageText.our_work_section_text}
-            <Link href="/our_work">
-              {" "}
-              <span className="font-bold hover:scale-105 transition-transform inline-block">
-                Our Work{" "}
-              </span>
-            </Link>{" "}
-            and contact us to get started on your project today.
+            {homePageText.our_work_section_text}  
           </p>
         </div>
         <div className="flex justify-center items-center mb-6 mt-6 w-full">
@@ -154,7 +142,7 @@ export default function Home() {
           <BannerImage
             id="blog-section-image"
             src="/images/home_page/home-page-our-work.jpg"
-            alt="MMM at work"
+            alt="The MMM crew shooting a video outside."
             width={3013}
             height={1555}
             priority={true}
@@ -163,13 +151,7 @@ export default function Home() {
         <div className="md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center mt-2 md:mt-6">
           <p className="p-2 text-center text-balance w-10/12">
             {homePageText.our_work_section_contact_text}
-            <Link href="/contact">
-              {" "}
-              <span className="font-bold hover:scale-105 transition-transform inline-block">
-                Contact us
-              </span>
-            </Link>{" "}
-            now to get started on your next project.
+             
           </p>
         </div>
 

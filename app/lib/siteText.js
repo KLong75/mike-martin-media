@@ -6,9 +6,9 @@ export const homePageText = {
   about_section_contact_text:
     "Contact us today to work on your project together tomorrow. ",
   our_work_section_text:
-    "We take pride in every project. We partner with clients of all sizes to bring their ideas to life. From concept to conclusion, we write, shoot, direct, produce, edit, animate, and everything else needed for your production. We utilize cinematography, livestreaming and photography to their fullest potential. Check out",
+    "We take pride in every project. We partner with clients of all sizes to bring their ideas to life. From concept to conclusion, we write, shoot, direct, produce, edit, animate, and everything else needed for your production. We utilize cinematography, livestreaming and photography to their fullest potential. Check out Our Work and contact us to get started on your project today.",
   our_work_section_contact_text:
-    "We offer more than just award winning video production. Our services include full event coverage, teleprompter support, photography, videography, animation, and graphic effects, just to name a few.",
+    "We offer more than just award winning video production. Our services include full event coverage, teleprompter support, photography, videography, animation, and graphic effects, just to name a few. Contact us now to get started on your next project.",
   blog_section_text:
     "Still looking for more? Go beyond the lens and check out our latest adventures in the MMM Blog as we film and travel across town, across the country, and around the world. Try to keep up, we move fast!",
 };

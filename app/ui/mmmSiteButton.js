@@ -18,7 +18,7 @@ export default function MmmSiteButton({
             src={imgSrc}
             width={294}
             height={95}
-            alt="company logo"
+            alt="MMM logo"
           />
         </div>
       </div>

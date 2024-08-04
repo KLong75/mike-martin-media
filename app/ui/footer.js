@@ -13,7 +13,7 @@ export default function Footer() {
         <div className=" justify-center items-center w-32 h-auto mt-2 -mb-12 md:-mb-20">
           <Image
             src="/branding/mmm_logo_white.png"
-            alt="logo"
+            alt="MMM logo"
             width={294}
             height={95}
             className="p-4"
@@ -32,11 +32,12 @@ export default function Footer() {
           <span className="text-xs ">©2024 Mike Martin Media</span>
         </div>
         <a
+          className="underline"
           href="https://www.rhythmcodestudio.tech/"
           target="_blank"
           rel="noopener noreferrer">
           <span
-            className="text-xs underline"
+            className="text-xs"
             onClick={() => track("rhythm code studio link clicked")}>
             Website by Rhythm Code Studio
           </span>
