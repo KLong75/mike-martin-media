@@ -2,7 +2,7 @@ export const homePageText = {
   about_section_text_a:
     "MMM specializes in video production and media services for corporations, nonprofits, education, and medical institutions. Our mission is to help our clients promote their causes, inform their audience, and inspire them with their stories. We deliver dynamic multi-media solutions from our hometown of St. Louis, Missouri, to all over the globe.",
   about_section_text_b:
-    "brings decades of combined experience from the broadcast and video production industries to produce your ideal content. We are a tight-knit team and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing. Visit the ",
+    "brings decades of combined experience from the broadcast and video production industries to produce your ideal content. We are a tight-knit team and we keep our work in-house. We work hard, play hard, and spend a lot of time laughing. Visit the About page to get to know our dream team.",
   about_section_contact_text:
     "Contact us today to work on your project together tomorrow. ",
   our_work_section_text:

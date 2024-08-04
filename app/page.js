@@ -57,13 +57,7 @@ export default function Home() {
                   team
                 </span>
               </Link>{" "}
-              {homePageText.about_section_text_b}{" "}
-              <Link href="/about">
-                <span className="font-bold hover:scale-105 transition-transform inline-block">
-                  About
-                </span>
-              </Link>{" "}
-              page to get to know our dream team.
+              {homePageText.about_section_text_b}
             </p>
           </div>
           <div className="flex justify-center items-center pb-6 ">
@@ -150,11 +144,9 @@ export default function Home() {
         </div>
         <div className="md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center mt-2 md:mt-6">
           <p className="p-2 text-center text-balance w-10/12">
-            {homePageText.our_work_section_contact_text}
-             
+            {homePageText.our_work_section_contact_text}  
           </p>
         </div>
-
         <div className="flex justify-center items-center mt-6 mb-6">
           <MmmSiteButton
             href="/contact"
