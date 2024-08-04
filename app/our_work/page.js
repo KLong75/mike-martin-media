@@ -32,9 +32,9 @@ export default function Page() {
           />
         </div>
         <div className="-mt-20 bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
-          <h3 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl">
             OUR WORK
-          </h3>
+          </h1>
         </div>
         <div className="md:text-lg flex justify-center items-center mt-6 md:mt-12 mb-6 md:mb-12">
           <p className="md:text-lg xl:text-xl 3xl:text-3xl text-center text-balance w-10/12 p-2">
@@ -59,9 +59,9 @@ export default function Page() {
                 <div>
                   <FaVideo size={36} />
                 </div>
-                <h3 className="text-3xl md:text-6xl font-semibold underline">
+                <h2 className="text-3xl md:text-6xl font-semibold underline">
                   VIDEO
-                </h3>
+                </h2>
               </div>
             </Link>
           </div>
