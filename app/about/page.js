@@ -29,9 +29,9 @@ export default function Page() {
         />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2">
           ABOUT
-        </h2>
+        </h1>
         <div className="flex justify-center items-center w-24 md:w-36 lg:w-40 h-auto mb-1.5 md:p-1">
           <Image
             src="/branding/mmm_logo_white.png"
