@@ -39,13 +39,6 @@ export default function Page() {
         <div className="md:text-lg flex justify-center items-center mt-6 md:mt-12 mb-6 md:mb-12">
           <p className="md:text-lg xl:text-xl 3xl:text-3xl text-center text-balance w-10/12 p-2">
             {ourWorkPageText.our_work_text}
-            <Link href="/contact">
-              {" "}
-              <span className="font-bold hover:scale-105 transition-transform inline-block">
-                Contact Us{" "}
-              </span>{" "}
-            </Link>
-            to get started on your project.
           </p>
         </div>
         <div className="mt-2 mb-4 md:mb-20 flex justify-center">

@@ -24,7 +24,7 @@ export const aboutPageText = {
 
 export const ourWorkPageText = {
   our_work_text:
-    "From corporate, educational, medical, and nonprofit videos, to whatever category your content could fit into, we would love to create with you. We utilize video, livestreaming, drone work, and photography in all that we do. MMM is your partner for every step of the process. Check out our work below and",
+    "From corporate, educational, medical, and nonprofit videos, to whatever category your content could fit into, we would love to create with you. We utilize video, livestreaming, drone work, and photography in all that we do. MMM is your partner for every step of the process. Check out our work below and contact us to get started on your project.",
   video_text:
     "We produce award winning, professional video production without any of the behind-the-scenes drama. Whether it’s content creation, post-production editing, color-grading, audio engineering, visual effects, podcasts, or animation, we deliver the media you want to see. From commercials to broadcast programs, social media posts to feature-length productions, we've got you covered.",
   drone_text:
