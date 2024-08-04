@@ -48,7 +48,7 @@ export default function Footer() {
           src="/branding/mmm_line_logo_white.png"
           height={60}
           width={1140}
-          alt="MMM logo"
+          alt=""
         />
       </div>
     </footer>
