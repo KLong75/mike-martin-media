@@ -69,6 +69,13 @@ export const teamData = [
       "Paul Baker is an Emmy award-winning, seasoned St. Louis-based motion designer. Over the last two decades, he has honed his abilities by creating animations and motion graphics for numerous entities and platforms including Fortune 500 corporations, television, film, corporate, and start-ups. Paul is a collaborator at heart with a love of visual storytelling as he executes his vision with artful ingenuity and pragmatic execution.",
     image_src: "/images/team/paulBakerPic.png",
   },
+  {
+    name: "Robert Kraybill",
+    role: "Director of Photography",
+    about:
+      "Robert is an imaginative director of photography with over 10 years of experience shooting and editing video. He has a strong passion for storytelling and creatively capturing life’s most important moments. After graduating from Bradley University with a BS in Broadcast Journalism, Robert has been creating video content for numerous businesses in the St. Louis area, specializing in social media content creation. Robert’s energetic personality, experience, and skills make him a great addition to the MMM team.",
+    image_src: "/images/team/robertKraybill.jpg",
+  },
 ];
 
 export const weTextBlockData = [
