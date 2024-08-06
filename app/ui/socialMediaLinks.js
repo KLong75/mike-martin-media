@@ -13,7 +13,7 @@ export default function SocialMediaLinks() {
     <div className="flex justify-center items-center space-x-16 lg:space-x-72 z-100 ">
       <div
         className="hover:transform hover:scale-125 transition-transform"
-        onClick={() => track("Facebook link clicked")}>
+        onClick={() => track("social media link clicked", {name: "Facebook"})}>
         <IconLink
           href="https://www.facebook.com/mikemartinmedia"
           icon={<FaFacebook size={32} />}
@@ -23,7 +23,7 @@ export default function SocialMediaLinks() {
       </div>
       <div
         className="hover:transform hover:scale-125 transition-transform"
-        onClick={() => track("Instagram link clicked")}>
+        onClick={() => track("social media link clicked", {name: "Instagram"})}>
         <IconLink
           href="https://www.instagram.com/mikemartinmedia"
           icon={<FaInstagram size={32} />}
@@ -48,7 +48,7 @@ export default function SocialMediaLinks() {
           href="https://www.youtube.com/channel/UC9YeMwSvCRKJBGeIoi1n97Q"
           icon={<FaYoutube size={32} />}
           label="link to Mike Martin Media on YouTube"
-          name="link to MMM on YouTube"
+          name="link to Mike Martin Media on YouTube"
         />
       </div>
     </div>
