@@ -64,7 +64,7 @@ export default function BlogPost({
           <p className="mb-6 text-balance text-left text-md mt-2">
             {shortenPostText(text[0], 200)}
             <br />
-            <span className="inline-flex items-center font-bold text-light-green hover:text-dark-green hover:cursor-pointer hover:scale-105 transition-transform mt-1">
+            <span className="inline-flex items-center font-bold hover:cursor-pointer hover:scale-105 transition-transform mt-1">
               READ MORE <IoIosArrowRoundForward className="text-2xl" />
             </span>
           </p>
