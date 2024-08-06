@@ -33,7 +33,7 @@ export default function SocialMediaLinks() {
       </div>
       <div
         className="hover:transform hover:scale-125 transition-transform"
-        onClick={() => track("LinkedIn link clicked")}>
+        onClick={() => track("social media link clicked", {name: "LinkedIn"})}>
         <IconLink
           href="https://www.linkedin.com/company/mike-martin-media/"
           icon={<FaLinkedin size={32} />}
