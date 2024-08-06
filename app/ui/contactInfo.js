@@ -1,3 +1,4 @@
+"use client";
 // import from vercel
 import { track } from "@vercel/analytics";
 // import icons
