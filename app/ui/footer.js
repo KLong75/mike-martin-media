@@ -38,7 +38,7 @@ export default function Footer() {
           rel="noopener noreferrer">
           <span
             className="text-xs"
-            onClick={() => track("rhythm code studio link clicked")}>
+            onClick={() => track("Rhythm Code Studio link clicked")}>
             Website by Rhythm Code Studio
           </span>
         </a>
