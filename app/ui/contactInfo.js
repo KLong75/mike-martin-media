@@ -1,4 +1,6 @@
-import IconLink from "./iconLink";
+// import from vercel
+import { track } from "@vercel/analytics";
+// import icons
 import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
 
 export default function ContactInfo({ m_src }) {
@@ -13,7 +15,9 @@ export default function ContactInfo({ m_src }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="call Mike Martin Media"
-              className="mt-">
+              className="mt-"
+              onClick={() => track("Phone link clicked")}
+              >
               <div className="flex flex-col items-center hover:transform hover:scale-110 transition-transform">
                 <FaPhone size={24} />
                 <span>636-212-4019</span>
@@ -28,7 +32,9 @@ export default function ContactInfo({ m_src }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="link to Mike Martin Media on Google Maps"
-              className="mt-">
+              className="mt-"
+              onClick={() => track("Google Maps link clicked")}
+              >
               <div className="flex flex-col items-center hover:transform hover:scale-110 transition-transform">
                 <FaLocationDot size={24} />
                 <span>
@@ -46,7 +52,9 @@ export default function ContactInfo({ m_src }) {
               href="mailto:mike@mikemartinmedia.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="email Mike Martin Media">
+              aria-label="email Mike Martin Media"
+              onClick={() => track("Email link clicked")}
+              >
               <div className="flex flex-col items-center hover:transform hover:scale-110 transition-transform">
                 <FaEnvelope size={24} />
                 <span>mike@mikemartinmedia.com</span>
