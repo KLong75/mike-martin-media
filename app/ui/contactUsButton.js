@@ -1,25 +1,28 @@
+"use client";
+// import from vercel
+import { track } from "@vercel/analytics";
 // import from next
 import Link from "next/link";
 import Image from "next/image";
 
 export default function ContactUsButton() {
   return (
-    <button
-      className="bg-black hover:transform hover:scale-105 transition-transform text-white font-bold py-2 px-4 rounded-full"
-      type="button">
-      <Link href="/contact">
-      <div className="flex justify-center items-center">
-        <span className="text-xl md:text-2xl">Contact</span>
-        <div className="flex justify-center items-center w-14 md:w-16 ml-2 h-auto" style={{marginBottom: '.2rem'}}>
-          <Image
-            src="/branding/mmm_logo_white.png"
-            width={294}
-            height={95}
-            alt="company logo"
-          />
-        </div>
+    <div className="bg-black hover:transform hover:scale-105 transition-transform text-white font-bold py-2 px-4 rounded-full">
+      <Link href="/contact" onClick={() => track("Contact us link clicked")}>
+        <div className="flex justify-center items-center">
+          <span className="text-xl md:text-2xl">Contact</span>
+          <div
+            className="flex justify-center items-center w-14 md:w-16 ml-2 h-auto"
+            style={{ marginBottom: ".2rem" }}>
+            <Image
+              src="/branding/mmm_logo_white.png"
+              width={294}
+              height={95}
+              alt="company logo"
+            />
+          </div>
         </div>
       </Link>
-    </button>
+    </div>
   );
 }
