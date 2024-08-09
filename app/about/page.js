@@ -68,7 +68,7 @@ export default function Page() {
               {aboutPageText.about_text_a}
             </p>
           </div>
-          <div className="flex justify-center items-center sm:mb-12 ">
+          <div className="flex justify-center items-center sm:mb-12 mt-12">
             <p
               className="md:text-2xl xl:text-2xl 3xl:text-4xl text-center lg:text-left text-balance w-10/12"
               id="about-text">

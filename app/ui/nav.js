@@ -94,7 +94,6 @@ export default function Nav() {
         <button onClick={openMenu}>
           <MdDehaze
             size={28}
-            className="hover:text-slate-500"
             aria-label="Open menu"
           />
         </button>
@@ -106,10 +105,10 @@ export default function Nav() {
             <li
               key={link.label}
               className={`flex flex-col items-center justify-center  ${
-                pathname === link.href ? "scale-125 text-gray-400" : "hover:scale-110"
+                pathname === link.href ? "hidden" : "hover:scale-110"
               }`}>
               <Link href={link.href}>
-                  <span className="text-lg lg:text-xl 3xl:text-2xl mt-2 hover:text-gray-400 hover:scale-110 hover:transform transition-transform cursor-pointer">
+                  <span className="text-lg lg:text-xl 3xl:text-2xl mt-2 hover:scale-110 hover:transform transition-transform cursor-pointer">
                     {link.label}
                   </span>
               </Link>
