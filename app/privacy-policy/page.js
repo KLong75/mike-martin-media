@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <main className="p-12">
-      {/* <h1 className="privacy-policy-h1 font-bold p-2">
+      <h1 className="privacy-policy-h1 font-bold p-2">
         Privacy Policy
         <br />
         <span>Last Updated On 17-Aug-2024</span>
@@ -42,7 +42,7 @@ export default function Page() {
 
             <li>Administration info</li>
           </ul>
-          {/* <p className="privacy-policy-p p-2">
+          <p className="privacy-policy-p p-2">
             If we want to use your information for any other purpose, we will
             ask you for consent and will use your information only on receiving
             your consent and then, only for the purpose(s) for which grant
@@ -145,7 +145,7 @@ export default function Page() {
           CookieYes
         </a>
         .
-      </p> */}
+      </p>
     </main>
   );
 }

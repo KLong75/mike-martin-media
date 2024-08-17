@@ -18,7 +18,7 @@ html {
 }
 
 .gallery-iframe-height {
-  height: 500px
+  height: 500px;
 }
 
 /* swiper slide */
@@ -38,7 +38,8 @@ html {
   width: 100%;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   color: #fff;
   cursor: pointer;
 }
@@ -51,9 +52,10 @@ html {
 }
 
 @media (max-width: 768px) {
-  .swiper-button-next, .swiper-button-prev {
+  .swiper-button-next,
+  .swiper-button-prev {
     display: none !important;
-  } 
+  }
 }
 
 .swiper-pagination {
@@ -93,4 +95,14 @@ html {
     background: #038503;
     color: white;
   }
+}
+
+a.cky-banner-element {
+  padding: 8px 30px;
+  background: #f8f9fa;
+  color: #858a8f;
+  border: 1px solid #dee2e6;
+  box-sizing: border-box;
+  border-radius: 2px;
+  cursor: pointer;
 }
