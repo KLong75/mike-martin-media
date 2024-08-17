@@ -2,8 +2,8 @@
 import { Analytics } from '@vercel/analytics/react';
 // import from next/third-parties
 import { GoogleTagManager } from "@next/third-parties/google";
-import { PreloadResources } from './preload-resources'
 // import components
+import { PreloadResources } from './preload-resources'
 import Header from './ui/header'
 import Footer from './ui/footer'
 import ScrollToTopButton from './ui/scrollToTop'
@@ -11,13 +11,12 @@ import ScrollToTopButton from './ui/scrollToTop'
 import './globals.css'
 // import fonts
 import { DM_Sans } from 'next/font/google';
-
+// define fonts
 const dm_sans = DM_Sans({
   subsets: ["latin"],
   variable: '--font-dm-sans',
 });
-
-
+// define metadata
 export const metadata = {
   title: {
     template: '%s | Mike Martin Media | Video Production and Creative Services',
@@ -45,7 +44,6 @@ export default function RootLayout({ children }) {
         <Footer />
         <Analytics />
       </body>
-      {/* <GoogleAnalytics gaId={process.env.GA_ID}/> */}
     </html>
   );
 }
