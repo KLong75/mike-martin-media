@@ -46,7 +46,7 @@ export default function Page() {
       &nbsp;
       <h5 className="font-bold text-lg">Types of Cookies we use</h5>
       <div className="cky-audit-table-element"></div>
-      <p><strong>The Cloudfare and Calendly cookies in &quot;"necessary cookies&quot;" come from Vimeo where our videos are hosted.</strong></p>
+      <p><strong>The Cloudfare and Calendly cookies in necessary cookies come from Vimeo where our videos are hosted.</strong></p>
       &nbsp;
       <h5 className="font-bold text-lg mb-4">Manage cookie preferences</h5>
       <a className="cky-banner-element">Cookie Settings</a> <br />
