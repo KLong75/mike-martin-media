@@ -1,7 +1,7 @@
 // import from vercel
 import { Analytics } from '@vercel/analytics/react';
 // import from next/third-parties
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager } from '@next/third-parties/google'
 // import components
 import { PreloadResources } from './preload-resources'
 import Header from './ui/header'
@@ -35,7 +35,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`overflow-x-hidden ${dm_sans.variable} font-sans`}>
-      <GoogleTagManager gtmId="GTM-5W7VWSTB" />
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
       <PreloadResources />
       <body className={`flex flex-col min-h-screen`}>
         <Header />
