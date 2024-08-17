@@ -94,3 +94,13 @@ html {
     color: white;
   }
 }
+
+a.cky-banner-element {
+  padding: 8px 30px;
+  background: black;
+  color: white;
+
+  box-sizing: border-box;
+  border-radius: 25px;
+  cursor: pointer;
+}
