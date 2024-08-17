@@ -35,7 +35,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`overflow-x-hidden ${dm_sans.variable} font-sans`}>
-      <GoogleTagManager gtmId={process.env.GTM_ID} />
+      <GoogleTagManager gtmId="GTM-5W7VWSTB" />
       <PreloadResources />
       <body className={`flex flex-col min-h-screen`}>
         <Header />
