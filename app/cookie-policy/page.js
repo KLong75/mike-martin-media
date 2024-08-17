@@ -110,7 +110,7 @@ export default function Page() {
           </a>
         </p>
         <p>
-          If you are using any other web browser, please visit your browser's official support documents.
+          If you are using any other web browser, please visit their official support documents.
         </p>
       </div>
       &nbsp;
