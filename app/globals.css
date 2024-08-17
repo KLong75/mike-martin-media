@@ -104,3 +104,7 @@ a.cky-banner-element {
   border-radius: 25px;
   cursor: pointer;
 }
+
+.cky-btn {
+  border-radius: 25px;
+}
