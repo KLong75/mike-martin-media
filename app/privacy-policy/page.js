@@ -1,7 +1,8 @@
 export default function Page() {
   return (
-    <main className="p-12">
-      {/* <h1 className="privacy-policy-h1 font-bold p-2">
+    <main className="p-6 flex flex-col items-center justify-center">
+    <div className="lg:max-w-400 ">
+      <h1 className="privacy-policy-h1 font-bold text-xl">
         Privacy Policy
         <br />
         <span>Last Updated On 17-Aug-2024</span>
@@ -30,46 +31,39 @@ export default function Page() {
         Policy. We therefore recommend that you periodically review this page.
       </p>
 
-      <ul className="privacy-policy-ol p-2">
+      <ol className="privacy-policy-ol">
         <li>
-          <h2 className="privacy-policy-h2 font-bold ">How We Use Your Information:</h2>
-          <p className="privacy-policy-p">
+          <h2 className="privacy-policy-h2 font-bold text-lg">How We Use Your Information:</h2>
+          <p className="privacy-policy-p p-2">
             We will use the information that we collect about you for the
             following purposes:
           </p>
-          <ul className="privacy-policy-ol">
+          <ol className="privacy-policy-ol p-2">
             <li>Marketing/ Promotional</li>
-
             <li>Administration info</li>
-          </ul>
-          {/* <p className="privacy-policy-p p-2">
+            <li>Targeted advertising</li>
+          </ol>
+          <p className="privacy-policy-p p-2">
             If we want to use your information for any other purpose, we will
             ask you for consent and will use your information only on receiving
             your consent and then, only for the purpose(s) for which grant
             consent unless we are required to do otherwise by law.
-          </p> 
+          </p>
         </li>
 
         <li>
-          <h2 className="privacy-policy-h2 font-bold">How We Share Your Information:</h2>
-
-          <p className="privacy-policy-p">
-            We will not transfer your personal information to any third party
-            without seeking your consent, except in limited circumstances as
-            described below:
+          <h2 className="privacy-policy-h2 font-bold text-lg">How We Share Your Information:</h2>
+          <p className="privacy-policy-p p-2">
+            We will not transfer your personal information to any third party without seeking your consent, except in limited circumstances as described below:
           </p>
-          <ul className="privacy-policy-ol">
+          <ol className="privacy-policy-ol p-2">
             <li>Ad service</li>
             <li>Analytics</li>
-          </ul>
-
-          <p className="privacy-policy-p ">
-            We require such third party's to use the personal information we
-            transfer to them only for the purpose for which it was transferred
-            and not to retain it for longer than is required for fulfilling the
-            said purpose.
+          </ol>
+          <p className="privacy-policy-p p-2">
+            We require such third parties to use the personal information we transfer to them only for the purpose for which it was transferred and not to retain it for longer than is required for fulfilling the said purpose.
           </p>
-          <p className="privacy-policy-p">
+          <p className="privacy-policy-p p-2">
             We may also disclose your personal information for the following:
             (1) to comply with applicable law, regulation, court order or other
             legal process; (2) to enforce your agreements with us, including
@@ -81,8 +75,8 @@ export default function Page() {
         </li>
 
         <li>
-          <h2 className="privacy-policy-h2 font-bold">Your Rights:</h2>
-          <p className="privacy-policy-p">
+          <h2 className="privacy-policy-h2 font-bold text-lg">Your Rights:</h2>
+          <p className="privacy-policy-p p-2">
             Depending on the law that applies, you may have a right to access
             and rectify or erase your personal data or receive a copy of your
             personal data, restrict or object to the active processing of your
@@ -91,11 +85,11 @@ export default function Page() {
             data, a right to lodge a complaint with a statutory authority and
             such other rights as may be relevant under applicable laws. To
             exercise these rights, you can write to us at
-            clark@mikemartinmedia.com. We will respond to your request in
+            mmmcontact@mikemartinmedia.com. We will respond to your request in
             accordance with applicable law.
           </p>
 
-          <p className="privacy-policy-p">
+          <p className="privacy-policy-p p-2">
             Do note that if you do not allow us to collect or process the
             required personal information or withdraw the consent to process the
             same for the required purposes, you may not be able to access or use
@@ -103,17 +97,22 @@ export default function Page() {
           </p>
         </li>
         <li>
-          <h2 className="privacy-policy-h2">Cookies Etc.</h2>
-          <p className="privacy-policy-p">
+          <h2 className="privacy-policy-h2 font-bold text-lg">Cookies Etc.</h2>
+          <p className="privacy-policy-p p-2">
             To learn more about how we use these and your choices in relation to
-            these tracking technologies, please refer to our
-            <a href="mikemartinmedia.com/cookie-policy">Cookie Policy.</a>
+            these tracking technologies, please refer to our{" "}
+            <a 
+              href="mikemartinmedia.com/cookie-policy"
+              className="text-blue-600 underline"
+            >
+              Cookie Policy.
+            </a>
           </p>
         </li>
 
         <li>
-          <h2 className="privacy-policy-h2 font-bold">Security:</h2>
-          <p className="privacy-policy-p">
+          <h2 className="privacy-policy-h2 font-bold text-lg">Security:</h2>
+          <p className="privacy-policy-p p-2">
             The security of your information is important to us and we will use
             reasonable security measures to prevent the loss, misuse or
             unauthorized alteration of your information under our control.
@@ -125,27 +124,45 @@ export default function Page() {
         </li>
 
         <li>
-          <h2 className="privacy-policy-h2 font-bold">
-            Grievance / Data Protection Officer:
+          <h2 className="privacy-policy-h2 font-bold text-lg">
+            Third Party Links & Use Of Your Information:
           </h2>
-          <p className="privacy-policy-p">
-            If you have any queries or concerns about the processing of your
-            information that is available with us at mmmcontact@mikemartinmedia.com. We will address your concerns in accordance with applicable law.
+          <p className="privacy-policy-p p-2">
+            Our Service may contain links to other websites that are not
+            operated by us. This Privacy Policy does not address the privacy
+            policy and other practices of any third parties, including any third
+            party operating any website or service that may be accessible via a
+            link on the Service. We strongly advise you to review the privacy
+            policy of every site you visit. We have no control over and assume
+            no responsibility for the content, privacy policies or practices of
+            any third party sites or services.
           </p>
         </li>
-      </ul>
-      <p className="privacy-policy-p p-2">
+
+        <li>
+          <h2 className="privacy-policy-h2 font-bold text-lg">
+            Grievance / Data Protection Officer:
+          </h2>
+          <p className="privacy-policy-p p-2">
+            If you have any queries or concerns about the processing of your
+            information that is available with us, you may email our Grievance
+            Officer at Mike Martin Media LLC, 3333 Washington Avenue, Suite 201,
+            email: mmmcontact@mikemartinmedia.com. We will address your concerns
+            in accordance with applicable law.
+          </p>
+        </li>
+      </ol>
+      <p className="privacy-policy-p mt-4">
         Privacy Policy generated with{" "}
         <a
-          className="underline font-bold"
+          className="text-blue-600 underline"
           target="_blank"
-          noreferrer
-          noopener
           href="https://www.cookieyes.com/?utm_source=PP&utm_medium=footer&utm_campaign=UW">
           CookieYes
         </a>
         .
-      </p> */}
+      </p>
+      </div>
     </main>
   );
 }

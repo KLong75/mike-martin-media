@@ -18,7 +18,7 @@ html {
 }
 
 .gallery-iframe-height {
-  height: 500px
+  height: 500px;
 }
 
 /* swiper slide */
@@ -38,7 +38,8 @@ html {
   width: 100%;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   color: #fff;
   cursor: pointer;
 }
@@ -51,9 +52,10 @@ html {
 }
 
 @media (max-width: 768px) {
-  .swiper-button-next, .swiper-button-prev {
+  .swiper-button-next,
+  .swiper-button-prev {
     display: none !important;
-  } 
+  }
 }
 
 .swiper-pagination {
