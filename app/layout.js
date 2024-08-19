@@ -1,4 +1,3 @@
-// comment
 // import from vercel
 import { Analytics } from '@vercel/analytics/react';
 // import from next
