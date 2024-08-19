@@ -5,21 +5,13 @@ export default function Page() {
       <h1 className="privacy-policy-h1 font-bold text-xl">
         Privacy Policy
         <br />
-        <span>Last Updated On 17-Aug-2024</span>
+        <span>Last Updated On 18-Aug-2024</span>
         <br />
         <span>Effective Date 17-Aug-2024</span>
       </h1>
 
       <p className="privacy-policy-p p-2">
-        This Privacy Policy describes the policies of Mike Martin Media LLC,
-        3333 Washington Avenue, Suite 201, St. Louis, MO 63103, United States of
-        America (the), email: mmmcontact@mikemartinmedia.com, phone:
-        636-212-4019 on the collection, use and disclosure of your information
-        that we collect when you use our website ( mikemartinmedia.com ). (the
-        “Service”). By accessing or using the Service, you are consenting to the
-        collection, use and disclosure of your information in accordance with
-        this Privacy Policy. If you do not consent to the same, please do not
-        access or use the Service.
+      This Privacy Policy describes the policies of Mike Martin Media LLC, 3333 Washington Avenue, Suite 201, St. Louis, MO 63103, United States of America (the), email: mmmcontact@mikemartinmedia.com, phone: 636-212-4019 on the collection, use and disclosure of your information that we collect when you use our website ( mikemartinmedia.com ). (the “Service”). By accessing or using the Service, you are consenting to the collection, use and disclosure of your information in accordance with this Privacy Policy. If you do not consent to the same, please do not access or use the Service.
       </p>
 
       <p className="privacy-policy-p p-2">
@@ -58,6 +50,7 @@ export default function Page() {
           </p>
           <ol className="privacy-policy-ol p-2">
             <li>Ad service</li>
+            <li>Marketing agencies</li>
             <li>Analytics</li>
           </ol>
           <p className="privacy-policy-p p-2">
