@@ -7,7 +7,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Content-Security-Policy',
-            value: "script-src 'self' https://cdn-cookieyes.com https://www.googletagmanager.com;",
+            value: "script-src 'self' https://cdn-cookieyes.com https://www.googletagmanager.com https://www.gstatic.com;",
           },
         ],
       },
