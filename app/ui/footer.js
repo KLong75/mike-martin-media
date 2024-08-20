@@ -5,6 +5,7 @@ import Image from "next/image";
 // import components
 import SocialMediaLinks from "./socialMediaLinks";
 import ContactInfo from "./contactInfo";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -28,6 +29,14 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center py-2 mt-4 -mb-4 sm:mb- md:mb-0">
+        <div>
+        <Link href="/privacy-policy">
+          <span className="text-xs underline mx-2">Privacy Policy</span>
+        </Link>
+        <Link href="/cookie-policy">
+          <span className="text-xs underline mx-2">Cookie Policy</span>
+        </Link>
+        </div>
         <div>
           <span className="text-xs ">©2024 Mike Martin Media</span>
         </div>
