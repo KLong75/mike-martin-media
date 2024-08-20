@@ -7,7 +7,7 @@ const nextConfig = {
   //       headers: [
   //         {
   //           key: 'Content-Security-Policy',
-  //           value: "script-src 'self' https://cdn-cookieyes.com https://www.googletagmanager.com https://www.gstatic.com https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://f.vimeocdn.com https://player.vimeo.com/ https://*.vimeocdn.com https://*.vimeo.com;",
+  //           value: "script-src 'self' https://cdn-cookieyes.com https://cdn-cookieyes.com/client_data/*/script.js https://www.googletagmanager.com https://www.gstatic.com https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://f.vimeocdn.com https://player.vimeo.com;",
   //         },
   //       ],
   //     },
