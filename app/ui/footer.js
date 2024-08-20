@@ -30,12 +30,13 @@ export default function Footer() {
       </div>
       <div className="flex flex-col justify-center items-center py-2 mt-4 -mb-4 sm:mb- md:mb-0">
         <div>
-        <Link href="/privacy-policy">
-          <span className="text-xs underline mx-2">Privacy Policy</span>
-        </Link>
-        <Link href="/cookie-policy">
-          <span className="text-xs underline mx-2">Cookie Policy</span>
-        </Link>
+          <span className="text-xs underline mx-2">
+            <Link href="/privacy-policy">Privacy Policy </Link>
+          </span>
+
+          <span className="text-xs underline mx-2">
+            <Link href="/cookie-policy">Cookie Policy</Link>
+          </span>
         </div>
         <div>
           <span className="text-xs ">©2024 Mike Martin Media</span>
