@@ -7,7 +7,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Content-Security-Policy',
-            value: "script-src 'self' https://f.vimeocdn.com; https://cdn-cookieyes.com;",
+            value: "script-src 'self' https://f.vimeocdn.com https://cdn-cookieyes.com https://www.googletagmanager.com https://vercel.live;",
           },
         ],
       },
