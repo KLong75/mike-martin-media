@@ -1,5 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: "script-src 'self' https://f.vimeocdn.com; https://cdn-cookieyes.com;",
+          },
+        ],
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
