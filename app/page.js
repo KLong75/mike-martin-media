@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="grid grid-cols-1 gap-4 ">
       <BannerVideoWithFadeEffect
-        src="https://player.vimeo.com/video/938224346?h=85055436bd&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        src="https://player.vimeo.com/video/ ?h=85055436bd&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="MMM_Home_Page_Banner_Video"
       />
       <section id="home-page-about-section">

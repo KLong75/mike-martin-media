@@ -1,5 +1,6 @@
 // import from next
 import Image from "next/image";
+import Script from "next/script";
 // import from react
 import { useState, useEffect } from "react";
 
@@ -21,6 +22,11 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
   }, []);
 
   return (
+    <>
+    <Script
+      src="https://player.vimeo.com/api/player.js"
+      strategy="afterInteractive"
+    />
     <section className="grid grid-cols-1 gap-4 ">
      <div className={`relative flex justify-center transition-colors duration-24000 ease-in-out ${showVideo ? 'bg-white' : 'bg-black'}`}>
         <div
@@ -55,5 +61,6 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
         </div>
       </div>
     </section>
+    </>
   );
 }
