@@ -25,7 +25,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
     <>
     <Script
       src="https://player.vimeo.com/api/player.js"
-      strategy="afterInteractive"
+      strategy="beforeInteractive"
     />
     <section className="grid grid-cols-1 gap-4 ">
      <div className={`relative flex justify-center transition-colors duration-24000 ease-in-out ${showVideo ? 'bg-white' : 'bg-black'}`}>
