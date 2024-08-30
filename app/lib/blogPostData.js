@@ -16,9 +16,9 @@ export const blogPosts = [
   {
       title: "Olympic Fever",
       post_date: "8/29/2024",
-      image_src: "/images/blogPics/",
-      image_width: 1140,
-      image_height: 855,
+      image_src: "/images/blogPics/olympicFeverJJK.jpeg",
+      image_width: 828,
+      image_height: 752,
       text: [
         "I will never forget the first Olympian I met, Jackie Joyner-Kersee. She was incredibly kind and chatted with me as I told her how I wanted to be a track star when I grew up. That was in 2016. This year, I had the chance to meet and interview another Olympian, Eric Newby, captain of the USA Wheelchair Rugby team. Eric's story is pretty remarkable and I was so honored to be able to talk with him about his life, family, and of course, wheelchair rugby. ",
         "After we finished our interview and captured footage of him working out to prepare for the 2024 Paralympics in Paris, he let me hold one of his medals, a silver from the Tokyo games. Before the video shoot was over, I met his sweet little boy and we all took a photo. ",
