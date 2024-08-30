@@ -21,6 +21,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
   }, []);
 
   return (
+    <>
     <section className="grid grid-cols-1 gap-4 ">
      <div className={`relative flex justify-center transition-colors duration-24000 ease-in-out ${showVideo ? 'bg-white' : 'bg-black'}`}>
         <div
@@ -55,5 +56,6 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
         </div>
       </div>
     </section>
+    </>
   );
 }
