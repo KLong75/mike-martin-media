@@ -18,6 +18,9 @@ export default function BlogPost({
   image_src,
   image_width,
   image_height,
+  second_image_src,
+  second_image_width,
+  second_image_height,
   text,
   post_date,
   closing_tag,
@@ -103,12 +106,38 @@ export default function BlogPost({
                   />
                 </div>
               </div>
+              {second_image_src && (
+                  <div className="flex justify-center items-center">
+                    <div className="w-80 p-4 ">
+                      <Image
+                        src={second_image_src}
+                        width={second_image_width}
+                        height={second_image_height}
+                        alt={`Second Image for ${title} blog post`}
+                      />
+                    </div>
+                  </div>
+                )}
               <div className=" p-6 overflow-auto">
                 {text.map((paragraph, index) => (
                   <p key={index} className="mb-4">
                     {paragraph}
                   </p>
                 ))}
+
+                {/* {second_image_src && (
+                  <div className="flex justify-center items-center">
+                    <div className="w-80 p-4 ">
+                      <Image
+                        src={second_image_src}
+                        width={second_image_width}
+                        height={second_image_height}
+                        alt={`Second Image for ${title} blog post`}
+                      />
+                    </div>
+                  </div>
+                )} */}
+
                 <p className="mb-4">{closing_tag}</p>
                 <p className="-mb-4">- {author}</p>
               </div>
