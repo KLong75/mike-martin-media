@@ -84,7 +84,9 @@ export default function ClientVideoFrame({
                 client={client}
                 category={category}
                 allow="autoplay; fullscreen; picture-in-picture"
-                className="w-full gallery-iframe-height z-40"></iframe>
+                className="w-full gallery-iframe-height z-40"
+              >  
+              </iframe>
             </div>
             <div className="w-auto ">
               <Image

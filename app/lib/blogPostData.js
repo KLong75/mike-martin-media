@@ -24,6 +24,7 @@ export const blogPosts = [
         "After we finished our interview and captured footage of him working out to prepare for the 2024 Paralympics in Paris, he let me hold one of his medals, a silver from the Tokyo games. Before the video shoot was over, I met his sweet little boy and we all took a photo. ",
         "Video production can take you all around the world and sometimes, you might meet some heroes, lifelong and new. Every new experience is a reminder that video production is exactly where I'm supposed to be; meeting some seemingly ordinary people who do extraordinary things. I don't get to be on-location as much as I used to when I first started producing, shooting and editing, but when I get the opportunity, I get excited all over again. Here's hoping USA Wheelchair Rugby brings home the Gold. ",
       ],
+      video_src: "https://player.vimeo.com/video/1001383081?badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
       closing_tag: "Until next time,",
       author: "Rachel Lee",
     },

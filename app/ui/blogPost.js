@@ -22,9 +22,10 @@ export default function BlogPost({
   post_date,
   closing_tag,
   author,
+  video_src,
 }) {
   const shortenPostText = (text, num) => {
-    if (text.length < num){
+    if (text.length < num) {
       return text + "..";
     }
     if (text.length > num) {
@@ -120,14 +121,23 @@ export default function BlogPost({
                 <HiX className="h-6 w-6" />
               </button>
             </div>
+
+            {video_src && (
+              <iframe
+                src={video_src}
+                allow="autoplay; fullscreen; picture-in-picture"
+                className="w-full h-80 p-4 my-4"
+              ></iframe>
+            )}
+
             <div className="mb-4">
-            <MMMLineLogoBlack />
+              <MMMLineLogoBlack />
             </div>
             <div className="flex justify-center items-center mb-2">
               <button
                 onClick={handleDialogClose}
                 className="rounded-md  hover:text-gray-500 focus:outline-none">
-                <HiX className="h-6 w-6"/>
+                <HiX className="h-6 w-6" />
               </button>
             </div>
           </Dialog.Panel>

@@ -50,6 +50,7 @@ export default function Page() {
             post_date={post.post_date}
             closing_tag={post.closing_tag}
             author={post.author}
+            video_src={post.video_src}
           />
         ))}
       </div>
