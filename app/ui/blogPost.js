@@ -77,7 +77,6 @@ export default function BlogPost({
           </div>
         </div>
       </div>
-
       {/* Dialog Section */}
       <Dialog
         open={blogPostOpen}
@@ -124,20 +123,6 @@ export default function BlogPost({
                     {paragraph}
                   </p>
                 ))}
-
-                {/* {second_image_src && (
-                  <div className="flex justify-center items-center">
-                    <div className="w-80 p-4 ">
-                      <Image
-                        src={second_image_src}
-                        width={second_image_width}
-                        height={second_image_height}
-                        alt={`Second Image for ${title} blog post`}
-                      />
-                    </div>
-                  </div>
-                )} */}
-
                 <p className="mb-4">{closing_tag}</p>
                 <p className="-mb-4">- {author}</p>
               </div>
@@ -150,7 +135,6 @@ export default function BlogPost({
                 <HiX className="h-6 w-6" />
               </button>
             </div>
-
             {video_src && (
               <iframe
                 src={video_src}
@@ -158,7 +142,6 @@ export default function BlogPost({
                 className="w-full h-80 p-4 my-4"
               ></iframe>
             )}
-
             <div className="mb-4">
               <MMMLineLogoBlack />
             </div>
