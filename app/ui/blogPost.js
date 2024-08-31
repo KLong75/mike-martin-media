@@ -107,7 +107,7 @@ export default function BlogPost({
               </div>
               {second_image_src && (
                   <div className="flex justify-center items-center">
-                    <div className="w-80 p-4 ">
+                    <div className="w-72 lg:w-80 p-6 mt-4">
                       <Image
                         src={second_image_src}
                         width={second_image_width}
@@ -117,7 +117,7 @@ export default function BlogPost({
                     </div>
                   </div>
                 )}
-              <div className=" p-6 overflow-auto">
+              <div className="p-6 overflow-auto">
                 {text.map((paragraph, index) => (
                   <p key={index} className="mb-4">
                     {paragraph}
@@ -139,7 +139,7 @@ export default function BlogPost({
               <iframe
                 src={video_src}
                 allow="autoplay; fullscreen; picture-in-picture"
-                className="w-full h-80 p-4 my-4"
+                className="w-full h-80 p-4 lg:my-4"
               ></iframe>
             )}
             <div className="mb-4">
