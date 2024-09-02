@@ -8,7 +8,7 @@ export default function Page() {
         Last Updated: 17-Aug-2024
       </p>
       &nbsp;
-      <h5 className="font-bold text-lg">What are cookies?</h5>
+      <h2 className="font-bold text-lg">What are cookies?</h2>
       <div className="cookie-policy-p">
         <p className="p-2">
           This Cookie Policy explains what cookies are and how we use them, the
@@ -26,7 +26,7 @@ export default function Page() {
         </p>
       </div>
       &nbsp;
-      <h5 className="font-bold text-lg">How do we use cookies?</h5>
+      <h3 className="font-bold text-lg">How do we use cookies?</h3>
       <div className="cookie-policy-p">
         <p className="p-2">
           As most of the online services, our website uses first-party and
@@ -44,7 +44,7 @@ export default function Page() {
         </p>
       </div>
       &nbsp;
-      <h5 className="font-bold text-lg">Types of Cookies we use</h5>
+      <h4 className="font-bold text-lg">Types of Cookies we use</h4>
       <div className="cky-audit-table-element"></div>
       <p><strong>The Cloudfare and Calendly cookies in necessary cookies come from Vimeo where our videos are hosted.</strong></p>
       &nbsp;

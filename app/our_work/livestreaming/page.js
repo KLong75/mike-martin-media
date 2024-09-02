@@ -16,17 +16,17 @@ export const metadata = {
 export default function Page() {
   return (
     <main>
-        <BannerVideoWithFadeNoLogo
-          src="https://player.vimeo.com/video/904181398?h=c0efc97d6f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-          title="MMM_Livestreaming_Video"
-        />
+      <BannerVideoWithFadeNoLogo
+        src="https://player.vimeo.com/video/904181398?h=c0efc97d6f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        title="MMM_Livestreaming_Video"
+      />
       <div className="mt-4 mb-4 flex md:hidden">
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
-        <h2 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl mt-2">
+        <h1 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl mt-2">
           LIVESTREAMING
-        </h2>
+        </h1>
       </div>
       <div className="mt-4 -mb-8 hidden md:flex">
         <BackToOurWorkLink />
@@ -37,14 +37,8 @@ export default function Page() {
             Wherever you are, we can help you stream to{" "}
             <span className="italic font-bold">ANYWHERE</span>. Livestreaming is
             an invaluable resource that can catapult your organization and
-            message farther.{" "}
-            <Link href="/contact">
-              {" "}
-              <span className="font-bold hover:scale-105 transition-transform inline-block">
-                Contact Us{" "}
-              </span>{" "}
-            </Link>
-            today to create a livestreaming solution that works for you.
+            message farther. Contact us today to create a livestreaming solution
+            that works for you.
           </p>
         </div>
         <div className="flex justify-center items-center p-4 mb-6 md:mb-10">
@@ -53,7 +47,9 @@ export default function Page() {
       </section>
       <section className="justify-center items-center mt-2">
         <div className="flex justify-center">
-          <h3 className="text-2xl xl:text-3xl 2xl:text-4xl font-bold">Available Streaming Services</h3>
+          <h2 className="text-2xl xl:text-3xl 2xl:text-4xl font-bold">
+            Available Streaming Services
+          </h2>
         </div>
         <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center -mt-12">
           <ul className="list-disc p-16 columns-1 md:columns-2 lg:ml-40">
@@ -78,9 +74,9 @@ export default function Page() {
       </section>
       <section>
         <div className="grid grid-cols-1 -mt-8 md:mt-0">
-          <h4 className="text-2xl xl:text-3xl 2xl:text-4xl text-center font-bold -mb-6 md:mb-12 lg:mb-20 ">
+          <h3 className="text-2xl xl:text-3xl 2xl:text-4xl text-center font-bold -mb-6 md:mb-12 lg:mb-20 ">
             Recent Streams
-          </h4>
+          </h3>
           <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center md:-mt-6">
             <p className="text-balance text-center p-8 -mb-6 md:-mt-12 md:px-48 lg:-mt-24 lg:px-60 lg:mr-24 lg:ml-24">
               Check out some recent live streams we have hosted.
@@ -88,23 +84,23 @@ export default function Page() {
           </div>
         </div>
         <div className="mb-8 md:mb-12 lg:mb-18">
-          <VideoGallery selectedCategory="Livestream" 
-            excludedCategory={["Corporate", "Education", "Medical", "Nonprofit", "Drone"]}
+          <VideoGallery
+            selectedCategory="Livestream"
+            excludedCategory={[
+              "Corporate",
+              "Education",
+              "Medical",
+              "Nonprofit",
+              "Drone",
+            ]}
           />
         </div>
       </section>
-
       <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center -mt-4 md:mt-0">
         <p className=" text-center text-balance w-10/12">
-          <Link href="/contact">
-            <span className="font-bold hover:scale-105 transition-transform inline-block">
-              Contact Us{" "}
-            </span>{" "}
-          </Link>
-          today to get started on your Livestreaming project.
+          Contact us today to get started on your Livestreaming project.
         </p>
       </div>
-
       <div className="flex justify-center items-center mb-12 mt-6">
         <ContactUsButton />
       </div>
@@ -116,4 +112,4 @@ export default function Page() {
       </div>
     </main>
   );
-};
+}

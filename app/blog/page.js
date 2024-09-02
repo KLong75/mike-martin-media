@@ -29,14 +29,14 @@ export default function Page() {
         </h1>
       </div>
       <div className="font-bold text-2xl xl:text-3xl 2xl:text-4xl text-center justify-center items-center p-4 text-balance mb-4">
-        <p>Venture beyond the lens and take a look behind the scenes.</p>
+        <h2>Venture beyond the lens and take a look behind the scenes.</h2>
       </div>
       <div className="-mt-8  md:text-xl xl:text-2xl 3xl:text-3xl text-center justify-center items-center p-4 text-balance">
         <p>
           Read up on our latest adventures as we film across town, across the
           country, and around the world.
-        </p>
-        <p >Try to keep up, we move fast!</p>
+        <br />
+        Try to keep up, we move fast!</p>
       </div>
       <div className="-mt-2 md:mt-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 p-6">
         {blogPosts.map((post, index) => (

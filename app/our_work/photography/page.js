@@ -16,17 +16,17 @@ export const metadata = {
 export default function Page() {
   return (
     <main className="grid grid-cols-1 ">
-        <BannerVideoWithFadeNoLogo
-          src="https://player.vimeo.com/video/905365877?h=71828ac5c8&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-          title="MMM_Photography_Video"
-        />
+      <BannerVideoWithFadeNoLogo
+        src="https://player.vimeo.com/video/905365877?h=71828ac5c8&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        title="MMM_Photography_Video"
+      />
       <div className="mt-4 mb-4 flex md:hidden">
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28 mb-6">
-        <h2 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl">
+        <h1 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl">
           PHOTOGRAPHY
-        </h2>
+        </h1>
       </div>
       <div className="mt-4 mb-8 hidden md:flex">
         <BackToOurWorkLink />
@@ -35,15 +35,9 @@ export default function Page() {
         <div className="md:text-lg flex justify-center items-center p-2">
           <p className="md:text-xl xl:text-2xl 3xl:text-3xl text-center text-balance w-10/12  ">
             We offer a wide range of photography services. From headshots to
-            events, in studio or on location, we can help you capture the moment. Check out our work below
-            and then{" "}
-            <Link href="/contact">
-              {" "}
-              <span className="md:text-xl xl:text-2xl 3xl:text-3xl font-bold hover:scale-105 transition-transform inline-block">
-                Contact Us{" "}
-              </span>{" "}
-            </Link>
-            today to get started on your project.
+            events, in studio or on location, we can help you capture the
+            moment. Check out our work below and then contact us today to get
+            started on your project.
           </p>
         </div>
         <div className="flex justify-center items-center p-4 mb-6 md:mb-10">
@@ -65,7 +59,9 @@ export default function Page() {
           <div className="text-white relative">
             <PhotographyGallery
               client={"Prasino"}
-              cover_img_src={"/images/photography-cover-images/prasino-cover-img-437x655.png"}
+              cover_img_src={
+                "/images/photography-cover-images/prasino-cover-img-437x655.png"
+              }
               width={437}
               height={655}
             />
@@ -84,13 +80,7 @@ export default function Page() {
       </div>
       <div className="flex justify-center items-center p-2 md:mt-12 md:mb-6">
         <p className="md:text-xl xl:text-2xl 3xl:text-3xl text-center text-balance w-10/12 md:w-1/2 ">
-          <Link href="/contact">
-            {" "}
-            <span className="font-bold hover:scale-105 transition-transform inline-block">
-              Contact Us{" "}
-            </span>{" "}
-          </Link>
-          today to get started on your Photography project.
+          Contact us today to get started on your Photography project.
         </p>
       </div>
       <div className="flex justify-center items-center p-2 mt-6 mb-6 md:mb-12">
