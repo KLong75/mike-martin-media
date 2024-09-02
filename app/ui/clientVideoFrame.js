@@ -23,7 +23,7 @@ export default function ClientVideoFrame({
   const handleClick = () => {
     setImageVisible(false);
     setVideoWindowOpen(true);
-    track(`video view - ${client} `);
+    track("video view", {client: `${client}`});
   }
 
   const handleDialogClose = () => {
