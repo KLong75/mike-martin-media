@@ -35,14 +35,8 @@ export default function Page() {
         <div className="mt-4 flex justify-center items-center">
           <p className="md:text-xl xl:text-2xl 3xl:text-3xl text-center text-balance p-4 md:w-10/12">
             Drone content is highly requested and incredibly powerful for a
-            project. We use drone videography in most projects.
-            <Link href="/contact">
-              {" "}
-              <span className="font-bold hover:scale-105 transition-transform inline-block">
-                Contact Us{" "}
-              </span>{" "}
-            </Link>
-            to see how our FAA licensed drone pilots can take your video to the
+            project. We use drone videography in most projects. Contact us to
+            see how our FAA licensed drone pilots can take your video to the
             next level.
           </p>
         </div>
@@ -54,13 +48,8 @@ export default function Page() {
       </section>
       <div className="md:text-lg flex justify-center items-center mt-6 md:mt-12">
         <p className="md:text-xl xl:text-2xl 3xl:text-3xl text-center text-balance w-10/12">
-          <Link href="/contact">
-            <span className="font-bold hover:scale-105 transition-transform inline-block">
-              Contact Us{" "}
-            </span>{" "}
-          </Link>
-          today to see how our FAA licensed drone videographers can take your
-          project to new heights.
+          Contact Us today to see how our FAA licensed drone videographers can
+          take your project to new heights.
         </p>
       </div>
       <div className="flex justify-center items-center mb-24 mt-10">

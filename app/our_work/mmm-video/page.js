@@ -27,9 +27,9 @@ export default function Page() {
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
-        <h2 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl">
+        <h1 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl">
           VIDEO
-        </h2>
+        </h1>
       </div>
       <div className="mt-4 hidden md:flex">
         <BackToOurWorkLink />
@@ -54,13 +54,7 @@ export default function Page() {
       <VideoGallery selectedCategory={selectedCategory} excludedCategory={['Drone', 'Livestream', 'Animation']}/>
       <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center mt-6 mb-6">
         <p className="text-center text-balance w-10/12 p-2">
-          <Link href="/contact">
-            {" "}
-            <span className="font-bold hover:scale-105 transition-transform inline-block">
-              Contact Us{" "}
-            </span>{" "}
-          </Link>
-          today to get started on your Video project.
+          Contact us today to get started on your Video project.
         </p>
       </div>
       <div className="mt-2 mb-12 flex justify-center">

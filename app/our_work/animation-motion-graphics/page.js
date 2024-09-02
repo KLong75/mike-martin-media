@@ -24,9 +24,9 @@ export default function Page() {
         <BackToOurWorkLink />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
-        <h2 className="text-center font-bold text-2xl md:text-4xl xl:text-6xl mt-2">
+        <h1 className="text-center font-bold text-2xl md:text-4xl xl:text-6xl mt-2">
           ANIMATION & MOTION GRAPHICS
-        </h2>
+        </h1>
       </div>
       <div className="mt-4 -mb-8 hidden md:flex">
         <BackToOurWorkLink />
@@ -54,9 +54,9 @@ export default function Page() {
       </section>
       <section>
         <div className="grid grid-cols-1 p-12">
-          <h4 className="text-2xl xl:text-3xl 2xl:text-4xl text-center font-bold">
+          <h2 className="text-2xl xl:text-3xl 2xl:text-4xl text-center font-bold">
             Animation & Motion Graphics Projects
-          </h4>
+          </h2>
         </div>
         <div className="mb-8 md:mb-12 lg:mb-18">
           <VideoGallery
@@ -84,17 +84,6 @@ export default function Page() {
           the rest.
         </p>
       </div>
-
-      {/* <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center -mt-4 md:mt-0">
-        <p className=" text-center text-balance w-10/12">
-          <Link href="/contact">
-            <span className="font-bold hover:scale-105 transition-transform inline-block">
-              Contact Us{" "}
-            </span>{" "}
-          </Link>
-          today...
-        </p>
-      </div> */}
 
       <div className="flex justify-center items-center mb-12 mt-6">
         <ContactUsButton />
