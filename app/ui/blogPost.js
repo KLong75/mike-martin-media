@@ -1,4 +1,6 @@
 "use client";
+// import from react
+import React from "react";
 // import from next
 import Image from "next/image";
 // import from react
@@ -105,23 +107,23 @@ export default function BlogPost({
                   />
                 </div>
               </div>
-              {second_image_src && (
-                  <div className="flex justify-center items-center">
-                    <div className="w-72 lg:w-80 p-6 mt-4">
-                      <Image
-                        src={second_image_src}
-                        width={second_image_width}
-                        height={second_image_height}
-                        alt={`Second Image for ${title} blog post`}
-                      />
-                    </div>
-                  </div>
-                )}
               <div className="p-6 overflow-auto">
                 {text.map((paragraph, index) => (
-                  <p key={index} className="mb-4">
-                    {paragraph}
-                  </p>
+                  <React.Fragment key={index}>
+                    <p className="mb-4">{paragraph}</p>
+                    {index === 0 && second_image_src && (
+                      <div className="flex justify-center items-center">
+                        <div className="w-64 h-64 p-6">
+                          <Image
+                            src={second_image_src}
+                            width={second_image_width}
+                            height={second_image_height}
+                            alt={`Second Image for ${title} blog post`}
+                          />
+                        </div>
+                      </div>
+                    )}
+                  </React.Fragment>
                 ))}
                 <p className="mb-4">{closing_tag}</p>
                 <p className="-mb-4">- {author}</p>
@@ -139,8 +141,7 @@ export default function BlogPost({
               <iframe
                 src={video_src}
                 allow="autoplay; fullscreen; picture-in-picture"
-                className="w-full h-80 p-4 lg:my-4"
-              ></iframe>
+                className="w-full h-80 p-4 lg:my-4"></iframe>
             )}
             <div className="mb-4">
               <MMMLineLogoBlack />
