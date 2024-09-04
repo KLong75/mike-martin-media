@@ -23,6 +23,7 @@ export default function BlogPost({
   second_image_src,
   second_image_width,
   second_image_height,
+  second_image_alt,
   text,
   post_date,
   closing_tag,
@@ -114,11 +115,12 @@ export default function BlogPost({
                     {index === 0 && second_image_src && (
                       <div className="flex justify-center items-center">
                         <div className="w-64 h-64 p-6">
+                        {console.log(second_image_alt)}
                           <Image
                             src={second_image_src}
                             width={second_image_width}
                             height={second_image_height}
-                            alt={`Second Image for ${title} blog post`}
+                            alt={second_image_alt}
                           />
                         </div>
                       </div>

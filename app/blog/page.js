@@ -49,6 +49,7 @@ export default function Page() {
             second_image_src={post.second_image_src}
             second_image_width={post.second_image_width}
             second_image_height={post.second_image_height}
+            second_image_alt={post.second_image_alt}
             text={post.text}
             post_date={post.post_date}
             closing_tag={post.closing_tag}
