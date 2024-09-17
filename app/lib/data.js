@@ -76,6 +76,34 @@ export const teamData = [
       "Robert is an imaginative director of photography with over 10 years of experience shooting and editing video. He has a strong passion for storytelling and creatively capturing life’s most important moments. After graduating from Bradley University with a BS in Broadcast Journalism, Robert has been creating video content for numerous businesses in the St. Louis area, specializing in social media content creation. Robert’s energetic personality, experience, and skills make him a great addition to the MMM team.",
     image_src: "/images/team/robertKraybill.jpg",
   },
+  {
+    name: "Remi Heckert",
+    role: "Videographer/Editor",
+    about:
+      "Remi is a multimedia journalism graduate from Virginia Tech who began her career in news before discovering a passion for long-form video and storytelling with a Virginia-based video production team. Most recently, she honed her skills with the creative team at Homes.com. Now settled in St. Louis, Remi is thrilled to join the MMM team and make the Midwest her new home!",
+    image_src: "/images/team/remiHeckert.png",
+  },
+  {
+    name: "Sophia Marquart",
+    role: "Videographer/Editor",
+    about:
+      "Sophia is a filmmaking grad from Ringling College of Art and Design, known for crafting engaging visual narratives, she blends creativity with technical expertise to produce compelling videos across various genres. Whether for corporate or personal projects, Sophia’s work stands out for its precision and storytelling flair.",
+    image_src: "/images/team/sophiaMarquart.png",
+  },
+  // {
+  //   name: "Clark Martin",
+  //   role: "",
+  //   about:
+  //     "",
+  //   image_src: "/images/team/",
+  // },
+  // {
+  //   name: "",
+  //   role: "",
+  //   about:
+  //     "",
+  //   image_src: "/images/team/",
+  // },
 ];
 
 export const weTextBlockData = [
