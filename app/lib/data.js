@@ -73,7 +73,7 @@ export const teamData = [
     name: "Robert Kraybill",
     role: "Videographer / Editor",
     about:
-      "Robert is an imaginative director of photography with over 10 years of experience shooting and editing video. He has a strong passion for storytelling and creatively capturing life’s most important moments. After graduating from Bradley University with a BS in Broadcast Journalism, Robert has been creating video content for numerous businesses in the St. Louis area, specializing in social media content creation. Robert’s energetic personality, experience, and skills make him a great addition to the MMM team.",
+      "Robert is an imaginative director of photography with over 10 years of experience shooting and editing video. He has a strong passion for storytelling and creatively capturing life's most important moments. After graduating from Bradley University with a BS in Broadcast Journalism, Robert has been creating video content for numerous businesses in the St. Louis area, specializing in social media content creation. Robert's energetic personality, experience, and skills make him a great addition to the MMM team.",
     image_src: "/images/team/robertKraybill.jpg",
   },
   {
@@ -87,7 +87,7 @@ export const teamData = [
     name: "Sophia Marquart",
     role: "Videographer/Editor",
     about:
-      "Sophia is a filmmaking grad from Ringling College of Art and Design, known for crafting engaging visual narratives, she blends creativity with technical expertise to produce compelling videos across various genres. Whether for corporate or personal projects, Sophia’s work stands out for its precision and storytelling flair.",
+      "Sophia is a filmmaking grad from Ringling College of Art and Design, known for crafting engaging visual narratives, she blends creativity with technical expertise to produce compelling videos across various genres. Whether for corporate or personal projects, Sophia's work stands out for its precision and storytelling flair.",
     image_src: "/images/team/sophiaMarquart.png",
   },
   // {
