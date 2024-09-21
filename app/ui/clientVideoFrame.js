@@ -47,7 +47,7 @@ export default function ClientVideoFrame({
         <span
           className={` absolute font-bold text-center text-xl lg:text-sm xl:text-lg 2xl:text-xl 3xl:text-3xl 4xl:text-4xl  5xl:text-5xl ${imageVisible ? '' : 'hidden'}` }
           style={{
-            // textShadow: '2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black',
+            textShadow: '2px 2px 0 black',
             top: "33%",
             left: "50%",
             transform: "translate(-50%, -50%)",
@@ -57,7 +57,7 @@ export default function ClientVideoFrame({
         <span
           className={`absolute font-bold text-center text-xl lg:text-sm xl:text-lg 2xl:text-xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl ${imageVisible ? '' : 'hidden'}` }
           style={{
-            // textShadow: '2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black',
+            textShadow: '2px 2px 0 black',
             top: "66%",
             left: "50%",
             transform: "translate(-50%, -50%)",
