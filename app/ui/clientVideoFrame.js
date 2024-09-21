@@ -47,7 +47,7 @@ export default function ClientVideoFrame({
           alt={`${client} ${title}`}
         />
         <span
-          className={`z-40 absolute font-bold text-center text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl ${
+          className={`absolute font-bold text-center text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl ${
             imageVisible ? "" : "hidden"
           }`}
           style={{
@@ -79,7 +79,7 @@ export default function ClientVideoFrame({
               <Dialog.Title className="text-center text-2xl font-bold text-white">
                 {client}
               </Dialog.Title>
-              <Dialog.Description className="text-center text-2xl font-bold text-white mt-10">
+              <Dialog.Description className="text-center text-2xl font-bold text-white mt-6">
                 {title}
               </Dialog.Description>
             </div>
