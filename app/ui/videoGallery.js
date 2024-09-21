@@ -24,7 +24,7 @@ export default function VideoGallery({ selectedCategory, excludedCategory }) {
         .map((video) => (
           <div
             key={video.id}
-            className="text-white w-full h-auto ">
+            className="text-white w-full h-auto">
             <ClientVideoFrame
               src={video.src}
               client={video.client.toUpperCase()}
