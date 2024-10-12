@@ -21,7 +21,7 @@ const navLinks = [
     label: "About",
   },
   {
-    href: "/our_work",
+    href: "/our-work",
     label: "Our Work",
   },
   {
