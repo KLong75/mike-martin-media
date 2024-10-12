@@ -48,7 +48,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
             src="/branding/whiteMmmLogo-1200x488.png"
             width={1200}
             height={488}
-            alt="Mike Martin Media logo"
+            alt="MMM logo"
           />
           <h1 className="text-center text-2xl hidden ">
             MIKE MARTIN MEDIA | VIDEO PRODUCTION AND CREATIVE SERVICES
