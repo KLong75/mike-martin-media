@@ -8,20 +8,25 @@ import InstagramWidget from "../ui/instagramWidget";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import GoogleMap from "../ui/googleMap";
 
-
 export const metadata = {
   title: "Contact",
-  description: "Contact information for Mike Martin Media. Email. Phone. Address. Social Media. Contact Form. Google Map. Instagram Widget. Mike Martin Media. Video Production and Creative Services.",
+  description:
+    "Contact information for Mike Martin Media. Email. Phone. Address. Social Media. Contact Form. Google Map. Instagram Widget. Mike Martin Media. Video Production and Creative Services.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function Page() {
   return (
     <main className=" flex-1">
       <div className="z-10">
-        <GoogleMap/>
+        <GoogleMap />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
-        <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl font-bold mr-2 lg:mr-3">CONTACT </h1>
+        <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl font-bold mr-2 lg:mr-3">
+          CONTACT{" "}
+        </h1>
         <div className="flex justify-center items-center w-24 md:w-32 lg:w-40 h-auto mb-1.5 lg:mb-2.5 ">
           <Image
             src="/branding/mmm_logo_white.png"

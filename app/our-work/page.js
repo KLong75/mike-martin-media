@@ -19,6 +19,9 @@ export const metadata = {
   title: "Our Work",
   description:
     "We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process.",
+  alternates: {
+    canonical: "/our-work",
+  },
 };
 
 export default function Page() {

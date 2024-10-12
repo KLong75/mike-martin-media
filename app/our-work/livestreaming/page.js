@@ -1,5 +1,3 @@
-// import from next
-import Link from "next/link";
 // import components
 import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
@@ -8,9 +6,12 @@ import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 import VideoGallery from "@/app/ui/videoGallery";
 
 export const metadata = {
-  title: "Our Work | Livestream Services",
+  title: "Our Work | Livestreaming Services",
   description:
     "Wherever you are, we can help you stream to anywhere. Livestreaming is an invaluable resource that can catapult your organization and message farther. Contact us today to create a livestreaming solution that works for you.",
+  alternates: {
+    canonical: "/our-work/livestreaming",
+  },
 };
 
 export default function Page() {

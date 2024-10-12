@@ -1,3 +1,12 @@
+export const metadata = {
+  title: "Privacy Policy",
+  description:
+    "Privacy policy for mikemartinmedia.com",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+};
+
 export default function Page() {
   return (
     <main className="p-6 flex flex-col items-center justify-center">

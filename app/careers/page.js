@@ -8,6 +8,9 @@ import JoinTheTeam from "../ui/joinTheTeam";
 export const metadata = {
   title: "Careers",
   description: "Work at MMM! Apply on ZipRecruiter. We are hiring!",
+  alternates: {
+    canonical: "/careers",
+  },
 };
 
 export default function Page() {

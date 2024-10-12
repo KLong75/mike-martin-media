@@ -11,6 +11,9 @@ export const metadata = {
   title: "Our Work | Animation and Motion Graphics",
   description:
     "Elevate your organization's message with our dynamic animation and motion graphics capabilities. From captivating 2D illustrations to immersive 3D experiences, we bring your vision to life with creativity and precision. Our visual effects services are individually designed to enhance your message with captivating motion graphics and animations. From animated intros and outros to fully animated videos, our adept editors will bring your ideas right to your screen. With our expertise in animation editing, we help you create a seamless and immersive visual experience that captivates your audience and sets your organization apart from the rest",
+  alternates: {
+    canonical: "/our-work/animation-motion-graphics",
+  },
 };
 
 export default function Page() {

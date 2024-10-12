@@ -1,5 +1,3 @@
-// import from Link
-import Link from "next/link";
 // import components
 import ContactUsButton from "@/app/ui/contactUsButton";
 import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
@@ -11,6 +9,9 @@ export const metadata = {
   title: "Photography Services",
   description:
     "We offer a wide range of photography services. From headshots to events, candid shots, and group pictures we can help you capture the moment.",
+  alternates: {
+    canonical: "/our-work/photography",
+  },
 };
 
 export default function Page() {
