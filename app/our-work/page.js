@@ -47,7 +47,7 @@ export default function Page() {
 
         <section id="our-work-video-section" className="mt-12 mb-6 md:mb-20">
           <div>
-            <Link href="/our_work/mmm-video">
+            <Link href="/our-work/mmm-video">
               <div className="flex flex-col justify-center items-center hover:transform hover:scale-110 transition-transform">
                 <div>
                   <FaVideo size={36} />
@@ -66,7 +66,7 @@ export default function Page() {
         </section>
         <div className="grid grid-cols-1 md:grid-cols-3 mb-6 mt-4 md:mt-12 mb:4 md:mb-28 gap-6 md:gap-8 ">
           <div className="flex justify-center items-center mt-2 md:mt-0 order-1 md:h-52">
-            <Link href="/our_work/drone">
+            <Link href="/our-work/drone">
               <WorkCategorySection
                 categoryName="DRONE"
                 categoryIcon={<TbDrone />}
@@ -75,7 +75,7 @@ export default function Page() {
             </Link>
           </div>
           <div className="flex justify-center items-center mt-2 md:mt-0 order-2 md:h-52">
-            <Link href="/our_work/livestreaming">
+            <Link href="/our-work/livestreaming">
               <WorkCategorySection
                 categoryName="LIVESTREAM"
                 categoryIcon={<BsBroadcast />}
@@ -84,7 +84,7 @@ export default function Page() {
             </Link>
           </div>
           <div className="flex justify-center items-center mt-2 md:mt-0 order-3 md:h-52">
-            <Link href="/our_work/photography">
+            <Link href="/our-work/photography">
               <WorkCategorySection
                 categoryName="PHOTOGRAPHY"
                 categoryIcon={<FaCameraRetro />}
@@ -94,7 +94,7 @@ export default function Page() {
           </div>
         </div>
         <div >
-          <Link href="/our_work/animation-motion-graphics">
+          <Link href="/our-work/animation-motion-graphics">
             <div className="flex flex-col justify-center items-center hover:transform hover:scale-110 transition-transform">
               <div>
                 <HiPaperAirplane size={36} />

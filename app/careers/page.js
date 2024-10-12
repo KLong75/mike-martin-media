@@ -16,7 +16,7 @@ export default function Page() {
       <div className="w-52 sm:w-72 md:w-128 lg:w-144 py-12">
         <BannerImage
           src="/branding/black_mmm_large_crop_resize.png"
-          alt=""
+          alt="MMM logo"
           width={1642}
           height={560}
         />
