@@ -121,7 +121,7 @@ export default function Home() {
         </div>
         <div className="flex justify-center items-center mb-6 mt-6 w-full">
           <MmmSiteButtonTextOnly
-            href="our_work"
+            href="our-work"
             label="Our Work"
             backgroundColor="bg-black"
             textColor="text-white"

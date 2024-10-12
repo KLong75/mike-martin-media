@@ -97,7 +97,7 @@ export default function ClientVideoFrame({
                 src="/branding/mmm_line_logo_white.png"
                 height={60}
                 width={1140}
-                alt="MMM logo"
+                alt=""
               />
             </div>
           </div>
