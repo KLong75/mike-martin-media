@@ -3,7 +3,7 @@ import path from 'path';
 
 const urlConfig = {
   '': { changeFrequency: 'yearly', priority: 1.0 },
-  '/blog': { changeFrequency: 'monthly', priority: 0.8 },
+  '/blog': { changeFrequency: 'monthly', priority: 1.0 },
 };
 
 // Function to get the last modified date of a file
