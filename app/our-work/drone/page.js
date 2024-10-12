@@ -11,6 +11,9 @@ export const metadata = {
   title: "Our Work | Drone Videography and Photography",
   description:
     "Aerial footage can add a unique perspective to your project. Our drone services provide stunning visuals. Contact us today to see how our FAA licensed drone pilots can take your project to the next level with Drone Videography and Photography Services.",
+  alternates: {
+    canonical: "/our-work/drone",
+  },
 };
 
 export default function Page() {

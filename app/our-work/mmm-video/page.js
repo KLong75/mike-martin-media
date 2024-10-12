@@ -4,14 +4,11 @@ import { useState } from "react";
 // import from next
 import Link from "next/link";
 // import components
-import BannerVideo from "../../ui/bannerVideo";
 import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
 import BackToOurWorkLink from "@/app/ui/backToOurWorkLink";
-import TextSegment from "@/app/ui/textSegment";
 import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 import VideoCategories from "@/app/ui/videoCategories";
 import VideoGallery from "@/app/ui/videoGallery";
-import MmmSiteButton from "@/app/ui/mmmSiteButton";
 import ContactUsButton from "@/app/ui/contactUsButton";
 
 export default function Page() {
@@ -37,7 +34,10 @@ export default function Page() {
       <section className="md:mt-6">
         <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center mb-6 md:mb-8">
           <p className="mt-2 text-center text-balance md:w-10/12 p-8">
-          Award winning, professional video production. Content creation, live recording, post-production editing, color grading, audio engineering, on screen graphics, green screen, visual effects, commercials, promotions, and so much more.{" "}
+            Award winning, professional video production. Content creation, live
+            recording, post-production editing, color grading, audio
+            engineering, on screen graphics, green screen, visual effects,
+            commercials, promotions, and so much more.{" "}
             <Link href="/contact">
               {" "}
               <span className="font-bold hover:scale-105 transition-transform inline-block">
@@ -51,7 +51,10 @@ export default function Page() {
       <section className="-mt-4">
         <VideoCategories onCategorySelected={setSelectedCategory} />
       </section>
-      <VideoGallery selectedCategory={selectedCategory} excludedCategory={['Drone', 'Livestream', 'Animation']}/>
+      <VideoGallery
+        selectedCategory={selectedCategory}
+        excludedCategory={["Drone", "Livestream", "Animation"]}
+      />
       <div className="md:text-xl xl:text-2xl 3xl:text-3xl flex justify-center items-center mt-6 mb-6">
         <p className="text-center text-balance w-10/12 p-2">
           Contact us today to get started on your Video project.

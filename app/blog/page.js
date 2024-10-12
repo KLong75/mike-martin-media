@@ -9,6 +9,9 @@ export const metadata = {
   title: "Blog",
   description:
     "Go Beyond the lens and check out our latest adventures in the MMM Blog as we film and travel across town across the country, and around the world. Try to keep up, we move fast!",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 export default function Page() {
