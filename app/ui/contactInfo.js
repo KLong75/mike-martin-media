@@ -15,7 +15,7 @@ export default function ContactInfo({ m_src }) {
               href="tel:636-212-0978"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="call Mike Martin Media"
+              aria-label="Call Mike Martin Media at 636-212-4019"
               className="mt-"
               onClick={() => track("Phone link clicked")}
               >
@@ -32,7 +32,7 @@ export default function ContactInfo({ m_src }) {
               href="https://maps.app.goo.gl/Uptcidd5RbhV8Ke57"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="link to Mike Martin Media on Google Maps"
+              aria-label="Link to Mike Martin Media on Google Maps. 3333 Washington Avenue, Suite 201, St. Louis, MO 63103"
               className="mt-"
               onClick={() => track("Google Maps link clicked")}
               >
@@ -53,7 +53,7 @@ export default function ContactInfo({ m_src }) {
               href="mailto:mike@mikemartinmedia.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="email Mike Martin Media"
+              aria-label="Email Mike Martin Media at mike@mikemartinmedia.com"
               onClick={() => track("Email link clicked")}
               >
               <div className="flex flex-col items-center hover:transform hover:scale-110 transition-transform">
