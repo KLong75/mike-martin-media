@@ -49,14 +49,11 @@ export default function Page() {
       <div className="grid grid-cols-1 lg:grid-cols-2 p-6 mt-2 md:mt-6">
         <div
           className="flex justify-center items-center"
-          id="blog-section-image-container"
-          style={{ maxWidth: "" }} // Set the max-width to match desired value
         >
           <div className="p-2 md:p-6 ">
             <BannerImage
-              id="blog-section-image"
               src="/images/aboutPage/mike-van-big-min.jpg"
-              alt="Mike in van with camera"
+              alt="Mike Martin in a white van with a video camera"
               width={2048}
               height={1363}
               priority
@@ -97,13 +94,13 @@ export default function Page() {
       <section className="mt-8 md:mt-12">
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <div
-            className="w-8 md:w-10 h-auto mx-2  "
-            style={{ marginBottom: ".2rem" }}>
+            className="w-8 md:w-10 h-auto mx-2 meet-the-team-m-logo-container"
+          >
             <Image
               src="/branding/singleMWhiteResizeSmall.png"
               width={349}
               height={271}
-              alt="company logo"
+              alt="M"
             />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold -ml-2" id="mmm-team">

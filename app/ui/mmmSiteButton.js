@@ -13,7 +13,7 @@ export default function MmmSiteButton({
     <Link href={href}>
       <div className={`${backgroundColor} ${textColor} hover:transform hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full flex justify-center items-center cursor-pointer`}>
         <span className="text-xl md:text-2xl">{label}</span>
-        <div className="w-14 md:w-16 h-auto ml-1" style={{marginBottom: '.25rem'}}>
+        <div className="w-14 md:w-16 h-auto ml-1 mmm-site-button-logo-container">
           <Image
             src={imgSrc}
             width={294}

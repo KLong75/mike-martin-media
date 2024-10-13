@@ -21,12 +21,9 @@ const InstagramWidget = () => {
             title="Follow MMM on Instagram"
             scrolling="no"
             src={process.env.NEXT_PUBLIC_LIGHTWIDGET_SRC}
-            className="lightwidget-widget overflow-hidden shadow-2xl -mt-2"
-            style={{
-              width: "100%",
-              border: "0",
-              overflow: "hidden",
-            }}></iframe>
+            className="lightwidget-widget overflow-hidden shadow-2xl -mt-2 instagram-widget-iframe"
+          > 
+          </iframe>
         </div>
       </div>
       <div className="flex justify-center items-center w-full -mt-6 sm:-mt-6 md:-mt-20 lg:-mt-28 xl:-mt-40 mb-6 sm:mb-28 md:mb-40">

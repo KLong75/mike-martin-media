@@ -3,10 +3,8 @@ export default function GoogleMap() {
     <section className="grid grid-cols-1">
       <div className="relative flex justify-center">
         <div
-          className="w-full banner-video-aspect-ratio-container"
-          style={{
-            paddingTop: "36%",
-          }}>
+          className="w-full banner-video-aspect-ratio-container google-map-container"
+        >
           <iframe
             title="Mike Martin Media on Google Maps"
             className="absolute top-0 left-0 w-full h-full"

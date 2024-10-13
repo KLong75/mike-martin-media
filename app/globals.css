@@ -10,6 +10,20 @@ html {
   scroll-behavior: smooth;
 }
 
+/* home page */
+.single-m-logo-container {
+  margin-right: -.1rem;
+}
+
+.home-page-banner-image-container {
+  max-width: 1400px
+}
+
+/* about page */
+.meet-the-team-m-logo-container {
+  margin-bottom: .2rem;
+}
+
 .banner-video-aspect-ratio-container {
   position: relative;
   width: 100%;
@@ -17,10 +31,46 @@ html {
   /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
+.banner-vid-with-fade-container {
+  padding-top: 56.25%;
+}
+
+.banner-vid-with-fade-container-no-logo{
+  padding-top: 42.19%;
+}
+
+.video-frame-client-span {
+  text-shadow: 2px 2px 0 black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
 .gallery-iframe-height {
   height: 500px;
 }
 
+.contact-us-button-logo-container {
+  margin-bottom: .2rem;
+}
+
+.google-map-container {
+  padding-top: 36%;
+}
+
+.instagram-widget-iframe {
+  width: 100%;
+  border: 0;
+  overflow: hidden;
+}
+
+.mmm-site-button-logo-container {
+  margin-bottom: .25rem;
+}
 /* swiper slide */
 .swiper {
   width: 100%;

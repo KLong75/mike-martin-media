@@ -29,14 +29,14 @@ export default function Home() {
                 YOUR IDEAS,
               </h2>
               <div
-                className="flex justify-center items-center w-10 md:w-14 lg:w-16 h-auto mb-1 md:mb-2 lg:mb-1"
-                style={{ marginRight: "-.1rem" }}>
+                className="flex justify-center items-center w-10 md:w-14 lg:w-16 h-auto mb-1 md:mb-2 lg:mb-1 single-m-logo-container"
+              >
                 <Image
                   priority
                   src="/branding/singleMWhiteResizeSmall.png"
                   width={349}
                   height={271}
-                  alt="company logo"
+                  alt="M"
                 />
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold ml-1">ADE</h2>
@@ -71,14 +71,11 @@ export default function Home() {
           </div>
           
           <div
-            className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4"
-            id="blog-section-image-container"
-            style={{ maxWidth: "1400px" }} // Set the max-width to desired value
+            className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4 home-page-banner-image-container"
           >
             <BannerImage
-              id="blog-section-image"
               src="/images/home_page/about_mmm_pic.jpg"
-              alt="The MMM Team shooting a medical video"
+              alt="The MMM Team shooting an onsite medical video"
               width={3242}
               height={2022}
               priority
@@ -129,12 +126,9 @@ export default function Home() {
           />
         </div>
         <div
-          className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4 md:mb-4"
-          id="blog-section-image-container"
-          style={{ maxWidth: "1400px" }} // Set the max-width to desired value
+          className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4 md:mb-4 home-page-banner-image-container"
         >
           <BannerImage
-            id="blog-section-image"
             src="/images/home_page/home-page-our-work.jpg"
             alt="The MMM crew shooting a video outside."
             width={3013}

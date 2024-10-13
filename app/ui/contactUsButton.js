@@ -12,13 +12,13 @@ export default function ContactUsButton() {
         <div className="flex justify-center items-center">
           <span className="text-xl md:text-2xl">Contact</span>
           <div
-            className="flex justify-center items-center w-14 md:w-16 ml-2 h-auto"
-            style={{ marginBottom: ".2rem" }}>
+            className="flex justify-center items-center w-14 md:w-16 ml-2 h-auto contact-us-button-logo-container"
+          >
             <Image
               src="/branding/mmm_logo_white.png"
               width={294}
               height={95}
-              alt="company logo"
+              alt="MMM logo"
             />
           </div>
         </div>
