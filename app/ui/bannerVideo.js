@@ -1,19 +1,16 @@
 export default function BannerVideo({ src, title }) {
+  const paddingClass =
+    title === "MMM_Livestreaming_Video" ||
+    title === "Video_Page_Banner_Video" ||
+    title === "MMM_Our_Work_Video" ||
+    title === "MMM_Photography_Video"
+      ? "padding-42-19"
+      : "padding-56-25";
+
   return (
     <section className="grid grid-cols-1 gap-4">
       <div className="relative flex justify-center">
-        <div
-          className="w-full banner-video-aspect-ratio-container"
-          style={{
-            paddingTop:
-              title === "MMM_Livestreaming_Video" ||
-              title === "Video_Page_Banner_Video" ||
-              title === "MMM_Our_Work_Video"
-                ? "42.19%"
-                : title === "MMM_Photography_Video"
-                ? "42.19%"
-                : "56.25%"
-          }}>
+        <div className={`w-full banner-video-aspect-ratio-container ${paddingClass}`}>
           <iframe
             title={title}
             src={src}

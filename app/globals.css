@@ -39,6 +39,15 @@ html {
   padding-top: 42.19%;
 }
 
+/* bannerVideo.css */
+.padding-42-19 {
+  padding-top: 42.19%;
+}
+
+.padding-56-25 {
+  padding-top: 56.25%;
+}
+
 .video-frame-client-span {
   text-shadow: 2px 2px 0 black;
   top: 50%;
@@ -94,9 +103,24 @@ html {
   cursor: pointer;
 }
 
+.photo-swiper {
+  --swiper-navigation-color: #fff;
+  --swiper-pagination-color: #fff;
+  --swiper-pagination-bullet-inactive-color: #d3d3d3
+}
+
+.scroll-to-top-button {
+  transition: opacity 0.6s ease-in-out;
+}
+
 /* submit button animation */
 .svg-animate {
   animation: takeoff 1s linear forwards;
+  transform-origin: top left;
+  transform-style: preserve-3d;
+}
+
+.submit-button-svg {
   transform-origin: top left;
   transform-style: preserve-3d;
 }

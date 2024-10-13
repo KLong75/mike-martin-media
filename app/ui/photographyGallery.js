@@ -83,11 +83,7 @@ export default function PhotographyGallery({
               .filter((gallery) => gallery.client === client)
               .map((gallery) => (
                 <Swiper
-                  style={{
-                    "--swiper-navigation-color": "#ffffff",
-                    "--swiper-pagination-color": "#ffffff",
-                    "--swiper-pagination-bullet-inactive-color": "#d3d3d3",
-                  }}
+                  className="photo-swiper"
                   speed={1200}
                   key={gallery.client} // Unique key for each Swiper based on the gallery client
                   modules={[EffectCoverflow, Pagination, Navigation]}
