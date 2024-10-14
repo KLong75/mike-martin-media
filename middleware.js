@@ -2,9 +2,10 @@ import { NextResponse } from "next/server";
 
 export function middleware(request) {
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
+  const isDevelopment = process.env.NODE_ENV === 'development';
   const cspHeader = `
     default-src 'self';
-    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval'
+    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' ${isDevelopment ? "'unsafe-eval'" : ''} 
     https://cdn-cookieyes.com 
     https://cdn-cookieyes.com/client_data/*/script.js 
     https://www.googletagmanager.com 
