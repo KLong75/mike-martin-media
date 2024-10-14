@@ -1,6 +1,8 @@
 // import from next
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
+// import components
+import Image from "./image"
 
 export default function MmmSiteButton({
   href,

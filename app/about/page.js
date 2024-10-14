@@ -1,8 +1,9 @@
 // import from next
-import Image from "next/image";
+// import Image from "next/image";
 // import data
 import { weTextBlockData } from "../lib/data";
 // import components
+import Image from "../ui/image";
 import WeTextBlock from "../ui/weTextBlock";
 import TeamGallery from "../ui/teamGallery";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";

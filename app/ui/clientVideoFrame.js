@@ -2,13 +2,15 @@
 // import from vercel
 import { track } from "@vercel/analytics";
 // import from next
-import Image from "next/image";
+// import Image from "next/image";
 // import from react
 import { useState } from "react";
 // import from headlessui
 import { Dialog } from "@headlessui/react";
 // import icons
 import { HiX } from "react-icons/hi";
+// import components
+import Image from "./image";
 
 export default function ClientVideoFrame({
   src,

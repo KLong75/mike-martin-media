@@ -1,5 +1,5 @@
 // import from next
-import Image from "next/image";
+// import Image from "next/image";
 // import teamData
 import { teamData } from "../lib/data.js";
 // import components

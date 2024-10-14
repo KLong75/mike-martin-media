@@ -3,13 +3,15 @@
 import { useState } from "react";
 //  import from next
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import { usePathname } from "next/navigation";
 // import from headlessui
 import { Dialog } from "@headlessui/react";
 // import icons
 import { MdDehaze } from "react-icons/md";
 import { HiX } from "react-icons/hi";
+// import components
+import Image from "./image";
 
 const navLinks = [
   {
@@ -61,7 +63,7 @@ export default function Nav() {
                   src="/branding/mmm_logo_white.png"
                   width={294}
                   height={95}
-                  alt="company logo"
+                  alt="MMM logo"
                   priority
                   as="image"
                 />

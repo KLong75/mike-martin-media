@@ -2,10 +2,11 @@
 // import from react
 import React from "react";
 // import from next
-import Image from "next/image";
+// import Image from "next/image";
 // import from react
 import { useState } from "react";
 // import components
+import Image from "./image";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 // import icons
 import { IoIosArrowRoundForward } from "react-icons/io";

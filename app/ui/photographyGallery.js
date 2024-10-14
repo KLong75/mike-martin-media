@@ -3,8 +3,8 @@
 import { track } from '@vercel/analytics';
 // import from react
 import { useState } from "react";
-// import from next
-import Image from "next/image";
+// import components
+import Image from "./image";
 // import from headlessui
 import { Dialog } from "@headlessui/react";
 // import icons

@@ -11,13 +11,15 @@ export function middleware(request) {
     https://www.googletagmanager.com 
     https://www.gstatic.com 
     https://www.gstatic.com/cv/js/sender/v1/cast_sender.js 
-    https://f.vimeocdn.com 
+    https://f.vimeocdn.com
+    https://f.vimeocdn.com/p/4.37.12/js/player.module.js 
     https://player.vimeo.com
     https://cdn.lightwidget.com/widgets/lightwidget.js
     https://cdn.lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html
     https://va.vercel-scripts.com/v1/script.debug.js;;
-    style-src 'self' 'nonce-${nonce}';
-    img-src 'self' blob: data:;
+    style-src 'self' 'nonce-${nonce}' ${isDevelopment ? "'unsafe-inline'" : ''};
+    img-src 'self' blob: data: 
+    https://cdn.lightwidget.com/*;
     font-src 'self';
     object-src 'none';
     base-uri 'self';

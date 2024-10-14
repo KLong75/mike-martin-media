@@ -1,7 +1,7 @@
 // import from next
-
-import Image from "next/image";
+// import Image from "next/image";
 // import components
+import Image from "../ui/image";
 import ContactForm from "../ui/contactForm";
 import ContactInfo from "../ui/contactInfo";
 import SocialMediaLinks from "../ui/socialMediaLinks";
