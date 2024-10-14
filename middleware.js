@@ -2,10 +2,12 @@ import { NextResponse } from "next/server";
 
 export function middleware(request) {
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
-  const isDevelopment = process.env.NODE_ENV === 'development';
+  const isDevelopment = process.env.NODE_ENV === "development";
   const cspHeader = `
     default-src 'self';
-    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' ${isDevelopment ? "'unsafe-eval'" : ''} 
+    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' ${
+    isDevelopment ? "'unsafe-eval'" : ""
+  } 
     https://cdn-cookieyes.com 
     https://cdn-cookieyes.com/client_data/*/script.js 
     https://www.googletagmanager.com 
@@ -16,8 +18,8 @@ export function middleware(request) {
     https://player.vimeo.com
     https://cdn.lightwidget.com/widgets/lightwidget.js
     https://cdn.lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html
-    https://va.vercel-scripts.com/v1/script.debug.js;;
-    style-src 'self' 'nonce-${nonce}' ${isDevelopment ? "'unsafe-inline'" : ''};
+    https://va.vercel-scripts.com/v1/script.debug.js;
+    style-src 'self' 'nonce-${nonce}';
     img-src 'self' blob: data: 
     https://cdn.lightwidget.com/*;
     font-src 'self';
@@ -55,3 +57,22 @@ export function middleware(request) {
 
   return response;
 }
+
+export const config = {
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - api (API routes)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     */
+    {
+      source: "/((?!api|_next/static|_next/image|favicon.ico).*)",
+      missing: [
+        { type: "header", key: "next-router-prefetch" },
+        { type: "header", key: "purpose", value: "prefetch" },
+      ],
+    },
+  ],
+};
