@@ -33,6 +33,45 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/our_work',
+        destination: '/our-work',
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: '/our_work',
+        destination: '/our-work',
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: '/our_work/drone',
+        destination: '/our-work/drone',
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: '/our_work/photography',
+        destination: '/our-work/photography',
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: '/our_work/livestreaming',
+        destination: '/our-work/livestreaming',
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: '/our_work/animation-motion-graphics',
+        destination: '/our-work/animation-motion-graphics',
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: '/our_work/mmm-video',
+        destination: '/our-work/mmm-video',
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
