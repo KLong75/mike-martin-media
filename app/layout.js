@@ -35,6 +35,8 @@ export const metadata = {
   },
 };
 
+export const dynamic = "force-dynamic"
+
 export default function RootLayout({ children }) {
   return (
     <html
@@ -52,5 +54,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
-export const dynamic = "force-dynamic"
