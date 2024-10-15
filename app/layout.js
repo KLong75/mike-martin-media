@@ -1,5 +1,8 @@
 // import from vercel
 import { Analytics } from "@vercel/analytics/react";
+// import from next
+// import { headers } from "next/headers";
+// import Script from "next/script";
 // import from next/third-parties
 import { GoogleTagManager } from "@next/third-parties/google";
 // import components
