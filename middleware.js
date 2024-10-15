@@ -5,27 +5,35 @@ export function middleware(request) {
   const isDevelopment = process.env.NODE_ENV === "development";
   const cspHeader = `
     default-src 'self';
-    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' ${
-    isDevelopment ? "'unsafe-eval'" : ""
-  } 
-    https://cdn-cookieyes.com 
-    https://cdn-cookieyes.com/client_data/*/script.js 
-    https://www.googletagmanager.com 
-    https://www.gstatic.com 
-    https://www.gstatic.com/cv/js/sender/v1/cast_sender.js 
-    https://f.vimeocdn.com/
-    https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js
-    https://f.vimeocdn.com/p/4.37.12/js/player.module.js 
-    https://player.vimeo.com
-    https://cdn.lightwidget.com/widgets/lightwidget.js
-    https://cdn.lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html
-    https://va.vercel-scripts.com/v1/script.debug.js
-    https://vercel.live/_next-live/feedback/instrument.99a72fc929d4a2a6df6c.js;
-    style-src 'self' 'nonce-${nonce}'
-    https://f.vimeocdn.com/p/4.37.12/css/player.css;
-    img-src 'self' blob: data: 
-    https://cdn.lightwidget.com/*
-    https://i.vimeocdn.com/video/*;
+    script-src 
+      'self' 
+      'nonce-${nonce}' 
+      'strict-dynamic' 
+      ${isDevelopment ? "'unsafe-eval'" : ""} 
+      https://cdn-cookieyes.com 
+      https://cdn-cookieyes.com/client_data/*/script.js 
+      https://www.googletagmanager.com 
+      https://www.gstatic.com 
+      https://www.gstatic.com/cv/js/sender/v1/cast_sender.js 
+      https://f.vimeocdn.com/
+      https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js
+      https://f.vimeocdn.com/p/4.37.12/js/player.module.js 
+      https://player.vimeo.com
+      https://cdn.lightwidget.com/widgets/lightwidget.js
+      https://cdn.lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html
+      https://va.vercel-scripts.com/v1/script.debug.js
+      https://vercel.live/*
+      https://vercel.live/_next-live/feedback/instrument.99a72fc929d4a2a6df6c.js;
+    style-src 
+      'self' 
+      'nonce-${nonce}'
+      https://f.vimeocdn.com/p/4.37.12/css/player.css;
+    img-src 
+      'self' 
+      blob: 
+      data: 
+      https://cdn.lightwidget.com/*
+      https://i.vimeocdn.com/video/*;
     font-src 'self';
     object-src 'none';
     base-uri 'self';
