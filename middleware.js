@@ -18,6 +18,7 @@ export function middleware(request) {
   https://cdn.lightwidget.com/widgets/lightwidget.js
   https://cdn.lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html
   https://va.vercel-scripts.com/v1/script.debug.js
+  https://vercel.live/_next-live/feedback/feedback.js
   https://vercel.live/_next-live/feedback/instrument.99a72fc929d4a2a6df6c.js;
   style-src 'self' 'nonce-${nonce}' ${isDevelopment ? "'unsafe-inline'" : ''};
   img-src 'self' blob: data: 
