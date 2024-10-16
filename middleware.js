@@ -39,6 +39,9 @@ export function middleware(request) {
     "Content-Security-Policy",
     contentSecurityPolicyHeaderValue
   );
+  response.headers.set("X-Frame-Options", "DENY");
+  response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
+  response.headers.set("X-Content-Type-Options", "nosniff");
 
   return response;
 }
