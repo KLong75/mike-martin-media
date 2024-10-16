@@ -3,18 +3,24 @@ import { NextResponse } from "next/server";
 export function middleware(request) {
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
   const isDevelopment = process.env.NODE_ENV === "development";
+  const isPreview = process.env.VERCEL_ENV === "preview";
+  const isProduction = process.env.NODE_ENV === "production";
+
   const cspHeader = `
     default-src 'self';
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' ${
     isDevelopment ? "'unsafe-eval'" : ""
-  } https://cdn-cookieyes.com https://cdn-cookieyes.com/client_data/*/script.js https://www.googletagmanager.com https://www.gstatic.com https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://f.vimeocdn.com/ https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js https://cdn.lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html https://va.vercel-scripts.com/v1/script.debug.js https://vercel.live/* https://vercel.live/_next-live/feedback/instrument.99a72fc929d4a2a6df6c.js;
+  } 
+    ${isPreview ? "https://vercel.live https://vercel.com 'unsafe-inline'" : ""}
+    https://cdn-cookieyes.com https://cdn-cookieyes.com/client_data/*/script.js https://www.googletagmanager.com https://www.gstatic.com https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://f.vimeocdn.com/ https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js https://cdn.lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html https://va.vercel-scripts.com/v1/script.debug.js https://vercel.live/* https://vercel.live/_next-live/feedback/instrument.99a72fc929d4a2a6df6c.js;
     style-src 'self' 'nonce-${nonce}';
-    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/*;
+    connect-src 'self' ${isPreview ? "https://vercel.live/ https://vercel.com https://vitals.vercel-insights.com https://sockjs-mt1.pusher.com/ wss://ws-mt1.pusher.com/" : ""};
+    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* ${isPreview ? "https://vercel.live https://vercel.com https://sockjs-mt1.pusher.com/" : ""};
     font-src 'self';
     object-src 'none';
     base-uri 'self';
     form-action 'self';
-    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/; 
+    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/ ${isPreview ? "https://vercel.live https://vercel.com" : ""}; 
     frame-ancestors 'none';
     upgrade-insecure-requests;
 `;
