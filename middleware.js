@@ -8,7 +8,7 @@ export function middleware(request) {
 
   const cspHeader = `
     default-src 'self';
-    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' ${
+    script-src 'self' 'nonce-${nonce}' ${isProduction ? 'strict-dynamic' : ""} ${
     isDevelopment ? "'unsafe-eval'" : ""
   } 
     ${isPreview ? "https://vercel.live https://vercel.com 'unsafe-inline'" : ""}
