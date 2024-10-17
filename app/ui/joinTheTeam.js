@@ -1,11 +1,11 @@
 const JoinTheTeam = () => {
   return (
     <div className="flex flex-col justify-center ">
-      <h2 className="font-semibold text-center text-2xl md:text-3xl lg:text-4xl mt-4">
+      <h2 className="font-semibold text-center text-xl md:text-2xl lg:text-3xl xl:text-4xl m-2">
         Interested in Joining Our Team?
       </h2>
 
-      <div className="font-bold">
+      <div className="font-bold md:text-xl">
         <p className="px-8 py-4 md:px-24 lg:px-52 lg:px-72 2xl:px-96">
           If you have skills and a passion for video production, MMM might be
           the right fit for you. We are a close-knit team of professionals that
