@@ -28,7 +28,7 @@ export function middleware(request) {
     default-src 'none';
     script-src 'self' 'nonce-${nonce}' https://vercel.live/ https://vercel.com https://player.vimeo.com/* 'unsafe-inline';
     connect-src 'self' https://vercel.live/ https://vercel.com https://vitals.vercel-insights.com https://sockjs-mt1.pusher.com/ wss://ws-mt1.pusher.com/;
-    style-src 'self' 'nonce-${nonce}' https://vercel.live/;
+    style-src 'self' 'nonce-${nonce}' https://vercel.live/*;
     img-src 'self' https://vercel.live/ https://vercel.com https://sockjs-mt1.pusher.com/ blob: data:;
     font-src 'self';
     object-src 'none';
