@@ -4,7 +4,7 @@ export function middleware(request) {
   let cspHeader;
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
   // const isDevelopment = process.env.NODE_ENV === "development";
-  
+
   const environment = process.env.NEXT_PUBLIC_ENV || process.env.NODE_ENV;
   const isDevelopment = environment === "development";
   const isPreview = environment === "preview";
@@ -26,9 +26,9 @@ export function middleware(request) {
 
   const previewCspHeader = `
     default-src 'none';
-    script-src 'self' 'nonce-${nonce}' https://vercel.live/ https://vercel.com 'unsafe-eval' 'unsafe-inline';
+    script-src 'self' 'nonce-${nonce}' https://vercel.live/ https://vercel.com https://player.vimeo.com/* 'unsafe-inline';
     connect-src 'self' https://vercel.live/ https://vercel.com https://vitals.vercel-insights.com https://sockjs-mt1.pusher.com/ wss://ws-mt1.pusher.com/;
-    style-src 'self' 'nonce-${nonce}';
+    style-src 'self' 'nonce-${nonce}' https://vercel.live/;
     img-src 'self' https://vercel.live/ https://vercel.com https://sockjs-mt1.pusher.com/ blob: data:;
     font-src 'self';
     object-src 'none';
