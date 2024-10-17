@@ -26,7 +26,7 @@ export function middleware(request) {
 
   const previewCspHeader = `
     default-src 'self';
-    script-src 'self' 'nonce-${nonce}' https://player.vimeo.com/* ;
+    script-src 'self' 'nonce-${nonce}' https://player.vimeo.com/* https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/*;
     style-src 'self' 'nonce-${nonce}';
     img-src 'self' blob: data:;
     font-src 'self';
