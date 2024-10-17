@@ -1,6 +1,7 @@
 // import from next
-import Image from "next/image";
+// import Image from "next/image";
 // import components
+import Image from "../ui/image";
 import ContactForm from "../ui/contactForm";
 import ContactInfo from "../ui/contactInfo";
 import SocialMediaLinks from "../ui/socialMediaLinks";
@@ -18,6 +19,7 @@ export const metadata = {
 };
 
 export default function Page() {
+  
   return (
     <main className=" flex-1">
       <div className="z-10">
@@ -32,9 +34,10 @@ export default function Page() {
             src="/branding/mmm_logo_white.png"
             width={294}
             height={95}
-            alt="company logo"
+            alt="MMM logo"
             priority
             as="image"
+            
           />
         </div>
       </div>

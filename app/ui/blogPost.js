@@ -2,10 +2,11 @@
 // import from react
 import React from "react";
 // import from next
-import Image from "next/image";
+// import Image from "next/image";
 // import from react
 import { useState } from "react";
 // import components
+import Image from "./image";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 // import icons
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -54,8 +55,8 @@ export default function BlogPost({
         className="flex flex-col items-center w-full h-auto mb-12 shadow-2xl relative"
         onClick={() => setBlogPostOpen(true)}>
         <div className="text-center w-72 hover:cursor-pointer mt-3 -mb-4">
-          <h2 className="font-bold text-wrap">{title}</h2>
-          <span className="text-sm mt-2">{formatDate(post_date)}</span>
+          <h3 className="font-bold text-wrap">{title}</h3>
+          <h4 className="text-sm">{formatDate(post_date)}</h4>
         </div>
         <div id="image-div" className="w-72 h-72 -mb-2">
           <Image

@@ -1,7 +1,8 @@
 // import from vercel
 import { Analytics } from "@vercel/analytics/react";
 // import from next
-import Script from "next/script";
+// import { headers } from "next/headers";
+// import Script from "next/script";
 // import from next/third-parties
 import { GoogleTagManager } from "@next/third-parties/google";
 // import components
@@ -34,6 +35,9 @@ export const metadata = {
     google: "An5ZltC5TJiquLvxw_Va-z7nL4lI8A_xBgeJVOQgToQ",
   },
 };
+
+// set dynamic
+export const dynamic = "force-dynamic"
 
 export default function RootLayout({ children }) {
   return (

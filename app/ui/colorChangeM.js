@@ -1,5 +1,6 @@
 // import from next
-import Image from "next/image";
+// import Image from "next/image";
+import Image from "./image";
 
 export default function ColorChangeM({ src }) {
   return (

@@ -1,4 +1,5 @@
-import Image from "next/image";
+// import Image from "next/image";
+import Image from "./image";
 
 export default function DisplayCard({ title, image, author, text, date }) {
   return (

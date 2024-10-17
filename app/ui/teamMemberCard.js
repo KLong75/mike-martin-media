@@ -1,14 +1,8 @@
-// import from next
-import Image from "next/image";
+// import components
+import Image from "./image";
 
 export default function TeamMemberCard({ name, role, about, image_src }) {
-  // if (image_src === "")
-  //   return (
-  //     <div>
-       
-  //     </div>
-  //   );
-  // else {
+ 
     return (
       <div className="text-left shadow-2xl bg-white">
         <div className="flex justify-center p-8">

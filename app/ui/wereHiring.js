@@ -1,5 +1,6 @@
-// import from next
-import Image from "next/image";
+// import components
+import Image from "./image";
+
 
 export default function WereHiring() {
   return (

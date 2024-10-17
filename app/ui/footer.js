@@ -1,8 +1,9 @@
 "use client";
 // import from vercel
 import { track } from "@vercel/analytics";
-import Image from "next/image";
+// import Image from "next/image";
 // import components
+import Image from "./image";
 import SocialMediaLinks from "./socialMediaLinks";
 import ContactInfo from "./contactInfo";
 import Link from "next/link";

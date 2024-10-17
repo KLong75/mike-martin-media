@@ -1,7 +1,9 @@
 // import from next
-import Image from "next/image";
+// import Image from "next/image";
 // import from react
 import { useState, useEffect } from "react";
+// import components
+import Image from "./image";
 
 export default function BannerVideoWithFadeEffect({ src, title }) {
   const [hideLogo, setHideLogo] = useState(false);

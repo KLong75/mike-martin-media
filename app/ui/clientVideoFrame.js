@@ -2,13 +2,15 @@
 // import from vercel
 import { track } from "@vercel/analytics";
 // import from next
-import Image from "next/image";
+// import Image from "next/image";
 // import from react
 import { useState } from "react";
 // import from headlessui
 import { Dialog } from "@headlessui/react";
 // import icons
 import { HiX } from "react-icons/hi";
+// import components
+import Image from "./image";
 
 export default function ClientVideoFrame({
   src,
@@ -69,9 +71,6 @@ export default function ClientVideoFrame({
               <Dialog.Title className="text-center text-2xl font-bold text-white">
                 {client}
               </Dialog.Title>
-              {/* <Dialog.Description className="text-center text-2xl font-bold text-white mt-6">
-                {title}
-              </Dialog.Description> */}
             </div>
             <div className="w-full h-full flex justify-center items-center -mt-36 md:mt-0">
               <iframe

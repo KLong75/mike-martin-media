@@ -3,8 +3,8 @@
 import { track } from '@vercel/analytics';
 // import from react
 import { useState } from "react";
-// import from next
-import Image from "next/image";
+// import components
+import Image from "./image";
 // import from headlessui
 import { Dialog } from "@headlessui/react";
 // import icons
@@ -53,8 +53,8 @@ export default function PhotographyGallery({
               height={height}
               priority
             />
-            <h2 className=" text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl lg:text-4xl font-bold">
-              {client}
+            <h2 className="photo-gallery-client-name text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl lg:text-4xl font-bold">
+              {client.toUpperCase()}
             </h2>
           </div>
         </div>

@@ -1,8 +1,8 @@
 "use client";
 // import from next
-import Image from "next/image";
 import Link from "next/link";
 // import components
+import Image from "./ui/image"
 import BannerVideo from "./ui/bannerVideo";
 import MmmSiteButton from "./ui/mmmSiteButton";
 import MmmSiteButtonTextOnly from "./ui/mmmSiteButtonTextOnly";
