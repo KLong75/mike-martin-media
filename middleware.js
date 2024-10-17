@@ -36,10 +36,10 @@ export function middleware(request) {
       headers: requestHeaders,
     },
   });
-  response.headers.set(
-    "Content-Security-Policy",
-    contentSecurityPolicyHeaderValue
-  );
+  // response.headers.set(
+  //   "Content-Security-Policy",
+  //   contentSecurityPolicyHeaderValue
+  // );
   response.headers.set("X-Frame-Options", "DENY");
   response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
   response.headers.set("X-Content-Type-Options", "nosniff");
