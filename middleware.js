@@ -25,17 +25,17 @@ export function middleware(request) {
   `;
 
   const previewCspHeader = `
-    default-src 'none';
-    script-src 'self' 'nonce-${nonce}' https://vercel.live/ https://vercel.com https://player.vimeo.com/* 'unsafe-inline';
+    default-src 'self';
+    script-src 'self' 'nonce-${nonce}' https://player.vimeo.com/*;
     connect-src 'self' https://vercel.live/ https://vercel.com https://vitals.vercel-insights.com https://sockjs-mt1.pusher.com/ wss://ws-mt1.pusher.com/;
-    style-src 'self' 'nonce-${nonce}' https://vercel.live/*;
-    img-src 'self' https://vercel.live/ https://vercel.com https://sockjs-mt1.pusher.com/ blob: data:;
+    style-src 'self' 'nonce-${nonce}' ;
+    img-src 'self' blob: data:;
     font-src 'self';
     object-src 'none';
     base-uri 'self';
     form-action 'self';
     frame-ancestors 'none';
-    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/ https://vercel.live/ https://vercel.com;
+    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/ ;
     upgrade-insecure-requests;
   `;
 
@@ -43,13 +43,13 @@ export function middleware(request) {
     default-src 'self';
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic';
     style-src 'self' 'nonce-${nonce}';
-    img-src 'self' blob: data:;
+    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/*;
     font-src 'self';
     object-src 'none';
     base-uri 'self';
     form-action 'self';
     frame-ancestors 'none';
-    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/ https://vercel.live/ https://vercel.com;
+    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/;
     upgrade-insecure-requests;
   `;
 //   const cspHeader = `
