@@ -26,7 +26,7 @@ export function middleware(request) {
 
   const previewCspHeader = `
     default-src 'self';
-    script-src 'self' 'nonce-${nonce}' https://player.vimeo.com/*;
+    script-src 'self' 'nonce-${nonce}' https://player.vimeo.com/* https://vercel.live/_next-live/feedback/feedback.js;
     connect-src 'self' https://vercel.live/ https://vercel.com https://vitals.vercel-insights.com https://sockjs-mt1.pusher.com/ wss://ws-mt1.pusher.com/;
     style-src 'self' 'nonce-${nonce}' ;
     img-src 'self' blob: data:;
