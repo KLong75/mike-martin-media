@@ -44,10 +44,12 @@ export function middleware(request) {
 
   const productionCspHeader = `
     default-src 'self';
-    script-src 'self' 'nonce-${nonce}' 'strict-dynamic';
+    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://www.googletagmanager.com;
+    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' cdn-cookieyes.com ;
     style-src 'self' 'nonce-${nonce}';
-    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/*;
+    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://*.google-analytics.com https://*.googletagmanager.com;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/*;
+    connect-src 'self' *.cookieyes.com cdn-cookieyes.com www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;
     font-src 'self' data:;
     object-src 'none';
     base-uri 'self';
