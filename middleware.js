@@ -28,10 +28,10 @@ export function middleware(request) {
 
   const previewCspHeader = `
     default-src 'self';
-    script-src 'self' 'nonce-${nonce}' https://player.vimeo.com/* https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* 'unsafe-inline';
-    script-src-elem 'self' 'nonce-&{nonce}' https://cdn.lightwidget.com/widgets/lightwidget.js;
+    script-src 'self' 'nonce-${nonce}' https://player.vimeo.com/* https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js ;
+    script-src-elem 'self' 'nonce-${nonce}' https://cdn.lightwidget.com/widgets/lightwidget.js;
     style-src 'self' 'nonce-${nonce}';
-    img-src 'self' blob: data:;
+    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/*;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/*;
     font-src 'self' data:;
     object-src 'none';
