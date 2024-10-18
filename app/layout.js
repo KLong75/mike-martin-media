@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <Analytics />
         <Script
-          src={`https://www.googletagmanager.com/gtm.js?${process.env.NEXT_PUBLIC_GTM_ID}`}
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-5W7VWSTB"
           strategy="afterInteractive"
           nonce={nonce}
         />
