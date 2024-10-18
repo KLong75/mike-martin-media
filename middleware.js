@@ -44,7 +44,7 @@ export function middleware(request) {
   `;
 
   const productionCspHeader = `
-    default-src 'self';
+    default-src 'none';
     img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://www.googletagmanager.com;
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' cdn-cookieyes.com ;
     style-src 'self' 'nonce-${nonce}';

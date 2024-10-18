@@ -2,7 +2,7 @@
 import { Analytics } from "@vercel/analytics/react";
 // import from next
 import { headers } from "next/headers";
-// import Script from "next/script";
+import Script from "next/script";
 // import from next/third-parties
 import { GoogleTagManager } from "@next/third-parties/google";
 // import components
@@ -53,6 +53,18 @@ export default function RootLayout({ children }) {
         <ScrollToTopButton />
         <Footer />
         <Analytics />
+        <Script
+          id="_next-gtm-init"
+          nonce={nonce}
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,l){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+              })(window,'dataLayer');
+            `,
+          }}
+        />
       </body>
     </html>
   );
