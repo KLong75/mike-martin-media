@@ -59,21 +59,6 @@ export function middleware(request) {
     frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/;
     upgrade-insecure-requests;
   `;
-//   const cspHeader = `
-//     default-src 'self';
-//     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' ${
-//     isDevelopment ? "'unsafe-eval'" : ""
-//   } https://cdn-cookieyes.com https://cdn-cookieyes.com/client_data/*/script.js https://www.googletagmanager.com https://www.gstatic.com https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://f.vimeocdn.com/ https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js https://cdn.lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html https://va.vercel-scripts.com/v1/script.debug.js https://vercel.live/* https://vercel.live/_next-live/feedback/instrument.99a72fc929d4a2a6df6c.js;
-//     style-src 'self' 'nonce-${nonce}';
-//     img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/*;
-//     font-src 'self' data:;
-//     object-src 'none';
-//     base-uri 'self';
-//     form-action 'self';
-//     frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/; 
-//     frame-ancestors 'none';
-//     upgrade-insecure-requests;
-// `;
 
   if (isDevelopment) {
     console.log("development");
@@ -114,7 +99,10 @@ export function middleware(request) {
 }
 
 export const config = {
-  // matcher: [
+  matcher: "/:path*",
+};
+
+ // matcher: [
   //   /*
   //    * Match all request paths except for the ones starting with:
   //    * - api (API routes)
@@ -130,8 +118,19 @@ export const config = {
   //     ],
   //   },
   // ],
-  matcher: "/:path*",
-};
 
-
-// connect-src 'self' https://vercel.live/ https://vercel.com https://vitals.vercel-insights.com https://sockjs-mt1.pusher.com/ wss://ws-mt1.pusher.com/;
+// const cspHeader = `
+//     default-src 'self';
+//     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' ${
+//     isDevelopment ? "'unsafe-eval'" : ""
+//   } https://cdn-cookieyes.com https://cdn-cookieyes.com/client_data/*/script.js https://www.googletagmanager.com https://www.gstatic.com https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://f.vimeocdn.com/ https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js https://cdn.lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html https://va.vercel-scripts.com/v1/script.debug.js https://vercel.live/* https://vercel.live/_next-live/feedback/instrument.99a72fc929d4a2a6df6c.js;
+//     style-src 'self' 'nonce-${nonce}';
+//     img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/*;
+//     font-src 'self' data:;
+//     object-src 'none';
+//     base-uri 'self';
+//     form-action 'self';
+//     frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/; 
+//     frame-ancestors 'none';
+//     upgrade-insecure-requests;
+// `;

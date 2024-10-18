@@ -54,17 +54,11 @@ export default function RootLayout({ children }) {
         <Footer />
         <Analytics />
         <Script
-          id="_next-gtm-init"
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-5W7VWSTB"
+          strategy="afterInteractive"
           nonce={nonce}
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,l){
-                w[l]=w[l]||[];
-                w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-              })(window,'dataLayer');
-            `,
-          }}
         />
+          
       </body>
     </html>
   );
