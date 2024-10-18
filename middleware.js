@@ -10,7 +10,7 @@ export function middleware(request) {
   const isDevelopment = environment === "development";
   const isPreview = environment === "preview";
   const isProduction = environment === "production";
-  
+
   const developmentCspHeader = `
     default-src 'self';
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval';
@@ -46,8 +46,8 @@ export function middleware(request) {
     default-src 'self';
     img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://www.googletagmanager.com;
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' cdn-cookieyes.com ;
-    style-src 'self' 'nonce-${nonce}';
-    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://*.google-analytics.com https://*.googletagmanager.com;
+    style-src 'self' 'nonce-${nonce}' 'unsafe-inline';
+    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://*.google-analytics.com https://*.googletagmanager.com cdn-cookieyes.com;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/*;
     connect-src 'self' *.cookieyes.com cdn-cookieyes.com www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;
     font-src 'self' data:;
@@ -117,9 +117,7 @@ export const config = {
   matcher: "/:path*",
 };
 
-
 // connect-src 'self' https://vercel.live/ https://vercel.com https://vitals.vercel-insights.com https://sockjs-mt1.pusher.com/ wss://ws-mt1.pusher.com/;
-
 
 // const cspHeader = `
 //     default-src 'self';
@@ -132,7 +130,7 @@ export const config = {
 //     object-src 'none';
 //     base-uri 'self';
 //     form-action 'self';
-//     frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/; 
+//     frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/;
 //     frame-ancestors 'none';
 //     upgrade-insecure-requests;
 // `;
