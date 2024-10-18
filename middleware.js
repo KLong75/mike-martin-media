@@ -41,6 +41,7 @@ export function middleware(request) {
     frame-ancestors 'none';
     frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/ ;
     upgrade-insecure-requests;
+    report-uri /csp-violation-report-endpoint;
   `;
 
   const productionCspHeader = `
@@ -58,6 +59,7 @@ export function middleware(request) {
     frame-ancestors 'none';
     frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/;
     upgrade-insecure-requests;
+    report-uri /csp-violation-report-endpoint;
   `;
 //   const cspHeader = `
 //     default-src 'self';
