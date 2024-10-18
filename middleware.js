@@ -59,16 +59,17 @@ export function middleware(request) {
   //   upgrade-insecure-requests;
   // `;
 
-  if (isDevelopment) {
-    console.log("development");
-    cspHeader = developmentCspHeader;
-  } else if (isPreview) {
-    console.log("preview");
-    cspHeader = previewCspHeader;
-  } else if (isProduction) {
-    console.log("production");
-    cspHeader = productionCspHeader;
-  }
+  // if (isDevelopment) {
+  //   console.log("development");
+  //   cspHeader = developmentCspHeader;
+  // } else if (isPreview) {
+  //   console.log("preview");
+  //   cspHeader = previewCspHeader;
+  // } else if (isProduction) {
+  //   console.log("production");
+  //   cspHeader = productionCspHeader;
+  // }
+
   // Replace newline characters and spaces
   // const contentSecurityPolicyHeaderValue = cspHeader
   //   .replace(/\s{2,}/g, " ")
@@ -86,10 +87,12 @@ export function middleware(request) {
       headers: requestHeaders,
     },
   });
-  response.headers.set(
-    "Content-Security-Policy",
-    contentSecurityPolicyHeaderValue
-  );
+
+  // response.headers.set(
+  //   "Content-Security-Policy",
+  //   contentSecurityPolicyHeaderValue
+  // );
+
   response.headers.set("X-Frame-Options", "DENY");
   response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
   response.headers.set("X-Content-Type-Options", "nosniff");
