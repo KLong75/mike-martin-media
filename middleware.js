@@ -1,63 +1,63 @@
 import { NextResponse } from "next/server";
 
 export function middleware(request) {
-  let cspHeader;
+  // let cspHeader;
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
   console.log("nonce", nonce);
   // const isDevelopment = process.env.NODE_ENV === "development";
 
-  const environment = process.env.NEXT_PUBLIC_ENV || process.env.NODE_ENV;
-  const isDevelopment = environment === "development";
-  const isPreview = environment === "preview";
-  const isProduction = environment === "production";
+  // const environment = process.env.NEXT_PUBLIC_ENV || process.env.NODE_ENV;
+  // const isDevelopment = environment === "development";
+  // const isPreview = environment === "preview";
+  // const isProduction = environment === "production";
 
-  const developmentCspHeader = `
-    default-src 'self';
-    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval';
-    style-src 'self' 'nonce-${nonce}';
-    img-src 'self' blob: data:;
-    media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com;
-    font-src 'self' data:;
-    object-src 'none';
-    base-uri 'self';
-    form-action 'self';
-    frame-ancestors 'none';
-    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/ https://vercel.live/ https://vercel.com;
-    upgrade-insecure-requests;
-  `;
+  // const developmentCspHeader = `
+  //   default-src 'self';
+  //   script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval';
+  //   style-src 'self' 'nonce-${nonce}';
+  //   img-src 'self' blob: data:;
+  //   media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com;
+  //   font-src 'self' data:;
+  //   object-src 'none';
+  //   base-uri 'self';
+  //   form-action 'self';
+  //   frame-ancestors 'none';
+  //   frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/ https://vercel.live/ https://vercel.com;
+  //   upgrade-insecure-requests;
+  // `;
 
-  const previewCspHeader = `
-    default-src 'self';
-    script-src 'self' 'nonce-${nonce}' https://player.vimeo.com/* https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js ;
-    script-src-elem 'self' 'nonce-${nonce}' https://cdn.lightwidget.com/widgets/lightwidget.js;
-    style-src 'self' 'nonce-${nonce}';
-    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/*;
-    media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/*;
-    font-src 'self' data:;
-    object-src 'none';
-    base-uri 'self';
-    form-action 'self';
-    frame-ancestors 'none';
-    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/ ;
-    upgrade-insecure-requests;
-  `;
+  // const previewCspHeader = `
+  //   default-src 'self';
+  //   script-src 'self' 'nonce-${nonce}' https://player.vimeo.com/* https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js ;
+  //   script-src-elem 'self' 'nonce-${nonce}' https://cdn.lightwidget.com/widgets/lightwidget.js;
+  //   style-src 'self' 'nonce-${nonce}';
+  //   img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/*;
+  //   media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/*;
+  //   font-src 'self' data:;
+  //   object-src 'none';
+  //   base-uri 'self';
+  //   form-action 'self';
+  //   frame-ancestors 'none';
+  //   frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/ ;
+  //   upgrade-insecure-requests;
+  // `;
 
-  const productionCspHeader = `
-    default-src 'self';
-    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://www.googletagmanager.com;
-    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' cdn-cookieyes.com ;
-    style-src 'self' 'nonce-${nonce}' 'unsafe-inline';
-    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://*.google-analytics.com https://*.googletagmanager.com cdn-cookieyes.com;
-    media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/*;
-    connect-src 'self' *.cookieyes.com cdn-cookieyes.com www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;
-    font-src 'self' data:;
-    object-src 'none';
-    base-uri 'self';
-    form-action 'self';
-    frame-ancestors 'none';
-    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/;
-    upgrade-insecure-requests;
-  `;
+  // const productionCspHeader = `
+  //   default-src 'self';
+  //   img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://www.googletagmanager.com;
+  //   script-src 'self' 'nonce-${nonce}' 'strict-dynamic' cdn-cookieyes.com ;
+  //   style-src 'self' 'nonce-${nonce}' 'unsafe-inline';
+  //   img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://*.google-analytics.com https://*.googletagmanager.com cdn-cookieyes.com;
+  //   media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/*;
+  //   connect-src 'self' *.cookieyes.com cdn-cookieyes.com www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;
+  //   font-src 'self' data:;
+  //   object-src 'none';
+  //   base-uri 'self';
+  //   form-action 'self';
+  //   frame-ancestors 'none';
+  //   frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/;
+  //   upgrade-insecure-requests;
+  // `;
 
   if (isDevelopment) {
     console.log("development");
@@ -70,16 +70,16 @@ export function middleware(request) {
     cspHeader = productionCspHeader;
   }
   // Replace newline characters and spaces
-  const contentSecurityPolicyHeaderValue = cspHeader
-    .replace(/\s{2,}/g, " ")
-    .trim();
+  // const contentSecurityPolicyHeaderValue = cspHeader
+  //   .replace(/\s{2,}/g, " ")
+  //   .trim();
 
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set("x-nonce", nonce);
-  requestHeaders.set(
-    "Content-Security-Policy",
-    contentSecurityPolicyHeaderValue
-  );
+  // requestHeaders.set(
+  //   "Content-Security-Policy",
+  //   contentSecurityPolicyHeaderValue
+  // );
 
   const response = NextResponse.next({
     request: {
