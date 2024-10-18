@@ -1,7 +1,7 @@
 // import from vercel
 import { Analytics } from "@vercel/analytics/react";
 // import from next
-// import { headers } from "next/headers";
+import { headers } from "next/headers";
 // import Script from "next/script";
 // import from next/third-parties
 import { GoogleTagManager } from "@next/third-parties/google";
@@ -40,11 +40,12 @@ export const metadata = {
 export const dynamic = "force-dynamic"
 
 export default function RootLayout({ children }) {
+  const nonce = headers().get("x-nonce");
   return (
     <html
       lang="en"
       className={`overflow-x-hidden ${dm_sans.variable} font-sans`}>
-      {/* <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />  */}
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} /> 
       <PreloadResources />
       <body className={`flex flex-col min-h-screen`}>
         <Header />
