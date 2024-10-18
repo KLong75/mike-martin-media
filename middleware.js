@@ -27,7 +27,7 @@ export function middleware(request) {
   `;
 
   const previewCspHeader = `
-    default-src 'self';
+    default-src 'none';
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://player.vimeo.com/* https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js ;
     script-src-elem 'self' 'nonce-${nonce}' https://cdn.lightwidget.com/widgets/lightwidget.js https://www.googletagmanager.com/gtm.js https://googletagmanager.com/*;
     style-src 'self' 'nonce-${nonce}';
