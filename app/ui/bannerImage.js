@@ -10,7 +10,12 @@ export default function BannerImage({ src, alt, width, height }) {
         <div
           className="w-full banner-video-aspect-ratio-container"
           >
-          <Image src={src} alt={alt} width={width} height={height} priority/>
+          <Image 
+            src={src} 
+            alt={alt} 
+            width={width} 
+            height={height}
+          />
         </div>
       </div>
     </section>

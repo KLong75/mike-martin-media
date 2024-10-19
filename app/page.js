@@ -10,6 +10,9 @@ import MMMLineLogoBlack from "./ui/mmmLineLogoBlack";
 import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerImage from "./ui/bannerImage";
+// import Images
+import medicalVideoShoot from "../public/images/home-page/medical-video-shoot.png"
+import outdoorCorporateVideoShoot from "../public/images/home-page/outdoor-corporate-video-shoot.jpg"
 
 // import text
 import { homePageText } from "./lib/siteText";
@@ -74,11 +77,8 @@ export default function Home() {
             className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4 home-page-banner-image-container"
           >
             <BannerImage
-              src="/images/home_page/about_mmm_pic.jpg"
+              src={medicalVideoShoot}
               alt="The MMM Team shooting an onsite medical video"
-              width={3242}
-              height={2022}
-              priority
             />
           </div>
 
@@ -129,11 +129,8 @@ export default function Home() {
           className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4 md:mb-4 home-page-banner-image-container"
         >
           <BannerImage
-            src="/images/home_page/home-page-our-work.jpg"
-            alt="The MMM crew shooting a video outside."
-            width={3013}
-            height={1555}
-            priority={true}
+            src={outdoorCorporateVideoShoot}
+            alt="The MMM team shooting an outdoor corporate video."
           />
         </div>
         <div className="md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center mt-2 md:mt-6">

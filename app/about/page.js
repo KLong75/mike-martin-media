@@ -11,6 +11,8 @@ import InstagramWidget from "../ui/instagramWidget";
 import BannerImage from "../ui/bannerImage";
 import ContactUsButton from "../ui/contactUsButton";
 import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
+// iport images
+import mikeInVanWithCamera from "../public/images/about-page/mike-in-van-with-camera.jpg";
 // import text
 import { aboutPageText } from "../lib/siteText";
 
@@ -53,11 +55,8 @@ export default function Page() {
         >
           <div className="p-2 md:p-6 ">
             <BannerImage
-              src="/images/aboutPage/mike-van-big-min.jpg"
+              src={mikeInVanWithCamera}
               alt="Mike Martin in a white van with a video camera"
-              width={2048}
-              height={1363}
-              priority
             />
           </div>
         </div>
