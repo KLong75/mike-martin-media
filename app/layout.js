@@ -37,7 +37,7 @@ export const metadata = {
 };
 
 // set dynamic
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
 
 export default function RootLayout({ children }) {
   const nonce = headers().get("x-nonce");
