@@ -20,6 +20,7 @@ export const blogPosts = [
     image_alt: "MMM sign for Muisc at the Intersection",
     image_width: 1140,
     image_height: 855,
+    image_alt: "The MMM office decorated for the annual Music at the Intersection festival.",
     // second_image_src: "/images/blog-post-images/sept-2024-pic2.png",
     // second_image_width: 1003,
     // second_image_height: 752,
@@ -61,6 +62,7 @@ export const blogPosts = [
     image_src: "/images/blog-page/blog-post-images/germanyCollage.png",
     image_width: 2100,
     image_height: 1500,
+    image_alt: "A collage of images from Tom's trip to Germany and France",
     text: [
       "Travel is in MMM's DNA, and this month Mike and I were able to add two new countries to the list: Germany and France. We are fortunate to have the trust of our clients that allows us to explore the globe, and we are grateful for the opportunity.",
       "When it was time for work, we loved touring our client's amazing factory in Neckartenzlingen, and hosted a livestream out of their state-of-the-art facility. It's an honor to be a trusted partner delivering messaging to their global workforce.",
@@ -76,6 +78,7 @@ export const blogPosts = [
     image_src: "/images/blog-page/blog-post-images/lukeBlogPostPic-6-2024.jpg",
     image_width: 1920,
     image_height: 1450,
+    image_alt: "Luke and some coworkers around a campfire on an MMM work trip",
     text: [
       "Hey everyone, it's Luke!  I'm an editor and videographer with MMM, and I'm proud to be here every day.  When I wake up in the morning, I find myself excited to walk into the office to see my favorite coworkers and tackle whatever is on my plate that day.  Personally, I find work can sometimes be a meditative experience.  Sure, sometimes the project can be difficult, emotional, or long.  But once the project is finished and approved, it's hard not to feel a sense of accomplishment and growth.",
       "Now that I'm done sapping about my job, let's talk about when we get to experience spending time with our coworkers outside of work!  Twice a year, sometimes more, we plan a camping or float trip to get the whole office to come outside, smell the grass, and get to know each other outside of the screens and rolling chairs.  We get to see who can build a fire, who can canoe without tipping, and who can design the most luxurious camping space.  It's an opportunity to show your true colors and separate from the work mindset.  The only time I've sang karaoke was at a work camping trip!",
@@ -90,6 +93,7 @@ export const blogPosts = [
     image_src: "/images/blog-page/blog-post-images/philMay.jpg",
     image_width: 4032,
     image_height: 2268,
+    image_alt: "Welcome to Ohio sign on a bridge overpass viewed from the dashboard of a car",
     text: [
       "Hello and thank you for reading my blogpost! I'm Phillip, a passionate videographer and editor with Mike Martin Media. I recently embarked on a memorable work trip to Dayton, Ohio. Dayton greeted us with open arms. Although the weather was bitter cold, the welcome from our client and the town was warm. This wasn't just a business trip; it was the beginning of a story waiting to be told through our lenses.",
       "Our client's vision for corporate videos aimed at recruitment came to life over a focused three-day shoot. They shared their insights, enhancing the promotional pieces we crafted. This collaborative spirit affirmed that impactful video storytelling is as much about the message as it is about the medium.",
@@ -118,7 +122,7 @@ export const blogPosts = [
   {
     title: "Inside MMM's Arizona Trip",
     post_date: "2023-3-27",
-    image_src: "/blog-page/images/blog-post-images/arizonaPic.png",
+    image_src: "/images/blog-page/blog-post-images/arizonaPic.png",
     image_width: 1140,
     image_height: 1070,
     text: [
