@@ -2,7 +2,7 @@ export const blogPosts = [
   // {
   //   title: "",
   //   post_date: "",
-  //   image_src: "/images/blogPics/",
+  //   image_src: "/images/blog-page/blogPics/",
   //   image_width: 1140,
   //   image_height: 855,
   //   text: [
@@ -16,7 +16,7 @@ export const blogPosts = [
   {
     title: "A Note from Mary",
     post_date: "10/1/2024",
-    image_src: "/images/blogPics/sept-2024-pic1.png",
+    image_src: "/images/blog-page/blogPics/sept-2024-pic1.png",
     image_alt: "MMM sign for Muisc at the Intersection",
     image_width: 1140,
     image_height: 855,
@@ -36,11 +36,12 @@ export const blogPosts = [
   {
     title: "Olympic Fever",
     post_date: "8/29/2024",
-    image_src: "/images/blogPics/ericNewby.jpeg",
+    image_src: "/images/blog-page/blogPics/ericNewby.jpeg",
     image_width: 480,
     image_height: 406,
-    image_alt: "Rachel from MMM with Eric Newby, captain of the USA Wheelchair Rugby team",
-    second_image_src: "/images/blogPics/rachelJJK.jpeg",
+    image_alt:
+      "Rachel from MMM with Eric Newby, captain of the USA Wheelchair Rugby team",
+    second_image_src: "/images/blog-page/blogPics/rachelJJK.jpeg",
     second_image_width: 828,
     second_image_height: 752,
     second_image_alt: "Rachel from MMM with Jackie Joyner-Kersee",
@@ -57,7 +58,7 @@ export const blogPosts = [
   {
     title: "A Note from Tom",
     post_date: "7/18/2024",
-    image_src: "/images/blogPics/germanyCollage.png",
+    image_src: "/images/blog-page/blogPics/germanyCollage.png",
     image_width: 2100,
     image_height: 1500,
     text: [
@@ -72,7 +73,7 @@ export const blogPosts = [
   {
     title: "A Note from Luke",
     post_date: "6/7/2024",
-    image_src: "/images/blogPics/lukeBlogPostPic-6-2024.jpg",
+    image_src: "/images/blog-page/blogPics/lukeBlogPostPic-6-2024.jpg",
     image_width: 1920,
     image_height: 1450,
     text: [
@@ -86,7 +87,7 @@ export const blogPosts = [
   {
     title: "Dayton, Ohio Adventure - From Video Shoots to Bar Arcades",
     post_date: "2024-5-8",
-    image_src: "/images/blogPics/philMay.jpg",
+    image_src: "/images/blog-page/blogPics/philMay.jpg",
     image_width: 4032,
     image_height: 2268,
     text: [
@@ -103,7 +104,7 @@ export const blogPosts = [
   {
     title: "Out and About in 2024",
     post_date: "2024-4-15",
-    image_src: "/images/blogPics/spring2024.png",
+    image_src: "/images/blog-page/blogPics/spring2024.png",
     image_width: 1140,
     image_height: 904,
     text: [
@@ -117,7 +118,7 @@ export const blogPosts = [
   {
     title: "Inside MMM's Arizona Trip",
     post_date: "2023-3-27",
-    image_src: "/images/blogPics/arizonaPic.png",
+    image_src: "/blog-page/images/blogPics/arizonaPic.png",
     image_width: 1140,
     image_height: 1070,
     text: [
@@ -132,7 +133,7 @@ export const blogPosts = [
   {
     title: "Reflecting on the Season",
     post_date: "2023-1-18",
-    image_src: "/images/blogPics/reflectingSeasonPic.jpg",
+    image_src: "/images/blog-page/blogPics/reflectingSeasonPic.jpg",
     image_width: 1140,
     image_height: 855,
     text: [
@@ -150,7 +151,7 @@ export const blogPosts = [
   {
     title: "Six Months Down, Six More to Go!",
     post_date: "2022-6-15",
-    image_src: "/images/blogPics/sixMonthsDownPic.jpg",
+    image_src: "/images/blog-page/blogPics/sixMonthsDownPic.jpg",
     image_width: 1140,
     image_height: 855,
     text: [
@@ -165,7 +166,7 @@ export const blogPosts = [
   {
     title: "A Letter from Kevin",
     post_date: "2022-4-7",
-    image_src: "/images/blogPics/luckyKevinPic.jpg",
+    image_src: "/images/blog-page/blogPics/luckyKevinPic.jpg",
     image_width: 1140,
     image_height: 855,
     text: [
@@ -187,7 +188,7 @@ export const blogPosts = [
   {
     title: "A Note from Rachel",
     post_date: "2022-3-23",
-    image_src: "/images/blogPics/rachelNotePic.jpg",
+    image_src: "/images/blog-page/blogPics/rachelNotePic.jpg",
     image_width: 1140,
     image_height: 855,
     text: [
@@ -202,7 +203,7 @@ export const blogPosts = [
   {
     title: "A Note from Mike",
     post_date: "2022-2-10",
-    image_src: "/images/blogPics/mikeNotePic.jpg",
+    image_src: "/images/blog-page/blogPics/mikeNotePic.jpg",
     image_width: 1000,
     image_height: 667,
     text: [
