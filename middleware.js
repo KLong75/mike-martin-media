@@ -60,6 +60,17 @@ export function middleware(request) {
     upgrade-insecure-requests; 
   `;
 
+  if (isDevelopment) {
+    console.log("development");
+    cspHeader = developmentCspHeader;
+  } else if (isPreview) {
+    console.log("preview");
+    cspHeader = previewCspHeader;
+  } else if (isProduction) {
+    console.log("production");
+    cspHeader = productionCspHeader;
+  }
+
   // Replace newline characters and spaces
   const contentSecurityPolicyHeaderValue = cspHeader
     .replace(/\s{2,}/g, " ")
