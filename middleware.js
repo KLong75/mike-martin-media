@@ -3,9 +3,6 @@ import { NextResponse } from "next/server";
 export function middleware(request) {
   let cspHeader;
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
-  console.log("nonce", nonce);
-  // const isDevelopment = process.env.NODE_ENV === "development";
-
   const environment = process.env.NEXT_PUBLIC_ENV || process.env.NODE_ENV;
   const isDevelopment = environment === "development";
   const isPreview = environment === "preview";
@@ -61,13 +58,10 @@ export function middleware(request) {
   `;
 
   if (isDevelopment) {
-    console.log("development");
     cspHeader = developmentCspHeader;
   } else if (isPreview) {
-    console.log("preview");
     cspHeader = previewCspHeader;
   } else if (isProduction) {
-    console.log("production");
     cspHeader = productionCspHeader;
   }
 

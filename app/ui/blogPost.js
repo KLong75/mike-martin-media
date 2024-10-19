@@ -1,8 +1,6 @@
 "use client";
 // import from react
 import React from "react";
-// import from next
-// import Image from "next/image";
 // import from react
 import { useState } from "react";
 // import components
