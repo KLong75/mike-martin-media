@@ -106,6 +106,7 @@ export default function Page() {
             <a 
               href="mikemartinmedia.com/cookie-policy"
               className="text-blue-600 underline"
+              rel="noopenner noreferrer"
             >
               Cookie Policy.
             </a>
@@ -158,6 +159,7 @@ export default function Page() {
         Privacy Policy generated with{" "}
         <a
           className="text-blue-600 underline"
+          rel="noopenner noreferrer"
           target="_blank"
           href="https://www.cookieyes.com/?utm_source=PP&utm_medium=footer&utm_campaign=UW">
           CookieYes
