@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 export function middleware(request) {
-  // let cspHeader;
+  let cspHeader;
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
   console.log("nonce", nonce);
   // const isDevelopment = process.env.NODE_ENV === "development";
