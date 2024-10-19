@@ -91,12 +91,6 @@ export function middleware(request) {
   response.headers.set("X-Frame-Options", "DENY");
   response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
   response.headers.set("X-Content-Type-Options", "nosniff");
-  response.headers.set("Cache-Control", "public, max-age=3600, s-maxage=3600, stale-while-revalidate=59");
-
-   // Set Cache-Control headers for static assets
-   if (request.nextUrl.pathname.startsWith("/_next/static/")) {
-    response.headers.set("Cache-Control", "public, max-age=31536000, immutable");
-  }
 
   return response;
 }
