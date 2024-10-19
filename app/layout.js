@@ -1,8 +1,8 @@
 // import from vercel
 import { Analytics } from "@vercel/analytics/react";
 // import from next
-// import { headers } from "next/headers";
-// import Script from "next/script";
+import { headers } from "next/headers";
+import Script from "next/script";
 // import from next/third-parties
 import { GoogleTagManager } from "@next/third-parties/google";
 // import components
@@ -37,14 +37,15 @@ export const metadata = {
 };
 
 // set dynamic
-export const dynamic = "force-dynamic"
+export const dynamic = "force-dynamic";
 
 export default function RootLayout({ children }) {
+  const nonce = headers().get("x-nonce");
   return (
     <html
       lang="en"
       className={`overflow-x-hidden ${dm_sans.variable} font-sans`}>
-      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} /> 
+      {/* <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} />  */}
       <PreloadResources />
       <body className={`flex flex-col min-h-screen`}>
         <Header />
@@ -52,6 +53,27 @@ export default function RootLayout({ children }) {
         <ScrollToTopButton />
         <Footer />
         <Analytics />
+        <Script
+          id="_next-gtm-init"
+          nonce={nonce}
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');
+              n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');
+            `,
+          }}
+        />
+        {/* <Script
+          // src="https://www.googletagmanager.com/gtm.js?id=GTM-5W7VWSTB"
+          src="https://www.googletagmanager.com/gtag/js"
+          strategy="afterInteractive"
+          nonce={nonce}
+        /> */}
       </body>
     </html>
   );
