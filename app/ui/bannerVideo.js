@@ -12,6 +12,7 @@ export default function BannerVideo({ src, title }) {
       <div className="relative flex justify-center">
         <div className={`w-full banner-video-aspect-ratio-container ${paddingClass}`}>
           <iframe
+          loading="lazy"
             title={title}
             src={src}
             allow="autoplay"

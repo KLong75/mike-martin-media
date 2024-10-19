@@ -32,6 +32,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
           }`}
         >
           <iframe
+            loading="lazy"
             title={title}
             src={src}
             allow="autoplay"
