@@ -111,6 +111,7 @@ export const blogPosts = [
     image_src: "/images/blog-page/blog-post-images/spring2024.png",
     image_width: 1140,
     image_height: 904,
+    image_alt: "A collage of images from the MMM team's adventures in 2024",
     text: [
       "We're only about four months into 2024, but the MMM team has been keeping busy during the short timeframe.  Our travels have taken us all over the US map, from California to New York and everywhere in between.  We even took a few trips just outside of our borders to Canada and Mexico.  The MMMileage will not be stopping anytime soon! This year we are looking forward to potential adventures in Germany and India. More to come on those endeavors later this year!",
       "More recently, the team took the opportunity to gather around outside to catch the eclipse on April 8th.  Some of us were even adventurous enough to climb up to the rooftop to get a better look of the dimming sky.  Although the view from St. Louis was not full 100% coverage of the sun, it was still a pretty spectacular 99.1% view.  It was also a great excuse for us to go outside and eat barbeque.  A big shout out to our videographer Adam for cooking up some stellar burgers.",
@@ -125,6 +126,7 @@ export const blogPosts = [
     image_src: "/images/blog-page/blog-post-images/arizonaPic.png",
     image_width: 1140,
     image_height: 1070,
+    image_alt: "The MMM team in action at the leadership conference in Phoenix, Arizona",
     text: [
       "Spring is one of MMM's busiest times of the year, perhaps even the busiest. This month has certainly been no exception. Last week we had a team fly out to Arizona for a 3-day conference, and today we touched down in China — more on that later.",
       "The leadership conference that our team captured in Phoenix provided the perfect example of the full service events we can cover, including everything from photography to live-streaming. Whether the objective was honoring award winners or recording day-long sessions, we were able to meet changing requests with ease.",
@@ -140,6 +142,7 @@ export const blogPosts = [
     image_src: "/images/blog-page/blog-post-images/reflectingSeasonPic.jpg",
     image_width: 1140,
     image_height: 855,
+    image_alt: "The MMM team playing Mario Kart at their annual tournament",
     text: [
       "It's that time of year again, that beautiful, special time of year when we all gather around to celebrate what truly matters: Mario Kart.",
       "The 2nd Annual MMM Mario Kart $100 Confrontation went DOWN earlier this month! After last year's close finish, this year's Confrontation was highly anticipated and extremely competitive. With twice as many races and racers as last year, tensions were high. The skill level of competitors ranged from total newbies to seasoned veterans, making for a truly entertaining event.",
@@ -158,6 +161,7 @@ export const blogPosts = [
     image_src: "/images/blog-page/blog-post-images/sixMonthsDownPic.jpg",
     image_width: 1140,
     image_height: 855,
+    image_alt: "The MMM team team relaxing on a work trip",
     text: [
       "Can you believe it? We're already halfway through the year! As we reflect on the past six months and look forward to the next six, there's one thing for certain — we are busy. From constructing sets for in-house filming, to recording and producing two podcast series, to our usual — flying all over the country to meet any and all of your video production needs.",
       "Since our last post, we've packed in another handful of trips and fun projects.  Back in March, Rachel got to experience her first travel trip with Mikey and Dave to Indianapolis while Kevin and Adam filmed in Minneapolis. In April, Mikey, Tom, and Zoë enjoyed conducting a livestream recording in Chicago the same week that Kevin and Mike were in DC for a separate livestream! And the travel doesn't stop there… we have a crew in Chattanooga and New York this week, we are sending off another team to Nashville next week, and a team in Santa Clara at the end of the month.",
@@ -173,6 +177,7 @@ export const blogPosts = [
     image_src: "/images/blog-page/blog-post-images/luckyKevinPic.jpg",
     image_width: 1140,
     image_height: 855,
+    image_alt: "a selfie of Kevin in front of a city skyline on a road trip for MMM",
     text: [
       "I'm lucky. I'm lucky to have an amazing daughter who is in her junior year at Murray State. I'm lucky to have an amazing job at Mike Martin Media. I'm lucky to have a job where I wake up every day and love going to work. I'm lucky to get to travel all over the country as part of that job. I mean we even have a hashtag we use, #MMMgood.",
       "My work trips with Mike Martin Media come with a lot of perks. MMM client trips have taken me to cities I have been to, cities I have never been to, and cities I have always wanted to go to. Some of the best trips are when they are close to my hometown of Hagerstown, Maryland, because I can meet up with my parents for lunch or dinner after work is done.",
@@ -195,6 +200,7 @@ export const blogPosts = [
     image_src: "/images/blog-page/blog-post-images/rachelNotePic.jpg",
     image_width: 1140,
     image_height: 855,
+    image_alt: "Rachel from MMM in front of a camera interviewing a client during a video shoot",
     text: [
       "For years, I had the pleasure of working with MMM as a client and when I made the move to being a producer on the team, it felt like I had come home.",
       "Small businesses are so integral in every workforce sector and I'm so proud of the work we do for corporations, non-profits, and educational and medical institutions around the world. The work is fast-paced and we are so nimble and able to pivot at a moment's notice. This is rare and something our clients love.",
@@ -210,6 +216,7 @@ export const blogPosts = [
     image_src: "/images/blog-page/blog-post-images/mikeNotePic.jpg",
     image_width: 1000,
     image_height: 667,
+    image_alt: "Mike Martin and some of the MMM team taking a break during a video shoot",
     text: [
       "MMM is in full swing to start 2022!  Local shoots in St. Louis, Zoom recordings, Live Stream events and shoots from Texas to Nevada have highlighted the start to our year. We are booked for shoots from coast to coast over the next couple of months and we are looking forward to sharing our journey with all of you.",
       "Our new Midtown studio has proven to be a huge benefit for our local clients. This week, we are shooting a podcast in our brand new podcast studio. If you haven't been here yet, just reach out and we'll set up a time for a tour and grab you some lunch at one of our neighborhood favorites!",

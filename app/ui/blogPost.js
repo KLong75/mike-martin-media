@@ -19,6 +19,7 @@ export default function BlogPost({
   image_src,
   image_width,
   image_height,
+  image_alt,
   second_image_src,
   second_image_width,
   second_image_height,
@@ -59,11 +60,10 @@ export default function BlogPost({
         <div id="image-div" className="w-72 h-72 -mb-2">
           <Image
             className="shadow-xl mt-6"
-            priority
             src={image_src}
             width={image_width}
             height={image_height}
-            alt={`Image for ${title} blog post`}
+            alt={image_alt}
           />
         </div>
         <div className="text-center w-72 hover:cursor-pointer mb-4">
@@ -103,7 +103,7 @@ export default function BlogPost({
                     src={image_src}
                     width={image_width}
                     height={image_height}
-                    alt={`Image for ${title} blog post`}
+                    alt={image_alt}
                   />
                 </div>
               </div>
