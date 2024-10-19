@@ -14,7 +14,8 @@ export default function BannerVideo({ src, title }) {
           <iframe
             title={title}
             src={src}
-            allow="autoplay; fullscreen; picture-in-picture"
+            allow="autoplay"
+            loading="lazy"
             className="absolute top-0 left-0 w-full h-full"></iframe>
         </div>
       </div>

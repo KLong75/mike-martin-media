@@ -34,7 +34,8 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
           <iframe
             title={title}
             src={src}
-            allow="autoplay; fullscreen; picture-in-picture"
+            loading="lazy"
+            allow="autoplay"
             className="absolute top-0 left-0 w-full h-full"></iframe>
         </div>
         {/* Logo */}
