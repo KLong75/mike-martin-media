@@ -77,7 +77,7 @@ export default function Home() {
             className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4 home-page-banner-image-container"
           >
             <BannerImage
-              priority={}
+              priority
               src={medicalVideoShoot}
               alt="The MMM Team shooting an onsite medical video"
             />
