@@ -3,7 +3,7 @@
 // import components
 import Image from "./image"
 
-export default function BannerImage({ src, alt, width, height }) {
+export default function BannerImage({ src, alt, width, height, priority }) {
   return (
     <section className="grid grid-cols-1">
       <div className="relative flex justify-center">
@@ -15,6 +15,7 @@ export default function BannerImage({ src, alt, width, height }) {
             alt={alt} 
             width={width} 
             height={height}
+            priority={priority}
           />
         </div>
       </div>

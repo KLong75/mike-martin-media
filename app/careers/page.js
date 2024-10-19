@@ -1,9 +1,9 @@
 // import components
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BannerImage from "../ui/bannerImage";
-
 import JoinTheTeam from "../ui/joinTheTeam";
-// import data
+// import images
+import blackMmmLogo from "../../public/branding/black-mmm-logo-1642x560.png";
 
 export const metadata = {
   title: "Careers",
@@ -18,10 +18,9 @@ export default function Page() {
     <main className="flex flex-col justify-center items-center min-h-screen">
       <div className="w-52 sm:w-72 md:w-128 lg:w-144 py-12">
         <BannerImage
-          src="/branding/black_mmm_large_crop_resize.png"
+          src={blackMmmLogo}
           alt="Work at MMM"
-          width={1642}
-          height={560}
+          priority
         />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">

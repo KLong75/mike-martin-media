@@ -2,6 +2,8 @@
 import BlogPost from "../ui/blogPost";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BannerImage from "../ui/bannerImage";
+// import images
+import goldenGateBridge from "../../public/images/blog-page/golden-gate-bridge.jpg";
 // import data
 import { blogPosts } from "../lib/blogPostData";
 
@@ -19,11 +21,9 @@ export default function Page() {
     <main className="flex-1 ">
       <div className="-mt-1">
         <BannerImage
-          src="/images/blog-page/blog-banner-image.jpg"
+          src={goldenGateBridge}
           alt="The Golden Gate Bridge"
-          width={5008}
-          height={1996}
-          priority={true}
+          priority
         />
       </div>
       <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">

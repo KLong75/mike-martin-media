@@ -8,9 +8,9 @@ export default function VideoFilter() {
 
   return (
     <>
-      <section className="-mt-4">
+      <div className="-mt-4">
         <VideoCategories onCategorySelected={setSelectedCategory} />
-      </section>
+      </div>
       <VideoGallery
         selectedCategory={selectedCategory}
         excludedCategory={["Drone", "Livestream", "Animation"]}

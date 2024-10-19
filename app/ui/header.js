@@ -1,6 +1,8 @@
+// import components
 import Nav from "./nav";
-// import Image from "next/image";
 import Image from "./image"
+// import images
+import whiteMmmLogo from "../../public/branding/white-mmm-logo-294x95.png";
 
 export default function Header() {
   return (
@@ -10,9 +12,7 @@ export default function Header() {
       <div className="ml-2 sm:ml-6 md:ml-12 2xl:ml-20 w-40 md:w-48 lg:w-52 xl:w-60 2xl:w-64 3xl:w-72 h-auto flex items-center p-4">
           <Image
             priority
-            src="/branding/mmm_logo_white.png"
-            width={294}
-            height={95}
+            src={whiteMmmLogo}
             alt="MMM logo"
           />
       </div>

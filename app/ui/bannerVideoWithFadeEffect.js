@@ -1,9 +1,9 @@
-// import from next
-// import Image from "next/image";
 // import from react
 import { useState, useEffect } from "react";
 // import components
 import Image from "./image";
+// import images
+import whiteMmmLogo from "../../public/branding/white-mmm-logo-1200x488.png";
 
 export default function BannerVideoWithFadeEffect({ src, title }) {
   const [hideLogo, setHideLogo] = useState(false);
@@ -44,9 +44,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
           }`}>
           <Image
             priority
-            src="/branding/whiteMmmLogo-1200x488.png"
-            width={1200}
-            height={488}
+            src={whiteMmmLogo}
             alt="MMM logo"
           />
           <h1 className="text-center text-2xl hidden ">

@@ -12,7 +12,7 @@ import BannerImage from "../ui/bannerImage";
 import ContactUsButton from "../ui/contactUsButton";
 import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
 // iport images
-import mikeInVanWithCamera from "../public/images/about-page/mike-in-van-with-camera.jpg";
+import mikeInVanWithCamera from "../../public/images/about-page/mike-in-van-with-camera.jpg";
 // import text
 import { aboutPageText } from "../lib/siteText";
 

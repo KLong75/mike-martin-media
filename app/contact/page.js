@@ -1,5 +1,3 @@
-// import from next
-// import Image from "next/image";
 // import components
 import Image from "../ui/image";
 import ContactForm from "../ui/contactForm";
@@ -8,6 +6,8 @@ import SocialMediaLinks from "../ui/socialMediaLinks";
 import InstagramWidget from "../ui/instagramWidget";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import GoogleMap from "../ui/googleMap";
+// import images
+import whiteMmmLogo from "../../public/branding/white-mmm-logo-294x95.png";
 
 export const metadata = {
   title: "Contact",
@@ -31,13 +31,8 @@ export default function Page() {
         </h1>
         <div className="flex justify-center items-center w-24 md:w-32 lg:w-40 h-auto mb-1.5 lg:mb-2.5 ">
           <Image
-            src="/branding/mmm_logo_white.png"
-            width={294}
-            height={95}
-            alt="MMM logo"
-            priority
-            as="image"
-            
+            src={whiteMmmLogo}
+            alt="MMM"
           />
         </div>
       </div>
