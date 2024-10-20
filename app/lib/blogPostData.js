@@ -37,7 +37,7 @@ export const blogPosts = [
   {
     title: "Olympic Fever",
     post_date: "8/29/2024",
-    image_src: "/images/blog-page/blog-post-images/ericNewby.jpg",
+    image_src: "/images/blog-page/blog-post-images/ericNewby.png",
     image_width: 480,
     image_height: 406,
     image_alt:
