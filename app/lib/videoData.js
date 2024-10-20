@@ -4,7 +4,7 @@ export const videoData = [
     category: ["Drone"],
     client: "Missouri Baptist",
     title: "Blues Drone",
-    image_src: "/images/video-thumbnails/drone/bluesDrone.jpg",
+    image_src: "/images/video-thumbnails/drone/bluesDrone.png",
     src: "https://player.vimeo.com/video/943728497?h=2a1e0843fa&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
