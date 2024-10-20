@@ -73,8 +73,8 @@ export default function PhotographyGallery({
                 <HiX className="h-6 w-6" />
               </button>
             </div>
-            <div className="flex justify-center items-center ">
-              <Dialog.Title className="fixed top-12 md:top-18 text-2xl font-bold text-white">
+            <div className="flex justify-center items-center">
+              <Dialog.Title className="fixed top-12 md:top-18 text-xl md:text-2xl font-bold text-white">
                 {client.toUpperCase()}
               </Dialog.Title>
             </div>
