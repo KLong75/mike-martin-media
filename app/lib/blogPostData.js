@@ -213,7 +213,7 @@ export const blogPosts = [
   {
     title: "A Note from Mike",
     post_date: "2022-2-10",
-    image_src: "/images/blog-page/blog-post-images/mikeNotePic.jpg",
+    image_src: "/images/blog-page/blog-post-images/mikeNotePic.png",
     image_width: 1000,
     image_height: 667,
     image_alt: "Mike Martin and some of the MMM team taking a break during a video shoot",
