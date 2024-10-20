@@ -12,7 +12,7 @@ import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerImage from "./ui/bannerImage";
 // import Images
 import medicalVideoShoot from "../public/images/home-page/medical-video-shoot.png"
-import outdoorCorporateVideoShoot from "../public/images/home-page/outdoor-corporate-video-shoot.jpg"
+import outdoorCorporateVideoShoot from "../public/images/home-page/outdoor-corporate-video-shoot.png"
 
 // import text
 import { homePageText } from "./lib/siteText";
