@@ -318,7 +318,7 @@ export const videoData = [
     category: ["Animation"],
     client: "St. Louis Children's Hospital",
     title: "What to Expect - Colonoscopy",
-    image_src: "/images/video-thumbnails/animation/animation-example.jpg",
+    image_src: "/images/video-thumbnails/animation/animation-example.png",
     src: "https://player.vimeo.com/video/823498854?h=49fb6c4ebf&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
@@ -326,7 +326,7 @@ export const videoData = [
     category: ["Animation"],
     client: "Washington University",
     title: "Always Olin",
-    image_src: "/images/video-thumbnails/animation/always-olin.jpg",
+    image_src: "/images/video-thumbnails/animation/always-olin.png",
     src: "https://player.vimeo.com/video/944136129?h=701f2488bb&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
@@ -334,7 +334,7 @@ export const videoData = [
     category: ["Animation"],
     client: "Washington University",
     title: "Olin MBA",
-    image_src: "/images/video-thumbnails/animation/olin-mba.jpg",
+    image_src: "/images/video-thumbnails/animation/olin-mba.png",
     src: "https://player.vimeo.com/video/823498955?h=815218068d&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
@@ -342,7 +342,7 @@ export const videoData = [
     category: ["Animation"],
     client: "Washington University",
     title: "Big Idea Bounce",
-    image_src: "/images/video-thumbnails/animation/big-idea-bounce.jpg",
+    image_src: "/images/video-thumbnails/animation/big-idea-bounce.png",
     src: "https://player.vimeo.com/video/930759771?h=7af899a007&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   // {
