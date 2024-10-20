@@ -75,7 +75,7 @@ export default function PhotographyGallery({
             </div>
             <div className="flex justify-center items-center ">
               <Dialog.Title className="fixed top-12 md:top-18 text-2xl font-bold text-white">
-                {client}
+                {client.toUpperCase()}
               </Dialog.Title>
             </div>
             {/* Ensure a single Swiper for the selected gallery */}
