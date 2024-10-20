@@ -54,6 +54,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <Analytics />
         <Script
+          async
           id="_next-gtm-init"
           nonce={nonce}
           strategy="afterInteractive"
