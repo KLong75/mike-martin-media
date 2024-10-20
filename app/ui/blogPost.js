@@ -29,6 +29,7 @@ export default function BlogPost({
   closing_tag,
   author,
   video_src,
+  priority,
 }) {
   const shortenPostText = (text, num) => {
     if (text.length < num) {
@@ -52,8 +53,8 @@ export default function BlogPost({
       {/* Trigger and Preview Section */}
       <div
         className="flex flex-col items-center w-full h-auto mb-12 shadow-2xl relative"
-        onClick={() => setBlogPostOpen(true)}>
-        <div className="text-center w-72 hover:cursor-pointer mt-3 -mb-4">
+      >
+        <div className="text-center w-72 mt-3 -mb-4">
           <h3 className="font-bold text-wrap">{title}</h3>
           <h4 className="text-sm">{formatDate(post_date)}</h4>
         </div>
@@ -64,13 +65,17 @@ export default function BlogPost({
             width={image_width}
             height={image_height}
             alt={image_alt}
+            priority={priority}
           />
         </div>
-        <div className="text-center w-72 hover:cursor-pointer mb-4">
+        <div className="text-center w-72 mb-12">
           <p className="mb-6 text-balance text-left text-md mt-2">
             {shortenPostText(text[0], 200)}
             <br />
-            <span className="inline-flex items-center font-bold hover:cursor-pointer hover:scale-105 transition-transform mt-1">
+            <span 
+              className="inline-flex items-center font-bold hover:cursor-pointer hover:scale-105 transition-transform mt-1"
+              onClick={() => setBlogPostOpen(true)}
+            >
               READ MORE <IoIosArrowRoundForward className="text-2xl" />
             </span>
           </p>

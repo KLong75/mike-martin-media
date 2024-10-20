@@ -92,6 +92,11 @@ export function middleware(request) {
   response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
   response.headers.set("X-Content-Type-Options", "nosniff");
 
+   // Set Cache-Control headers for static assets
+   if (request.nextUrl.pathname.startsWith("/_next/static/")) {
+    response.headers.set("Cache-Control", "public, max-age=31536000, immutable");
+  }
+
   return response;
 }
 

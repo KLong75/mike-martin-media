@@ -59,6 +59,7 @@ export default function Page() {
             closing_tag={post.closing_tag}
             author={post.author}
             video_src={post.video_src}
+            priority={index === 0} // Set priority for the first blog post
           />
         ))}
       </div>

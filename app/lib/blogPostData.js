@@ -42,7 +42,7 @@ export const blogPosts = [
     image_height: 406,
     image_alt:
       "Rachel from MMM with Eric Newby, captain of the USA Wheelchair Rugby team",
-    second_image_src: "/images/blog-page/blog-post-images/rachelJJK.jpeg",
+    second_image_src: "/images/blog-page/blog-post-images/rachelJJK.jpg",
     second_image_width: 828,
     second_image_height: 752,
     second_image_alt: "Rachel from MMM with Jackie Joyner-Kersee",
