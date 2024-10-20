@@ -57,6 +57,7 @@ export default function Page() {
             <BannerImage
               src={mikeInVanWithCamera}
               alt="Mike Martin in a white van with a video camera"
+              priority
             />
           </div>
         </div>

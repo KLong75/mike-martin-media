@@ -11,8 +11,8 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
               className="shadow-2xl border-2 border-black"
               src={image_src}
               alt={name}
-              width={900}
-              height={1200}
+              width={284}
+              height={379}
             />
           </div>
         </div>

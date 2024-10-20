@@ -4,70 +4,70 @@ export const teamData = [
     role: "President & CEO",
     about:
       "Mike launched Mike Martin Media in 2008 after 12 years in broadcast television. He has shot, edited, produced, directed, managed, lit, and worked just about every other production position, for numerous clients, on projects of all sizes. Mike is involved in every step of the process, from project pitch to final delivery.",
-    image_src: "/images/team/mike_martin.png",
+    image_src: "/images/team/mikeMartin.png",
   },
   {
     name: "Rachel Lee",
     role: "Executive Producer",
     about:
       "Rachel started working in video production in her hometown of Nashville in 2002. She honed her skill as a project manager, producer, and video editor while working for Barnes-Jewish Hospital and St. Louis Children's Hospital's marketing and communications departments. She loves working with clients and helping them bring their ideas to life.",
-    image_src: "/images/team/rachel_lee.png",
+    image_src: "/images/team/rachelLee.png",
   },
   {
     name: "Mary Scott",
     role: "Producer",
     about:
       "Mary graduated at the top of her class from Southern Illinois University with a degree in Cinema and Photography.  After graduating, she spent around four and a half years in the news industry at Fox 2 Now and KPLR 11.  She spent her time at the station as a video editor and field videographer.  Her passion in video creation is being able to tell other's stories and making their creative visions come to life.  In her spare time, Mary enjoys singing, drawing, webcomics, 1,000+ piece puzzles, video games, and snuggling with her cat Kody.",
-    image_src: "/images/team/mary_scott.png",
+    image_src: "/images/team/maryScott.png",
   },
   {
     name: "Tom Young",
     role: "Director of Production",
     about:
       "Tom's an SIU Saluki graduate, and has a diverse background in the television world. As Director of Production, his eye for detail and passion for quality work match his expertise in the field.",
-    image_src: "/images/team/tomYoungPic.png",
+    image_src: "/images/team/tomYoung.png",
   },
   {
     name: "Kevin Marshall",
     role: "Project Manager / Videographer / Editor",
     about:
       "Kevin brings 25+ years of experience in broadcast news to the MMM team, including 20 years locally at KPLR/KTVI as a videographer/editor. Kevin enjoys interacting with clients through the entire video production process, bringing creativity, expertise and passion to every project. When not at work, Kevin loves exploring local breweries, savoring the St. Louis food scene, and traveling the globe. Kevin is a passionate soccer fan, diehard Notre Dame, Orioles and Steelers fan, and an avid golfer.",
-    image_src: "/images/team/kevinMarshallPic.png",
+    image_src: "/images/team/kevinMarshall.png",
   },
   {
     name: "Mikey Ewertz",
     role: "Director of Post-Production",
     about:
       "Mikey is an award-winning shooter/editor with 25+ years of corporate video production experience. Having spent over a decade working in Silicon Valley, for some of the largest Fortune 500 companies, Mikey brings a wealth of experience, creativity and passion to every MMM project. Not only is Mikey comfortable behind the scenes, he is also not afraid to jump in front of the camera and do some acting, voice-over work, or handle the lead singer duties for your local band. To put it simply, Mikey rocks!",
-    image_src: "/images/team/mikeyEwertzPic.png",
+    image_src: "/images/team/mikeyEwertz.png",
   },
   {
     name: "Adam Buccheit",
     role: "Videographer / Editor",
     about:
       "Adam's 10 years of experience in television news and feature programs shines when under tight deadlines. He brings detail and creativity to every project with a time sensitive approach. He loves working with clients and creating amazing content!",
-    image_src: "/images/team/adamBuccheitPic.png",
+    image_src: "/images/team/adamBuccheit.png",
   },
   {
     name: "Zoë Calsyn",
     role: "Videographer / Editor",
     about:
       "Zoë is a Digital Storytelling graduate from the University of Missouri with a passion for all stages of video production. From post-production editing to camera operation to social media management and content creation, Zoë's enthusiasm for her craft is evident in all that she does.",
-    image_src: "/images/team/zoeCalsynPic.png",
+    image_src: "/images/team/zoeCalsyn.png",
   },
   {
     name: "Luke Bradshaw",
     role: "Videographer / Editor",
     about:
       "Luke's interest in film and editing started when he was in middle school. Much of his spare time was spent making videos with his friends and before long he realized this was what he wanted to do when he grew up! Luke studied Electronic Media Production at Ozarks Technical Community College, in his hometown of Springfield, Missouri. Luke is obsessed with the visual aspects and endless creative possibilities that can be achieved with both the camera and post-production.",
-    image_src: "/images/team/lukeBradshawPic.png",
+    image_src: "/images/team/lukeBradshaw.png",
   },
   {
     name: "Paul Baker",
     role: "Video and Motion Graphics Editor",
     about:
       "Paul Baker is an Emmy award-winning, seasoned St. Louis-based motion designer. Over the last two decades, he has honed his abilities by creating animations and motion graphics for numerous entities and platforms including Fortune 500 corporations, television, film, corporate, and start-ups. Paul is a collaborator at heart with a love of visual storytelling as he executes his vision with artful ingenuity and pragmatic execution.",
-    image_src: "/images/team/paulBakerPic.png",
+    image_src: "/images/team/paulBaker.png",
   },
   {
     name: "Robert Kraybill",
