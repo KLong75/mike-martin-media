@@ -1,3 +1,5 @@
+import mmmOfficeWindow from "../images/blog-page/blog-post-images/sept-2024-pic1.png";
+
 export const blogPosts = [
   // {
   //   title: "",
@@ -16,7 +18,7 @@ export const blogPosts = [
   {
     title: "A Note from Mary",
     post_date: "10/1/2024",
-    image_src: "/images/blog-page/blog-post-images/sept-2024-pic1.png",
+    image_src: {mmmOfficeWindow},
     image_alt: "MMM sign for Muisc at the Intersection",
     image_width: 1140,
     image_height: 855,
@@ -37,7 +39,7 @@ export const blogPosts = [
   {
     title: "Olympic Fever",
     post_date: "8/29/2024",
-    image_src: "/images/blog-page/blog-post-images/ericNewby.jpeg",
+    image_src: "/images/blog-page/blog-post-images/ericNewby.jpg",
     image_width: 480,
     image_height: 406,
     image_alt:
