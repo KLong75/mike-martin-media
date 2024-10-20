@@ -118,8 +118,8 @@ export default function PhotographyGallery({
                               }
                               src={image.src}
                               alt={image.alt || "Gallery image"}
-                              width={width}
-                              height={height}
+                              width={752}
+                              height={502}
                               priority
                             />
                           </div>

@@ -274,60 +274,60 @@ export const photographyWorkSampleData = [
   },
   {
     client: "Prasino",
-    width: 5002,
-    height: 3335,
+    width: 1000,
+    height: 667,
     images: [
       {
         title: "01",
-        src: "/images/photographyWorkSamples/prasino/01_resize_sm.png",
+        src: "/images/photographyWorkSamples/prasino/01.png",
       },
       {
         title: "02",
-        src: "/images/photographyWorkSamples/prasino/02.jpg",
+        src: "/images/photographyWorkSamples/prasino/02.png",
       },
       {
         title: "03",
-        src: "/images/photographyWorkSamples/prasino/03.jpg",
+        src: "/images/photographyWorkSamples/prasino/03.png",
       },
       {
         title: "04",
-        src: "/images/photographyWorkSamples/prasino/04.jpg",
+        src: "/images/photographyWorkSamples/prasino/04.png",
       },
       {
         title: "05",
-        src: "/images/photographyWorkSamples/prasino/05.jpg",
+        src: "/images/photographyWorkSamples/prasino/05.png",
       },
       {
         title: "06",
-        src: "/images/photographyWorkSamples/prasino/06.jpg",
+        src: "/images/photographyWorkSamples/prasino/06.png",
       },
       {
         title: "07",
-        src: "/images/photographyWorkSamples/prasino/07.jpg",
+        src: "/images/photographyWorkSamples/prasino/07.png",
       },
       {
         title: "08",
-        src: "/images/photographyWorkSamples/prasino/08.jpg",
+        src: "/images/photographyWorkSamples/prasino/08.png",
       },
       {
         title: "09",
-        src: "/images/photographyWorkSamples/prasino/09.jpg",
+        src: "/images/photographyWorkSamples/prasino/09.png",
       },
       {
         title: "10",
-        src: "/images/photographyWorkSamples/prasino/10.jpg",
+        src: "/images/photographyWorkSamples/prasino/10.png",
       },
       {
         title: "11",
-        src: "/images/photographyWorkSamples/prasino/11.jpg",
+        src: "/images/photographyWorkSamples/prasino/11.png",
       },
       {
         title: "12",
-        src: "/images/photographyWorkSamples/prasino/12.jpg",
+        src: "/images/photographyWorkSamples/prasino/12.png",
       },
       {
         title: "13",
-        src: "/images/photographyWorkSamples/prasino/13.jpg",
+        src: "/images/photographyWorkSamples/prasino/13.png",
       },
     ],
   },
