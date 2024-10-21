@@ -2,7 +2,7 @@
 import Link from "next/link";
 // import Image from "next/image";
 // import components
-import Image from "./image"
+import Image from "./image";
 
 export default function MmmSiteButton({
   href,
@@ -13,19 +13,19 @@ export default function MmmSiteButton({
 }) {
   return (
     <Link href={href}>
-      <div className={`${backgroundColor} ${textColor} hover:transform hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full flex justify-center items-center cursor-pointer`}>
+      <div
+        className={`${backgroundColor} ${textColor} hover:transform hover:scale-105 transition-transform font-bold py-2 px-4 rounded-full flex justify-center items-center cursor-pointer`}>
         <span className="text-xl md:text-2xl">{label}</span>
         <div className="w-14 md:w-16 h-auto ml-1 mmm-site-button-logo-container">
-          <Image
+        <Image
             src={imgSrc}
             width={294}
             height={95}
-            alt="MMM logo"
+            alt="MMM"
+            aria-label="MMM"
           />
         </div>
       </div>
     </Link>
   );
 }
-
-
