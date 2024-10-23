@@ -27,9 +27,7 @@ export default function Home() {
       <section id="home-page-about-section">
         <div className="flex flex-col justify-center items-center w-full h-auto -mt-4">
           <div className="bg-black text-white w-full h-20 md:h-24 lg:h-28 flex items-center justify-center">
-            <div className="flex justify-center items-center p-1"
-              aria-label="Your Ideas Made"
-            >
+            <div className="flex justify-center items-center p-1">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2"
                 aria-hidden="true"
               >
@@ -44,7 +42,7 @@ export default function Home() {
                   width={349}
                   height={271}
                   alt="M"
-                  aria-hidden="true"
+                  aria-label="Your Ideas Made"
                 />
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold ml-1"
