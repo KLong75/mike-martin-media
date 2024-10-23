@@ -27,8 +27,12 @@ export default function Home() {
       <section id="home-page-about-section">
         <div className="flex flex-col justify-center items-center w-full h-auto -mt-4">
           <div className="bg-black text-white w-full h-20 md:h-24 lg:h-28 flex items-center justify-center">
-            <div className="flex justify-center items-center p-1 ">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2">
+            <div className="flex justify-center items-center p-1"
+              aria-label="Your Ideas Made"
+            >
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2"
+                aria-hidden="true"
+              >
                 YOUR IDEAS,
               </h2>
               <div
@@ -40,9 +44,12 @@ export default function Home() {
                   width={349}
                   height={271}
                   alt="M"
+                  aria-hidden="true"
                 />
               </div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold ml-1">ADE</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold ml-1"
+                aria-hidden="true"
+              >ADE</h2>
             </div>
           </div>
           <div className="mt-6 mb-3 md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center">

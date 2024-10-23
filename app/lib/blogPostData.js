@@ -42,9 +42,9 @@ export const blogPosts = [
     image_height: 406,
     image_alt:
       "Rachel from MMM with Eric Newby, captain of the USA Wheelchair Rugby team",
-    second_image_src: "/images/blog-page/blog-post-images/rachelJJK.jpg",
-    second_image_width: 828,
-    second_image_height: 752,
+    second_image_src: "/images/blog-page/blog-post-images/rachelJJK.png",
+    second_image_width: 208,
+    second_image_height: 109,
     second_image_alt: "Rachel from MMM with Jackie Joyner-Kersee",
     text: [
       "I will never forget the first Olympian I met, Jackie Joyner-Kersee. She was incredibly kind and chatted with me as I told her how I wanted to be a track star when I grew up. That was in 2016. This year, I had the chance to meet and interview another Olympian, Eric Newby, captain of the USA Wheelchair Rugby team. Eric's story is pretty remarkable and I was so honored to be able to talk with him about his life, family, and of course, wheelchair rugby. ",
