@@ -75,7 +75,7 @@ export const blogPosts = [
   {
     title: "A Note from Luke",
     post_date: "6/7/2024",
-    image_src: "/images/blog-page/blog-post-images/lukeBlogPostPic-6-2024.jpg",
+    image_src: "/images/blog-page/blog-post-images/lukeBlogPostPic-6-2024.png",
     image_width: 456,
     image_height: 344,
     image_alt: "Luke and some coworkers around a campfire on an MMM work trip",
