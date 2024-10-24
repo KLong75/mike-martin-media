@@ -29,7 +29,7 @@ function generateUrls(directory, baseUrl = '') {
       const urlPath = file === 'page.js' ? baseUrl : `${baseUrl}/${file.replace('/page.js', '')}`;
       const config = urlConfig[urlPath] || { changeFrequency: 'yearly', priority: 0.8 }; // Default values
       urls.push({
-        url: `https://mikemartinmedia.com${urlPath}`,
+        url: `https://www.mikemartinmedia.com${urlPath}`,
         lastModified: getLastModified(filePath),
         changeFrequency: config.changeFrequency,
         priority: config.priority,
@@ -51,7 +51,7 @@ export default function sitemap() {
   const notFoundPagePath = path.join(pagesDirectory, '404.js');
   if (fs.existsSync(notFoundPagePath)) {
     urls.push({
-      url: 'https://mikemartinmedia.com/404',
+      url: 'https://www.mikemartinmedia.com/404',
       lastModified: getLastModified(notFoundPagePath),
       changeFrequency: 'never',
       priority: 0.1,
