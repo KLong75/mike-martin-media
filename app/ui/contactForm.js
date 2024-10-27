@@ -108,11 +108,10 @@ export default function ContactForm() {
       try {
         const response = await fetch(
           "https://mmmmarketing42.activehosted.com/proc.php",
-
           {
             method: "POST",
             body: formData,
-            cors: "no-cors",
+            // cors: "no-cors",
           }
         );
 

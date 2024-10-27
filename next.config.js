@@ -56,7 +56,7 @@ const nextConfig = {
     return [
       {
         source: '/api/proxy/:path*',
-        destination: 'https://marketing42.activehosted.com/:path*', // Proxy to external API
+        destination: 'https://mmmmarketing42.activehosted.com/:path*', // Proxy to external API
       },
     ];
   },
