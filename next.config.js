@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+
+const { createProxyMiddleware } = require('http-proxy-middleware');
+
 const nextConfig = {
   async redirects() {
     return [
@@ -48,6 +51,24 @@ const nextConfig = {
         pathname: "/**", // Allows any path
       },
     ],
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/api/proxy/:path*',
+        destination: 'https://marketing42.activehosted.com/:path*', // Proxy to external API
+      },
+    ];
+  },
+  async headers() {
+    return [
+      {
+        source: '/api/proxy/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+        ],
+      },
+    ];
   },
 };
 
