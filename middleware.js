@@ -27,11 +27,11 @@ export function middleware(request) {
   const previewCspHeader = `
     default-src 'none';
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://player.vimeo.com/* https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js ;
-    script-src-elem 'self' 'nonce-${nonce}' https://cdn.lightwidget.com/widgets/lightwidget.js https://www.googletagmanager.com/gtm.js https://googletagmanager.com/*;
+    script-src-elem 'self' 'nonce-${nonce}' https://cdn.lightwidget.com/widgets/lightwidget.js https://www.googletagmanager.com/gtm.js https://googletagmanager.com/* https://mmmmarketing42.activehosted.com/f/embed.php?id=1;
     style-src 'self' 'nonce-${nonce}';
     img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/*;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/*;
-    connect-src 'self' *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://marketing42.activehosted.com/proc.php ws://127.0.0.1:50820/;
+    connect-src 'self' *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://mmmmarketing42.activehosted.com/proc.php ws://127.0.0.1:50820/;
     font-src 'self' data:;
     object-src 'none';
     base-uri 'self';
