@@ -11,11 +11,11 @@ export function middleware(request) {
   const developmentCspHeader = `
     default-src 'self';
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval' https://mmmmarketing42.activehosted.com/;
-    style-src 'self'  'unsafe-inline';
+    style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
     img-src 'self' blob: data:;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com;
-    connect-src 'self' https://marketing42.activehosted.com/proc.php ws://127.0.0.1:50820/;
-    font-src 'self' data:;
+    connect-src 'self' https://mmmmarketing42.activehosted.com/proc.php ws://127.0.0.1:50820/;
+    font-src 'self' data: https://fonts.bunny.net/;
     object-src 'none';
     base-uri 'self';
     form-action 'self';
