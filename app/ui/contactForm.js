@@ -107,14 +107,12 @@ export default function ContactForm() {
 
       try {
         const response = await fetch(
-          "https://marketing42.activehosted.com/proc.php",
+          "https://mmmmarketing42.activehosted.com/proc.php",
+
           {
             method: "POST",
             body: formData,
-            mode: "no-cors",
-            // const response = await fetch("/api/proxy/proc.php", {
-            //   method: "POST",
-            //   body: formData,
+            cors: "no-cors",
           }
         );
 
@@ -144,7 +142,7 @@ export default function ContactForm() {
   return (
     <div className="p-8 m-4 w-full">
       <form
-        id="_form_671D60DF0EC4B_"
+        // id="_form_671D60DF0EC4B_"
         onSubmit={handleFormSubmit}
         className="p-8 shadow-2xl max-w-200 mx-auto relative">
         <h2 className="-mt-6 mb-3 text-center text-xl text-2xl xl:text-3xl font-bold">
@@ -240,7 +238,7 @@ export default function ContactForm() {
           <textarea
             autoComplete="off"
             maxLength={1000}
-            placeholder="How can we help you?"
+            placeholder="How can we help?"
             onChange={(e) => handleChange(e, setMessage)}
             value={message}
             required

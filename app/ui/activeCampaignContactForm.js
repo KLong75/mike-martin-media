@@ -9,10 +9,6 @@ export default function ActiveCampaignContactForm() {
         strategy="lazyOnload"
       />
       <div className="_form_1"></div>
-
-
-
-      
     </>
   );
 };
