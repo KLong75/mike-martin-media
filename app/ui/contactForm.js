@@ -111,7 +111,9 @@ export default function ContactForm() {
           {
             method: "POST",
             body: formData,
-            // cors: "no-cors",
+            headers: {
+              Accept: "application/json",
+            },
           }
         );
 
@@ -141,7 +143,7 @@ export default function ContactForm() {
   return (
     <div className="p-8 m-4 w-full">
       <form
-        // id="_form_671D60DF0EC4B_"
+        id="_form_671D60DF0EC4B_"
         onSubmit={handleFormSubmit}
         className="p-8 shadow-2xl max-w-200 mx-auto relative">
         <h2 className="-mt-6 mb-3 text-center text-xl text-2xl xl:text-3xl font-bold">
@@ -237,7 +239,7 @@ export default function ContactForm() {
           <textarea
             autoComplete="off"
             maxLength={1000}
-            placeholder="How can we help?"
+            placeholder="How can we help you?"
             onChange={(e) => handleChange(e, setMessage)}
             value={message}
             required
@@ -274,7 +276,7 @@ export default function ContactForm() {
           <MMMLineLogoBlack />
         </div>
         {/* Hidden Inputs */}
-        <input type="hidden" name="u" value="1" />
+        {/* <input type="hidden" name="u" value="1" />
         <input type="hidden" name="f" value="1" />
         <input type="hidden" name="s" />
         <input type="hidden" name="c" value="0" />
@@ -285,7 +287,7 @@ export default function ContactForm() {
           type="hidden"
           name="or"
           value="3cb75fe4893095ece5a46e781ca8407d"
-        />
+        /> */}
       </form>
     </div>
   );

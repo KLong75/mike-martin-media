@@ -8,7 +8,7 @@ export default function ActiveCampaignContactForm() {
         src="https://mmmmarketing42.activehosted.com/f/embed.php?id=1"
         strategy="lazyOnload"
       />
-      <div className="_form_1"></div>
+      <div className="_form_1 px-4 sm:p-0"></div>
     </>
   );
 };
