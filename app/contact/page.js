@@ -1,8 +1,8 @@
 // import components
 import Image from "../ui/image";
-import ContactForm from "../ui/contactForm";
-import ContactInfo from "../ui/contactInfo";
-import SocialMediaLinks from "../ui/socialMediaLinks";
+// import ContactForm from "../ui/contactForm";
+// import ContactInfo from "../ui/contactInfo";
+// import SocialMediaLinks from "../ui/socialMediaLinks";
 import InstagramWidget from "../ui/instagramWidget";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import GoogleMap from "../ui/googleMap";
@@ -37,22 +37,19 @@ export default function Page() {
           />
         </div>
       </div>
+
       {/* <div className="md:text-xl flex justify-center items-center -mt-20 md:mb-8 p-12">
         <ContactInfo />
-      </div>
-      <div className="flex justify-center items-center md:mt-4 z-50">
+      </div> */}
+      {/* <div className="flex justify-center items-center md:mt-4 z-50">
         <SocialMediaLinks />
       </div> */}
-
       {/* <div className="flex justify-center items-center">
         <ContactForm />
       </div> */}
 
-      {/* <div className="flex justify-center items-center"> */}
-        <ActiveCampaignContactForm />
-      {/* </div> */}
-
-
+      <ActiveCampaignContactForm />
+      
       <div className="mb-12 md:-mb-16 lg:-mb-28 w-full h-auto ">
         <InstagramWidget />
       </div>
