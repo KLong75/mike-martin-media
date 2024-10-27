@@ -11,7 +11,7 @@ export default function ActiveCampaignContactForm() {
         strategy="afterInteractive"
         nonce={nonce}
       />
-      <div className="_form_1 px-4 sm:p-0"></div>
+      <div className="_form_1 px-4 sm:px-0"></div>
     </>
   );
 };
