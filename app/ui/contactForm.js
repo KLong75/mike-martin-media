@@ -1,3 +1,5 @@
+// refactor form to send POST request to activecampaign instead of emailjs
+
 "use client";
 // import from vercel
 import { track } from '@vercel/analytics';
