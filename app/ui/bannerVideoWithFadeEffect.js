@@ -48,9 +48,9 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
             src={whiteMmmLogo}
             alt="MMM logo"
           />
-          <h1 className="text-center text-2xl hidden ">
+          {/* <h1 className="text-center text-2xl hidden ">
             MIKE MARTIN MEDIA | VIDEO PRODUCTION AND CREATIVE SERVICES
-          </h1>
+          </h1> */}
         </div>
       </div>
     </section>

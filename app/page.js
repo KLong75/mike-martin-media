@@ -24,6 +24,9 @@ export default function Home() {
         src="https://player.vimeo.com/video/938224346?h=85055436bd&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="MMM_Home_Page_Banner_Video"
       />
+      <h1 className="text-center text-2xl hidden ">
+            MIKE MARTIN MEDIA | VIDEO PRODUCTION AND CREATIVE SERVICES
+      </h1>
       <section id="home-page-about-section">
         <div className="flex flex-col justify-center items-center w-full h-auto -mt-4">
           <div className="bg-black text-white w-full h-20 md:h-24 lg:h-28 flex items-center justify-center">
