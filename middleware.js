@@ -14,7 +14,7 @@ export function middleware(request) {
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
     img-src 'self' blob: data:;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com;
-    connect-src 'self' https://mmmmarketing42.activehosted.com/proc.php ws://127.0.0.1:50820/;
+    connect-src 'self' https://mmmmarketing42.activehosted.com/proc.php ws://127.0.0.1:50820/ https://process.iconnode.com/google-ads/;
     font-src 'self' data: https://fonts.bunny.net/;
     object-src 'none';
     base-uri 'self';
@@ -99,51 +99,3 @@ export function middleware(request) {
 export const config = {
   matcher: "/:path*",
 };
-
-// default-src 'none';
-// img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://www.googletagmanager.com;
-// script-src 'self' 'nonce-${nonce}' 'strict-dynamic' cdn-cookieyes.com ;
-// style-src 'self' 'nonce-${nonce}';
-// img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://*.google-analytics.com https://*.googletagmanager.com www.googletagmanager.com;
-// media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/*;
-// connect-src 'self' *.cookieyes.com cdn-cookieyes.com www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com;
-// font-src 'self' data:;
-// object-src 'none';
-// base-uri 'self';
-// form-action 'self';
-// frame-ancestors 'none';
-// frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/;
-// upgrade-insecure-requests;
-
-// matcher: [
-//   /*
-//    * Match all request paths except for the ones starting with:
-//    * - api (API routes)
-//    * - _next/static (static files)
-//    * - _next/image (image optimization files)
-//    * - favicon.ico (favicon file)
-//    */
-//   {
-//     source: "/((?!api|_next/static|_next/image|favicon.ico).*)",
-//     missing: [
-//       { type: "header", key: "next-router-prefetch" },
-//       { type: "header", key: "purpose", value: "prefetch" },
-//     ],
-//   },
-// ],
-
-// const cspHeader = `
-//     default-src 'self';
-//     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' ${
-//     isDevelopment ? "'unsafe-eval'" : ""
-//   } https://cdn-cookieyes.com https://cdn-cookieyes.com/client_data/*/script.js https://www.googletagmanager.com https://www.gstatic.com https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://f.vimeocdn.com/ https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js https://cdn.lightwidget.com/widgets/fe8af16ea57f5ce0b3df76d3341327a5.html https://va.vercel-scripts.com/v1/script.debug.js https://vercel.live/* https://vercel.live/_next-live/feedback/instrument.99a72fc929d4a2a6df6c.js;
-//     style-src 'self' 'nonce-${nonce}';
-//     img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/*;
-//     font-src 'self' data:;
-//     object-src 'none';
-//     base-uri 'self';
-//     form-action 'self';
-//     frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://cdn.lightwidget.com/;
-//     frame-ancestors 'none';
-//     upgrade-insecure-requests;
-// `;

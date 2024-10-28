@@ -31,9 +31,6 @@ export const metadata = {
   alternates: {
     canonical: "/",
   },
-  verification: {
-    google: "An5ZltC5TJiquLvxw_Va-z7nL4lI8A_xBgeJVOQgToQ",
-  },
 };
 
 // set dynamic
@@ -67,6 +64,21 @@ export default function RootLayout({ children }) {
               })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');
             `,
           }}
+        />
+        <Script
+          id="wc-load-script"
+          strategy="afterInteractive"
+          nonce={nonce}
+          dangerouslySetInnerHTML={{
+            __html: `
+              var $wc_load=function(a){return JSON.parse(JSON.stringify(a))},$wc_leads=$wc_leads||{doc:{url:$wc_load(document.URL),ref:$wc_load(document.referrer),search:$wc_load(location.search),hash:$wc_load(location.hash)}};
+            `,
+          }}
+        />
+        <Script
+          src="//s.ksrndkehqnwntyxlhgto.com/136008.js"
+          strategy="afterInteractive"
+          nonce={nonce}
         />
         {/* <Script
           // src="https://www.googletagmanager.com/gtm.js?id=GTM-5W7VWSTB"
