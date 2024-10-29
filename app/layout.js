@@ -89,6 +89,7 @@ export default function RootLayout({ children }) {
           src="//s.ksrndkehqnwntyxlhgto.com/136008.js"
           strategy="afterInteractive"
           nonce={nonce}
+          onLoad={() => console.log('what converts script has been loaded.')}
         />
         {/* <Script
           // src="https://www.googletagmanager.com/gtm.js?id=GTM-5W7VWSTB"
