@@ -76,6 +76,16 @@ export default function RootLayout({ children }) {
           }}
         />
         <Script
+          id="wc-log-script"
+          strategy="afterInteractive"
+          nonce={nonce}
+          dangerouslySetInnerHTML={{
+            __html: `
+              console.log('wc_leads', $wc_leads);
+            `,
+          }}
+        />
+        <Script
           src="//s.ksrndkehqnwntyxlhgto.com/136008.js"
           strategy="afterInteractive"
           nonce={nonce}
