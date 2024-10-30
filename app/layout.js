@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        <Script
+        {/* <Script
           id="wc-log-script"
           strategy="afterInteractive"
           nonce={nonce}
@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
               console.log('wc_leads', $wc_leads);
             `,
           }}
-        />
+        /> */}
         <Script
           src="//s.ksrndkehqnwntyxlhgto.com/136008.js"
           strategy="afterInteractive"
