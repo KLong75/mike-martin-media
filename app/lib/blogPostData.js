@@ -24,7 +24,7 @@ export const blogPosts = [
     title: "A Note from the CEO",
     post_date: "11/1/2024",
     image_src: "/images/blog-page/blog-post-images/team.png",
-    image_alt: "",
+    image_alt: "The MMM Team. For over 15 years, Mike Martin Media has combined the latest technology with the best in-house talent to create impactful videos for organizations all over the United States and the world.",
     image_width: 456,
     image_height: 342,
     image_alt: "",
