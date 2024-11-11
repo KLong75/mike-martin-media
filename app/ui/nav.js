@@ -105,7 +105,7 @@ export default function Nav() {
               className={`flex flex-col items-center justify-center  ${
                 pathname === link.href
                   ? ""
-                  : "hover:scale-110 hover:transform transition-transform"
+                  : "hover:scale-125 hover:transform transition-transform"
               }`}>
               <Link href={link.href}>
                 <span
