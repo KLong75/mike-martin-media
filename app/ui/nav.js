@@ -34,10 +34,6 @@ const navLinks = [
     href: "/careers",
     label: "Careers",
   },
-  {
-    href: "/",
-    label: "Home",
-  },
 ];
 
 export default function Nav() {
@@ -59,14 +55,17 @@ export default function Nav() {
                 <HiX size={28} />
               </button>
               <div className="mb-6 w-40 h-auto">
-                <Image
-                  src="/branding/mmm_logo_white.png"
-                  width={294}
-                  height={95}
-                  alt="MMM logo"
-                  priority
-                  as="image"
-                />
+                <Link href="/" aria-label="Mike Martin Media - Home">
+                  <Image
+                    src="/branding/mmm_logo_white.png"
+                    width={294}
+                    height={95}
+                    alt="MMM logo"
+                    priority
+                    as="image"
+                    onClick={() => setMenuOpen(false)}
+                  />
+                </Link>
               </div>
               {/* Nav Links */}
               <ul className="space-y-4 text-xl">
@@ -94,10 +93,7 @@ export default function Nav() {
       {/* Mobile Menu Button*/}
       <div className=" mt-2 -mr-2 lg:hidden">
         <button onClick={openMenu}>
-          <MdDehaze
-            size={28}
-            aria-label="Open menu"
-          />
+          <MdDehaze size={28} aria-label="Open menu" />
         </button>
       </div>
       {/* Desktop Nav Menu */}
@@ -107,12 +103,19 @@ export default function Nav() {
             <li
               key={link.label}
               className={`flex flex-col items-center justify-center  ${
-                pathname === link.href ? "hidden" : "hover:scale-110"
+                pathname === link.href
+                  ? ""
+                  : "hover:scale-110 hover:transform transition-transform"
               }`}>
               <Link href={link.href}>
-                  <span className="text-lg lg:text-xl 3xl:text-2xl mt-2 hover:scale-110 hover:transform transition-transform cursor-pointer">
-                    {link.label}
-                  </span>
+                <span
+                  className={` mt-2 ${
+                    pathname === link.href
+                      ? "hover:cursor-text disabled text-gray-300 text-xl lg:text-2xl 3xl:text-3xl"
+                      : "text-lg lg:text-xl 3xl:text-2xl"
+                  } `}>
+                  {link.label}
+                </span>
               </Link>
             </li>
           ))}
