@@ -75,6 +75,7 @@ export default function BlogPost({
             <span 
               className="inline-flex items-center font-bold hover:cursor-pointer hover:scale-105 transition-transform mt-1"
               onClick={() => setBlogPostOpen(true)}
+              tabIndex={0}
             >
               READ MORE <IoIosArrowRoundForward className="text-2xl" />
             </span>

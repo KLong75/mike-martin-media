@@ -15,10 +15,6 @@ import Image from "./image";
 
 const navLinks = [
   {
-    href: "/",
-    label: "Home",
-  },
-  {
     href: "/about",
     label: "About",
   },
@@ -37,6 +33,10 @@ const navLinks = [
   {
     href: "/careers",
     label: "Careers",
+  },
+  {
+    href: "/",
+    label: "Home",
   },
 ];
 

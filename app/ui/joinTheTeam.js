@@ -18,9 +18,9 @@ const JoinTheTeam = () => {
           look even if positions are not available at the moment.
         </p>
 
-        <p className="px-8 py-4 md:px-24 lg:px-52 lg:px-72 2xl:px-96">
+        <h3 className="px-8 py-4 md:px-24 lg:px-52 lg:px-72 2xl:px-96">
           We look forward to hearing from you!
-        </p>
+        </h3>
       </div>
     </div>
   );

@@ -30,8 +30,13 @@ export default function MMMInstaLogo() {
             />
           </div>
         </div>
-        <a href="https://www.instagram.com/mikemartinmedia/" target="_blank" rel="noopener noreferrer">
-        <span className="text-center md:text-xl font-bold hover:transform hover:scale-105 transition-transform underline">@mikemartinmedia</span>
+        <a 
+          href="https://www.instagram.com/mikemartinmedia/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          <span className="text-center md:text-xl font-bold hover:transform hover:scale-105 transition-transform">@mikemartinmedia</span>
        </a>
       </div>
     </div>

@@ -26,7 +26,7 @@ export const blogPosts = [
     image_src: "/images/blog-page/blog-post-images/team.png",
     image_width: 456,
     image_height: 282,
-    image_alt: "The MMM Team. For over 15 years, Mike Martin Media has combined the latest technology with the best in-house talent to create impactful videos for organizations all over the United States and the world.",
+    image_alt: "The MMM team. We work hard, play hard, and spend a lot of time laughing.",
     // second_image_src: "/images/blog-post-images/.png",
     // second_image_width: 208,
     // second_image_height: 109,
