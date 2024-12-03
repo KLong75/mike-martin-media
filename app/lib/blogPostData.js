@@ -6,7 +6,6 @@ export const blogPosts = [
   //   image_alt: "",
   //   image_width: 456,
   //   image_height: 342,
-  //   image_alt: "",
   //   second_image_src: "/images/blog-post-images/.png",
   //   second_image_width: 208,
   //   second_image_height: 109,
@@ -20,6 +19,25 @@ export const blogPosts = [
   //   closing_tag: "",
   //   author: "",
   // },
+  {
+    title: "2024 Review",
+    post_date: "11/30/24",
+    image_src: "/images/blog-page/blog-post-images/nov-2024.png",
+    image_alt: "The MMM team at work in the studio using a green screen.",
+    image_width: 456,
+    image_height: 338,
+    // second_image_src: "/images/blog-post-images/.png",
+    // second_image_width: 208,
+    // second_image_height: 109,
+    // second_image_alt: "",
+    text: [
+      "We kicked off 2024 with high energy and a clear goal: to elevate our storytelling and push creative boundaries. From our dynamic production team to our cutting-edge studio space, this year has been all about creating content that leaves a lasting impact.",
+      "As the year comes to a close, we at Mike Martin Media want to take a moment to reflect on what has been an exciting, productive, and incredibly creative 2024. It’s been a year of big milestones, meaningful collaborations, and incredible projects. We’ve had the privilege of working with talented clients, expanding our creative horizons, and continuing to grow as a team. With over 80 out of town trips in more than half of the US and 5 different countries this year our crew has been busy, some just getting home from North Carolina and Nashville. We welcome them back into the office as we move towards the Holidays closing this year with team festivities and the celebration of our best year yet.",
+     
+    ],
+    closing_tag: "Happy Holidays",
+    author: "Clark Martin",
+  },
   {
     title: "A Note from the CEO",
     post_date: "11/1/2024",
