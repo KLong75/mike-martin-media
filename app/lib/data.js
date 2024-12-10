@@ -3,7 +3,7 @@ export const teamData = [
     name: "Michael Martin",
     role: "President & CEO",
     about:
-      "Mike launched Mike Martin Media in 2008 after 12 years in broadcast television. He has shot, edited, produced, directed, managed, lit, and worked just about every other production position, for numerous clients, on projects of all sizes. Mike is involved in every step of the process, from project pitch to final delivery.",
+      "Mike is an Emmy Award winning videographer and editor. He launched Mike Martin Media in 2008 after 12 years in broadcast television. He has shot, edited, produced, directed, managed, lit, and worked just about every other production position, for numerous clients, on projects of all sizes. Mike leads our tight team of skilled creatives, and oversees every project from the original pitch to final delivery.",
     image_src: "/images/team/mikeMartin.png",
   },
   {
