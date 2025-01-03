@@ -14,13 +14,6 @@ export const teamData = [
     image_src: "/images/team/rachelLee.png",
   },
   {
-    name: "Mary Scott",
-    role: "Producer",
-    about:
-      "Mary graduated at the top of her class from Southern Illinois University with a degree in Cinema and Photography.  After graduating, she spent around four and a half years in the news industry at Fox 2 Now and KPLR 11.  She spent her time at the station as a video editor and field videographer.  Her passion in video creation is being able to tell other's stories and making their creative visions come to life.  In her spare time, Mary enjoys singing, drawing, webcomics, 1,000+ piece puzzles, video games, and snuggling with her cat Kody.",
-    image_src: "/images/team/maryScott.png",
-  },
-  {
     name: "Tom Young",
     role: "Director of Production",
     about:
@@ -53,7 +46,7 @@ export const teamData = [
     role: "Videographer / Editor",
     about:
       "Zoë is a Digital Storytelling graduate from the University of Missouri with a passion for all stages of video production. From post-production editing to camera operation to social media management and content creation, Zoë's enthusiasm for her craft is evident in all that she does.",
-    image_src: "/images/team/zoeCalsyn.png",
+    image_src: "/images/team/zoeCalsyn3.png",
   },
   {
     name: "Luke Bradshaw",
