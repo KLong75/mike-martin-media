@@ -14,6 +14,7 @@ import ScrollToTopButton from "./ui/scrollToTop";
 import "./globals.css";
 // import fonts
 import { DM_Sans } from "next/font/google";
+import ActiveCampaignNewsletterSignup from "./ui/activeCampaignNewsletterSignup";
 // define fonts
 const dm_sans = DM_Sans({
   subsets: ["latin"],
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <ScrollToTopButton />
+        <ActiveCampaignNewsletterSignup />
         <Footer />
         <Analytics />
         <Script
