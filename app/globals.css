@@ -10,10 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-._close-icon {
-  color: black !important;
-}
-
 /* home page */
 .single-m-logo-container {
   margin-right: -.1rem;

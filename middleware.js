@@ -12,7 +12,7 @@ export function middleware(request) {
     default-src 'self';
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval' https://mmmmarketing42.activehosted.com/;
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
-    img-src 'self' blob: data:;
+    img-src 'self' blob: data: https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com;
     connect-src 'self' https://mmmmarketing42.activehosted.com/proc.php ws://127.0.0.1:50820/ https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com;
     font-src 'self' data: https://fonts.bunny.net/;
@@ -29,7 +29,7 @@ export function middleware(request) {
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://player.vimeo.com/* https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js ;
     script-src-elem 'self' 'nonce-${nonce}' https://cdn.lightwidget.com/widgets/lightwidget.js https://www.googletagmanager.com/gtm.js https://googletagmanager.com/* https://mmmmarketing42.activehosted.com/ https://prism.app-us1.com/;
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
-    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://www.googletagmanager.com/;
+    img-src 'self' blob: data: https://cdn.lightwidget.com/* https://i.vimeocdn.com/video/* https://www.googletagmanager.com/ https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/*;
     connect-src 'self' *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://mmmmarketing42.activehosted.com/proc.php ws://127.0.0.1:50820/ https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com;
     font-src 'self' data: https://fonts.bunny.net/;
@@ -46,7 +46,7 @@ export function middleware(request) {
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://player.vimeo.com/* https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js cdn-cookieyes.com;
     script-src-elem 'self' 'nonce-${nonce}' https://cdn.lightwidget.com/widgets/lightwidget.js https://cdn.lightwidget.com/widgets/lightwidget-lightbox.b361f0.js https://www.googletagmanager.com/gtm.js https://googletagmanager.com/* https://cdn-cookieyes.com/client_data/19a125e146c5960eee961f00/banner.js https://mmmmarketing42.activehosted.com/ https://prism.app-us1.com/;
     style-src 'self' 'unsafe-inline' https://cdn.lightwidget.com/widgets/lightwidget-lightbox.b361f0.css https://fonts.bunny.net/css;
-    img-src 'self' blob: data: https://cdn.lightwidget.com/images/1/* https://i.vimeocdn.com/video/* https://cdn-cookieyes.com/assets/images/close.svg https://cdn-cookieyes.com/assets/images/poweredbtcky.svg cdn-cookieyes.com https://cdn.lightwidget.com/images/1/;
+    img-src 'self' blob: data: https://cdn.lightwidget.com/images/1/* https://i.vimeocdn.com/video/* https://cdn-cookieyes.com/assets/images/close.svg https://cdn-cookieyes.com/assets/images/poweredbtcky.svg cdn-cookieyes.com https://cdn.lightwidget.com/images/1/ https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/* https://scontent-hel3-1.cdninstagram.com/o1/;
     connect-src 'self' 'nonce-${nonce}' *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://mmmmarketing42.activehosted.com/proc.php ws://127.0.0.1:50820/ https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com;
     font-src 'self' data: https://fonts.bunny.net/; 
