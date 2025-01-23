@@ -9,6 +9,7 @@ import GoogleMap from "../ui/googleMap";
 // import images
 import whiteMmmLogo from "../../public/branding/white-mmm-logo-294x95.png";
 import ActiveCampaignContactForm from "../ui/activeCampaignContactForm";
+import NewsletterSignupButton from "../ui/newsletterSignupButton";
 
 export const metadata = {
   title: "Contact",
@@ -47,9 +48,8 @@ export default function Page() {
       {/* <div className="flex justify-center items-center">
         <ContactForm />
       </div> */}
-      
+
       <ActiveCampaignContactForm />
-      
       <div className="mb-12 md:-mb-16 lg:-mb-28 w-full h-auto ">
         <InstagramWidget />
       </div>

@@ -20,10 +20,13 @@ export default function NewsletterSignupButton() {
   };
 
   return (
-    <div>
-      <button onClick={handleClick}>
-        Sign up for our newsletter
+    
+      <button
+        className="bg-white text-black font-bold rounded-full w-64 p-2 m-6 hover:scale-105 transition duration-300 ease-in-out" 
+        onClick={handleClick}
+      >
+        Sign up for our newsletter!
       </button>
-    </div>
+    
   );
 }
