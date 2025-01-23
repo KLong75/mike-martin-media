@@ -14,8 +14,9 @@ export default function Footer() {
   return (
     <footer className=" bg-black text-white">
       <div className="grid grid-cols-1  justify-items-center">
-      <NewsletterSignupButton />
-        <div className=" justify-center items-center w-32 h-auto mt-2 -mb-12 md:-mb-20">
+      
+        <div className=" justify-center items-center w-36 h-auto mt-2 -mb-12 md:-mb-16">
+        {/* <div className=" justify-center items-center w-32 h-auto "> */}
           <Image
             src="/branding/mmm_logo_white.png"
             alt="MMM logo"
@@ -24,14 +25,16 @@ export default function Footer() {
             className="p-4"
           />
         </div>
-
+        
         <div className="mb-4">
           <ContactInfo m_src="/branding/singleMWhiteResizeSmall.png" />
         </div>
         <div className="flex justify-center items-center w-full mt-4 mb-2">
           <SocialMediaLinks />
         </div>
+        <NewsletterSignupButton />
       </div>
+      
       <div className="flex flex-col justify-center items-center py-2 mt-4 -mb-4 sm:mb- md:mb-0">
         <div>
           <span className="text-xs mx-2">
