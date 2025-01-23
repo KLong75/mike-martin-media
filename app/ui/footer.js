@@ -6,6 +6,8 @@ import { track } from "@vercel/analytics";
 import Image from "./image";
 import SocialMediaLinks from "./socialMediaLinks";
 import ContactInfo from "./contactInfo";
+import NewsletterSignupButton from "./newsletterSignupButton";
+// import from next
 import Link from "next/link";
 
 export default function Footer() {
@@ -13,6 +15,7 @@ export default function Footer() {
     <footer className=" bg-black text-white">
       <div className="grid grid-cols-1  justify-items-center">
         <div className=" justify-center items-center w-32 h-auto mt-2 -mb-12 md:-mb-20">
+          <NewsletterSignupButton />
           <Image
             src="/branding/mmm_logo_white.png"
             alt="MMM logo"
