@@ -37,8 +37,9 @@ export const metadata = {
 // set dynamic
 export const dynamic = "force-dynamic";
 
-export default function RootLayout({ children }) {
-  const nonce = headers().get("x-nonce");
+export default async function RootLayout({ children }) {
+  const headersList = await headers();
+  const nonce = headersList.get("x-nonce");
   return (
     <html
       lang="en"

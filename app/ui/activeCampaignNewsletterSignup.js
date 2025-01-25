@@ -2,8 +2,9 @@
 import Script from "next/script";
 import { headers } from "next/headers";
 
-export default function ActiveCampaignNewsletterSignup() {
-  const nonce = headers().get("x-nonce");
+export default async function ActiveCampaignNewsletterSignup() {
+  const headersList = await headers();
+  const nonce = headersList.get("x-nonce");
   return (
     <Script
       src="https://mmmmarketing42.activehosted.com/f/embed.php?id=3"
