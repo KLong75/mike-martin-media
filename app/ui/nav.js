@@ -12,6 +12,7 @@ import { MdDehaze } from "react-icons/md";
 import { HiX } from "react-icons/hi";
 // import components
 import Image from "./image";
+import SubNavMenu from "./subNavMenu";
 
 const navLinks = [
   {
@@ -23,23 +24,85 @@ const navLinks = [
     label: "Our Work",
   },
   {
-    href: "/blog",
-    label: "Blog",
+    href: "",
+    label: "Capabilities",
   },
   {
-    href: "/contact",
-    label: "Contact",
+    href: "",
+    label: "Industries",
+  },
+  {
+    href: "/blog",
+    label: "Blog",
   },
   {
     href: "/careers",
     label: "Careers",
   },
+  {
+    href: "/contact",
+    label: "Contact",
+  },
 ];
+
+const capabilities = [
+  {
+    href: "",
+    label: "Video Editing",
+  },
+  {
+    href: "",
+    label: "Video Production",
+  },
+  {
+    href: "/our-work/drone",
+    label: "Drone",
+  },
+  {
+    href: "/our-work/livestreaming",
+    label: "Live Streaming",
+  },
+  {
+    href: "/our-work/animation-motion-graphics",
+    label: "Animation and Motion Graphics",
+  },
+  {
+    href: "/our-work/photography",
+    label: "Photography",
+  },
+];
+
+const industries = [
+  {
+    href: "",
+    label: "Corporate",
+  },
+  {
+    href: "",
+    label: "Education",
+  },
+  {
+    href: "",
+    label: "Medical",
+  },
+  {
+    href: "",
+    label: "Nonprofit",
+  },
+];
+
+const handleNavButtonClick = (label) => {
+  alert(`${label} clicked`);
+};
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [capabilitiesOpen, setCapabilitiesOpen] = useState(false);
+  const [industriesOpen, setIndustriesOpen] = useState(false);
   const pathname = usePathname();
   const openMenu = () => setMenuOpen(true);
+  const openCapabilities = () => setCapabilitiesOpen(true);
+  const openIndustries = () => setIndustriesOpen(true);
 
   return (
     <nav className="flex p-4 z-40">
@@ -96,30 +159,56 @@ export default function Nav() {
           <MdDehaze size={28} aria-label="Open menu" />
         </button>
       </div>
-      {/* Desktop Nav Menu */}
-      <div className={`flex ${menuOpen ? "" : "hidden lg:flex"} w-full`}>
-        <ul className="flex flex-row w-full space-x-10 justify-center gap-4">
-          {navLinks.map((link) => (
-            <li
-              key={link.label}
-              className={`flex flex-col items-center justify-center  ${
-                pathname === link.href
-                  ? ""
-                  : "hover:scale-125 hover:transform transition-transform"
-              }`}>
+    {/* Desktop Nav Menu */}
+        <div className={`flex ${menuOpen ? "" : "hidden lg:flex"} w-full`}>
+          <ul className="flex flex-row w-full space-x-8 justify-center">
+            {navLinks.map((link) => (
+          <li
+            key={link.label}
+            className={`flex flex-col items-center justify-center font-bold text-lg 3xl:text-xl ${
+              pathname === link.href
+            ? ""
+            : "hover:scale-125 hover:transform transition-transform"
+            }`}>
+            {link.label === "Capabilities" || link.label === "Industries" ? (
+              <>
+            <button
+              onClick={() => {
+                if (link.label === "Capabilities") {
+              setCapabilitiesOpen(!capabilitiesOpen);
+              setIndustriesOpen(false);
+                } else if (link.label === "Industries") {
+              setIndustriesOpen(!industriesOpen);
+              setCapabilitiesOpen(false);
+                }
+              }}>
+              {link.label}
+            </button>
+              </>
+            ) : (
               <Link href={link.href}>
-                <span
-                  className={` mt-2 ${
-                    pathname === link.href
-                      ? "hover:cursor-text disabled text-gray-300 text-xl lg:text-2xl 3xl:text-3xl"
-                      : "text-lg lg:text-xl 3xl:text-2xl"
-                  } `}>
-                  {link.label}
-                </span>
+            <span
+            onClick={() => setCapabilitiesOpen(false) || setIndustriesOpen(false)}
+              className={` mt-2 ${
+                pathname === link.href
+              ? "hover:cursor-text disabled text-gray-300"
+              : " "
+              } `}>
+              {link.label}
+            </span>
               </Link>
-            </li>
-          ))}
-        </ul>
+            )}
+          </li>
+            ))}
+          </ul>
+          {/* Capabilities Submenu */}
+        {capabilitiesOpen && (
+          <SubNavMenu subMenu={capabilities} />
+        )}
+        {/* Industries Submenu */}
+        {industriesOpen && (
+          <SubNavMenu subMenu={industries} />
+        )}
       </div>
     </nav>
   );
