@@ -6,7 +6,7 @@ import Link from "next/link";
 // import Image from "next/image";
 import { usePathname } from "next/navigation";
 // import from headlessui
-import { Dialog } from "@headlessui/react";
+import { Dialog, DialogPanel, DialogBackdrop } from "@headlessui/react";
 // import icons
 import { MdDehaze } from "react-icons/md";
 import { HiX } from "react-icons/hi";
@@ -45,8 +45,8 @@ export default function Nav() {
     <nav className="flex p-4 z-40">
       {/* Mobile Nav Menu */}
       <Dialog open={menuOpen} onClose={() => setMenuOpen(false)}>
-        <Dialog.Overlay className="fixed inset-0 bg-black" />
-        <Dialog.Panel className="fixed inset-0 z-10">
+        <DialogBackdrop className="fixed inset-0 bg-black" />
+        <DialogPanel className="fixed inset-0 z-10">
           <div className="flex justify-center items-center h-full">
             <div className="relative text-white bg:black w-full h-full flex flex-col justify-center items-center">
               <button
@@ -88,7 +88,7 @@ export default function Nav() {
               </ul>
             </div>
           </div>
-        </Dialog.Panel>
+        </DialogPanel>
       </Dialog>
       {/* Mobile Menu Button*/}
       <div className=" mt-2 -mr-2 lg:hidden">

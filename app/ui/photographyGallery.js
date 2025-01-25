@@ -1,12 +1,12 @@
 "use client";
 // import from vercel
-import { track } from '@vercel/analytics';
+import { track } from "@vercel/analytics";
 // import from react
 import { useState } from "react";
 // import components
 import Image from "./image";
 // import from headlessui
-import { Dialog } from "@headlessui/react";
+import { Dialog, DialogPanel, DialogBackdrop } from "@headlessui/react";
 // import icons
 import { HiX } from "react-icons/hi";
 // import from swiper
@@ -39,7 +39,7 @@ export default function PhotographyGallery({
 
   return (
     <>
-        <div className="flex justify-center items-center w-full h-auto">
+      <div className="flex justify-center items-center w-full h-auto">
         <div className="grid grid-cols-1">
           <div
             className="w-full h-auto text-white relative justify-center items-center md:hover:cursor-pointer md:hover:transform md:hover:scale-105 hover:z-40 md:transition-transform "
@@ -63,8 +63,8 @@ export default function PhotographyGallery({
       <Dialog
         open={photoGalleryOpen}
         onClose={() => setPhotoGalleryOpen(false)}>
-        <Dialog.Overlay className="fixed inset-0 bg-black z-50" />
-        <Dialog.Panel className="fixed inset-0 z-50 overflow-auto flex justify-center items-center">
+        <DialogBackdrop className="fixed inset-0 bg-black z-50" />
+        <DialogPanel className="fixed inset-0 z-50 overflow-auto flex justify-center items-center">
           <div className="w-full max-w-4xl p-4">
             <div className="flex justify-end items-start w-full">
               <button
@@ -130,7 +130,7 @@ export default function PhotographyGallery({
                 </Swiper>
               ))}
           </div>
-        </Dialog.Panel>
+        </DialogPanel>
       </Dialog>
     </>
   );

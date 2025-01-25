@@ -6,7 +6,7 @@ import { track } from "@vercel/analytics";
 // import from react
 import { useState } from "react";
 // import from headlessui
-import { Dialog } from "@headlessui/react";
+import { Dialog, DialogPanel, DialogBackdrop } from "@headlessui/react";
 // import icons
 import { HiX } from "react-icons/hi";
 // import components
@@ -51,14 +51,13 @@ export default function ClientVideoFrame({
         <span
           className={`video-frame-client-span absolute font-bold text-center text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl ${
             imageVisible ? "" : "hidden"
-          }`}
-        >
+          }`}>
           {client}
         </span>
       </div>
       <Dialog open={videoWindowOpen} onClose={() => setVideoWindowOpen(false)}>
-        <Dialog.Overlay className="fixed inset-0 bg-black" />
-        <Dialog.Panel className="fixed inset-0 z-10 overflow-auto">
+        <DialogBackdrop className="fixed inset-0 bg-black" />
+        <DialogPanel className="fixed inset-0 z-10 overflow-auto">
           <div className="flex flex-col justify-center items-center h-full p-4">
             <div className="flex justify-end items-start w-full">
               <button
@@ -90,7 +89,7 @@ export default function ClientVideoFrame({
               />
             </div>
           </div>
-        </Dialog.Panel>
+        </DialogPanel>
       </Dialog>
     </>
   );

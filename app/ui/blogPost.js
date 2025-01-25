@@ -12,7 +12,7 @@ import { HiX } from "react-icons/hi";
 // import from utils
 import { formatDate } from "../lib/utils";
 // import from headlessui
-import { Dialog } from "@headlessui/react";
+import { Dialog, DialogPanel, DialogBackdrop } from "@headlessui/react";
 
 export default function BlogPost({
   title,
@@ -51,9 +51,7 @@ export default function BlogPost({
   return (
     <>
       {/* Trigger and Preview Section */}
-      <div
-        className="flex flex-col items-center w-full h-auto mb-12 shadow-2xl relative"
-      >
+      <div className="flex flex-col items-center w-full h-auto mb-12 shadow-2xl relative">
         <div className="text-center w-72 mt-3 -mb-4">
           <h3 className="font-bold text-wrap">{title}</h3>
           <h4 className="text-sm">{formatDate(post_date)}</h4>
@@ -72,11 +70,10 @@ export default function BlogPost({
           <p className="mb-6 text-balance text-left text-md mt-2">
             {shortenPostText(text[0], 200)}
             <br />
-            <span 
+            <span
               className="inline-flex items-center font-bold hover:cursor-pointer hover:scale-105 transition-transform mt-1"
               onClick={() => setBlogPostOpen(true)}
-              tabIndex={0}
-            >
+              tabIndex={0}>
               READ MORE <IoIosArrowRoundForward className="text-2xl" />
             </span>
           </p>
@@ -90,9 +87,9 @@ export default function BlogPost({
         open={blogPostOpen}
         onClose={handleDialogClose}
         className="fixed inset-0 z-50 overflow-y-auto">
-        <Dialog.Overlay className="fixed inset-0 bg-black opacity-75" />
+        <DialogBackdrop className="fixed inset-0 bg-black opacity-75" />
         <div className="min-h-screen px-4 text-center">
-          <Dialog.Panel className="w-full max-w-3xl mx-auto my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl border-2 md:border-4 border-black">
+          <DialogPanel className="w-full max-w-3xl mx-auto my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl border-2 md:border-4 border-black">
             <div className="flex flex-col items-center p-4 mt-8 ">
               <Dialog.Title className="text-lg font-medium text-gray-900">
                 {title}
@@ -159,7 +156,7 @@ export default function BlogPost({
                 <HiX className="h-6 w-6" />
               </button>
             </div>
-          </Dialog.Panel>
+          </DialogPanel>
         </div>
       </Dialog>
     </>
