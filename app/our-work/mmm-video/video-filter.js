@@ -13,7 +13,7 @@ export default function VideoFilter() {
       </div>
       <VideoGallery
         selectedCategory={selectedCategory}
-        excludedCategory={["Drone", "Livestream", "Animation"]}
+        excludedCategory={["Livestream"]}
       />
     </>
   );
