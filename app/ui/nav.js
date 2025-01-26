@@ -410,18 +410,18 @@ export default function Nav() {
         </DialogPanel>
       </Dialog>
       {/* Mobile Menu Button*/}
-      <div className=" mt-2 -mr-2 lg:hidden">
+      <div className="ml-auto mt-2 lg:hidden">
         <button onClick={openMenu}>
           <MdDehaze size={28} aria-label="Open menu" />
         </button>
       </div>
       {/* Desktop Nav Menu */}
       <div className={`flex ${menuOpen ? "" : "hidden lg:flex"} w-full`}>
-        <ul className="flex flex-row w-full space-x-8 justify-center">
+        <ul className="flex flex-row space-x-8">
           {navLinks.map((link) => (
             <li
               key={link.label}
-              className={`flex flex-col items-center justify-center font-bold text-lg 3xl:text-xl ${
+              className={`flex flex-col items-center justify-center font-bold whitespace-nowrap  3xl:text-lg ${
                 pathname === link.href
                   ? ""
                   : "hover:scale-105 hover:transform transition-transform"

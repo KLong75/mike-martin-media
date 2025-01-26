@@ -13,10 +13,10 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className=" bg-black text-white">
+     <p className="text-center mt-12 font-bold text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl tracking-tight">CONTACT US TODAY TO WORK ON YOUR PROJECT TOGETHER TOMORROW.</p>
       <div className="grid grid-cols-1  justify-items-center">
-      
+        
         <div className=" justify-center items-center w-36 h-auto mt-2 -mb-12 md:-mb-16">
-        {/* <div className=" justify-center items-center w-32 h-auto "> */}
           <Image
             src="/branding/mmm_logo_white.png"
             alt="MMM logo"

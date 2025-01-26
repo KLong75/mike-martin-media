@@ -68,4 +68,3 @@ export default function ContactInfo({ m_src }) {
     </div>
   );
 }
-  
