@@ -21,10 +21,10 @@ export default function Footer() {
         <div className="flex justify-center">
           <ContactInfo />
         </div>
-        <div className="flex justify-center mt-6 md:mt-2 mr-[2rem]">
+        <div className="flex justify-center mt-6 lg:mt-2 mr-[2rem]">
           <OurCapabilitiesList />
         </div>
-        <div className="flex justify-center mt-10 md:mt-2 mr-[2rem]">
+        <div className="flex justify-center mt-10 lg:mt-2 mr-[2rem]">
           <IndustriesList />
         </div>
       </div>
@@ -46,7 +46,7 @@ export default function Footer() {
           </span>
         </div>
 
-        <div className="order-3  text-center">
+        <div className="order-3 text-center">
           <span
             className="text-xs"
             onClick={() => track("Rhythm Code Studio link clicked")}>

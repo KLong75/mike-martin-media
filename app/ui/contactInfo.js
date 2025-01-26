@@ -18,12 +18,12 @@ export default function ContactInfo() {
           className="mb-4 md:w-[298px] md:h-[96px]"
         />
       </div>
-      <div className="text-xl font-bold my-2 text-center md:text-left">
+      <div className="text-xl font-bold my-2 text-center lg:text-left">
         Mike Martin Media
       </div>
 
       {/* Address Section */}
-      <div className=" my-2 text-center md:text-left">
+      <div className=" my-2 text-center lg:text-left">
         <a
           href="https://maps.app.goo.gl/Uptcidd5RbhV8Ke57"
           target="_blank"
@@ -41,7 +41,7 @@ export default function ContactInfo() {
         </a>
       </div>
       {/* Phone Number Section */}
-      <div className="my-2 text-center md:text-left">
+      <div className="my-2 text-center lg:text-left">
         <a
           href="tel:636-212-0978"
           target="_blank"
@@ -54,10 +54,10 @@ export default function ContactInfo() {
           </div>
         </a>
       </div>
-      <div className="my-2 flex justify-center md:justify-start">
+      <div className="my-2 flex justify-center lg:justify-start">
         <SocialMediaLinks />
       </div>
-      <div className="my-2 flex justify-center md:justify-start"><NewsletterSignupButton /></div>
+      <div className="my-2 flex justify-center lg:justify-start"><NewsletterSignupButton /></div>
       
     </div>
   );

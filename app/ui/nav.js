@@ -374,7 +374,7 @@ export default function Nav() {
       </div>
       {/* Desktop Nav Menu */}
       <div className={`flex ${menuOpen ? "" : "hidden lg:flex"} w-full`}>
-        <ul className="flex flex-row space-x-8">
+      <ul className="flex flex-row space-x-8">
           {navLinks.map((link) => (
             <li
               key={link.label}
@@ -402,6 +402,18 @@ export default function Nav() {
                   }}>
                   {link.label}
                 </button>
+              ) : link.label === "Contact Us" ? (
+                <Link href={link.href}>
+                  <span
+                    onClick={() => setCapabilitiesOpen(false) || setIndustriesOpen(false)}
+                    className={`hover:bg-white hover:text-black rounded-full border-4 p-2 px-4 mt-2 ${
+                      pathname === link.href
+                        ? "hover:cursor-text disabled text-gray-300"
+                        : " "
+                    } `}>
+                    {link.label}
+                  </span>
+                </Link>
               ) : (
                 <Link href={link.href}>
                   <span
@@ -418,6 +430,7 @@ export default function Nav() {
             </li>
           ))}
         </ul>
+
         {/* Capabilities Submenu */}
         {capabilitiesOpen && (
           <div
