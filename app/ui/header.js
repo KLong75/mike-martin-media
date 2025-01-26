@@ -12,9 +12,10 @@ export default function Header() {
     <header className="flex items-center bg-black text-white h-30 lg:h-32 xl:h-32">
       {" "}
       {/* Flex container */}
-      <div className="ml-2 sm:ml-6 md:ml-12 2xl:ml-20 w-40 md:w-48 lg:w-52 xl:w-56 h-auto flex items-center p-4">
+      <div className="ml-2 sm:ml-6 md:ml-12 2xl:ml-20 w-40 md:w-48 lg:w-52 xl:w-56 h-auto p-2">
         <Link href="/" aria-label="Mike Martin Media - Home">
           <Image
+            className="min-w-36"
             priority
             src={whiteMmmLogo}
             alt="Mike Martin Media Logo"
@@ -22,10 +23,10 @@ export default function Header() {
           />
         </Link>
       </div>
-      <div className="ml-auto p-2 ml-48">
+      <div className="ml-auto lg:ml-96 p-2">
         <Nav />
       </div>
-      <div className="ml-auto mr-16 hidden md:block">
+      <div className="ml-auto mr-16 hidden lg:block">
         <SocialMediaLinks />
       </div>
     </header>

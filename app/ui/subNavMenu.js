@@ -1,13 +1,29 @@
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 
-export default function SubNavMenu({subMenu}) {
+export default function SubNavMenu({ subMenu, closeSubMenu }) {
+  const subMenuRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (subMenuRef.current && !subMenuRef.current.contains(event.target)) {
+        closeSubMenu();
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [closeSubMenu]);
+
   return (
-    <div className="">
-      <ul className="flex flex-row w-full space-x-8 justify-center">
+    <div id="subNavMenu" ref={subMenuRef} className="">
+      <ul className="text-sm py-2 px-6 bg-white text-black rounded-full flex flex-row gap-6 justify-center">
         {subMenu.map((item, index) => (
-          <li key={index} className="py-2">
+          <li key={index} className="font-bold hover:scale-105 hover:transform transition-transform">
             <Link href={item.href}>
-              <span>{item.label}</span>
+              <span className="whitespace-nowrap" onClick={closeSubMenu}>{item.label}</span>
             </Link>
           </li>
         ))}
