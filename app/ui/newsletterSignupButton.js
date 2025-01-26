@@ -41,9 +41,9 @@ export default function NewsletterSignupButton() {
   return (
     <button
       id="newsletter-signup-button"
-      className="bg-white text-black font-bold rounded-full px-2 p-1 mt-6 mb-2 text-sm hover:scale-105 transition duration-300 ease-in-out"
+      className="bg-white text-black font-bold rounded-full px-2 mt-2 text-sm hover:scale-105 transition duration-300 ease-in-out"
       onClick={handleClick}>
-      Sign up for our newsletter!
+      Subscribe to our Newsletter
     </button>
   );
 }

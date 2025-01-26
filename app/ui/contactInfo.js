@@ -4,17 +4,18 @@ import { track } from "@vercel/analytics";
 // import components
 import Image from "./image";
 import SocialMediaLinks from "./socialMediaLinks";
+import NewsletterSignupButton from "./newsletterSignupButton";
 
 export default function ContactInfo() {
   return (
     <div className="flex flex-col justify-center">
       <div className="flex justify-center md:justify-start w-full">
         <Image
-          src="/branding/mmm_logo_white.png"
+          src="/branding/mmm-logo-white-298x96.png"
           alt="MMM logo"
-          width={220.5} // 75% of 294
-          height={71.25} // 75% of 95
-          className="mb-4 md:w-[294px] md:h-[95px]"
+          width={223.5} // 75% of 298
+          height={72} // 75% of 96
+          className="mb-4 md:w-[298px] md:h-[96px]"
         />
       </div>
       <div className="text-xl font-bold my-2 text-center md:text-left">
@@ -56,6 +57,8 @@ export default function ContactInfo() {
       <div className="my-2 flex justify-center md:justify-start">
         <SocialMediaLinks />
       </div>
+      <div className="my-2 flex justify-center md:justify-start"><NewsletterSignupButton /></div>
+      
     </div>
   );
 }

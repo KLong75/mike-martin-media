@@ -29,9 +29,11 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center py-2 mt-4 -mb-4 sm:mb- md:mb-0">
-        <NewsletterSignupButton />
-        <div>
+      <div className="flex grid grid-cols-1 lg:grid-cols-3 justify-center items-center py-2 m-4">
+        <div className="order-2 md:order-1 text-center">
+          <span className="text-xs ">©2025 Mike Martin Media</span>
+        </div>
+        <div className="order-1 md:order-2 text-center">
           <span className="text-xs mx-2">
             <Link href="/privacy-policy" className="underline">
               Privacy Policy{" "}
@@ -43,26 +45,36 @@ export default function Footer() {
             </Link>
           </span>
         </div>
-        <div>
-          <span className="text-xs ">©2025 Mike Martin Media</span>
-        </div>
-        <a
-          className="underline"
-          href="https://www.rhythmcodestudio.tech/"
-          target="_blank"
-          rel="noopener noreferrer">
+
+        <div className="order-3  text-center">
           <span
             className="text-xs"
             onClick={() => track("Rhythm Code Studio link clicked")}>
-            Website by Rhythm Code Studio
+            Website by{" "}
+            <a
+              className="font-bold"
+              href="https://www.rhythmcodestudio.tech/"
+              target="_blank"
+              rel="noopener noreferrer">
+              Rhythm Code Studio{" "}
+            </a>
+            +{" "}
+            <a
+              className="font-bold"
+              href="https://seafoammedia.com/"
+              target="_blank"
+              rel="noopener noreferrer">
+              Seafoam Media{" "}
+            </a>
           </span>
-        </a>
+        </div>
       </div>
-      <div className="flex md:hidden justify-center items-center w-full">
+
+      <div className="flex md:hidden justify-center items-center w-full mb-2">
         <Image
-          src="/branding/mmm_line_logo_white.png"
-          height={60}
-          width={1140}
+          src="/branding/line-logo-white.png"
+          height={65}
+          width={1440}
           alt=""
         />
       </div>
