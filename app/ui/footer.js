@@ -17,7 +17,7 @@ export default function Footer() {
       <p className="text-center mt-12 font-bold text-xl lg:text-2xl xl:text-4xl 2xl:text-5xl tracking-tight">
         CONTACT US TODAY TO WORK ON YOUR PROJECT TOGETHER TOMORROW.
       </p>
-      <div className="flex grid grid-cols-1 lg:grid-cols-3 mt-12 md:mt-28 justify-center">
+      <div className="flex grid grid-cols-1 lg:grid-cols-3 mt-6 md:mt-28 justify-center">
         <div className="flex justify-center">
           <ContactInfo />
         </div>

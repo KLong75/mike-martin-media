@@ -8,14 +8,18 @@ import SocialMediaLinks from "./socialMediaLinks";
 export default function ContactInfo() {
   return (
     <div className="flex flex-col justify-center">
-      <Image
-        src="/branding/mmm_logo_white.png"
-        alt="MMM logo"
-        width={294}
-        height={95}
-        className="mb-4 w-"
-      />
-      <div className="text-xl font-bold my-2 text-center md:text-left">Mike Martin Media</div>
+      <div className="flex justify-center md:justify-start w-full">
+        <Image
+          src="/branding/mmm_logo_white.png"
+          alt="MMM logo"
+          width={220.5} // 75% of 294
+          height={71.25} // 75% of 95
+          className="mb-4 md:w-[294px] md:h-[95px]"
+        />
+      </div>
+      <div className="text-xl font-bold my-2 text-center md:text-left">
+        Mike Martin Media
+      </div>
 
       {/* Address Section */}
       <div className=" my-2 text-center md:text-left">
