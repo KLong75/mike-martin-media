@@ -17,14 +17,14 @@ export default function Footer() {
       <p className="text-center mt-12 font-bold text-xl lg:text-2xl xl:text-4xl 2xl:text-5xl tracking-tight">
         CONTACT US TODAY TO WORK ON YOUR PROJECT TOGETHER TOMORROW.
       </p>
-      <div className="flex grid grid-cols-1 lg:grid-cols-3 mt-28 justify-center">
+      <div className="flex grid grid-cols-1 lg:grid-cols-3 mt-12 md:mt-28 justify-center">
         <div className="flex justify-center">
           <ContactInfo />
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-6 md:mt-2 mr-[2rem]">
           <OurCapabilitiesList />
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-10 md:mt-2 mr-[2rem]">
           <IndustriesList />
         </div>
       </div>
@@ -44,7 +44,7 @@ export default function Footer() {
           </span>
         </div>
         <div>
-          <span className="text-xs ">©2024 Mike Martin Media</span>
+          <span className="text-xs ">©2025 Mike Martin Media</span>
         </div>
         <a
           className="underline"
