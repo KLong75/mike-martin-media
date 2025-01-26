@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        
+      },
       colors: {
         'light-green': '#a4b555',
         'dark-green': '#4d6710'

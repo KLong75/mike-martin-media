@@ -10,7 +10,7 @@ import IconLink from "./iconLink";
 
 export default function SocialMediaLinks() {
   return (
-    <div className="flex justify-center items-center space-x-4 z-100 ">
+    <div className="flex justify-left items-center space-x-4 z-100 ">
       <div
         className="hover:transform hover:scale-125 transition-transform"
         onClick={() => track("social media link clicked", {name: "Facebook"})}>

@@ -237,6 +237,9 @@ import { HiX } from "react-icons/hi";
 // import components
 import Image from "./image";
 import SubNavMenu from "./subNavMenu";
+// import data
+import { capabilities } from "../lib/capabilities";
+import { industries } from "../lib/industries";
 
 const navLinks = [
   {
@@ -266,52 +269,6 @@ const navLinks = [
   {
     href: "/contact",
     label: "Contact Us",
-  },
-];
-
-const capabilities = [
-  {
-    href: "",
-    label: "Video Editing",
-  },
-  {
-    href: "",
-    label: "Video Production",
-  },
-  {
-    href: "/our-work/drone",
-    label: "Drone",
-  },
-  {
-    href: "/our-work/livestreaming",
-    label: "Live Streaming",
-  },
-  {
-    href: "/our-work/animation-motion-graphics",
-    label: "Animation and Motion Graphics",
-  },
-  {
-    href: "/our-work/photography",
-    label: "Photography",
-  },
-];
-
-const industries = [
-  {
-    href: "",
-    label: "Corporate",
-  },
-  {
-    href: "",
-    label: "Education",
-  },
-  {
-    href: "",
-    label: "Medical",
-  },
-  {
-    href: "",
-    label: "Nonprofit",
   },
 ];
 

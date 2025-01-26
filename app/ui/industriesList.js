@@ -1,0 +1,19 @@
+import { industries } from "../lib/industries"
+
+export default function IndustriesList() {
+  return (
+    <div className="">
+     <h6 className="text-xl mb-4"> Industries</h6>
+     <ul
+        className="space-y-4 min-w-[16rem]"
+      >
+     {industries.map((industry, index) => (
+        <li key={index} className="relative ">
+          <a href={industry.href} className="">{industry.label}</a>
+          <span className="absolute bottom-0 left-0 w-[calc(100%+2rem)] border-b border-white"></span>
+        </li>
+      ))}
+      </ul>
+    </div>
+  )
+};
