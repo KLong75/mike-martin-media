@@ -6,7 +6,7 @@ import { track } from "@vercel/analytics";
 // import from react
 import { useState } from "react";
 // import from headlessui
-import { Dialog, DialogPanel, DialogBackdrop } from "@headlessui/react";
+import { Dialog, DialogPanel, DialogBackdrop, DialogTitle } from "@headlessui/react";
 // import icons
 import { HiX } from "react-icons/hi";
 // import components
@@ -67,9 +67,9 @@ export default function ClientVideoFrame({
               </button>
             </div>
             <div className="z-40 flex flex-col justify-center items-center w-full mt-24 md:mt-10">
-              <Dialog.Title className="text-center text-2xl font-bold text-white">
+              <DialogTitle className="text-center text-2xl font-bold text-white">
                 {client}
-              </Dialog.Title>
+              </DialogTitle>
             </div>
             <div className="w-full h-full flex justify-center items-center -mt-36 md:mt-0">
               <iframe
