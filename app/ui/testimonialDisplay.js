@@ -30,10 +30,10 @@ export default function TestimonialDisplay() {
           height={39}
           width={60}
           alt=""
-          className="mr-4 w-52 mr-16"
+          className="mr-16 w-40"
         />
         <div className="flex flex-col">
-          <p className="text-lg xl:text-xl 2xl:text-2xl text-left mb-4">
+          <p className="text-lg xl:text-xl 2xl:text-3xl text-left mb-4">
             {testimonials[currentIndex].text}
           </p>
           <p className="text-lg text-left mt-6">
