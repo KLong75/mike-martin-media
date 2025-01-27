@@ -103,7 +103,7 @@ export default function Page() {
             <p className="text-lg">
               Safety and compliance are number onf =e for our team. Our drone.
               pilots are fully FAA-certified, which allows us to operate drones
-              legally on your behalf. Whether we're getting footage of open
+              legally on your behalf. Whether we&apos;re getting footage of open
               landscapes or maneuvering through tight indoor spaces, we can do
               it safely and effectively.
             </p>
