@@ -120,10 +120,10 @@ export default function Page() {
         </div>
 
         <div className="">
-          <div className="flex justify-center mb-12">
+          <div className="flex justify-center mb-12 invert">
             <OurCapabilitiesList />
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center invert">
             <IndustriesList />
           </div>
         </div>
