@@ -94,13 +94,13 @@ export default function Page() {
       <div className="grid grid-cols-1 ">
         <OurProcess title={"Our Process"} steps={steps} />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 p-12 m-6 ">
-        <div className="mx-12 ">
-          <div className="m-6 mb-20">
-            <h6 className="font-bold text-4xl mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 p-8 lg:p-12 lg:m-6 ">
+        <div className="lg:mx-12 ">
+          <div className="lg:m-6 mb-12 lg:mb-20">
+            <h6 className="font-bold text-xl  lg:text-2xl xl:text-4xl mb-4 lg:mb-12">
               FAA Certified and Ready for Any Environment
             </h6>
-            <p className="text-lg">
+            <p className="sm:text-lg">
               Safety and compliance are number onf =e for our team. Our drone.
               pilots are fully FAA-certified, which allows us to operate drones
               legally on your behalf. Whether we&apos;re getting footage of open
@@ -108,7 +108,24 @@ export default function Page() {
               it safely and effectively.
             </p>
           </div>
-          <div className="m-6">
+          <div className="lg:m-6 mb-12 lg:mb-20">
+            <h6 className="font-bold text-xl  lg:text-2xl xl:text-4xl mb-4 lg:mb-12">
+              Who Benefits From Drone Photography and Videography?
+            </h6>
+            <p className="sm:text-lg">
+              From showcasing your real estate and construction properties to
+              highlighting resort amenities, attractions, and local landscapes
+              for the tourism and hospitality industry, MMM can handle your
+              drone photography needs.
+            </p>
+            <p className="sm:text-lg mt-6">
+              Let us help you capture the excitement of festivals, concerts, and
+              sports events, monitor crops and land with aerial surveys and
+              conduct inspections, surveys, and research with minimal
+              disruption.
+            </p>
+          </div>
+          {/* <div className="m-6">
             <h6 className="font-bold text-4xl mb-12">
               Who Benefits From Drone Photography and Videography?
             </h6>
@@ -118,23 +135,20 @@ export default function Page() {
             <p className="text-lg mt-6">
               Let us help you capture the excitement of festivals, concerts, and sports events, monitor crops and land with aerial surveys and conduct inspections, surveys, and research with minimal disruption.
             </p>
-          </div>
+          </div> */}
         </div>
 
-        <div className="m-6">
-          <div className="m-6 flex justify-center mb-12 invert">
+        <div className="mx-12 mr-28 lg:mt-6 hidden md:block ">
+          <div className=" flex justify-center invert">
             <OurCapabilitiesList />
           </div>
-          <div className="m-6 mt-20 flex justify-center invert">
+          <div className="mt-16 flex justify-center invert">
             <IndustriesList />
           </div>
         </div>
       </div>
       <div className="grid grid-cols-1">
-        <TestimonialDisplay 
-          testimonials={testimonials}
-
-        />
+        <TestimonialDisplay testimonials={testimonials} />
       </div>
     </main>
   );

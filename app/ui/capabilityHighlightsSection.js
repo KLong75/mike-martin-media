@@ -23,7 +23,7 @@ export default function CapabilityHighLightsSection({
         </div>
       </div>
       <div className="lg:m-10 grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-2xl">
-        <div className="flex justify-center hidden lg:flex">
+        <div className="flex justify-center hidden md:flex">
           <iframe
             src={video_src}
             title="Video"
@@ -32,16 +32,16 @@ export default function CapabilityHighLightsSection({
             allow="autoplay; fullscreen"
             allowFullScreen
             loading="lazy"
-            className="w-full h-auto "></iframe>
+            className="w-full h-auto lg:p-6 xl:p-0"></iframe>
         </div>
-        <div className="flex justify-center">
-          <ul className="space-y-12 w-full">
+        <div className="flex justify-center px-6 ">
+          <ul className="space-y-6 w-full">
             {highlights.map((highlight, index) => (
-              <li key={index} className="relative pb-6">
-                <span className="text-2xl font-bold">{highlight.label}</span>
+              <li key={index} className="relative lg:pb-6">
+                <span className="lg:text-2xl font-bold">{highlight.label}</span>
                 <br />
-                <span className="text-xl">{highlight.description}</span>
-                <span className="absolute bottom-0 left-0 w-full border-b border-black "></span>
+                <span className="text-sm lg:text-xl inline-block">{highlight.description}</span>
+                <span className="absolute bottom-0 left-0 border-b border-black" style={{ width: 'calc(100% - 2rem)' }}></span>
               </li>
             ))}
           </ul>
