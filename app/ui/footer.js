@@ -31,15 +31,15 @@ export default function Footer() {
 
       <div className="flex grid grid-cols-1 lg:grid-cols-3 justify-center items-center py-2 m-4">
         <div className="order-2 md:order-1 text-center">
-          <span className="text-xs ">©2025 Mike Martin Media</span>
+          <span className="text-xs lg:text-sm ">©2025 Mike Martin Media</span>
         </div>
         <div className="order-1 md:order-2 text-center">
-          <span className="text-xs mx-2">
+          <span className="text-xs lg:text-sm mx-2">
             <Link href="/privacy-policy" className="underline">
               Privacy Policy{" "}
             </Link>
           </span>
-          <span className="text-xs mx-2">
+          <span className="text-xs lg:text-sm mx-2">
             <Link href="/cookie-policy" className="underline">
               Cookie Policy
             </Link>
@@ -48,7 +48,7 @@ export default function Footer() {
 
         <div className="order-3 text-center">
           <span
-            className="text-xs"
+            className="text-xs lg:text-sm"
             onClick={() => track("Rhythm Code Studio link clicked")}>
             Website by{" "}
             <a

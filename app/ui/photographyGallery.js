@@ -6,7 +6,7 @@ import { useState } from "react";
 // import components
 import Image from "./image";
 // import from headlessui
-import { Dialog, DialogPanel, DialogBackdrop } from "@headlessui/react";
+import { Dialog, DialogPanel, DialogBackdrop, DialogTitle } from "@headlessui/react";
 // import icons
 import { HiX } from "react-icons/hi";
 // import from swiper
@@ -74,9 +74,9 @@ export default function PhotographyGallery({
               </button>
             </div>
             <div className="flex justify-center items-center">
-              <Dialog.Title className="fixed top-12 md:top-18 text-xl md:text-2xl font-bold text-white">
+              <DialogTitle className="fixed top-12 md:top-18 text-xl md:text-2xl font-bold text-white">
                 {client.toUpperCase()}
-              </Dialog.Title>
+              </DialogTitle>
             </div>
             {/* Ensure a single Swiper for the selected gallery */}
             {photographyWorkSampleData

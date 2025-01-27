@@ -6,6 +6,9 @@ import CapabilityHighLightsSection from "@/app/ui/capabilityHighlightsSection";
 import OurProcess from "@/app/ui/ourProcess";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
+import TestimonialDisplay from "@/app/ui/testimonialDisplay";
+
+import { testimonials } from "@/app/lib/testimonials";
 
 const highlights = [
   {
@@ -126,6 +129,12 @@ export default function Page() {
             <IndustriesList />
           </div>
         </div>
+      </div>
+      <div className="grid grid-cols-1">
+        <TestimonialDisplay 
+          testimonials={testimonials}
+
+        />
       </div>
     </main>
   );
