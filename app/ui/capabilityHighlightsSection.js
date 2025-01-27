@@ -9,19 +9,21 @@ export default function CapabilityHighLightsSection({
   return (
     <div className="flex flex-col items-center">
       <div className="p-6">
-        <h3 className="px-6 text-xl 2xl:text-4xl font-semibold lg:-mb-10">
+        <h3 className="lg:px-6 text-lg lg:text-xl 2xl:text-4xl font-semibold lg:-mb-10">
           {headline}
         </h3>
+        <div className="w">
         <Image
           src="/branding/line-logo-black.png"
           alt="Line Logo Black"
           width={1440}
           height={65}
-          className="mb-6 px-6"
+          className="lg:mb-6 lg:px-6"
         />
+        </div>
       </div>
-      <div className="m-10 grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-2xl">
-        <div className="flex justify-center">
+      <div className="lg:m-10 grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-2xl">
+        <div className="flex justify-center hidden lg:flex">
           <iframe
             src={video_src}
             title="Video"

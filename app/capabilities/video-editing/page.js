@@ -50,7 +50,7 @@ export default function Page() {
         />
       </div>
       <div className="grid grid-cols-1">
-      <OurProcess />
+      {/* <OurProcess /> */}
       </div>
     </main>
   );

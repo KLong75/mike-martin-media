@@ -82,7 +82,7 @@ export default function Page() {
         numberOfVideos={6}
       />
 
-      <div className="grid grid-cols-1 mt-24 mb-20">
+      <div className="grid grid-cols-1 lg:mt-12 xl:mt-24 mb-12 xl:mb-20">
         <CapabilityHighLightsSection
           headline={"Advantages of Aerial Videography and Photography"}
           highlights={highlights}
