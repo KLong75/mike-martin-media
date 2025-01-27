@@ -3,7 +3,7 @@ import { capabilities } from "../lib/capabilities";
 export default function OurCapabilitiesList() {
   return (
     <div className="text-white">
-      <h6 className="text-xl mb-4 relative">
+      <h6 className="text-xl mb-10 relative">
         Our Capabilities
         <span className="absolute bottom-[-1rem] left-0 w-[calc(100%+6rem)] border-b border-white border-2"></span>
       </h6>

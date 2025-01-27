@@ -237,6 +237,7 @@ import { HiX } from "react-icons/hi";
 // import components
 import Image from "./image";
 import SubNavMenu from "./subNavMenu";
+import SubNavMenuMobile from "./subNavMenuMobile";
 // import data
 import { capabilities } from "../lib/capabilities";
 import { industries } from "../lib/industries";
@@ -276,11 +277,15 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [capabilitiesOpen, setCapabilitiesOpen] = useState(false);
   const [industriesOpen, setIndustriesOpen] = useState(false);
+  const [capabilitiesOpenMobile, setCapabilitiesOpenMobile] = useState(false);
+  const [industriesOpenMobile, setIndustriesOpenMobile] = useState(false);
   const [submenuPosition, setSubmenuPosition] = useState({ left: 0 });
   const pathname = usePathname();
   const openMenu = () => setMenuOpen(true);
   const openCapabilities = () => setCapabilitiesOpen(true);
   const openIndustries = () => setIndustriesOpen(true);
+  const openCapabilitiesMobile = () => setCapabilitiesOpenMobile(true);
+  const openIndustriesMobile = () => setIndustriesOpenMobile(true);
 
   const capabilitiesRef = useRef(null);
   const industriesRef = useRef(null);
@@ -288,6 +293,11 @@ export default function Nav() {
   const closeSubMenu = () => {
     setCapabilitiesOpen(false);
     setIndustriesOpen(false);
+  };
+
+  const closeSubMenuMobile = () => {
+    setCapabilitiesOpenMobile(false);
+    setIndustriesOpenMobile(false);
   };
 
   useEffect(() => {
@@ -337,14 +347,14 @@ export default function Nav() {
                     {link.label === "Capabilities" || link.label === "Industries" ? (
                       <button
                         ref={link.label === "Capabilities" ? capabilitiesRef : industriesRef}
-                        className="flex flex-col items-center justify-center cursor-pointer"
+                        className="cursor-pointer"
                         onClick={() => {
                           if (link.label === "Capabilities") {
-                            setCapabilitiesOpen(!capabilitiesOpen);
-                            setIndustriesOpen(false);
+                            setCapabilitiesOpenMobile(!capabilitiesOpenMobile);
+                            setIndustriesOpenMobile(false);
                           } else if (link.label === "Industries") {
-                            setIndustriesOpen(!industriesOpen);
-                            setCapabilitiesOpen(false);
+                            setIndustriesOpenMobile(!industriesOpenMobile);
+                            setCapabilitiesOpenMobile(false);
                           }
                         }}>
                         {link.label}
@@ -352,7 +362,7 @@ export default function Nav() {
                     ) : (
                       <Link href={link.href}>
                         <div
-                          className="flex flex-col items-center justify-center cursor-pointer"
+                          className="cursor-pointer"
                           onClick={() => setMenuOpen(false)}>
                           {link.icon}
                           <span>{link.label}</span>
@@ -362,6 +372,26 @@ export default function Nav() {
                   </li>
                 ))}
               </ul>
+              {/* Capabilities Submenu Mobile */}
+              {capabilitiesOpenMobile && (
+                <div className="absolute bottom-40 z-50">
+                  <SubNavMenuMobile 
+                    subMenu={capabilities} 
+                    closeSubMenu={closeSubMenuMobile} 
+                    setMenuOpen={setMenuOpen} 
+                  />
+                </div>
+              )}
+              {/* Industries Submenu Mobile */}
+              {industriesOpenMobile && (
+                <div className="absolute bottom-40 z-50">
+                  <SubNavMenuMobile 
+                    subMenu={industries} 
+                    closeSubMenu={closeSubMenuMobile}
+                    setMenuOpen={setMenuOpen}
+                />
+                </div>
+              )}
             </div>
           </div>
         </DialogPanel>

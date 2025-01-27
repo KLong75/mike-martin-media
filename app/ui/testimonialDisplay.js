@@ -23,7 +23,7 @@ export default function TestimonialDisplay() {
   };
 
   return (
-    <div className="relative flex flex-col items-center bg-black text-white p-20 px-42">
+    <div className="relative flex flex-col items-center bg-black text-white p-20 px-12">
       <div className="flex flex-row items-start mx-64">
         <Image
           src="/images/apos.png"
@@ -33,7 +33,7 @@ export default function TestimonialDisplay() {
           className="mr-16 w-40"
         />
         <div className="flex flex-col">
-          <p className="text-lg xl:text-xl 2xl:text-3xl text-left mb-4">
+          <p className="text-lg xl:text-xl 2xl:text-2xl text-left mb-4">
             {testimonials[currentIndex].text}
           </p>
           <p className="text-lg text-left mt-6">
