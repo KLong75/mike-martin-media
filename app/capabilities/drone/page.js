@@ -91,39 +91,38 @@ export default function Page() {
       <div className="grid grid-cols-1 ">
         <OurProcess title={"Our Process"} steps={steps} />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 p-12 m-12">
-        <div>
-          <div>
-            <div>
-              <h6 className="font-bold text-4xl">FAA Certified and Ready for Any Environment</h6>
-            </div>
-            <div>
-              <p className="text-lg">
-                Safety and compliance are number onf =e for our team. Our drone.
-                pilots are fully FAA-certified. lorem ipsum blah blah lorem
-                ipsum
-              </p>
-            </div>
-          </div>
-          <div>
-            <div>
-            <h6 className="font-bold text-4xl">Who Benefits From Drone Photography and Videography?</h6>
-            </div>
-            <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 p-12 m-6 ">
+        <div className="mx-12 ">
+          <div className="m-6 mb-20">
+            <h6 className="font-bold text-4xl mb-12">
+              FAA Certified and Ready for Any Environment
+            </h6>
             <p className="text-lg">
-                Safety and compliance are number onf =e for our team. Our drone.
-                pilots are fully FAA-certified. lorem ipsum blah blah lorem
-                ipsum
-              </p>
-            </div>
+              Safety and compliance are number onf =e for our team. Our drone.
+              pilots are fully FAA-certified, which allows us to operate drones
+              legally on your behalf. Whether we're getting footage of open
+              landscapes or maneuvering through tight indoor spaces, we can do
+              it safely and effectively.
+            </p>
+          </div>
+          <div className="m-6">
+            <h6 className="font-bold text-4xl mb-12">
+              Who Benefits From Drone Photography and Videography?
+            </h6>
+            <p className="text-lg">
+              From showcasing your real estate and construction properties to highlighting resort amenities, attractions, and local landscapes for the tourism and hospitality industry, MMM can handle your drone photography needs.
+            </p>
+            <p className="text-lg mt-6">
+              Let us help you capture the excitement of festivals, concerts, and sports events, monitor crops and land with aerial surveys and conduct inspections, surveys, and research with minimal disruption.
+            </p>
           </div>
         </div>
 
-        <div className="">
-          <div className="flex justify-center mb-12 invert">
+        <div className="m-6">
+          <div className="m-6 flex justify-center mb-12 invert">
             <OurCapabilitiesList />
           </div>
-          <div className="flex justify-center invert">
+          <div className="m-6 mt-20 flex justify-center invert">
             <IndustriesList />
           </div>
         </div>

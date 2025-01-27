@@ -39,7 +39,7 @@ export default function CapabilityHighLightsSection({
                 <span className="text-2xl font-bold">{highlight.label}</span>
                 <br />
                 <span className="text-xl">{highlight.description}</span>
-                <span className="absolute bottom-0 left-0 w-full border-b border-gray-300 "></span>
+                <span className="absolute bottom-0 left-0 w-full border-b border-black "></span>
               </li>
             ))}
           </ul>
