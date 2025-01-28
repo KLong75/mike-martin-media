@@ -6,8 +6,8 @@ import { videoData } from "../lib/videoData";
 export default function VideoGallery({ selectedCategory, excludedCategory, numberOfVideos }) {
   return (
     <div
-      className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 ${
-        selectedCategory === "Livestream" || selectedCategory === "Animation" ? "lg:grid-cols-2" : "lg:grid-cols-3"
+      className={` grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 ${
+        selectedCategory === "Livestream" || selectedCategory === "" ? "lg:grid-cols-2" : "lg:grid-cols-3"
       } gap-0`}>
       {videoData
         .filter((video) => {

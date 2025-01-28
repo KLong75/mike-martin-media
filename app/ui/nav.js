@@ -404,11 +404,11 @@ export default function Nav() {
       </div>
       {/* Desktop Nav Menu */}
       <div className={`flex ${menuOpen ? "" : "hidden lg:flex"} w-full`}>
-      <ul className="flex flex-row space-x-8">
+      <ul className="flex flex-row space-x-6 2xl:space-x-12">
           {navLinks.map((link) => (
             <li
               key={link.label}
-              className={`flex flex-col items-center justify-center font-bold whitespace-nowrap  3xl:text-lg ${
+              className={`flex flex-col items-center justify-center font-bold whitespace-nowrap xl:text-lg 3xl:text-2xl ${
                 pathname === link.href
                   ? ""
                   : "hover:scale-105 hover:transform transition-transform"

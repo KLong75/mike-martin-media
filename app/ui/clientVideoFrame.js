@@ -36,7 +36,7 @@ export default function ClientVideoFrame({
   return (
     <>
       <div
-        className="relative flex justify-center items-center w-full h-auto cursor-pointer p- md:p-0 6xl:p-16 hover:transform md:hover:scale-105 hover:z-40 transition-transform duration-300 ease-in-out"
+        className="relative flex justify-center items-center w-full h-auto cursor-pointer hover:transform md:hover:scale-105 hover:z-40 transition-transform duration-300 ease-in-out"
         onClick={handleClick}>
         <Image
           id="video-thumbnail"

@@ -13,8 +13,8 @@ export default function ContactInfo() {
         <Image
           src="/branding/mmm-logo-white-298x96.png"
           alt="MMM logo"
-          width={223.5} // 75% of 298
-          height={72} // 75% of 96
+          width={179} // 75% of 298
+          height={58} // 75% of 96
           className="mb-4 md:w-[298px] md:h-[96px]"
         />
       </div>
