@@ -25,7 +25,7 @@ export default function OurProcess({ title, steps }) {
             <h4 className="sm:text-lg lg:text-xl xl:text-2xl font-semibold mt-2 whitespace-nowrap">
               {step.name}
             </h4>
-            <p className="mt-2 lg:mt-4 text-sm lg:text-base 2xl:text-lg ">
+            <p className="mt-2 lg:mt-4 text-sm lg:text-base 2xl:text-lg text-balance">
               {step.description}
             </p>
           </div>

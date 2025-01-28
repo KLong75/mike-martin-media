@@ -103,7 +103,7 @@ export default function Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 p-8 lg:p-12 lg:m-6 max-w-800">
           <div className="lg:mx-12">
             <div className="lg:m-6 mb-12 lg:mb-20">
-              <h6 className="font-bold text-xl  lg:text-2xl xl:text-4xl mb-4 lg:mb-12">
+              <h6 className="font-bold text-xl  lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
                 FAA Certified and Ready for Any Environment
               </h6>
               <p className="sm:text-lg">
@@ -115,7 +115,7 @@ export default function Page() {
               </p>
             </div>
             <div className="lg:m-6 mb-12 lg:mb-20">
-              <h6 className="font-bold text-xl  lg:text-2xl xl:text-4xl mb-4 lg:mb-12">
+              <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
                 Who Benefits From Drone Photography and Videography?
               </h6>
               <p className="sm:text-lg">
@@ -124,7 +124,7 @@ export default function Page() {
                 for the tourism and hospitality industry, MMM can handle your
                 drone photography needs.
               </p>
-              <p className="sm:text-lg mt-6">
+              <p className="sm:text-lg mt-4">
                 Let us help you capture the excitement of festivals, concerts,
                 and sports events, monitor crops and land with aerial surveys
                 and conduct inspections, surveys, and research with minimal

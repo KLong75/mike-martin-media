@@ -28,10 +28,12 @@ export default function Footer() {
             <div className="flex justify-center">
               <ContactInfo />
             </div>
-            <div className="flex justify-center mt-12 lg:mt-2 mr-[4rem] lg:mr-[2rem]">
+            <div className="flex justify-center mt-12 lg:mt-2">
               <OurCapabilitiesList />
             </div>
-            <div className="mb-6 lg:mb-0 flex justify-center mt-10 lg:mt-2 mr-[4rem] lg:mr-[2rem]">
+            <div className="mb-6 lg:mb-0 flex justify-center mt-10 lg:mt-2">
+            {/* mr-[4rem] lg:mr-[2rem] */}
+{/* mr-[4rem] lg:mr-[2rem] */}
               <IndustriesList />
             </div>
           </div>

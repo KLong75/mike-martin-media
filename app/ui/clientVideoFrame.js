@@ -36,25 +36,27 @@ export default function ClientVideoFrame({
   return (
     <>
       <div
-        className="relative flex justify-center items-center w-full h-auto cursor-pointer hover:transform md:hover:scale-105 hover:z-40 transition-transform duration-300 ease-in-out"
-        onClick={handleClick}>
-        <Image
-          id="video-thumbnail"
-          className={`z-0 cursor-pointer shadow-lg ${
-            imageVisible ? "" : "hidden"
-          }`}
-          src={image_src}
-          height={540}
-          width={960}
-          alt={`${client} ${title}`}
-        />
-        <span
-          className={`video-frame-client-span absolute font-bold text-center text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl ${
-            imageVisible ? "" : "hidden"
-          }`}>
-          {client}
-        </span>
-      </div>
+  className="relative flex justify-center items-center w-full h-auto cursor-pointer overflow-hidden transition-transform duration-300 ease-in-out"
+  onClick={handleClick}
+>
+  <Image
+    id="video-thumbnail"
+    className={` cursor-pointer shadow-lg transform transition-transform duration-300 ease-in-out ${
+      imageVisible ? "" : "hidden"
+    } hover:scale-110`}
+    src={image_src}
+    height={540}
+    width={960}
+    alt={`${client} ${title}`}
+  />
+  <span
+    className={`video-frame-client-span absolute font-bold text-center text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl ${
+      imageVisible ? "" : "hidden"
+    }`}
+  >
+    {client}
+  </span>
+</div>
       <Dialog open={videoWindowOpen} onClose={() => setVideoWindowOpen(false)}>
         <DialogBackdrop className="fixed inset-0 bg-black" />
         <DialogPanel className="fixed inset-0 z-10 overflow-auto">
