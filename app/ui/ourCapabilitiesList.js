@@ -11,7 +11,7 @@ export default function OurCapabilitiesList() {
       <ul className="relative space-y-4 min-w-[16rem] mt-6">
         {capabilities.map((capability, index) => (
           <li key={index} className="relative">
-            <a href={capability.href} className="block transition-transform transform hover:translate-x-4 ease-in-out duration-500">{capability.label}</a>
+            <a href={capability.href} className="block transition-transform transform hover:font-medium hover:translate-x-4 ease-in-out duration-500">{capability.label}</a>
             <span className="absolute bottom-[-.5rem] left-0 w-[calc(100%+4rem)] xl:w-[calc(100%+4rem)] border-b border-white"></span>
           </li>
         ))}

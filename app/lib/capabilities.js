@@ -1,26 +1,26 @@
 export const capabilities = [
   {
     label: "Video Editing",
-    href: "",
+    href: "/capabilities/video-editing",
   },
   {
     label: "Video Production",
-    href: "",
+    href: "/capabilities/video-production",
   },
   {
     label: "Drone",
-    href: "/our-work/drone",
+    href: "/capabilities/drone",
   },
   {
     label: "Live Streaming",
-    href: "/our-work/livestreaming",
+    href: "/capabilities/live-streaming",
   },
   {
     label: "Animation and Motion Graphics",
-    href: "/our-work/animation-motion-graphics",
+    href: "/capabilities/animation-motion-graphics",
   },
   {
     label: "Photography",
-    href: "/our-work/photography",
+    href: "/capabilities/photography",
   },
 ];

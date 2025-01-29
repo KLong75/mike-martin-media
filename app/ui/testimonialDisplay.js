@@ -37,10 +37,10 @@ export default function TestimonialDisplay() {
             <p className="lg:text-lg xl:text-xl 2xl:text-xl text-left mb-4 text-pretty font-bold">
               {testimonials[currentIndex].text}
             </p>
-            <p className="text-sm lg:text-lg text-left lg:mt-6 ml-16">
+            <p className="text-sm lg:text-lg text-left lg:mt-6 lg:ml-16">
               {testimonials[currentIndex].name}
             </p>
-            <p className="text-xs lg:text-sm text-left italic ml-16">
+            <p className="text-xs lg:text-sm text-left italic lg:ml-16">
               {testimonials[currentIndex].role}
             </p>
           </div>

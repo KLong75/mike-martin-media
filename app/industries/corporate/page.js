@@ -33,19 +33,10 @@ export default function Page() {
           />
         </div>
       </div>
-      {/* <div className="grid grid-cols-1 lg:mt-12 xl:mt-24 mb-12 xl:mb-20">
-        <CapabilityHighLightsSection
-          headline={"Advantages of Aerial Videography and Photography"}
-          highlights={highlights}
-          video_src={
-            "https://player.vimeo.com/video/799944146?h=7ce1e106da&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0"
-          }
-        />
-      </div> */}
 
-      <div className="flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 p-8 lg:p-12 lg:m-6 max-w-800">
-          <div className="">
+      <div className="flex justify-center lg:my-6 2xl:my-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 p-8 lg:p-12 lg:m-6 max-w-800">
+          <div className="lg:ml-28">
             <IndustrySupport 
               heading={"How We Support Corporate Clients"}
               helperText={"We specialize in creating a variety of video content tailored for corporations of all sizes:"}
@@ -53,11 +44,11 @@ export default function Page() {
             />
           </div>
 
-          <div className="mx-12 lg:mt-6 hidden md:block ">
-            <div className=" flex justify-center invert">
+          <div className=" hidden lg:block ">
+            <div className="flex justify-end md:mr-28 lg:mr-40 invert">
               <OurCapabilitiesList />
             </div>
-            <div className="mt-16 flex justify-center invert">
+            <div className="mt-16 flex justify-end md:mr-28 lg:mr-40 invert">
               <IndustriesList />
             </div>
           </div>
