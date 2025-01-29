@@ -15,8 +15,8 @@ import { testimonials } from "../lib/testimonials";
 
 export default function Footer() {
   return (
-    <>
-      <div className="grid grid-cols-1">
+    <div className="bg-black">
+      <div className="grid grid-cols-1 bg-black p-2 lg:px-12 xl:px-28 2xl:px-40 mt-6 lg:m-16">
         <TestimonialDisplay testimonials={testimonials} />
       </div>
       <footer className=" bg-black text-white flex justify-center items-center w-full">
@@ -24,23 +24,22 @@ export default function Footer() {
           <p className="text-center mt-12 font-bold text-xl lg:text-2xl xl:text-4xl 2xl:text-4xl 3xl:text-5xl tracking-tight">
             CONTACT US TODAY TO WORK ON YOUR PROJECT TOGETHER TOMORROW.
           </p>
-          <div className="flex grid grid-cols-1 lg:grid-cols-3 mt-6 md:mt-28 justify-center">
+          <div className="flex grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 mt-6 md:mt-28 justify-center">
             <div className="flex justify-center">
               <ContactInfo />
             </div>
-            <div className="flex justify-center mt-12 lg:mt-2">
+            <div className="flex justify-center mt-12 lg:mt-2 mr-[4rem] lg:mr-[2rem]">
               <OurCapabilitiesList />
             </div>
-            <div className="mb-6 lg:mb-0 flex justify-center mt-10 lg:mt-2">
-            {/* mr-[4rem] lg:mr-[2rem] */}
-{/* mr-[4rem] lg:mr-[2rem] */}
+            
+            <div className="mb-6 lg:mb-0 flex justify-center mt-10 lg:mt-2 mr-[4rem] lg:mr-[2rem]">
               <IndustriesList />
             </div>
           </div>
 
-          <div className="flex grid grid-cols-1 lg:grid-cols-3 justify-center items-center py-2 m-4">
-            <div className="order-2 md:order-1 text-center">
-              <span className="text-xs lg:text-sm ">
+          <div className="flex grid grid-cols-1 lg:grid-cols-3 justify-center items-center py-2 m-4 mt-12">
+            <div className="order-2 md:order-1 text-center xl:mr-auto">
+              <span className="text-xs lg:text-sm">
                 ©2025 Mike Martin Media
               </span>
             </div>
@@ -57,7 +56,7 @@ export default function Footer() {
               </span>
             </div>
 
-            <div className="order-3 text-center">
+            <div className="order-3 text-center xl:ml-auto">
               <span
                 className="text-xs lg:text-sm"
                 onClick={() => track("Rhythm Code Studio link clicked")}>
@@ -91,6 +90,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
