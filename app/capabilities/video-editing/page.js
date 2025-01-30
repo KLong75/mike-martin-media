@@ -21,6 +21,15 @@ const highlights = [
   },
 ];
 
+export const metadata = {
+  title: "Video Editing Company | Mike Martin Media",
+  description:
+    "Professional video editing company transforming raw footage into polished, engaging stories. Expert team handles color grading, sound design & motion graphics. Get your free quote today.",
+  alternates: {
+    canonical: "/capabilities/video-editing/",
+  },
+};
+
 export default function Page() {
   return (
     <main className="grid grid-cols-1">

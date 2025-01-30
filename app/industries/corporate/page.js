@@ -8,6 +8,15 @@ import IndustrySupport from "@/app/ui/industrySupport";
 //import data
 import { corporateSupport } from "@/app/lib/industries";
 
+export const metadata = {
+  title: "Corporate Video Production | Mike Martin Media",
+  description:
+    "Full-service corporate video production company delivering training, executive communications & promotional content. Professional team elevates your brand with compelling visuals. Contact us.",
+  alternates: {
+    canonical: "/industries/corporate/",
+  },
+};
+
 export default function Page() {
   return (
     <main className="grid grid-cols-1">

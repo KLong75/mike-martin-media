@@ -7,6 +7,15 @@ import OurProcess from "@/app/ui/ourProcess";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
 
+export const metadata = {
+  title: "Drone Video Services | Mike Martin Media",
+  description:
+    "FAA-certified drone video company delivering stunning aerial photography & videography. Expert pilots capture breathtaking perspectives for real estate, events & more. Contact us today.",
+  alternates: {
+    canonical: "/capabilities/drone/",
+  },
+};
+
 const highlights = [
   {
     label: "Enhanced Storytelling",
