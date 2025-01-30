@@ -33,23 +33,36 @@ export default function VideoCategories({ onCategorySelected }) {
 
   return (
     <section>
-      <h2 className="text-lg font-bold text-center -mb-6">
+      <h2 className="text-lg font-bold text-center">
         SELECT A CATEGORY:
       </h2>
-      <ul className="flex flex-wrap justify-center gap-4 p-6 md:mb-4">
-        {categoryOptions.map((category) => (
-          <li
-            key={category.name}
-            onClick={() => handleCategorySelected(category.name)}
-            className={`text-sm flex flex-col items-center justify-center relative transition-transform cursor-pointer m-3 ${
-              selectedCategory === category.name
-                ? "font-bold scale:105"
-                : "text-black hover:transform hover:scale-105 hover:rotate-3 hover:font-medium"
-            }`}>
-            {category.icon}
-            <span className="mt-2">{category.name}</span>
-          </li>
-        ))}
+      <ul className="flex flex-col items-center">
+        <li
+          key={categoryOptions[0].name}
+          onClick={() => handleCategorySelected(categoryOptions[0].name)}
+          className={`text-sm flex flex-col items-center justify-center relative transition-transform cursor-pointer m-3 ${
+            selectedCategory === categoryOptions[0].name
+              ? "font-bold scale:105"
+              : "text-black hover:transform hover:scale-105 hover:rotate-3 hover:font-medium"
+          }`}>
+          {categoryOptions[0].icon}
+          <span className="mt-2 -mb-4">{categoryOptions[0].name}</span>
+        </li>
+        <ul className="flex flex-wrap justify-center gap-4 p-6">
+          {categoryOptions.slice(1).map((category) => (
+            <li
+              key={category.name}
+              onClick={() => handleCategorySelected(category.name)}
+              className={`text-sm flex flex-col items-center justify-center relative transition-transform cursor-pointer m-3 ${
+                selectedCategory === category.name
+                  ? "font-bold scale:105"
+                  : "text-black hover:transform hover:scale-105 hover:rotate-3 hover:font-medium"
+              }`}>
+              {category.icon}
+              <span className="mt-2">{category.name}</span>
+            </li>
+          ))}
+        </ul>
       </ul>
       <div className="bg-black text-white text-xl md:text-2xl grid grid-cols-1 w-full h-28 md:h-32 text-center -mt-4">
         <h3 className="font-bold  mt-2 ">Currently Viewing:</h3>
@@ -65,3 +78,21 @@ export default function VideoCategories({ onCategorySelected }) {
     </section>
   );
 }
+
+
+{/* <ul className="flex flex-wrap justify-center gap-4 p-6 md:mb-4"> */}
+{/* <ul className="flex grid grid-cols-3">
+{categoryOptions.map((category) => (
+  <li
+    key={category.name}
+    onClick={() => handleCategorySelected(category.name)}
+    className={`text-sm flex flex-col items-center justify-center relative transition-transform cursor-pointer m-3 ${
+      selectedCategory === category.name
+        ? "font-bold scale:105"
+        : "text-black hover:transform hover:scale-105 hover:rotate-3 hover:font-medium"
+    }`}>
+    {category.icon}
+    <span className="mt-2">{category.name}</span>
+  </li>
+))}
+</ul> */}

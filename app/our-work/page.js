@@ -2,10 +2,11 @@
 import Link from "next/link";
 // import components
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
-import BannerImage from "../ui/bannerImage";
 import ContactUsButton from "../ui/contactUsButton";
 import WorkCategorySection from "../ui/workCategorySection";
 import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
+import PageHeadingBanner from "../ui/pageHeadingBanner";
+import VideoFilter from "../ui/video-filter";
 // import icons
 import { TbDrone } from "react-icons/tb";
 import { FaVideo, FaCameraRetro } from "react-icons/fa6";
@@ -34,7 +35,19 @@ export default function Page() {
             title="Our_Work_Page_Banner_Video"
           />
         </div>
-        <div className="-mt-20 bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
+        <div className="flex justify-center items-center bg-black -mt-20">
+          <PageHeadingBanner
+            title={"Our Work"}
+            heading={"Your Partner Every Step of the Process"}
+            text={
+              "Award winning, professional video production. Content creation, live recording, post-production editing, colorgrading, audio engineering, on screen graphics, green screen, visual effets, commercials, promotions, and so much more."
+            }
+          />
+        </div>
+        <div className="mt-4">
+          <VideoFilter />
+        </div>
+        {/* <div className="-mt-20 bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
           <h1 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl">
             OUR WORK
           </h1>
@@ -128,7 +141,7 @@ export default function Page() {
         </div>
         <div className="w-full">
           <MMMLineLogoBlack />
-        </div>
+        </div> */}
       </main>
     </>
   );

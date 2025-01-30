@@ -6,6 +6,7 @@ import BannerImage from "../ui/bannerImage";
 import goldenGateBridge from "../../public/images/blog-page/golden-gate-bridge.jpg";
 // import data
 import { blogPosts } from "../lib/blogPostData";
+import PageHeadingBanner from "../ui/pageHeadingBanner";
 
 export const metadata = {
   title: "Blog",
@@ -26,10 +27,19 @@ export default function Page() {
           priority
         />
       </div>
-      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
+      {/* <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
         <h1 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl mt-2">
           BEYOND THE LENS
         </h1>
+      </div> */}
+      <div>
+        <PageHeadingBanner
+          title={"Blog"}
+          heading={"Beyond the Lens"}
+          text={
+            "Venture beyond the lens and take a look behind the scenes. Read up on our latest adventures as we film across town, across the country, and around the world. Try to keep up, we move fast!"
+          }
+        />
       </div>
       <div className="font-bold text-2xl xl:text-3xl 2xl:text-4xl text-center justify-center items-center p-4 text-balance mb-4">
         <h2>Venture beyond the lens and take a look behind the scenes.</h2>
@@ -38,8 +48,9 @@ export default function Page() {
         <p>
           Read up on our latest adventures as we film across town, across the
           country, and around the world.
-        <br />
-        Try to keep up, we move fast!</p>
+          <br />
+          Try to keep up, we move fast!
+        </p>
       </div>
       <div className="-mt-2 md:mt-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 p-6">
         {blogPosts.map((post, index) => (

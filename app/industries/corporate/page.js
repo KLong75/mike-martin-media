@@ -1,7 +1,7 @@
 //import components
 import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
 import VideoGallery from "@/app/ui/videoGallery";
-import CapabilitiesBanner from "@/app/ui/capabilitiesBanner";
+import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
 import IndustrySupport from "@/app/ui/industrySupport";
@@ -16,7 +16,7 @@ export default function Page() {
         title="MMM_Livestreaming_Video"
       />
       <div className="">
-        <CapabilitiesBanner
+        <PageHeadingBanner
           title={"Industries - Corporate Video Production"}
           heading={"Elevate Your Business Through Compelling Visuals"}
           text={
@@ -37,9 +37,11 @@ export default function Page() {
       <div className="flex justify-center lg:my-6 2xl:my-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 p-8 lg:p-12 lg:m-6 max-w-800">
           <div className="lg:ml-28">
-            <IndustrySupport 
+            <IndustrySupport
               heading={"How We Support Corporate Clients"}
-              helperText={"We specialize in creating a variety of video content tailored for corporations of all sizes:"}
+              helperText={
+                "We specialize in creating a variety of video content tailored for corporations of all sizes:"
+              }
               supportList={corporateSupport}
             />
           </div>

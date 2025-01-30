@@ -1,10 +1,9 @@
 //import components
 import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
 import VideoGallery from "@/app/ui/videoGallery";
-import CapabilitiesBanner from "@/app/ui/capabilitiesBanner";
+import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import CapabilityHighLightsSection from "@/app/ui/capabilityHighlightsSection";
 import OurProcess from "@/app/ui/ourProcess";
-
 
 const highlights = [
   {
@@ -17,7 +16,8 @@ const highlights = [
   },
   {
     label: "Elevate Events",
-    description: "Capture outdoor festivals, weddings, and corporate gatherings.",
+    description:
+      "Capture outdoor festivals, weddings, and corporate gatherings.",
   },
 ];
 
@@ -29,10 +29,12 @@ export default function Page() {
         title="Video_Page_Banner_Video"
       />
       <div className="">
-        <CapabilitiesBanner
+        <PageHeadingBanner
           title={"Capabilities - Video Editing"}
           heading={"Elevate Your Vision with Drone Services"}
-          text={"Drone footage offers perspectives you can't get anywhere else. MMM has FAA certification and is able to capture beautiful photography and videography, both indoors and outdoors. We are committed to creating visuals that make a difference in your storytelling."}
+          text={
+            "Drone footage offers perspectives you can't get anywhere else. MMM has FAA certification and is able to capture beautiful photography and videography, both indoors and outdoors. We are committed to creating visuals that make a difference in your storytelling."
+          }
         />
       </div>
 
@@ -43,15 +45,15 @@ export default function Page() {
       />
 
       <div className="grid grid-cols-1 mt-24 mb-20">
-        <CapabilityHighLightsSection 
+        <CapabilityHighLightsSection
           headline={"Advantages of Aerial Videography and Photography"}
           highlights={highlights}
-          video_src={"https://player.vimeo.com/video/799944146?h=7ce1e106da&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0"}
+          video_src={
+            "https://player.vimeo.com/video/799944146?h=7ce1e106da&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0"
+          }
         />
       </div>
-      <div className="grid grid-cols-1">
-      {/* <OurProcess /> */}
-      </div>
+      <div className="grid grid-cols-1">{/* <OurProcess /> */}</div>
     </main>
   );
 }

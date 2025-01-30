@@ -1,7 +1,7 @@
 //import components
 import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
 import VideoGallery from "@/app/ui/videoGallery";
-import CapabilitiesBanner from "@/app/ui/capabilitiesBanner";
+import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import CapabilityHighLightsSection from "@/app/ui/capabilityHighlightsSection";
 import OurProcess from "@/app/ui/ourProcess";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
@@ -64,8 +64,7 @@ export default function Page() {
         title="MMM_Livestreaming_Video"
       />
       <div className="">
-        <CapabilitiesBanner
-        
+        <PageHeadingBanner
           title={"Capabilities - Drone"}
           heading={"Elevate Your Vision with Drone Services"}
           text={
@@ -74,13 +73,13 @@ export default function Page() {
         />
       </div>
       <div className="flex justify-center">
-      <div className="max-w-2000">
-        <VideoGallery
-          selectedCategory={"Drone"}
-          excludedCategory={[]}
-          numberOfVideos={6}
-        />
-      </div>
+        <div className="max-w-2000">
+          <VideoGallery
+            selectedCategory={"Drone"}
+            excludedCategory={[]}
+            numberOfVideos={6}
+          />
+        </div>
       </div>
       <div className="grid grid-cols-1 lg:mt-12 xl:mt-24 mb-12 xl:mb-20">
         <CapabilityHighLightsSection

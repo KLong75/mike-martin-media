@@ -1,5 +1,5 @@
 // import from next
-// import Image from "next/image";
+import Link from "next/link";
 // import data
 import { weTextBlockData } from "../lib/data";
 // import components
@@ -15,6 +15,7 @@ import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
 import mikeInVanWithCamera from "../../public/images/about-page/mike-in-van-with-camera.jpg";
 // import text
 import { aboutPageText } from "../lib/siteText";
+import PageHeadingBanner from "../ui/pageHeadingBanner";
 
 export const metadata = {
   title: "About",
@@ -34,25 +35,26 @@ export default function Page() {
           title="About_Page_Banner_Video"
         />
       </div>
-      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2">
-          ABOUT
-        </h1>
-        <div className="flex justify-center items-center w-24 md:w-36 lg:w-40 h-auto mb-1.5 md:p-1">
-          <Image
-            src="/branding/mmm_logo_white.png"
-            width={294}
-            height={95}
-            alt="company logo"
-            priority
-            as="image"
-          />
-        </div>
+      <div>
+        <PageHeadingBanner
+          title={"About Us"}
+          heading={"Turning Your Ideas Into Impactful Stories"}
+          text={
+            <>
+            At MMM, we create video content{" "}
+            <Link 
+              href="/capabilities/video-production"
+              className="underline"
+            >
+              video content
+            </Link>{" "}
+            that not only looks great but also makes a positive impact. We believe in the power of telling stories to inspire, connect and make real change. Every project we complete is an opportunity to help our clients succeed while contributing something good to the world.
+          </>
+          }
+        />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 p-6 mt-2 md:mt-6">
-        <div
-          className="flex justify-center items-center"
-        >
+        <div className="flex justify-center items-center">
           <div className="p-2 md:p-6 ">
             <BannerImage
               src={mikeInVanWithCamera}
@@ -94,9 +96,7 @@ export default function Page() {
       </section>
       <section className="mt-8 md:mt-12">
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <div
-            className="w-8 md:w-10 h-auto mx-2 meet-the-team-m-logo-container"
-          >
+          <div className="w-8 md:w-10 h-auto mx-2 meet-the-team-m-logo-container">
             <Image
               src="/branding/singleMWhiteResizeSmall.png"
               width={349}
