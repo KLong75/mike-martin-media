@@ -2,7 +2,7 @@
 // import from next
 import Link from "next/link";
 // import components
-import Image from "./ui/image"
+import Image from "./ui/image";
 import BannerVideo from "./ui/bannerVideo";
 import MmmSiteButton from "./ui/mmmSiteButton";
 import MmmSiteButtonTextOnly from "./ui/mmmSiteButtonTextOnly";
@@ -11,104 +11,59 @@ import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerImage from "./ui/bannerImage";
 // import Images
-import medicalVideoShoot from "../public/images/home-page/medical-video-shoot.png"
-import outdoorCorporateVideoShoot from "../public/images/home-page/outdoor-corporate-video-shoot.png"
+import outdoorCorporateVideoShoot from "../public/images/home-page/outdoor-corporate-video-shoot.png";
 
 // import text
 import { homePageText } from "./lib/siteText";
 
 export default function Home() {
   return (
-    <main className="grid grid-cols-1 gap-4 ">
+    <main className="grid grid-cols-1 ">
       <BannerVideoWithFadeEffect
         src="https://player.vimeo.com/video/938224346?h=85055436bd&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="MMM_Home_Page_Banner_Video"
       />
-      <h1 className="text-center text-2xl hidden ">
-            MIKE MARTIN MEDIA | VIDEO PRODUCTION AND CREATIVE SERVICES
-      </h1>
-      <section id="home-page-about-section">
-        <div className="flex flex-col justify-center items-center w-full h-auto -mt-4">
-          <div className="bg-black text-white w-full h-20 md:h-24 lg:h-28 flex items-center justify-center">
-            <div className="flex justify-center items-center p-1">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mr-2"
-                aria-hidden="true"
-              >
-                YOUR IDEAS,
-              </h2>
-              <div
-                className="flex justify-center items-center w-10 md:w-14 lg:w-16 h-auto mb-1 md:mb-2 lg:mb-1 single-m-logo-container"
-              >
-                <Image
-                  priority
-                  src="/branding/singleMWhiteResizeSmall.png"
-                  width={349}
-                  height={271}
-                  alt="M"
-                  aria-label="Your Ideas Made"
-                />
-              </div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold ml-1"
-                aria-hidden="true"
-              >ADE</h2>
-            </div>
-          </div>
-          <div className="mt-6 mb-3 md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center">
-            <p className="p-2 text-center text-balance w-10/12">
-              {homePageText.about_section_text_a}
-            </p>
-          </div>
-          <div className="md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center mb-6">
-            <p
-              className="p-2 text-center text-balance w-10/12"
-              id="team-paragraph">
-              Our{" "}
-              <Link href="/about#mmm-team" className="">
-                <span className="font-bold hover:scale-105 transition-transform inline-block">
-                  team
-                </span>
-              </Link>{" "}
-              {homePageText.about_section_text_b}
-            </p>
-          </div>
-          <div className="flex justify-center items-center pb-6 ">
-            <MmmSiteButton
-              href="/about"
-              label="About "
-              backgroundColor="bg-black"
-              textColor="text-white"
-              imgSrc="/branding/mmm_logo_white.png"
-            />
-          </div>
-          
-          <div
-            className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4 home-page-banner-image-container"
-          >
-            <BannerImage
-              priority
-              src={medicalVideoShoot}
-              alt="The MMM Team shooting an onsite medical video"
-            />
-          </div>
+      <section
+        className="flex justify-center items-center p-6 lg:p-28 ">
+      <div 
+        id="home-page-about-section"
+        className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-12 max-w-600 flex justify-center items-center"
+      >
+        <div className="order-2 xl:order-1 ">
+          <Image
+            priority
+            src="/images/home-page/mmm-team.png"
+            width={708}
+            height={36}
+            alt="The MMM Team"
+            aria-label="Your Ideas Made"
+            className=""
+          />
+        </div>
 
-          <div className="text-xl xl:text-2xl 3xl:text-4xl flex justify-center items-center md:mt-6">
-            <p className="text-center text-balance p-2">
-              Contact us today to work on your project together tomorrow.
-            </p>
-          </div>
-          <div className="flex justify-center items-center mt-6 ">
-            <MmmSiteButton
-              href="/contact"
-              label="Contact"
-              backgroundColor="bg-black"
-              textColor="text-white"
-              imgSrc="/branding/mmm_logo_white.png"
-            />
+        <div className="flex flex-col justify-left order-1 xl:order-2">
+          <h1 className="font-semibold text-2xl md:text-5xl xl:text-6xl">
+            Your Trusted St. Louis Video Production Partner
+          </h1>
+          <p className="md:text-lg xl:text-xl text-balance my-4 lg:my-6">
+            Our team brings decades of combined experience from the broadcast
+            and production industries to produce your ideal content. We are a
+            tight-knit team and we keep our work in-house. We work hard, play
+            hard, and spend a lot of time laughing.
+          </p>
+          <div className="flex justify-center">
+            <Link href="/about">
+              <div
+                className={`border-2 border-black text-black hover:transform hover:bg-black hover:text-white transition-transform font-semibold rounded-full flex justify-center items-center cursor-pointer w-32 lg:w-36 py-1`}>
+                <span className="lg:text-lg">About MMM</span>
+              </div>
+            </Link>
           </div>
         </div>
+      </div>
       </section>
       {/* Our Work Section */}
-      <section className="mt-12" id="our-work-section">
+      <section id="our-work-section">
         <BannerVideo
           src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM_Our_Work_Video"
@@ -122,7 +77,7 @@ export default function Home() {
           <p
             className="p-2 text-center text-balance w-10/12"
             id="work-paragraph">
-            {homePageText.our_work_section_text}  
+            {homePageText.our_work_section_text}
           </p>
         </div>
         <div className="flex justify-center items-center mb-6 mt-6 w-full">
@@ -134,9 +89,7 @@ export default function Home() {
             imgSrc="/branding/mmm_logo_white.png"
           />
         </div>
-        <div
-          className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4 md:mb-4 home-page-banner-image-container"
-        >
+        <div className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4 md:mb-4 home-page-banner-image-container">
           <BannerImage
             src={outdoorCorporateVideoShoot}
             alt="The MMM team shooting an outdoor corporate video."
@@ -144,7 +97,7 @@ export default function Home() {
         </div>
         <div className="md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center mt-2 md:mt-6">
           <p className="p-2 text-center text-balance w-10/12">
-            {homePageText.our_work_section_contact_text}  
+            {homePageText.our_work_section_contact_text}
           </p>
         </div>
         <div className="flex justify-center items-center mt-6 mb-6">
@@ -191,3 +144,13 @@ export default function Home() {
     </main>
   );
 }
+
+
+{/* <Image
+            priority
+            src="/branding/mmm-line-logo-left-white.png"
+            width={708}
+            height={65}
+            alt=""
+            className="absolute bottom-[-15%]"
+          /> */}
