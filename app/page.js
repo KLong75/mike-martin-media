@@ -23,44 +23,42 @@ export default function Home() {
         src="https://player.vimeo.com/video/938224346?h=85055436bd&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="MMM_Home_Page_Banner_Video"
       />
-      <section
-        className="flex justify-center items-center p-6 lg:p-28 ">
-      <div 
-        id="home-page-about-section"
-        className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-12 max-w-600 flex justify-center items-center"
-      >
-        <div className="order-2 xl:order-1 ">
-          <Image
-            priority
-            src="/images/home-page/mmm-team.png"
-            width={708}
-            height={36}
-            alt="The MMM Team"
-            aria-label="Your Ideas Made"
-            className=""
-          />
-        </div>
+      <section className="flex justify-center items-center p-6 lg:p-28 ">
+        <div
+          id="home-page-about-section"
+          className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-12 xl:gap-16 max-w-800 flex justify-center items-center">
+          <div className="order-2 xl:order-1 flex justify-center items-center">
+            <Image
+              priority
+              src="/images/home-page/mmm-team.png"
+              width={708}
+              height={36}
+              alt="The MMM Team"
+              aria-label="Your Ideas Made"
+              className="relative"
+            />
+          </div>
 
-        <div className="flex flex-col justify-left order-1 xl:order-2">
-          <h1 className="font-semibold text-2xl md:text-5xl xl:text-6xl">
-            Your Trusted St. Louis Video Production Partner
-          </h1>
-          <p className="md:text-lg xl:text-xl text-balance my-4 lg:my-6">
-            Our team brings decades of combined experience from the broadcast
-            and production industries to produce your ideal content. We are a
-            tight-knit team and we keep our work in-house. We work hard, play
-            hard, and spend a lot of time laughing.
-          </p>
-          <div className="flex justify-center">
-            <Link href="/about">
-              <div
-                className={`border-2 border-black text-black hover:transform hover:bg-black hover:text-white transition-transform font-semibold rounded-full flex justify-center items-center cursor-pointer w-32 lg:w-36 py-1`}>
-                <span className="lg:text-lg">About MMM</span>
-              </div>
-            </Link>
+          <div className="flex flex-col justify-left order-1 xl:order-2 max-w-[708px]">
+            <h1 className="font-semibold text-2xl sm:3xl md:text-4xl lg:5-xl xl:text-6xl">
+              Your Trusted St. Louis Video Production Partner
+            </h1>
+            <p className="md:text-lg xl:text-xl text-balance my-4 lg:my-6">
+              Our team brings decades of combined experience from the broadcast
+              and production industries to produce your ideal content. We are a
+              tight-knit team and we keep our work in-house. We work hard, play
+              hard, and spend a lot of time laughing.
+            </p>
+            <div className="flex justify-center md:justify-start">
+              <Link href="/about">
+                <div
+                  className={`border-2 border-black text-black hover:transform hover:bg-black hover:text-white transition-transform font-semibold rounded-full flex justify-center items-center cursor-pointer w-32 lg:w-36 py-1 lg:px-2`}>
+                  <span className="lg:text-lg">About MMM</span>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
       </section>
       {/* Our Work Section */}
       <section id="our-work-section">
@@ -145,12 +143,13 @@ export default function Home() {
   );
 }
 
-
-{/* <Image
+{
+  /* <Image
             priority
             src="/branding/mmm-line-logo-left-white.png"
             width={708}
             height={65}
             alt=""
             className="absolute bottom-[-15%]"
-          /> */}
+          /> */
+}
