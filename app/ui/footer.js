@@ -10,15 +10,21 @@ import ContactInfo from "./contactInfo";
 import TestimonialDisplay from "./testimonialDisplay";
 // import from next
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 //import data
 import { testimonials } from "../lib/testimonials";
 
 export default function Footer() {
+  const currentPath = usePathname();
+
   return (
     <div className="bg-black">
+
+    {currentPath !== "/" && (
       <div className="grid grid-cols-1 bg-black p-2 lg:px-12 xl:px-28 2xl:px-40 mt-6 lg:m-16">
         <TestimonialDisplay testimonials={testimonials} />
       </div>
+    )}
       <footer className=" bg-black text-white flex justify-center items-center w-full">
         <div className="bg-black text-white max-w-800">
           <p className="text-center mt-12 px-4 font-bold text-2xl lg:text-4xl xl:text-5xl 2xl:text-5xl 3xl:text-5xl tracking-tight">

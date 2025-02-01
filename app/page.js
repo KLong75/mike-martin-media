@@ -16,6 +16,7 @@ import outdoorCorporateVideoShoot from "../public/images/home-page/outdoor-corpo
 // import text
 import { homePageText } from "./lib/siteText";
 import MMMLineLogoHeading from "./ui/mmmLineLogoHeading";
+import TestimonialDisplay from "./ui/testimonialDisplay";
 
 export default function Home() {
   return (
@@ -125,14 +126,19 @@ export default function Home() {
           <p className="text-xl md:text-2xl"></p>
         </div> */}
       </section>
+      {/* Testimonials Section */}
+      <section>
+        <TestimonialDisplay />
+      </section>
       <section className="mb-4" id="blog-section">
         <div>
           <MMMLineLogoHeading headline="Beyond the Lens" />
         </div>
-        {/* <BannerVideo
+        <BannerVideo
           src="https://player.vimeo.com/video/943724347?h=791f0d08b9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Travel Video"
         />
+        {/* 
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 -mt-1">
           <h3 className="text-center font-bold text-3xl md:text-4xl">
             BEYOND THE LENS
