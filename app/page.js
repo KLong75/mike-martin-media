@@ -23,24 +23,34 @@ export default function Home() {
         src="https://player.vimeo.com/video/938224346?h=85055436bd&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="MMM_Home_Page_Banner_Video"
       />
-      <section className="flex justify-center items-center p-6 lg:p-28 ">
+      <section className="flex justify-center items-center p-6 md:p-12 lg:p-28 xl:p-42">
         <div
           id="home-page-about-section"
           className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-12 xl:gap-16 max-w-800 flex justify-center items-center">
-          <div className="order-2 xl:order-1 flex justify-center items-center">
-            <Image
-              priority
-              src="/images/home-page/mmm-team.png"
-              width={708}
-              height={36}
-              alt="The MMM Team"
-              aria-label="Your Ideas Made"
-              className="relative"
-            />
+          <div className="order-2 xl:order-1 relative flex justify-center items-center">
+            <div className="relative w-full">
+              <Image
+                priority
+                src="/images/home-page/mmm-team.png"
+                width={708}
+                height={36}
+                alt="The MMM Team"
+                aria-label="Your Ideas Made"
+                className="w-full h-auto"
+              />
+              <Image
+                priority
+                src="/branding/mmm-line-logo-left-white.png"
+                width={708}
+                height={65}
+                alt=""
+                className="absolute bottom-[2rem] sm:bottom-[3rem] md:bottom-[3rem] lg:bottom-15 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full"
+              />
+            </div>
           </div>
 
           <div className="flex flex-col justify-left order-1 xl:order-2 max-w-[708px]">
-            <h1 className="font-semibold text-2xl sm:3xl md:text-4xl lg:5-xl xl:text-6xl">
+            <h1 className="font-semibold text-3xl sm:4xl md:text-5xl 2xl:text-6xl">
               Your Trusted St. Louis Video Production Partner
             </h1>
             <p className="md:text-lg xl:text-xl text-balance my-4 lg:my-6">
