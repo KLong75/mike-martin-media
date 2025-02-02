@@ -36,7 +36,7 @@ export default function ClientVideoFrame({
   return (
     <>
       <div
-  className="relative flex justify-center items-center w-full h-auto cursor-pointer overflow-hidden transition-transform duration-300 ease-in-out"
+  className="relative flex justify-center items-center w-full h-auto cursor-pointer overflow-hidden transition-transform duration-800 ease-in-out"
   onClick={handleClick}
 >
   <Image

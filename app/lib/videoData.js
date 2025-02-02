@@ -20,7 +20,7 @@ export const videoData = [
     category: ["Nonprofit"],
     client: "JOSHUA CHAMBERLAIN SOCIETY",
     title: "GALA FUND-A-NEED",
-    image_src: "/images/video-thumbnails/nonprofit/jcsGala.png",
+    image_src: "/images/video-thumbnails/nonprofit/joshua-chamberlain.png",
     src: "https://player.vimeo.com/video/838407827?h=3668c77c36&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
@@ -76,7 +76,7 @@ export const videoData = [
     category: ["Corporate"],
     client: "CLUB FITNESS",
     title: "SHARE TO INSPIRE",
-    image_src: "/images/video-thumbnails/corporate/clubFitness.png",
+    image_src: "/images/video-thumbnails/corporate/club-fitness.png",
     src: "https://player.vimeo.com/video/772586297?h=90fd95555a&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
@@ -220,7 +220,7 @@ export const videoData = [
     category: ["Nonprofit"],
     client: " OLLIE HINKLE HEART FOUNDATION",
     title: "GALA FUND-A-NEED",
-    image_src: "/images/video-thumbnails/nonprofit/ollieHinkle.png",
+    image_src: "/images/video-thumbnails/nonprofit/ollie-hinkle.png",
     src: "https://player.vimeo.com/video/812985606?h=a0fe83b76b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {

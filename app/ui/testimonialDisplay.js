@@ -1,11 +1,12 @@
 "use client";
 import { useState } from "react";
-import { testimonials } from "@/app/lib/testimonials";
 // import components
 import Image from "@/app/ui/image";
 // import icons
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+// import data
+import { testimonials } from "../lib/testimonials";
 
 export default function TestimonialDisplay() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,18 +24,20 @@ export default function TestimonialDisplay() {
   };
 
   return (
-    <div className="relative flex flex-col items-center bg-black text-white p-4">
-      <div className="relative flex flex-col items-center max-w-500">
-        <div className="flex flex-row items-start lg:mx-32">
+    <div className="bg-black text-white flex justify-center max-w-600">
+    {/* <div className="relative flex flex-col items-center bg-black text-white pt-6 pb-16 max-w-400">
+      <div className="relative flex flex-col items-center ">
+        <div className="flex flex-row ">
+        <div className=" absolute top-0 left-0">
           <Image
             src="/images/apos.png"
             height={20}
             width={30}
             alt=""
-            className="mr-8 lg:mr-16 lg:w-32 xl:w-40"
           />
-          <div className="flex flex-col">
-            <p className="lg:text-lg xl:text-xl 2xl:text-xl text-left mb-4 text-pretty font-bold">
+          </div>
+          <div className="relative p-12">
+            <p className="lg:text-lg xl:text-xl 2xl:text-xl text-left text-balance font-bold">
               {testimonials[currentIndex].text}
             </p>
             <p className="text-sm lg:text-lg text-left lg:mt-6 lg:ml-16">
@@ -58,6 +61,7 @@ export default function TestimonialDisplay() {
           </button>
         </div>
       </div>
+    </div> */}
     </div>
   );
 }

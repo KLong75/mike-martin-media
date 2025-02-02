@@ -10,13 +10,17 @@ import MMMLineLogoBlack from "./ui/mmmLineLogoBlack";
 import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerImage from "./ui/bannerImage";
-// import Images
-import outdoorCorporateVideoShoot from "../public/images/home-page/outdoor-corporate-video-shoot.png";
-
-// import text
-import { homePageText } from "./lib/siteText";
 import MMMLineLogoHeading from "./ui/mmmLineLogoHeading";
 import TestimonialDisplay from "./ui/testimonialDisplay";
+// import Images
+import outdoorCorporateVideoShoot from "../public/images/home-page/outdoor-corporate-video-shoot.png";
+//import data
+// import { testimonials } from "./lib/testimonials";
+// import text
+import { homePageText } from "./lib/siteText";
+import CapabilityBlock from "./ui/capabilityBlock";
+import CapabilityBlockContainer from "./ui/capabilityBlockContainer";
+import FourPicGrid from "./ui/fourPicGrid";
 
 export default function Home() {
   return (
@@ -78,10 +82,35 @@ export default function Home() {
           src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM_Our_Work_Video"
         />
-        <div>
-          <MMMLineLogoHeading headline="Our Work" />
-        </div>
-        {/* <div className="-mt-1 bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+        <div className="flex justify-center">
+          <div className="max-w-800 lg:py-24">
+            <MMMLineLogoHeading headline="Our Work" />
+            <div className="lg:mt-12 grid grid-cols-1 lg:grid-cols-3 max-w-[1440px]">
+              <div className="px-6 flex flex-col">
+                <p className="pr-6 mb-6 lg:mb-10 md:text-lg xl:text-xl text-balance">
+                  We take pride in every project. We partner with clients of all
+                  sizes to bring their ideas to life. From concept to
+                  conclusion, we write, shoot, direct, produce, edit, animate,
+                  and everything else needed for your production.
+                </p>
+                <div className="flex justify-center md:justify-start">
+                <Link href="/our-work"
+                  className=""
+                >
+                  <div
+                    className={`border-2 border-black text-black hover:transform hover:bg-black hover:text-white transition-transform font-semibold rounded-full flex justify-center items-center cursor-pointer w-[14rem] py-2 px-2 mb-4 `}>
+                    <span className="lg:text-lg ">Check Out Our Work</span>
+                  </div>
+                </Link>
+                </div>
+              </div>
+              <div className="lg:col-span-2 p-2">
+                <CapabilityBlockContainer />
+              </div>
+            </div>
+          </div>
+          
+          {/* <div className="-mt-1 bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <h3 className="text-center font-bold text-3xl md:text-4xl">
             OUR WORK
           </h3>
@@ -125,19 +154,35 @@ export default function Home() {
         <div className="flex justify-center items-center mb-6 mt-6">
           <p className="text-xl md:text-2xl"></p>
         </div> */}
+        </div>
       </section>
+      <div>
+            <FourPicGrid
+              src_one="/images/home-page/corporate.png"
+              src_two="/images/home-page/education.png"
+              src_three="/images/home-page/healthcare.png"
+              src_four="/images/home-page/nonprofit.png"
+              width={864}
+              height={486}
+              priority={false}
+            />
+          </div>
+
+          
       {/* Testimonials Section */}
-      <section>
-        <TestimonialDisplay />
+      <section className="grid grid-cols-1 bg-black ">
+        <div className="">
+          <TestimonialDisplay />
+        </div>
       </section>
       <section className="mb-4" id="blog-section">
         <div>
           <MMMLineLogoHeading headline="Beyond the Lens" />
         </div>
-        <BannerVideo
+        {/* <BannerVideo
           src="https://player.vimeo.com/video/943724347?h=791f0d08b9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM Travel Video"
-        />
+        /> */}
         {/* 
         <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 -mt-1">
           <h3 className="text-center font-bold text-3xl md:text-4xl">

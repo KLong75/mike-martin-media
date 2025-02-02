@@ -12,7 +12,7 @@ import TestimonialDisplay from "./testimonialDisplay";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 //import data
-import { testimonials } from "../lib/testimonials";
+// import { testimonials } from "../lib/testimonials";
 
 export default function Footer() {
   const currentPath = usePathname();
@@ -22,7 +22,7 @@ export default function Footer() {
 
     {currentPath !== "/" && (
       <div className="grid grid-cols-1 bg-black p-2 lg:px-12 xl:px-28 2xl:px-40 mt-6 lg:m-16">
-        <TestimonialDisplay testimonials={testimonials} />
+        <TestimonialDisplay />
       </div>
     )}
       <footer className=" bg-black text-white flex justify-center items-center w-full">
