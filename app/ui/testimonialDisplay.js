@@ -24,8 +24,43 @@ export default function TestimonialDisplay() {
   };
 
   return (
-    <div className="bg-black text-white flex justify-center max-w-600">
-    {/* <div className="relative flex flex-col items-center bg-black text-white pt-6 pb-16 max-w-400">
+    <div className="bg-black flex justify-center items-center py-12">
+      <div className="bg-black text-white flex justify-center max-w-800">
+        <div className="grid grid-cols-5 flex">
+          <div className="justify-end">
+            <Image
+              src="/images/apos.png"
+              height={20}
+              width={30}
+              alt=""
+              className=""
+            />
+          </div>
+          <div className="col-span-3">
+            <p className="lg:text-lg xl:text-xl 2xl:text-xl text-left text-balance font-bold">
+              {testimonials[currentIndex].text}
+            </p>
+            <p className="text-sm lg:text-lg text-left lg:mt-6 lg:ml-16">
+              {testimonials[currentIndex].name}
+            </p>
+            <p className="text-xs lg:text-sm text-left italic lg:ml-16">
+              {testimonials[currentIndex].role}
+            </p>
+          </div>
+          <div className="space-x-2 mt-72">
+            <button
+              className="rounded-full border-2 p-1 cursor-pointer"
+              onClick={handlePrevClick}>
+              <FaArrowLeft size={14} />
+            </button>
+            <button
+              className="rounded-full border-2 p-1 cursor-pointer"
+              onClick={handleNextClick}>
+              <FaArrowRight size={14} />
+            </button>
+          </div>
+        </div>
+        {/* <div className="relative flex flex-col items-center bg-black text-white pt-6 pb-16 max-w-400">
       <div className="relative flex flex-col items-center ">
         <div className="flex flex-row ">
         <div className=" absolute top-0 left-0">
@@ -62,6 +97,7 @@ export default function TestimonialDisplay() {
         </div>
       </div>
     </div> */}
+      </div>
     </div>
   );
 }

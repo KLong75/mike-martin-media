@@ -94,14 +94,12 @@ export default function Home() {
                   and everything else needed for your production.
                 </p>
                 <div className="flex justify-center md:justify-start">
-                <Link href="/our-work"
-                  className=""
-                >
-                  <div
-                    className={`border-2 border-black text-black hover:transform hover:bg-black hover:text-white transition-transform font-semibold rounded-full flex justify-center items-center cursor-pointer w-[14rem] py-2 px-2 mb-4 `}>
-                    <span className="lg:text-lg ">Check Out Our Work</span>
-                  </div>
-                </Link>
+                  <Link href="/our-work" className="">
+                    <div
+                      className={`border-2 border-black text-black hover:transform hover:bg-black hover:text-white transition-transform font-semibold rounded-full flex justify-center items-center cursor-pointer w-[14rem] py-2 px-2 mb-4 `}>
+                      <span className="lg:text-lg ">Check Out Our Work</span>
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div className="lg:col-span-2 p-2">
@@ -109,7 +107,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+
           {/* <div className="-mt-1 bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <h3 className="text-center font-bold text-3xl md:text-4xl">
             OUR WORK
@@ -157,18 +155,21 @@ export default function Home() {
         </div>
       </section>
       <div>
-            <FourPicGrid
-              src_one="/images/home-page/corporate.png"
-              src_two="/images/home-page/education.png"
-              src_three="/images/home-page/healthcare.png"
-              src_four="/images/home-page/nonprofit.png"
-              width={864}
-              height={486}
-              priority={false}
-            />
-          </div>
+        <FourPicGrid
+          src_one="/images/home-page/corporate.png"
+          src_two="/images/home-page/education.png"
+          src_three="/images/home-page/healthcare.png"
+          src_four="/images/home-page/nonprofit.png"
+          href_one="/industries/corporate"
+          href_two="/industries/education"
+          href_three="/industries/medical"
+          href_four="/industries/nonprofit"
+          width={864}
+          height={486}
+          priority={false}
+        />
+      </div>
 
-          
       {/* Testimonials Section */}
       <section className="grid grid-cols-1 bg-black ">
         <div className="">
