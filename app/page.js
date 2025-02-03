@@ -21,6 +21,7 @@ import { homePageText } from "./lib/siteText";
 import CapabilityBlock from "./ui/capabilityBlock";
 import CapabilityBlockContainer from "./ui/capabilityBlockContainer";
 import FourPicGrid from "./ui/fourPicGrid";
+import BlogPostGallery from "./ui/blogPostGallery";
 
 export default function Home() {
   return (
@@ -84,7 +85,7 @@ export default function Home() {
         />
         <div className="flex justify-center">
           <div className="max-w-800 lg:py-24">
-            <MMMLineLogoHeading headline="Our Work" />
+            <MMMLineLogoHeading headline="Our Work" heading_level={"h2"} />
             <div className="lg:mt-12 grid grid-cols-1 lg:grid-cols-3 max-w-[1440px]">
               <div className="px-6 flex flex-col">
                 <p className="pr-6 mb-6 lg:mb-10 md:text-lg xl:text-xl text-balance">
@@ -96,8 +97,8 @@ export default function Home() {
                 <div className="flex justify-center md:justify-start">
                   <Link href="/our-work" className="">
                     <div
-                      className={`border-2 border-black text-black hover:transform hover:bg-black hover:text-white transition-transform font-semibold rounded-full flex justify-center items-center cursor-pointer w-[14rem] py-2 px-2 mb-4 `}>
-                      <span className="lg:text-lg ">Check Out Our Work</span>
+                      className={`border-[3px] border-black text-black hover:transform hover:bg-black hover:text-white transition duration-1000 font-semibold rounded-full flex justify-center items-center cursor-pointer w-[14rem] py-1 px-1 mb-4 `}>
+                      <span className="lg:text-lg font-bold">Check Out Our Work</span>
                     </div>
                   </Link>
                 </div>
@@ -155,19 +156,7 @@ export default function Home() {
         </div>
       </section>
       <div>
-        <FourPicGrid
-          src_one="/images/home-page/corporate.png"
-          src_two="/images/home-page/education.png"
-          src_three="/images/home-page/healthcare.png"
-          src_four="/images/home-page/nonprofit.png"
-          href_one="/industries/corporate"
-          href_two="/industries/education"
-          href_three="/industries/medical"
-          href_four="/industries/nonprofit"
-          width={864}
-          height={486}
-          priority={false}
-        />
+        <FourPicGrid />
       </div>
 
       {/* Testimonials Section */}
@@ -176,9 +165,12 @@ export default function Home() {
           <TestimonialDisplay />
         </div>
       </section>
-      <section className="mb-4" id="blog-section">
-        <div>
-          <MMMLineLogoHeading headline="Beyond the Lens" />
+      <section className="m-12 p-12" id="blog-section">
+        <div className="">
+          <MMMLineLogoHeading headline="Beyond the Lens" heading_level={"h2"} />
+        </div>
+        <div className="">
+          <BlogPostGallery number_of_posts={3} />
         </div>
         {/* <BannerVideo
           src="https://player.vimeo.com/video/943724347?h=791f0d08b9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"

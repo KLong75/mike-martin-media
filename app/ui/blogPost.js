@@ -12,7 +12,7 @@ import { HiX } from "react-icons/hi";
 // import from utils
 import { formatDate } from "../lib/utils";
 // import from headlessui
-import { Dialog, DialogPanel, DialogBackdrop } from "@headlessui/react";
+import { Dialog, DialogPanel, DialogBackdrop, DialogTitle } from "@headlessui/react";
 
 export default function BlogPost({
   title,
@@ -91,9 +91,9 @@ export default function BlogPost({
         <div className="min-h-screen px-4 text-center">
           <DialogPanel className="w-full max-w-3xl mx-auto my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl border-2 md:border-4 border-black">
             <div className="flex flex-col items-center p-4 mt-8 ">
-              <Dialog.Title className="text-lg font-medium text-gray-900">
+              <DialogTitle className="text-lg font-medium text-gray-900">
                 {title}
-              </Dialog.Title>
+              </DialogTitle>
               <span className="text-sm mt-2">{formatDate(post_date)}</span>
             </div>
             <div className="-mt-8 mb-4 md:hidden">

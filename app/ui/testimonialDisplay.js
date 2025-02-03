@@ -50,12 +50,16 @@ export default function TestimonialDisplay() {
           <div className="space-x-2 mt-72">
             <button
               className="rounded-full border-2 p-1 cursor-pointer"
-              onClick={handlePrevClick}>
+              onClick={handlePrevClick}
+              aria-label="Previous testimonial"
+            >
               <FaArrowLeft size={14} />
             </button>
             <button
               className="rounded-full border-2 p-1 cursor-pointer"
-              onClick={handleNextClick}>
+              onClick={handleNextClick}
+              aria-label="Next testimonial"
+            >
               <FaArrowRight size={14} />
             </button>
           </div>

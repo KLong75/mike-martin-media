@@ -26,10 +26,6 @@ export const blogPosts = [
     image_alt: "Robert showing off his photographer credentials. ",
     image_width: 456,
     image_height: 342,
-    // second_image_src: "/images/blog-post-images/secondary/.png",
-    // second_image_width: 208,
-    // second_image_height: 109,
-    // second_image_alt: "",
     text: [
       "2024 has been an incredible year of accomplishment for me. Not only did I get the chance to see my favorite band Sum 41 perform on their final tour together, and reconnect with a few of my best friends who I felt like I had drifted away from, but I also got hired at what is perhaps the coolest video production company in Saint Louis.",
       "With struggling to find the right level of employment after college, I was starting to wonder if there was anything here for me or if I had taken the wrong path - I started to lose faith in myself. But after choosing to take the last chance I had to go see Sum 41 and then have the lead singer Deryck Whibley point directly at me in the front of the crowd from onstage, I found hope. Around the same time I had landed an interview at a certain video production company in the city... The stars were aligning. For the first time in a long time I felt like I was right where I needed to be and that luck was on my side.",

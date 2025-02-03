@@ -1,0 +1,38 @@
+export const gridPics = [
+  {
+    label: "Corporate",
+    alt: "Corporate Video Production",
+    src: "/images/home-page/corporate.png",
+    href: "/industries/corporate",
+    width: 864,
+    height: 486,
+    priority: false,
+  },
+  {
+    label: "Education",
+    alt: "Education Video Production",
+    src: "/images/home-page/education.png",
+    href: "/industries/education",
+    width: 864,
+    height: 486,
+    priority: false,
+  },
+  {
+    label: "Healthcare",
+    alt: "Healthcare Video Production",
+    src: "/images/home-page/healthcare.png",
+    href: "/industries/medical",
+    width: 864,
+    height: 486,
+    priority: false,
+  },
+  {
+    label: "Nonprofit",
+    alt: "Nonprofit Video Production",
+    src: "/images/home-page/nonprofit.png",
+    href: "/industries/nonprofit",
+    width: 864,
+    height: 486,
+    priority: false,
+  },
+];
