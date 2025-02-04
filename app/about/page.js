@@ -11,6 +11,7 @@ import InstagramWidget from "../ui/instagramWidget";
 import BannerImage from "../ui/bannerImage";
 import ContactUsButton from "../ui/contactUsButton";
 import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
+import MMMLineLogoHeading from "../ui/mmmLineLogoHeading";
 // iport images
 import mikeInVanWithCamera from "../../public/images/about-page/mike-in-van-with-camera.jpg";
 // import text
@@ -95,7 +96,10 @@ export default function Page() {
         </div>
       </section>
       <section className="mt-8 md:mt-12">
-        <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
+      <div className="">
+          <MMMLineLogoHeading headline="Meet The Team" heading_level={"h2"} />
+        </div>
+        {/* <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
           <div className="w-8 md:w-10 h-auto mx-2 meet-the-team-m-logo-container">
             <Image
               src="/branding/singleMWhiteResizeSmall.png"
@@ -107,7 +111,7 @@ export default function Page() {
           <h2 className="text-3xl md:text-4xl font-bold -ml-2" id="mmm-team">
             eet The Team
           </h2>
-        </div>
+        </div> */}
         <div className="flex justify-center items-center mb-4 mt-2 md:mt-4 md:mb-8 ">
           <p className="md:text-lg xl:text-xl 3xl:text-2xl p-6 text-center text-balance xl:mt-6 xl:mb-6">
             {aboutPageText.meet_the_team_text}
