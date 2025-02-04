@@ -165,7 +165,7 @@ export default function Home() {
           <TestimonialDisplay />
         </div>
       </section>
-      <section className="m-12 p-12" id="blog-section">
+      <section className="lg:mt-24" id="blog-section">
         <div className="">
           <MMMLineLogoHeading headline="Beyond the Lens" heading_level={"h2"} />
         </div>

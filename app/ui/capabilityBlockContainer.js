@@ -5,7 +5,7 @@ import { capabilities } from "../lib/capabilities";
 
 export default function CapabilityBlockContainer() {
   return (
-    <div className="flex grid grid-cols-2 xl:grid-cols-3">
+    <div className="flex grid grid-cols-2 xl:grid-cols-3 gap-1">
       {capabilities.map((capability, index) => (
         <CapabilityBlock
           key={index}

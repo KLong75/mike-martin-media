@@ -8,7 +8,17 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        
+        '10xl': '10rem',
+        '11xl': '11rem',
+        '12xl': '12rem',
+        '13xl': '13rem',
+        '14xl': '14rem',
+        '15xl': '15rem',
+        '16xl': '16rem',
+        '17xl': '17rem',
+        '18xl': '18rem',
+        '19xl': '19rem',
+        '20xl': '20rem',
       },
       colors: {
         'light-green': '#a4b555',
