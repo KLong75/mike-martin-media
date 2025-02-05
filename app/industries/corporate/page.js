@@ -34,7 +34,7 @@ export default function Page() {
         />
       </div>
       <div className="flex justify-center">
-        <div className="max-w-2000">
+        <div className="w-full h-full">
           <VideoGallery
             selectedCategory={"Corporate"}
             excludedCategory={[]}
