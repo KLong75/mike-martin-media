@@ -6,6 +6,13 @@ import CapabilityHighLightsSection from "@/app/ui/capabilityHighlightsSection";
 import OurProcess from "@/app/ui/ourProcess";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
+// import page data
+import {
+  droneHighlights,
+  droneProcess ,
+  dronePageHeadingBannerText,
+  exampleDroneVideoSrc,
+} from "../../lib/drone.js";
 
 export const metadata = {
   title: "Drone Video Services | Mike Martin Media",
@@ -16,55 +23,6 @@ export const metadata = {
   },
 };
 
-const highlights = [
-  {
-    label: "Enhanced Storytelling",
-    description: "Add depth and scale to your stories.",
-  },
-  {
-    label: "Showcase Properties",
-    description: "Ideal for real estate and construction projects.",
-  },
-  {
-    label: "Elevate Events",
-    description:
-      "Capture outdoor festivals, weddings, and corporate gatherings.",
-  },
-];
-
-const steps = [
-  {
-    name: "Consultation",
-    description:
-      " We discuss your vision, objectives, and any specific requirements.",
-  },
-  {
-    name: "Site Assessment",
-    description:
-      "We evaluate the shoot location to plan for necessary safety measures and the best flight paths.",
-  },
-  {
-    name: "Flight Planning",
-    description:
-      "Our team secures necessary permissions in compliance with FAA regulations",
-  },
-  {
-    name: "The Shoot",
-    description:
-      "We capture the footage and photos, ensuring quality and safety throughout the operation.",
-  },
-  {
-    name: "Post-Production",
-    description:
-      "We edit and enhance your photos and videos to meet your specifications.",
-  },
-  {
-    name: "Review & Delivery",
-    description:
-      "You'll receive the final assets in your preferred formats, ready to use.",
-  },
-];
-
 export default function Page() {
   return (
     <main className="grid grid-cols-1">
@@ -74,15 +32,13 @@ export default function Page() {
       />
       <div className="">
         <PageHeadingBanner
-          title={"Capabilities - Drone"}
-          heading={"Elevate Your Vision with Drone Services"}
-          text={
-            "Drone footage offers perspectives you can't get anywhere else. MMM has FAA certification and is able to capture beautiful photography and videography, both indoors and outdoors. We are committed to creating visuals that make a difference in your storytelling."
-          }
+          title={dronePageHeadingBannerText.title}
+          heading={dronePageHeadingBannerText.heading}
+          text={dronePageHeadingBannerText.text}
         />
       </div>
       <div className="flex justify-center">
-        <div className="max-w-2000">
+        <div className="w-full h-full">
           <VideoGallery
             selectedCategory={"Drone"}
             excludedCategory={[]}
@@ -93,15 +49,13 @@ export default function Page() {
       <div className="grid grid-cols-1 lg:mt-12 xl:mt-24 mb-12 xl:mb-20">
         <CapabilityHighLightsSection
           headline={"Advantages of Aerial Videography and Photography"}
-          highlights={highlights}
-          video_src={
-            "https://player.vimeo.com/video/799944146?h=7ce1e106da&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0"
-          }
+          highlights={droneHighlights}
+          video_src={exampleDroneVideoSrc}
         />
       </div>
       <div className="flex justify-center bg-[#F0F0F0]">
         <div className="grid grid-cols-1 max-w-800 my-12">
-          <OurProcess title={"Our Process"} steps={steps} />
+          <OurProcess title={"Our Process"} steps={droneProcess} />
         </div>
       </div>
       <div className="flex justify-center">
@@ -112,7 +66,7 @@ export default function Page() {
                 FAA Certified and Ready for Any Environment
               </h6>
               <p className="sm:text-lg">
-                Safety and compliance are number onf =e for our team. Our drone.
+                Safety and compliance are number one for our team. Our drone.
                 pilots are fully FAA-certified, which allows us to operate
                 drones legally on your behalf. Whether we&apos;re getting
                 footage of open landscapes or maneuvering through tight indoor
@@ -123,18 +77,28 @@ export default function Page() {
               <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
                 Who Benefits From Drone Photography and Videography?
               </h6>
-              <p className="sm:text-lg">
-                From showcasing your real estate and construction properties to
-                highlighting resort amenities, attractions, and local landscapes
-                for the tourism and hospitality industry, MMM can handle your
-                drone photography needs.
-              </p>
-              <p className="sm:text-lg mt-4">
-                Let us help you capture the excitement of festivals, concerts,
-                and sports events, monitor crops and land with aerial surveys
-                and conduct inspections, surveys, and research with minimal
-                disruption.
-              </p>
+              <ul className="list-disc sm:text-lg mt-4 ml-6">
+                <li>
+                  <strong>Real Estate & Construction:</strong> Showcase
+                  properties and monitor project progress.
+                </li>
+                <li>
+                  <strong>Tourism & Hospitality:</strong> Highlight resort
+                  amenities, attractions, and local landscapes.
+                </li>
+                <li>
+                  <strong>Events & Entertainment:</strong> Capture the
+                  excitement of festivals, concerts, and sports events.
+                </li>
+                <li>
+                  <strong>Agriculture:</strong> Monitor crops and land with
+                  aerial surveys.
+                </li>
+                <li>
+                  <strong>Environmental & Industrial</strong> Conduct
+                  inspections, surveys, and research with minimal disruption.
+                </li>
+              </ul>
             </div>
           </div>
 

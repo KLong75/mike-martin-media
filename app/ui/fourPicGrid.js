@@ -22,7 +22,6 @@ export default function FourPicGrid() {
           priority={gridPic.priority}
         />
       ))}
-
       </div>  
     </div>
   );

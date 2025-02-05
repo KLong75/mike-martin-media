@@ -36,19 +36,20 @@ export default function ClientVideoFrame({
   return (
     <>
       <div
-  className="relative flex justify-center items-center w-full h-auto cursor-pointer overflow-hidden transition-transform duration-800 ease-in-out"
+  className="relative flex justify-center items-center w-full w-full h-full overflow-hidden group cursor-pointer"
   onClick={handleClick}
 >
   <Image
     id="video-thumbnail"
-    className={` cursor-pointer shadow-lg transform transition-transform duration-300 ease-in-out ${
+    className={`w-full h-full object-cover transform transition-transform duration-2000 group-hover:scale-125 ease-in-out ${
       imageVisible ? "" : "hidden"
-    } hover:scale-110`}
+    }`}
     src={image_src}
     height={540}
     width={960}
     alt={`${client} ${title}`}
   />
+  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-2000 ease-in-out"></div>
   <span
     className={`video-frame-client-span absolute font-bold text-center text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl ${
       imageVisible ? "" : "hidden"

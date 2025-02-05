@@ -108,51 +108,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* <div className="-mt-1 bg-black text-white flex justify-center items-center w-full h-20 md:h-24">
-          <h3 className="text-center font-bold text-3xl md:text-4xl">
-            OUR WORK
-          </h3>
-        </div>
-        <div className="md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center mt-6">
-          <p
-            className="p-2 text-center text-balance w-10/12"
-            id="work-paragraph">
-            {homePageText.our_work_section_text}
-          </p>
-        </div>
-        <div className="flex justify-center items-center mb-6 mt-6 w-full">
-          <MmmSiteButtonTextOnly
-            href="our-work"
-            label="Our Work"
-            backgroundColor="bg-black"
-            textColor="text-white"
-            imgSrc="/branding/mmm_logo_white.png"
-          />
-        </div>
-        <div className="flex justify-center items-center max-w-4xl mx-auto p-4 md:mt-4 md:mb-4 home-page-banner-image-container">
-          <BannerImage
-            src={outdoorCorporateVideoShoot}
-            alt="The MMM team shooting an outdoor corporate video."
-          />
-        </div>
-        <div className="md:text-lg xl:text-xl 3xl:text-2xl flex justify-center items-center mt-2 md:mt-6">
-          <p className="p-2 text-center text-balance w-10/12">
-            {homePageText.our_work_section_contact_text}
-          </p>
-        </div>
-        <div className="flex justify-center items-center mt-6 mb-6">
-          <MmmSiteButton
-            href="/contact"
-            label="Contact"
-            backgroundColor="bg-black"
-            textColor="text-white"
-            imgSrc="/branding/mmm_logo_white.png"
-          />
-        </div>
-        <div className="flex justify-center items-center mb-6 mt-6">
-          <p className="text-xl md:text-2xl"></p>
-        </div> */}
         </div>
       </section>
       <div>
