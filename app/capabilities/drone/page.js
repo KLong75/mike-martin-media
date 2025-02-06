@@ -62,7 +62,7 @@ export default function Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 p-8 lg:p-12 lg:m-6 max-w-800">
           <div className="lg:mx-12">
             <div className="lg:m-6 mb-12 lg:mb-20">
-              <h6 className="font-bold text-xl  lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
+              <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
                 FAA Certified and Ready for Any Environment
               </h6>
               <p className="sm:text-lg">
@@ -79,16 +79,13 @@ export default function Page() {
               </h6>
               <ul className="list-disc sm:text-lg mt-4 ml-6">
                 <li>
-                  <strong>Real Estate & Construction:</strong> Showcase
-                  properties and monitor project progress.
+                  <strong>Real Estate & Construction:</strong> Showcase properties and monitor project progress.
                 </li>
                 <li>
-                  <strong>Tourism & Hospitality:</strong> Highlight resort
-                  amenities, attractions, and local landscapes.
+                  <strong>Tourism & Hospitality:</strong> Highlight resort amenities, attractions, and local landscapes.
                 </li>
                 <li>
-                  <strong>Events & Entertainment:</strong> Capture the
-                  excitement of festivals, concerts, and sports events.
+                  <strong>Events & Entertainment:</strong> Capture the excitement of festivals, concerts, and sports events.
                 </li>
                 <li>
                   <strong>Agriculture:</strong> Monitor crops and land with

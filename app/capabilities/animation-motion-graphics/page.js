@@ -55,7 +55,7 @@ export default function Page() {
       </div>
       <div className="flex justify-center bg-[#F0F0F0]">
         <div className="grid grid-cols-1 max-w-800 my-12">
-          <OurProcess title={"Our Process"} steps={animationProcess} />
+          <OurProcess title={"Our Animation Process"} steps={animationProcess} />
         </div>
       </div>
       <div className="flex justify-center">
@@ -63,36 +63,42 @@ export default function Page() {
           <div className="lg:mx-12">
             <div className="lg:m-6 mb-12 lg:mb-20">
               <h6 className="font-bold text-xl  lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
-                FAA Certified and Ready for Any Environment
-              </h6>
-              <p className="sm:text-lg">
-                Safety and compliance are number one for our team. Our drone.
-                pilots are fully FAA-certified, which allows us to operate
-                drones legally on your behalf. Whether we&apos;re getting
-                footage of open landscapes or maneuvering through tight indoor
-                spaces, we can do it safely and effectively.
-              </p>
-            </div>
-            <div className="lg:m-6 mb-12 lg:mb-20">
-              <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
-                Who Benefits From Drone Photography and Videography?
+                Who Benefits from Animation?
               </h6>
               <ul className="list-disc sm:text-lg mt-4 ml-6">
                 <li>
-                  <strong>Real Estate & Construction:</strong> Showcase
-                  properties and monitor project progress.
+                  <strong>Technology:</strong> Simplify complex concepts for investors or customers.
                 </li>
                 <li>
-                  <strong>Tourism & Hospitality:</strong> Highlight resort
-                  amenities, attractions, and local landscapes.
+                  <strong>Healthcare:</strong>  Educate your patients with friendly, understandable visuals.
                 </li>
                 <li>
-                  <strong>Events & Entertainment:</strong> Capture the
-                  excitement of festivals, concerts, and sports events.
+                  <strong>Education:</strong> Make learning interactive and fun for students of all ages.
                 </li>
                 <li>
-                  <strong>Agriculture:</strong> Monitor crops and land with
-                  aerial surveys.
+                  <strong>Finance:</strong> Simplify financial services and products.
+                </li>
+                <li>
+                  <strong>Retail & E-commerce:</strong> Showcase products in a unique way.
+                </li>
+              </ul>
+            </div>
+            <div className="lg:m-6 mb-12 lg:mb-20">
+              <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
+              Animation vs. Live Video: Why Go Animated?
+              </h6>
+              <ul className="list-disc sm:text-lg mt-4 ml-6">
+                <li>
+                  <strong>Limitless Creativity:</strong> No need to worry about location scouting or weather conditions.
+                </li>
+                <li>
+                  <strong>Cost-Effective:</strong> Animation can be a more cost-effective option for someone with a limited budget, or with more projects to complete.
+                </li>
+                <li>
+                  <strong>Timeless Appeal:</strong> Animated content stays fresh longer.
+                </li>
+                <li>
+                  <strong>Higher Engagement:</strong> Animated videos often see higher viewer retention rates.
                 </li>
                 <li>
                   <strong>Environmental & Industrial</strong> Conduct
