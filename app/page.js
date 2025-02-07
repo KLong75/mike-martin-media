@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 // import from next
 import Link from "next/link";
 // import components

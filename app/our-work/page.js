@@ -27,7 +27,6 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <>
       <main>
         <div className="pb-20 ">
           <BannerVideoWithFadeNoLogo
@@ -143,6 +142,5 @@ export default function Page() {
           <MMMLineLogoBlack />
         </div> */}
       </main>
-    </>
   );
 }

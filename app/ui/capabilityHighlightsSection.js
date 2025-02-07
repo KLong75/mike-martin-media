@@ -9,7 +9,9 @@ export default function CapabilityHighLightsSection({
 }) {
   return (
     <div className="flex flex-col items-center">
+    <div className="lg:px-6 2xl:px-0">
       <MMMLineLogoHeading headline={headline} heading_level={"h3"} />
+      </div>
       <div className="lg:m-10 grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-2xl">
         <div className="flex justify-center hidden md:flex px-20">
           <iframe
@@ -20,7 +22,8 @@ export default function CapabilityHighLightsSection({
             allow="autoplay; fullscreen"
             allowFullScreen
             loading="lazy"
-            className="w-full h-auto lg:p-6 xl:p-0 "></iframe>
+            className="w-full h-auto">
+          </iframe>
         </div>
         <div className="flex justify-center px-6 ">
           <ul className="space-y-6 w-full">
