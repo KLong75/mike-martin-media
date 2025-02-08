@@ -64,4 +64,4 @@ export const videoEditingProcess = {
   ],
 };
 
-export const exampleVideoEditingVideoSrc = "";
+export const exampleVideoEditingVideoSrc = "https://player.vimeo.com/video/862940886?h=48731807d6&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0";

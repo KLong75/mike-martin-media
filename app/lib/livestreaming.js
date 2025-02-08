@@ -54,4 +54,4 @@ export const livestreamingPageHeadingBannerText = {
   text: "Whether you're hosting a seminar, virtual event or important business meeting, you need a seamless livestream process to keep your audience engaged. MMM brings a positive, results-driven approach to every project to make sure your livestream runs smoothly and helps you connect with your audience in meaningful ways.",
 };
 
-export const exampleLivestreamingVideoSrc = "";
+export const exampleLivestreamingVideoSrc = "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0";

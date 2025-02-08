@@ -62,12 +62,12 @@ export default function Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 p-8 lg:p-12 lg:m-6 max-w-800">
           <div className="lg:mx-12">
             <div className="lg:m-6 mb-12 lg:mb-20">
-              <h6 className="font-bold text-xl  lg:text-2xl xl:text-4xl mb-8">
+              <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl">
               Our Editing Capabilities
               </h6>
               <ul className="list-disc sm:text-lg ml-6">
-                <lh className="mb-12">From initial sequencing to final polish, we ensure every detail enhances your video's message:</lh>
-                <li>
+                <lh className="font-semibold text-lg lg:text-xl">From initial sequencing to final polish, we ensure every detail enhances your video's message:</lh>
+                <li className="mt-4">
                   <strong>Color Correction & Grading:</strong>{" "}We apply color techniques to make sure every scene is visually striking and brand-aligned.
                 </li>
                 <li>
@@ -85,26 +85,24 @@ export default function Page() {
               </ul>
             </div>
             <div className="lg:m-6 mb-12 lg:mb-20">
-              <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
+              <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl">
               Video  Editing Across Industries
               </h6>
-              <ul className="list-disc sm:text-lg mt-4 ml-6">
-                <li>
-                  <strong>Limitless Creativity:</strong> No need to worry about location scouting or weather conditions.
+              <ul className="list-disc sm:text-lg ml-6">
+              <lh className="font-semibold text-lg lg:text-xl">From initial sequencing to final polish, we ensure every detail enhances your video's message:</lh>
+                <li className="mt-4">
+                  <strong>Corporate:</strong>{" "}Communicate your message with impact and clarity.
                 </li>
                 <li>
-                  <strong>Cost-Effective:</strong> Animation can be a more cost-effective option for someone with a limited budget, or with more projects to complete.
+                  <strong>Nonprofit:</strong>{" "}Showcase the meaningful work you do and build an emotional connection with your audience.
                 </li>
                 <li>
-                  <strong>Timeless Appeal:</strong> Animated content stays fresh longer.
+                  <strong>Healthcare:</strong>{" "}Highlight patient stories and different initiatives to build empathy and trust.
                 </li>
                 <li>
-                  <strong>Higher Engagement:</strong> Animated videos often see higher viewer retention rates.
+                  <strong>Education:</strong>{" "}Make complex topics engaging and easy to understand with clear, compelling visuals.
                 </li>
-                <li>
-                  <strong>Environmental & Industrial</strong> Conduct
-                  inspections, surveys, and research with minimal disruption.
-                </li>
+        
               </ul>
             </div>
           </div>

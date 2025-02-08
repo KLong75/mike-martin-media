@@ -27,7 +27,7 @@ export default function Footer() {
     )}
       <footer className=" bg-black text-white flex justify-center items-center w-full">
         <div className="bg-black text-white max-w-800">
-          <p className="text-center mt-12 px-4 font-bold text-2xl lg:text-4xl xl:text-5xl 2xl:text-5xl 3xl:text-5xl tracking-tight">
+          <p className="text-center px-4 font-bold text-2xl lg:text-4xl xl:text-5xl 2xl:text-5xl 3xl:text-5xl tracking-tight">
             CONTACT US TODAY TO WORK ON YOUR PROJECT TOGETHER TOMORROW.
           </p>
           <div className="flex grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 mt-6 md:mt-28 justify-center">
