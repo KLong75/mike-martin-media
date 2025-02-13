@@ -27,7 +27,7 @@ export default function TestimonialDisplay() {
     <div className="flex justify-center items-center bg-black text-white lg:h-[20vh]">
       <div className="relative flex flex-col px-6 max-w-400">
         <div className="relative flex flex-col items-center py-12">
-          <div className="flex flex-row space-x-12">
+          <div className="flex flex-row space-x-4">
             <span className="text-6xl md:text-8xl lg:text-10xl xl:text-12xl italic lg:-mt-2">&quot;</span>
             <div className="relative p-2 ">
               <p className="lg:text-lg xl:text-xl 2xl:text-xl lg:px-12 font-bold pr-2">
@@ -41,7 +41,7 @@ export default function TestimonialDisplay() {
               </p>
             </div>
           </div>
-          <div className="absolute bottom-[4rem] lg:bottom-20 right-[2rem] lg:right-10 flex space-x-2 -mb-10 p-2">
+          <div className="absolute bottom-[4rem] lg:bottom-20 right-0 lg:right-10 flex space-x-2 -mb-10 p-2">
             <button
               className="rounded-full border-2 p-1 cursor-pointer"
               onClick={handlePrevClick}>

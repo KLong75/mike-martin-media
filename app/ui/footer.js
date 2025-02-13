@@ -25,7 +25,7 @@ export default function Footer() {
         <TestimonialDisplay />
       </div>
     )}
-      <footer className=" bg-black text-white flex justify-center items-center w-full">
+      <footer className=" bg-black text-white flex justify-center items-center w-full pt-6 lg:pt-12">
         <div className="bg-black text-white max-w-800">
           <p className="text-center px-4 font-bold text-2xl lg:text-4xl xl:text-5xl 2xl:text-5xl 3xl:text-5xl tracking-tight">
             CONTACT US TODAY TO WORK ON YOUR PROJECT TOGETHER TOMORROW.

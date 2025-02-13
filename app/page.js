@@ -9,6 +9,7 @@ import MmmSiteButtonTextOnly from "./ui/mmmSiteButtonTextOnly";
 import MMMLineLogoBlack from "./ui/mmmLineLogoBlack";
 import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
+import BannerVideoWithFadeNoLogo from "./ui/bannerVideoWithFadeNoLogo";
 import BannerImage from "./ui/bannerImage";
 import MMMLineLogoHeading from "./ui/mmmLineLogoHeading";
 import TestimonialDisplay from "./ui/testimonialDisplay";
@@ -79,7 +80,7 @@ export default function Home() {
       </section>
       {/* Our Work Section */}
       <section id="our-work-section">
-        <BannerVideo
+        <BannerVideoWithFadeNoLogo
           src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="MMM_Our_Work_Video"
         />

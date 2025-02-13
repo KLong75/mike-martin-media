@@ -64,4 +64,27 @@ export const videoEditingProcess = {
   ],
 };
 
+export const videoEditingCapabilities = {
+  heading: "Our Editing Capabilities",
+  sub_heading: "From initial sequencing to final polish, we ensure every detail enhances your video's message:",
+  list_items: [
+    "Color Correction & Grading: We apply color techniques to make sure every scene is visually striking and brand-aligned.",
+    "Sound Design: Clear audio elevates your video, and our sound design ensures the highest quality for your viewers.",
+    "Motion Graphics Integration: Adding titles, logos, and graphics to your video makes sure your brand stands out.",
+    "Multi-Camera Editing: Combining multiple video perspectives creates a dynamic, engaging viewing experience.",
+    "Storyboarding & Sequencing: We organize footage with care to build a story that flows naturally and keeps your audience engaged.",
+  ],
+};
+
+export const videoEditingAcrossIndustries = {
+  heading: "Video Editing Across Industries",
+  sub_heading: "We understand the nuance that comes with different industries, and have plenty of experience tailoring our editing approach to meet your needs:",
+  list_items: [
+    "Corporate: Communicate your message with impact and clarity.",
+    "Nonprofit: Showcase the meaningful work you do and build an emotional connection with your audience.",
+    "Healthcare: Highlight patient stories and different initiatives to build empathy and trust.",
+    "Education: Make complex topics engaging and easy to understand with clear, compelling visuals.",
+  ],
+};
+
 export const exampleVideoEditingVideoSrc = "https://player.vimeo.com/video/862940886?h=48731807d6&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0";
