@@ -411,7 +411,7 @@ export default function Nav() {
               className={`flex flex-col items-center justify-center font-bold whitespace-nowrap xl:text-lg 3xl:text-2xl ${
                 pathname === link.href
                   ? ""
-                  : "hover:scale-105 hover:transform transition-transform"
+                  : "hover:scale-105 hover:transform transition-transform duration-500 ease-in-out"
               }`}>
               {link.label === "Capabilities" || link.label === "Industries" ? (
                 <button

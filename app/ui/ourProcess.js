@@ -6,14 +6,14 @@ export default function OurProcess({ title, steps }) {
   const numOfSteps = steps.length;
   
   return (
-    <div className="flex flex-col items-center bg-[#F0F0F0]">
+    <div className="flex flex-col items-center bg-[#F0F0F0] my-6">
       <div>
         <div className="lg:px-6 2xl:px-0">
           <MMMLineLogoHeading headline={title} heading_level={"h3"} />
         </div>
-        <div className={`px-2 mx-2 2xl:mx-28 flex grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-${numOfSteps}`}>
+        <div className="px-2 mx-2 2xl:mx-28 flex grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
           {steps.map((step, index) => (
-            <div key={index} className="flex flex-col px-6 my-4 ">
+            <div key={index} className="flex flex-col px-6 my-4">
               <span className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-semibold">
                 0{index + 1}
               </span>

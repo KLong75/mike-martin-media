@@ -6,12 +6,17 @@ import CapabilityHighLightsSection from "@/app/ui/capabilityHighlightsSection";
 import OurProcess from "@/app/ui/ourProcess";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
+import FormattedList from "@/app/ui/formattedList.js";
+import FormattedTextBlock from "@/app/ui/formattedTextBlock.js";
 // import page data
 import {
-  droneHighlights,
-  droneProcess ,
   dronePageHeadingBannerText,
+  droneCapabilities,
+  droneAdvantage,
+  droneProcess ,
+  faaCertified,
   exampleDroneVideoSrc,
+  whoBenefitsFromDrone,
 } from "../../lib/drone.js";
 
 export const metadata = {
@@ -49,7 +54,7 @@ export default function Page() {
       <div className="grid grid-cols-1 lg:mt-12 xl:mt-24 mb-12 xl:mb-20">
         <CapabilityHighLightsSection
           headline={"Advantages of Aerial Videography and Photography"}
-          highlights={droneHighlights}
+          highlights={droneAdvantage}
           video_src={exampleDroneVideoSrc}
         />
       </div>
@@ -61,7 +66,14 @@ export default function Page() {
       <div className="flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 p-8 lg:p-12 lg:m-6 max-w-800">
           <div className="lg:mx-12">
-            <div className="lg:m-6 mb-12 lg:mb-20">
+          <div className="lg:m-6 mb-12 lg:mb-20">
+            <FormattedTextBlock
+              heading={faaCertified.heading}
+              text={faaCertified.text}
+            />
+          </div>
+            
+            {/* <div className="lg:m-6 mb-12 lg:mb-20">
               <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
                 FAA Certified and Ready for Any Environment
               </h6>
@@ -72,8 +84,15 @@ export default function Page() {
                 footage of open landscapes or maneuvering through tight indoor
                 spaces, we can do it safely and effectively.
               </p>
+            </div> */}
+            <div className="pt-6 pb-3">
+              <FormattedList
+                heading={whoBenefitsFromDrone.heading}
+                sub_heading={whoBenefitsFromDrone.sub_heading}
+                list_items={whoBenefitsFromDrone.list_items}
+              />
             </div>
-            <div className="lg:m-6 mb-12 lg:mb-20">
+            {/* <div className="lg:m-6 mb-12 lg:mb-20">
               <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
                 Who Benefits From Drone Photography and Videography?
               </h6>
@@ -96,7 +115,7 @@ export default function Page() {
                   inspections, surveys, and research with minimal disruption.
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
 
           <div className="mx-12 lg:mt-6 hidden md:block ">

@@ -12,7 +12,7 @@ export default function SocialMediaLinks() {
   return (
     <div className="flex justify-left items-center space-x-4 z-100 ">
       <div
-        className="hover:transform hover:scale-125 transition-transform"
+        className="hover:transform hover:scale-125 transition-transform duration-500 ease-in-out"
         onClick={() => track("social media link clicked", {name: "Facebook"})}>
         <IconLink
           href="https://www.facebook.com/mikemartinmedia"
@@ -22,7 +22,7 @@ export default function SocialMediaLinks() {
         />
       </div>
       <div
-        className="hover:transform hover:scale-125 transition-transform"
+        className="hover:transform hover:scale-125 transition-transform duration-500 ease-in-out"
         onClick={() => track("social media link clicked", {name: "Instagram"})}>
         <IconLink
           href="https://www.instagram.com/mikemartinmedia"
@@ -32,7 +32,7 @@ export default function SocialMediaLinks() {
         />
       </div>
       <div
-        className="hover:transform hover:scale-125 transition-transform"
+        className="hover:transform hover:scale-125 transition-transform duration-500 ease-in-out"
         onClick={() => track("social media link clicked", {name: "LinkedIn"})}>
         <IconLink
           href="https://www.linkedin.com/company/mike-martin-media/"
@@ -42,7 +42,7 @@ export default function SocialMediaLinks() {
         />
       </div>
       <div
-        className="hover:transform hover:scale-125 transition-transform"
+        className="hover:transform hover:scale-125 transition-transform duration-500 ease-in-out"
         onClick={() => track("social media link clicked", {name: "YouTube"})}>
         <IconLink
           href="https://www.youtube.com/channel/UC9YeMwSvCRKJBGeIoi1n97Q"

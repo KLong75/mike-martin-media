@@ -6,24 +6,20 @@ export const dronePageHeadingBannerText = {
 
 export const droneCapabilities = [
     {
-      label: "Aerial Videography",
-      description: "",
+      label: "Aerial Videography:",
+      description: "High quality video that captures wide landscapes and detailed close-ups.",
     },
     {
-      label: "",
-      description: "",
+      label: "Aerial Photography:",
+      description: "High quality images perfect for marketing materials, websites, and print.",
     },
     {
-      label: "",
-      description: "",
-    },
-    {
-      label: "",
-      description: "",
+      label: "Indoor Drone Footage:",
+      description: "Capture unique perspectives of interior spaces.",
     },
 ];
 
-export const droneHighlights = [
+export const droneAdvantage = [
   {
     label: "Enhanced Storytelling",
     description: "Add depth and scale to your stories.",
@@ -38,6 +34,11 @@ export const droneHighlights = [
       "Capture outdoor festivals, weddings, and corporate gatherings.",
   },
 ];
+
+export const faaCertified = {
+  heading: "FAA Certified and Ready for Any Environment",
+  text: "Safety and compliance are number one for our team. Our drone pilots are fully FAA-certified, which allows us to operate drones legally on your behalf. Whether we’re getting footage of open landscapes or maneuvering through tight indoor spaces, we can do it safely and effectively.",
+};
 
 export const droneProcess = [
   {
@@ -72,9 +73,32 @@ export const droneProcess = [
   },
 ];
 
-export const faaCertified = {
-  heading: "FAA Certified and Ready for Any Environment",
-  text: "Safety and compliance are number one for our team. Our drone pilots are fully FAA-certified, which allows us to operate drones legally on your behalf. Whether we’re getting footage of open landscapes or maneuvering through tight indoor spaces, we can do it safely and effectively.",
-};
+export const whoBenefitsFromDrone = {
+  heading: "Who Benefits From Drone Photography and Videography?",
+  sub_heading: "",
+  list_items: [
+    {
+      label: "Real Estate & Construction:",
+      description: "Showcase properties and monitor project progress.",
+    },
+    {
+      label: "Tourism & Hospitality:",
+      description: "Highlight resort amenities, attractions, and local landscapes.",
+    },
+    {
+      label: "Events & Entertainment:",
+      description: "Capture the excitement of festivals, concerts, and sports events.",
+    },
+    {
+      label: "Agriculture:",
+      description: "Monitor crops and land with aerial surveys.",
+    },
+    {
+      label: "Environmental & Industrial",
+      description:
+        "Conduct inspections, surveys, and research with minimal disruption.",
+    },
+  ],
+}
 
 export const exampleDroneVideoSrc = "https://player.vimeo.com/video/799944146?h=7ce1e106da&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0"

@@ -82,7 +82,6 @@ export default function Page() {
               />
             </div>
           </div>
-
           <div className="mx-12 lg:mt-6 hidden md:block pt-6">
             <div className="flex justify-center invert">
               <OurCapabilitiesList />

@@ -68,11 +68,26 @@ export const videoEditingCapabilities = {
   heading: "Our Editing Capabilities",
   sub_heading: "From initial sequencing to final polish, we ensure every detail enhances your video's message:",
   list_items: [
-    "Color Correction & Grading: We apply color techniques to make sure every scene is visually striking and brand-aligned.",
-    "Sound Design: Clear audio elevates your video, and our sound design ensures the highest quality for your viewers.",
-    "Motion Graphics Integration: Adding titles, logos, and graphics to your video makes sure your brand stands out.",
-    "Multi-Camera Editing: Combining multiple video perspectives creates a dynamic, engaging viewing experience.",
-    "Storyboarding & Sequencing: We organize footage with care to build a story that flows naturally and keeps your audience engaged.",
+    {
+      label: "Color Correction & Grading: ",
+      description: "We apply color techniques to make sure every scene is visually striking and brand-aligned.",
+    },
+    {
+      label: "Sound Design:",
+      description: "Clear audio elevates your video, and our sound design ensures the highest quality for your viewers.",
+    },
+    {
+      label: "Motion Graphics Integration:",
+      description: "Adding titles, logos, and graphics to your video makes sure your brand stands out.",
+    },
+    {
+      label: "Multi-Camera Editing:",
+      description: "Combining multiple video perspectives creates a dynamic, engaging viewing experience.",
+    },
+    {
+      label: "Storyboarding & Sequencing:",
+      description: "We organize footage with care to build a story that flows naturally and keeps your audience engaged.",
+    },
   ],
 };
 
