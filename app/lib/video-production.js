@@ -58,4 +58,27 @@ export const videoProductionProcess = {
   ],
 };
 
+export const videoProductionCapabilities = {
+  heading: "Our Video Production Capabilities",
+  sub_heading: "Our full video production services can be tailored to meet your specific needs:",
+  list_items: [
+    "Creative Development: From brainstorming to storyboarding, we collaborate with you to create ideas that align with your vision.",
+    "Filming and Directing: Our experienced crew captures high-quality footage using high quality cameras, lighting, and audio equipment.",
+    "Sound Design: We make sure your video’s audio quality elevates the viewer experience.",
+    "Post-Production Editing {{link to Video Editing page on “Post-Production Editing”}}: Our team crafts your story so that it captures attention and keeps your audience engaged.",
+    "Motion Graphics and Visual Effects {{link to Motion and Animation page on “Motion Graphics and Visual Effects”}}: Using motion graphics and other visual effects enhances your video and elevates your story.",
+  ],
+};
+
+export const videoProductionForEveryIndustry = {
+  heading: "Video Production for Every INdustry",
+  sub_heading: "We have produced relevant, engaging content for a wide range of industries:",
+  list_items: [
+    "Corporate {{link to Corporate page}}: Highlight your brand’s story and connect with your audience.",
+    "Non-Profit {{link to Non-Profit page}}: Highlight your mission through real stories to engage supporters and build awareness.",
+    "Healthcare {{link to Healthcare page}}: Feature patient stories and explain procedures and technology in a way that builds trust and humanizes your brand.",
+    "Education {{link to Education page}}: Create educational and training videos that connect with students, faculty, and stakeholders.",
+  ],
+};
+
 export const exampleVideoProductionVideoSrc ="https://player.vimeo.com/video/862940886?h=48731807d6&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0";

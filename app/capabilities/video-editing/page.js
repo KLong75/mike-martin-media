@@ -65,25 +65,29 @@ export default function Page() {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 p-8 lg:p-12 lg:m-6 max-w-800">
-          <div className="lg:mx-12">
-            <FormattedList
-              heading={videoEditingCapabilities.heading}
-              sub_heading={videoEditingCapabilities.sub_heading}
-              list_items={videoEditingCapabilities.list_items}
-            />
-            <FormattedList
-              heading={videoEditingAcrossIndustries.heading}
-              sub_heading={videoEditingAcrossIndustries.sub_heading}
-              list_items={videoEditingAcrossIndustries.list_items}
-            />
+        <div className="grid grid-cols-1 md:grid-cols-2 px-4 pt- lg:p-12 max-w-800">
+          <div className="xl:ml-24">
+            <div className="pt-6 pb-3">
+              <FormattedList
+                heading={videoEditingCapabilities.heading}
+                sub_heading={videoEditingCapabilities.sub_heading}
+                list_items={videoEditingCapabilities.list_items}
+              />
+            </div>
+            <div className="pt-3 pb-6">
+              <FormattedList
+                heading={videoEditingAcrossIndustries.heading}
+                sub_heading={videoEditingAcrossIndustries.sub_heading}
+                list_items={videoEditingAcrossIndustries.list_items}
+              />
+            </div>
           </div>
 
-          <div className="mx-12 lg:mt-6 hidden md:block ">
-            <div className=" flex justify-center invert">
+          <div className="mx-12 lg:mt-6 hidden md:block pt-6">
+            <div className="flex justify-center invert">
               <OurCapabilitiesList />
             </div>
-            <div className="mt-16 flex justify-center invert">
+            <div className="mt-16 lg:mt-24 flex justify-center invert ">
               <IndustriesList />
             </div>
           </div>

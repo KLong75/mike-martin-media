@@ -1,3 +1,36 @@
+export const livestreamingPageHeadingBannerText = {
+  title: "Livestream Video Company",
+  heading: "Broadcast Your Event to the World",
+  text: "Whether you're hosting a seminar, virtual event or important business meeting, you need a seamless livestream process to keep your audience engaged. MMM brings a positive, results-driven approach to every project to make sure your livestream runs smoothly and helps you connect with your audience in meaningful ways.",
+};
+
+export const livestreamCapabilities = [
+  {
+    label: "Corporate Events:",
+    description: "Town halls, shareholder meetings, and internal communications.",
+  },
+  {
+    label: "Webinars & Seminars:",
+    description: "Educational sessions, workshops, and training programs.",
+  },
+  {
+    label: "Virtual Conferences:",
+    description: "Multi-session events with keynote speakers and breakout rooms.",
+  },
+  {
+    label: "Product Launches:",
+    description: "Introduce new products to a global audience.",
+  },
+  {
+    label: "Live Performances:",
+    description: "Concerts, theater productions, and cultural events.",
+  },
+  {
+    label: "Hybrid Events:",
+    description: "Combine in-person and virtual elements for a seamless experience.",
+  },
+];
+
 export const benefitsOfLivestreaming = [
   {
     label: "Global Reach",
@@ -48,10 +81,31 @@ export const livestreamingProcess = [
   },
 ];
 
-export const livestreamingPageHeadingBannerText = {
-  title: "Livestream Video Company",
-  heading: "Broadcast Your Event to the World",
-  text: "Whether you're hosting a seminar, virtual event or important business meeting, you need a seamless livestream process to keep your audience engaged. MMM brings a positive, results-driven approach to every project to make sure your livestream runs smoothly and helps you connect with your audience in meaningful ways.",
+export const whoBenefitsFromLivestreaming = {
+  heading: "Who Benefits from Livestreaming WEvents?",
+  sub_heading: "Livestreaming offers unique advantages across almost any industry:",
+  list_items: [
+    {
+      label: "Education:",
+      description: "Reach students globally with virtual classrooms and lectures.",
+    },
+    {
+      label: "Healthcare:",
+      description: "Host medical webinars and conferences, as well as patient education sessions.",
+    },
+    {
+      label: "Technology:",
+      description: "Stream product demos, developer conferences, and tech talks.",
+    },
+    {
+      label: "Finance:",
+      description: "Conduct virtual investor meetings and financial briefings.",
+    },
+    {
+      label: "Entertainment:",
+      description: "Bring live performances to fans anywhere.",
+    },
+  ],
 };
 
 export const exampleLivestreamingVideoSrc = "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0";

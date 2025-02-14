@@ -27,7 +27,7 @@ export default function IndustriesList() {
        Industries
        <span className="absolute bottom-[-1rem] left-0 w-[calc(100%+4rem)] xl:w-[calc(100%+4rem)] border-b border-white border-2"></span>
      </h6>
-     <ul className="relative space-y-4 min-w-[16rem] mt-6">
+     <ul className="relative space-y-4 lg:space-y-6 min-w-[16rem] mt-6">
      {industries.map((industry, index) => (
         <li key={index} className="relative">
           <a href={industry.href} className="block transition-transform transform hover:font-medium hover:translate-x-4 ease-in-out duration-500">{industry.label}</a>

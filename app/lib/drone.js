@@ -1,3 +1,28 @@
+export const dronePageHeadingBannerText = {
+  title: "Drone Video Services | Mike Martin Media",
+  heading: "Elevate Your Vision with Drone Services",
+  text: "Drone footage offers perspectives you can't get anywhere else. MMM has FAA certification and is able to capture beautiful photography and videography, both indoors and outdoors. We are committed to creating visuals that make a difference in your storytelling.",
+};
+
+export const droneCapabilities = [
+    {
+      label: "Aerial Videography",
+      description: "",
+    },
+    {
+      label: "",
+      description: "",
+    },
+    {
+      label: "",
+      description: "",
+    },
+    {
+      label: "",
+      description: "",
+    },
+];
+
 export const droneHighlights = [
   {
     label: "Enhanced Storytelling",
@@ -47,10 +72,9 @@ export const droneProcess = [
   },
 ];
 
-export const dronePageHeadingBannerText = {
-  title: "Drone Video Services | Mike Martin Media",
-  heading: "Elevate Your Vision with Drone Services",
-  text: "Drone footage offers perspectives you can't get anywhere else. MMM has FAA certification and is able to capture beautiful photography and videography, both indoors and outdoors. We are committed to creating visuals that make a difference in your storytelling.",
+export const faaCertified = {
+  heading: "FAA Certified and Ready for Any Environment",
+  text: "Safety and compliance are number one for our team. Our drone pilots are fully FAA-certified, which allows us to operate drones legally on your behalf. Whether we’re getting footage of open landscapes or maneuvering through tight indoor spaces, we can do it safely and effectively.",
 };
 
 export const exampleDroneVideoSrc = "https://player.vimeo.com/video/799944146?h=7ce1e106da&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0"
