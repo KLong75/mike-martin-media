@@ -121,3 +121,30 @@ export const whoBenefitsFromPhotography = {
 };
 
 export const examplePhotographyImageSrc = "";
+
+export const photographyCoverImages = [
+  {
+    client: "Catholic Charities of St. Louis",
+    src: "/images/photography-cover-images/catholic-charities.png",
+    width: 437,
+    height: 655,
+    href: "",
+    alt: "Photo gallery for Catholic Charities of St. Louis",
+  },
+  {
+    client: "Prasino",
+    src: "/images/photography-cover-images/prasino-cover-img.png",
+    width: 437,
+    height: 655,
+    href: "",
+    alt: "Photo gallery for Prasino",
+  },
+  {
+    client: "Club Fitness",
+    src: "/images/photography-cover-images/club-fitness-cover-img.png",
+    width: 437,
+    height: 655,
+    href: "",
+    alt: "Photo gallery for Club Fitness",
+  },
+];

@@ -3,10 +3,17 @@
 import { track } from "@vercel/analytics";
 // import from react
 import { useState } from "react";
+// import from next
+import Link from "next/link";
 // import components
 import Image from "./image";
 // import from headlessui
-import { Dialog, DialogPanel, DialogBackdrop, DialogTitle } from "@headlessui/react";
+import {
+  Dialog,
+  DialogPanel,
+  DialogBackdrop,
+  DialogTitle,
+} from "@headlessui/react";
 // import icons
 import { HiX } from "react-icons/hi";
 // import from swiper
@@ -20,11 +27,13 @@ import "swiper/css/effect-fade";
 // import data
 import { photographyWorkSampleData } from "@/app/lib/data";
 
-export default function PhotographyGallery({
+export default function PhotoGallery({
   client,
-  cover_img_src,
+  alt,
+  src,
   width,
   height,
+  priority,
 }) {
   const [photoGalleryOpen, setPhotoGalleryOpen] = useState(false);
 
@@ -39,25 +48,23 @@ export default function PhotographyGallery({
 
   return (
     <>
-      <div className="flex justify-center items-center w-full h-auto">
-        <div className="grid grid-cols-1">
-          <div
-            className="w-full h-auto text-white relative justify-center items-center md:hover:cursor-pointer md:hover:transform md:hover:scale-105 hover:z-40 md:transition-transform "
-            onClick={handleCoverImageClick}>
-            <Image
-              id="gallery-cover-image"
-              client={client}
-              src={cover_img_src}
-              alt={`${client} photo gallery`}
-              width={width}
-              height={height}
-              priority
-            />
-            <h2 className="photo-gallery-client-name text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl lg:text-4xl font-bold">
-              {client.toUpperCase()}
-            </h2>
-          </div>
-        </div>
+      <div
+        className="relative w-full h-full overflow-hidden group"
+        onClick={handleCoverImageClick}>
+        {/* <Link href={href}> */}
+        <Image
+          alt={alt}
+          src={src}
+          width={width}
+          height={height}
+          priority={priority}
+          className="w-full h-full object-cover transform transition-transform duration-1000 group-hover:scale-110 ease-in-out"
+        />
+        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-1000 ease-in-out"></div>
+        <h2 className="photo-gallery-client-name text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold">
+          {client}
+        </h2>
+        {/* </Link> */}
       </div>
 
       <Dialog

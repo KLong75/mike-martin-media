@@ -17,6 +17,9 @@ import {
   whoBenefitsFromPhotography,
   examplePhotographyImageSrc,
 } from "../../lib/photography.js";
+// import images
+import { photographyCoverImages } from "../../lib/photography.js"
+import TriPicBanner from "@/app/ui/triPicBanner.js";
 
 export const metadata = {
   title: "Photography Company | Mike Martin Media",
@@ -42,8 +45,8 @@ export default function Page() {
         />
       </div>
       <div className="flex justify-center items-center w-full h-auto">
-      
-        <div className=" grid grid-cols-1 md:grid-cols-3 w-full h-full">
+      <TriPicBanner />
+        {/* <div className=" grid grid-cols-1 md:grid-cols-3 ">
           <div className="w-full h-full">
             <PhotographyGallery
               client={"Catholic Charities of St. Louis"}
@@ -74,7 +77,7 @@ export default function Page() {
               height={655}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );
