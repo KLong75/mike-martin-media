@@ -95,10 +95,22 @@ export const videoEditingAcrossIndustries = {
   heading: "Video Editing Across Industries",
   sub_heading: "We understand the nuance that comes with different industries, and have plenty of experience tailoring our editing approach to meet your needs:",
   list_items: [
-    "Corporate: Communicate your message with impact and clarity.",
-    "Education: Make complex topics engaging and easy to understand with clear, compelling visuals.",
-    "Healthcare: Highlight patient stories and different initiatives to build empathy and trust.",
-    "Nonprofit: Showcase the meaningful work you do and build an emotional connection with your audience.",
+    {
+      label: "Corporate:",
+      description: "Communicate your message with impact and clarity.",
+    },
+    {
+      label: "Education:",
+      description: "Make complex topics engaging and easy to understand with clear, compelling visuals.",
+    },
+    {
+      label: "Healthcare:",
+      description: "Highlight patient stories and different initiatives to build empathy and trust.",
+    },
+    {
+      label: "Nonprofit:",
+      description: "Showcase the meaningful work you do and build an emotional connection with your audience.",
+    },
   ],
 };
 

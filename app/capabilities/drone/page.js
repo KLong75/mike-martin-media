@@ -13,7 +13,7 @@ import {
   dronePageHeadingBannerText,
   droneCapabilities,
   droneAdvantage,
-  droneProcess ,
+  droneProcess,
   faaCertified,
   exampleDroneVideoSrc,
   whoBenefitsFromDrone,
@@ -65,64 +65,26 @@ export default function Page() {
       </div>
       <div className="flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 p-8 lg:p-12 lg:m-6 max-w-800">
-          <div className="lg:mx-12">
-          <div className="lg:m-6 mb-12 lg:mb-20">
-            <FormattedTextBlock
-              heading={faaCertified.heading}
-              text={faaCertified.text}
-            />
-          </div>
-            
-            {/* <div className="lg:m-6 mb-12 lg:mb-20">
-              <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
-                FAA Certified and Ready for Any Environment
-              </h6>
-              <p className="sm:text-lg">
-                Safety and compliance are number one for our team. Our drone.
-                pilots are fully FAA-certified, which allows us to operate
-                drones legally on your behalf. Whether we&apos;re getting
-                footage of open landscapes or maneuvering through tight indoor
-                spaces, we can do it safely and effectively.
-              </p>
-            </div> */}
-            <div className="pt-6 pb-3">
+          <div className="lg:ml-12">
+            <div className="lg:m-6 mb-12 lg:mb-12">
+              <FormattedTextBlock
+                heading={faaCertified.heading}
+                text={faaCertified.text}
+              />
+            </div>
+            <div className="lg:pt-6 ">
               <FormattedList
                 heading={whoBenefitsFromDrone.heading}
                 sub_heading={whoBenefitsFromDrone.sub_heading}
                 list_items={whoBenefitsFromDrone.list_items}
               />
             </div>
-            {/* <div className="lg:m-6 mb-12 lg:mb-20">
-              <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
-                Who Benefits From Drone Photography and Videography?
-              </h6>
-              <ul className="list-disc sm:text-lg mt-4 ml-6">
-                <li>
-                  <strong>Real Estate & Construction:</strong> Showcase properties and monitor project progress.
-                </li>
-                <li>
-                  <strong>Tourism & Hospitality:</strong> Highlight resort amenities, attractions, and local landscapes.
-                </li>
-                <li>
-                  <strong>Events & Entertainment:</strong> Capture the excitement of festivals, concerts, and sports events.
-                </li>
-                <li>
-                  <strong>Agriculture:</strong> Monitor crops and land with
-                  aerial surveys.
-                </li>
-                <li>
-                  <strong>Environmental & Industrial</strong> Conduct
-                  inspections, surveys, and research with minimal disruption.
-                </li>
-              </ul>
-            </div> */}
           </div>
-
           <div className="mx-12 lg:mt-6 hidden md:block ">
             <div className=" flex justify-center invert">
               <OurCapabilitiesList />
             </div>
-            <div className="mt-16 flex justify-center invert">
+            <div className="mt-20 flex justify-center invert">
               <IndustriesList />
             </div>
           </div>

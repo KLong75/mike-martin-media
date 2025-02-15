@@ -4,40 +4,45 @@ export const photographyPageHeadingBannerText = {
   text: "Capturing perfect photos requires more than just technical skill—it requires a passion for telling stories that connect with people. At MMM, we work hard to capture the heart and soul of your brand. We are dedicated to delivering photos that make a difference and help your vision come to life.",
 };
 
-export const photographyCapabilities = [
-  {
-    label: "Commercial Photography",
-    description:
-      " Perfect for advertising campaigns, product showcasing, and promotional materials.",
-  },
-  {
-    label: "Portrait Photography:",
-    description:
-      "Ideal for professional headshots, team photos, or personal branding.",
-  },
-  {
-    label: "Event Photography:",
-    description:
-      "Capture your conferences, corporate events, and special occasions.",
-  },
-  {
-    label: "Architectural & Real Estate Photography:",
-    description:
-      "Showcase properties with beautiful photos that highlight design and space.",
-  },
-  {
-    label: "Lifestyle Photography:",
-    description: "Use candid images to tell your story.",
-  },
-  {
-    label: "Product Photography:",
-    description: "Use detailed, attractive images to promote your products.",
-  },
-];
+export const photographyCapabilities = {
+  heading: "Our Photography Capabilities",
+  sub_heading: "",
+  list_items: [
+    {
+      label: "Commercial Photography",
+      description:
+        " Perfect for advertising campaigns, product showcasing, and promotional materials.",
+    },
+    {
+      label: "Portrait Photography: ",
+      description:
+        "Ideal for professional headshots, team photos, or personal branding.",
+    },
+    {
+      label: "Event Photography: ",
+      description:
+        "Capture your conferences, corporate events, and special occasions.",
+    },
+    {
+      label: "Architectural & Real Estate Photography: ",
+      description:
+        "Showcase properties with beautiful photos that highlight design and space.",
+    },
+    {
+      label: "Lifestyle Photography: ",
+      description: "Use candid images to tell your story.",
+    },
+    {
+      label: "Product Photography: ",
+      description: "Use detailed, attractive images to promote your products.",
+    },
+  ],
+};
 
-export const photographyHighlights = {
+export const importanceOfPhotography = {
+  heading: "The Importance of Professional Photography",
   sub_heading: "High-quality photography sets you apart by:",
-  highlights: [
+  list_items: [
     {
       label: "Making a Strong First Impression",
       description: "Elevate your brand with professional photos.",
@@ -58,6 +63,7 @@ export const photographyHighlights = {
 };
 
 export const photographyProcess = {
+  heading: "Our Photography Process",
   sub_heading: "We believe in keeping things straightforward and transparent:",
   steps: [
     {

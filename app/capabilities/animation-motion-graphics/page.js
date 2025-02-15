@@ -6,11 +6,15 @@ import CapabilityHighLightsSection from "@/app/ui/capabilityHighlightsSection";
 import OurProcess from "@/app/ui/ourProcess";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
+import FormattedList from "@/app/ui/formattedList.js";
 // import page data
 import {
-  animationHighlights,
-  animationProcess ,
   animationPageHeadingBannerText,
+  animationCapabilities,
+  benefitsOfAnimation,
+  animationProcess,
+  whoBenefitsFromAnimation,
+  whyGoAnimated,
   exampleAnimationVideoSrc,
 } from "../../lib/animation.js";
 
@@ -49,75 +53,43 @@ export default function Page() {
       <div className="grid grid-cols-1 lg:mt-12 xl:mt-24 mb-12 xl:mb-20">
         <CapabilityHighLightsSection
           headline={"Benefits of Animation for Your Business"}
-          highlights={animationHighlights}
+          highlights={benefitsOfAnimation.list_items}
           video_src={exampleAnimationVideoSrc}
         />
       </div>
       <div className="flex justify-center bg-[#F0F0F0]">
         <div className="grid grid-cols-1 max-w-800 my-12">
-          <OurProcess title={"Our Animation Process"} steps={animationProcess} />
+          <OurProcess title={animationProcess.heading} steps={animationProcess.steps} />
         </div>
       </div>
-      <div className="flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 p-8 lg:p-12 lg:m-6 max-w-800">
-          <div className="lg:mx-12">
-            <div className="lg:m-6 mb-12 lg:mb-20">
-              <h6 className="font-bold text-xl  lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
-                Who Benefits from Animation?
-              </h6>
-              <ul className="list-disc sm:text-lg mt-4 ml-6">
-                <li>
-                  <strong>Technology:</strong> Simplify complex concepts for investors or customers.
-                </li>
-                <li>
-                  <strong>Healthcare:</strong>  Educate your patients with friendly, understandable visuals.
-                </li>
-                <li>
-                  <strong>Education:</strong> Make learning interactive and fun for students of all ages.
-                </li>
-                <li>
-                  <strong>Finance:</strong> Simplify financial services and products.
-                </li>
-                <li>
-                  <strong>Retail & E-commerce:</strong> Showcase products in a unique way.
-                </li>
-              </ul>
+      <div className="flex justify-center my-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 px-4 lg:p-12 max-w-800">
+          <div className="xl:ml-24">
+            <div className="pt-6 pb-3">
+              <FormattedList
+                heading={animationCapabilities.heading}
+                sub_heading={animationCapabilities.sub_heading}
+                list_items={animationCapabilities.list_items}
+              />
             </div>
-            <div className="lg:m-6 mb-12 lg:mb-20">
-              <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl mb-4 lg:mb-8">
-              Animation vs. Live Video: Why Go Animated?
-              </h6>
-              <ul className="list-disc sm:text-lg mt-4 ml-6">
-                <li>
-                  <strong>Limitless Creativity:</strong> No need to worry about location scouting or weather conditions.
-                </li>
-                <li>
-                  <strong>Cost-Effective:</strong> Animation can be a more cost-effective option for someone with a limited budget, or with more projects to complete.
-                </li>
-                <li>
-                  <strong>Timeless Appeal:</strong> Animated content stays fresh longer.
-                </li>
-                <li>
-                  <strong>Higher Engagement:</strong> Animated videos often see higher viewer retention rates.
-                </li>
-                <li>
-                  <strong>Environmental & Industrial</strong> Conduct
-                  inspections, surveys, and research with minimal disruption.
-                </li>
-              </ul>
+            <div className="pt-3 pb-6">
+              <FormattedList
+                heading={whoBenefitsFromAnimation.heading}
+                sub_heading={whoBenefitsFromAnimation.sub_heading}
+                list_items={whoBenefitsFromAnimation.list_items}
+              />
             </div>
           </div>
-
-          <div className="mx-12 lg:mt-6 hidden md:block ">
-            <div className=" flex justify-center invert">
+          <div className="mx-12 lg:mt-6 hidden md:block pt-6">
+            <div className="flex justify-center invert">
               <OurCapabilitiesList />
             </div>
-            <div className="mt-16 flex justify-center invert">
+            <div className="mt-16 lg:mt-24 flex justify-center invert ">
               <IndustriesList />
             </div>
           </div>
         </div>
       </div>
-      </main>
+    </main>
   );
-};
+}

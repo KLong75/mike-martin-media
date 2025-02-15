@@ -1,47 +1,59 @@
+import { list } from "postcss";
+
 export const animationPageHeadingBannerText = {
   title: "Video Animation Company: Animation and Motion Graphics",
   heading: "Animating Your Vision",
   text: "Animation is a powerful tool for bringing your ideas to life. At MMM, we specialize in crafting high-quality motion graphics, 2D and 3D animations that both look great and also make a tangible impact on your business. We believe in creating content that resonates with and inspires your audience, and helps you stand out in a way that matters.",
 };
 
-export const animationCapabilities = [
-  {
-    label: "Motion graphics: ",
-    description:
-      "A blend of text, graphics and audio, perfect for an explainer video, infographic, or social media content.",
-  },
-  {
-    label: "2D Animation:",
-    description:
-      "Ideal for storytelling, character animations or educational content.",
-  },
-  {
-    label: "3D Animation:",
-    description:
-      "More realistic animation creates depth and perspective, which is great for product demonstrations, architectural visualization, and other immersive experiences.",
-  },
-];
+export const animationCapabilities = {
+  heading: "Our Animation Capabilities",
+  sub_heading: "",
+  list_items: [
+    {
+      label: "Motion graphics: ",
+      description:
+        "A blend of text, graphics and audio, perfect for an explainer video, infographic, or social media content.",
+    },
+    {
+      label: "2D Animation: ",
+      description:
+        "Ideal for storytelling, character animations or educational content.",
+    },
+    {
+      label: "3D Animation: ",
+      description:
+        "More realistic animation creates depth and perspective, which is great for product demonstrations, architectural visualization, and other immersive experiences.",
+    },
+  ],
+};
 
-export const benefitsOfAnimation = [
-  {
-    label: "Simplify complex ideas",
-    description: "Break down intricate concepts into easy-to-digest visuals.",
-  },
-  {
-    label: "Engage your audience",
-    description:
-      "Animation offers you a different way to tell your story that keeps viewers engaged",
-  },
-  {
-    label: "Stand out",
-    description:
-      "Using animation can differentiate your brand from your competition.",
-  },
-  {
-    label: "Tell any story you want",
-    description: "If you can imagine it, we can animate it!",
-  },
-];
+
+export const benefitsOfAnimation = {
+  heading: "Benefits of Animation for Your Business",
+  sub_heading: "",
+  list_items: [
+    {
+      label: "Simplify complex ideas",
+      description: "Break down intricate concepts into easy-to-digest visuals.",
+    },
+    {
+      label: "Engage your audience",
+      description:
+        "Animation offers you a different way to tell your story that keeps viewers engaged",
+    },
+    {
+      label: "Stand out",
+      description:
+        "Using animation can differentiate your brand from your competition.",
+    },
+    {
+      label: "Tell any story you want",
+      description: "If you can imagine it, we can animate it!",
+    },
+  ],
+};
+
 
 export const animationProcess = {
   heading: "Our Process",
