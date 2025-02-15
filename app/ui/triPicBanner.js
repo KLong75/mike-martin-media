@@ -9,7 +9,7 @@ export default function TriPicBanner() {
       <div className="grid grid-cols-3 w-full h-full text-white cursor-pointer">
       {photographyCoverImages.map((image) => (
         <PhotoGallery
-          key={image.label}
+          key={image.client}
           label={image.label}
           client={image.client}
           href={image.href}

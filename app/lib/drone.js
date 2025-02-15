@@ -101,4 +101,4 @@ export const whoBenefitsFromDrone = {
   ],
 }
 
-export const exampleDroneVideoSrc = "https://player.vimeo.com/video/799944146?h=7ce1e106da&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0"
+export const exampleDroneVideoSrc = "https://player.vimeo.com/video/914904466?h=4da6b8b38e&&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"

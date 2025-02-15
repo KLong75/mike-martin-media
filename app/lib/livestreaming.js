@@ -123,4 +123,4 @@ export const whoBenefitsFromLivestreaming = {
   ],
 };
 
-export const exampleLivestreamingVideoSrc = "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0";
+export const exampleLivestreamingVideoSrc = "https://player.vimeo.com/video/904181398?h=c0efc97d6f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0";

@@ -6,7 +6,7 @@ import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
 import IndustrySupport from "@/app/ui/industrySupport";
 //import data
-import { corporateSupport } from "@/app/lib/industries";
+import { corporatePageBannerText, corporateSupport } from "@/app/lib/industries/corporate";
 
 export const metadata = {
   title: "Corporate Video Production | Mike Martin Media",
@@ -26,11 +26,9 @@ export default function Page() {
       />
       <div className="">
         <PageHeadingBanner
-          title={"Industries - Corporate Video Production"}
-          heading={"Elevate Your Business Through Compelling Visuals"}
-          text={
-            "Communication is key to your success, and at MMM, we understand the need to get your message across clearly and concisely. We are passionate about creating high quality video content that engages stakeholders, inspires, employees, and drives growth."
-          }
+          title={corporatePageBannerText.title}
+          heading={corporatePageBannerText.heading}
+          text={corporatePageBannerText.text}
         />
       </div>
       <div className="flex justify-center">
@@ -42,19 +40,15 @@ export default function Page() {
           />
         </div>
       </div>
-
       <div className="flex justify-center lg:my-6 2xl:my-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 p-8 lg:p-12 lg:m-6 max-w-800">
-          <div className="lg:ml-28">
+        <div className="grid grid-cols-1 lg:grid-cols-3 p-8 lg:p-12 lg:m-6 max-w-1200">
+          <div className="lg:ml-28 lg:mr-36 col-span-2 ">
             <IndustrySupport
-              heading={"How We Support Corporate Clients"}
-              helperText={
-                "We specialize in creating a variety of video content tailored for corporations of all sizes:"
-              }
-              supportList={corporateSupport}
+              heading={corporateSupport.heading}
+              helperText={corporateSupport.sub_heading}
+              supportList={corporateSupport.list_items}
             />
           </div>
-
           <div className=" hidden lg:block ">
             <div className="flex justify-end md:mr-28 lg:mr-40 invert">
               <OurCapabilitiesList />

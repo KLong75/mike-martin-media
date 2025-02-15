@@ -140,4 +140,4 @@ export const whyGoAnimated = {
 };
 
 export const exampleAnimationVideoSrc =
-  "https://player.vimeo.com/video/944136129?h=701f2488bb&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0";
+  "https://player.vimeo.com/video/948449576?h=378cc31a7c&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0";

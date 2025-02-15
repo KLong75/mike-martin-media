@@ -51,7 +51,7 @@ export const videoEditingProcess = {
     },
     {
       label: "Refinement",
-      description: "We apply color grading, sound design, and add any necessary graphics or effects to create the effect you’re looking for.",
+      description: "We apply color grading, sound design, and add any necessary graphics or effects to create the effect you're looking for.",
     },
     {
       label: "Client Feedback and Adjustments",
@@ -114,4 +114,4 @@ export const videoEditingAcrossIndustries = {
   ],
 };
 
-export const exampleVideoEditingVideoSrc = "https://player.vimeo.com/video/862940886?h=48731807d6&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0";
+export const exampleVideoEditingVideoSrc = "https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0";
