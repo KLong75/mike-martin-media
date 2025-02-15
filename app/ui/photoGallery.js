@@ -82,7 +82,7 @@ export default function PhotoGallery({
             </div>
             <div className="flex justify-center items-center">
               <DialogTitle className="fixed top-12 md:top-18 text-xl md:text-2xl font-bold text-white">
-                {client.toUpperCase()}
+                {client}
               </DialogTitle>
             </div>
             {/* Ensure a single Swiper for the selected gallery */}
@@ -115,7 +115,7 @@ export default function PhotoGallery({
                             className={
                               client === "Prasino"
                                 ? "grid grid-cols-1 w-full"
-                                : "grid grid-cols-1 w-80"
+                                : "grid grid-cols-1 max-w-2xl"
                             }>
                             <Image
                               className={
@@ -125,8 +125,8 @@ export default function PhotoGallery({
                               }
                               src={image.src}
                               alt={image.alt || "Gallery image"}
-                              width={752}
-                              height={502}
+                              width={gallery.width }
+                              height={gallery.height }
                               priority
                             />
                           </div>
