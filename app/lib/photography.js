@@ -120,7 +120,7 @@ export const whoBenefitsFromPhotography = {
   ],
 };
 
-export const examplePhotographyImageSrc = "";
+export const examplePhotographyImageSrc = "https://player.vimeo.com/video/905365877?h=71828ac5c8&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0";
 
 export const photographyCoverImages = [
   {

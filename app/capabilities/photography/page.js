@@ -44,40 +44,51 @@ export default function Page() {
           text={photographyPageHeadingBannerText.text}
         />
       </div>
-      <div className="flex justify-center items-center w-full h-auto">
-      <TriPicBanner />
-        {/* <div className=" grid grid-cols-1 md:grid-cols-3 ">
-          <div className="w-full h-full">
-            <PhotographyGallery
-              client={"Catholic Charities of St. Louis"}
-              cover_img_src={
-                "/images/photography-cover-images/catholic-charities-437x655.png"
-              }
-              width={437}
-              height={655}
-            />
+      <div className="">
+        <TriPicBanner />
+      </div>
+      <div className="pb-8 lg:py-28">
+        <CapabilityHighLightsSection
+          headline={importanceOfPhotography.heading}
+          highlights={importanceOfPhotography.list_items}
+          video_src={examplePhotographyImageSrc}
+        />
+      </div>
+      <div className="flex justify-center bg-[#F0F0F0]">
+        <div className="grid grid-cols-1 max-w-800 py-20">
+          <OurProcess
+            title={photographyProcess.heading}
+            steps={photographyProcess.steps}
+          />
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 px-4 pt- lg:p-12 max-w-800">
+          <div className="xl:ml-24">
+            <div className="pt-6 pb-3">
+              <FormattedList
+                heading={photographyCapabilities.heading}
+                sub_heading={photographyCapabilities.sub_heading}
+                list_items={photographyCapabilities.list_items}
+              />
+            </div>
+            <div className="pt-3 pb-6">
+              <FormattedList
+                heading={whoBenefitsFromPhotography.heading}
+                sub_heading={whoBenefitsFromPhotography.sub_heading}
+                list_items={whoBenefitsFromPhotography.list_items}
+              />
+            </div>
           </div>
-          <div className="w-full h-full">
-            <PhotographyGallery
-              client={"Prasino"}
-              cover_img_src={
-                "/images/photography-cover-images/prasino-cover-img-437x655.png"
-              }
-              width={437}
-              height={655}
-            />
+          <div className="mx-12 lg:mt-6 hidden md:block pt-6">
+            <div className="flex justify-center invert">
+              <OurCapabilitiesList />
+            </div>
+            <div className="mt-16 lg:mt-24 flex justify-center invert ">
+              <IndustriesList />
+            </div>
           </div>
-          <div className="w-full h-full">
-            <PhotographyGallery
-              client={"Club Fitness"}
-              cover_img_src={
-                "/images/photography-cover-images/club-fitness-cover-img-437x655.png"
-              }
-              width={437}
-              height={655}
-            />
-          </div>
-        </div> */}
+        </div>
       </div>
     </main>
   );

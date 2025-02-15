@@ -14,7 +14,7 @@ export default function MMMLineLogoHeading({ headline, heading_level }) {
           HeadingTag,
           {
             className:
-              "lg:px- text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-semibold -mb-6 lg:-mb-10 w-3/4",
+              "lg:px- text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-bold -mb-6 lg:-mb-10 w-3/4",
           },
           headline
         )}

@@ -6,7 +6,7 @@ import { photographyCoverImages } from "../lib/photography";
 export default function TriPicBanner() {
   return (
     <div className="flex justify-center w-full">
-      <div className="grid grid-cols-3 w-full h-full text-white">
+      <div className="grid grid-cols-3 w-full h-full text-white cursor-pointer">
       {photographyCoverImages.map((image) => (
         <PhotoGallery
           key={image.label}
