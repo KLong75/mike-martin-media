@@ -6,7 +6,12 @@ import { track } from "@vercel/analytics";
 // import from react
 import { useState } from "react";
 // import from headlessui
-import { Dialog, DialogPanel, DialogBackdrop, DialogTitle } from "@headlessui/react";
+import {
+  Dialog,
+  DialogPanel,
+  DialogBackdrop,
+  DialogTitle,
+} from "@headlessui/react";
 // import icons
 import { HiX } from "react-icons/hi";
 // import components
@@ -36,28 +41,26 @@ export default function ClientVideoFrame({
   return (
     <>
       <div
-  className="relative flex justify-center items-center w-full w-full h-full overflow-hidden group cursor-pointer"
-  onClick={handleClick}
->
-  <Image
-    id="video-thumbnail"
-    className={`w-full h-full object-cover transform transition-transform duration-2000 group-hover:scale-125 ease-in-out ${
-      imageVisible ? "" : "hidden"
-    }`}
-    src={image_src}
-    height={540}
-    width={960}
-    alt={`${client} ${title}`}
-  />
-  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-2000 ease-in-out"></div>
-  <span
-    className={`video-frame-client-span absolute font-bold text-center text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl ${
-      imageVisible ? "" : "hidden"
-    }`}
-  >
-    {client}
-  </span>
-</div>
+        className="relative flex justify-center items-center w-full w-full h-full overflow-hidden group cursor-pointer"
+        onClick={handleClick}>
+        <Image
+          id="video-thumbnail"
+          className={`w-full h-full object-cover transform transition-transform duration-2000 group-hover:scale-125 ease-in-out ${
+            imageVisible ? "" : "hidden"
+          }`}
+          src={image_src}
+          height={540}
+          width={960}
+          alt={`${client} ${title}`}
+        />
+        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-2000 ease-in-out"></div>
+        <span
+          className={`video-frame-client-span absolute font-bold text-center text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl ${
+            imageVisible ? "" : "hidden"
+          }`}>
+          {client}
+        </span>
+      </div>
       <Dialog open={videoWindowOpen} onClose={() => setVideoWindowOpen(false)}>
         <DialogBackdrop className="fixed inset-0 bg-black" />
         <DialogPanel className="fixed inset-0 z-10 overflow-auto">

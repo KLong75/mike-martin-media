@@ -5,10 +5,10 @@ export default function IndustrySupport({heading, helperText, supportList}) {
       <p className="text-lg sm:text-xl text-pretty">{helperText}</p>
       <ul className="-mt-4 sm:mt-0">
         {supportList.map((item, index) => (
-          <li key={index} className="relative my-8 lg:my-10">
+          <li key={index} className="relative my-8 lg:my-10 lg:mr-6">
             <h4 className="font-bold text-lg sm:text-xl lg:text-2xl md:mb-2">{item.label}</h4>
-            <span className="text-sm sm:text-base md:text-lg lg:text-xl">{item.description}</span>
-            <span className="absolute bottom-[-1rem] left-0 border-b border-black" style={{ width: 'calc(100% )' }}></span>
+            <span className="text-sm sm:text-base md:text-lg xl:text-xl">{item.description}</span>
+            <span className="absolute bottom-[-1rem] left-0 border-b border-black" style={{ width: 'calc(100%)' }}></span>
           </li>
         ))}
       </ul>

@@ -1,24 +1,17 @@
-// import from next
-// import Image from "next/image";
 // import components
-import Image from "./image"
+import Image from "./image";
 
 export default function BannerImage({ src, alt, width, height, priority }) {
   return (
-    <section className="grid grid-cols-1">
-      <div className="relative flex justify-center">
-        <div
-          className="w-full banner-video-aspect-ratio-container"
-          >
-          <Image 
-            src={src} 
-            alt={alt} 
-            width={width} 
-            height={height}
-            priority={priority}
-          />
-        </div>
-      </div>
-    </section>
+    <div className="relative w-full h-full overflow-hidden group">
+      <Image
+        alt={alt}
+        src={src}
+        width={width}
+        height={height}
+        priority={priority}
+        className="w-full h-full object-cover"
+      />
+    </div>
   );
 }

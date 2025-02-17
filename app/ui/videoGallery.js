@@ -33,8 +33,8 @@ export default function VideoGallery({
             <div key={video.id} className="text-white w-full h-auto">
               <ClientVideoFrame
                 src={video.src}
-                client={video.client.toUpperCase()}
-                title={video.title.toUpperCase()}
+                client={video.client}
+                title={video.title}
                 category={video.category}
                 image_src={video.image_src}
               />

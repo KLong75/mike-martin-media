@@ -7,6 +7,7 @@ import IndustriesList from "@/app/ui/industriesList";
 import IndustrySupport from "@/app/ui/industrySupport";
 //import data
 import { corporatePageBannerText, corporateSupport } from "@/app/lib/industries/corporate";
+import BannerImage from "@/app/ui/bannerImage";
 
 export const metadata = {
   title: "Corporate Video Production | Mike Martin Media",
@@ -20,9 +21,16 @@ export const metadata = {
 export default function Page() {
   return (
     <main className="grid grid-cols-1">
-      <BannerVideoWithFadeNoLogo
+      {/* <BannerVideoWithFadeNoLogo
         src="https://player.vimeo.com/video/914904466?h=4da6b8b38e&&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-        title="MMM_Livestreaming_Video"
+        title="Corporate Video Production"
+      /> */}
+      <BannerImage
+        src="/images/industries/corporate.png"
+        alt="Corporate Video Production"
+        title="Corporate Video Production"
+        width={1920}
+        height={1080}
       />
       <div className="">
         <PageHeadingBanner

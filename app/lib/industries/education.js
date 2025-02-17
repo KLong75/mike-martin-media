@@ -1,8 +1,8 @@
 export const educationPageBannerText = {
-  title: "",
-  heading: "",
+  title: "Video Production for Educational Institutions",
+  heading: "Inspiring Learning Through Engaging Visuals",
   text:
-    "",
+    "Education has the power to transform lives. We are passionate about helping educational institutions—from elementary to university, public and private—connect with their students, parents and their surrounding communities through video content that educates, inspires and fosters engagement.",
 };
 
 export const educationSupport = {
