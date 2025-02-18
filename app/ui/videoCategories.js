@@ -43,7 +43,7 @@ export default function VideoCategories({ onCategorySelected, selectedCategories
 
   return (
     <section>
-      <h2 className="text-lg font-bold text-center">SELECT A CATEGORY:</h2>
+      <h2 className="text-lg font-bold text-center">Filter by Category:</h2>
       <ul className="flex flex-col items-center">
         <li
           key={categoryOptions[0].name}
@@ -56,7 +56,7 @@ export default function VideoCategories({ onCategorySelected, selectedCategories
           <span>{categoryOptions[0].icon}</span>
           <span className="mt-2 -mb-4">{categoryOptions[0].name}</span>
         </li>
-        <ul className="flex flex-wrap justify-center gap-4 p-6">
+        <ul className="flex flex-wrap justify-center p-6">
           {categoryOptions.slice(1).map((category) => (
             <li
               key={category.name}
