@@ -4,16 +4,21 @@ import VideoCategories from "@/app/ui/videoCategories";
 import VideoGallery from "@/app/ui/videoGallery";
 
 export default function VideoFilter() {
-  const [selectedCategory, setSelectedCategory] = useState("All Videos");
+  const [selectedCategories, setSelectedCategories] = useState(["All Videos"]);
+
+  const clearSelectedCategories = () => {
+    setSelectedCategories(["All Videos"]);
+  };
 
   return (
     <>
       <div className="">
-        <VideoCategories onCategorySelected={setSelectedCategory} />
+        <VideoCategories onCategorySelected={setSelectedCategories} selectedCategories={selectedCategories} />
       </div>
       <VideoGallery
-        selectedCategory={selectedCategory}
-        excludedCategory={["Livestream"]}
+        selectedCategories={selectedCategories}
+        excludedCategory={[""]}
+        clearSelectedCategories={clearSelectedCategories}
       />
     </>
   );

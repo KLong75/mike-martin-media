@@ -1,6 +1,6 @@
 "use client";
 // import from react
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // import icons
 import { MdAnimation } from "react-icons/md";
 import { TbDrone } from "react-icons/tb";
@@ -9,43 +9,51 @@ import { HiBriefcase } from "react-icons/hi2";
 import { HiGlobeAlt } from "react-icons/hi2";
 import { FaVideo } from "react-icons/fa6";
 import { FaKitMedical } from "react-icons/fa6";
+import { BsBroadcast } from "react-icons/bs";
 
-export default function VideoCategories({ onCategorySelected }) {
-  const [selectedCategory, setSelectedCategory] = useState("All Videos");
-  const handleCategorySelected = (category) => {
-    setSelectedCategory(category);
-    onCategorySelected(category);
-  };
-
+export default function VideoCategories({ onCategorySelected, selectedCategories }) {
   const categoryOptions = [
     { name: "All Videos", icon: <FaVideo size={24} /> },
     { name: "Animation", icon: <MdAnimation size={24} /> },
     { name: "Drone", icon: <TbDrone size={24} /> },
+    { name: "Livestream", icon: <BsBroadcast size={24} /> },
     { name: "Corporate", icon: <HiBriefcase size={24} /> },
     { name: "Education", icon: <HiAcademicCap size={24} /> },
     { name: "Medical", icon: <FaKitMedical size={24} /> },
     { name: "Nonprofit", icon: <HiGlobeAlt size={24} /> },
   ];
 
-  const selectedCategoryObject = categoryOptions.find(
-    (category) => category.name === selectedCategory
+  const handleCategorySelected = (category) => {
+    onCategorySelected((prevSelectedCategories) => {
+      if (category === "All Videos") {
+        return ["All Videos"];
+      } else {
+        const isSelected = prevSelectedCategories.includes(category);
+        const updatedCategories = isSelected
+          ? prevSelectedCategories.filter((cat) => cat !== category)
+          : prevSelectedCategories.filter((cat) => cat !== "All Videos").concat(category);
+        return updatedCategories.length === 0 ? ["All Videos"] : updatedCategories;
+      }
+    });
+  };
+
+  const selectedCategoryObjects = categoryOptions.filter((category) =>
+    selectedCategories.includes(category.name)
   );
 
   return (
     <section>
-      <h2 className="text-lg font-bold text-center">
-        SELECT A CATEGORY:
-      </h2>
+      <h2 className="text-lg font-bold text-center">SELECT A CATEGORY:</h2>
       <ul className="flex flex-col items-center">
         <li
           key={categoryOptions[0].name}
           onClick={() => handleCategorySelected(categoryOptions[0].name)}
           className={`text-sm flex flex-col items-center justify-center relative transition-transform cursor-pointer m-3 ${
-            selectedCategory === categoryOptions[0].name
+            selectedCategories.includes(categoryOptions[0].name)
               ? "font-bold scale:105"
               : "text-black hover:transform hover:scale-105 hover:rotate-3 hover:font-medium"
           }`}>
-          {categoryOptions[0].icon}
+          <span>{categoryOptions[0].icon}</span>
           <span className="mt-2 -mb-4">{categoryOptions[0].name}</span>
         </li>
         <ul className="flex flex-wrap justify-center gap-4 p-6">
@@ -54,45 +62,27 @@ export default function VideoCategories({ onCategorySelected }) {
               key={category.name}
               onClick={() => handleCategorySelected(category.name)}
               className={`text-sm flex flex-col items-center justify-center relative transition-transform cursor-pointer m-3 ${
-                selectedCategory === category.name
+                selectedCategories.includes(category.name)
                   ? "font-bold scale:105"
                   : "text-black hover:transform hover:scale-105 hover:rotate-3 hover:font-medium"
               }`}>
-              {category.icon}
+              <span>{category.icon}</span>
               <span className="mt-2">{category.name}</span>
             </li>
           ))}
         </ul>
       </ul>
-      <div className="bg-black text-white text-xl md:text-2xl grid grid-cols-1 w-full h-28 md:h-32 text-center -mt-4">
-        <h3 className="font-bold  mt-2 ">Currently Viewing:</h3>
-        <div className="flex justify-center items-center ">
-          {selectedCategoryObject && selectedCategoryObject.icon}
+      <div className="flex justify-center items-center bg-black text-white text-xl md:text-2xl grid grid-cols-1 w-full h-28 md:h-32 text-center -mt-4">
+        <h3 className="font-bold mt-2">Currently Viewing:</h3>
+        <div className="flex justify-center items-center space-x-4">
+          {selectedCategoryObjects.map((category) => (
+            <div key={category.name} className="mb-1 flex flex-col items-center">
+              <span>{category.icon}</span>
+              <span className="text-sm">{category.name}</span>
+            </div>
+          ))}
         </div>
-        <h4 className="font-bold  mb-2 ">
-        {selectedCategory === "All Videos"
-          ? selectedCategory
-          : `${selectedCategory} Videos`}
-          </h4>
       </div>
     </section>
   );
 }
-
-
-{/* <ul className="flex flex-wrap justify-center gap-4 p-6 md:mb-4"> */}
-{/* <ul className="flex grid grid-cols-3">
-{categoryOptions.map((category) => (
-  <li
-    key={category.name}
-    onClick={() => handleCategorySelected(category.name)}
-    className={`text-sm flex flex-col items-center justify-center relative transition-transform cursor-pointer m-3 ${
-      selectedCategory === category.name
-        ? "font-bold scale:105"
-        : "text-black hover:transform hover:scale-105 hover:rotate-3 hover:font-medium"
-    }`}>
-    {category.icon}
-    <span className="mt-2">{category.name}</span>
-  </li>
-))}
-</ul> */}
