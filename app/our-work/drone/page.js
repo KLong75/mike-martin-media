@@ -47,7 +47,10 @@ export default function Page() {
           {" "}
           <ContactUsButton />
         </div>
-        <VideoGallery selectedCategory="Drone" excludedCategory={[]} />
+        <VideoGallery 
+          selectedCategories={["Drone"]}
+          excludedCategory={[]} 
+        />
       </section>
       <div className="md:text-lg flex justify-center items-center mt-6 md:mt-12">
         <p className="md:text-xl xl:text-2xl 3xl:text-3xl text-center text-balance w-10/12">

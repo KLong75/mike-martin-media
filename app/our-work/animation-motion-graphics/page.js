@@ -63,7 +63,7 @@ export default function Page() {
         </div>
         <div className="mb-8 md:mb-12 lg:mb-18">
           <VideoGallery
-            selectedCategory="Animation"
+            selectedCategories={["Animation"]}
             excludedCategory={[
               "Corporate",
               "Education",

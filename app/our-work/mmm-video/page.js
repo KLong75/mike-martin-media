@@ -5,7 +5,7 @@ import MMMLineLogoBlack from "@/app/ui/mmmLineLogoBlack";
 // import VideoCategories from "@/app/ui/videoCategories";
 // import VideoGallery from "@/app/ui/videoGallery";
 import ContactUsButton from "@/app/ui/contactUsButton";
-import VideoFilter from "./video-filter";
+import VideoFilter from "../../ui/video-filter";
 
 export const metadata = {
   title: "Video",

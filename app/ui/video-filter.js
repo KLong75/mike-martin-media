@@ -1,5 +1,7 @@
 "use client";
+// import from react
 import { useState } from "react";
+// import components
 import VideoCategories from "@/app/ui/videoCategories";
 import VideoGallery from "@/app/ui/videoGallery";
 
@@ -12,14 +14,19 @@ export default function VideoFilter() {
 
   return (
     <>
-      <div className="">
-        <VideoCategories onCategorySelected={setSelectedCategories} selectedCategories={selectedCategories} />
+      <div>
+        <VideoCategories
+          onCategorySelected={setSelectedCategories}
+          selectedCategories={selectedCategories}
+        />
       </div>
-      <VideoGallery
-        selectedCategories={selectedCategories}
-        excludedCategory={[""]}
-        clearSelectedCategories={clearSelectedCategories}
-      />
+      <div>
+        <VideoGallery
+          selectedCategories={selectedCategories}
+          excludedCategory={[""]}
+          clearSelectedCategories={clearSelectedCategories}
+        />
+      </div>
     </>
   );
 }

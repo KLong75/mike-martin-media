@@ -1,22 +1,29 @@
 "use client";
-// import from react
-import { useState, useEffect } from "react";
+//import from next
+import { usePathname } from 'next/navigation'
 // import icons
 import { MdAnimation } from "react-icons/md";
 import { TbDrone } from "react-icons/tb";
 import { HiAcademicCap } from "react-icons/hi2";
 import { HiBriefcase } from "react-icons/hi2";
 import { HiGlobeAlt } from "react-icons/hi2";
-import { FaVideo } from "react-icons/fa6";
+import { FaVideo, FaCameraRetro } from "react-icons/fa6";
 import { FaKitMedical } from "react-icons/fa6";
 import { BsBroadcast } from "react-icons/bs";
+import { TfiVideoClapper } from "react-icons/tfi";
+import { ImVideoCamera } from "react-icons/im";
 
 export default function VideoCategories({ onCategorySelected, selectedCategories }) {
+  const pathname = usePathname();
+
   const categoryOptions = [
     { name: "All Videos", icon: <FaVideo size={24} /> },
-    { name: "Animation", icon: <MdAnimation size={24} /> },
+    { name: "Video Editing", icon: <TfiVideoClapper size={24} /> },
+    { name: "Video Production", icon: <ImVideoCamera size={24} /> },
     { name: "Drone", icon: <TbDrone size={24} /> },
     { name: "Livestream", icon: <BsBroadcast size={24} /> },
+    { name: "Animation", icon: <MdAnimation size={24} /> },
+    { name: "Photography", icon: <FaCameraRetro size={24} /> },
     { name: "Corporate", icon: <HiBriefcase size={24} /> },
     { name: "Education", icon: <HiAcademicCap size={24} /> },
     { name: "Medical", icon: <FaKitMedical size={24} /> },
@@ -40,7 +47,7 @@ export default function VideoCategories({ onCategorySelected, selectedCategories
   const selectedCategoryObjects = categoryOptions.filter((category) =>
     selectedCategories.includes(category.name)
   );
-
+  
   return (
     <section>
       <h2 className="text-lg font-bold text-center">Filter by Category:</h2>
