@@ -9,7 +9,8 @@ import VideoFilter from "../../ui/video-filter";
 
 export const metadata = {
   title: "Video",
-  description: "We produce award winning, professional video production without any of the behind-the-scenes drama. Whether it's content creation, post-production editing, color-grading, audio engineering, visual effects, podcasts, or animation, we deliver the media you want to see. From commercials to broadcast programs, social media posts to feature-length productions, we've got you covered.",
+  description:
+    "We produce award winning, professional video production without any of the behind-the-scenes drama. Whether it's content creation, post-production editing, color-grading, audio engineering, visual effects, podcasts, or animation, we deliver the media you want to see. From commercials to broadcast programs, social media posts to feature-length productions, we've got you covered.",
   alternates: {
     canonical: "/our-work/mmm-video",
   },
@@ -83,7 +84,7 @@ export default function Page() {
 // import ContactUsButton from "@/app/ui/contactUsButton";
 
 // export default function Page() {
-//   const [selectedCategory, setSelectedCategory] = useState("All Videos");
+//   const [selectedCategory, setSelectedCategory] = useState("All");
 
 //   return (
 //     <main className="grid grid-cols-1">

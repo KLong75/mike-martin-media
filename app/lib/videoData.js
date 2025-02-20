@@ -1,7 +1,7 @@
 export const videoData = [
   {
     id: 44,
-    category: ["Corporate"],
+    category: ["Corporate", "Video Editing", "Video Production"],
     client: "Synergy Living",
     title: "Synergy Living Kirkwood Development",
     image_src: "/images/video-thumbnails/corporate/synergyLiving.png",
@@ -9,7 +9,7 @@ export const videoData = [
   },
   {
     id: 45,
-    category: ["Corporate"],
+    category: ["Corporate", "Video Editing", "Video Production"],
     client: "FSI",
     title: "FSI Facilities",
     image_src: "/images/video-thumbnails/corporate/fsi.png",
@@ -17,7 +17,7 @@ export const videoData = [
   },
   {
     id: 32,
-    category: ["Nonprofit"],
+    category: ["Nonprofit", "Video Editing", "Video Production"],
     client: "Joshua Chamberlain Society",
     title: "GALA FUND-A-NEED",
     image_src: "/images/video-thumbnails/nonprofit/joshua-chamberlain.png",
@@ -25,7 +25,7 @@ export const videoData = [
   },
   {
     id: 33,
-    category: ["Nonprofit"],
+    category: ["Nonprofit", "Video Editing", "Video Production"],
     client: "USO of Missouri",
     title: "Holiday Block Leave",
     image_src: "/images/video-thumbnails/nonprofit/usoBlockLeave.png",
@@ -33,7 +33,7 @@ export const videoData = [
   },
   {
     id: 1,
-    category: ["Drone","Medical"],
+    category: ["Drone","Medical", "Video Editing", "Video Production"],
     client: "Missouri Baptist",
     title: "Blues Drone",
     image_src: "/images/video-thumbnails/drone/bluesDrone.png",
@@ -41,7 +41,7 @@ export const videoData = [
   },
   {
     id: 2,
-    category: ["Corporate", "Drone"],
+    category: ["Corporate", "Drone", "Video Editing", "Video Production"],
     client: "ARTCO",
     title: "Recruitment",
     image_src: "/images/video-thumbnails/corporate/artCoRecruitment.png",
@@ -49,7 +49,7 @@ export const videoData = [
   },
   {
     id: 3,
-    category: ["Corporate", "Drone"],
+    category: ["Corporate", "Drone", "Video Editing", "Video Production"],
     client: "MMM ",
     title: "IN GRAND CENTER",
     image_src: "/images/video-thumbnails/corporate/mmmGrandCenter.png",
@@ -57,7 +57,7 @@ export const videoData = [
   },
   {
     id: 4,
-    category: ["Corporate", "Drone"],
+    category: ["Corporate", "Drone", "Video Editing", "Video Production"],
     client: "Girl Scouts of Eastern Missouri",
     title: "Padde Raise",
     image_src: "/images/video-thumbnails/corporate/paddleRaise.png",
@@ -65,7 +65,7 @@ export const videoData = [
   },
   {
     id: 6,
-    category: ["Corporate", "Drone"],
+    category: ["Corporate", "Drone", "Video Editing", "Video Production"],
     client: "MiTek",
     title: "Houston Groundbreaking",
     image_src: "/images/video-thumbnails/corporate/miTekHouston.png",
@@ -73,7 +73,7 @@ export const videoData = [
   },
   {
     id: 7,
-    category: ["Corporate"],
+    category: ["Corporate", "Video Editing", "Video Production"],
     client: "Club Fitness",
     title: "SHARE TO INSPIRE",
     image_src: "/images/video-thumbnails/corporate/club-fitness.png",
@@ -81,7 +81,7 @@ export const videoData = [
   },
   {
     id: 8,
-    category: ["Corporate"],
+    category: ["Corporate", "Video Editing", "Video Production"],
     client: "Music at the Intersection",
     title: "Highlight",
     image_src: "/images/video-thumbnails/corporate/musicIntersection.png",
@@ -89,7 +89,7 @@ export const videoData = [
   },
   {
     id: 9,
-    category: ["Corporate"],
+    category: ["Corporate", "Video Editing", "Video Production"],
     client: "Five Star Auto Body",
     title: "RECRUITMENT",
     image_src: "/images/video-thumbnails/corporate/fiveStarAuto.png",
@@ -97,7 +97,7 @@ export const videoData = [
   },
   {
     id: 11,
-    category: ["Education", "Drone"],
+    category: ["Education", "Drone", "Video Editing", "Video Production"],
     client: "Eden Theological Seminary",
     title: "RECRUITMENT",
     image_src: "/images/video-thumbnails/education/edenTheological.png",
@@ -105,7 +105,7 @@ export const videoData = [
   },
   {
     id: 13,
-    category: ["Education"],
+    category: ["Education", "Video Editing", "Video Production"],
     client: "Murphy Company",
     title: "TRAINING DEMO",
     image_src: "/images/video-thumbnails/education/educationExampleOne.png",
@@ -113,7 +113,7 @@ export const videoData = [
   },
   {
     id: 15,
-    category: ["Education"],
+    category: ["Education", "Video Editing", "Video Production"],
     client: "Washington University",
     title: "Founders Day",
     image_src: "/images/video-thumbnails/education/washUFoundersDay.png",
@@ -121,7 +121,7 @@ export const videoData = [
   },
   {
     id: 16,
-    category: ["Education"],
+    category: ["Education", "Video Editing", "Video Production"],
     client: "Johnstone Sales",
     title: "Demo",
     image_src: "/images/video-thumbnails/education/johnstoneDemo.png",
@@ -129,7 +129,7 @@ export const videoData = [
   },
   {
     id: 17,
-    category: ["Education"],
+    category: ["Education", "Video Editing", "Video Production"],
     client: "Washington University Olin Business School",
     title: "Big Idea Bounce Contest",
     image_src: "/images/video-thumbnails/education/washUOlin.jpg",
@@ -137,7 +137,7 @@ export const videoData = [
   },
   {
     id: 19,
-    category: ["Education"],
+    category: ["Education", "Video Editing", "Video Production"],
     client: "BioSTL",
     title: "Internships",
     image_src: "/images/video-thumbnails/education/bioSTL.jpg",
@@ -145,7 +145,7 @@ export const videoData = [
   },
   {
     id: 20,
-    category: ["Medical"],
+    category: ["Medical", "Video Editing", "Video Production"],
     client: "SSM Cardinal Glennon",
     title: "Residency Recruitment",
     src: "https://player.vimeo.com/video/872654095?h=2fbe224539&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
@@ -153,7 +153,7 @@ export const videoData = [
   },
   {
     id: 21,
-    category: ["Medical"],
+    category: ["Medical", "Video Editing", "Video Production"],
     client: "Washington University Emergency Medicine",
     title: "Residency Recruitment",
     image_src: "/images/video-thumbnails/medical/washUEmergencyMedicine.png",
@@ -161,7 +161,7 @@ export const videoData = [
   },
   {
     id: 22,
-    category: ["Medical"],
+    category: ["Medical", "Video Editing", "Video Production"],
     client: "Washington University Neuromuscular Medicine",
     title: "Fellowship Recruitment",
     src: "https://player.vimeo.com/video/900179612?h=690b0e7751&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
@@ -169,7 +169,7 @@ export const videoData = [
   },
   {
     id: 23,
-    category: ["Medical"],
+    category: ["Medical", "Video Editing", "Video Production"],
     client: "Siteman Cancer Center",
     title: "Brain Tumor Center",
     image_src: "/images/video-thumbnails/medical/siteman.png",
@@ -177,7 +177,7 @@ export const videoData = [
   },
   {
     id: 24,
-    category: ["Medical"],
+    category: ["Medical", "Video Editing", "Video Production"],
     client: "Alton Memorial Hospital Foundation",
     title: "Duck Pluckers Ball",
     image_src: "/images/video-thumbnails/medical/duckPluckers.png",
@@ -185,7 +185,7 @@ export const videoData = [
   },
   {
     id: 25,
-    category: ["Medical"],
+    category: ["Medical", "Video Editing", "Video Production"],
     client: "St Louis Children's Hospital",
     title: "Employee Giving",
     image_src: "/images/video-thumbnails/medical/stLouisChildrens.png",
@@ -193,7 +193,7 @@ export const videoData = [
   },
   {
     id: 26,
-    category: ["Medical"],
+    category: ["Medical", "Video Editing", "Video Production"],
     client: "Ascension Healthcare",
     title: "St. Vincent",
     image_src: "/images/video-thumbnails/medical/ascension.png",
@@ -201,7 +201,7 @@ export const videoData = [
   },
   {
     id: 27,
-    category: ["Medical"],
+    category: ["Medical", "Video Editing", "Video Production"],
     client: "SSM Health",
     title: "Industrial Rehabilitaion Center",
     image_src: "/images/video-thumbnails/medical/ssmHealth.png",
@@ -209,7 +209,7 @@ export const videoData = [
   },
   {
     id: 28,
-    category: ["Nonprofit"],
+    category: ["Nonprofit", "Video Editing", "Video Production"],
     client: "Barnes-Jewish Hospital Foundation",
     title: "Illumination Gala",
     image_src: "/images/video-thumbnails/nonprofit/bjhfGala.png",
@@ -217,7 +217,7 @@ export const videoData = [
   },
   {
     id: 30,
-    category: ["Nonprofit"],
+    category: ["Nonprofit", "Video Editing", "Video Production"],
     client: " Ollie Hinkle Heart Foundation",
     title: "Gala Fund-A-Need",
     image_src: "/images/video-thumbnails/nonprofit/ollie-hinkle.png",
@@ -225,7 +225,7 @@ export const videoData = [
   },
   {
     id: 31,
-    category: ["Nonprofit"],
+    category: ["Nonprofit", "Video Editing", "Video Production"],
     client: "Central Institute for the Deaf",
     title: "Out Loud",
     image_src: "/images/video-thumbnails/nonprofit/cidOutLoud.png",
@@ -233,7 +233,7 @@ export const videoData = [
   },
   {
     id: 34,
-    category: ["Nonprofit"],
+    category: ["Nonprofit", "Video Editing", "Video Production"],
     client: "Cardinal Ritter Senior Services",
     title: "Gala Fund-A-Need",
     image_src: "/images/video-thumbnails/nonprofit/crss.png",
@@ -241,7 +241,7 @@ export const videoData = [
   },
   {
     id: 35,
-    category: ["Nonprofit"],
+    category: ["Nonprofit", "Video Editing", "Video Production"],
     client: "Cystic Fibrosis Foundation",
     title: "Gala Fund-A-Need",
     image_src: "/images/video-thumbnails/nonprofit/cysticFibrosisGala.png",
@@ -249,7 +249,7 @@ export const videoData = [
   },
   {
     id: 36,
-    category: ["Nonprofit"],
+    category: ["Nonprofit", "Video Editing", "Video Production"],
     client: "Kids in the Middle",
     title: "Mission Promo",
     image_src: "/images/video-thumbnails/nonprofit/kitmMission.png",
@@ -257,7 +257,7 @@ export const videoData = [
   },
   {
     id: 39,
-    category: ["Livestream"],
+    category: ["Livestream", "Video Editing", "Video Production"],
     client: "Spirit of Provident",
     title: "Gala Livestream",
     image_src: "/images/video-thumbnails/livestream/provident-gala.png",
@@ -265,7 +265,7 @@ export const videoData = [
   },
   {
     id: 40,
-    category: ["Animation","Medical"],
+    category: ["Animation","Medical", "Video Editing", "Video Production"],
     client: "St. Louis Children's Hospital",
     title: "What to Expect - Colonoscopy",
     image_src: "/images/video-thumbnails/animation/animation-example.png",
@@ -273,7 +273,7 @@ export const videoData = [
   },
   {
     id: 41,
-    category: ["Animation","Education"],
+    category: ["Animation","Education", "Video Editing", "Video Production"],
     client: "Washington University",
     title: "Always Olin",
     image_src: "/images/video-thumbnails/animation/always-olin.png",
@@ -281,7 +281,7 @@ export const videoData = [
   },
   {
     id: 42,
-    category: ["Animation","Education"],
+    category: ["Animation","Education", "Video Editing", "Video Production"],
     client: "Washington University",
     title: "Olin MBA",
     image_src: "/images/video-thumbnails/animation/olin-mba.png",

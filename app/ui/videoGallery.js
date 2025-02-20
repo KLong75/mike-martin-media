@@ -12,8 +12,8 @@ export default function VideoGallery({
   clearSelectedCategories,
 }) {
   const filteredVideos = videoData.filter((video) => {
-    // Check if "All Videos" is selected
-    if (selectedCategories.includes("All Videos")) {
+    // Check if "All" is selected
+    if (selectedCategories.includes("All")) {
       return true;
     }
     // Check if video matches all selected categories
@@ -32,10 +32,7 @@ export default function VideoGallery({
       {filteredVideos.length === 0 ? (
         <div className="text-white text-sm md:text-xl flex flex-col items-center">
           <p>There are no videos matching these categories.</p>
-          <button
-            className="mt-4"
-            onClick={clearSelectedCategories}
-          >
+          <button className="mt-4" onClick={clearSelectedCategories}>
             <IoCloseCircleOutline size={24} />
           </button>
           <span>clear selected categories</span>
@@ -43,7 +40,8 @@ export default function VideoGallery({
       ) : (
         <div
           className={`w-full h-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 ${
-            selectedCategories.includes("Livestream") || selectedCategories.length === 0
+            selectedCategories.includes("Livestream") ||
+            selectedCategories.length === 0
               ? "lg:grid-cols-2"
               : "lg:grid-cols-3"
           } gap-0`}>

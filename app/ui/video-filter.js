@@ -6,10 +6,10 @@ import VideoCategories from "@/app/ui/videoCategories";
 import VideoGallery from "@/app/ui/videoGallery";
 
 export default function VideoFilter() {
-  const [selectedCategories, setSelectedCategories] = useState(["All Videos"]);
+  const [selectedCategories, setSelectedCategories] = useState(["All"]);
 
   const clearSelectedCategories = () => {
-    setSelectedCategories(["All Videos"]);
+    setSelectedCategories(["All"]);
   };
 
   return (
