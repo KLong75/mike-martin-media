@@ -31,11 +31,11 @@ export default function VideoGallery({
     <div className="flex justify-center w-full bg-black">
       {filteredVideos.length === 0 ? (
         <div className="text-white text-sm md:text-xl flex flex-col items-center">
-          <p>There are no videos matching these categories.</p>
+          <p>There are no results matching your selections.</p>
           <button className="mt-4" onClick={clearSelectedCategories}>
             <IoCloseCircleOutline size={24} />
           </button>
-          <span>clear selected categories</span>
+          <span>clear selections</span>
         </div>
       ) : (
         <div
