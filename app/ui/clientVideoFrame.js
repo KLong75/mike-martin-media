@@ -53,13 +53,18 @@ export default function ClientVideoFrame({
           width={960}
           alt={`${client} ${title}`}
         />
-        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-2000 ease-in-out"></div>
-        <span
-          className={`video-frame-client-span absolute font-bold text-center text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl ${
-            imageVisible ? "" : "hidden"
-          }`}>
-          {client}
-        </span>
+        <div className="absolute inset-0 bg-[#484848] opacity-45 group-hover:opacity-75 group-hover:bg-black  transition-bg duration-2000 ease-in-out"></div>
+        <div className="lg:opacity-0 group-hover:opacity-100 duration-2000 ease-in-out" id="client-and-category-div">
+          <span
+            className={`video-frame-client-span absolute font-bold text-left text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl ${
+              imageVisible ? "" : "hidden"
+            }`}>
+            {client}
+          </span>
+          <span className="video-frame-category-span text-left absolute text-xs lg:text-sm font-bold">
+            {category.join(", ")}
+          </span>
+        </div>
       </div>
       <Dialog open={videoWindowOpen} onClose={() => setVideoWindowOpen(false)}>
         <DialogBackdrop className="fixed inset-0 bg-black" />

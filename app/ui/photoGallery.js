@@ -4,7 +4,7 @@ import { track } from "@vercel/analytics";
 // import from react
 import { useState } from "react";
 // import from next
-import Link from "next/link";
+// import Link from "next/link";
 // import components
 import Image from "./image";
 // import from headlessui
@@ -34,6 +34,7 @@ export default function PhotoGallery({
   width,
   height,
   priority,
+  category,
 }) {
   const [photoGalleryOpen, setPhotoGalleryOpen] = useState(false);
 
@@ -58,15 +59,19 @@ export default function PhotoGallery({
           width={width}
           height={height}
           priority={priority}
-          className="w-full h-full object-cover transform transition-transform duration-1000 group-hover:scale-110 ease-in-out"
+          className="w-full h-full object-cover transform transition-transform duration-2000 group-hover:scale-125 ease-in-out"
         />
-        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-1000 ease-in-out"></div>
-        <h2 className="photo-gallery-client-name text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold">
+        {/* <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-2000 ease-in-out"></div> */}
+        <div className="absolute inset-0 bg-[#484848] opacity-45 group-hover:opacity-75 group-hover:bg-black  transition-bg duration-2000 ease-in-out"></div>
+        <div className="lg:opacity-0 group-hover:opacity-100 duration-2000 ease-in-out" id="client-and-category-div">
+        <span className="photo-gallery-client-name text-left absolute text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl font-bold">
           {client}
-        </h2>
-        {/* </Link> */}
+        </span>
+        <span className="photo-gallery-category text-left absolute text-xs lg:text-sm font-bold">
+          {category.join(", ")}
+        </span>
+        </div>
       </div>
-
       <Dialog
         open={photoGalleryOpen}
         onClose={() => setPhotoGalleryOpen(false)}>

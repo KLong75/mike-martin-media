@@ -16,6 +16,7 @@ export const weTextBlockData = [
 export const photographyWorkSampleData = [
   {
     client: "Catholic Charities of St. Louis",
+    categories: ["Photography"],
     width: 4366, 
     height: 6546,
     images: [
@@ -119,6 +120,7 @@ export const photographyWorkSampleData = [
   },
   {
     client: "Club Fitness",
+    categories: ["Photography"],
     width: 3736,
     height: 5356,
     images: [
@@ -166,6 +168,7 @@ export const photographyWorkSampleData = [
   },
   {
     client: "Prasino",
+    categories: ["Photography"],
     width: 1000,
     height: 667,
     images: [

@@ -50,9 +50,20 @@ html {
 
 .video-frame-client-span {
   text-shadow: 2px 2px 0 black;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 2.25rem;
+  left: 1rem;
+  transform: translate(0, 0);
+  background-color: rgba(0, 0, 0, 1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+.video-frame-category-span {
+  text-shadow: 2px 2px 0 black;
+  bottom: .85rem;
+  left: 1rem;
+  transform: translate(0, 0);
   background-color: rgba(0, 0, 0, 1);
   background-clip: text;
   -webkit-background-clip: text;
@@ -60,12 +71,26 @@ html {
 }
 
 .photo-gallery-client-name {
+  bottom: 2rem;
+  left: 1rem;
+  transform: translate(0, 0);
   text-shadow: 2px 2px 0 black;
   background-color: rgba(0, 0, 0, 1);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
 }
+
+  .photo-gallery-category {
+    bottom: .85rem;
+    left: 1rem;
+    transform: translate(0, 0);
+    text-shadow: 2px 2px 0 black;
+    background-color: rgba(0, 0, 0, 1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+  }
 
 .capability-label {
   text-shadow: 2px 2px 0 black;

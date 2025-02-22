@@ -1,9 +1,9 @@
 // import components
 import ClientVideoFrame from "../ui/clientVideoFrame";
-import PhotographyGallery from "./photographyGallery";
+// import PhotographyGallery from "./photographyGallery";
 import PhotoGallery from "./photoGallery";
 // import data
-import { videoData } from "../lib/videoData";
+// import { videoData } from "../lib/videoData";
 import { workSampleData } from "../lib/work-samples";
 // import icons
 import { IoCloseCircleOutline } from "react-icons/io5";
