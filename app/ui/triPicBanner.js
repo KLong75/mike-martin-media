@@ -18,6 +18,7 @@ export default function TriPicBanner() {
             width={image.width}
             height={image.height}
             priority={image.priority}
+            category={image.category}
           />
         ))}
       </div>

@@ -130,6 +130,7 @@ export const photographyCoverImages = [
     height: 655,
     href: "",
     alt: "Photo gallery for Catholic Charities of St. Louis",
+    category: ["Photography", "Nonprofit"]
   },
   {
     client: "Prasino",
@@ -138,6 +139,7 @@ export const photographyCoverImages = [
     height: 655,
     href: "",
     alt: "Photo gallery for Prasino",
+    category: ["Photography", "Corporate"]
   },
   {
     client: "Club Fitness",
@@ -146,5 +148,6 @@ export const photographyCoverImages = [
     height: 655,
     href: "",
     alt: "Photo gallery for Club Fitness",
+    category: ["Photography", "Corporate"]
   },
 ];

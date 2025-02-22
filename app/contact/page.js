@@ -50,12 +50,12 @@ export default function Page() {
       </div> */}
 
       <ActiveCampaignContactForm />
-      <div className="mb-12 md:-mb-16 lg:-mb-28 w-full h-auto ">
+      {/* <div className="mb-12 md:-mb-16 lg:-mb-28 w-full h-auto ">
         <InstagramWidget />
       </div>
       <div className="w-full mt-6 md:hidden">
         <MMMLineLogoBlack />
-      </div>
+      </div> */}
     </main>
   );
 }

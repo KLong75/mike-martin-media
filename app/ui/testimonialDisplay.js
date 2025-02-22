@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 // import components
-import Image from "@/app/ui/image";
+// import Image from "@/app/ui/image";
 // import icons
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
@@ -35,6 +35,9 @@ export default function TestimonialDisplay() {
               </p>
               <p className="text-sm lg:text-lg lg:ml-20 lg:px-12 mt-12">
                 {testimonials[currentIndex].name}
+              </p>
+              <p className="text-xs lg:text-sm italic lg:ml-20 lg:px-12">
+                {testimonials[currentIndex].org}
               </p>
               <p className="text-xs lg:text-sm italic lg:ml-20 lg:px-12">
                 {testimonials[currentIndex].role}

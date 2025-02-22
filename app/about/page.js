@@ -121,12 +121,12 @@ export default function Page() {
           <TeamGallery />
         </div>
       </section>
-      <section className="-mt-6 md:mt-0 md:-mb-20">
+      {/* <section className="-mt-6 md:mt-0 md:-mb-20">
         <InstagramWidget />
-      </section>
-      <div className="w-full">
+      </section> */}
+      {/* <div className="w-full">
         <MMMLineLogoBlack />
-      </div>
+      </div> */}
     </main>
   );
 }

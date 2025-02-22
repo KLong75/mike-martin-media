@@ -4,6 +4,7 @@ import { track } from "@vercel/analytics";
 // import from react
 import { useState } from "react";
 // import from next
+import { usePathname } from "next/navigation";
 // import Link from "next/link";
 // import components
 import Image from "./image";
@@ -37,7 +38,8 @@ export default function PhotoGallery({
   category,
 }) {
   const [photoGalleryOpen, setPhotoGalleryOpen] = useState(false);
-
+  const currentPath = usePathname();
+  console.log(currentPath);
   const handleCoverImageClick = () => {
     setPhotoGalleryOpen(true);
     track(`photo gallery view - ${client}`);
@@ -62,14 +64,22 @@ export default function PhotoGallery({
           className="w-full h-full object-cover transform transition-transform duration-2000 group-hover:scale-125 ease-in-out"
         />
         {/* <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-2000 ease-in-out"></div> */}
-        <div className="absolute inset-0 bg-[#484848] opacity-45 group-hover:opacity-75 group-hover:bg-black  transition-bg duration-2000 ease-in-out"></div>
-        <div className="lg:opacity-0 group-hover:opacity-100 duration-2000 ease-in-out" id="client-and-category-div">
-        <span className="photo-gallery-client-name text-left absolute text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl font-bold">
-          {client}
-        </span>
-        <span className="photo-gallery-category text-left absolute text-xs lg:text-sm font-bold">
-          {category.join(", ")}
-        </span>
+        {currentPath === "/capabilities/photography" ? (
+          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-opacity duration-2000 ease-in-out"></div>
+        ) : (
+          <div className="absolute inset-0 bg-[#484848] opacity-45 group-hover:opacity-75 group-hover:bg-black transition-bg duration-2000 ease-in-out"></div>
+        )}
+        {/* <div className="absolute inset-0 bg-[#484848] opacity-45 group-hover:opacity-75 group-hover:bg-black transition-bg duration-2000 ease-in-out"></div> */}
+
+        <div
+          className="lg:opacity-0 group-hover:opacity-100 duration-2000 ease-in-out"
+          id="client-and-category-div">
+          <span className="photo-gallery-client-name text-left absolute text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl font-bold">
+            {client}
+          </span>
+          <span className="photo-gallery-category text-left absolute text-xs lg:text-sm font-bold">
+            {category.join(", ")}
+          </span>
         </div>
       </div>
       <Dialog
@@ -130,8 +140,8 @@ export default function PhotoGallery({
                               }
                               src={image.src}
                               alt={image.alt || "Gallery image"}
-                              width={gallery.width }
-                              height={gallery.height }
+                              width={gallery.width}
+                              height={gallery.height}
                               priority
                             />
                           </div>
