@@ -17,7 +17,7 @@ import {
   faaCertified,
   exampleDroneVideoSrc,
   whoBenefitsFromDrone,
-} from "../../lib/drone.js";
+} from "../../lib/capabilities/drone.js";
 
 export const metadata = {
   title: "Drone Video Services | Mike Martin Media",

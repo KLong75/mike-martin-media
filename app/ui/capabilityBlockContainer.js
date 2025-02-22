@@ -1,7 +1,7 @@
 //import components
 import CapabilityBlock from "./capabilityBlock";
 //import data
-import { capabilities } from "../lib/capabilities";
+import { capabilities } from "../lib/capabilities/capabilities";
 
 export default function CapabilityBlockContainer() {
   return (

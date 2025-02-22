@@ -204,7 +204,7 @@
 //           </ul>
 //           {/* Capabilities Submenu */}
 //         {capabilitiesOpen && (
-//           <div 
+//           <div
 //             className="absolute top-20 z-50"
 //           >
 //           <SubNavMenu subMenu={capabilities} />
@@ -239,8 +239,8 @@ import Image from "./image";
 import SubNavMenu from "./subNavMenu";
 import SubNavMenuMobile from "./subNavMenuMobile";
 // import data
-import { capabilities } from "../lib/capabilities";
-import { industries } from "../lib/industries";
+import { capabilities } from "../lib/capabilities/capabilities";
+import { industries } from "../lib/industries/industries";
 
 const navLinks = [
   {
@@ -344,9 +344,14 @@ export default function Nav() {
                     className={`font-bold text-center w-full p-2 ${
                       pathname === link.href ? "hidden" : ""
                     }`}>
-                    {link.label === "Capabilities" || link.label === "Industries" ? (
+                    {link.label === "Capabilities" ||
+                    link.label === "Industries" ? (
                       <button
-                        ref={link.label === "Capabilities" ? capabilitiesRef : industriesRef}
+                        ref={
+                          link.label === "Capabilities"
+                            ? capabilitiesRef
+                            : industriesRef
+                        }
                         className="cursor-pointer"
                         onClick={() => {
                           if (link.label === "Capabilities") {
@@ -375,21 +380,21 @@ export default function Nav() {
               {/* Capabilities Submenu Mobile */}
               {capabilitiesOpenMobile && (
                 <div className="absolute bottom-40 z-50">
-                  <SubNavMenuMobile 
-                    subMenu={capabilities} 
-                    closeSubMenu={closeSubMenuMobile} 
-                    setMenuOpen={setMenuOpen} 
+                  <SubNavMenuMobile
+                    subMenu={capabilities}
+                    closeSubMenu={closeSubMenuMobile}
+                    setMenuOpen={setMenuOpen}
                   />
                 </div>
               )}
               {/* Industries Submenu Mobile */}
               {industriesOpenMobile && (
                 <div className="absolute bottom-40 z-50">
-                  <SubNavMenuMobile 
-                    subMenu={industries} 
+                  <SubNavMenuMobile
+                    subMenu={industries}
                     closeSubMenu={closeSubMenuMobile}
                     setMenuOpen={setMenuOpen}
-                />
+                  />
                 </div>
               )}
             </div>
@@ -404,7 +409,7 @@ export default function Nav() {
       </div>
       {/* Desktop Nav Menu */}
       <div className={`flex ${menuOpen ? "" : "hidden lg:flex"} w-full`}>
-      <ul className="flex flex-row space-x-6 2xl:space-x-12">
+        <ul className="flex flex-row space-x-6 2xl:space-x-12">
           {navLinks.map((link) => (
             <li
               key={link.label}
@@ -415,7 +420,11 @@ export default function Nav() {
               }`}>
               {link.label === "Capabilities" || link.label === "Industries" ? (
                 <button
-                  ref={link.label === "Capabilities" ? capabilitiesRef : industriesRef}
+                  ref={
+                    link.label === "Capabilities"
+                      ? capabilitiesRef
+                      : industriesRef
+                  }
                   className={`${
                     pathname === link.href
                       ? "hover:cursor-text disabled text-gray-300"
@@ -435,7 +444,9 @@ export default function Nav() {
               ) : link.label === "Contact Us" ? (
                 <Link href={link.href}>
                   <span
-                    onClick={() => setCapabilitiesOpen(false) || setIndustriesOpen(false)}
+                    onClick={() =>
+                      setCapabilitiesOpen(false) || setIndustriesOpen(false)
+                    }
                     className={`hover:bg-white hover:text-black rounded-full border-4 p-2 px-4 mt-2 ${
                       pathname === link.href
                         ? "hover:cursor-text disabled text-gray-300"
@@ -447,7 +458,9 @@ export default function Nav() {
               ) : (
                 <Link href={link.href}>
                   <span
-                    onClick={() => setCapabilitiesOpen(false) || setIndustriesOpen(false)}
+                    onClick={() =>
+                      setCapabilitiesOpen(false) || setIndustriesOpen(false)
+                    }
                     className={` mt-2 ${
                       pathname === link.href
                         ? "hover:cursor-text disabled text-gray-300"
@@ -465,21 +478,19 @@ export default function Nav() {
         {capabilitiesOpen && (
           <div
             className="absolute top-20 z-50 transform -translate-x-1/2"
-            style={{ left: submenuPosition.left }}
-          >
-            <SubNavMenu subMenu={capabilities} closeSubMenu={closeSubMenu}/>
+            style={{ left: submenuPosition.left }}>
+            <SubNavMenu subMenu={capabilities} closeSubMenu={closeSubMenu} />
           </div>
         )}
         {/* Industries Submenu */}
         {industriesOpen && (
           <div
             className="absolute top-20 z-50 transform -translate-x-1/2"
-            style={{ left: submenuPosition.left }}
-          >
-            <SubNavMenu subMenu={industries} closeSubMenu={closeSubMenu}/>
+            style={{ left: submenuPosition.left }}>
+            <SubNavMenu subMenu={industries} closeSubMenu={closeSubMenu} />
           </div>
         )}
       </div>
     </nav>
   );
-};
+}

@@ -16,7 +16,7 @@ import {
   whoBenefitsFromAnimation,
   whyGoAnimated,
   exampleAnimationVideoSrc,
-} from "../../lib/animation.js";
+} from "../../lib/capabilities/animation.js";
 
 export const metadata = {
   title: "Video Animation Company | Mike Martin Media",

@@ -16,9 +16,9 @@ import {
   photographyProcess,
   whoBenefitsFromPhotography,
   examplePhotographyImageSrc,
-} from "../../lib/photography.js";
+} from "../../lib/capabilities/photography.js";
 // import images
-import { photographyCoverImages } from "../../lib/photography.js"
+import { photographyCoverImages } from "../../lib/capabilities/photography.js";
 import TriPicBanner from "@/app/ui/triPicBanner.js";
 
 export const metadata = {

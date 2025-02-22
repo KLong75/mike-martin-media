@@ -15,7 +15,7 @@ import {
   videoEditingCapabilities,
   videoEditingAcrossIndustries,
   exampleVideoEditingVideoSrc,
-} from "../../lib/video-editing.js";
+} from "../../lib/capabilities/video-editing.js";
 
 export const metadata = {
   title: "Video Editing Company | Mike Martin Media",

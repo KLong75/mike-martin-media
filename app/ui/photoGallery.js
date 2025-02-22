@@ -49,7 +49,7 @@ export default function PhotoGallery({
   return (
     <>
       <div
-        className="relative w-full h-full overflow-hidden group"
+        className="relative w-full h-full overflow-hidden group cursor-pointer"
         onClick={handleCoverImageClick}>
         {/* <Link href={href}> */}
         <Image

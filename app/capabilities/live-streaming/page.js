@@ -15,7 +15,7 @@ import {
   livestreamingProcess,
   whoBenefitsFromLivestreaming,
   exampleLivestreamingVideoSrc,
-} from "../../lib/livestreaming.js";
+} from "../../lib/capabilities/livestreaming.js";
 
 
 export const metadata = {

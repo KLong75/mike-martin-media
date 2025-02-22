@@ -15,7 +15,7 @@ import {
   videoProductionCapabilities,
   videoProductionForEveryIndustry,
   exampleVideoProductionVideoSrc,
-} from "../../lib/video-production.js";
+} from "../../lib/capabilities/video-production.js";
 import Link from "next/link.js";
 
 export const metadata = {

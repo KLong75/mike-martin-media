@@ -1,7 +1,7 @@
 // import from next
 // import Image from "next/image";
 // import teamData
-import { teamData } from "../lib/data.js";
+import { teamData } from "../lib/team.js";
 // import components
 import TeamMemberCard from "./teamMemberCard";
 

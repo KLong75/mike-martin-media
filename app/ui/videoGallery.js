@@ -1,7 +1,10 @@
 // import components
 import ClientVideoFrame from "../ui/clientVideoFrame";
+import PhotographyGallery from "./photographyGallery";
+import PhotoGallery from "./photoGallery";
 // import data
 import { videoData } from "../lib/videoData";
+import { workSampleData } from "../lib/work-samples";
 // import icons
 import { IoCloseCircleOutline } from "react-icons/io5";
 
@@ -11,7 +14,7 @@ export default function VideoGallery({
   numberOfVideos,
   clearSelectedCategories,
 }) {
-  const filteredVideos = videoData.filter((video) => {
+  const filteredVideos = workSampleData.filter((video) => {
     // Check if "All" is selected
     if (selectedCategories.includes("All")) {
       return true;
@@ -47,8 +50,38 @@ export default function VideoGallery({
           } gap-0`}>
           {filteredVideos
             .slice(0, numberOfVideos) // Limit the number of videos displayed
-            .map((video) => (
-              <div key={video.id} className="text-white w-full h-auto">
+            .map((video, index) => (
+              <div key={index} className="text-white w-full h-auto">
+                {video.category.includes("Photography") ? (
+                  <PhotoGallery
+                    src={video.image_src}
+                    client={video.client}
+                    title={video.title}
+                    category={video.category}
+                    image_src={video.image_src}
+                    width={1920}
+                    height={1080}
+                  />
+                ) : (
+                  <ClientVideoFrame
+                    src={video.src}
+                    client={video.client}
+                    title={video.title}
+                    category={video.category}
+                    image_src={video.image_src}
+                  />
+                )}
+              </div>
+            ))}
+        </div>
+      )}
+    </div>
+  );
+}
+          {/* {filteredVideos
+            .slice(0, numberOfVideos) // Limit the number of videos displayed
+            .map((video, index) => (
+              <div key={index} className="text-white w-full h-auto">
                 <ClientVideoFrame
                   src={video.src}
                   client={video.client}
@@ -62,4 +95,4 @@ export default function VideoGallery({
       )}
     </div>
   );
-}
+} */}
