@@ -73,7 +73,7 @@ export default function Page() {
             We are a team of creatives who found our niche in producing meaningful, high-quality video content. We understand that your story is unique and feel it should be told in a way that resonates with your audience. From concept to the final product, we are dedicated to crafting videos that are authentic, impactful and aligned with your goals.
             </p>
             <p className="md:text-lg xl:text-xl text-balance my-4 lg:my-6">
-            While we do love to have fun, we also take our work very seriously—because we know that when it’s done right, video can move people, inspire action and make a difference.
+            While we do love to have fun, we also take our work very seriously—because we know that when it&apos;s done right, video can move people, inspire action and make a difference.
             </p>
       
           </div>
@@ -107,10 +107,10 @@ export default function Page() {
             </div>
             <div className="mt-6">
               <p className="lg:text-xl xl:text-balance">
-                We've built lasting relationships with clients who share our
-                values, and we've helped them achieve success while also making
-                the world a little better along the way. We're proud of where we
-                started, and even more excited for where we're going.
+                We&apos;ve built lasting relationships with clients who share our
+                values, and we&apos;ve helped them achieve success while also making
+                the world a little better along the way. We&apos;re proud of where we
+                started, and even more excited for where we&apos;re going.
               </p>
             </div>
           </div>

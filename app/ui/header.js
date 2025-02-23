@@ -17,7 +17,6 @@ export default function Header() {
             priority
             src={whiteMmmLogo}
             alt="Mike Martin Media Logo"
-            aria-hidden="Mike Martin Media Logo"
           />
         </Link>
       </div>
