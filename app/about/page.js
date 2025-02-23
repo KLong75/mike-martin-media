@@ -1,23 +1,15 @@
 // import from next
 import Link from "next/link";
 // import data
-import { weTextBlockData } from "../lib/data";
 // import components
 import Image from "../ui/image";
-import WeTextBlock from "../ui/weTextBlock";
 import TeamGallery from "../ui/teamGallery";
-import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
-import InstagramWidget from "../ui/instagramWidget";
-import BannerImage from "../ui/bannerImage";
-import ContactUsButton from "../ui/contactUsButton";
 import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
 import MMMLineLogoHeading from "../ui/mmmLineLogoHeading";
 import MMMTeamPhotoWithLogo from "../ui/mmmTeamPhotoWithLogo";
 // iport images
-import mikeInVanWithCamera from "../../public/images/about-page/mike-in-van-with-camera.jpg";
 import mikeVan from "../../public/images/about-page/mike-van.png";
 // import text
-import { aboutPageText } from "../lib/siteText";
 import PageHeadingBanner from "../ui/pageHeadingBanner";
 
 export const metadata = {
@@ -64,7 +56,6 @@ export default function Page() {
           <div className="order-2 xl:order-1 relative flex justify-center items-center">
             <MMMTeamPhotoWithLogo />
           </div>
-
           <div className="flex flex-col justify-left order-1 xl:order-2 max-w-800">
             <h3 className="font-semibold text-2xl lg:text-3xl xl:text-4xl">
               Who We Are
@@ -75,7 +66,6 @@ export default function Page() {
             <p className="md:text-lg xl:text-xl text-balance my-4 lg:my-6">
             While we do love to have fun, we also take our work very seriously—because we know that when it&apos;s done right, video can move people, inspire action and make a difference.
             </p>
-      
           </div>
         </div>
       </section>
