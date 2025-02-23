@@ -1,6 +1,6 @@
 export default function PageHeadingBanner({ title, heading, text }) {
   return (
-    <div className="bg-black text-white flex justify-center">
+    <div className="bg-black text-white flex justify-center py-2">
       <div className="bg-black text-white w-full h-auto flex grid grid-cols-1 md:grid-cols-2 max-w-1000 my-5">
         <div className="flex flex-col justify-center  px-12 lg:ml-28 xl:ml-32 ">
           <h1 className="mb-2 text-xs sm:text-sm font-semibold">
