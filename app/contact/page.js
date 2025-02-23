@@ -5,7 +5,10 @@ import Image from "../ui/image";
 // import SocialMediaLinks from "../ui/socialMediaLinks";
 import InstagramWidget from "../ui/instagramWidget";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
+import PageHeadingBanner from "../ui/pageHeadingBanner";
 import GoogleMap from "../ui/googleMap";
+import BannerVideoWithFadeEffect from "../ui/bannerVideoWithFadeEffect";
+import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
 // import images
 import whiteMmmLogo from "../../public/branding/white-mmm-logo-294x95.png";
 import ActiveCampaignContactForm from "../ui/activeCampaignContactForm";
@@ -14,7 +17,7 @@ import NewsletterSignupButton from "../ui/newsletterSignupButton";
 export const metadata = {
   title: "Contact",
   description:
-    "Contact information for Mike Martin Media. Email. Phone. Address. Social Media. Contact Form. Google Map. Instagram Widget. Mike Martin Media. Video Production and Creative Services.",
+    "Contact Mike Martin Media. Contact us today to work on your project together tomorrow.",
   alternates: {
     canonical: "/contact",
   },
@@ -27,7 +30,7 @@ export default function Page() {
       <div className="z-10">
         <GoogleMap />
       </div>
-      <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
+      {/* <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
         <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl font-bold mr-2 lg:mr-3">
           CONTACT{" "}
         </h1>
@@ -37,7 +40,21 @@ export default function Page() {
             alt="MMM"
           />
         </div>
+      </div> */}
+
+      <div className="">
+        <PageHeadingBanner
+          title={"Mike Martin Media"} 
+          heading={"Contact Us Today to Work on Your Project Together Tomorrow"}
+          text={
+            "We are more than just a video production team. We are your partners. Let's work together to bring your ideas to life and turn them into something that makes a difference."
+          }
+        />
       </div>
+
+      {/* <div className="flex justify-center items-center">
+        <span>Contact Us</span>
+      </div>  */}
 
       {/* <div className="md:text-xl flex justify-center items-center -mt-20 md:mb-8 p-12">
         <ContactInfo />

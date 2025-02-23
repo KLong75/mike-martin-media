@@ -46,7 +46,7 @@ export default function Page() {
           <VideoGallery
             selectedCategories={["Animation"]}
             excludedCategory={[]}
-            numberOfVideos={3}
+            numberOfVideos={4}
           />
         </div>
       </div>

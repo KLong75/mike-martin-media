@@ -13,6 +13,7 @@ import BannerVideoWithFadeNoLogo from "./ui/bannerVideoWithFadeNoLogo";
 import BannerImage from "./ui/bannerImage";
 import MMMLineLogoHeading from "./ui/mmmLineLogoHeading";
 import TestimonialDisplay from "./ui/testimonialDisplay";
+import MMMTeamPhotoWithLogo from "./ui/mmmTeamPhotoWithLogo";
 // import Images
 import outdoorCorporateVideoShoot from "../public/images/home-page/outdoor-corporate-video-shoot.png";
 //import data
@@ -36,7 +37,8 @@ export default function Home() {
           id="home-page-about-section"
           className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-12 xl:gap-16 max-w-800 flex justify-center items-center">
           <div className="order-2 xl:order-1 relative flex justify-center items-center">
-            <div className="relative w-full">
+            <MMMTeamPhotoWithLogo />
+            {/* <div className="relative w-full">
               <Image
                 priority
                 src="/images/home-page/mmm-team.png"
@@ -54,7 +56,7 @@ export default function Home() {
                 alt=""
                 className="absolute bottom-[2rem] sm:bottom-[3rem] md:bottom-[3rem] lg:bottom-15 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full"
               />
-            </div>
+            </div> */}
           </div>
 
           <div className="flex flex-col justify-left order-1 xl:order-2 max-w-[708px]">

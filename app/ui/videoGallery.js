@@ -1,3 +1,6 @@
+"use client";
+//import from next
+import { usePathname } from "next/navigation";
 // import components
 import ClientVideoFrame from "../ui/clientVideoFrame";
 // import PhotographyGallery from "./photographyGallery";
@@ -14,6 +17,7 @@ export default function VideoGallery({
   numberOfVideos,
   clearSelectedCategories,
 }) {
+  const pathname = usePathname();
   const filteredVideos = workSampleData.filter((video) => {
     // Check if "All" is selected
     if (selectedCategories.includes("All")) {
@@ -43,11 +47,16 @@ export default function VideoGallery({
       ) : (
         <div
           className={`w-full h-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 ${
-            selectedCategories.includes("Livestream") ||
-            selectedCategories.length === 0
+            // selectedCategories.includes("Livestream") ||
+            // selectedCategories.includes("Animation") 
+            pathname === "/capabilities/live-streaming" ||
+            pathname === "/capabilities/animation-motion-graphics" ||
+            filteredVideos.length === 2 ||
+            filteredVideos.length === 1
+            // selectedCategories.length === 0
               ? "lg:grid-cols-2"
               : "lg:grid-cols-3"
-          } gap-0`}>
+          }`}>
           {filteredVideos
             .slice(0, numberOfVideos) // Limit the number of videos displayed
             .map((video, index) => (
