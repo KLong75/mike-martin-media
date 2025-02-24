@@ -78,6 +78,7 @@ export default function Page() {
             <div className="pt-3 pb-6">
               <FormattedList
                 heading={videoEditingAcrossIndustries.heading}
+                heading_level={"h5"}
                 sub_heading={videoEditingAcrossIndustries.sub_heading}
                 list_items={videoEditingAcrossIndustries.list_items}
               />

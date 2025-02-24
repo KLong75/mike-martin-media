@@ -76,7 +76,7 @@ export default function Page() {
             <div className="lg:pt-6 ">
               <FormattedList
                 heading={whoBenefitsFromDrone.heading}
-                heading_level={"h6"}
+                heading_level={"h5"}
                 sub_heading={whoBenefitsFromDrone.sub_heading}
                 list_items={whoBenefitsFromDrone.list_items}
               />

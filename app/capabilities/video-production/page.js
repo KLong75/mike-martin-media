@@ -72,6 +72,7 @@ export default function Page() {
             <div className="pt-6 pb-3">
               <FormattedList
                 heading={videoProductionCapabilities.heading}
+                heading_level={"h5"}
                 sub_heading={videoProductionCapabilities.sub_heading}
                 list_items={videoProductionCapabilities.list_items}
               />
@@ -79,6 +80,7 @@ export default function Page() {
             <div className="pt-3 pb-6">
               <FormattedList
                 heading={videoProductionForEveryIndustry.heading}
+                heading_level={"h5"}
                 sub_heading={videoProductionForEveryIndustry.sub_heading}
                 list_items={videoProductionForEveryIndustry.list_items}
               />

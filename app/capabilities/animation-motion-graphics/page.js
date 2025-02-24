@@ -68,6 +68,7 @@ export default function Page() {
             <div className="pt-6 pb-3">
               <FormattedList
                 heading={animationCapabilities.heading}
+                heading_level={"h5"}
                 sub_heading={animationCapabilities.sub_heading}
                 list_items={animationCapabilities.list_items}
               />
@@ -75,6 +76,7 @@ export default function Page() {
             <div className="pt-3 pb-6">
               <FormattedList
                 heading={whoBenefitsFromAnimation.heading}
+                heading_level={"h6"}
                 sub_heading={whoBenefitsFromAnimation.sub_heading}
                 list_items={whoBenefitsFromAnimation.list_items}
               />

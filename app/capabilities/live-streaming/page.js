@@ -71,6 +71,7 @@ export default function Page() {
             <div className="pt-6 pb-3">
               <FormattedList
                 heading={livestreamingCapabilities.heading}
+                heading_level={"h5"}
                 sub_heading={livestreamingCapabilities.sub_heading}
                 list_items={livestreamingCapabilities.list_items}
               />
@@ -78,6 +79,7 @@ export default function Page() {
             <div className="pt-3 pb-6">
               <FormattedList
                 heading={whoBenefitsFromLivestreaming.heading}
+                heading_level={"h5"}
                 sub_heading={whoBenefitsFromLivestreaming.sub_heading}
                 list_items={whoBenefitsFromLivestreaming.list_items}
               />

@@ -68,6 +68,7 @@ export default function Page() {
             <div className="pt-6 pb-3">
               <FormattedList
                 heading={photographyCapabilities.heading}
+                heading_level={"h5"}
                 sub_heading={photographyCapabilities.sub_heading}
                 list_items={photographyCapabilities.list_items}
               />
@@ -75,6 +76,7 @@ export default function Page() {
             <div className="pt-3 pb-6">
               <FormattedList
                 heading={whoBenefitsFromPhotography.heading}
+                heading_level={"h5"}
                 sub_heading={whoBenefitsFromPhotography.sub_heading}
                 list_items={whoBenefitsFromPhotography.list_items}
               />
