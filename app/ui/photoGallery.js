@@ -65,7 +65,7 @@ export default function PhotoGallery({
         />
         {/* <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-2000 ease-in-out"></div> */}
         {currentPath === "/capabilities/photography" ? (
-          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-opacity duration-2000 ease-in-out"></div>
+          <div className="absolute inset-0 bg-black opacity-45 md:opacity-0 group-hover:opacity-75 transition-opacity duration-2000 ease-in-out"></div>
         ) : (
           <div className="absolute inset-0 bg-[#484848] opacity-45 group-hover:opacity-75 group-hover:bg-black transition-bg duration-2000 ease-in-out"></div>
         )}
@@ -124,19 +124,19 @@ export default function PhotoGallery({
                   navigation={{ clickable: true }}>
                   {gallery.images.map((image, index) => (
                     <SwiperSlide key={index}>
-                      <div className="ml-4 mr-4">
-                        <div className="flex justify-center items-center">
+                      <div className="">
+                        <div className="flex justify-center items-center max-h-[80vh]">
                           <div
                             className={
                               client === "Prasino"
                                 ? "grid grid-cols-1 w-full"
-                                : "grid grid-cols-1 max-w-2xl"
+                                : "grid grid-cols-1 max-w-lg"
                             }>
                             <Image
                               className={
                                 client === "Prasino"
-                                  ? "md:p-10 mb-12 md:mb-4"
-                                  : "p-4 mb-12"
+                                  ? "p-2 md:p-12 mb-12 md:mb-4"
+                                  : "p-2 mb-24"
                               }
                               src={image.src}
                               alt={image.alt || "Gallery image"}

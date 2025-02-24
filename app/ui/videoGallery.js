@@ -87,21 +87,3 @@ export default function VideoGallery({
     </div>
   );
 }
-          {/* {filteredVideos
-            .slice(0, numberOfVideos) // Limit the number of videos displayed
-            .map((video, index) => (
-              <div key={index} className="text-white w-full h-auto">
-                <ClientVideoFrame
-                  src={video.src}
-                  client={video.client}
-                  title={video.title}
-                  category={video.category}
-                  image_src={video.image_src}
-                />
-              </div>
-            ))}
-        </div>
-      )}
-    </div>
-  );
-} */}

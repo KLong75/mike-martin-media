@@ -151,3 +151,33 @@ export const photographyCoverImages = [
     category: ["Photography", "Corporate"]
   },
 ];
+
+export const mobilePhotographyCoverImages = [
+  {
+    client: "Catholic Charities of St. Louis",
+    src: "/images/work-gallery-cover-images/photography/catholic-charities-gallery-cover.png",
+    width: 1920,
+    height: 1080,
+    href: "",
+    alt: "Photo gallery for Catholic Charities of St. Louis",
+    category: ["Photography", "Nonprofit"]
+  },
+  {
+    client: "Prasino",
+    src: "/images/work-gallery-cover-images/photography/prasino-gallery-cover.png",
+    width: 1920,
+    height: 61080,
+    href: "",
+    alt: "Photo gallery for Prasino",
+    category: ["Photography", "Corporate"]
+  },
+  {
+    client: "Club Fitness",
+    src: "/images/work-gallery-cover-images/photography/club-fitness-gallery-cover.png",
+    width: 1920,
+    height: 1080,
+    href: "",
+    alt: "Photo gallery for Club Fitness",
+    category: ["Photography", "Corporate"]
+  },
+];
