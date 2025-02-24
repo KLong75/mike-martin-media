@@ -1,5 +1,7 @@
 "use client";
-//import from next
+// import from react
+import { useEffect } from "react";
+// import from next
 // import { usePathname } from "next/navigation";
 // import icons
 // import { MdAnimation } from "react-icons/md";
@@ -88,21 +90,21 @@ export default function VideoCategories({
 
   return (
     <section className="bg-black text-white py-6">
-      {/* <h2 className="text-lg font-bold text-center">Filter by Category:</h2> */}
-      {/* <ul className="flex flex-col items-center">
+      <h3 className="font-bold text-center">Filter by Category:</h3>
+      <ul className="flex flex-col items-center">
         <li
           key={categoryOptions[0].name}
           onClick={() => handleCategorySelected(categoryOptions[0].name)}
-          className={`text-sm flex flex-col items-center justify-center relative transition-transform cursor-pointer m-3 ${
+          className={`text-sm cursor-pointer px-4 rounded-full my-2 mx-4 ${
             selectedCategories.includes(categoryOptions[0].name)
-              ? "font-bold scale:105"
-              : "text-black hover:transform hover:scale-105 hover:rotate-3 hover:font-medium"
+              ? "bg-white text-black font-bold"
+                : "font-semibold text-white hover:bg-white hover:text-black"
           }`}>
           <span>{categoryOptions[0].icon}</span>
           <span className="mt-2 -mb-4">{categoryOptions[0].name}</span>
-        </li> */}
-      <ul className="flex flex-wrap justify-center px-6 lg:py-4">
-        {categoryOptions.map((category) => (
+        </li>
+      <div className="flex flex-wrap justify-center px-6 lg:py-4">
+        {categoryOptions.slice(1).map((category) => (
           <li
             key={category.name}
             onClick={() => handleCategorySelected(category.name)}
@@ -115,8 +117,8 @@ export default function VideoCategories({
             <span className="mt-2">{category.name}</span>
           </li>
         ))}
+      </div>
       </ul>
-      {/* </ul> */}
       {/* <div className="flex justify-center items-center bg-black text-white text-xl md:text-2xl grid grid-cols-1 w-full h-28 md:h-32 text-center -mt-4">
         <h3 className="font-bold mt-2">Currently Viewing:</h3>
         <div className="flex justify-center items-center space-x-4">
