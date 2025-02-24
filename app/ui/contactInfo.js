@@ -12,7 +12,7 @@ export default function ContactInfo() {
       <div className="flex justify-center md:justify-start w-full">
         <Image
           src="/branding/mmm-logo-white-298x96.png"
-          alt="MMM logo"
+          alt="Mike Martin Media Logo"
           width={179} // 75% of 298
           height={58} // 75% of 96
           className="mb-4 md:w-[298px] md:h-[96px]"

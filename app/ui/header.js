@@ -16,7 +16,7 @@ export default function Header() {
             className="min-w-36"
             priority
             src={whiteMmmLogo}
-            alt="Mike Martin Media Logo"
+            alt="Mike Martin Media"
           />
         </Link>
       </div>

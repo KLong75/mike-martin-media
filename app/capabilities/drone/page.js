@@ -69,12 +69,14 @@ export default function Page() {
             <div className="lg:m-6 mb-12 lg:mb-12">
               <FormattedTextBlock
                 heading={faaCertified.heading}
+                heading_level={"h5"}
                 text={faaCertified.text}
               />
             </div>
             <div className="lg:pt-6 ">
               <FormattedList
                 heading={whoBenefitsFromDrone.heading}
+                heading_level={"h6"}
                 sub_heading={whoBenefitsFromDrone.sub_heading}
                 list_items={whoBenefitsFromDrone.list_items}
               />

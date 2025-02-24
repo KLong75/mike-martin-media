@@ -27,7 +27,7 @@ export default function Page() {
       /> */}
       <BannerImage
         src="/images/industries/corporate.png"
-        alt="Corporate Video Production"
+        alt="Mike Martin Media | Corporate Video Production"
         title="Corporate Video Production"
         width={1920}
         height={1080}
