@@ -82,9 +82,9 @@ export default function VideoCategories({
     });
   };
 
-  const selectedCategoryObjects = categoryOptions.filter((category) =>
-    selectedCategories.includes(category.name)
-  );
+  // const selectedCategoryObjects = categoryOptions.filter((category) =>
+  //   selectedCategories.includes(category.name)
+  // );
 
   return (
     <section className="bg-black text-white py-6">
@@ -101,17 +101,17 @@ export default function VideoCategories({
           <span>{categoryOptions[0].icon}</span>
           <span className="mt-2 -mb-4">{categoryOptions[0].name}</span>
         </li> */}
-      <ul className="flex flex-wrap justify-center p-6">
+      <ul className="flex flex-wrap justify-center px-6 lg:py-4">
         {categoryOptions.map((category) => (
           <li
             key={category.name}
             onClick={() => handleCategorySelected(category.name)}
-            className={`text-sm cursor-pointer px-4 rounded-full mx-4 ${
+            className={`text-sm cursor-pointer px-4 rounded-full my-2 mx-4 ${
               selectedCategories.includes(category.name)
                 ? "bg-white text-black font-bold"
                 : "font-semibold text-white hover:bg-white hover:text-black"
             }`}>
-            <span>{category.icon}</span>
+            {/* <span>{category.icon}</span> */}
             <span className="mt-2">{category.name}</span>
           </li>
         ))}
