@@ -45,19 +45,21 @@ export default function TestimonialDisplay() {
             </div>
           </div>
           <div className="absolute bottom-[4rem] lg:bottom-20 right-0 lg:right-10 flex space-x-2 -mb-10 p-2">
-            <button
-            type="button"
-            
+          <button
+              type="button"
+              aria-label="previous testimonial"
               className="rounded-full border-2 p-1 cursor-pointer"
               onClick={handlePrevClick}>
               <FaArrowLeft size={14} alt="previous testimonial"/>
+              <span className="sr-only">previous testimonial</span>
             </button>
             <button
-            input="button"
-            
+              input="button"
+              aria-label="next testimonial"
               className="rounded-full border-2 p-1 cursor-pointer"
               onClick={handleNextClick}>
               <FaArrowRight size={14} alt="next testimonial"/>
+              <span className="sr-only">next testimonial</span>
             </button>
           </div>
         </div>
