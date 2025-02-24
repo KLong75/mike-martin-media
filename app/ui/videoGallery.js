@@ -66,6 +66,7 @@ export default function VideoGallery({
                     src={video.image_src}
                     client={video.client}
                     title={video.title}
+                    alt={video.title}
                     category={video.category}
                     image_src={video.image_src}
                     width={1920}

@@ -46,14 +46,18 @@ export default function TestimonialDisplay() {
           </div>
           <div className="absolute bottom-[4rem] lg:bottom-20 right-0 lg:right-10 flex space-x-2 -mb-10 p-2">
             <button
+            type="button"
+            
               className="rounded-full border-2 p-1 cursor-pointer"
               onClick={handlePrevClick}>
-              <FaArrowLeft size={14} />
+              <FaArrowLeft size={14} alt="previous testimonial"/>
             </button>
             <button
+            input="button"
+            
               className="rounded-full border-2 p-1 cursor-pointer"
               onClick={handleNextClick}>
-              <FaArrowRight size={14} />
+              <FaArrowRight size={14} alt="next testimonial"/>
             </button>
           </div>
         </div>

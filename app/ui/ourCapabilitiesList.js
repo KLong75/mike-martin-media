@@ -3,10 +3,10 @@ import { capabilities } from "../lib/capabilities/capabilities";
 export default function OurCapabilitiesList() {
   return (
     <div className="text-white">
-      <h6 className="text-xl mb-10 relative font-semibold">
+      <span className="text-xl mb-10 relative font-semibold">
         Our Capabilities
         <span className="absolute bottom-[-1rem] left-0 w-[calc(100%+4rem)] xl:w-[calc(100%+4rem)] border-b border-white border-2"></span>
-      </h6>
+      </span>
 
       <ul className="relative space-y-4 lg:space-y-6 min-w-[16rem] mt-6">
         {capabilities.map((capability, index) => (
