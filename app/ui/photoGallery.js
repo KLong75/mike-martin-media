@@ -125,7 +125,7 @@ export default function PhotoGallery({
                   {gallery.images.map((image, index) => (
                     <SwiperSlide key={index}>
                       <div className="">
-                        <div className="flex justify-center items-center max-h-[80vh]">
+                        <div className="flex justify-center items-center">
                           <div
                             className={
                               client === "Prasino"
@@ -136,7 +136,7 @@ export default function PhotoGallery({
                               className={
                                 client === "Prasino"
                                   ? "p-2 md:p-12 mb-12 md:mb-4"
-                                  : "p-2 mb-24"
+                                  : "p-2 md:p-20 3xl:p-0 mb-12 md:mb-4 3xl:mb-24"
                               }
                               src={image.src}
                               alt={image.alt || "Gallery image"}
