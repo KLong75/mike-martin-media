@@ -21,7 +21,7 @@ export default function MMMLineLogoHeading({ headline, heading_level }) {
         <div className="xl:-mt-12 w-full">
           <Image
             src="/branding/line-logo-black.png"
-            alt="Line Logo Black"
+            alt=""
             width={1440}
             height={65}
             className="mt-2 lg:mb-6 lg:px-"

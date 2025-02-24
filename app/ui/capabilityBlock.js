@@ -21,8 +21,8 @@ export default function CapabilityBlock({
             className=""
           />
         </div>
-        <p className="font-bold lg:text-2xl">{label}</p>
-        <p className="text-xs lg:text-sm py-2">{description}</p>
+        <h3 className="font-bold lg:text-2xl">{label}</h3>
+        <h4 className="text-xs lg:text-sm py-2">{description}</h4>
       </Link>
     </div>
   );
