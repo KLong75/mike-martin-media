@@ -170,6 +170,16 @@ html {
   transition: opacity 0.6s ease-in-out;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
+.justify-text::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
 /* submit button animation */
 .svg-animate {
   animation: takeoff 1s linear forwards;
@@ -235,4 +245,17 @@ a.cky-banner-element {
   box-sizing: border-box;
   border-radius: 25px;
   cursor: pointer;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s forwards;
 }
