@@ -45,7 +45,7 @@ export default function TestimonialDisplay() {
             </div>
           </div>
           <div className="absolute bottom-[4rem] lg:bottom-20 right-0 lg:right-10 flex space-x-2 -mb-10 p-2">
-            <button
+          <button
               type="button"
               aria-label="previous testimonial"
               className="rounded-full border-2 p-1 cursor-pointer"
