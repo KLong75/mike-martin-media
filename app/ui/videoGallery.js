@@ -42,7 +42,7 @@ export default function VideoGallery({
           <button className="mt-4" onClick={clearSelectedCategories}>
             <IoCloseCircleOutline size={24} />
           </button>
-          <span>clear selections</span>
+          <span>clear filters</span>
         </div>
       ) : (
         <div
