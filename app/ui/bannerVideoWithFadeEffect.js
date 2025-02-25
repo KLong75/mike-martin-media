@@ -68,14 +68,14 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
           {pathname === "/" && (
           <div>
             <div
-              className={`absolute bottom-[-1rem] xs:bottom-[-1.5rem] sm:bottom-[-2.25rem] md:bottom-[-2.75rem] lg:bottom-[-3.5rem] xl:bottom-[-4.75rem] 2xl:bottom-[-5.5rem] 3xl:bottom-[-6rem] 4xl:bottom-[-8rem] left-0 right-0 text-center text-[12.5vw] text-white tracking-tight font-bold w-full whitespace-nowrap justify-text transition-opacity duration-4000 ease-in-out ${
+              className={`absolute bottom-[-1rem] xs:bottom-[-1.5rem] sm:bottom-[-2.25rem] md:bottom-[-2.75rem] lg:bottom-[-3rem] xl:bottom-[-4rem] 2xl:bottom-[-4.75rem] 3xl:bottom-[-6rem] 4xl:bottom-[-8rem] left-0 right-0 text-center text-[12.5vw] text-white tracking-tight font-bold w-full whitespace-nowrap justify-text transition-opacity duration-4000 ease-in-out ${
                 showHeading ? "opacity-100" : "opacity-0"
               }`}>
               {/* <span className="inline-block w-full">IDEAS IN MOTION</span> */}
               {letters.map((item, index) => (
                   <span
                     key={index}
-                    className="opacity-0 animate-fade-in"
+                    className="fade-heading opacity-0 animate-fade-in"
                     style={{ animationDelay: `${item.delay}ms` }}
                   >
                     {item.letter}
