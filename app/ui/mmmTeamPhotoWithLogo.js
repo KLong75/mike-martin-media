@@ -10,7 +10,7 @@ export default function MMMTeamPhotoWithLogo() {
         width={708}
         height={36}
         alt="The MMM Team"
-        aria-label="Your Ideas Made"
+        aria-label="The MMM Team"
         className="w-full h-auto"
       />
       <Image
