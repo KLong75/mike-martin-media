@@ -48,7 +48,7 @@ html {
   padding-top: 56.25%;
 }
 
-/* .video-frame-client-span {
+.video-frame-client-span {
   text-shadow: 2px 2px 0 black;
   bottom: 2.25rem;
   left: 1rem;
@@ -57,7 +57,7 @@ html {
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-} */
+}
 
 .video-frame-category-span {
   text-shadow: 2px 2px 0 black;
