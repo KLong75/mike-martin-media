@@ -1,8 +1,8 @@
 //import components
-import Image from "./image";
+// import Image from "./image";
 import GridPic from "./gridPic";
 // import from next
-import Link from "next/link";
+// import Link from "next/link";
 // import data
 import { gridPics } from "../lib/gridPics";
 

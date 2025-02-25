@@ -2,25 +2,25 @@
 // import from next
 import Link from "next/link";
 // import components
-import Image from "./ui/image";
-import BannerVideo from "./ui/bannerVideo";
-import MmmSiteButton from "./ui/mmmSiteButton";
-import MmmSiteButtonTextOnly from "./ui/mmmSiteButtonTextOnly";
-import MMMLineLogoBlack from "./ui/mmmLineLogoBlack";
-import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
+// import Image from "./ui/image";
+// import BannerVideo from "./ui/bannerVideo";
+// import MmmSiteButton from "./ui/mmmSiteButton";
+// import MmmSiteButtonTextOnly from "./ui/mmmSiteButtonTextOnly";
+// import MMMLineLogoBlack from "./ui/mmmLineLogoBlack";
+// import MmmSiteButtonLogoFirst from "./ui/mmmSiteButtonLogoFirst";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerVideoWithFadeNoLogo from "./ui/bannerVideoWithFadeNoLogo";
-import BannerImage from "./ui/bannerImage";
+// import BannerImage from "./ui/bannerImage";
 import MMMLineLogoHeading from "./ui/mmmLineLogoHeading";
 import TestimonialDisplay from "./ui/testimonialDisplay";
 import MMMTeamPhotoWithLogo from "./ui/mmmTeamPhotoWithLogo";
 // import Images
-import outdoorCorporateVideoShoot from "../public/images/home-page/outdoor-corporate-video-shoot.png";
+// import outdoorCorporateVideoShoot from "../public/images/home-page/outdoor-corporate-video-shoot.png";
 //import data
 // import { testimonials } from "./lib/testimonials";
 // import text
-import { homePageText } from "./lib/siteText";
-import CapabilityBlock from "./ui/capabilityBlock";
+// import { homePageText } from "./lib/siteText";
+// import CapabilityBlock from "./ui/capabilityBlock";
 import CapabilityBlockContainer from "./ui/capabilityBlockContainer";
 import FourPicGrid from "./ui/fourPicGrid";
 import BlogPostGallery from "./ui/blogPostGallery";
@@ -31,7 +31,7 @@ export default function Home() {
       <BannerVideoWithFadeEffect
         src="https://player.vimeo.com/video/938224346?h=85055436bd&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         //  src="https://player.vimeo.com/video/1059137126?h=580e267bea&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-        title="MMM_Home_Page_Banner_Video"
+        title="Mike Martin Media - Ideas in Motion"
       />
       <section className="flex justify-center items-center p-6 md:p-12 lg:p-28 xl:p-42">
         <div
