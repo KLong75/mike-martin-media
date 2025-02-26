@@ -23,8 +23,8 @@ const dm_sans = DM_Sans({
 // define metadata for the site
 export const metadata = {
   title: {
-    template: "%s | Mike Martin Media | Video Production and Creative Services",
-    default: "Mike Martin Media | Video Production and Creative Services",
+    template: "%s | Mike Martin Media: St. Louis Video Production Company",
+    default: "Mike Martin Media: St. Louis Video Production Company",
   },
   description:
     "Mike Martin Media specializes in video production and creative services for corporations, nonprofits, education, and medical institutions. Our mission is to help our clients promote their causes, inform their clients, and inspire with their stories. We deliver dynamic multi-media solutions. Our team brings decades of combined experience from the broadcast and production industries to create high quality content for your organization.",
