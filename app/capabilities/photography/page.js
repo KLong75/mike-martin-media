@@ -7,7 +7,7 @@ import OurProcess from "@/app/ui/ourProcess";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
 import FormattedList from "@/app/ui/formattedList.js";
-import PhotographyGallery from "@/app/ui/photographyGallery";
+// import PhotographyGallery from "@/app/ui/photographyGallery";
 // import page data
 import {
   photographyPageHeadingBannerText,
@@ -18,7 +18,7 @@ import {
   examplePhotographyImageSrc,
 } from "../../lib/capabilities/photography.js";
 // import images
-import { photographyCoverImages } from "../../lib/capabilities/photography.js";
+// import { photographyCoverImages } from "../../lib/capabilities/photography.js";
 import TriPicBanner from "@/app/ui/triPicBanner.js";
 
 export const metadata = {

@@ -9,7 +9,7 @@ import { blogPosts } from "../lib/blogPostData";
 import PageHeadingBanner from "../ui/pageHeadingBanner";
 
 export const metadata = {
-  title: "Blog",
+  title: "Blog | Mike Martin Media",
   description:
     "Go Beyond the lens and check out our latest adventures in the MMM Blog as we film and travel across town across the country, and around the world. Try to keep up, we move fast!",
   alternates: {

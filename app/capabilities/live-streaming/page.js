@@ -19,7 +19,7 @@ import {
 
 
 export const metadata = {
-  title: "Livestream Video Company | Mike Martin Media",
+  title: "Live Stream Video Company | Mike Martin Media",
   description:
     "Professional livestream video company specializing in corporate events, webinars & virtual conferences. Expert production team ensures flawless streaming worldwide. Get started today.",
   alternates: {
