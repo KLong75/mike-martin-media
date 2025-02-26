@@ -14,7 +14,7 @@ export const metadata = {
   description:
     "Trusted healthcare & medical videography specialists creating patient education, staff training & facility showcase videos. HIPAA-compliant team serving leading hospitals. Schedule a consultation.",
   alternates: {
-    canonical: "/industries/medical/",
+    canonical: "/industries/healthcare/",
   },
 };
 
