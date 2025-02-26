@@ -7,12 +7,12 @@ import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BannerImage from "../ui/bannerImage";
 import JoinTheTeam from "../ui/joinTheTeam";
 // import images
-import blackMmmLogo from "../../public/branding/black-mmm-logo-1642x560.png";
+// import blackMmmLogo from "../../public/branding/black-mmm-logo-1642x560.png";
 import BannerVideoWithFadeEffect from "../ui/bannerVideoWithFadeEffect";
 
 export const metadata = {
-  title: "Careers",
-  description: "Work at MMM! Apply on ZipRecruiter. We are hiring!",
+  title: "Video Production Jobs | Mike Martin Media",
+  description: "At MMM, we believe in creating more than just great video content. We're committed to making a positive impact through everything we do. If you're someone who shares our values of honesty, accountability, and community, we'd love to hear from you.",
   alternates: {
     canonical: "/careers",
   },

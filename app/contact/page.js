@@ -3,19 +3,19 @@ import Image from "../ui/image";
 // import ContactForm from "../ui/contactForm";
 // import ContactInfo from "../ui/contactInfo";
 // import SocialMediaLinks from "../ui/socialMediaLinks";
-import InstagramWidget from "../ui/instagramWidget";
-import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
+// import InstagramWidget from "../ui/instagramWidget";
+// import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import PageHeadingBanner from "../ui/pageHeadingBanner";
 import GoogleMap from "../ui/googleMap";
-import BannerVideoWithFadeEffect from "../ui/bannerVideoWithFadeEffect";
-import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
+// import BannerVideoWithFadeEffect from "../ui/bannerVideoWithFadeEffect";
+// import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
 // import images
-import whiteMmmLogo from "../../public/branding/white-mmm-logo-294x95.png";
+// import whiteMmmLogo from "../../public/branding/white-mmm-logo-294x95.png";
 import ActiveCampaignContactForm from "../ui/activeCampaignContactForm";
-import NewsletterSignupButton from "../ui/newsletterSignupButton";
+// import NewsletterSignupButton from "../ui/newsletterSignupButton";
 
 export const metadata = {
-  title: "Contact",
+  title: "Contact | Mike Martin Media",
   description:
     "Contact Mike Martin Media. Contact us today to work on your project together tomorrow.",
   alternates: {

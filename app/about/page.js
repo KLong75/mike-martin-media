@@ -13,7 +13,7 @@ import mikeVan from "../../public/images/about-page/mike-van.png";
 import PageHeadingBanner from "../ui/pageHeadingBanner";
 
 export const metadata = {
-  title: "About",
+  title: "About Mike Martin Media",
   description:
     "For over 15 years, Mike Martin Media has combined the latest technology with the best in-house talent to create impactful videos for organizations all over the United States and the world. We partner with corporations, medical institutions, education institutions, and nonprofit organizations to bring their vision to life. Our expertise provides a seamless production experience that you probably didn't know could exist. We produce the quality work and client experience that you need along with a valuable partnership that will bring growth and success.",
   alternates: {
