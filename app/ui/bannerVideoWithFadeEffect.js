@@ -26,9 +26,6 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
     const showHeadingTimer = setTimeout(() => {
       setShowHeading(true);
     }, 0);
-    const hideHeadingTimer = setTimeout(() => {
-      setShowHeading(false);
-    }, 12000);
 
     // Split the text into individual letters and set the state
     const text = "IDEAS IN MOTION";
@@ -37,6 +34,10 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
       delay: index * 200, // Adjust the delay as needed
     }));
     setLetters(lettersArray);
+
+    const hideHeadingTimer = setTimeout(() => {
+      setShowHeading(false);
+    }, 8000);
 
     return () => {
       clearTimeout(hideLogoTimer);
@@ -71,7 +72,6 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
               className={`absolute bottom-[-1rem] xs:bottom-[-1.25rem] sm:bottom-[-2.1rem] md:bottom-[-2.5rem] lg:bottom-[-3rem] xl:bottom-[-4rem] 2xl:bottom-[-4.5rem] 3xl:bottom-[-5.75rem] 4xl:bottom-[-8rem] left-0 xl:left-[-.25rem] right-0 text-center text-[12.5vw] text-white tracking-tight font-bold w-full whitespace-nowrap  transition-opacity duration-4000 ease-in-out ${
                 showHeading ? "opacity-100" : "opacity-0"
               }`}>
-              {/* <span className="inline-block w-full">IDEAS IN MOTION</span> */}
               {letters.map((item, index) => (
                   <span
                     key={index}
@@ -84,26 +84,13 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
             </div>
           </div>
           )}
-
-
           {/* Logo */}
           <div
             className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 sm:w-100 md:w-144 lg:w-200  justify-center items-center absolute transition-opacity duration-8000 ease-in-out ${
               hideLogo ? "opacity-0" : "opacity-100"
             }`}>
             <Image priority src={whiteMmmLogo} alt="MMM logo" />
-            {/* <h1 className="text-center text-2xl hidden ">
-            MIKE MARTIN MEDIA | VIDEO PRODUCTION AND CREATIVE SERVICES
-          </h1> */}
           </div>
-          {/* <div
-          className={`left-1/2 bottom-0 transform -translate-x-1/2  absolute transition-opacity duration-8000 ease-in-out ${
-            hideLogo ? "opacity-0" : "opacity-100"
-          }`}>
-          <h1 className="-mb-2 text-center text-8xl text-white tracking-tight">
-            IDEAS IN MOTION
-          </h1>
-        </div> */}
         </div>
       </section>
     </>
