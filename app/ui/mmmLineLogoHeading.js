@@ -9,7 +9,7 @@ export default function MMMLineLogoHeading({ headline, heading_level }) {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="p-6 lg:p-0">
+      <div className="p-6 2xl:p-0">
         {createElement(
           HeadingTag,
           {
@@ -24,7 +24,7 @@ export default function MMMLineLogoHeading({ headline, heading_level }) {
             alt=""
             width={1440}
             height={65}
-            className="mt-2 lg:mb-6 lg:px-"
+            className="mt-2 lg:mb-6"
           />
         </div>
       </div>
