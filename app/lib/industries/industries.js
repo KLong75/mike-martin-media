@@ -9,7 +9,7 @@ export const industries = [
   },
   {
     label: "Healthcare",
-    href: "/industries/medical",
+    href: "/industries/healthcare",
   },
   {
     label: "Nonprofit",

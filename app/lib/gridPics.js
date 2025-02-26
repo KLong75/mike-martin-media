@@ -21,7 +21,7 @@ export const gridPics = [
     label: "Healthcare",
     alt: "Healthcare Video Production",
     src: "/images/home-page/grid-pics/grid-pic-healthcare.png",
-    href: "/industries/medical",
+    href: "/industries/healthcare",
     width: 864,
     height: 486,
     priority: false,
