@@ -2,7 +2,7 @@ export const gridPics = [
   {
     label: "Corporate",
     alt: "Corporate Video Production",
-    src: "/images/home-page/grid-pic-corporate.png",
+    src: "/images/home-page/grid-pics/grid-pic-corporate.png",
     href: "/industries/corporate",
     width: 864,
     height: 486,
@@ -11,7 +11,7 @@ export const gridPics = [
   {
     label: "Education",
     alt: "Education Video Production",
-    src: "/images/home-page/grid-pic-education.png",
+    src: "/images/home-page/grid-pics/grid-pic-education.png",
     href: "/industries/education",
     width: 864,
     height: 486,
@@ -20,7 +20,7 @@ export const gridPics = [
   {
     label: "Healthcare",
     alt: "Healthcare Video Production",
-    src: "/images/home-page/grid-pic-healthcare.png",
+    src: "/images/home-page/grid-pics/grid-pic-healthcare.png",
     href: "/industries/medical",
     width: 864,
     height: 486,
@@ -29,7 +29,7 @@ export const gridPics = [
   {
     label: "Nonprofit",
     alt: "Nonprofit Video Production",
-    src: "/images/home-page/grid-pic-nonprofit.png",
+    src: "/images/home-page/grid-pics/grid-pic-nonprofit.png",
     href: "/industries/nonprofit",
     width: 864,
     height: 486,
