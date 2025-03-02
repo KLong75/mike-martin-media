@@ -128,7 +128,7 @@ export default function Home() {
         <div className="">
           <MMMLineLogoHeading headline="Beyond the Lens" heading_level={"h2"} />
         </div>
-        <div className="">
+        <div className="px-2">
           <BlogPostGallery number_of_posts={3} />
         </div>
         {/* <BannerVideo

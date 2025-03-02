@@ -55,9 +55,9 @@ export default function BlogPost({
 
   return (
     <>
-      <div className="px-8 ">
+      <div className="px-8">
         <div>
-          <div className="w-full ">
+          <div className="w-full">
             <div className="flex justify-center w-full">
               <Image
                 className="shadow-xl mt-6"
@@ -69,13 +69,13 @@ export default function BlogPost({
               />
             </div>
           </div>
-          <div className="max-w-[460px] py-6">
+          <div className="max-w-[460px] pt-6">
             <p className="flex items-center">
               {formatDate(post_date)}
               <span className="border-t border-black w-6 mx-2"></span>
             </p>
-            <p className="font-bold text-xl text-wrap">{title}</p>
-            <p className="mb-6 text-balance text-left text-md mt-2">
+            <p className="font-bold text-2xl text-wrap my-1">{title}</p>
+            <p className="mb-6 text-left text-md mt-2 lg:mt-4">
               {shortenPostText(text[0], 200)}
               <br />
               <span
