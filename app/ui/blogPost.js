@@ -12,7 +12,12 @@ import { HiX } from "react-icons/hi";
 // import from utils
 import { formatDate } from "../lib/utils";
 // import from headlessui
-import { Dialog, DialogPanel, DialogBackdrop, DialogTitle } from "@headlessui/react";
+import {
+  Dialog,
+  DialogPanel,
+  DialogBackdrop,
+  DialogTitle,
+} from "@headlessui/react";
 
 export default function BlogPost({
   title,
@@ -50,32 +55,37 @@ export default function BlogPost({
 
   return (
     <>
-    <div className="flex flex-col items-center w-full h-auto mb-12 shadow-2xl relative">
-        <div className="text-center w-72 mt-3 -mb-4">
-          <p className="font-bold text-wrap">{title}</p>
-          <p className="text-sm">{formatDate(post_date)}</p>
-        </div>
-        <div id="image-div" className="w-72 h-72 -mb-2">
-          <Image
-            className="shadow-xl mt-6"
-            src={image_src}
-            width={image_width}
-            height={image_height}
-            alt={image_alt}
-            priority={priority}
-          />
-        </div>
-        <div className="text-center w-72 mb-12">
-          <p className="mb-6 text-balance text-left text-md mt-2">
-            {shortenPostText(text[0], 200)}
-            <br />
-            <span
-              className="inline-flex items-center font-bold hover:cursor-pointer hover:scale-105 transition-transform mt-1"
-              onClick={() => setBlogPostOpen(true)}
-              tabIndex={0}>
-              READ MORE <IoIosArrowRoundForward className="text-2xl" />
-            </span>
-          </p>
+      <div className="px-8 ">
+        <div>
+          <div className="w-full ">
+            <div className="flex justify-center w-full">
+              <Image
+                className="shadow-xl mt-6"
+                src={image_src}
+                width={image_width}
+                height={image_height}
+                alt={image_alt}
+                priority={priority}
+              />
+            </div>
+          </div>
+          <div className="max-w-[460px] py-6">
+            <p className="flex items-center">
+              {formatDate(post_date)}
+              <span className="border-t border-black w-6 mx-2"></span>
+            </p>
+            <p className="font-bold text-xl text-wrap">{title}</p>
+            <p className="mb-6 text-balance text-left text-md mt-2">
+              {shortenPostText(text[0], 200)}
+              <br />
+              <span
+                className="inline-flex items-center font-bold hover:cursor-pointer hover:scale-105 transition-transform mt-1"
+                onClick={() => setBlogPostOpen(true)}
+                tabIndex={0}>
+                READ MORE <IoIosArrowRoundForward className="text-2xl" />
+              </span>
+            </p>
+          </div>
         </div>
       </div>
       {/* Trigger and Preview Section */}

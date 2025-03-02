@@ -1,4 +1,5 @@
 // import components
+import BlogPostGallery from "../ui/blogPostGallery";
 import BlogPost from "../ui/blogPost";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BannerImage from "../ui/bannerImage";
@@ -27,11 +28,6 @@ export default function Page() {
           priority
         />
       </div>
-      {/* <div className="bg-black text-white flex justify-center items-center w-full h-20 md:h-24 lg:h-28">
-        <h1 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl mt-2">
-          BEYOND THE LENS
-        </h1>
-      </div> */}
       <div>
         <PageHeadingBanner
           title={"Blog"}
@@ -40,6 +36,9 @@ export default function Page() {
             "Venture beyond the lens and take a look behind the scenes. Read up on our latest adventures as we film across town, across the country, and around the world. Try to keep up, we move fast!"
           }
         />
+      </div>
+      <div className="my-6 xl:my-24">
+        <BlogPostGallery number_of_posts={30} />
       </div>
       {/* <div className="font-bold text-2xl xl:text-3xl 2xl:text-4xl text-center justify-center items-center p-4 text-balance mb-4">
         <h2>Venture beyond the lens and take a look behind the scenes.</h2>
@@ -52,7 +51,7 @@ export default function Page() {
           Try to keep up, we move fast!
         </p>
       </div> */}
-      <div className="-mt-2 md:mt-6 lg:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 p-6">
+      {/* <div className="-mt-2 md:mt-6 lg:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 p-6">
         {blogPosts.map((post, index) => (
           <BlogPost
             key={index}
@@ -73,7 +72,7 @@ export default function Page() {
             priority={index === 0} // Set priority for the first blog post
           />
         ))}
-      </div>
+      </div> */}
       {/* <div className="w-full">
         <MMMLineLogoBlack />
       </div> */}
