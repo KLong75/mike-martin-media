@@ -41,7 +41,7 @@ export default function Page() {
           }
         />
       </div>
-      <div className="font-bold text-2xl xl:text-3xl 2xl:text-4xl text-center justify-center items-center p-4 text-balance mb-4">
+      {/* <div className="font-bold text-2xl xl:text-3xl 2xl:text-4xl text-center justify-center items-center p-4 text-balance mb-4">
         <h2>Venture beyond the lens and take a look behind the scenes.</h2>
       </div>
       <div className="-mt-8  md:text-xl xl:text-2xl 3xl:text-3xl text-center justify-center items-center p-4 text-balance">
@@ -51,8 +51,8 @@ export default function Page() {
           <br />
           Try to keep up, we move fast!
         </p>
-      </div>
-      <div className="-mt-2 md:mt-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 p-6">
+      </div> */}
+      <div className="-mt-2 md:mt-6 lg:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 p-6">
         {blogPosts.map((post, index) => (
           <BlogPost
             key={index}
@@ -74,9 +74,9 @@ export default function Page() {
           />
         ))}
       </div>
-      <div className="w-full">
+      {/* <div className="w-full">
         <MMMLineLogoBlack />
-      </div>
+      </div> */}
     </main>
   );
 }
