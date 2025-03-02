@@ -50,8 +50,36 @@ export default function BlogPost({
 
   return (
     <>
+    <div className="flex flex-col items-center w-full h-auto mb-12 shadow-2xl relative">
+        <div className="text-center w-72 mt-3 -mb-4">
+          <p className="font-bold text-wrap">{title}</p>
+          <p className="text-sm">{formatDate(post_date)}</p>
+        </div>
+        <div id="image-div" className="w-72 h-72 -mb-2">
+          <Image
+            className="shadow-xl mt-6"
+            src={image_src}
+            width={image_width}
+            height={image_height}
+            alt={image_alt}
+            priority={priority}
+          />
+        </div>
+        <div className="text-center w-72 mb-12">
+          <p className="mb-6 text-balance text-left text-md mt-2">
+            {shortenPostText(text[0], 200)}
+            <br />
+            <span
+              className="inline-flex items-center font-bold hover:cursor-pointer hover:scale-105 transition-transform mt-1"
+              onClick={() => setBlogPostOpen(true)}
+              tabIndex={0}>
+              READ MORE <IoIosArrowRoundForward className="text-2xl" />
+            </span>
+          </p>
+        </div>
+      </div>
       {/* Trigger and Preview Section */}
-      <div className="flex flex-col items-center w-full h-auto mb-12 shadow-2xl relative">
+      {/* <div className="flex flex-col items-center w-full h-auto mb-12 shadow-2xl relative">
         <div className="text-center w-72 mt-3 -mb-4">
           <h3 className="font-bold text-wrap">{title}</h3>
           <h4 className="text-sm">{formatDate(post_date)}</h4>
@@ -81,7 +109,7 @@ export default function BlogPost({
             <MMMLineLogoBlack />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Dialog Section */}
       <Dialog
         open={blogPostOpen}

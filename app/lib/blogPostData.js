@@ -110,8 +110,8 @@ export const blogPosts = [
     title: "Olympic Fever",
     post_date: "8/29/2024",
     image_src: "/images/blog-page/blog-post-images/ericNewby.png",
-    image_width: 480,
-    image_height: 406,
+    image_width: 456,
+    image_height: 342,
     image_alt:
       "Rachel from MMM with Eric Newby, captain of the USA Wheelchair Rugby team",
     second_image_src: "/images/blog-page/blog-post-images/rachelJJK.png",
@@ -162,9 +162,9 @@ export const blogPosts = [
   {
     title: "Dayton, Ohio Adventure - From Video Shoots to Bar Arcades",
     post_date: "2024-5-8",
-    image_src: "/images/blog-page/blog-post-images/philMay.jpg",
-    image_width: 806,
-    image_height: 453,
+    image_src: "/images/blog-page/blog-post-images/05-08-2024.png",
+    image_width: 456,
+    image_height: 4342,
     image_alt: "Welcome to Ohio sign on a bridge overpass viewed from the dashboard of a car",
     text: [
       "Hello and thank you for reading my blogpost! I'm Phillip, a passionate videographer and editor with Mike Martin Media. I recently embarked on a memorable work trip to Dayton, Ohio. Dayton greeted us with open arms. Although the weather was bitter cold, the welcome from our client and the town was warm. This wasn't just a business trip; it was the beginning of a story waiting to be told through our lenses.",

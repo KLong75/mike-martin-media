@@ -21,14 +21,19 @@ export function validateForm(firstName, lastName, email, phone, message) {
 export function formatDate(post_date) {
   const date = new Date(post_date);
 
-  const monthNames = [
-      'January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December'
+  // const monthNames = [
+  //     'January', 'February', 'March', 'April', 'May', 'June',
+  //     'July', 'August', 'September', 'October', 'November', 'December'
+  // ];
+
+  const monthNamesShort = [
+      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
   ];
 
   const day = date.getDate();
   const monthIndex = date.getMonth();
   const year = date.getFullYear();
 
-  return `${monthNames[monthIndex]} ${day}, ${year}`;
+  return `${monthNamesShort[monthIndex].toUpperCase()} ${day}, ${year}`;
 }
