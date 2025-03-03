@@ -132,8 +132,8 @@ export const blogPosts = [
     title: "A Note from Tom",
     post_date: "7/18/2024",
     image_src: "/images/blog-page/blog-post-images/germanyCollage.png",
-    image_width: 420,
-    image_height: 300,
+    image_width: 456,
+    image_height: 326,
     image_alt: "A collage of images from Tom's trip to Germany and France",
     text: [
       "Travel is in MMM's DNA, and this month Mike and I were able to add two new countries to the list: Germany and France. We are fortunate to have the trust of our clients that allows us to explore the globe, and we are grateful for the opportunity.",
@@ -164,7 +164,7 @@ export const blogPosts = [
     post_date: "2024-5-8",
     image_src: "/images/blog-page/blog-post-images/05-08-2024.png",
     image_width: 456,
-    image_height: 4342,
+    image_height: 342,
     image_alt: "Welcome to Ohio sign on a bridge overpass viewed from the dashboard of a car",
     text: [
       "Hello and thank you for reading my blogpost! I'm Phillip, a passionate videographer and editor with Mike Martin Media. I recently embarked on a memorable work trip to Dayton, Ohio. Dayton greeted us with open arms. Although the weather was bitter cold, the welcome from our client and the town was warm. This wasn't just a business trip; it was the beginning of a story waiting to be told through our lenses.",
