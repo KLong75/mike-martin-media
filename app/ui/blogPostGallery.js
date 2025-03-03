@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 //import from next
 import { usePathname } from "next/navigation";
+import Link from 'next/link';
 // import data
 import { blogPosts } from "../lib/blogPostData";
 // import components
@@ -27,12 +28,13 @@ export default function BlogPostGallery({ number_of_posts }) {
   const currentPosts = blogPosts.slice(startIndex, endIndex);
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center p-4">
       <div className="grid grid-cols-1 max-w-800" ref={galleryRef}>
         <div className="grid grid-cols-1 lg:grid-cols-3">
           {currentPosts.map((post, index) => (
+            <Link key={index} href={`blog/blog-posts/${post.slug}`}>
             <BlogPost
-              key={index}
+              // key={index}
               title={post.title}
               image_src={post.image_src}
               image_width={post.image_width}
@@ -50,6 +52,7 @@ export default function BlogPostGallery({ number_of_posts }) {
               priority={index === 0} // Set priority for the first blog post
               className="justify-center"
             />
+            </Link>
           ))}
         </div>
         {currentPath === "/blog" && (
