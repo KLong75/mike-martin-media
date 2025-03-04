@@ -18,7 +18,7 @@ export default function SubNavMenu({ subMenu, closeSubMenu }) {
   }, [closeSubMenu]);
 
   return (
-    <div id="subNavMenu" ref={subMenuRef} className="">
+    <nav id="subNavMenu" ref={subMenuRef} className="">
       <ul className="text-sm py-2 px-6 bg-white text-black rounded-full flex flex-row gap-6 justify-center">
         {subMenu.map((item, index) => (
           <li key={index} className="font-bold hover:scale-105 hover:transform transition-transform">
@@ -28,6 +28,6 @@ export default function SubNavMenu({ subMenu, closeSubMenu }) {
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 }

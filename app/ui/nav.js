@@ -289,6 +289,8 @@ export default function Nav() {
 
   const capabilitiesRef = useRef(null);
   const industriesRef = useRef(null);
+  const firstCapabilityItemRef = useRef(null);
+  const firstIndustryItemRef = useRef(null);
 
   const closeSubMenu = () => {
     setCapabilitiesOpen(false);
@@ -352,7 +354,8 @@ export default function Nav() {
                             ? capabilitiesRef
                             : industriesRef
                         }
-                        className="cursor-pointer"
+                        className=""
+                        aria-label={`Open ${link.label} submenu`}
                         onClick={() => {
                           if (link.label === "Capabilities") {
                             setCapabilitiesOpenMobile(!capabilitiesOpenMobile);
@@ -425,11 +428,8 @@ export default function Nav() {
                       ? capabilitiesRef
                       : industriesRef
                   }
-                  className={`${
-                    pathname === link.href
-                      ? "hover:cursor-text disabled text-gray-300"
-                      : " "
-                  } `}
+                  className=""
+                  aria-label={`Open ${link.label} submenu`}
                   onClick={() => {
                     if (link.label === "Capabilities") {
                       setCapabilitiesOpen(!capabilitiesOpen);
