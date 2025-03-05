@@ -28,7 +28,7 @@ export default function BlogPostGallery({ number_of_posts }) {
   const currentPosts = blogPosts.slice(startIndex, endIndex);
 
   return (
-    <div className="flex justify-center p-4">
+    <div className="flex justify-center p-6">
       <div className="grid grid-cols-1 max-w-800" ref={galleryRef}>
         <div className="grid grid-cols-1 lg:grid-cols-3">
           {currentPosts.map((post, index) => (
