@@ -31,7 +31,7 @@ export default function ContactInfo() {
           aria-label="Link to Mike Martin Media on Google Maps. 3333 Washington Avenue, Suite 201, St. Louis, MO 63103"
           className="mt-"
           onClick={() => track("Google Maps link clicked")}>
-          <div className="flex flex-col hover:transform hover:scale-110 transition-transform">
+          <div className="flex flex-col hover:translate-x-4 ease-in-out duration-500">
             <span className="">
               3333 Washington Avenue, Suite 201
               <br />
@@ -43,13 +43,13 @@ export default function ContactInfo() {
       {/* Phone Number Section */}
       <div className="my-2 text-center lg:text-left">
         <a
-          href="tel:636-212-0978"
+          href="tel:636-212-4019"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Call Mike Martin Media at 636-212-4019"
           className="mt-"
           onClick={() => track("Phone link clicked")}>
-          <div className="flex flex-col hover:transform hover:scale-110 transition-transform">
+          <div className="flex flex-col hover:translate-x-4 ease-in-out duration-500">
             <span>636-212-4019</span>
           </div>
         </a>
@@ -57,8 +57,9 @@ export default function ContactInfo() {
       <div className="my-2 flex justify-center lg:justify-start">
         <SocialMediaLinks />
       </div>
-      <div className="my-2 flex justify-center lg:justify-start"><NewsletterSignupButton /></div>
-      
+      <div className="my-2 flex justify-center lg:justify-start">
+        <NewsletterSignupButton />
+      </div>
     </div>
   );
 }
