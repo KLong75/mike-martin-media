@@ -37,7 +37,7 @@ export const blogPosts = [
       "With enough time and effort (and a lil' bit of luck), hard work is well rewarded.",
       "",
     ],
-    closing_tag: "Keep on trekking",
+    closing_tag: "Keep on trekking,",
     author: "Robert",
   },
   {
