@@ -10,10 +10,10 @@ export default function SubNavMenu({ subMenu, closeSubMenu }) {
         closeSubMenu();
       }
     }
-
-    document.addEventListener("mousedown", handleClickOutside);
+  
+    document.addEventListener("click", handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, [closeSubMenu]);
 

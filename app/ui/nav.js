@@ -282,15 +282,13 @@ export default function Nav() {
   const [submenuPosition, setSubmenuPosition] = useState({ left: 0 });
   const pathname = usePathname();
   const openMenu = () => setMenuOpen(true);
-  const openCapabilities = () => setCapabilitiesOpen(true);
-  const openIndustries = () => setIndustriesOpen(true);
-  const openCapabilitiesMobile = () => setCapabilitiesOpenMobile(true);
-  const openIndustriesMobile = () => setIndustriesOpenMobile(true);
+  // const openCapabilities = () => setCapabilitiesOpen(true);
+  // const openIndustries = () => setIndustriesOpen(true);
+  // const openCapabilitiesMobile = () => setCapabilitiesOpenMobile(true);
+  // const openIndustriesMobile = () => setIndustriesOpenMobile(true);
 
   const capabilitiesRef = useRef(null);
   const industriesRef = useRef(null);
-  const firstCapabilityItemRef = useRef(null);
-  const firstIndustryItemRef = useRef(null);
 
   const closeSubMenu = () => {
     setCapabilitiesOpen(false);
@@ -430,13 +428,22 @@ export default function Nav() {
                   }
                   className=""
                   aria-label={`Open ${link.label} submenu`}
-                  onClick={() => {
+                  onClick={(e) => {
+                    e.stopPropagation();
                     if (link.label === "Capabilities") {
-                      setCapabilitiesOpen(!capabilitiesOpen);
-                      setIndustriesOpen(false);
+                      if (capabilitiesOpen) {
+                        setCapabilitiesOpen(false);
+                      } else {
+                        setCapabilitiesOpen(true);
+                        setIndustriesOpen(false);
+                      }
                     } else if (link.label === "Industries") {
-                      setIndustriesOpen(!industriesOpen);
-                      setCapabilitiesOpen(false);
+                      if (industriesOpen) {
+                        setIndustriesOpen(false);
+                      } else {
+                        setIndustriesOpen(true);
+                        setCapabilitiesOpen(false);
+                      }
                     }
                   }}>
                   {link.label}
