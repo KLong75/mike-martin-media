@@ -423,8 +423,8 @@ export default function Nav() {
                 <button
                   id={
                     link.label === "Capabilities"
-                    ? "capabilities-sub-menu-button"
-                    : "industries-sub-menu-button"
+                      ? "capabilities-sub-menu-button"
+                      : "industries-sub-menu-button"
                   }
                   ref={
                     link.label === "Capabilities"
@@ -435,21 +435,40 @@ export default function Nav() {
                   onClick={(e) => {
                     e.stopPropagation();
                     if (link.label === "Capabilities") {
-                      
                       if (capabilitiesOpen) {
-                        document.getElementById("capabilities-sub-menu-button").setAttribute("aria-label", "Open Capabilities submenu");
+                        document
+                          .getElementById("capabilities-sub-menu-button")
+                          .setAttribute(
+                            "aria-label",
+                            "Open Capabilities submenu"
+                          );
                         setCapabilitiesOpen(false);
                       } else {
-                        document.getElementById("capabilities-sub-menu-button").setAttribute("aria-label", "Close Capabilities submenu");
+                        document
+                          .getElementById("capabilities-sub-menu-button")
+                          .setAttribute(
+                            "aria-label",
+                            "Close Capabilities submenu"
+                          );
                         setCapabilitiesOpen(true);
                         setIndustriesOpen(false);
                       }
                     } else if (link.label === "Industries") {
                       if (industriesOpen) {
-                        document.getElementById("industries-sub-menu-button").setAttribute("aria-label", "Open Industries submenu");
+                        document
+                          .getElementById("industries-sub-menu-button")
+                          .setAttribute(
+                            "aria-label",
+                            "Open Industries submenu"
+                          );
                         setIndustriesOpen(false);
                       } else {
-                        document.getElementById("industries-sub-menu-button").setAttribute("aria-label", "Close Industries submenu");
+                        document
+                          .getElementById("industries-sub-menu-button")
+                          .setAttribute(
+                            "aria-label",
+                            "Close Industries submenu"
+                          );
                         setIndustriesOpen(true);
                         setCapabilitiesOpen(false);
                       }
@@ -486,26 +505,30 @@ export default function Nav() {
                   </span>
                 </Link>
               )}
+              {/* Capabilities Submenu */}
+              {capabilitiesOpen && (
+                <div
+                  className="absolute top-20 z-50 transform -translate-x-1/2"
+                  style={{ left: submenuPosition.left }}>
+                  <SubNavMenu
+                    subMenu={capabilities}
+                    closeSubMenu={closeSubMenu}
+                  />
+                </div>
+              )}
+              {industriesOpen && (
+                <div
+                  className="absolute top-20 z-50 transform -translate-x-1/2"
+                  style={{ left: submenuPosition.left }}>
+                  <SubNavMenu
+                    subMenu={industries}
+                    closeSubMenu={closeSubMenu}
+                  />
+                </div>
+              )}
             </li>
           ))}
         </ul>
-
-        {/* Capabilities Submenu */}
-        {capabilitiesOpen && (
-          <div
-            className="absolute top-20 z-50 transform -translate-x-1/2"
-            style={{ left: submenuPosition.left }}>
-            <SubNavMenu subMenu={capabilities} closeSubMenu={closeSubMenu} />
-          </div>
-        )}
-        {/* Industries Submenu */}
-        {industriesOpen && (
-          <div
-            className="absolute top-20 z-50 transform -translate-x-1/2"
-            style={{ left: submenuPosition.left }}>
-            <SubNavMenu subMenu={industries} closeSubMenu={closeSubMenu} />
-          </div>
-        )}
       </div>
     </nav>
   );
