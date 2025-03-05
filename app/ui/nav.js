@@ -421,26 +421,35 @@ export default function Nav() {
               }`}>
               {link.label === "Capabilities" || link.label === "Industries" ? (
                 <button
+                  id={
+                    link.label === "Capabilities"
+                    ? "capabilities-sub-menu-button"
+                    : "industries-sub-menu-button"
+                  }
                   ref={
                     link.label === "Capabilities"
                       ? capabilitiesRef
                       : industriesRef
                   }
-                  className=""
                   aria-label={`Open ${link.label} submenu`}
                   onClick={(e) => {
                     e.stopPropagation();
                     if (link.label === "Capabilities") {
+                      
                       if (capabilitiesOpen) {
+                        document.getElementById("capabilities-sub-menu-button").setAttribute("aria-label", "Open Capabilities submenu");
                         setCapabilitiesOpen(false);
                       } else {
+                        document.getElementById("capabilities-sub-menu-button").setAttribute("aria-label", "Close Capabilities submenu");
                         setCapabilitiesOpen(true);
                         setIndustriesOpen(false);
                       }
                     } else if (link.label === "Industries") {
                       if (industriesOpen) {
+                        document.getElementById("industries-sub-menu-button").setAttribute("aria-label", "Open Industries submenu");
                         setIndustriesOpen(false);
                       } else {
+                        document.getElementById("industries-sub-menu-button").setAttribute("aria-label", "Close Industries submenu");
                         setIndustriesOpen(true);
                         setCapabilitiesOpen(false);
                       }
