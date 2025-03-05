@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 //import from next
 import { usePathname } from "next/navigation";
+// import Link from 'next/link';
 // import data
 import { blogPosts } from "../lib/blogPostData";
 // import components
@@ -27,9 +28,9 @@ export default function BlogPostGallery({ number_of_posts }) {
   const currentPosts = blogPosts.slice(startIndex, endIndex);
 
   return (
-    <div className="flex justify-center p-6">
-      <div className="grid grid-cols-1 max-w-600" ref={galleryRef}>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
+    <div className="flex justify-center p-4">
+      <div className="grid grid-cols-1 max-w-800" ref={galleryRef}>
+        <div className="grid grid-cols-1 lg:grid-cols-3">
           {currentPosts.map((post, index) => (
             <BlogPost
               key={index}
@@ -58,10 +59,11 @@ export default function BlogPostGallery({ number_of_posts }) {
               <button
                 key={i + 1}
                 className={`btn mx-4 text-lg ${
-                  currentPage === i + 1 ? "w-10 h-10 rounded-full bg-black text-white" : ""
+                  currentPage === i + 1
+                    ? "w-10 h-10 rounded-full bg-black text-white"
+                    : ""
                 }`}
-                onClick={() => handlePageChange(i + 1)}
-              >
+                onClick={() => handlePageChange(i + 1)}>
                 {i + 1}
               </button>
             ))}

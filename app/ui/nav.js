@@ -282,10 +282,10 @@ export default function Nav() {
   const [submenuPosition, setSubmenuPosition] = useState({ left: 0 });
   const pathname = usePathname();
   const openMenu = () => setMenuOpen(true);
-  const openCapabilities = () => setCapabilitiesOpen(true);
-  const openIndustries = () => setIndustriesOpen(true);
-  const openCapabilitiesMobile = () => setCapabilitiesOpenMobile(true);
-  const openIndustriesMobile = () => setIndustriesOpenMobile(true);
+  // const openCapabilities = () => setCapabilitiesOpen(true);
+  // const openIndustries = () => setIndustriesOpen(true);
+  // const openCapabilitiesMobile = () => setCapabilitiesOpenMobile(true);
+  // const openIndustriesMobile = () => setIndustriesOpenMobile(true);
 
   const capabilitiesRef = useRef(null);
   const industriesRef = useRef(null);
@@ -352,7 +352,8 @@ export default function Nav() {
                             ? capabilitiesRef
                             : industriesRef
                         }
-                        className="cursor-pointer"
+                        className=""
+                        aria-label={`Open ${link.label} submenu`}
                         onClick={() => {
                           if (link.label === "Capabilities") {
                             setCapabilitiesOpenMobile(!capabilitiesOpenMobile);
@@ -420,23 +421,57 @@ export default function Nav() {
               }`}>
               {link.label === "Capabilities" || link.label === "Industries" ? (
                 <button
+                  id={
+                    link.label === "Capabilities"
+                      ? "capabilities-sub-menu-button"
+                      : "industries-sub-menu-button"
+                  }
                   ref={
                     link.label === "Capabilities"
                       ? capabilitiesRef
                       : industriesRef
                   }
-                  className={`${
-                    pathname === link.href
-                      ? "hover:cursor-text disabled text-gray-300"
-                      : " "
-                  } `}
-                  onClick={() => {
+                  aria-label={`Open ${link.label} submenu`}
+                  onClick={(e) => {
+                    e.stopPropagation();
                     if (link.label === "Capabilities") {
-                      setCapabilitiesOpen(!capabilitiesOpen);
-                      setIndustriesOpen(false);
+                      if (capabilitiesOpen) {
+                        document
+                          .getElementById("capabilities-sub-menu-button")
+                          .setAttribute(
+                            "aria-label",
+                            "Open Capabilities submenu"
+                          );
+                        setCapabilitiesOpen(false);
+                      } else {
+                        document
+                          .getElementById("capabilities-sub-menu-button")
+                          .setAttribute(
+                            "aria-label",
+                            "Close Capabilities submenu"
+                          );
+                        setCapabilitiesOpen(true);
+                        setIndustriesOpen(false);
+                      }
                     } else if (link.label === "Industries") {
-                      setIndustriesOpen(!industriesOpen);
-                      setCapabilitiesOpen(false);
+                      if (industriesOpen) {
+                        document
+                          .getElementById("industries-sub-menu-button")
+                          .setAttribute(
+                            "aria-label",
+                            "Open Industries submenu"
+                          );
+                        setIndustriesOpen(false);
+                      } else {
+                        document
+                          .getElementById("industries-sub-menu-button")
+                          .setAttribute(
+                            "aria-label",
+                            "Close Industries submenu"
+                          );
+                        setIndustriesOpen(true);
+                        setCapabilitiesOpen(false);
+                      }
                     }
                   }}>
                   {link.label}
@@ -470,26 +505,30 @@ export default function Nav() {
                   </span>
                 </Link>
               )}
+              {/* Capabilities Submenu */}
+              {capabilitiesOpen && (
+                <div
+                  className="absolute top-20 z-50 transform -translate-x-1/2"
+                  style={{ left: submenuPosition.left }}>
+                  <SubNavMenu
+                    subMenu={capabilities}
+                    closeSubMenu={closeSubMenu}
+                  />
+                </div>
+              )}
+              {industriesOpen && (
+                <div
+                  className="absolute top-20 z-50 transform -translate-x-1/2"
+                  style={{ left: submenuPosition.left }}>
+                  <SubNavMenu
+                    subMenu={industries}
+                    closeSubMenu={closeSubMenu}
+                  />
+                </div>
+              )}
             </li>
           ))}
         </ul>
-
-        {/* Capabilities Submenu */}
-        {capabilitiesOpen && (
-          <div
-            className="absolute top-20 z-50 transform -translate-x-1/2"
-            style={{ left: submenuPosition.left }}>
-            <SubNavMenu subMenu={capabilities} closeSubMenu={closeSubMenu} />
-          </div>
-        )}
-        {/* Industries Submenu */}
-        {industriesOpen && (
-          <div
-            className="absolute top-20 z-50 transform -translate-x-1/2"
-            style={{ left: submenuPosition.left }}>
-            <SubNavMenu subMenu={industries} closeSubMenu={closeSubMenu} />
-          </div>
-        )}
       </div>
     </nav>
   );
