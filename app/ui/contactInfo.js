@@ -43,7 +43,7 @@ export default function ContactInfo() {
       {/* Phone Number Section */}
       <div className="my-2 text-center lg:text-left">
         <a
-          href="tel:636-212-0978"
+          href="tel:636-212-4019"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Call Mike Martin Media at 636-212-4019"
@@ -57,8 +57,9 @@ export default function ContactInfo() {
       <div className="my-2 flex justify-center lg:justify-start">
         <SocialMediaLinks />
       </div>
-      <div className="my-2 flex justify-center lg:justify-start"><NewsletterSignupButton /></div>
-      
+      <div className="my-2 flex justify-center lg:justify-start">
+        <NewsletterSignupButton />
+      </div>
     </div>
   );
 }
