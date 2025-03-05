@@ -149,6 +149,14 @@ export default function VideoCategories({
           <ul className="flex flex-wrap justify-center px-6 lg:py-4">
             {categoryOptions.map((category) => (
               <li
+                tabIndex={0}
+                role="button"
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    handleCategorySelected(category.name);
+                  }
+                }}
                 key={category.name}
                 onClick={() => handleCategorySelected(category.name)}
                 className={`text-sm cursor-pointer px-4 rounded-full my-2 mx-4 ${
