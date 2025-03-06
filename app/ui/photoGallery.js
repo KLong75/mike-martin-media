@@ -52,8 +52,16 @@ export default function PhotoGallery({
   return (
     <>
       <div
+        tabIndex={0}
         className="relative w-full h-full overflow-hidden group cursor-pointer"
-        onClick={handleCoverImageClick}>
+        onClick={handleCoverImageClick}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            handleCoverImageClick();
+          }
+        }}
+      >
         {/* <Link href={href}> */}
         <Image
           alt={alt}
