@@ -12,7 +12,7 @@ export default function BlogPost({ post }) {
     <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900">
       {post.title}
     </h1>
-    <h2 className="text-lg mt-2 md:mt-4">{formatDate(post.post_date)}</h2>
+    <h2 className="text-sm lg:text-lg mt-2 md:mt-4">{formatDate(post.post_date)}</h2>
   </div>
   <div className="flex flex-col">
     <div className="flex justify-center items-center px-12">
