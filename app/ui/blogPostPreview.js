@@ -57,7 +57,7 @@ export default function BlogPostPreview({
   // };
 
   return (
-    <div className="p-6 hover:bg-black hover:text-white transition-colors duration-500">
+    <div className="p-6 hover:bg-black hover:text-white transition-colors duration-500 group">
       <Link href={`blog/${slug}`}>
         <div className="w-full ">
           <div className="flex justify-center w-full">
@@ -74,7 +74,7 @@ export default function BlogPostPreview({
         <div className="max-w-[460px] pt-6">
           <p className="flex items-center">
             {formatDate(post_date)}
-            <span className="border-t border-black w-6 mx-2"></span>
+            <span className="border-t border-black w-6 mx-2 group-hover:border-white"></span>
           </p>
           <p className="font-bold text-2xl text-wrap my-1">{title}</p>
           <p className="mb-6 text-left text-md mt-2 lg:mt-4">
