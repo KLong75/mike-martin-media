@@ -5,7 +5,6 @@ import { blogPosts } from "../../lib/blogPostData";
 // import components
 import BackLink from "@/app/ui/backLink";
 import BlogPost from "@/app/ui/blogPost";
-import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 
 export default function BlogPostPage() {
   const post = blogPosts.find((post) => post.slug === "year-end-review");

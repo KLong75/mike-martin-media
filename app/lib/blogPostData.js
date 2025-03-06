@@ -301,8 +301,8 @@ export const blogPosts = [
     title: "A Note from Mike",
     post_date: "2022-2-10",
     image_src: "/images/blog-page/blog-post-images/mikeNotePic.png",
-    image_width: 400,
-    image_height: 267,
+    image_width: 456,
+    image_height: 304,
     image_alt: "Mike Martin and some of the MMM team taking a break during a video shoot",
     text: [
       "MMM is in full swing to start 2022!  Local shoots in St. Louis, Zoom recordings, Live Stream events and shoots from Texas to Nevada have highlighted the start to our year. We are booked for shoots from coast to coast over the next couple of months and we are looking forward to sharing our journey with all of you.",

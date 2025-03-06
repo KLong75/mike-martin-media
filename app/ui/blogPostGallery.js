@@ -34,6 +34,7 @@ export default function BlogPostGallery({ number_of_posts }) {
           {currentPosts.map((post, index) => (
             <BlogPostPreview
               key={index}
+              slug={post.slug}
               title={post.title}
               image_src={post.image_src}
               image_width={post.image_width}
