@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 // import data
 import { blogPosts } from "../lib/blogPostData";
 // import components
-import BlogPost from "../ui/blogPost";
+import BlogPostPreview from "./blogPostPreview";
 
 export default function BlogPostGallery({ number_of_posts }) {
   const currentPath = usePathname();
@@ -32,7 +32,7 @@ export default function BlogPostGallery({ number_of_posts }) {
       <div className="grid grid-cols-1 max-w-800" ref={galleryRef}>
         <div className="grid grid-cols-1 lg:grid-cols-3">
           {currentPosts.map((post, index) => (
-            <BlogPost
+            <BlogPostPreview
               key={index}
               title={post.title}
               image_src={post.image_src}

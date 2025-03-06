@@ -1,6 +1,6 @@
 // import components
 import BlogPostGallery from "../ui/blogPostGallery";
-import BlogPost from "../ui/blogPost";
+import BlogPost from "../ui/blogPostPreview";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BannerImage from "../ui/bannerImage";
 // import images

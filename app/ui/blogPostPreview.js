@@ -5,7 +5,7 @@ import React from "react";
 import { useState } from "react";
 // import components
 import Image from "./image";
-import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
+import MMMLineLogoBlack from "./mmmLineLogoBlack";
 // import icons
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { HiX } from "react-icons/hi";
@@ -19,7 +19,7 @@ import {
   DialogTitle,
 } from "@headlessui/react";
 
-export default function BlogPost({
+export default function BlogPostPreview({
   title,
   image_src,
   image_width,
