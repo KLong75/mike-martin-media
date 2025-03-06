@@ -20,6 +20,7 @@ export const blogPosts = [
   //   author: "",
   // },
   {
+    slug: "learning-never-stops",
     title: "Learning Never Stops",
     post_date: "3/1/2025",
     image_src: "/images/blog-page/blog-post-images/.png",
@@ -32,9 +33,9 @@ export const blogPosts = [
     second_image_alt: "",
     text: [
       "I share an inside joke with my best friend, who's a high school teacher: I'm a “forever student.” She often shares nuggets of wisdom with me (usually from her lesson plans), and every time, I'm reminded of just how much more there is to learn! This became even clearer when I stepped into my new role at MMM. It's easy to enter a new job with the mindset that you've got it all figured out—after all, you've got the resume to prove it. But I quickly realized how wrong that assumption was.",
-      "Moving to a new city, working with new colleagues, and engaging with new clients has taught me so much already. It’s not just about refining technical skills, but also about how to build and nurture client relationships and grow creatively.",
+      "Moving to a new city, working with new colleagues, and engaging with new clients has taught me so much already. It's not just about refining technical skills, but also about how to build and nurture client relationships and grow creatively.",
       "This month, we had the chance to visit Nashville, and our team put some of those lessons into practice. We shot a Tugboat event at the Country Music Hall of Fame, and I learned so much from my colleagues Tom and Kevin. Their approach to client relations and communication during the trip really made an impact.",
-      "I’m beyond excited to continue learning and growing in this role—and I hope to inspire others to keep learning, too!",
+      "I'm beyond excited to continue learning and growing in this role—and I hope to inspire others to keep learning, too!",
     ],
     closing_tag: "Till next time,",
     author: "Remi Heckert",
