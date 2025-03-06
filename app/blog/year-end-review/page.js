@@ -5,11 +5,12 @@ import { blogPosts } from "../../lib/blogPostData";
 // import components
 import BackLink from "@/app/ui/backLink";
 import BlogPost from "@/app/ui/blogPost";
+import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 
 export default function BlogPostPage() {
-  const post = blogPosts.find((post) => post.slug === "starting-my-career");
+  const post = blogPosts.find((post) => post.slug === "year-end-review");
   const postIndex = blogPosts.findIndex(
-    (post) => post.slug === "starting-my-career"
+    (post) => post.slug === "year-end-review"
   );
   const nextPost = blogPosts[postIndex + 1];
   const prevPost = blogPosts[postIndex - 1];
@@ -30,7 +31,7 @@ export default function BlogPostPage() {
       </div>
       <div className="mt-2 mb-12 lg:mb-36 flex justify-center">
         <div className="mr-52">
-          <Link href={prevPostSlug}>
+          <Link href={`/blog/${prevPostSlug}`}>
             <span>&lt;&lt; Prev</span>
           </Link>
         </div>

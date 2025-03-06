@@ -60,7 +60,7 @@ export const blogPosts = [
     author: "Clark Martin",
   },
   {
-    slug: "11-1-24-note-from-ceo",
+    slug: "note-from-ceo",
     title: "A Note from the CEO",
     post_date: "11/1/2024",
     image_src: "/images/blog-page/blog-post-images/team.png",
@@ -90,7 +90,7 @@ export const blogPosts = [
     author: "Mike Martin",
   },
   {
-    slug: "10-1-24-note-from-mary",
+    slug: "note-from-mary",
     title: "A Note from Mary",
     post_date: "10/1/2024",
     image_src: "/images/blog-page/blog-post-images/sept-2024-pic1.png",
@@ -111,7 +111,7 @@ export const blogPosts = [
     author: "Mary Scott",
   },
   {
-    slug: "8-29-24-olympic-fever",
+    slug: "olympic-fever",
     title: "Olympic Fever",
     post_date: "8/29/2024",
     image_src: "/images/blog-page/blog-post-images/ericNewby.png",
@@ -134,7 +134,7 @@ export const blogPosts = [
     author: "Rachel Lee",
   },
   {
-    slug: "7-18-24-note-from-tom",
+    slug: "note-from-tom",
     title: "A Note from Tom",
     post_date: "7/18/2024",
     image_src: "/images/blog-page/blog-post-images/germanyCollage.png",
@@ -151,7 +151,7 @@ export const blogPosts = [
     author: "Tom Young",
   },
   {
-    slug: "6-7-24-note-from-luke",
+    slug: "note-from-luke",
     title: "A Note from Luke",
     post_date: "6/7/2024",
     image_src: "/images/blog-page/blog-post-images/lukeBlogPostPic-6-2024.png",
@@ -167,7 +167,7 @@ export const blogPosts = [
     author: "Luke Bradshaw",
   },
   {
-    slug: "5-8-24-dayton-ohio-adventure",
+    slug: "dayton-ohio-adventure",
     title: "Dayton, Ohio Adventure - From Video Shoots to Bar Arcades",
     post_date: "2024-5-8",
     image_src: "/images/blog-page/blog-post-images/05-08-2024.png",
@@ -186,7 +186,7 @@ export const blogPosts = [
     author: "Phillip Person",
   },
   {
-    slug: "4-15-24-out-and-about-in-2024",
+    slug: "out-and-about-in-2024",
     title: "Out and About in 2024",
     post_date: "2024-4-15",
     image_src: "/images/blog-page/blog-post-images/spring2024.png",
@@ -202,7 +202,7 @@ export const blogPosts = [
     author: "Mary Scott",
   },
   {
-    slug: "3-27-23-inside-mmms-arizona-trip",
+    slug: "inside-mmm-arizona-trip",
     title: "Inside MMM's Arizona Trip",
     post_date: "2023-3-27",
     image_src: "/images/blog-page/blog-post-images/arizonaPic.png",
@@ -219,7 +219,7 @@ export const blogPosts = [
     author: "MMM",
   },
   {
-    slug: "1-18-23-reflecting-on-the-season",
+    slug: "reflecting-on-the-season",
     title: "Reflecting on the Season",
     post_date: "2023-1-18",
     image_src: "/images/blog-page/blog-post-images/reflectingSeasonPic.jpg",
@@ -239,7 +239,7 @@ export const blogPosts = [
     author: "MMM",
   },
   {
-    slug: "6-15-22-six-months-down-six-more-to-go",
+    slug: "six-months-down-six-more-to-go",
     title: "Six Months Down, Six More to Go!",
     post_date: "2022-6-15",
     image_src: "/images/blog-page/blog-post-images/sixMonthsDownPic.jpg",
@@ -256,7 +256,7 @@ export const blogPosts = [
     author: "MMM",
   },
   {
-    slug: "4-7-22-a-letter-from-kevin",
+    slug: "letter-from-kevin",
     title: "A Letter from Kevin",
     post_date: "2022-4-7",
     image_src: "/images/blog-page/blog-post-images/luckyKevinPic.jpg",
@@ -280,7 +280,7 @@ export const blogPosts = [
     author: "Kevin",
   },
   {
-    slug: "3-23-22-a-note-from-rachel",
+    slug: "note-from-rachel",
     title: "A Note from Rachel",
     post_date: "2022-3-23",
     image_src: "/images/blog-page/blog-post-images/rachelNotePic.jpg",
@@ -297,7 +297,7 @@ export const blogPosts = [
     author: "Rachel",
   },
   {
-    slug: "2-10-2022-note-from-mike",
+    slug: "note-from-mike",
     title: "A Note from Mike",
     post_date: "2022-2-10",
     image_src: "/images/blog-page/blog-post-images/mikeNotePic.png",

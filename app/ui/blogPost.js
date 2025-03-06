@@ -1,7 +1,7 @@
 // import from utils
 import { formatDate } from "../lib/utils";
 // import from next
-import Link from "next/link";
+// import Link from "next/link";
 // import components
 import Image from "./image";
 
@@ -61,7 +61,7 @@ export default function BlogPost({ post }) {
       className="mt-2 lg:mt-6 lg:mb-6"
     />
   </div>
-  <div className="mt-2 mb-12 lg:mb-36 flex justify-center">
+  {/* <div className="mt-2 mb-12 lg:mb-36 flex justify-center">
     <div className="mr-52">
       <Link href="/blog">
         <span>&lt;&lt; Prev</span>
@@ -72,7 +72,7 @@ export default function BlogPost({ post }) {
         <span>Next &gt;&gt;</span>
       </Link>
     </div>
-  </div>
+  </div> */}
   </>
   );
 }
