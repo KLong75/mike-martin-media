@@ -20,7 +20,7 @@ export const blogPosts = [
   //   author: "",
   // },
   { 
-    slug: "starting-my-career-at-mmm",
+    slug: "starting-my-career",
     title: "Starting My Career At MMM",
     post_date: "1/1/25",
     image_src: "/images/blog-page/blog-post-images/dec-2024.png",
