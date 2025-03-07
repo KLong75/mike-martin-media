@@ -3,7 +3,7 @@ import BackLink from "@/app/ui/backLink";
 import BlogPost from "@/app/ui/blogPost";
 
 export default function BlogPostPage() {
-  
+
   return (
     <main>
       <div className="mt-6 ml-2">

@@ -42,7 +42,7 @@ export default function BlogPost({}) {
             width={post.image_width}
             height={post.image_height}
             alt={post.image_alt}
-            className="w-175"
+            className=""
           />
         </div>
         <div className="p-8 max-w-3xl mx-auto lg:text-lg lg:mt-6">
