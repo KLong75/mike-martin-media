@@ -1,6 +1,7 @@
 "use client";
 // import from react
 import React from "react";
+import { useState, useEffect } from "react";
 // import from next
 import Link from "next/link";
 // import components
@@ -19,6 +20,19 @@ export default function BlogPostPreview({
   post_date,
   priority,
 }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const checkSize = () => {
+        setIsMobile(window.innerWidth < 640);
+      };
+      checkSize();
+      window.addEventListener("resize", checkSize);
+      return () => window.removeEventListener("resize", checkSize);
+    }
+  }, []);
+
   const shortenPostText = (text, num) => {
     if (text.length < num) {
       return text + "..";
@@ -30,8 +44,9 @@ export default function BlogPostPreview({
     }
   };
 
+
   return (
-    <div className="p-6 hover:bg-black hover:text-white transition-colors duration-500 group">
+    <div className="p-6 md:hover:bg-black md:hover:text-white transition-colors duration-500 group shadow-2xl md:shadow-none rounded-2xl md:rounded-none">
       <Link href={`blog/blog-posts/${slug}`}>
         <div className="w-full">
           <div className="flex justify-center w-full">
@@ -54,6 +69,11 @@ export default function BlogPostPreview({
           <p className="mb-6 text-left text-md mt-2 lg:mt-4">
             {shortenPostText(text[0], 200)}
           </p>
+          {isMobile && (
+            <p className="font-semibold text-center">
+              Read More
+            </p>
+          )}
         </div>
       </Link>
     </div>
