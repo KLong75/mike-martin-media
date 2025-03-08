@@ -58,6 +58,7 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Tom Young",
+    description: "Tom refelcts on 15 years of growth at Mike Martin Media."
   },
   { 
     slug: "starting-my-career",
@@ -79,6 +80,7 @@ export const blogPosts = [
     ],
     closing_tag: "Keep on trekking,",
     author: "Robert",
+    description: "Robert reflects on his first few months on the job at Mike Martin Media."
   },
   {
     slug: "year-end-review",
@@ -98,6 +100,7 @@ export const blogPosts = [
     ],
     closing_tag: "Happy Holidays",
     author: "Clark Martin",
+    description: "Clark reflects on the year that was 2024 at Mike Martin Media."
   },
   {
     slug: "note-from-ceo",
@@ -128,6 +131,7 @@ export const blogPosts = [
       "https://player.vimeo.com/video/799944146?h=7ce1e106da&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     closing_tag: "Peace!",
     author: "Mike Martin",
+    description: "Mike shares some thoughts on the growth and impact of Mike Martin Media over the past 15 years."
   },
   {
     slug: "note-from-mary",
@@ -149,6 +153,7 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Mary Scott",
+    description: "Mary talks about her first year at Mike Martin Media and the creative freedom she's been given. She describes the experience of painting a sign for the annual Music at the Intersection festival."
   },
   {
     slug: "olympic-fever",
@@ -172,6 +177,7 @@ export const blogPosts = [
       "https://player.vimeo.com/video/1001383081?badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
     closing_tag: "Until next time,",
     author: "Rachel Lee",
+    description: "Rachel shares her experiences meeting Olympians Jackie Joyner-Kersee and Eric Newby."
   },
   {
     slug: "note-from-tom",
@@ -189,6 +195,7 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Tom Young",
+    description: "Tom shares his experiences traveling to Germany and France for work and pleasure."
   },
   {
     slug: "note-from-luke",
@@ -199,12 +206,13 @@ export const blogPosts = [
     image_height: 344,
     image_alt: "Luke and some coworkers around a campfire on an MMM work trip",
     text: [
-      "Hey everyone, it's Luke!  I'm an editor and videographer with MMM, and I'm proud to be here every day.  When I wake up in the morning, I find myself excited to walk into the office to see my favorite coworkers and tackle whatever is on my plate that day.  Personally, I find work can sometimes be a meditative experience.  Sure, sometimes the project can be difficult, emotional, or long.  But once the project is finished and approved, it's hard not to feel a sense of accomplishment and growth.",
-      "Now that I'm done sapping about my job, let's talk about when we get to experience spending time with our coworkers outside of work!  Twice a year, sometimes more, we plan a camping or float trip to get the whole office to come outside, smell the grass, and get to know each other outside of the screens and rolling chairs.  We get to see who can build a fire, who can canoe without tipping, and who can design the most luxurious camping space.  It's an opportunity to show your true colors and separate from the work mindset.  The only time I've sang karaoke was at a work camping trip!",
-      "My favorite memories have been the simple hardships we overcame as a group.  Whether it be 30mph winds or 6 hours of straight downpour, we still find a way to have fun and enjoy ourselves!  I'm thankful for the sense of family we've created in the office, and I'm thankful for the opportunities we are given to express ourselves within the group.  I'm looking forward to our next trip and the many many inside jokes we'll come back with!",
+      "Hey everyone, it's Luke! I'm an editor and videographer with MMM, and I'm proud to be here every day.  When I wake up in the morning, I find myself excited to walk into the office to see my favorite coworkers and tackle whatever is on my plate that day. Personally, I find work can sometimes be a meditative experience. Sure, sometimes the project can be difficult, emotional, or long. But once the project is finished and approved, it's hard not to feel a sense of accomplishment and growth.",
+      "Now that I'm done sapping about my job, let's talk about when we get to experience spending time with our coworkers outside of work! Twice a year, sometimes more, we plan a camping or float trip to get the whole office to come outside, smell the grass, and get to know each other outside of the screens and rolling chairs. We get to see who can build a fire, who can canoe without tipping, and who can design the most luxurious camping space. It's an opportunity to show your true colors and separate from the work mindset. The only time I've sang karaoke was at a work camping trip!",
+      "My favorite memories have been the simple hardships we overcame as a group. Whether it be 30mph winds or 6 hours of straight downpour, we still find a way to have fun and enjoy ourselves! I'm thankful for the sense of family we've created in the office, and I'm thankful for the opportunities we are given to express ourselves within the group. I'm looking forward to our next trip and the many many inside jokes we'll come back with!",
     ],
     closing_tag: "Until next time,",
     author: "Luke Bradshaw",
+    description: "Luke shares his experiences working at Mike Martin Media and the fun he had with his coworkers on a camping trip."
   },
   {
     slug: "dayton-ohio-adventure",
@@ -224,6 +232,7 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Phillip Person",
+    description: "Phillip shares his experiences on a work trip to Dayton, Ohio. He talks about the video shoots, the Dayton arcades, and the video editing process."
   },
   {
     slug: "out-and-about-2024",
@@ -240,6 +249,7 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Mary Scott",
+    description: "Mary shares the MMM team's adventures in 2024, including trips around the US, the eclipse, and the internal sticker competition."
   },
   {
     slug: "inside-mmm-arizona-trip",
@@ -257,6 +267,7 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "MMM",
+    description: "The MMM team travels to Phoenix, Arizona for a leadership conference."
   },
   {
     slug: "reflecting-on-the-season",
@@ -277,6 +288,7 @@ export const blogPosts = [
     ],
     closing_tag: "Stay tuned to find out!",
     author: "MMM",
+    description: "The MMM team reflects on their annual Mario Kart tournament."
   },
   {
     slug: "six-months-down-six-more-to-go",
@@ -294,6 +306,7 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "MMM",
+    description: "The MMM team reflects on the first six months of 2022 and looks forward to the next six."
   },
   {
     slug: "letter-from-kevin",
@@ -318,6 +331,7 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Kevin",
+    description: "Kevin expresses his gratitude for his job at Mike Martin Media and shares his experiences traveling for work."
   },
   {
     slug: "note-from-rachel",
@@ -335,6 +349,7 @@ export const blogPosts = [
     ],
     closing_tag: "",
     author: "Rachel",
+    description: "Rachel talks about the evolution of her relationship with Mike Martin Media, as a client and part of the team."
   },
   {
     slug: "note-from-mike",
@@ -351,5 +366,6 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Mike Martin",
+    description: "Mike shares some thoughts on the start of 2022 at Mike Martin Media."
   },
 ];

@@ -23,7 +23,7 @@ const dm_sans = DM_Sans({
 // define metadata for the site
 export const metadata = {
   title: {
-    template: "%s | Mike Martin Media: St. Louis Video Production Company",
+    template: "%s",
     default: "Mike Martin Media: St. Louis Video Production Company",
   },
   description:

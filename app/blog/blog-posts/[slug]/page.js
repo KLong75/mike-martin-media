@@ -1,0 +1,106 @@
+// import from next
+import Link from "next/link";
+// import components
+import BackLink from "@/app/ui/backLink";
+import BlogPost from "@/app/ui/blogPost";
+// import data
+import { blogPosts } from "@/app/lib/blogPostData";
+import goldenGateBridge from "../../../../public/images/blog-page/golden-gate-bridge.jpg";
+
+const siteUrl = "https://www.mikemartinmedia.com";
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const post = blogPosts.find((post) => post.slug === slug);
+  
+  if (!post) {
+    return {
+      title: "Post not found",
+      description: "",
+    };
+  }
+  
+  return {
+    title: `${post.title}`,
+    description: post.description,
+    alternates: {
+      canonical: `/${post.slug}`,
+    },
+    openGraph: {
+      title: `Mike Martin Media Blog | Beyond the Lense: ${post.title}`,
+      description: post.description,
+      images: [
+        {
+          url: `${siteUrl}${post.image_src}` || goldenGateBridge,
+          width: post.image_width || 1200,
+          height: post.image_height || 630,
+        },
+      ],
+    },
+    twitter: {
+      cardType: "summary_large_image",
+      site: "@mikemartinmedia",
+      title: `Mike Martin Media Blog | Beyond the Lense: ${post.title}`,
+      description: post.description,
+      images: [
+        {
+          url: `${siteUrl}${post.image_src}` || goldenGateBridge,
+          width: post.image_width || 1200,
+          height: post.image_height || 630,
+        },
+      ],
+    },
+  };
+}
+
+export default async function BlogPostPage({ params }) {
+  const { slug } = await params;
+  const post = blogPosts.find((post) => post.slug === slug);
+  if (!post) return <p>Post not found</p>;
+
+  const postSlug = post.slug;
+  const postIndex = blogPosts.findIndex(
+      (post) => post.slug === postSlug
+    );
+  const nextPost = blogPosts[postIndex + 1];
+  const prevPost = blogPosts[postIndex - 1];
+  const nextPostSlug = nextPost ? nextPost.slug : "";
+  const prevPostSlug = prevPost ? prevPost.slug : "";
+  const nextPostIndex = blogPosts.findIndex(
+    (post) => post.slug === nextPostSlug
+  );
+  const prevPostIndex = blogPosts.findIndex(
+    (post) => post.slug === prevPostSlug
+  );
+  
+  return (
+    <>
+      <div className="mt-6 ml-2">
+        <BackLink href="/blog" label="Back to Blog" />
+      </div>
+      <div>
+        <BlogPost post={post} />
+      </div>
+       <div className="mt-4 mb-12 lg:mb-36 flex justify-center">
+        <div className="mr-52 sm:mr-72 md:mr-144">
+          {prevPostIndex === -1 ? (
+            <span className="text-gray-500">&lt;&lt; Prev</span>
+          ) : (
+            <Link href={`/blog/blog-posts/${prevPostSlug}`} aria-label="previous blog post">
+              <span className="font-semibold">&lt;&lt; Prev</span>
+            </Link>
+          )}
+        </div>
+        <div>
+         {nextPostIndex === -1 ? (
+            <span className="text-gray-500">Next &gt;&gt;</span>
+          ) : (
+            <Link href={`/blog/blog-posts/${nextPostSlug}`} aria-label="next blog post">
+              <span className="font-semibold">Next &gt;&gt;</span>
+            </Link>
+          )}
+        </div>
+      </div>
+    </>
+  );
+}

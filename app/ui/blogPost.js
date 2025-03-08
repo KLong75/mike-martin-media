@@ -2,25 +2,25 @@
 // import from utils
 import { formatDate } from "../lib/utils";
 // import from next
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import Link from "next/link";
 // import components
 import Image from "./image";
 // import data
-import { blogPosts } from "../lib/blogPostData";
+// import { blogPosts } from "../lib/blogPostData";
 
-export default function BlogPost({}) {
-  const currentPath = usePathname();
-  const postSlug = currentPath.split("/").pop();
-  const post = blogPosts.find((post) => post.slug === postSlug);
-  const postIndex = blogPosts.findIndex(
-    (post) => post.slug === postSlug
-  );
-  console.log(postIndex);
-  const nextPost = blogPosts[postIndex + 1];
-  const prevPost = blogPosts[postIndex - 1];
-  const nextPostSlug = nextPost ? nextPost.slug : "";
-  const prevPostSlug = prevPost ? prevPost.slug : "";
+export default function BlogPost({post}) {
+  // const currentPath = usePathname();
+  // const postSlug = currentPath.split("/").pop();
+  // const post = blogPosts.find((post) => post.slug === postSlug);
+  // const postIndex = blogPosts.findIndex(
+  //   (post) => post.slug === postSlug
+  // );
+  // console.log(postIndex);
+  // const nextPost = blogPosts[postIndex + 1];
+  // const prevPost = blogPosts[postIndex - 1];
+  // const nextPostSlug = nextPost ? nextPost.slug : "";
+  // const prevPostSlug = prevPost ? prevPost.slug : "";
 
   if (!post) {
     return <p>Post not found</p>;
@@ -28,7 +28,7 @@ export default function BlogPost({}) {
   return (
     <>
       <div className="flex flex-col items-center p-12 ">
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 text-center">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 text-center">
           {post.title}
         </h1>
         <h2 className="text-sm lg:text-lg mt-2 md:mt-4">
@@ -82,7 +82,7 @@ export default function BlogPost({}) {
           className="mt-2 lg:mt-6 lg:mb-6"
         />
       </div>
-      <div className="mt-4 mb-12 lg:mb-36 flex justify-center">
+      {/* <div className="mt-4 mb-12 lg:mb-36 flex justify-center">
         <div className="mr-52 sm:mr-72 md:mr-144">
           <Link href={`/blog/blog-posts/${prevPostSlug}`}>
             <span>&lt;&lt; Prev</span>
@@ -93,7 +93,7 @@ export default function BlogPost({}) {
             <span>Next &gt;&gt;</span>
           </Link>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

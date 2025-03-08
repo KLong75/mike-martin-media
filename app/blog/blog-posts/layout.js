@@ -23,8 +23,8 @@
 // define metadata for the site
 export const metadata = {
   title: {
-    template: "MMM Blog - Behind the Lense | %s",
-    default: "Mike Martin Media Blog - Behind the Lense",
+    template: "Blog | Mike Martin Media | %s",
+    default: "Blog | Mike Martin Media",
   },
   description:
     "",
