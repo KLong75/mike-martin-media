@@ -32,6 +32,23 @@ module.exports = {
       //   'gradient-conic':
       //     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       // },
+      margin: {
+        '128': '32rem',  // 512px
+        '144': '36rem',  // 576px
+        '160': '40rem',  // 640px
+        '180': '44rem',  // 704px
+        '200': '48rem',  // 768px
+        '300': '64rem',  // 1024px
+        '400': '76rem',  // 1216px
+        '500': '88rem',  // 1408px
+        '600': '96rem',  // 1536px
+        '700': '104rem', // 1664px
+        '800': '112rem', // 1792px
+        '900': '120rem', // 1920px
+        '1000': '128rem', // 2048px
+        '1100': '136rem', // 2176px
+        '1200': '144rem', // 2304px
+      },
       height: {
         '128': '32rem',  // 512px
         '144': '36rem',  // 576px

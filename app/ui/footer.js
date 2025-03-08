@@ -18,14 +18,13 @@ export default function Footer() {
   const currentPath = usePathname();
 
   return (
-    <div className="bg-black">
-
-    {currentPath !== "/" && (
-      <div className="grid grid-cols-1 bg-black p-2 lg:px-12 xl:px-28 mt-6 lg:m-16">
-        <TestimonialDisplay />
-      </div>
-    )}
-      <footer className=" bg-black text-white flex justify-center items-center w-full pt-6 lg:pt-12">
+    <footer className="bg-black">
+      {currentPath !== "/" && (
+        <div className="grid grid-cols-1 bg-black p-2 lg:px-12 xl:px-28 mt-6 lg:m-16">
+          <TestimonialDisplay />
+        </div>
+      )}
+      <div className=" bg-black text-white flex justify-center items-center w-full pt-6 lg:pt-12">
         <div className="bg-black text-white max-w-800">
           <p className="text-center px-4 font-bold md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[2.6rem] 3xl:text-5xl tracking-tight">
             CONTACT US TODAY TO WORK ON YOUR PROJECT TOGETHER TOMORROW.
@@ -37,12 +36,10 @@ export default function Footer() {
             <div className="flex justify-center mt-12 lg:mt-2 mr-[4rem] lg:mr-[2rem]">
               <OurCapabilitiesList />
             </div>
-            
             <div className="mb-6 lg:mb-0 flex justify-center mt-10 lg:mt-2 mr-[4rem] lg:mr-[2rem]">
               <IndustriesList />
             </div>
           </div>
-
           <div className="flex grid grid-cols-1 lg:grid-cols-3 justify-center items-center py-2 m-4 mt-12">
             <div className="order-2 md:order-1 text-center xl:mr-auto">
               <span className="text-xs lg:text-sm">
@@ -61,7 +58,6 @@ export default function Footer() {
                 </Link>
               </span>
             </div>
-
             <div className="order-3 text-center xl:ml-auto">
               <span
                 className="text-xs lg:text-sm"
@@ -85,7 +81,6 @@ export default function Footer() {
               </span>
             </div>
           </div>
-
           <div className="flex md:hidden justify-center items-center w-full mb-2">
             <Image
               src="/branding/line-logo-white.png"
@@ -95,7 +90,7 @@ export default function Footer() {
             />
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   );
 }

@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { headers } from "next/headers";
 import Script from "next/script";
 // import from next/third-parties
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
 // import components
 import { PreloadResources } from "./preload-resources";
 import Header from "./ui/header";

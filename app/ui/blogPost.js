@@ -28,7 +28,7 @@ export default function BlogPost({}) {
   return (
     <>
       <div className="flex flex-col items-center p-12 ">
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gray-900 text-center">
           {post.title}
         </h1>
         <h2 className="text-sm lg:text-lg mt-2 md:mt-4">
@@ -42,7 +42,7 @@ export default function BlogPost({}) {
             width={post.image_width}
             height={post.image_height}
             alt={post.image_alt}
-            className=""
+            className="w-175"
           />
         </div>
         <div className="p-8 max-w-3xl mx-auto lg:text-lg lg:mt-6">
@@ -82,14 +82,14 @@ export default function BlogPost({}) {
           className="mt-2 lg:mt-6 lg:mb-6"
         />
       </div>
-      <div className="mt-2 mb-12 lg:mb-36 flex justify-center">
-        <div className="mr-52">
-          <Link href={`/blog/${prevPostSlug}`}>
+      <div className="mt-4 mb-12 lg:mb-36 flex justify-center">
+        <div className="mr-52 sm:mr-72 md:mr-144">
+          <Link href={`/blog/blog-posts/${prevPostSlug}`}>
             <span>&lt;&lt; Prev</span>
           </Link>
         </div>
         <div>
-          <Link href={`/blog/${nextPostSlug}`}>
+          <Link href={`/blog/blog-posts/${nextPostSlug}`}>
             <span>Next &gt;&gt;</span>
           </Link>
         </div>

@@ -32,7 +32,7 @@ export default function BlogPostPreview({
 
   return (
     <div className="p-6 hover:bg-black hover:text-white transition-colors duration-500 group">
-      <Link href={`blog/${slug}`}>
+      <Link href={`blog/blog-posts/${slug}`}>
         <div className="w-full">
           <div className="flex justify-center w-full">
             <Image
