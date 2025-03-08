@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { blogPosts } from "@/app/lib/blogPostData";
 
 const urlConfig = {
   '': { changeFrequency: 'yearly', priority: 1.0 },
@@ -57,6 +58,34 @@ export default function sitemap() {
       priority: 0.1,
     });
   }
+
+  // 1. Generate dynamic URLs from blogPosts
+  // 2. For each blog post, push the slug-based route
+  const dynamicBlogUrls = blogPosts
+    .filter((post) => post.slug !== "[slug]") // Exclude placeholder route
+    .map((post) => {
+      let priority = 0.8;
+      let changeFrequency = "monthly";
+
+      // Example: Change priority and changeFrequency for specific posts
+      if (post.slug === "important-post") {
+        priority = 1.0;
+        changeFrequency = "daily";
+      }
+
+      return {
+        url: `https://www.mikemartinmedia.com/blog/blog-posts/${post.slug}`,
+        lastModified: new Date(), // or use a date from the post data
+        changeFrequency,
+        priority,
+      };
+    });
+
+  // 3. Append the dynamic pages from blogPosts
+  urls = urls.concat(dynamicBlogUrls);
+
+  // 4. Filter out the placeholder route '[slug]' from the generated URLs
+  urls = urls.filter(url => url.url !== 'https://www.mikemartinmedia.com/blog/blog-posts/[slug]');
 
   return urls;
 }
