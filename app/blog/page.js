@@ -1,15 +1,11 @@
 // import components
 import BlogPostGallery from "../ui/blogPostGallery";
-// import BlogPost from "../ui/blogPostPreview";
-// import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import BannerImage from "../ui/bannerImage";
 // import images
 import goldenGateBridge from "../../public/images/blog-page/golden-gate-bridge.jpg";
-import blogPageOgImg from "../../public/images/blog-page/blog-page-og-image.png";
-// import data
-// import { blogPosts } from "../lib/blogPostData";
 import PageHeadingBanner from "../ui/pageHeadingBanner";
 
+const blogPageOgImgUrl = "https://www.mikemartinmedia.com/images/blog-page/blog-page-og-image.png";
 
 export const metadata = {
   title: "Blog | Mike Martin Media",
@@ -24,7 +20,7 @@ export const metadata = {
     "Go Beyond the lens and check out our latest adventures in the MMM Blog as we film and travel across town across the country, and around the world. Try to keep up, we move fast!",
     images: [
       {
-        url: blogPageOgImg.src,
+        url: blogPageOgImgUrl,
         width: 1200,
         height: 630,
       },
@@ -37,7 +33,7 @@ export const metadata = {
       "Go Beyond the lens and check out our latest adventures in the MMM Blog as we film and travel across town across the country, and around the world. Try to keep up, we move fast!",
     images: [
       {
-        url: blogPageOgImg.src,
+        url: blogPageOgImgUrl,
         width: 1200,
         height: 630,
       },
