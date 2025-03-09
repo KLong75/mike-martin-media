@@ -71,7 +71,6 @@ export default function Page() {
         </div>
       </div>
       </section>
-      
       <section className="mt-8">
         <div className="lg:px-6 2xl:px-0">
           <MMMLineLogoHeading headline="Meet The Team" heading_level={"h2"} />

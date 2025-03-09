@@ -3,8 +3,6 @@ import { teamData } from "../lib/team.js";
 // import components
 import TeamMemberCard from "./teamMemberCard";
 
-
-
 export default function TeamGallery() {
   return (
     <div>
