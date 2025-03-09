@@ -267,3 +267,11 @@ a.cky-banner-element {
 .animate-fade-in {
   animation: fade-in 0.5s forwards;
 }
+
+.rotate-35 {
+  transform: rotate(35deg);
+}
+
+.-rotate-35 {
+  transform: rotate(-35deg);
+}
