@@ -39,7 +39,6 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       cardType: "summary_large_image",
-      site: "@mikemartinmedia",
       title: `Mike Martin Media Blog | Beyond the Lense: ${post.title}`,
       description: post.description,
       images: [
