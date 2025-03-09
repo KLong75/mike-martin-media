@@ -49,7 +49,7 @@ export default function ClientVideoFrame({
             handleClick();
           }
         }}
-        className="relative flex justify-center items-center w-full w-full h-full overflow-hidden group cursor-pointer"
+        className="relative flex justify-center items-center w-full h-full overflow-hidden group cursor-pointer"
         onClick={handleClick}>
         <Image
           id="video-thumbnail"
@@ -61,7 +61,7 @@ export default function ClientVideoFrame({
           width={960}
           alt={`${client} ${title}`}
         />
-        <div className="absolute inset-0 bg-[#484848] opacity-45 group-hover:opacity-75 group-hover:bg-black  transition-bg duration-2000 ease-in-out"></div>
+        <div className="absolute inset-0 bg-[#484848] opacity-45 group-hover:opacity-75 group-hover:bg-black transition-bg duration-2000 ease-in-out"></div>
         <div
           className="lg:opacity-0 group-hover:opacity-100 duration-2000 ease-in-out"
           id="client-and-category-div">

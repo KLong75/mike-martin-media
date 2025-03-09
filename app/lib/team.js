@@ -46,7 +46,7 @@ export const teamData = [
     role: "Videographer / Editor",
     about:
       "Zoë is a Digital Storytelling graduate from the University of Missouri with a passion for all stages of video production. From post-production editing to camera operation to social media management and content creation, Zoë's enthusiasm for her craft is evident in all that she does.",
-    image_src: "/images/team/zoeCalsyn3.png",
+    image_src: "/images/team/zoeCalsyn.png",
   },
   {
     name: "Luke Bradshaw",
@@ -67,7 +67,7 @@ export const teamData = [
     role: "Videographer / Editor",
     about:
       "Robert is an imaginative director of photography with over 10 years of experience shooting and editing video. He has a strong passion for storytelling and creatively capturing life's most important moments. After graduating from Bradley University with a BS in Broadcast Journalism, Robert has been creating video content for numerous businesses in the St. Louis area, specializing in social media content creation. Robert's energetic personality, experience, and skills make him a great addition to the MMM team.",
-    image_src: "/images/team/robertKraybill.jpg",
+    image_src: "/images/team/robertKraybill.png",
   },
   {
     name: "Remi Heckert",

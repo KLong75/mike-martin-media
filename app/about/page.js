@@ -77,7 +77,7 @@ export default function Page() {
           <MMMLineLogoHeading headline="Meet The Team" heading_level={"h2"} />
         </div>
         <div className="flex justify-center">
-          <div className="max-w-700">
+          <div className="max-w-600">
             <TeamGallery />
           </div>
         </div>

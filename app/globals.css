@@ -12,16 +12,16 @@ html {
 
 /* home page */
 .single-m-logo-container {
-  margin-right: -.1rem;
+  margin-right: -0.1rem;
 }
 
 .home-page-banner-image-container {
-  max-width: 1400px
+  max-width: 1400px;
 }
 
 /* about page */
 .meet-the-team-m-logo-container {
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
 }
 
 .banner-video-aspect-ratio-container {
@@ -35,7 +35,7 @@ html {
   padding-top: 56.25%;
 }
 
-.banner-vid-with-fade-container-no-logo{
+.banner-vid-with-fade-container-no-logo {
   padding-top: 42.19%;
 }
 
@@ -61,7 +61,7 @@ html {
 
 .video-frame-category-span {
   text-shadow: 2px 2px 0 black;
-  bottom: .85rem;
+  bottom: 0.85rem;
   left: 1rem;
   transform: translate(0, 0);
   background-color: rgba(0, 0, 0, 1);
@@ -81,16 +81,16 @@ html {
   -moz-background-clip: text;
 }
 
-  .photo-gallery-category {
-    bottom: .85rem;
-    left: 1rem;
-    transform: translate(0, 0);
-    text-shadow: 2px 2px 0 black;
-    background-color: rgba(0, 0, 0, 1);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-  }
+.photo-gallery-category {
+  bottom: 0.85rem;
+  left: 1rem;
+  transform: translate(0, 0);
+  text-shadow: 2px 2px 0 black;
+  background-color: rgba(0, 0, 0, 1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
 
 .capability-label {
   text-shadow: 2px 2px 0 black;
@@ -129,7 +129,7 @@ html {
 }
 
 .contact-us-button-logo-container {
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
 }
 
 .google-map-container {
@@ -143,7 +143,7 @@ html {
 }
 
 .mmm-site-button-logo-container {
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 /* swiper slide */
 .swiper {
@@ -171,7 +171,7 @@ html {
 .photo-swiper {
   --swiper-navigation-color: #fff;
   --swiper-pagination-color: #fff;
-  --swiper-pagination-bullet-inactive-color: #d3d3d3
+  --swiper-pagination-bullet-inactive-color: #d3d3d3;
 }
 
 .scroll-to-top-button {

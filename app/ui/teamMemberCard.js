@@ -1,27 +1,35 @@
+"use client";
 // import components
 import Image from "./image";
 
 export default function TeamMemberCard({ name, role, about, image_src }) {
- 
-    return (
-      <div className="text-left shadow-2xl bg-white">
-        <div className="flex justify-center p-8">
-          <div className="w-72 h-auto">
-            <Image
-              className="shadow-2xl border-2 border-black"
-              src={image_src}
-              alt={name}
-              width={284}
-              height={379}
-            />
-          </div>
-        </div>
-        <div className="bg-white p-2 sm:p-4 xl:p-8 m-4 mt-0">
-          <h3 className="font-bold">{name}</h3>
-          <h4 className="font-bold">{role}</h4>
-          <p className="text-left overflow-wrap">{about}</p>
-        </div>
+  const handleClick = () => {
+    console.log("clicked");
+  };
+
+  return (
+    <div
+      tabIndex={0}
+      role="button"
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          handleClick();
+        }
+      }}
+      className="relative w-full h-full overflow-hidden cursor-pointer group"
+      onClick={handleClick}>
+      <Image
+        className="shadow-2xl w-full h-full object-cover transform transition-transform duration-2000 group-hover:scale-110 ease-in-out"
+        src={image_src}
+        alt={name}
+        width={900}
+        height={1200}
+      />
+      <div className="absolute bottom-0 left-0 w-full h-1/8 z-50 bg-black bg-opacity-50 flex flex-col justify-center text-white p-4  group-hover:bg-opacity-100 transition-bg duration-2000 ease-in-out .text-shadow-black-background-black">
+        <p className="font-semibold text-xl">{name}</p>
+        <p className="font-semibold text-xs uppercase">{role}</p>
       </div>
-    );
-  }
-// }
+    </div>
+  );
+}
