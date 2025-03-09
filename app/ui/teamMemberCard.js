@@ -34,10 +34,10 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
           {role}
         </p>
         <div className="relative mt-1 w-full">
-          <div className="mt-[.5px] border-b border-white w-0 group-hover:w-full transition-all duration-2000 ease-in-out"></div>
+          <div className="mt-[.5px] border-b border-2 border-white w-0 group-hover:w-full opacity-0 group-hover:opacity-100 transition-all duration-2000 ease-in-out"></div>
           <div className="absolute right-[-2px] top-0 h-full w-0 group-hover:w-4 opacity-0 group-hover:opacity-100 transition-all duration-3000 ease-in-out">
-            <div className="border-b border-white transform -rotate-35 origin-bottom-right"></div>
-            <div className="border-b border-white transform rotate-35 origin-top-right"></div>
+            <div className="border-b border-2 border-white transform -rotate-35 origin-bottom-right"></div>
+            <div className="border-b border-2 border-white transform rotate-35 origin-top-right"></div>
           </div>
         </div>
       </div>
