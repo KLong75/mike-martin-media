@@ -61,7 +61,7 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
       </div>
     </div>
     <Dialog open={bioOpen} onClose={handleClose}>
-      <DialogBackdrop className="fixed inset-0 bg-black bg-opacity-50" />
+      <DialogBackdrop className="fixed inset-0 bg-black bg-opacity-60" />
       <DialogPanel className="fixed inset-0 flex justify-center items-center z-50">
         <div className="relative bg-black text-white p-6 max-w-2xl w-[90vw] lg:w-3/4 h-auto">
           <div className="flex justify-end">
@@ -73,7 +73,7 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
             </button>
           </div>
           <div className="flex flex-col items-start md:p-6">
-            <h2 className="text-2xl font-semibold">{name}</h2>
+            <DialogTitle className="text-2xl font-semibold">{name}</DialogTitle>
             <h3 className="text-xs uppercase font-semibold">{role}</h3>
             <p className="text-lg mt-6">{about}</p>
           </div>
