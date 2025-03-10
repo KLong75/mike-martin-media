@@ -52,7 +52,7 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
           </p>
           <div className="relative mt-  w-full">
             <div className="mt-[1.5px] border-b border-2 border-white w-0 lg:group-hover:w-full opacity-0 lg:group-hover:opacity-100 transition-all duration-2000 ease-in-out"></div>
-            <div className="absolute right-[-3px] top-0 h-full w-0 lg:group-hover:w-4 opacity-0 lg:group-hover:opacity-100 transition-all duration-3000 ease-in-out">
+            <div className="absolute right-[-3px] top-0 h-full w-0 lg:group-hover:w-4 opacity-0 lg:group-hover:opacity-100 transition-all duration-2000 ease-in-out">
               <div className="border-b border-2 border-white transform -rotate-45 origin-bottom-right"></div>
               <div className="border-b border-2 border-white transform rotate-45 origin-top-right"></div>
             </div>
