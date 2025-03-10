@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer className="bg-black">
       {currentPath !== "/" && (
-        <div className="grid grid-cols-1 bg-black p-2 lg:px-12 xl:px-28 mt-6 lg:m-16">
+        <div className="grid grid-cols-1 bg-black p-2 lg:px-12 xl:px-28">
           <TestimonialDisplay />
         </div>
       )}
