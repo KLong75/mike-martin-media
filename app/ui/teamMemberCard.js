@@ -75,7 +75,7 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
           <div className="flex flex-col items-start md:p-6">
             <h2 className="text-2xl font-semibold">{name}</h2>
             <h3 className="text-xs uppercase font-semibold">{role}</h3>
-            <p className="text-lg mt-6 overflow-y-auto max-h-[80vh]">{about}</p>
+            <p className="text-lg mt-6">{about}</p>
           </div>
         </div>
       </DialogPanel>
