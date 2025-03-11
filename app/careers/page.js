@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.mikemartinmedia.com/about",
+    url: "https://www.mikemartinmedia.com/careers",
     siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Video Production Jobs | Mike Martin Media",
     description: "At MMM, we believe in creating more than just great video content. We're committed to making a positive impact through everything we do. If you're someone who shares our values of honesty, accountability, and community, we'd love to hear from you.",

@@ -30,7 +30,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.mikemartinmedia.com/about",
+    url: "https://www.mikemartinmedia.com/capabilities/animation-motion-graphics",
     siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Video Animation Company | Mike Martin Media",
     description:
