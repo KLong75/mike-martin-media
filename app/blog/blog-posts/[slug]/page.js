@@ -27,6 +27,9 @@ export async function generateMetadata({ params }) {
       canonical: `/${post.slug}`,
     },
     openGraph: {
+      type: "website",
+      locale: "en_US",
+      url: `${siteUrl}/blog/blog-posts/${post.slug}`,
       title: `Mike Martin Media Blog | Beyond the Lense: ${post.title}`,
       description: post.description,
       images: [

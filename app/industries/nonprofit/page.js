@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.mikemartinmedia.com/about",
+    url: "https://www.mikemartinmedia.com/industries/nonprofit",
     siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Nonprofit Video Production | Mike Martin Media",
     description:
