@@ -10,33 +10,58 @@ const ourWorkPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/o
 export const metadata = {
   title: "Our Work | Mike Martin Media",
   description:
-    "We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process.",
+    "Award winning, professional video production. Content creation, live recording, post-production editing, colorgrading, audio engineering, on screen graphics, green screen, visual effets, commercials, promotions, and so much more.",
   alternates: {
     canonical: "/our-work",
   },
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.mikemartinmedia.com/about",
+    siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Our Work | Mike Martin Media",
     description:
-      "We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process.",
+      "Award winning, professional video production. Content creation, live recording, post-production editing, colorgrading, audio engineering, on screen graphics, green screen, visual effets, commercials, promotions, and so much more.",
     images: [
       {
         url: ourWorkPageOgImgUrl,
         width: 1200,
         height: 630,
       },
+        // {
+      //   url: ,
+      //   width: 1920,
+      //   height: 1080,
+      //   alt: "About Mike Martin Media",
+      // },
+      // {
+      //   url: ,
+      //   width: 1080,
+      //   height: 1080,
+      // },
+      // {
+      //   url: ,
+      //   width: 600,
+      //   height: 314,
+      // }
     ],
   },
   twitter: {
     cardType: "summary_large_image",
     title: "Our Work | Mike Martin Media",
     description:
-      "We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process.",
+      "Award winning, professional video production. Content creation, live recording, post-production editing, colorgrading, audio engineering, on screen graphics, green screen, visual effets, commercials, promotions, and so much more.",
     images: [
       {
         url: ourWorkPageOgImgUrl,
         width: 1200,
         height: 630,
       },
+        // {
+        //   url: ,
+        //   width: 800,
+        //   height: 418,
+        // },
     ],
   },
 };

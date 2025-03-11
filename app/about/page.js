@@ -12,12 +12,63 @@ import mikeVan from "../../public/images/about-page/mike-van.png";
 // import text
 import PageHeadingBanner from "../ui/pageHeadingBanner";
 
+const aboutPageOgImgUrl =
+  "https://www.mikemartinmedia.com/images/open-graph/about-og.png";
+const aboutPageTwitterImgUrl =
+  "https://www.mikemartinmedia.com/images/twitter/about-twitter.png";
+
 export const metadata = {
   title: "About Mike Martin Media",
   description:
     "For over 15 years, Mike Martin Media has combined the latest technology with the best in-house talent to create impactful videos for organizations all over the United States and the world. We partner with corporations, medical institutions, education institutions, and nonprofit organizations to bring their vision to life. Our expertise provides a seamless production experience that you probably didn't know could exist. We produce the quality work and client experience that you need along with a valuable partnership that will bring growth and success.",
   alternates: {
     canonical: "/about",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.mikemartinmedia.com/about",
+    siteName: "Mike Martin Media: St. Louis Video Production Company",
+    title: "About Mike Martin Media",
+    description:
+      "For over 15 years, Mike Martin Media has combined the latest technology with the best in-house talent to create impactful videos for organizations all over the United States and the world. We partner with corporations, medical institutions, education institutions, and nonprofit organizations to bring their vision to life. Our expertise provides a seamless production experience that you probably didn't know could exist. We produce the quality work and client experience that you need along with a valuable partnership that will bring growth and success.",
+    images: [
+      {
+        url: aboutPageOgImgUrl,
+        width: 1200,
+        height: 630,
+        alt: "About Mike Martin Media",
+      },
+      // {
+      //   url: ,
+      //   width: 1920,
+      //   height: 1080,
+      //   alt: "About Mike Martin Media",
+      // },
+      // {
+      //   url: ,
+      //   width: 1080,
+      //   height: 1080,
+      // },
+      // {
+      //   url: ,
+      //   width: 600,
+      //   height: 314,
+      // }
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+    title: "About Mike Martin Media",
+    description:
+      "For over 15 years, Mike Martin Media has combined the latest technology with the best in-house talent to create impactful videos for organizations all over the United States and the world. We partner with corporations, medical institutions, education institutions, and nonprofit organizations to bring their vision to life. Our expertise provides a seamless production experience that you probably didn't know could exist. We produce the quality work and client experience that you need along with a valuable partnership that will bring growth and success.",
+    images: [
+      {
+        url: aboutPageTwitterImgUrl,
+        width: 800,
+        height: 418,
+      },
+    ],
   },
 };
 
@@ -50,26 +101,33 @@ export default function Page() {
         />
       </div>
       <section className="flex justify-center items-center ">
-      <div className="flex justify-center items-center p-6 md:p-12 lg:p-28 xl:p-42 max-w-700">
-        <div
-          id="home-page-about-section"
-          className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-12 xl:gap-16 flex justify-center items-center">
-          <div className="order-2 xl:order-1 relative flex justify-center items-center">
-            <MMMTeamPhotoWithLogo />
-          </div>
-          <div className="flex flex-col justify-left order-1 xl:order-2 ">
-            <h2 className="font-semibold text-2xl lg:text-3xl xl:text-4xl">
-              Who We Are
-            </h2>
-            <p className="md:text-lg xl:text-xl my-4 lg:my-6">
-            We are a team of creatives who found our niche in producing meaningful, high-quality video content. We understand that your story is unique and feel it should be told in a way that resonates with your audience. From concept to the final product, we are dedicated to crafting videos that are authentic, impactful and aligned with your goals.
-            </p>
-            <p className="md:text-lg xl:text-xl my-4 lg:my-6">
-            While we do love to have fun, we also take our work very seriously—because we know that when it&apos;s done right, video can move people, inspire action and make a difference.
-            </p>
+        <div className="flex justify-center items-center p-6 md:p-12 lg:p-28 xl:p-42 max-w-700">
+          <div
+            id="home-page-about-section"
+            className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-12 xl:gap-16 flex justify-center items-center">
+            <div className="order-2 xl:order-1 relative flex justify-center items-center">
+              <MMMTeamPhotoWithLogo />
+            </div>
+            <div className="flex flex-col justify-left order-1 xl:order-2 ">
+              <h2 className="font-semibold text-2xl lg:text-3xl xl:text-4xl">
+                Who We Are
+              </h2>
+              <p className="md:text-lg xl:text-xl my-4 lg:my-6">
+                We are a team of creatives who found our niche in producing
+                meaningful, high-quality video content. We understand that your
+                story is unique and feel it should be told in a way that
+                resonates with your audience. From concept to the final product,
+                we are dedicated to crafting videos that are authentic,
+                impactful and aligned with your goals.
+              </p>
+              <p className="md:text-lg xl:text-xl my-4 lg:my-6">
+                While we do love to have fun, we also take our work very
+                seriously—because we know that when it&apos;s done right, video
+                can move people, inspire action and make a difference.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
       </section>
       <section className="mt-8">
         <div className="lg:px-6 2xl:px-0">
@@ -99,10 +157,11 @@ export default function Page() {
             </div>
             <div className="mt-6">
               <p className="lg:text-xl xl:text-balance">
-                We&apos;ve built lasting relationships with clients who share our
-                values, and we&apos;ve helped them achieve success while also making
-                the world a little better along the way. We&apos;re proud of where we
-                started, and even more excited for where we&apos;re going.
+                We&apos;ve built lasting relationships with clients who share
+                our values, and we&apos;ve helped them achieve success while
+                also making the world a little better along the way. We&apos;re
+                proud of where we started, and even more excited for where
+                we&apos;re going.
               </p>
             </div>
           </div>

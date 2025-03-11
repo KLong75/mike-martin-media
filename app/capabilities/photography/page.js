@@ -21,9 +21,14 @@ import {
 // import { photographyCoverImages } from "../../lib/capabilities/photography.js";
 import TriPicBanner from "@/app/ui/triPicBanner.js";
 
-const photographyPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/photography-og.png";
+const photographyPageOgImgUrl =
+  "https://www.mikemartinmedia.com/images/open-graph/photography-og.png";
 
 export const metadata = {
+  type: "website",
+  locale: "en_US",
+  url: "https://www.mikemartinmedia.com/about",
+  siteName: "Mike Martin Media: St. Louis Video Production Company",
   title: "Photography Company | Mike Martin Media",
   description:
     "Award-winning photography company delivering stunning commercial, portrait, and event photography. Transform your brand with professional images that tell your story. Book now.",
@@ -40,6 +45,22 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
+      // {
+      //   url: ,
+      //   width: 1920,
+      //   height: 1080,
+      //   alt: "About Mike Martin Media",
+      // },
+      // {
+      //   url: ,
+      //   width: 1080,
+      //   height: 1080,
+      // },
+      // {
+      //   url: ,
+      //   width: 600,
+      //   height: 314,
+      // }
     ],
   },
   twitter: {
@@ -53,6 +74,11 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
+        // {
+        //   url: ,
+        //   width: 800,
+        //   height: 418,
+        // },
     ],
   },
 };

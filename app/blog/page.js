@@ -15,8 +15,12 @@ export const metadata = {
     canonical: "/blog",
   },
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.mikemartinmedia.com/blog/",
+    siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Blog | Mike Martin Media",
-  description:
+    description:
     "Go Beyond the lens and check out our latest adventures in the MMM Blog as we film and travel across town across the country, and around the world. Try to keep up, we move fast!",
     images: [
       {
@@ -24,6 +28,22 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
+        // {
+      //   url: ,
+      //   width: 1920,
+      //   height: 1080,
+      //   alt: "About Mike Martin Media",
+      // },
+      // {
+      //   url: ,
+      //   width: 1080,
+      //   height: 1080,
+      // },
+      // {
+      //   url: ,
+      //   width: 600,
+      //   height: 314,
+      // }
     ],
   },
   twitter: {
@@ -37,6 +57,11 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
+        // {
+        //   url: ,
+        //   width: 800,
+        //   height: 418,
+        // },
     ],
   },
 };

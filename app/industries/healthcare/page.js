@@ -19,6 +19,10 @@ export const metadata = {
     canonical: "/industries/healthcare/",
   },
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.mikemartinmedia.com/about",
+    siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Healthcare & Medical Videography | Mike Martin Media",
     description:
       "Trusted healthcare & medical videography specialists creating patient education, staff training & facility showcase videos. HIPAA-compliant team serving leading hospitals. Schedule a consultation.",
@@ -28,6 +32,22 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
+        // {
+      //   url: ,
+      //   width: 1920,
+      //   height: 1080,
+      //   alt: "About Mike Martin Media",
+      // },
+      // {
+      //   url: ,
+      //   width: 1080,
+      //   height: 1080,
+      // },
+      // {
+      //   url: ,
+      //   width: 600,
+      //   height: 314,
+      // }
     ],
   },
   twitter: {
@@ -41,6 +61,11 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
+        // {
+        //   url: ,
+        //   width: 800,
+        //   height: 418,
+        // },
     ],
   },
 };

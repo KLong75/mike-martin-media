@@ -19,7 +19,8 @@ import {
   whoBenefitsFromDrone,
 } from "../../lib/capabilities/drone.js";
 
-const dronePageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/drone-og.png";
+const dronePageOgImgUrl =
+  "https://www.mikemartinmedia.com/images/open-graph/drone-og.png";
 
 export const metadata = {
   title: "Drone Video Services | Mike Martin Media",
@@ -29,15 +30,36 @@ export const metadata = {
     canonical: "/capabilities/drone/",
   },
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.mikemartinmedia.com/capabilities/drone/",
+    siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Drone Video Services | Mike Martin Media",
-  description:
-    "FAA-certified drone video company delivering stunning aerial photography & videography. Expert pilots capture breathtaking perspectives for real estate, events & more. Contact us today.",
+    description:
+      "FAA-certified drone video company delivering stunning aerial photography & videography. Expert pilots capture breathtaking perspectives for real estate, events & more. Contact us today.",
     images: [
       {
         url: dronePageOgImgUrl,
         width: 1200,
         height: 630,
+        alt: "Drone Video Services | Mike Martin Media",
       },
+        // {
+      //   url: ,
+      //   width: 1920,
+      //   height: 1080,
+      //   alt: "About Mike Martin Media",
+      // },
+      // {
+      //   url: ,
+      //   width: 1080,
+      //   height: 1080,
+      // },
+      // {
+      //   url: ,
+      //   width: 600,
+      //   height: 314,
+      // }
     ],
   },
   twitter: {
@@ -51,6 +73,11 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
+        // {
+        //   url: ,
+        //   width: 800,
+        //   height: 418,
+        // },
     ],
   },
 };

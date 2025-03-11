@@ -47,6 +47,11 @@ export async function generateMetadata({ params }) {
           width: post.image_width || 1200,
           height: post.image_height || 630,
         },
+        // {
+        //   url: ,
+        //   width: 800,
+        //   height: 418,
+        // },
       ],
     },
   };

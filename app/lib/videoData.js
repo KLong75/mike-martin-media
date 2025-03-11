@@ -32,14 +32,6 @@ export const videoData = [
     src: "https://player.vimeo.com/video/792679501?h=8a339c0ff3&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
-    id: 1,
-    category: ["Drone","Medical", "Video Editing", "Video Production"],
-    client: "Missouri Baptist",
-    title: "Blues Drone",
-    image_src: "/images/video-thumbnails/drone/bluesDrone.png",
-    src: "https://player.vimeo.com/video/943728497?h=2a1e0843fa&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
-  },
-  {
     id: 2,
     category: ["Corporate", "Drone", "Video Editing", "Video Production"],
     client: "ARTCO",
@@ -257,7 +249,7 @@ export const videoData = [
   },
   {
     id: 39,
-    category: ["Livestream", "Video Editing", "Video Production"],
+    category: ["nonprofit", "Livestream", "Video Editing", "Video Production"],
     client: "Spirit of Provident",
     title: "Gala Livestream",
     image_src: "/images/video-thumbnails/livestream/provident-gala.png",
@@ -399,5 +391,13 @@ export const videoData = [
   //   title: "Spring Parents Council Livestream",
   //   image_src:"/images/video-thumbnails/livestream/wash-u-parents-council.png",
   //   src: "https://player.vimeo.com/video/814356804?h=635a2eba30&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+  // },
+  // {
+  //   id: 1,
+  //   category: ["Drone","Medical", "Video Editing", "Video Production"],
+  //   client: "Missouri Baptist",
+  //   title: "Blues Drone",
+  //   image_src: "/images/video-thumbnails/drone/bluesDrone.png",
+  //   src: "https://player.vimeo.com/video/943728497?h=2a1e0843fa&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   // },
 ];

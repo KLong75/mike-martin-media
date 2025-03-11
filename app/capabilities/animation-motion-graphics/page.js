@@ -28,8 +28,12 @@ export const metadata = {
     canonical: "/capabilities/animation-motion-graphics/",
   },
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.mikemartinmedia.com/about",
+    siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Video Animation Company | Mike Martin Media",
-  description:
+    description:
     "Expert video animation company specializing in motion graphics, 2D & 3D animation. Transform your ideas into engaging visual stories that drive results. Get a free consultation today.",
     images: [
       {
@@ -37,6 +41,22 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
+        // {
+      //   url: ,
+      //   width: 1920,
+      //   height: 1080,
+      //   alt: "About Mike Martin Media",
+      // },
+      // {
+      //   url: ,
+      //   width: 1080,
+      //   height: 1080,
+      // },
+      // {
+      //   url: ,
+      //   width: 600,
+      //   height: 314,
+      // }
     ],
   },
   twitter: {
@@ -50,6 +70,11 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
+        // {
+        //   url: ,
+        //   width: 800,
+        //   height: 418,
+        // },
     ],
   },
 };
