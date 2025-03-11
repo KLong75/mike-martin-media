@@ -5,12 +5,39 @@ import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
 import PageHeadingBanner from "../ui/pageHeadingBanner";
 import VideoFilter from "../ui/video-filter";
 
+const ourWorkPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/our-work-og.png";
+
 export const metadata = {
   title: "Our Work | Mike Martin Media",
   description:
     "We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process.",
   alternates: {
     canonical: "/our-work",
+  },
+  openGraph: {
+    title: "Our Work | Mike Martin Media",
+    description:
+      "We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process.",
+    images: [
+      {
+        url: ourWorkPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+    title: "Our Work | Mike Martin Media",
+    description:
+      "We promote, inform and inspire audiences with every project. From Corporate, Education, Medical and Nonprofit videos, we are your partner through every step of the process.",
+    images: [
+      {
+        url: ourWorkPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

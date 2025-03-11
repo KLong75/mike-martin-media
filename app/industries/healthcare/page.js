@@ -9,12 +9,39 @@ import BannerImage from "@/app/ui/bannerImage";
 //import data
 import { healthcarePageBannerText, healthcareSupport } from "@/app/lib/industries/healthcare";
 
+const healthcarePageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/healthcare-og.png";
+
 export const metadata = {
   title: "Healthcare & Medical Videography | Mike Martin Media",
   description:
     "Trusted healthcare & medical videography specialists creating patient education, staff training & facility showcase videos. HIPAA-compliant team serving leading hospitals. Schedule a consultation.",
   alternates: {
     canonical: "/industries/healthcare/",
+  },
+  openGraph: {
+    title: "Healthcare & Medical Videography | Mike Martin Media",
+    description:
+      "Trusted healthcare & medical videography specialists creating patient education, staff training & facility showcase videos. HIPAA-compliant team serving leading hospitals. Schedule a consultation.",
+    images: [
+      {
+        url: healthcarePageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+    title: "Healthcare & Medical Videography | Mike Martin Media",
+    description:
+      "Trusted healthcare & medical videography specialists creating patient education, staff training & facility showcase videos. HIPAA-compliant team serving leading hospitals. Schedule a consultation.",
+    images: [
+      {
+        url: healthcarePageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

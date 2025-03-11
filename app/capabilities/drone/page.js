@@ -11,7 +11,7 @@ import FormattedTextBlock from "@/app/ui/formattedTextBlock.js";
 // import page data
 import {
   dronePageHeadingBannerText,
-  droneCapabilities,
+  // droneCapabilities,
   droneAdvantage,
   droneProcess,
   faaCertified,
@@ -19,12 +19,39 @@ import {
   whoBenefitsFromDrone,
 } from "../../lib/capabilities/drone.js";
 
+const dronePageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/drone-og.png";
+
 export const metadata = {
   title: "Drone Video Services | Mike Martin Media",
   description:
     "FAA-certified drone video company delivering stunning aerial photography & videography. Expert pilots capture breathtaking perspectives for real estate, events & more. Contact us today.",
   alternates: {
     canonical: "/capabilities/drone/",
+  },
+  openGraph: {
+    title: "Drone Video Services | Mike Martin Media",
+  description:
+    "FAA-certified drone video company delivering stunning aerial photography & videography. Expert pilots capture breathtaking perspectives for real estate, events & more. Contact us today.",
+    images: [
+      {
+        url: dronePageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+    title: "Drone Video Services | Mike Martin Media",
+    description:
+      "FAA-certified drone video company delivering stunning aerial photography & videography. Expert pilots capture breathtaking perspectives for real estate, events & more. Contact us today.",
+    images: [
+      {
+        url: dronePageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

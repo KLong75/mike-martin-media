@@ -17,12 +17,39 @@ import {
   exampleVideoEditingVideoSrc,
 } from "../../lib/capabilities/video-editing.js";
 
+const videoEditingPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/video-editing-og.png";
+
 export const metadata = {
   title: "Video Editing Company | Mike Martin Media",
   description:
     "Professional video editing company transforming raw footage into polished, engaging stories. Expert team handles color grading, sound design & motion graphics. Get your free quote today.",
   alternates: {
     canonical: "/capabilities/video-editing/",
+  },
+  openGraph: {
+    title: "Video Editing Company | Mike Martin Media",
+    description:
+      "Professional video editing company transforming raw footage into polished, engaging stories. Expert team handles color grading, sound design & motion graphics. Get your free quote today.",
+    images: [
+      {
+        url: videoEditingPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+    title: "Video Editing Company | Mike Martin Media",
+    description:
+      "Professional video editing company transforming raw footage into polished, engaging stories. Expert team handles color grading, sound design & motion graphics. Get your free quote today.",
+    images: [
+      {
+        url: videoEditingPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

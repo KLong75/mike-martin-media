@@ -9,12 +9,39 @@ import IndustrySupport from "@/app/ui/industrySupport";
 import { corporatePageBannerText, corporateSupport } from "@/app/lib/industries/corporate";
 import BannerImage from "@/app/ui/bannerImage";
 
+const corporatePageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/corporate-og.png";
+
 export const metadata = {
   title: "Corporate Video Production | Mike Martin Media",
   description:
     "Full-service corporate video production company delivering training, executive communications & promotional content. Professional team elevates your brand with compelling visuals. Contact us.",
   alternates: {
     canonical: "/industries/corporate/",
+  },
+  openGraph: {
+    title: "Corporate Video Production | Mike Martin Media",
+    description:
+      "Full-service corporate video production company delivering training, executive communications & promotional content. Professional team elevates your brand with compelling visuals. Contact us.",
+    images: [
+      {
+        url: corporatePageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+    title: "Corporate Video Production | Mike Martin Media",
+    description:
+      "Full-service corporate video production company delivering training, executive communications & promotional content. Professional team elevates your brand with compelling visuals. Contact us.",
+    images: [
+      {
+        url: corporatePageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

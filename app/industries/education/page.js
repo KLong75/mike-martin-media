@@ -9,12 +9,39 @@ import BannerImage from "@/app/ui/bannerImage";
 //import data
 import { educationPageBannerText, educationSupport } from "@/app/lib/industries/education";
 
+const educationPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/education-og.png";
+
 export const metadata = {
   title: "Education Video Production | Mike Martin Media",
   description:
     "Professional education video production creating engaging content for schools and universities. From virtual tours to instructional videos, inspire learning through compelling storytelling. Start now.",
   alternates: {
     canonical: "/industries/education/",
+  },
+  openGraph: {
+    title: "Education Video Production | Mike Martin Media",
+    description:
+      "Professional education video production creating engaging content for schools and universities. From virtual tours to instructional videos, inspire learning through compelling storytelling. Start now.",
+    images: [
+      {
+        url: educationPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+    title: "Education Video Production | Mike Martin Media",
+    description:
+      "Professional education video production creating engaging content for schools and universities. From virtual tours to instructional videos, inspire learning through compelling storytelling. Start now.",
+    images: [
+      {
+        url: educationPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

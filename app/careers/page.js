@@ -1,20 +1,45 @@
 // import components
-import BannerVideo from "../ui/bannerVideo";
-import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
+// import BannerVideo from "../ui/bannerVideo";
+// import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
 // import BannerVideoWithFadeEffect from "../ui/bannerVideoWithFadeEffect";
 import PageHeadingBanner from "../ui/pageHeadingBanner";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
-import BannerImage from "../ui/bannerImage";
+// import BannerImage from "../ui/bannerImage";
 import JoinTheTeam from "../ui/joinTheTeam";
 // import images
 // import blackMmmLogo from "../../public/branding/black-mmm-logo-1642x560.png";
 import BannerVideoWithFadeEffect from "../ui/bannerVideoWithFadeEffect";
+
+const careersPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/careers-og.png";
 
 export const metadata = {
   title: "Video Production Jobs | Mike Martin Media",
   description: "At MMM, we believe in creating more than just great video content. We're committed to making a positive impact through everything we do. If you're someone who shares our values of honesty, accountability, and community, we'd love to hear from you.",
   alternates: {
     canonical: "/careers",
+  },
+  openGraph: {
+    title: "Video Production Jobs | Mike Martin Media",
+    description: "At MMM, we believe in creating more than just great video content. We're committed to making a positive impact through everything we do. If you're someone who shares our values of honesty, accountability, and community, we'd love to hear from you.",
+    images: [
+      {
+        url: careersPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+    title: "Video Production Jobs | Mike Martin Media",
+    description: "At MMM, we believe in creating more than just great video content. We're committed to making a positive impact through everything we do. If you're someone who shares our values of honesty, accountability, and community, we'd love to hear from you.",
+    images: [
+      {
+        url: careersPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

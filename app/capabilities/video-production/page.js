@@ -16,7 +16,8 @@ import {
   videoProductionForEveryIndustry,
   exampleVideoProductionVideoSrc,
 } from "../../lib/capabilities/video-production.js";
-import Link from "next/link.js";
+
+const videoProductionPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/video-production-og.png";
 
 export const metadata = {
   title: "Business Video Production | Mike Martin Media",
@@ -24,6 +25,31 @@ export const metadata = {
     "Professional business video production creating engaging content that drives results. Full-service team handles creative, filming, and post-production for your brand story. Book your project.",
   alternates: {
     canonical: "/capabilities/video-production/",
+  },
+  openGraph: {
+    title: "Business Video Production | Mike Martin Media",
+    description:
+      "Professional business video production creating engaging content that drives results. Full-service team handles creative, filming, and post-production for your brand story. Book your project.",
+    images: [
+      {
+        url: videoProductionPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+    title: "Business Video Production | Mike Martin Media",
+    description:
+      "Professional business video production creating engaging content that drives results. Full-service team handles creative, filming, and post-production for your brand story. Book your project.",
+    images: [
+      {
+        url: videoProductionPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

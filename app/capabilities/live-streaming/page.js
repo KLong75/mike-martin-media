@@ -17,6 +17,7 @@ import {
   exampleLivestreamingVideoSrc,
 } from "../../lib/capabilities/livestreaming.js";
 
+const livestreamingPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/livestreaming-og.png";
 
 export const metadata = {
   title: "Live Stream Video Company | Mike Martin Media",
@@ -24,6 +25,31 @@ export const metadata = {
     "Professional livestream video company specializing in corporate events, webinars & virtual conferences. Expert production team ensures flawless streaming worldwide. Get started today.",
   alternates: {
     canonical: "/capabilities/live-streaming/",
+  },
+  openGraph: {
+    title: "Live Stream Video Company | Mike Martin Media",
+    description:
+      "Professional livestream video company specializing in corporate events, webinars & virtual conferences. Expert production team ensures flawless streaming worldwide. Get started today.",
+    images: [
+      {
+        url: livestreamingPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+    title: "Live Stream Video Company | Mike Martin Media",
+    description:
+      "Professional livestream video company specializing in corporate events, webinars & virtual conferences. Expert production team ensures flawless streaming worldwide. Get started today.",
+    images: [
+      {
+        url: livestreamingPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

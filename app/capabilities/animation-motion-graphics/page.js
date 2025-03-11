@@ -14,9 +14,11 @@ import {
   benefitsOfAnimation,
   animationProcess,
   whoBenefitsFromAnimation,
-  whyGoAnimated,
+  // whyGoAnimated,
   exampleAnimationVideoSrc,
 } from "../../lib/capabilities/animation.js";
+
+const animationPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/animation-og.png";
 
 export const metadata = {
   title: "Video Animation Company | Mike Martin Media",
@@ -24,6 +26,31 @@ export const metadata = {
     "Expert video animation company specializing in motion graphics, 2D & 3D animation. Transform your ideas into engaging visual stories that drive results. Get a free consultation today.",
   alternates: {
     canonical: "/capabilities/animation-motion-graphics/",
+  },
+  openGraph: {
+    title: "Video Animation Company | Mike Martin Media",
+  description:
+    "Expert video animation company specializing in motion graphics, 2D & 3D animation. Transform your ideas into engaging visual stories that drive results. Get a free consultation today.",
+    images: [
+      {
+        url: animationPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+    title: "Video Animation Company | Mike Martin Media",
+    description:
+      "Expert video animation company specializing in motion graphics, 2D & 3D animation. Transform your ideas into engaging visual stories that drive results. Get a free consultation today.",
+    images: [
+      {
+        url: animationPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

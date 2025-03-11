@@ -21,12 +21,39 @@ import {
 // import { photographyCoverImages } from "../../lib/capabilities/photography.js";
 import TriPicBanner from "@/app/ui/triPicBanner.js";
 
+const photographyPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/photography-og.png";
+
 export const metadata = {
   title: "Photography Company | Mike Martin Media",
   description:
     "Award-winning photography company delivering stunning commercial, portrait, and event photography. Transform your brand with professional images that tell your story. Book now.",
   alternates: {
     canonical: "/capabilities/photography/",
+  },
+  openGraph: {
+    title: "Photography Company | Mike Martin Media",
+    description:
+      "Award-winning photography company delivering stunning commercial, portrait, and event photography. Transform your brand with professional images that tell your story. Book now.",
+    images: [
+      {
+        url: photographyPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+    title: "Photography Company | Mike Martin Media",
+    description:
+      "Award-winning photography company delivering stunning commercial, portrait, and event photography. Transform your brand with professional images that tell your story. Book now.",
+    images: [
+      {
+        url: photographyPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 

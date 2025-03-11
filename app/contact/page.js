@@ -1,5 +1,5 @@
 // import components
-import Image from "../ui/image";
+// import Image from "../ui/image";
 // import ContactForm from "../ui/contactForm";
 // import ContactInfo from "../ui/contactInfo";
 // import SocialMediaLinks from "../ui/socialMediaLinks";
@@ -14,12 +14,39 @@ import GoogleMap from "../ui/googleMap";
 import ActiveCampaignContactForm from "../ui/activeCampaignContactForm";
 // import NewsletterSignupButton from "../ui/newsletterSignupButton";
 
+const contactPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/contact-og.png";
+
 export const metadata = {
   title: "Contact | Mike Martin Media",
   description:
     "Contact Mike Martin Media. Contact us today to work on your project together tomorrow.",
   alternates: {
     canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact | Mike Martin Media",
+    description:
+      "Contact Mike Martin Media. Contact us today to work on your project together tomorrow.",
+    images: [
+      {
+        url: contactPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    cardType: "summary_large_image",
+    title: "Contact | Mike Martin Media",
+    description:
+      "Contact Mike Martin Media. Contact us today to work on your project together tomorrow.",
+    images: [
+      {
+        url: contactPageOgImgUrl,
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 };
 
