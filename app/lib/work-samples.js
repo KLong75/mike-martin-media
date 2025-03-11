@@ -28,13 +28,6 @@ export const workSampleData = [
     src: "https://player.vimeo.com/video/792679501?h=8a339c0ff3&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
-    category: ["Drone", "Medical", "Video Editing", "Video Production"],
-    client: "Missouri Baptist",
-    title: "Blues Drone",
-    image_src: "/images/work-gallery-cover-images/mo-bap-cover.jpg",
-    src: "https://player.vimeo.com/video/943728497?h=2a1e0843fa&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
-  },
-  {
     category: ["Corporate", "Drone", "Video Editing", "Video Production"],
     client: "ARTCO",
     title: "Recruitment",
@@ -130,13 +123,15 @@ export const workSampleData = [
     client: "SSM Cardinal Glennon",
     title: "Residency Recruitment",
     src: "https://player.vimeo.com/video/872654095?h=2fbe224539&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
-    image_src: "/images/work-gallery-cover-images/ssm-cardinal-glennon-cover.jpg",
+    image_src:
+      "/images/work-gallery-cover-images/ssm-cardinal-glennon-cover.jpg",
   },
   {
     category: ["Medical", "Video Editing", "Video Production", "Drone"],
     client: "Washington University Emergency Medicine",
     title: "Residency Recruitment",
-    image_src: "/images/work-gallery-cover-images/wash-u-emergency-med-cover.jpg",
+    image_src:
+      "/images/work-gallery-cover-images/wash-u-emergency-med-cover.jpg",
     src: "https://player.vimeo.com/video/866533299?h=90843c1f39&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
@@ -224,17 +219,19 @@ export const workSampleData = [
     src: "https://player.vimeo.com/video/862525134?h=722087be67&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
-    category: ["Livestream", "Video Editing", "Video Production"],
+    category: ["Nonprofit", "Livestream", "Video Editing", "Video Production"],
     client: "Spirit of Provident",
     title: "Gala Livestream",
-    image_src: "/images/work-gallery-cover-images/provident-livestream-cover.jpg",
+    image_src:
+      "/images/work-gallery-cover-images/provident-livestream-cover.jpg",
     src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
     category: ["Animation", "Medical", "Video Editing", "Video Production"],
     client: "St. Louis Children's Hospital",
     title: "What to Expect - Colonoscopy",
-    image_src: "/images/work-gallery-cover-images/childrens-hospital-animation-cover.jpg",
+    image_src:
+      "/images/work-gallery-cover-images/childrens-hospital-animation-cover.jpg",
     src: "https://player.vimeo.com/video/823498854?h=49fb6c4ebf&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
@@ -248,7 +245,8 @@ export const workSampleData = [
     category: ["Animation", "Education", "Video Editing", "Video Production"],
     client: "Washington University",
     title: "Olin MBA",
-    image_src: "/images/work-gallery-cover-images/wash-u-olin-business-animation-cover.jpg",
+    image_src:
+      "/images/work-gallery-cover-images/wash-u-olin-business-animation-cover.jpg",
     src: "https://player.vimeo.com/video/823498955?h=815218068d&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
@@ -269,7 +267,8 @@ export const workSampleData = [
     category: ["Medical", "Video Editing", "Video Production"],
     client: "St. Louis Children's Hospital Foundation",
     title: "CMN Patient Ambassadors",
-    image_src: "/images/work-gallery-cover-images/stlouis-childrens-hospital-foundation-cover.jpg",
+    image_src:
+      "/images/work-gallery-cover-images/stlouis-childrens-hospital-foundation-cover.jpg",
     src: "https://player.vimeo.com/video/930793149?h=2a6f6a2764&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
@@ -290,21 +289,31 @@ export const workSampleData = [
     category: ["Photography", "Nonprofit"],
     client: "Catholic Charities of St. Louis",
     title: "Catholic Charities of St. Louis Photo Gallery",
-    image_src: "/images/work-gallery-cover-images/photography/catholic-charities-gallery-cover.png",
+    image_src:
+      "/images/work-gallery-cover-images/photography/catholic-charities-gallery-cover.png",
     src: "",
   },
   {
     category: ["Photography", "Corporate"],
     client: "Prasino",
     title: "Prasino Photo Gallery",
-    image_src:"/images/work-gallery-cover-images/photography/prasino-gallery-cover.png",
+    image_src:
+      "/images/work-gallery-cover-images/photography/prasino-gallery-cover.png",
     src: "",
   },
   {
     category: ["Photography", "Corporate"],
     client: "Club Fitness",
     title: "Club Fitness Photo Gallery",
-    image_src: "/images/work-gallery-cover-images/photography/club-fitness-gallery-cover.png",
+    image_src:
+      "/images/work-gallery-cover-images/photography/club-fitness-gallery-cover.png",
     src: "",
   },
+  // {
+  //   category: ["Drone", "Medical", "Video Editing", "Video Production"],
+  //   client: "Missouri Baptist",
+  //   title: "Blues Drone",
+  //   image_src: "/images/work-gallery-cover-images/mo-bap-cover.jpg",
+  //   src: "https://player.vimeo.com/video/943728497?h=2a1e0843fa&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+  // },
 ];
