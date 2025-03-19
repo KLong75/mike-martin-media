@@ -18,8 +18,8 @@ export default function SubNavMenu({ subMenu, closeSubMenu }) {
   }, [closeSubMenu]);
 
   return (
-    <nav 
-      id="subNavMenu" 
+    <nav
+      id="subNavMenu"
       ref={subMenuRef}
       tabIndex={-1}
       onBlur={(e) => {
@@ -27,8 +27,7 @@ export default function SubNavMenu({ subMenu, closeSubMenu }) {
         if (!subMenuRef.current.contains(e.relatedTarget)) {
           closeSubMenu();
         }
-      }}
-    >
+      }}>
       <ul className="text-sm py-2 px-6 bg-white text-black rounded-full flex flex-row gap-6 justify-center">
         {subMenu.map((item, index) => {
           const isLast = index === subMenu.length - 1;
@@ -36,18 +35,16 @@ export default function SubNavMenu({ subMenu, closeSubMenu }) {
             <li
               key={index}
               className="font-bold hover:scale-105 hover:transform transition-transform">
-              <Link href={item.href}>
-                <span 
-                  className="whitespace-nowrap p-2" 
-                  onClick={closeSubMenu}
-                  onKeyDown={(e) => {
-                    if (isLast && e.key === "Tab" && !e.shiftKey) {
-                      closeSubMenu();
-                    }
-                  }}
-                >
-                  {item.label}
-                </span>
+              <Link
+                href={item.href}
+                onClick={closeSubMenu} // attach onClick to Link
+                onKeyDown={(e) => {
+                  if (isLast && e.key === "Tab" && !e.shiftKey) {
+                    closeSubMenu();
+                  }
+                }}
+                className="whitespace-nowrap p-2">
+                {item.label}
               </Link>
             </li>
           );
@@ -55,14 +52,4 @@ export default function SubNavMenu({ subMenu, closeSubMenu }) {
       </ul>
     </nav>
   );
-}
-
-{
-  /* (
-          <li key={index} className="font-bold hover:scale-105 hover:transform transition-transform">
-            <Link href={item.href}>
-              <span className="whitespace-nowrap" onClick={closeSubMenu}>{item.label}</span>
-            </Link>
-          </li>
-        ) */
 }
