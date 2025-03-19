@@ -38,7 +38,7 @@ export default function SubNavMenu({ subMenu, closeSubMenu }) {
               className="font-bold hover:scale-105 hover:transform transition-transform">
               <Link href={item.href}>
                 <span 
-                  className="whitespace-nowrap" 
+                  className="whitespace-nowrap p-2" 
                   onClick={closeSubMenu}
                   onKeyDown={(e) => {
                     if (isLast && e.key === "Tab" && !e.shiftKey) {
