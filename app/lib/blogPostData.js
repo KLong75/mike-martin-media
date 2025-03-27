@@ -26,7 +26,7 @@ export const blogPosts = [
     title: "Learning Never Stops",
     post_date: "3/1/2025",
     image_src: `${basePath}2025/2025-mar.png`,
-    image_alt: "",
+    image_alt: "Remi at the job with the MMM team.",
     image_width: 456,
     image_height: 342,
     // second_image_src: "/images/blog-post-images/secondary/.png",
@@ -41,6 +41,7 @@ export const blogPosts = [
     ],
     closing_tag: "Till next time,",
     author: "Remi Heckert",
+    description: "Remi talks about the importance of learning and growth in her new role at Mike Martin Media."
   },
   {
     slug: "growth-and-gratitude",
