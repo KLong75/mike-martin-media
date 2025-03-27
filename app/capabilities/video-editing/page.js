@@ -24,12 +24,12 @@ export const metadata = {
   description:
     "Professional video editing company transforming raw footage into polished, engaging stories. Expert team handles color grading, sound design & motion graphics. Get your free quote today.",
   alternates: {
-    canonical: "/capabilities/video-editing/",
+    canonical: "/capabilities/video-editing",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.mikemartinmedia.com/capabilities/video-editing/",
+    url: "https://www.mikemartinmedia.com/capabilities/video-editing",
     siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Video Editing Company | Mike Martin Media",
     description:

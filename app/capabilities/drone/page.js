@@ -27,12 +27,12 @@ export const metadata = {
   description:
     "FAA-certified drone video company delivering stunning aerial photography & videography. Expert pilots capture breathtaking perspectives for real estate, events & more. Contact us today.",
   alternates: {
-    canonical: "/capabilities/drone/",
+    canonical: "/capabilities/drone",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.mikemartinmedia.com/capabilities/drone/",
+    url: "https://www.mikemartinmedia.com/capabilities/drone",
     siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Drone Video Services | Mike Martin Media",
     description:

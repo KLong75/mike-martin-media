@@ -24,12 +24,12 @@ export const metadata = {
   description:
     "Professional business video production creating engaging content that drives results. Full-service team handles creative, filming, and post-production for your brand story. Book your project.",
   alternates: {
-    canonical: "/capabilities/video-production/",
+    canonical: "/capabilities/video-production",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.mikemartinmedia.com/capabilities/video-production/",
+    url: "https://www.mikemartinmedia.com/capabilities/video-production",
     siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Business Video Production | Mike Martin Media",
     description:

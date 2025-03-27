@@ -24,12 +24,12 @@ export const metadata = {
   description:
     "Professional livestream video company specializing in corporate events, webinars & virtual conferences. Expert production team ensures flawless streaming worldwide. Get started today.",
   alternates: {
-    canonical: "/capabilities/live-streaming/",
+    canonical: "/capabilities/live-streaming",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.mikemartinmedia.com/capabilities/live-streaming/",
+    url: "https://www.mikemartinmedia.com/capabilities/live-streaming",
     siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Live Stream Video Company | Mike Martin Media",
     description:

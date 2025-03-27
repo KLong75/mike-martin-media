@@ -16,12 +16,12 @@ export const metadata = {
   description:
     "Professional education video production creating engaging content for schools and universities. From virtual tours to instructional videos, inspire learning through compelling storytelling. Start now.",
   alternates: {
-    canonical: "/industries/education/",
+    canonical: "/industries/education",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.mikemartinmedia.com/industries/education/",
+    url: "https://www.mikemartinmedia.com/industries/education",
     siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Education Video Production | Mike Martin Media",
     description:

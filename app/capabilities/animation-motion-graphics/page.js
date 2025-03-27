@@ -25,7 +25,7 @@ export const metadata = {
   description:
     "Expert video animation company specializing in motion graphics, 2D & 3D animation. Transform your ideas into engaging visual stories that drive results. Get a free consultation today.",
   alternates: {
-    canonical: "/capabilities/animation-motion-graphics/",
+    canonical: "/capabilities/animation-motion-graphics",
   },
   openGraph: {
     type: "website",

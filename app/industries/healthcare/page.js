@@ -16,12 +16,12 @@ export const metadata = {
   description:
     "Trusted healthcare & medical videography specialists creating patient education, staff training & facility showcase videos. HIPAA-compliant team serving leading hospitals. Schedule a consultation.",
   alternates: {
-    canonical: "/industries/healthcare/",
+    canonical: "/industries/healthcare",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.mikemartinmedia.com/industries/healthcare/",
+    url: "https://www.mikemartinmedia.com/industries/healthcare",
     siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Healthcare & Medical Videography | Mike Martin Media",
     description:

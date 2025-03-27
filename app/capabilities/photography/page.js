@@ -27,13 +27,13 @@ const photographyPageOgImgUrl =
 export const metadata = {
   type: "website",
   locale: "en_US",
-  url: "https://www.mikemartinmedia.com/capabilities/photography/",
+  url: "https://www.mikemartinmedia.com/capabilities/photography",
   siteName: "Mike Martin Media: St. Louis Video Production Company",
   title: "Photography Company | Mike Martin Media",
   description:
     "Award-winning photography company delivering stunning commercial, portrait, and event photography. Transform your brand with professional images that tell your story. Book now.",
   alternates: {
-    canonical: "/capabilities/photography/",
+    canonical: "/capabilities/photography",
   },
   openGraph: {
     title: "Photography Company | Mike Martin Media",

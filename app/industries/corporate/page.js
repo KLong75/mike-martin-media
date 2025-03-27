@@ -16,12 +16,12 @@ export const metadata = {
   description:
     "Full-service corporate video production company delivering training, executive communications & promotional content. Professional team elevates your brand with compelling visuals. Contact us.",
   alternates: {
-    canonical: "/industries/corporate/",
+    canonical: "/industries/corporate",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.mikemartinmedia.com/industries/corporate/",
+    url: "https://www.mikemartinmedia.com/industries/corporate",
     siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Corporate Video Production | Mike Martin Media",
     description:
