@@ -8,7 +8,7 @@ export default function ColorChangeM({ src }) {
       src={src}
       width={349}
       height={271}
-      alt="company logo"
+      alt="M"
       priority={true}
     />
   );

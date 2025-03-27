@@ -15,10 +15,9 @@ export default function CapabilityBlock({
         <div className="w-14 md:w-72 lg:w-96 h-auto py-4">
           <Image
             src={icon_src}
-            alt=""
+            alt={label}
             width={96}
             height={96}
-            className=""
           />
         </div>
         <h3 className="font-bold lg:text-2xl">{label}</h3>

@@ -19,7 +19,7 @@ export default function MmmSiteButtonLogoFirst({
             src={imgSrc}
             width={294}
             height={95}
-            alt="company logo"
+            alt="MMM logo"
           />
         </div>
         <span className="text-xl md:text-2xl">{label}</span>

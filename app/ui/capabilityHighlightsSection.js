@@ -1,5 +1,4 @@
 // import components
-import Image from "@/app/ui/image";
 import MMMLineLogoHeading from "@/app/ui/mmmLineLogoHeading";
 
 export default function CapabilityHighLightsSection({
@@ -45,18 +44,3 @@ export default function CapabilityHighLightsSection({
     </div>
   );
 }
-
-{/* <div className="p-6">
-        <h3 className="lg:px-6 text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-semibold -mb-6 lg:-mb-10 w-3/4">
-          {headline}
-        </h3>
-        <div className="">
-          <Image
-            src="/branding/line-logo-black.png"
-            alt="Line Logo Black"
-            width={1440}
-            height={65}
-            className="mt-2 lg:mb-6 lg:px-6"
-          />
-        </div>
-      </div> */}
