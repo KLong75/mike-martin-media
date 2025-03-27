@@ -76,7 +76,7 @@ export default function GridPic({
             */}
           <div className="absolute bottom-0 left-[1rem] md:left-[2rem] lg:bottom-[1rem] lg:left-[3rem] text-white transform -rotate-90 origin-left pointer-events-auto font-bold text-sm sm:text-lg lg:text-xl xl:text-2xl xl:text-3xl">
             <div className="relative inline-block">
-              <span>{label}</span>
+              <span className="text-shadow-black-background-black">{label}</span>
               <div className="absolute left-full top-1/2 -translate-y-1/2 translate-x-6 border-b-2 border-white w-0 lg:group-hover:w-32 xl:group-hover:w-36 2xl:group-hover:w-48 3xl:group-hover:w-52 4xl:group-hover:w-96 5xl:group-hover:w-128 6xl:group-hover:w-144 opacity-0 lg:group-hover:opacity-100 transition-all duration-2000 ease-in-out" />
             </div>
           </div>
