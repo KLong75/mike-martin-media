@@ -65,7 +65,7 @@ export default function BlogPostPreview({
             {formatDate(post_date)}
             <span className="border-t border-black w-6 mx-2 group-hover:border-white"></span>
           </p>
-          <p className="font-bold text-2xl text-wrap my-1">{title}</p>
+          <h3 className="font-bold text-2xl text-wrap my-1">{title}</h3>
           <p className="mb-6 text-left text-md mt-2 lg:mt-4">
             {shortenPostText(text[0], 200)}
           </p>

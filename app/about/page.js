@@ -142,9 +142,9 @@ export default function Page() {
       <div className="flex justify-center items-center p-8 lg:p-12">
         <div className="grid grid-cols-1 xl:grid-cols-2 max-w-500 gap-6">
           <div className="mb-6">
-            <h5 className="text-2xl lg:text-4xl font-bold mb-2 lg:mb-6">
+            <h2 className="text-2xl lg:text-4xl font-bold mb-2 lg:mb-6">
               Our Journey
-            </h5>
+            </h2>
             <div>
               <p className="lg:text-xl xl:text-balance">
                 MMM was born out of a desire to do things differently. When we
