@@ -64,8 +64,8 @@ export default function sitemap() {
   const dynamicBlogUrls = blogPosts
     .filter((post) => post.slug !== "[slug]") // Exclude placeholder route
     .map((post) => {
-      let priority = 0.8;
-      let changeFrequency = "monthly";
+      let priority = 0.6;
+      let changeFrequency = "never";
 
       // Example: Change priority and changeFrequency for specific posts
       if (post.slug === "important-post") {
