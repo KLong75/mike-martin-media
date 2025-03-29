@@ -74,7 +74,7 @@ export default function sitemap() {
       }
 
       return {
-        url: `https://www.mikemartinmedia.com/blog/blog-posts/${post.slug}`,
+        url: `https://www.mikemartinmedia.com/blog/posts/${post.slug}`,
         lastModified: new Date(), // or use a date from the post data
         changeFrequency,
         priority,
@@ -85,7 +85,7 @@ export default function sitemap() {
   urls = urls.concat(dynamicBlogUrls);
 
   // 4. Filter out the placeholder route '[slug]' from the generated URLs
-  urls = urls.filter(url => url.url !== 'https://www.mikemartinmedia.com/blog/blog-posts/[slug]');
+  urls = urls.filter(url => url.url !== 'https://www.mikemartinmedia.com/blog/posts/[slug]');
 
   return urls;
 }

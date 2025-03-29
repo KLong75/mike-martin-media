@@ -1,5 +1,3 @@
-import { list } from "postcss";
-
 export const animationPageHeadingBannerText = {
   title: "Video Animation Company: Animation and Motion Graphics",
   heading: "Animating Your Vision",

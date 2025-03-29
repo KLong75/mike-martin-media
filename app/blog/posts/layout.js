@@ -28,7 +28,7 @@ export const metadata = {
   },
   description:
     "",
-  metadataBase: new URL("https://www.mikemartinmedia.com/blog/blog-posts/"),
+  metadataBase: new URL("https://www.mikemartinmedia.com/blog/posts/"),
   alternates: {
     canonical: "/",
   },

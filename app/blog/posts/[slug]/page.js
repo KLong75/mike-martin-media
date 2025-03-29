@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       type: "website",
       locale: "en_US",
-      url: `${siteUrl}/blog/blog-posts/${post.slug}`,
+      url: `${siteUrl}/blog/posts/${post.slug}`,
       title: `Mike Martin Media Blog | Beyond the Lense: ${post.title}`,
       description: post.description,
       images: [
@@ -93,7 +93,7 @@ export default async function BlogPostPage({ params }) {
           {prevPostIndex === -1 ? (
             <span className="text-gray-500">&lt;&lt; Prev</span>
           ) : (
-            <Link href={`/blog/blog-posts/${prevPostSlug}`} aria-label="previous blog post">
+            <Link href={`/blog/posts/${prevPostSlug}`} aria-label="previous blog post">
               <span className="font-semibold">&lt;&lt; Prev</span>
             </Link>
           )}
@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }) {
          {nextPostIndex === -1 ? (
             <span className="text-gray-500">Next &gt;&gt;</span>
           ) : (
-            <Link href={`/blog/blog-posts/${nextPostSlug}`} aria-label="next blog post">
+            <Link href={`/blog/posts/${nextPostSlug}`} aria-label="next blog post">
               <span className="font-semibold">Next &gt;&gt;</span>
             </Link>
           )}

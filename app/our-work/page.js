@@ -1,5 +1,3 @@
-// import from next
-import Link from "next/link";
 // import components
 import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
 import PageHeadingBanner from "../ui/pageHeadingBanner";
