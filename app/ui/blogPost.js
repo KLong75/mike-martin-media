@@ -28,18 +28,19 @@ export default function BlogPost({post}) {
             className="w-175"
           />
         </div>
-        <div className="p-8 max-w-3xl mx-auto lg:text-lg lg:mt-6">
+        <div className="max-w-3xl mx-auto lg:text-lg lg:mt-6">
           {post.text.map((paragraph, index) => (
             <div key={index}>
-              <p className="mb-4 max-w-180">{paragraph}</p>
+              <p className="my-16 max-w-180">{paragraph}</p>
               {index === 0 && post.second_image_src && (
                 <div className="flex justify-center items-center">
-                  <div className="w-64 h-64 p-6">
+                  <div className=" px-12">
                     <Image
                       src={post.second_image_src}
                       width={post.second_image_width}
                       height={post.second_image_height}
                       alt={post.second_image_alt}
+                      className="w-175"
                     />
                   </div>
                 </div>
