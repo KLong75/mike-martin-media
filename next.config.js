@@ -16,7 +16,17 @@ const nextConfig = {
         permanent: true, // This indicates a 301 permanent redirect
       },
       {
+        source: "/our-work/drone",
+        destination: "/capabilities/drone",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
         source: "/our_work/photography",
+        destination: "/capabilities/photography",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/our-work/photography",
         destination: "/capabilities/photography",
         permanent: true, // This indicates a 301 permanent redirect
       },
@@ -26,12 +36,27 @@ const nextConfig = {
         permanent: true, // This indicates a 301 permanent redirect
       },
       {
+        source: "/our-work/livestreaming",
+        destination: "/capabilities/livestreaming",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
         source: "/our_work/animation-motion-graphics",
         destination: "/capabilities/animation-motion-graphics",
         permanent: true, // This indicates a 301 permanent redirect
       },
       {
+        source: "/our-work/animation-motion-graphics",
+        destination: "/capabilities/animation-motion-graphics",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
         source: "/our_work/mmm-video",
+        destination: "/our-work",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/our-work/mmm-video",
         destination: "/our-work",
         permanent: true, // This indicates a 301 permanent redirect
       },
