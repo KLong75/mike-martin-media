@@ -140,6 +140,11 @@ const nextConfig = {
         destination: "/blog/posts/note-from-mike",
         permanent: true, // This indicates a 301 permanent redirect
       },
+      {
+        source: "/blog/blog-posts/note-from-mary",
+        destination: "/blog/posts/note-from-mary",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
     ];
   },
   images: {
