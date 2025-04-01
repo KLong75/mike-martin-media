@@ -60,6 +60,86 @@ const nextConfig = {
         destination: "/our-work",
         permanent: true, // This indicates a 301 permanent redirect
       },
+      {
+        source: "/blog/blog-posts/learning-never-stops",
+        destination: "/blog/posts/learning-never-stops",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/growth-and-gratitude",
+        destination: "/blog/posts/growth-and-gratitude",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/starting-my-career",
+        destination: "/blog/posts/starting-my-career",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/year-end-review",
+        destination: "/blog/posts/year-end-review",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/note-from-ceo",
+        destination: "/blog/posts/note-from-ceo",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/olympic-fever",
+        destination: "/blog/posts/",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/note-from-tom",
+        destination: "/blog/posts/note-from-tom",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/note-from-luke",
+        destination: "/blog/posts/note-from-luke",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/dayton-ohio-adventure",
+        destination: "/blog/posts/dayton-ohio-adventure",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/out-and-about-2024",
+        destination: "/blog/posts/out-and-about-2024",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/inside-mmm-arizona-trip",
+        destination: "/blog/posts/inside-mmm-arizona-trip",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/reflecting-on-the-season",
+        destination: "/blog/posts/reflecting-on-the-season",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/six-months-down-six-more-to-go",
+        destination: "/blog/posts/six-months-down-six-more-to-go",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/letter-from-kevin",
+        destination: "/blog/posts/",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/note-from-rachel",
+        destination: "/blog/posts/note-from-rachel",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
+      {
+        source: "/blog/blog-posts/note-from-mike",
+        destination: "/blog/posts/note-from-mike",
+        permanent: true, // This indicates a 301 permanent redirect
+      },
     ];
   },
   images: {
