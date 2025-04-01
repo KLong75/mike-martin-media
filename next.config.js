@@ -87,7 +87,7 @@ const nextConfig = {
       },
       {
         source: "/blog/blog-posts/olympic-fever",
-        destination: "/blog/posts/",
+        destination: "/blog/posts/olympic-fever",
         permanent: true, // This indicates a 301 permanent redirect
       },
       {
@@ -127,7 +127,7 @@ const nextConfig = {
       },
       {
         source: "/blog/blog-posts/letter-from-kevin",
-        destination: "/blog/posts/",
+        destination: "/blog/posts/letter-from-kevin",
         permanent: true, // This indicates a 301 permanent redirect
       },
       {
