@@ -22,6 +22,26 @@ export const blogPosts = [
   //   author: "",
   // },
   {
+    title: "My MMM Family",
+    post_date: "4/1/2025",
+    image_src: "/images/blog-page/blog-post-images/2025/2025-april-a.png",
+    image_alt: "",
+    image_width: 456,
+    image_height: 342,
+    second_image_src: "/images/blog-page/blog-post-images/2025/2025-april-b.png",
+    second_image_width: 456,
+    second_image_height: 342,
+    second_image_alt: "",
+    text: [
+      "Working at MMM has been one of the most rewarding experiences of my career. From day one, I felt welcomed into a community that genuinely values support, camaraderie, and collaboration. The tight-knit, family-like atmosphere here has transformed my perspective on what a workplace can be. I quickly realized that my colleagues were more than just coworkers; they became friends. We share our professional experiences and personal stories, creating bonds that go beyond the office. This sense of belonging has made my job not just about work but about being part of something meaningful.",
+      "Every colleague who has come and gone has contributed to the legacy of MMM. Our tight-knit culture continues to thrive as we welcome new faces and embrace the changes that come our way. I’m grateful for every individual who has been part of this journey, and I look forward to the future we’re building together.",
+    ],
+    closing_tag: "Until next time,",
+    author: "Adam Buchheit",
+    slug: "my-mmm-family",
+    description: "Adam reflects on the family-like atmosphere and the tight-night culture that makes working at MMM special."
+  },
+  {
     slug: "learning-never-stops",
     title: "Learning Never Stops",
     post_date: "3/1/2025",
