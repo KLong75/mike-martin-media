@@ -1,7 +1,7 @@
 const basePath = "/images/blog-page/blog-post-images/";
 
 export const blogPosts = [
-   // {
+  // {
   //   title: "",
   //   post_date: "",
   //   image_src: "/images/blog-page/blog-post-images/.png",
@@ -21,6 +21,26 @@ export const blogPosts = [
   //   closing_tag: "",
   //   author: "",
   // },
+  {
+    title: "",
+    post_date: "",
+    image_src: "/images/blog-page/blog-post-images/.png",
+    image_alt: "",
+    image_width: 456,
+    image_height: 342,
+    second_image_src: "/images/blog-post-images/secondary/.png",
+    second_image_width: 208,
+    second_image_height: 109,
+    second_image_alt: "",
+    text: [
+      "",
+      "",
+      "",
+      "",
+    ],
+    closing_tag: "",
+    author: "",
+  },
   {
     slug: "learning-never-stops",
     title: "Learning Never Stops",
