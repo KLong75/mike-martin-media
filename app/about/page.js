@@ -87,7 +87,7 @@ export default function Page() {
           heading={"Turning Your Ideas Into Impactful Stories"}
           text={
             <>
-              At MMM, we create video content{" "}
+              At MMM, we create{" "}
               <Link href="/capabilities/video-production" className="underline">
                 video content
               </Link>{" "}
