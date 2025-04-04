@@ -1,69 +1,178 @@
+// "use client";
+// import { testimonials } from "../lib/testimonials";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Autoplay, Navigation } from "swiper/modules";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+
+// export default function TestimonialDisplay() {
+  
+//   return (
+//     <div className="bg-black text-white lg:h-[22.5rem] flex justify-center items-center">
+//       <Swiper
+//         modules={[Autoplay, Navigation]}
+//         autoplay={{ delay: 6000, disableOnInteraction: false }}
+//         navigation={{ prevEl: ".testimonial-prev", nextEl: ".testimonial-next" }}
+//         loop
+//         speed={2000}
+//         className="relative w-full max-w-4xl"
+//       >
+//         {testimonials.map((testimonial, index) => (
+//           <SwiperSlide key={index}>
+//             <div className="flex flex-row space-x-4 lg:space-x-8 py-12 px-4 max-w-800">
+//               <span className="text-6xl md:text-8xl lg:text-10xl xl:text-12xl italic lg:-mt-2">
+//                 &quot;
+//               </span>
+//               <div className="p-2">
+//                 <p className="lg:text-lg xl:text-xl 2xl:text-xl lg:px-12 font-bold pr-2">
+//                   {testimonial.text}
+//                 </p>
+//                 <p className="text-sm lg:text-lg lg:px-12 mt-6">
+//                   {testimonial.name}
+//                 </p>
+//                 <p className="text-xs lg:text-sm italic lg:px-12">
+//                   {testimonial.org}
+//                 </p>
+//                 <p className="text-xs lg:text-sm italic lg:px-12">
+//                   {testimonial.role}
+//                 </p>
+//               </div>
+//             </div>
+//           </SwiperSlide>
+//         ))}
+
+//         <div className="absolute bottom-[4rem] lg:bottom-20 right-0 lg:right-10 flex space-x-2 -mb-10 p-2 pr-6 lg:pr-0 z-10">
+//           <button aria-label="previous testimonial" className="testimonial-prev rounded-full border-2 p-1 cursor-pointer">
+//             <FaArrowLeft size={14} />
+//             <span className="sr-only">previous testimonial</span>
+//           </button>
+//           <button aria-label="next testimonial" className="testimonial-next rounded-full border-2 p-1 cursor-pointer">
+//             <FaArrowRight size={14} />
+//             <span className="sr-only">next testimonial</span>
+//           </button>
+//         </div>
+//       </Swiper>
+//     </div>
+//   );
+// }
+
+// "use client";
+// import { useEffect, useState } from "react";
+// import { testimonials } from "../lib/testimonials";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Autoplay, Navigation } from "swiper/modules";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+
+// export default function TestimonialDisplay() {
+//   const [randomizedTestimonials, setRandomizedTestimonials] = useState(testimonials);
+
+//   useEffect(() => {
+//     const shuffled = [...testimonials].sort(() => 0.5 - Math.random());
+//     setRandomizedTestimonials(shuffled.slice(0, 3));
+//   }, []);
+
+//   return (
+//     <div className="bg-black text-white lg:h-[22.5rem] flex justify-center items-center">
+//       <Swiper
+//         modules={[Autoplay, Navigation]}
+//         autoplay={{ delay: 6000, disableOnInteraction: false }}
+//         navigation={{ prevEl: ".testimonial-prev", nextEl: ".testimonial-next" }}
+//         loop
+//         speed={2000}
+//         className="relative w-full max-w-4xl"
+//       >
+//         {randomizedTestimonials.map((testimonial, index) => (
+//           <SwiperSlide key={index}>
+//             <div className="flex flex-row space-x-4 lg:space-x-8 py-12 px-4 max-w-800">
+//               <span className="text-6xl md:text-8xl lg:text-10xl xl:text-12xl italic lg:-mt-2">&quot;</span>
+//               <div className="p-2">
+//                 <p className="lg:text-lg xl:text-xl 2xl:text-xl lg:px-12 font-bold pr-2">
+//                   {testimonial.text}
+//                 </p>
+//                 <p className="text-sm lg:text-lg lg:px-12 mt-6">{testimonial.name}</p>
+//                 <p className="text-xs lg:text-sm italic lg:px-12">{testimonial.org}</p>
+//                 <p className="text-xs lg:text-sm italic lg:px-12">{testimonial.role}</p>
+//               </div>
+//             </div>
+//           </SwiperSlide>
+//         ))}
+
+//         <div className="absolute bottom-[4rem] lg:bottom-20 right-0 lg:right-10 flex space-x-2 -mb-10 p-2 pr-6 lg:pr-0 z-10">
+//           <button aria-label="previous testimonial" className="testimonial-prev rounded-full border-2 p-1 cursor-pointer">
+//             <FaArrowLeft size={14} />
+//             <span className="sr-only">previous testimonial</span>
+//           </button>
+//           <button aria-label="next testimonial" className="testimonial-next rounded-full border-2 p-1 cursor-pointer">
+//             <FaArrowRight size={14} />
+//             <span className="sr-only">next testimonial</span>
+//           </button>
+//         </div>
+//       </Swiper>
+//     </div>
+//   );
+// }
+
+
 "use client";
-import { useState } from "react";
-// import components
-// import Image from "@/app/ui/image";
-// import icons
-import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
-// import data
+import { useEffect, useState } from "react";
 import { testimonials } from "../lib/testimonials";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function TestimonialDisplay() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [shuffledTestimonials, setShuffledTestimonials] = useState([]);
 
-  const handlePrevClick = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNextClick = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  useEffect(() => {
+    // Shuffle the entire array once
+    const shuffled = [...testimonials].sort(() => 0.5 - Math.random());
+    setShuffledTestimonials(shuffled);
+  }, []);
 
   return (
-    <div className="flex justify-center items-center bg-black text-white lg:h-[22.5rem]">
-      <div className="relative flex flex-col px-6 max-w-400">
-        <div className="relative flex flex-col items-center py-12">
-          <div className="flex flex-row space-x-4 lg:space-x-8">
-            <span className="text-6xl md:text-8xl lg:text-10xl xl:text-12xl italic lg:-mt-2">&quot;</span>
-            <div className="relative p-2">
-              <p className="lg:text-lg xl:text-xl 2xl:text-xl lg:px-12 font-bold pr-2">
-                {testimonials[currentIndex].text}
-              </p>
-              <p className="text-sm lg:text-lg lg:px-12 mt-6">
-                {testimonials[currentIndex].name}
-              </p>
-              <p className="text-xs lg:text-sm italic lg:px-12">
-                {testimonials[currentIndex].org}
-              </p>
-              <p className="text-xs lg:text-sm italic lg:px-12">
-                {testimonials[currentIndex].role}
-              </p>
+    <div className="bg-black text-white lg:h-[22.5rem] flex justify-center items-center">
+      <Swiper
+        modules={[Autoplay, Navigation]}
+        autoplay={{ delay: 6000, disableOnInteraction: false }}
+        navigation={{ prevEl: ".testimonial-prev", nextEl: ".testimonial-next" }}
+        loop
+        speed={2000}
+        className="relative w-full max-w-4xl"
+      >
+        {shuffledTestimonials.map((testimonial, index) => (
+          <SwiperSlide key={index}>
+            <div className="flex flex-row space-x-4 lg:space-x-8 py-12 px-4 max-w-800">
+              <span className="text-6xl md:text-8xl lg:text-10xl xl:text-12xl italic lg:-mt-2">
+                &quot;
+              </span>
+              <div className="p-2">
+                <p className="lg:text-lg xl:text-xl 2xl:text-xl lg:px-12 font-bold pr-2">
+                  {testimonial.text}
+                </p>
+                <p className="text-sm lg:text-lg lg:px-12 mt-6">{testimonial.name}</p>
+                <p className="text-xs lg:text-sm italic lg:px-12">{testimonial.org}</p>
+                <p className="text-xs lg:text-sm italic lg:px-12">{testimonial.role}</p>
+              </div>
             </div>
-          </div>
-          <div className="absolute bottom-[4rem] lg:bottom-20 right-0 lg:right-10 flex space-x-2 -mb-10 p-2">
-          <button
-              type="button"
-              aria-label="previous testimonial"
-              className="rounded-full border-2 p-1 cursor-pointer"
-              onClick={handlePrevClick}>
-              <FaArrowLeft size={14} alt="previous testimonial"/>
-              <span className="sr-only">previous testimonial</span>
-            </button>
-            <button
-              input="button"
-              aria-label="next testimonial"
-              className="rounded-full border-2 p-1 cursor-pointer"
-              onClick={handleNextClick}>
-              <FaArrowRight size={14} alt="next testimonial"/>
-              <span className="sr-only">next testimonial</span>
-            </button>
-          </div>
+          </SwiperSlide>
+        ))}
+
+        <div className="absolute bottom-[4rem] lg:bottom-20 right-0 lg:right-10 flex space-x-2 -mb-10 p-2 pr-6 lg:pr-0 z-10">
+          <button aria-label="previous testimonial" className="testimonial-prev rounded-full border-2 p-1 cursor-pointer">
+            <FaArrowLeft size={14} />
+            <span className="sr-only">previous testimonial</span>
+          </button>
+          <button aria-label="next testimonial" className="testimonial-next rounded-full border-2 p-1 cursor-pointer">
+            <FaArrowRight size={14} />
+            <span className="sr-only">next testimonial</span>
+          </button>
         </div>
-      </div>
+      </Swiper>
     </div>
   );
 }
