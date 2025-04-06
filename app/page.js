@@ -85,7 +85,7 @@ export default function Home() {
       <section id="our-work-section">
         <BannerVideoWithFadeNoLogo
           src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-          title="MMM_Our_Work_Video"
+          title="Mike Martin Media | Our Work"
         />
         <div className="flex justify-center">
           <div className="max-w-800 lg:py-24">

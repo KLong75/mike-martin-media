@@ -70,7 +70,7 @@ export default function Page() {
         <div className="pb-20 ">
           <BannerVideoWithFadeNoLogo
             src="https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-            title="Our_Work_Page_Banner_Video"
+            title="Mike Martin Media | Our Work"
           />
         </div>
         <div className="flex justify-center items-center bg-black -mt-20">
