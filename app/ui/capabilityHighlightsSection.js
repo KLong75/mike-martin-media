@@ -19,7 +19,6 @@ export default function CapabilityHighLightsSection({
             width="100%"
             height="100%"
             allow="autoplay; fullscreen"
-            allowFullScreen
             loading="lazy"
             className="w-full h-auto">
           </iframe>
