@@ -53,15 +53,15 @@ export default function SubNavMenu({ subMenu, closeSubMenu }) {
               <Link
                 href={item.href}
                 // onClick={closeSubMenu} // attach onClick to Link
-                // onClick={() => {
-                //   // Delay closing so the link has time to register
-                //   setTimeout(() => closeSubMenu(), 50);
-                // }}
-                onClick={(e) => {
-                  // Prevent outside handler from seeing this as an outside click
-                  e.stopPropagation();
-                  closeSubMenu();
+                onClick={() => {
+                  // Delay closing so the link has time to register
+                  setTimeout(() => closeSubMenu(), 50);
                 }}
+                // onClick={(e) => {
+                //   // Prevent outside handler from seeing this as an outside click
+                //   e.stopPropagation();
+                //   closeSubMenu();
+                // }}
                 onKeyDown={(e) => {
                   if (isLast && e.key === "Tab" && !e.shiftKey) {
                     closeSubMenu();
