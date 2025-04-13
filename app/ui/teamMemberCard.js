@@ -39,7 +39,7 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
         <Image
           className="shadow-2xl w-full h-full object-cover transform transition-transform duration-2000 lg:group-hover:scale-110 ease-in-out"
           src={image_src}
-          alt={name}
+          alt={`Tap or click to learn more about ${name} and their role at MMM.`}
           width={900}
           height={1200}
         />
