@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "../ui/image";
 import TeamGallery from "../ui/teamGallery";
 import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
+import BannerVideoWithFadeEffect from "../ui/bannerVideoWithFadeEffect";
 import MMMLineLogoHeading from "../ui/mmmLineLogoHeading";
 import MMMTeamPhotoWithLogo from "../ui/mmmTeamPhotoWithLogo";
 // iport images
@@ -76,11 +77,18 @@ export default function Page() {
   return (
     <main>
       <div className="">
-        <BannerVideoWithFadeNoLogo
+        {/* <BannerVideoWithFadeNoLogo
           src="https://player.vimeo.com/video/953317163?h=21c26f1413&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
           title="About Mike Martin Media"
-        />
+        /> */}
+        <BannerVideoWithFadeEffect
+       src="https://player.vimeo.com/video/953317163?h=21c26f1413&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          title="About Mike Martin Media"
+        text="ABOUT MMM"
+        ratio_container={"banner-vid-narrow"}
+      />
       </div>
+    
       <div>
         <PageHeadingBanner
           title={"About Us"}

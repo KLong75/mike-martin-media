@@ -8,7 +8,7 @@ import Image from "./image";
 // import images
 import whiteMmmLogo from "../../public/branding/white-mmm-logo-1200x488.png";
 
-export default function BannerVideoWithFadeEffect({ src, title }) {
+export default function BannerVideoWithFadeEffect({ src, title, text, ratio_container }) {
   const [hideLogo, setHideLogo] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
   const [showHeading, setShowHeading] = useState(false);
@@ -28,7 +28,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
     }, 0);
 
     // Split the text into individual letters and set the state
-    const text = "IDEAS IN MOTION";
+    // const text = "IDEAS IN MOTION";
     const lettersArray = text.split("").map((letter, index) => ({
       letter,
       delay: index * 200, // Adjust the delay as needed
@@ -55,7 +55,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
             showVideo ? "bg-white" : "bg-black"
           }`}>
           <div
-            className={`banner-vid-with-fade-container banner-video-aspect-ratio-container w-full transition-opacity duration-6000 ease-in-out ${
+            className={`${ratio_container} banner-video-aspect-ratio-container w-full transition-opacity duration-6000 ease-in-out ${
               showVideo ? "opacity-100" : "opacity-0"
             }`}>
             <iframe
@@ -66,7 +66,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
               className="absolute top-0 left-0 w-full h-full"></iframe>
           </div>
           {/* heading */}
-          {pathname === "/" && (
+          {/* {pathname === "/" && ( */}
           <div>
             <div
               className={`absolute bottom-[-1rem] xs:bottom-[-1.25rem] sm:bottom-[-2.1rem] md:bottom-[-2.5rem] lg:bottom-[-3rem] xl:bottom-[-4rem] 2xl:bottom-[-4.5rem] 3xl:bottom-[-5.75rem] 4xl:bottom-[-7rem] 5xl:bottom-[-8rem] left-[-.1rem] lg:left-[-.15rem] xl:left-[-.25rem] 2xl:left-[-.65rem] 3xl:left-[-.25rem] right-0 text-center text-[12.5vw] text-white tracking-tight font-bold w-full whitespace-nowrap transition-opacity duration-4000 ease-in-out ${
@@ -83,7 +83,8 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
                 ))}
             </div>
           </div>
-          )}
+          {/* ) */}
+          {/* } */}
           {/* Logo */}
           <div
             className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 sm:w-100 md:w-144 lg:w-200  justify-center items-center absolute transition-opacity duration-8000 ease-in-out ${
