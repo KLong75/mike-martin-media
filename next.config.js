@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-// const { createProxyMiddleware } = require('http-proxy-middleware');
-
 const nextConfig = {
   async redirects() {
     return [
@@ -167,6 +165,16 @@ const nextConfig = {
   },
   async headers() {
     return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            // Adjust time values as needed
+            value: "public, max-age=600, s-maxage=1200",
+          },
+        ],
+      },
       {
         source: '/api/proxy/:path*',
         headers: [
