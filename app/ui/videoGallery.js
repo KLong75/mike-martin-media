@@ -1,4 +1,6 @@
 "use client";
+// import from react
+import { useEffect, useState } from "react";
 //import from next
 import { usePathname } from "next/navigation";
 // import components
@@ -6,7 +8,6 @@ import ClientVideoFrame from "../ui/clientVideoFrame";
 // import PhotographyGallery from "./photographyGallery";
 import PhotoGallery from "./photoGallery";
 // import data
-// import { videoData } from "../lib/videoData";
 import { workSampleData } from "../lib/work-samples";
 // import icons
 import { IoCloseCircleOutline } from "react-icons/io5";
@@ -18,16 +19,27 @@ export default function VideoGallery({
   clearSelectedCategories,
 }) {
   const pathname = usePathname();
-  const filteredVideos = workSampleData.filter((video) => {
-    // Check if "All" is selected
+  const [shuffledVideos, setShuffledVideos] = useState([]);
+
+  const randomizeArray = (array) => {
+    return [...array].sort(() => Math.random() - 0.5);
+  };
+
+  useEffect(() => {
+    // Each time selectedCategories changes, re-randomize in the client
+    const shuffled = randomizeArray(workSampleData);
+    setShuffledVideos(shuffled);
+  }, [selectedCategories]);
+
+  const filteredVideos = shuffledVideos.filter((video) => {
     if (selectedCategories.includes("All")) {
       return true;
     }
-    // Check if video matches all selected categories
+    // Must match all selected categories
     const matchesAllSelectedCategories = selectedCategories.every((cat) =>
       video.category.includes(cat)
     );
-    // Check if video is not exclusively in excluded categories
+    // Exclude items that belong exclusively to excludedCategory
     const isNotExclusivelyExcluded = !video.category.every((cat) =>
       excludedCategory.includes(cat)
     );
@@ -47,42 +59,37 @@ export default function VideoGallery({
       ) : (
         <div
           className={`w-full h-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 ${
-            // selectedCategories.includes("Livestream") ||
-            // selectedCategories.includes("Animation") 
             pathname === "/capabilities/live-streaming" ||
             pathname === "/capabilities/animation-motion-graphics" ||
-            filteredVideos.length === 2 ||
-            filteredVideos.length === 1
-            // selectedCategories.length === 0
+            filteredVideos.length <= 2
               ? "lg:grid-cols-2"
               : "lg:grid-cols-3"
-          }`}>
-          {filteredVideos
-            .slice(0, numberOfVideos) // Limit the number of videos displayed
-            .map((video, index) => (
-              <div key={index} className="text-white w-full h-auto">
-                {video.category.includes("Photography") ? (
-                  <PhotoGallery
-                    src={video.image_src}
-                    client={video.client}
-                    title={video.title}
-                    alt={video.title}
-                    category={video.category}
-                    image_src={video.image_src}
-                    width={1920}
-                    height={1080}
-                  />
-                ) : (
-                  <ClientVideoFrame
-                    src={video.src}
-                    client={video.client}
-                    title={video.title}
-                    category={video.category}
-                    image_src={video.image_src}
-                  />
-                )}
-              </div>
-            ))}
+          }`}
+        >
+          {filteredVideos.slice(0, numberOfVideos).map((video, index) => (
+            <div key={index} className="text-white w-full h-auto">
+              {video.category.includes("Photography") ? (
+                <PhotoGallery
+                  src={video.image_src}
+                  client={video.client}
+                  title={video.title}
+                  alt={video.title}
+                  category={video.category}
+                  image_src={video.image_src}
+                  width={1920}
+                  height={1080}
+                />
+              ) : (
+                <ClientVideoFrame
+                  src={video.src}
+                  client={video.client}
+                  title={video.title}
+                  category={video.category}
+                  image_src={video.image_src}
+                />
+              )}
+            </div>
+          ))}
         </div>
       )}
     </div>

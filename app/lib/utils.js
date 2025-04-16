@@ -37,3 +37,8 @@ export function formatDate(post_date) {
 
   return `${monthNamesShort[monthIndex].toUpperCase()} ${day}, ${year}`;
 }
+
+export const randomizeArray = (array) => {
+  const shuffledArray = [...array].sort(() => Math.random() - 0.5);
+  return shuffledArray;
+}
