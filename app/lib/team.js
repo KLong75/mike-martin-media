@@ -63,13 +63,6 @@ export const teamData = [
     image_src: "/images/team/paulBaker.png",
   },
   {
-    name: "Robert Kraybill",
-    role: "Videographer / Editor",
-    about:
-      "Robert is an imaginative director of photography with over 10 years of experience shooting and editing video. He has a strong passion for storytelling and creatively capturing life's most important moments. After graduating from Bradley University with a BS in Broadcast Journalism, Robert has been creating video content for numerous businesses in the St. Louis area, specializing in social media content creation. Robert's energetic personality, experience, and skills make him a great addition to the MMM team.",
-    image_src: "/images/team/robertKraybill.png",
-  },
-  {
     name: "Remi Heckert",
     role: "Videographer/Editor",
     about:
@@ -77,19 +70,19 @@ export const teamData = [
     image_src: "/images/team/remiHeckert.png",
   },
   {
-    name: "Sophia Marquart",
-    role: "Videographer/Editor",
+    name: "Clark Martin",
+    role: "Sales and Marketing Coordinator",
     about:
-      "Sophia is a filmmaking grad from Ringling College of Art and Design, known for crafting engaging visual narratives, she blends creativity with technical expertise to produce compelling videos across various genres. Whether for corporate or personal projects, Sophia's work stands out for its precision and storytelling flair.",
-    image_src: "/images/team/sophiaMarquart.png",
+      "Clark graduated from St. Louis University HS and is now studying marketing and sales while coordinating marketing efforts at MMM. Clark is known for his vibrant spirit and diverse talents. From juggling and performing to winning a national championship in racquetball, Clark brings passion and energy to the MMM team. If you're lucky you'll get to hear him play the piano sometime, a skill he's been mastering since age 5! Clark has quickly become an important member of the MMM team.",
+    image_src: "/images/team/clarkMartin.png",
   },
-  // {
-  //   name: "Clark Martin",
-  //   role: "",
-  //   about:
-  //     "",
-  //   image_src: "/images/team/",
-  // },
+  {
+    name: "Bryan Days",
+    role: "Producer",
+    about:
+      "Bryan is an STL native who graduated from Webster University with a degree in Video Production. He began his career as a production assistant in the creative services department at CNN, where he developed a passion for producing innovative content. Bryan is excited to work with the talented MMM team and their clients.",
+    image_src: "/images/team/bryanDays.png",
+  },
   // {
   //   name: "",
   //   role: "",
