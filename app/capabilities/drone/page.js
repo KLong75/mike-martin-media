@@ -102,6 +102,7 @@ export default function Page() {
             selectedCategories={["Drone"]}
             excludedCategory={[]}
             numberOfVideos={6}
+            featured="featured-drone"
           />
         </div>
       </div>

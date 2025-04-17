@@ -5,6 +5,7 @@ export const workSampleData = [
     title: "Synergy Living Kirkwood Development",
     image_src: "/images/work-gallery-cover-images/synergy-living-cover.jpg",
     src: "https://player.vimeo.com/video/1024802262?h=7af899a007&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-drone",
   },
   {
     category: ["Corporate", "Video Editing", "Video Production", "Animation"],
@@ -19,6 +20,7 @@ export const workSampleData = [
     title: "Gala Fund-A-Need",
     image_src: "/images/work-gallery-cover-images/jcs-cover.jpg",
     src: "https://player.vimeo.com/video/838407827?h=3668c77c36&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-video-production",
   },
   {
     category: ["Nonprofit", "Video Editing", "Video Production"],
@@ -26,6 +28,7 @@ export const workSampleData = [
     title: "Holiday Block Leave",
     image_src: "/images/work-gallery-cover-images/uso-of-mo-cover.jpg",
     src: "https://player.vimeo.com/video/792679501?h=8a339c0ff3&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-video-editing",
   },
   {
     category: ["Corporate", "Drone", "Video Editing", "Video Production"],
@@ -33,6 +36,7 @@ export const workSampleData = [
     title: "Recruitment",
     image_src: "/images/work-gallery-cover-images/artco-cover.jpg",
     src: "https://player.vimeo.com/video/901619462?h=4ab57402b0&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-drone",
   },
   {
     category: ["Corporate", "Drone", "Video Editing", "Video Production"],
@@ -40,6 +44,7 @@ export const workSampleData = [
     title: "In Grand Center",
     image_src: "/images/work-gallery-cover-images/mmm-cover.jpg",
     src: "https://player.vimeo.com/video/799944146?h=7ce1e106da&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-video-editing",
   },
   {
     category: ["Corporate", "Drone", "Video Editing", "Video Production"],
@@ -47,6 +52,7 @@ export const workSampleData = [
     title: "Padde Raise",
     image_src: "/images/work-gallery-cover-images/gsem-cover.jpg",
     src: "https://player.vimeo.com/video/796701498?h=2711ae04fb&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-drone",
   },
   {
     category: ["Corporate", "Video Editing", "Video Production"],
@@ -54,6 +60,7 @@ export const workSampleData = [
     title: "Houston Groundbreaking",
     image_src: "/images/work-gallery-cover-images/mitek-cover.jpg",
     src: "https://player.vimeo.com/video/779302587?h=59cf20066f&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-video-editing",
   },
   {
     category: ["Corporate", "Video Editing", "Video Production"],
@@ -61,6 +68,7 @@ export const workSampleData = [
     title: "Share to Inspire",
     image_src: "/images/work-gallery-cover-images/club-fitness-share-cover.jpg",
     src: "https://player.vimeo.com/video/1050824685?h=0a70bae50f&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-video-production",
   },
   {
     category: ["Corporate", "Video Editing", "Video Production", "Drone"],
@@ -68,6 +76,7 @@ export const workSampleData = [
     title: "Highlight",
     image_src: "/images/work-gallery-cover-images/mati-cover.jpg",
     src: "https://player.vimeo.com/video/862940886?h=48731807d6&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-drone",
   },
   {
     category: ["Corporate", "Video Editing", "Video Production", "Drone"],
@@ -75,6 +84,7 @@ export const workSampleData = [
     title: "Recruitment",
     image_src: "/images/work-gallery-cover-images/five-star-auto-cover.jpg",
     src: "https://player.vimeo.com/video/755292157?h=e641dc365b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-video-production",
   },
   {
     category: ["Education", "Drone", "Video Editing", "Video Production"],
@@ -96,6 +106,7 @@ export const workSampleData = [
     title: "Founders Day",
     image_src: "/images/work-gallery-cover-images/wash-u-cover.jpg",
     src: "https://player.vimeo.com/video/880289545?h=3226a6bf33&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-video-production",
   },
   {
     category: ["Education", "Video Editing", "Video Production"],
@@ -117,14 +128,15 @@ export const workSampleData = [
     title: "Internships",
     image_src: "/images/work-gallery-cover-images/bio-stl-cover.jpg",
     src: "https://player.vimeo.com/video/849274086?h=843ea55285&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-video-production",
   },
   {
     category: ["Medical", "Video Editing", "Video Production"],
     client: "SSM Cardinal Glennon",
     title: "Residency Recruitment",
+    image_src: "/images/work-gallery-cover-images/ssm-cardinal-glennon-cover.jpg",
     src: "https://player.vimeo.com/video/872654095?h=2fbe224539&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
-    image_src:
-      "/images/work-gallery-cover-images/ssm-cardinal-glennon-cover.jpg",
+    featured: "featured-video-editing",
   },
   {
     category: ["Medical", "Video Editing", "Video Production", "Drone"],
@@ -140,6 +152,7 @@ export const workSampleData = [
     title: "Fellowship Recruitment",
     src: "https://player.vimeo.com/video/900179612?h=690b0e7751&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     image_src: "/images/work-gallery-cover-images/wash-u-nm-med-cover.jpg",
+    featured: "featured-video-editing",
   },
   {
     category: ["Medical", "Video Editing", "Video Production", "Drone"],
@@ -168,6 +181,7 @@ export const workSampleData = [
     title: "St. Vincent",
     image_src: "/images/work-gallery-cover-images/ascension-cover.jpg",
     src: "https://player.vimeo.com/video/942507749?h=5211a400f9&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-drone",
   },
   {
     category: ["Medical", "Video Editing", "Video Production"],
@@ -189,6 +203,7 @@ export const workSampleData = [
     title: "Gala Fund-A-Need",
     image_src: "/images/work-gallery-cover-images/ollie-hinkle-cover.jpg",
     src: "https://player.vimeo.com/video/812985606?h=a0fe83b76b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-video-production",
   },
   {
     category: ["Nonprofit", "Video Editing", "Video Production"],
@@ -262,14 +277,15 @@ export const workSampleData = [
     title: "Project Spotlight",
     image_src: "/images/work-gallery-cover-images/mccarthy-cover.jpg",
     src: "https://player.vimeo.com/video/1004659940?h=83dc5242f5&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-drone",
   },
   {
     category: ["Medical", "Video Editing", "Video Production"],
     client: "St. Louis Children's Hospital Foundation",
     title: "CMN Patient Ambassadors",
-    image_src:
-      "/images/work-gallery-cover-images/stlouis-childrens-hospital-foundation-cover.jpg",
+    image_src: "/images/work-gallery-cover-images/stlouis-childrens-hospital-foundation-cover.jpg",
     src: "https://player.vimeo.com/video/930793149?h=2a6f6a2764&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-video-editing",
   },
   {
     category: ["Education", "Video Editing", "Video Production"],
