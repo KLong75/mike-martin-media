@@ -17,6 +17,7 @@ export default function VideoGallery({
   excludedCategory,
   numberOfVideos,
   clearSelectedCategories,
+  featured,
 }) {
   const pathname = usePathname();
   const [shuffledVideos, setShuffledVideos] = useState([]);
@@ -26,24 +27,28 @@ export default function VideoGallery({
   };
 
   useEffect(() => {
-    // Each time selectedCategories changes, re-randomize in the client
+    // Re-randomize in the client whenever selectedCategories or featured changes
     const shuffled = randomizeArray(workSampleData);
     setShuffledVideos(shuffled);
-  }, [selectedCategories]);
+  }, [selectedCategories, featured]);
 
   const filteredVideos = shuffledVideos.filter((video) => {
+    // If featured is set (e.g., "featured-drone"), ensure that video.featured matches
+    const isFeaturedMatch = featured ? video.featured === featured : true;
+
     if (selectedCategories.includes("All")) {
-      return true;
+      return isFeaturedMatch;
     }
-    // Must match all selected categories
     const matchesAllSelectedCategories = selectedCategories.every((cat) =>
       video.category.includes(cat)
     );
-    // Exclude items that belong exclusively to excludedCategory
     const isNotExclusivelyExcluded = !video.category.every((cat) =>
       excludedCategory.includes(cat)
     );
-    return matchesAllSelectedCategories && isNotExclusivelyExcluded;
+
+    return (
+      isFeaturedMatch && matchesAllSelectedCategories && isNotExclusivelyExcluded
+    );
   });
 
   return (

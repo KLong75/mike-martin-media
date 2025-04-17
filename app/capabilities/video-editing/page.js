@@ -98,6 +98,7 @@ export default function Page() {
             selectedCategories={["Video Editing"]}
             excludedCategory={[]}
             numberOfVideos={6}
+            featured="featured-video-editing"
           />
         </div>
       </div>
