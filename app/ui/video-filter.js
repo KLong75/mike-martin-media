@@ -25,7 +25,7 @@ export default function VideoFilter() {
           selectedCategories={selectedCategories}
           excludedCategory={[""]}
           clearSelectedCategories={clearSelectedCategories}
-          numberOfVideos={43}
+          numberOfVideos={45}
         />
       </div>
     </>
