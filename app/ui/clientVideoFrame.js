@@ -77,8 +77,8 @@ export default function ClientVideoFrame({
         </div>
       </div>
       <Dialog open={videoWindowOpen} onClose={() => setVideoWindowOpen(false)}>
-        <DialogBackdrop className="fixed inset-0 bg-black" />
-        <DialogPanel className="fixed inset-0 z-10 overflow-auto">
+        <DialogBackdrop className="fixed inset-0 bg-black z-40" />
+        <DialogPanel className="fixed inset-0 z-50 overflow-auto">
           <div className="flex flex-col justify-center items-center h-full p-4">
             <div className="flex justify-end items-start w-full">
               <button
