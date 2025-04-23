@@ -165,7 +165,7 @@ export const workSampleData = [
     category: ["Medical", "Video Editing", "Video Production"],
     client: "Alton Memorial Hospital Foundation",
     title: "Duck Pluckers Ball",
-    image_src: "/images/work-gallery-cover-images/alton-memorial-cover.jpg",
+    image_src: "/images/work-gallery-cover-images/alton-memorial-cover.png",
     src: "https://player.vimeo.com/video/905668122?h=44f7031f29&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
   {
@@ -325,11 +325,25 @@ export const workSampleData = [
       "/images/work-gallery-cover-images/photography/club-fitness-gallery-cover.png",
     src: "",
   },
-  // {
-  //   category: ["Drone", "Medical", "Video Editing", "Video Production"],
-  //   client: "Missouri Baptist",
-  //   title: "Blues Drone",
-  //   image_src: "/images/work-gallery-cover-images/mo-bap-cover.jpg",
-  //   src: "https://player.vimeo.com/video/943728497?h=2a1e0843fa&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
-  // },
+  {
+    category: ["Video Editing", "Video Production"],
+    client: "CID",
+    title: "CID Out Loud",
+    image_src: "/images/work-gallery-cover-images/cid-outloud-cover.jpg",
+    src: "https://player.vimeo.com/video/1049078237?h=6f4c1feb6f&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+  },
+  {
+    category: ["Video Editing", "Video Production"],
+    client: "Evertrue",
+    title: "ET IL Social Opportunities",
+    image_src: "/images/work-gallery-cover-images/evertrue-cover.jpg",
+    src: "https://player.vimeo.com/video/1033942065?h=07edd2100d&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+  },
+//   {
+//     category: ["Video Editing", "Video Production"],
+//     client: "",
+//     title: "",
+//     image_src: "/images/work-gallery-cover-images/",
+//     src: "https://player.vimeo.com/video/&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+//   },
 ];
