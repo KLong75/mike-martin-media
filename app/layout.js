@@ -1,3 +1,6 @@
+import { NonceProvider } from "./NonceContext";
+// import from react
+import React from "react";
 // import from vercel
 import { Analytics } from "@vercel/analytics/react";
 // import from next
@@ -10,6 +13,7 @@ import { PreloadResources } from "./preload-resources";
 import Header from "./ui/header";
 import Footer from "./ui/footer";
 import ScrollToTopButton from "./ui/scrollToTop";
+import ContactFormWrapper from "./ui/contactFormWrapper";
 // import styles
 import "./globals.css";
 // import fonts
@@ -40,6 +44,7 @@ export const dynamic = "force-dynamic";
 export default async function RootLayout({ children }) {
   const headersList = await headers();
   const nonce = headersList.get("x-nonce");
+
   return (
     <html
       lang="en"
@@ -47,10 +52,12 @@ export default async function RootLayout({ children }) {
       {/* <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} />  */}
       <PreloadResources />
       <body className={`flex flex-col min-h-screen`}>
+        <NonceProvider nonce={nonce}>
         <Header />
         {children}
         <ScrollToTopButton />
         <ActiveCampaignNewsletterSignup />
+        <ContactFormWrapper />
         <Footer />
         <Analytics />
         <Script
@@ -99,6 +106,8 @@ export default async function RootLayout({ children }) {
           strategy="afterInteractive"
           nonce={nonce}
         /> */}
+      
+        </NonceProvider>
       </body>
     </html>
   );

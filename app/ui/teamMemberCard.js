@@ -17,7 +17,6 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
   const [bioOpen, setBioOpen] = useState(false);
   const handleTeamCardClick = () => {
     setBioOpen(true);
-    console.log("clicked");
   };
   const handleClose = () => {
     setBioOpen(false);
