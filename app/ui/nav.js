@@ -128,7 +128,7 @@ export default function Nav() {
                         }}
                       />
                     ) : link.label === "Contact Us" ? (
-                      <Link href={link.href}>
+                      <a href={link.href}>
                         <span
                           onClick={() =>
                             setMenuOpen(false) 
@@ -140,7 +140,7 @@ export default function Nav() {
                           } `}>
                           {link.label}
                         </span>
-                      </Link>
+                      </a>
                     ) : (
                       <Link 
                         href={link.href}

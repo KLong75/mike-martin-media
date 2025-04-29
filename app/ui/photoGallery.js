@@ -39,7 +39,6 @@ export default function PhotoGallery({
 }) {
   const [photoGalleryOpen, setPhotoGalleryOpen] = useState(false);
   const currentPath = usePathname();
-  console.log(currentPath);
   const handleCoverImageClick = () => {
     setPhotoGalleryOpen(true);
     track(`photo gallery view - ${client}`);

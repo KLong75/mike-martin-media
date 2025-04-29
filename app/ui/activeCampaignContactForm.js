@@ -1,10 +1,14 @@
+"use client";
 //import from next
 import Script from "next/script";
-import { headers } from "next/headers";
+// import { headers } from "next/headers";
+import { useNonce } from "../NonceContext";
 
-export default async function ActiveCampaignContactForm() {
-  const headersList = await headers();
-  const nonce = headersList.get("x-nonce");
+export default function ActiveCampaignContactForm() {
+  // const headersList = await headers();
+  // const nonce = headersList.get("x-nonce");
+  const nonce = useNonce();
+  
   return (
     <>
       <Script
@@ -16,4 +20,3 @@ export default async function ActiveCampaignContactForm() {
     </>
   );
 };
-
