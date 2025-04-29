@@ -48,7 +48,7 @@ export default function ContactFormWrapper() {
       event.preventDefault(); // Prevent default submission (optional)
       setTimeout(() => {
         window.location.reload(); 
-      }, 10000); 
+      }, 6000); 
 
     };
 
