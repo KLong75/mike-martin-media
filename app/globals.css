@@ -275,3 +275,34 @@ a.cky-banner-element {
 .-rotate-35 {
   transform: rotate(-35deg);
 }
+
+.popover-panel::before {
+  content: "";
+  position: absolute;
+  top: -8px; /* Adjust to position the point */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 10px 10px 10px; /* Triangle shape */
+  border-style: solid;
+  border-color: transparent transparent white transparent; /* Match the panel's background */
+  z-index: 1;
+}
+
+.popover-panel::after {
+  content: "";
+  position: absolute;
+  top: -11px; /* Slightly above the ::before to create a border effect */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 11px 11px 11px; /* Slightly larger triangle for the border */
+  border-style: solid;
+  border-color: transparent transparent black transparent; /* Match the panel's border color */
+  z-index: 0;
+}
+
+/* hide newsletter signup for mobile */
+@media (max-width: 768px) {
+  ._form-wrapper {
+    display: none; /* Hide on screens smaller than 768px */
+  }
+}
