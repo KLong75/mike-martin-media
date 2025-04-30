@@ -13,7 +13,7 @@ export default function SubNavPopover({ category }) {
         <HiChevronDown className="size-5 group-data-[open]:rotate-180" />
       </PopoverButton>
 
-      <PopoverPanel className="absolute z-50 w-auto bg-white border border-black rounded-2xl lg:rounded-full shadow-lg p-4 flex left-1/2 transform -translate-x-1/2 mt-2 popover-panel">
+      <PopoverPanel className="absolute z-50 w-auto bg-white lg:border lg:border-black rounded-2xl lg:rounded-full shadow-lg p-4 flex left-1/2 transform -translate-x-1/2 mt-2 popover-panel">
         {({ close }) => (
           <ul className="lg:flex lg:flex-row">
             {category.sub_items.map((item, index) => (

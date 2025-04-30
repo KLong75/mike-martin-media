@@ -283,7 +283,7 @@ a.cky-banner-element {
 .popover-panel::before {
   content: "";
   position: absolute;
-  top: -10px; /* Adjust to position the point */
+  top: -8px; /* Adjust to position the point */
   left: 50%;
   transform: translateX(-50%);
   border-width: 0 10px 10px 10px; /* Triangle shape */
