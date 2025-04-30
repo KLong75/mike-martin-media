@@ -286,7 +286,6 @@ a.cky-banner-element {
   border-style: solid;
   border-color: transparent transparent white transparent; /* Match the panel's background */
   z-index: 1;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Rounds the tip of the triangle */
 }
 
 .popover-panel::after {
