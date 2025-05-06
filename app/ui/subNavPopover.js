@@ -1,9 +1,12 @@
+// import from react
+import { useState } from "react";
 //import from next
 import Link from "next/link";
 // import from headless ui
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 // import from react-icons
 import { HiChevronDown } from "react-icons/hi";
+// import { HiChevronUp } from "react-icons/hi";
 
 export default function SubNavPopover({ category }) {
   return (
