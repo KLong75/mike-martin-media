@@ -14,7 +14,7 @@ export function middleware(request) {
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
     img-src 'self' blob: data: https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com;
-    connect-src 'self' https://mmmmarketing42.activehosted.com/proc.php  https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com;
+    connect-src 'self' https://mmmmarketing42.activehosted.com/proc.php  https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://analytics.google.com;
     font-src 'self' data: https://fonts.bunny.net/;
     object-src 'none';
     base-uri 'self';
@@ -60,6 +60,10 @@ export function middleware(request) {
 
   if (isDevelopment) {
     cspHeader = developmentCspHeader;
+    console.log(
+      "CSP Header for Development: ",
+      developmentCspHeader.replace(/\s{2,}/g, " ")
+    );
   } else if (isPreview) {
     cspHeader = previewCspHeader;
   } else if (isProduction) {
