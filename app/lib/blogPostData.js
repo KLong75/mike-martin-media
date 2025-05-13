@@ -1,7 +1,7 @@
 const basePath = "/images/blog-page/blog-post-images/";
 
 export const blogPosts = [
-   // {
+  // {
   //   title: "",
   //   post_date: "",
   //   image_src: "/images/blog-page/blog-post-images/.png",
