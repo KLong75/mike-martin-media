@@ -31,7 +31,7 @@ export function middleware(request) {
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
     img-src 'self' blob: data: https://i.vimeocdn.com/video/* https://www.googletagmanager.com/ https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/*;
-    connect-src 'self' *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://mmmmarketing42.activehosted.com/proc.php https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com;
+    connect-src 'self' https://analytics.google.com *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://mmmmarketing42.activehosted.com/proc.php https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com;
     font-src 'self' data: https://fonts.bunny.net/;
     object-src 'none';
     base-uri 'self';
