@@ -30,7 +30,7 @@ export async function generateMetadata({ params }) {
       type: "website",
       locale: "en_US",
       url: `${siteUrl}/blog/posts/${post.slug}`,
-      title: `Mike Martin Media Blog | Beyond the Lense: ${post.title}`,
+      title: `Mike Martin Media Blog | Beyond the Lens: ${post.title}`,
       description: post.description,
       images: [
         {
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       cardType: "summary_large_image",
-      title: `Mike Martin Media Blog | Beyond the Lense: ${post.title}`,
+      title: `Mike Martin Media Blog | Beyond the Lens: ${post.title}`,
       description: post.description,
       images: [
         {
