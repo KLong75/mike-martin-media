@@ -6,7 +6,7 @@ import Link from "next/link";
 // import components
 import Image from "./image";
 // import from utils
-import { formatDate } from "../lib/utils";
+// import { formatDate } from "../lib/utils";
 
 export default function BlogPostPreview({
   slug,
@@ -16,7 +16,7 @@ export default function BlogPostPreview({
   image_height,
   image_alt,
   text,
-  post_date,
+  // post_date,
   priority,
 }) {
   const shortenPostText = (text, num) => {
@@ -46,24 +46,23 @@ export default function BlogPostPreview({
           </div>
         </div>
         <div className="max-w-[460px] pt-6">
-          <p className="flex items-center">
+          {/* <p className="flex items-center">
             {formatDate(post_date)}
             <span className="border-t border-black w-6 mx-2 group-hover:border-white"></span>
-          </p>
+          </p> */}
           <h3 className="font-bold text-2xl text-wrap my-1">{title}</h3>
           <p className="mb-6 text-left text-md mt-2 lg:mt-4">
-            {shortenPostText(text[0], 200)}
+            {Array.isArray(text) && text.length > 0
+              ? shortenPostText(text[0], 200)
+              : "No content available"}
           </p>
           {/* Use Tailwind to conditionally show "Read More" on mobile */}
-          <p className="font-semibold text-center md:hidden">
-            Read More
-          </p>
+          <p className="font-semibold text-center md:hidden">Read More</p>
         </div>
       </Link>
     </div>
   );
 }
-
 
 // "use client";
 // // import from react

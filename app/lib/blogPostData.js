@@ -221,7 +221,7 @@ export const blogPosts = [
   {
     slug: "note-from-luke",
     title: "A Note from Luke",
-    post_date: "6/7/2024",
+    post_date: "2024-06-07",
     image_src: `${basePath}2024/2024-june.png`,
     image_width: 456,
     image_height: 344,
