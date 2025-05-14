@@ -77,21 +77,21 @@
 
 "use client";
 //import from react
-import { useRef } from "react";
+// import { useRef } from "react";
 //import from next
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 // import data
 import { blogPosts } from "../lib/blogPostData";
 // import components
 import BlogPostPreview from "./blogPostPreview";
 
 export default function BlogPostGallery() {
-  const currentPath = usePathname();
-  const galleryRef = useRef(null);
+  // const currentPath = usePathname();
+  // const galleryRef = useRef(null);
 
   return (
     <div className="flex justify-center px-4 lg:px-20">
-      <div className="grid grid-cols-1 max-w-800" ref={galleryRef}>
+      <div className="grid grid-cols-1 max-w-800" >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-6">
           {blogPosts.map((post, index) => (
             <BlogPostPreview
