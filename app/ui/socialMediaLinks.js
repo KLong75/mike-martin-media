@@ -18,7 +18,6 @@ export default function SocialMediaLinks() {
           href="https://www.facebook.com/mikemartinmedia"
           icon={<FaFacebook size={22} />}
           label="link to Mike Martin Media on Facebook"
-          name="link to Mike Martin Media on Facebook"
         />
       </div>
       <div
@@ -28,7 +27,6 @@ export default function SocialMediaLinks() {
           href="https://www.instagram.com/mikemartinmedia"
           icon={<FaInstagram size={22} />}
           label="link to Mike Martin Media on Instagram"
-          name="link to Mike Martin Media on Instagram"
         />
       </div>
       <div
@@ -38,7 +36,6 @@ export default function SocialMediaLinks() {
           href="https://www.linkedin.com/company/mike-martin-media/"
           icon={<FaLinkedin size={22} />}
           label="link to Mike Martin Media on LinkedIn"
-          name="link to Mike Martin Media on LinkedIn"
         />
       </div>
       <div
@@ -48,7 +45,6 @@ export default function SocialMediaLinks() {
           href="https://www.youtube.com/channel/UC9YeMwSvCRKJBGeIoi1n97Q"
           icon={<FaYoutube size={22} />}
           label="link to Mike Martin Media on YouTube"
-          name="link to Mike Martin Media on YouTube"
         />
       </div>
     </div>

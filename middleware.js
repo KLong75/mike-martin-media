@@ -26,7 +26,7 @@ export function middleware(request) {
 
   const previewCspHeader = `
     default-src 'none';
-    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://player.vimeo.com/* https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* ;
+    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* ;
     script-src-elem 'self' 'nonce-${nonce}' 'unsafe-inline' https://www.googletagmanager.com/gtm.js https://googletagmanager.com/* https://mmmmarketing42.activehosted.com/ https://prism.app-us1.com/ https://cdn-cookieyes.com/ ;
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
     img-src 'self' blob: data: https://i.vimeocdn.com/video/* https://www.googletagmanager.com/ https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png;
@@ -43,7 +43,7 @@ export function middleware(request) {
 
   const productionCspHeader = `
     default-src 'none';
-    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://player.vimeo.com/* https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js cdn-cookieyes.com https://mmmmarketing42.activehosted.com;
+    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js cdn-cookieyes.com https://mmmmarketing42.activehosted.com;
     script-src-elem 'self' 'nonce-${nonce}' https://www.googletagmanager.com/gtm.js/* https://googletagmanager.com/*  https://mmmmarketing42.activehosted.com/ https://prism.app-us1.com/ https://cdn-cookieyes.com/ ;
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
     img-src 'self' blob: data: https://i.vimeocdn.com/video/* https://cdn-cookieyes.com/assets/images/close.svg https://cdn-cookieyes.com/assets/images/poweredbtcky.svg cdn-cookieyes.com https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png https://www.googletagmanager.com/td https://www.googletagmanager.com/a;
@@ -60,10 +60,6 @@ export function middleware(request) {
 
   if (isDevelopment) {
     cspHeader = developmentCspHeader;
-    console.log(
-      "CSP Header for Development: ",
-      developmentCspHeader.replace(/\s{2,}/g, " ")
-    );
   } else if (isPreview) {
     cspHeader = previewCspHeader;
   } else if (isProduction) {

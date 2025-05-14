@@ -28,22 +28,6 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
-      //   url: ,
-      //   width: 1920,
-      //   height: 1080,
-      //   alt: "About Mike Martin Media",
-      // },
-      // {
-      //   url: ,
-      //   width: 1080,
-      //   height: 1080,
-      // },
-      // {
-      //   url: ,
-      //   width: 600,
-      //   height: 314,
-      // }
     ],
   },
   twitter: {
@@ -57,11 +41,6 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
-        //   url: ,
-        //   width: 800,
-        //   height: 418,
-        // },
     ],
   },
 };
