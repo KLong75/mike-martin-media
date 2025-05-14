@@ -23,7 +23,7 @@ export const blogPosts = [
   // },
   {
     title: "My MMM Family",
-    post_date: "4/1/2025",
+    post_date: "April 2025",
     image_src: "/images/blog-page/blog-post-images/2025/2025-april-a.png",
     image_alt: "Adam, Kevin, and Mikey hanging out with the team mascot as they take in a ballgame.",
     image_width: 456,
@@ -44,7 +44,7 @@ export const blogPosts = [
   {
     slug: "learning-never-stops",
     title: "Learning Never Stops",
-    post_date: "3/1/2025",
+    post_date: "March 2025",
     image_src: `${basePath}2025/2025-mar.png`,
     image_alt: "Remi at the job with the MMM team.",
     image_width: 456,
@@ -66,7 +66,7 @@ export const blogPosts = [
   {
     slug: "growth-and-gratitude",
     title: "15 Years of Growth and Gratitude",
-    post_date: "2/1/2025",
+    post_date: "Feb 2025",
     image_src: `${basePath}2025/2025-feb.png`,
     image_alt: "A young Tom with an old school video camera.",
     image_width: 456,
@@ -84,7 +84,7 @@ export const blogPosts = [
   { 
     slug: "starting-my-career",
     title: "Starting My Career At MMM",
-    post_date: "1/1/25",
+    post_date: "Jan 2025",
     image_src: `${basePath}2025/2025-jan.png`,
     image_alt: "Robert showing off his photographer credentials. ",
     image_width: 456,
@@ -106,7 +106,7 @@ export const blogPosts = [
   {
     slug: "year-end-review",
     title: "2024 Review",
-    post_date: "12/1/24",
+    post_date: "Dec 2024",
     image_src: `${basePath}2024/2024-dec.png`,
     image_alt: "The MMM team at work in the studio using a green screen.",
     image_width: 456,
@@ -126,7 +126,7 @@ export const blogPosts = [
   {
     slug: "note-from-ceo",
     title: "A Note from the CEO",
-    post_date: "11/1/2024",
+    post_date: "Nov 2024",
     image_src: `${basePath}2024/2024-nov.png`,
     image_width: 456,
     image_height: 282,
@@ -157,7 +157,7 @@ export const blogPosts = [
   {
     slug: "note-from-mary",
     title: "A Note from Mary",
-    post_date: "10/1/2024",
+    post_date: "Oct 2024",
     image_src: `${basePath}2024/2024-oct.png`,
     image_width: 456,
     image_height: 342,
@@ -179,7 +179,7 @@ export const blogPosts = [
   {
     slug: "olympic-fever",
     title: "Olympic Fever",
-    post_date: "9/1/2024",
+    post_date: "Sept 2024",
     image_src: `${basePath}2024/2024-sept.png`,
     image_width: 456,
     image_height: 342,
@@ -203,7 +203,7 @@ export const blogPosts = [
   {
     slug: "note-from-tom",
     title: "A Note from Tom",
-    post_date: "7/18/2024",
+    post_date: "July 2024",
     image_src: `${basePath}2024/2024-july.png`,
     image_width: 456,
     image_height: 326,
@@ -221,7 +221,7 @@ export const blogPosts = [
   {
     slug: "note-from-luke",
     title: "A Note from Luke",
-    post_date: "2024-06-07",
+    post_date: "June 2024",
     image_src: `${basePath}2024/2024-june.png`,
     image_width: 456,
     image_height: 344,
@@ -238,7 +238,7 @@ export const blogPosts = [
   {
     slug: "dayton-ohio-adventure",
     title: "Dayton, Ohio Adventure - From Video Shoots to Bar Arcades",
-    post_date: "2024-5-8",
+    post_date: "May 2024",
     image_src: `${basePath}2024/2024-may.png`,
     image_width: 456,
     image_height: 342,
@@ -258,7 +258,7 @@ export const blogPosts = [
   {
     slug: "out-and-about-2024",
     title: "Out and About in 2024",
-    post_date: "2024-4-15",
+    post_date: "April 2024",
     image_src: `${basePath}2024/2024-april.png`,
     image_width: 456,
     image_height: 362,
@@ -275,7 +275,7 @@ export const blogPosts = [
   {
     slug: "inside-mmm-arizona-trip",
     title: "Inside MMM's Arizona Trip",
-    post_date: "2023-3-27",
+    post_date: "March 2023",
     image_src: `${basePath}2023/2023-mar.png`,
     image_width: 456,
     image_height: 342,
@@ -293,7 +293,7 @@ export const blogPosts = [
   {
     slug: "reflecting-on-the-season",
     title: "Reflecting on the Season",
-    post_date: "2023-1-18",
+    post_date: "Jan 2023",
     image_src: `${basePath}2023/2023-jan.png`,
     image_width: 456,
     image_height: 342,
@@ -314,7 +314,7 @@ export const blogPosts = [
   {
     slug: "six-months-down-six-more-to-go",
     title: "Six Months Down, Six More to Go!",
-    post_date: "2022-6-15",
+    post_date: "June 2022",
     image_src: `${basePath}2022/2022-june.png`,
     image_width: 456,
     image_height: 342,
@@ -332,7 +332,7 @@ export const blogPosts = [
   {
     slug: "letter-from-kevin",
     title: "A Letter from Kevin",
-    post_date: "2022-4-7",
+    post_date: "April 2022",
     image_src: `${basePath}2022/2022-april.png`,
     image_width: 456,
     image_height: 342,
@@ -357,7 +357,7 @@ export const blogPosts = [
   {
     slug: "note-from-rachel",
     title: "A Note from Rachel",
-    post_date: "2022-3-23",
+    post_date: "Feb 2023",
     image_src: `${basePath}2022/2022-march.png`,
     image_width: 456,
     image_height: 342,
@@ -375,7 +375,7 @@ export const blogPosts = [
   {
     slug: "note-from-mike",
     title: "A Note from Mike",
-    post_date: "2022-2-10",
+    post_date: "Feb 2022",
     image_src: `${basePath}2022/2022-feb.png`,
     image_width: 456,
     image_height: 304,
