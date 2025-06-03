@@ -17,12 +17,12 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
   const pathname = usePathname();
 
   useEffect(() => {
-    const hideLogoTimer = setTimeout(() => {
-      setHideLogo(true);
-    }, 1000);
-    const videoFadeTimer = setTimeout(() => {
-      setShowVideo(true);
-    }, 100);
+    // const hideLogoTimer = setTimeout(() => {
+    //   setHideLogo(true);
+    // }, 1000);
+    // const videoFadeTimer = setTimeout(() => {
+    //   setShowVideo(true);
+    // }, 100);
     const showHeadingTimer = setTimeout(() => {
       setShowHeading(true);
     }, 0);
@@ -35,9 +35,9 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
     }));
     setLetters(lettersArray);
 
-    const hideHeadingTimer = setTimeout(() => {
-      setShowHeading(false);
-    }, 8000);
+    // const hideHeadingTimer = setTimeout(() => {
+    //   setShowHeading(false);
+    // }, 8000);
 
     return () => {
       clearTimeout(hideLogoTimer);
