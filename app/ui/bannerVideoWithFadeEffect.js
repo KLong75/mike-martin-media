@@ -40,10 +40,10 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
     // }, 8000);
 
     return () => {
-      clearTimeout(hideLogoTimer);
-      clearTimeout(videoFadeTimer);
+      // clearTimeout(hideLogoTimer);
+      // clearTimeout(videoFadeTimer);
       clearTimeout(showHeadingTimer);
-      clearTimeout(hideHeadingTimer);
+      // clearTimeout(hideHeadingTimer);
     };
   }, []);
 
