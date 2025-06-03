@@ -110,7 +110,8 @@ export default function Page() {
         <CapabilityHighLightsSection
           headline={videoEditingHighlights.heading}
           highlights={videoEditingHighlights.highlights}
-          video_src={exampleVideoEditingVideoSrc}
+          // video_src={exampleVideoEditingVideoSrc}
+          video_src={"https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"}
         />
       </div>
       <div className="flex justify-center bg-[#F0F0F0]">
