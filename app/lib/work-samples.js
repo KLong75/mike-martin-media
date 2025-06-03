@@ -130,14 +130,14 @@ export const workSampleData = [
     src: "https://player.vimeo.com/video/849274086?h=843ea55285&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-video-production",
   },
-  // {
-  //   category: ["Medical", "Video Editing", "Video Production"],
-  //   client: "SSM Cardinal Glennon",
-  //   title: "Residency Recruitment",
-  //   image_src: "/images/work-gallery-cover-images/ssm-cardinal-glennon-cover.jpg",
-  //   src: "https://player.vimeo.com/video/872654095?h=2fbe224539&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
-  //   featured: "featured-video-editing",
-  // },
+  {
+    category: ["Medical", "Video Editing", "Video Production"],
+    client: "SSM Cardinal Glennon",
+    title: "Residency Recruitment",
+    image_src: "/images/work-gallery-cover-images/ssm-cardinal-glennon-cover.jpg",
+    src: "https://player.vimeo.com/video/872654095?h=2fbe224539&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-video-editing",
+  },
   {
     category: ["Medical", "Video Editing", "Video Production", "Drone"],
     client: "Washington University Emergency Medicine",
@@ -212,13 +212,13 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/cid-cover.jpg",
     src: "https://player.vimeo.com/video/825959288?h=46ba69e53b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
-  {
-    category: ["Nonprofit", "Video Editing", "Video Production"],
-    client: "Cardinal Ritter Senior Services",
-    title: "Gala Fund-A-Need",
-    image_src: "/images/work-gallery-cover-images/cardinal-ritter-cover.jpg",
-    src: "https://player.vimeo.com/video/700538510?h=350078ccdd&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
-  },
+  // {
+  //   category: ["Nonprofit", "Video Editing", "Video Production"],
+  //   client: "Cardinal Ritter Senior Services",
+  //   title: "Gala Fund-A-Need",
+  //   image_src: "/images/work-gallery-cover-images/cardinal-ritter-cover.jpg",
+  //   src: "https://player.vimeo.com/video/700538510?h=350078ccdd&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+  // },
   {
     category: ["Nonprofit", "Video Editing", "Video Production"],
     client: "Cystic Fibrosis Foundation",
