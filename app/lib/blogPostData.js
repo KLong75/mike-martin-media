@@ -22,6 +22,28 @@ export const blogPosts = [
   //   author: "",
   // },
   {
+      title: "The end of an era",
+      post_date: "June 2025",
+      image_src: "/images/blog-page/blog-post-images/2025/2025-june-a.png",
+      image_alt: "Zoë and the MMM team",
+      image_width: 456,
+      image_height: 342,
+      second_image_src: "/images/blog-page/blog-post-images/2025/2025-june-b.png",
+      second_image_width: 456,
+      second_image_height: 342,
+      second_image_alt: "Zoë's office. How it started and how it's ending.",
+      text: [
+        "If I have not had the pleasure of meeting you yet, my name is Zoë. I started working at MMM the same day that we all moved into the new studio at 3333 in 2021. It kind of felt like everyone got a 'fresh start' at the same time. Me with the company, and everyone else with the new studio. That was four years ago now. So wow, how time flies!",
+        "In that time, both the insides and the outsides of the company look a little different. People have come and gone, we've acquired new space and new gear, and our company behaviours and habits have also changed. I definitely relate to the studio in that way. I'm four years older, I've grown so much in my career and abilities, which means I've also embraced new challenges and met new obstacles.",
+        "MMM has given me my first full-time job and an incredible introduction to the world of video production. I've learned more than I could have imagined. I made friends for a lifetime where I just expected to meet coworkers. I am definitely a different person than I was before MMM, and for the better. This incredible team of people has helped shape me into the filmmaker that I am today and I could not be more grateful for them. I am so sad to be leaving MMM after an amazing four years here, but the company will live without me (I don't know how but I am sure y'all will manage). I will never forget this company, the people it brought me, or the many lessons I've learned here. I hope y'all dont forget me either.",
+        "Time changes everything, but I can tell that the heart and soul of MMM will forever be intact.",
+      ],
+      closing_tag: "MMM, weird but in a good way -- always.",
+      author: "Zoë Calsyn",
+      slug: "end-of-an-era",
+      description: "Zoë reflects on her four years at Mike Martin Media and the changes she's seen in the company and herself as she prepares to move on to a new professional chapter."
+    },
+  {
     title: "My MMM Family",
     post_date: "April 2025",
     image_src: "/images/blog-page/blog-post-images/2025/2025-april-a.png",
