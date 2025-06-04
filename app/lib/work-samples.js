@@ -310,7 +310,7 @@ export const workSampleData = [
     src: "",
   },
   {
-    category: ["Photography"],
+    category: ["Photography", "Corporate"],
     client: "Prasino",
     title: "Prasino Photo Gallery",
     image_src:
@@ -318,7 +318,7 @@ export const workSampleData = [
     src: "",
   },
   {
-    category: ["Photography"],
+    category: ["Photography", "Corporate"],
     client: "Club Fitness",
     title: "Club Fitness Photo Gallery",
     image_src:
