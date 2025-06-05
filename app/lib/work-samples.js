@@ -54,14 +54,14 @@ export const workSampleData = [
     src: "https://player.vimeo.com/video/796701498?h=2711ae04fb&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-drone",
   },
-  // {
-  //   category: ["Corporate", "Video Editing", "Video Production"],
-  //   client: "MiTek",
-  //   title: "Houston Groundbreaking",
-  //   image_src: "/images/work-gallery-cover-images/mitek-cover.jpg",
-  //   src: "https://player.vimeo.com/video/779302587?h=59cf20066f&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
-  //   featured: "featured-video-editing",
-  // },
+  {
+    category: ["Corporate", "Video Editing", "Video Production"],
+    client: "MiTek",
+    title: "Houston Groundbreaking",
+    image_src: "/images/work-gallery-cover-images/mitek-cover.jpg",
+    src: "https://player.vimeo.com/video/1090508426?h=db45733c16&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "featured-video-editing",
+  },
   {
     category: ["Corporate", "Video Editing", "Video Production"],
     client: "Club Fitness",
@@ -212,13 +212,13 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/cid-cover.jpg",
     src: "https://player.vimeo.com/video/825959288?h=46ba69e53b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
-  // {
-  //   category: ["Nonprofit", "Video Editing", "Video Production"],
-  //   client: "Cardinal Ritter Senior Services",
-  //   title: "Gala Fund-A-Need",
-  //   image_src: "/images/work-gallery-cover-images/cardinal-ritter-cover.jpg",
-  //   src: "https://player.vimeo.com/video/700538510?h=350078ccdd&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
-  // },
+  {
+    category: ["Nonprofit", "Video Editing", "Video Production"],
+    client: "Cardinal Ritter Senior Services",
+    title: "Gala Fund-A-Need",
+    image_src: "/images/work-gallery-cover-images/cardinal-ritter-cover.jpg",
+    src: "https://player.vimeo.com/video/1074456622?h=cf9944567e&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+  },
   {
     category: ["Nonprofit", "Video Editing", "Video Production"],
     client: "Cystic Fibrosis Foundation",
@@ -233,14 +233,14 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/kitm-cover.jpg",
     src: "https://player.vimeo.com/video/862525134?h=722087be67&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
-  // {
-  //   category: ["Nonprofit", "Livestream", "Video Editing", "Video Production"],
-  //   client: "Spirit of Provident",
-  //   title: "Gala Livestream",
-  //   image_src:
-  //     "/images/work-gallery-cover-images/provident-livestream-cover.jpg",
-  //   src: "https://player.vimeo.com/video/676469724?h=86dadc6885&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
-  // },
+  {
+    category: ["Nonprofit", "Livestream", "Video Editing", "Video Production"],
+    client: "Spirit of Provident",
+    title: "Gala Livestream",
+    image_src:
+      "/images/work-gallery-cover-images/provident-livestream-cover.jpg",
+    src: "https://player.vimeo.com/video/1074402240?h=cb4753e100&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+  },
   {
     category: ["Animation", "Medical", "Video Editing", "Video Production"],
     client: "St. Louis Children's Hospital",

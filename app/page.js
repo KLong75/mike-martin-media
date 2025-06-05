@@ -29,9 +29,10 @@ export default function Home() {
   return (
     <main className="grid grid-cols-1 ">
       <BannerVideoWithFadeEffect
-        src="https://player.vimeo.com/video/938224346?h=85055436bd&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        src="https://player.vimeo.com/video/1090631184?h=7363ce54f9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         //  src="https://player.vimeo.com/video/1059137126?h=580e267bea&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="Mike Martin Media - Ideas in Motion"
+        containerClassName="banner-vid-with-fade-container-no-logo"
       />
       <section className="flex justify-center items-center p-6 md:p-12 lg:p-28 xl:p-42">
         <div

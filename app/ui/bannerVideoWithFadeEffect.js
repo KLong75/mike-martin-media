@@ -8,7 +8,7 @@ import Image from "./image";
 // import images
 import whiteMmmLogo from "../../public/branding/white-mmm-logo-1200x488.png";
 
-export default function BannerVideoWithFadeEffect({ src, title }) {
+export default function BannerVideoWithFadeEffect({ src, title, containerClassName }) {
   const [hideLogo, setHideLogo] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
   const [showHeading, setShowHeading] = useState(false);
@@ -17,12 +17,12 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
   const pathname = usePathname();
 
   useEffect(() => {
-    // const hideLogoTimer = setTimeout(() => {
-    //   setHideLogo(true);
-    // }, 1000);
-    // const videoFadeTimer = setTimeout(() => {
-    //   setShowVideo(true);
-    // }, 100);
+    const hideLogoTimer = setTimeout(() => {
+      setHideLogo(true);
+    }, 1000);
+    const videoFadeTimer = setTimeout(() => {
+      setShowVideo(true);
+    }, 100);
     const showHeadingTimer = setTimeout(() => {
       setShowHeading(true);
     }, 0);
@@ -35,27 +35,27 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
     }));
     setLetters(lettersArray);
 
-    // const hideHeadingTimer = setTimeout(() => {
-    //   setShowHeading(false);
-    // }, 8000);
+    const hideHeadingTimer = setTimeout(() => {
+      setShowHeading(false);
+    }, 8000);
 
     return () => {
-      // clearTimeout(hideLogoTimer);
-      // clearTimeout(videoFadeTimer);
+      clearTimeout(hideLogoTimer);
+      clearTimeout(videoFadeTimer);
       clearTimeout(showHeadingTimer);
-      // clearTimeout(hideHeadingTimer);
+      clearTimeout(hideHeadingTimer);
     };
   }, []);
 
   return (
     <>
-      <section className="grid grid-cols-1 gap-4 ">
+      <section className="grid grid-cols-1 gap-4">
         <div
           className={`relative flex justify-center transition-colors duration-24000 ease-in-out ${
             showVideo ? "bg-white" : "bg-black"
           }`}>
           <div
-            className={`banner-vid-with-fade-container banner-video-aspect-ratio-container w-full transition-opacity duration-6000 ease-in-out ${
+            className={`${containerClassName} banner-video-aspect-ratio-container w-full transition-opacity duration-6000 ease-in-out ${
               showVideo ? "opacity-100" : "opacity-0"
             }`}>
             <iframe
@@ -86,7 +86,7 @@ export default function BannerVideoWithFadeEffect({ src, title }) {
           )}
           {/* Logo */}
           <div
-            className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 sm:w-100 md:w-144 lg:w-200  justify-center items-center absolute transition-opacity duration-8000 ease-in-out ${
+            className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 sm:w-100 md:w-144 lg:w-  justify-center items-center absolute transition-opacity duration-8000 ease-in-out ${
               hideLogo ? "opacity-0" : "opacity-100"
             }`}>
             <Image priority src={whiteMmmLogo} alt="MMM logo" />
