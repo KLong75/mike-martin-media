@@ -1,5 +1,5 @@
 //import components
-import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
+import BannerVideoWithFadeEffect from "@/app/ui/bannerVideoWithFadeEffect";
 import VideoGallery from "@/app/ui/videoGallery";
 import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import CapabilityHighLightsSection from "@/app/ui/capabilityHighlightsSection";
@@ -17,7 +17,8 @@ import {
   exampleVideoEditingVideoSrc,
 } from "../../lib/capabilities/video-editing.js";
 
-const videoEditingPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/video-editing-og.png";
+const videoEditingPageOgImgUrl =
+  "https://www.mikemartinmedia.com/images/open-graph/video-editing-og.png";
 
 export const metadata = {
   title: "Video Editing Company | Mike Martin Media",
@@ -40,7 +41,7 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
+      // {
       //   url: ,
       //   width: 1920,
       //   height: 1080,
@@ -69,11 +70,11 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
-        //   url: ,
-        //   width: 800,
-        //   height: 418,
-        // },
+      // {
+      //   url: ,
+      //   width: 800,
+      //   height: 418,
+      // },
     ],
   },
 };
@@ -81,14 +82,11 @@ export const metadata = {
 export default function Page() {
   return (
     <main className="grid grid-cols-1">
-      {/* <BannerVideoWithFadeNoLogo
-        src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-        title="Mike Martin Media: St. Louis Video Production Company"
-      /> */}
-      <BannerVideoWithFadeNoLogo
-            src="https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-            title="Mike Martin Media | Our Work"
-          />
+      <BannerVideoWithFadeEffect
+        src="https://player.vimeo.com/video/1090994552?h=756c4d7da5&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        title="Mike Martin Media - Video Editing"
+        containerClassName="banner-vid-with-fade-container-no-logo"
+      />
       <div className="">
         <PageHeadingBanner
           title={videoEditingPageHeadingBannerText.title}
@@ -110,8 +108,9 @@ export default function Page() {
         <CapabilityHighLightsSection
           headline={videoEditingHighlights.heading}
           highlights={videoEditingHighlights.highlights}
-          // video_src={exampleVideoEditingVideoSrc}
-          video_src={"https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"}
+          video_src={
+            "https://player.vimeo.com/video/1090994552?h=756c4d7da5&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          }
         />
       </div>
       <div className="flex justify-center bg-[#F0F0F0]">

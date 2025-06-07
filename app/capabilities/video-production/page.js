@@ -1,5 +1,5 @@
 //import components
-import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
+import BannerVideoWithFadeEffect from "@/app/ui/bannerVideoWithFadeEffect";
 import VideoGallery from "@/app/ui/videoGallery";
 import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import CapabilityHighLightsSection from "@/app/ui/capabilityHighlightsSection";
@@ -82,14 +82,10 @@ export const metadata = {
 export default function Page() {
   return (
     <main className="grid grid-cols-1">
-      {/* <BannerVideoWithFadeNoLogo
-        src="https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-        title="Mike Martin Media: St. Louis Video Production Company"
-      /> */}
-      {/* comment */}
-      <BannerVideoWithFadeNoLogo
-        src="https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-        title="Mike Martin Media | Our Work"
+      <BannerVideoWithFadeEffect
+        src="https://player.vimeo.com/video/1090994530?h=3259e9027e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        title="Mike Martin Media - Video Production"
+        containerClassName="banner-vid-with-fade-container-no-logo"
       />
       <div className="">
         <PageHeadingBanner
@@ -113,7 +109,9 @@ export default function Page() {
           headline={videoProductionHighlights.heading}
           highlights={videoProductionHighlights.highlights}
           // video_src={exampleVideoProductionVideoSrc}
-          video_src={"https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"}
+          video_src={
+            "https://player.vimeo.com/video/1090994530?h=3259e9027e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          }
         />
       </div>
       <div className="flex justify-center bg-[#F0F0F0]">
