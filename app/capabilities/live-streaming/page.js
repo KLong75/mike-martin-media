@@ -1,5 +1,6 @@
 // import components
-import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo"; 
+// import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo"; 
+import BannerVideoWithFadeEffect from "@/app/ui/bannerVideoWithFadeEffect";
 import VideoGallery from "@/app/ui/videoGallery";
 import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import CapabilityHighLightsSection from "@/app/ui/capabilityHighlightsSection";
@@ -81,9 +82,14 @@ export const metadata = {
 export default function Page() {
   return (
     <main className="grid grid-cols-1">
-      <BannerVideoWithFadeNoLogo
+      {/* <BannerVideoWithFadeNoLogo
         src="https://player.vimeo.com/video/904181398?h=c0efc97d6f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="Live Stream Video Company | Mike Martin Media"
+      /> */}
+      <BannerVideoWithFadeEffect
+        src="https://player.vimeo.com/video/904181398?h=c0efc97d6f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        title="Live Stream Video Company | Mike Martin Media"
+        containerClassName="banner-vid-with-fade-container-no-logo"
       />
       <div className="">
         <PageHeadingBanner
