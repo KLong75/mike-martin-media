@@ -6,9 +6,9 @@ export default function MMMTeamPhotoWithLogo() {
     <div className="relative w-full">
       <Image
         priority
-        src="/images/home-page/mmm-team.png"
-        width={708}
-        height={36}
+        src="/images/home-page/mmm-team-big.png"
+        width={819}
+        height={546}
         alt="The MMM Team"
         aria-label="The MMM Team"
         className="w-full h-auto"
