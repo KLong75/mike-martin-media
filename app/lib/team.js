@@ -41,13 +41,13 @@ export const teamData = [
       "Adam's 10 years of experience in television news and feature programs shines when under tight deadlines. He brings detail and creativity to every project with a time sensitive approach. He loves working with clients and creating amazing content!",
     image_src: "/images/team/adamBuccheit.png",
   },
-  {
-    name: "Zoë Calsyn",
-    role: "Videographer / Editor",
-    about:
-      "Zoë is a Digital Storytelling graduate from the University of Missouri with a passion for all stages of video production. From post-production editing to camera operation to social media management and content creation, Zoë's enthusiasm for her craft is evident in all that she does.",
-    image_src: "/images/team/zoeCalsyn.png",
-  },
+  // {
+  //   name: "Zoë Calsyn",
+  //   role: "Videographer / Editor",
+  //   about:
+  //     "Zoë is a Digital Storytelling graduate from the University of Missouri with a passion for all stages of video production. From post-production editing to camera operation to social media management and content creation, Zoë's enthusiasm for her craft is evident in all that she does.",
+  //   image_src: "/images/team/zoeCalsyn.png",
+  // },
   {
     name: "Luke Bradshaw",
     role: "Videographer / Editor",
