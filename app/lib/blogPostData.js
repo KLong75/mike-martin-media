@@ -4,13 +4,13 @@ export const blogPosts = [
   // {
   //   title: "",
   //   post_date: "",
-  //   image_src: "/images/blog-page/blog-post-images/.png",
+  //   image_src: "/images/blog-page/blog-post-images/2025/",
   //   image_alt: "",
   //   image_width: 456,
   //   image_height: 342,
-  //   second_image_src: "/images/blog-post-images/secondary/.png",
-  //   second_image_width: 208,
-  //   second_image_height: 109,
+  //   second_image_src: "/images/blog-page/blog-post-images/2025/",
+  //   second_image_width: 456,
+  //   second_image_height: 342,
   //   second_image_alt: "",
   //   text: [
   //     "",
@@ -20,7 +20,29 @@ export const blogPosts = [
   //   ],
   //   closing_tag: "",
   //   author: "",
+  //   slug: "",
+  //   description: ""
   // },
+  {
+    title: "Next Stop: San Diego, Cameras Ready",
+    post_date: "July 2025",
+    image_src: "/images/blog-page/blog-post-images/2025/2025-july.png",
+    image_alt: "",
+    image_width: 456,
+    image_height: 342,
+    // second_image_src: "",
+    // second_image_width: 456,
+    // second_image_height: 342,
+    // second_image_alt: "",
+    text: [
+      "The last time I wrote a blog post, I spoke about how much I enjoy working at MMM, and after another year, I'm going to do it again.  I've had a lot of mishaps and bad luck recently, but the one thing that keeps me sane is my job!  I don't think a lot of people have the privilege of saying that, and I don't take it for granted.  I strive to learn and improve every day, even when things get extra busy.  If given the option of working from home in the comfort of my big warm robe, I would still choose to work in the office because it feels like where I belong.  Maybe I need to get a big warm robe for the office too!",
+      "Soon I will be taking my first solo travel trip with MMM to sunny San Diego, which I have never been!  I'm excited to explore the city, maybe visit the beach, and film a sweet interview.  As a person with Celiac's disease, it's fun to try gluten free restaurants in new cities, so I will definitely be doing my research.  Can't forget to get sunscreen too!",
+    ],
+    closing_tag: "Stay tuned—sun, shoots, and SPF.",
+    author: "Luke Bradshaw",
+    slug: "next-stop-san-diego",
+    description: "Luke shares his excitement about his upcoming solo travel trip to San Diego with Mike Martin Media, reflecting on his positive experiences at the company and his eagerness to explore a new city."
+  },
   {
       title: "The end of an era",
       post_date: "June 2025",
