@@ -14,11 +14,11 @@ import Header from "./ui/header";
 import Footer from "./ui/footer";
 import ScrollToTopButton from "./ui/scrollToTop";
 import ContactFormWrapper from "./ui/contactFormWrapper";
+import ActiveCampaignNewsletterSignup from "./ui/activeCampaignNewsletterSignup";
 // import styles
 import "./globals.css";
 // import fonts
 import { DM_Sans } from "next/font/google";
-import ActiveCampaignNewsletterSignup from "./ui/activeCampaignNewsletterSignup";
 // define fonts
 const dm_sans = DM_Sans({
   subsets: ["latin"],
@@ -106,7 +106,6 @@ export default async function RootLayout({ children }) {
           strategy="afterInteractive"
           nonce={nonce}
         /> */}
-      
         </NonceProvider>
       </body>
     </html>
