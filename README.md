@@ -26,4 +26,5 @@ A fully responsive website for Mike Martin Media, a video production company in 
 
 ## For More Information
 
-<https://github.com/KLong75>
+[kevin@rhythmcodestudio.tech](mailto:kevin@rhythmcodestudio.tech)
+[https://github.com/KLong75](https://github.com/KLong75)
