@@ -52,20 +52,31 @@ export default async function RootLayout({ children }) {
       {/* <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} />  */}
       <PreloadResources />
       <body className={`antialiased flex flex-col min-h-screen`}>
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
+            height="0"
+            width="0"
+            // style={{ display: "none", visibility: "hidden" }}
+            title="Google Tag Manager"
+            className="hidden"
+          >
+          </iframe>
+        </noscript>
         <NonceProvider nonce={nonce}>
-        <Header />
-        {children}
-        <ScrollToTopButton />
-        <ActiveCampaignNewsletterSignup />
-        <ContactFormWrapper />
-        <Footer />
-        <Analytics />
-        <Script
-          id="_next-gtm-init"
-          nonce={nonce}
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+          <Header />
+          {children}
+          <ScrollToTopButton />
+          <ActiveCampaignNewsletterSignup />
+          <ContactFormWrapper />
+          <Footer />
+          <Analytics />
+          <Script
+            id="_next-gtm-init"
+            nonce={nonce}
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -73,19 +84,19 @@ export default async function RootLayout({ children }) {
               n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
               })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');
             `,
-          }}
-        />
-        <Script
-          id="wc-load-script"
-          strategy="afterInteractive"
-          nonce={nonce}
-          dangerouslySetInnerHTML={{
-            __html: `
+            }}
+          />
+          <Script
+            id="wc-load-script"
+            strategy="afterInteractive"
+            nonce={nonce}
+            dangerouslySetInnerHTML={{
+              __html: `
               var $wc_load=function(a){return JSON.parse(JSON.stringify(a))},$wc_leads=$wc_leads||{doc:{url:$wc_load(document.URL),ref:$wc_load(document.referrer),search:$wc_load(location.search),hash:$wc_load(location.hash)}};
             `,
-          }}
-        />
-        {/* <Script
+            }}
+          />
+          {/* <Script
           id="wc-log-script"
           strategy="afterInteractive"
           nonce={nonce}
@@ -95,12 +106,12 @@ export default async function RootLayout({ children }) {
             `,
           }}
         /> */}
-        <Script
-          src="//s.ksrndkehqnwntyxlhgto.com/136008.js"
-          strategy="afterInteractive"
-          nonce={nonce}
-        />
-        {/* <Script
+          <Script
+            src="//s.ksrndkehqnwntyxlhgto.com/136008.js"
+            strategy="afterInteractive"
+            nonce={nonce}
+          />
+          {/* <Script
           // src="https://www.googletagmanager.com/gtm.js?id=GTM-5W7VWSTB"
           src="https://www.googletagmanager.com/gtag/js"
           strategy="afterInteractive"
