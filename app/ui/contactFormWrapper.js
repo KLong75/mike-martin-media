@@ -1,37 +1,3 @@
-// "use client";
-// import { usePathname } from "next/navigation";
-// import Script from "next/script";
-// import { useNonce } from "../NonceContext";
-// export default function ContactFormWrapper() {
-//   const nonce = useNonce();
-//   const pathname = usePathname();
-
-//  if (pathname === "/contact") {
-//     return (
-//       <>
-//         <Script
-//           src="https://mmmmarketing42.activehosted.com/f/embed.php?id=1"
-//           strategy="afterInteractive"
-//           nonce={nonce}
-//         />
-//         <div className="_form_1 px-4 sm:px-0"></div>
-//       </>
-//     );
-//   } else {
-//     return (
-//       <>
-//         <Script
-//           src="https://mmmmarketing42.activehosted.com/f/embed.php?id=1"
-//           strategy="afterInteractive"
-//           nonce={nonce}
-//         />
-//         <div className="hidden _form_1 px-4 sm:px-0"></div>
-//       </>
-//     );
-//   }
-//  }
-
-
 "use client";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
