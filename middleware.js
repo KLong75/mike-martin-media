@@ -14,7 +14,7 @@ export function middleware(request) {
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
     img-src 'self' blob: data: https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png https://www.google.com/pagead/;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com;
-    connect-src 'self' https://stats.g.doubleclick.net https://mmmmarketing42.activehosted.com/proc.php  https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://analytics.google.com https://www.google.com;
+    connect-src 'self' https://stats.g.doubleclick.net https://mmmmarketing42.activehosted.com/proc.php  https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://analytics.google.com https://www.google.com https://google.com;
     font-src 'self' data: https://fonts.bunny.net/;
     object-src 'none';
     base-uri 'self';
@@ -31,7 +31,7 @@ export function middleware(request) {
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
     img-src 'self' blob: data: https://i.vimeocdn.com/video/* https://www.googletagmanager.com/ https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png https://www.google.com/pagead/;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/*;
-    connect-src 'self' https://stats.g.doubleclick.net https://analytics.google.com *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://mmmmarketing42.activehosted.com/proc.php https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://stats.g.doubleclick.net https://www.google.com;
+    connect-src 'self' https://stats.g.doubleclick.net https://analytics.google.com *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://mmmmarketing42.activehosted.com/proc.php https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://stats.g.doubleclick.net https://www.google.com https://google.com;
     font-src 'self' data: https://fonts.bunny.net/;
     object-src 'none';
     base-uri 'self';
@@ -48,7 +48,7 @@ export function middleware(request) {
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
     img-src 'self' blob: data: https://i.vimeocdn.com/video/* https://cdn-cookieyes.com/assets/images/close.svg https://cdn-cookieyes.com/assets/images/poweredbtcky.svg cdn-cookieyes.com https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png https://www.googletagmanager.com/td https://www.googletagmanager.com/a https://www.google.com/pagead/;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/* https://scontent-hel3-1.cdninstagram.com/o1/;
-    connect-src 'self' 'nonce-${nonce}' https://analytics.google.com *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://mmmmarketing42.activehosted.com/proc.php https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://stats.g.doubleclick.net https://www.google.com;
+    connect-src 'self' 'nonce-${nonce}' https://analytics.google.com *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://mmmmarketing42.activehosted.com/proc.php https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://stats.g.doubleclick.net https://www.google.com https://google.com;
     font-src 'self' data: https://fonts.bunny.net/; 
     object-src 'none';
     base-uri 'self';
