@@ -13,7 +13,7 @@ import BlogPostGallery from "./ui/blogPostGallery";
 
 export default function Home() {
   return (
-    <main className="grid grid-cols-1 ">
+    <div className="grid grid-cols-1 ">
       <BannerVideoWithFadeEffect
         src="https://player.vimeo.com/video/1090631184?h=7363ce54f9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="Mike Martin Media - Ideas in Motion"
@@ -51,9 +51,9 @@ export default function Home() {
       {/* Our Work Section */}
       <section id="our-work-section">
         <BannerVideoWithFadeNoLogo
-            src="https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-            title="Mike Martin Media | Our Work"
-          />
+          src="https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          title="Mike Martin Media | Our Work"
+        />
         <div className="flex justify-center">
           <div className="max-w-800 lg:py-24">
             <MMMLineLogoHeading headline="Our Work" heading_level={"h2"} />
@@ -69,7 +69,9 @@ export default function Home() {
                   <Link href="/our-work" className="">
                     <div
                       className={`border-[3px] border-black text-black hover:transform hover:bg-black hover:text-white transition duration-1000 font-semibold rounded-full flex justify-center items-center cursor-pointer w-[14rem] py-1 px-1 mb-4 `}>
-                      <span className="lg:text-lg font-bold">Check Out Our Work</span>
+                      <span className="lg:text-lg font-bold">
+                        Check Out Our Work
+                      </span>
                     </div>
                   </Link>
                 </div>
@@ -99,6 +101,6 @@ export default function Home() {
           <BlogPostGallery number_of_posts={3} />
         </div>
       </section>
-    </main>
+    </div>
   );
 }

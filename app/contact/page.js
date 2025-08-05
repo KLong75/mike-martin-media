@@ -79,7 +79,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className=" flex-1">
+    <div className=" flex-1">
       <div className="z-10">
         <GoogleMap />
       </div>
@@ -99,9 +99,9 @@ export default function Page() {
       </div> */}
 
       {/* <ActiveCampaignContactForm /> */}
-      <div>
+      {/* <div>
         <ContactFormWrapper />
-      </div>
-    </main>
+      </div> */}
+    </div>
   );
 }

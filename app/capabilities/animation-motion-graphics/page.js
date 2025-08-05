@@ -19,7 +19,8 @@ import {
   exampleAnimationVideoSrc,
 } from "../../lib/capabilities/animation.js";
 
-const animationPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/animation-og.png";
+const animationPageOgImgUrl =
+  "https://www.mikemartinmedia.com/images/open-graph/animation-og.png";
 
 export const metadata = {
   title: "Video Animation Company | Mike Martin Media",
@@ -35,14 +36,14 @@ export const metadata = {
     siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Video Animation Company | Mike Martin Media",
     description:
-    "Expert video animation company specializing in motion graphics, 2D & 3D animation. Transform your ideas into engaging visual stories that drive results. Get a free consultation today.",
+      "Expert video animation company specializing in motion graphics, 2D & 3D animation. Transform your ideas into engaging visual stories that drive results. Get a free consultation today.",
     images: [
       {
         url: animationPageOgImgUrl,
         width: 1200,
         height: 630,
       },
-        // {
+      // {
       //   url: ,
       //   width: 1920,
       //   height: 1080,
@@ -71,28 +72,28 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
-        //   url: ,
-        //   width: 800,
-        //   height: 418,
-        // },
+      // {
+      //   url: ,
+      //   width: 800,
+      //   height: 418,
+      // },
     ],
   },
 };
 
 export default function Page() {
   return (
-    <main className="grid grid-cols-1">
+    <div className="grid grid-cols-1">
       {/* <BannerVideoWithFadeNoLogo
         src="https://player.vimeo.com/video/948449576?h=378cc31a7c&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="Video Animation & Motion Graphics | Mike Martin Media"
       /> */}
-       <BannerVideoWithFadeEffect
-       src="https://player.vimeo.com/video/948449576?h=378cc31a7c&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+      <BannerVideoWithFadeEffect
+        src="https://player.vimeo.com/video/948449576?h=378cc31a7c&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="Video Animation & Motion Graphics | Mike Martin Media"
         containerClassName="banner-vid-with-fade-container-no-logo"
       />
-       <div className="">
+      <div className="">
         <PageHeadingBanner
           title={animationPageHeadingBannerText.title}
           heading={animationPageHeadingBannerText.heading}
@@ -117,7 +118,10 @@ export default function Page() {
       </div>
       <div className="flex justify-center bg-[#F0F0F0]">
         <div className="grid grid-cols-1 max-w-800 my-12">
-          <OurProcess title={animationProcess.heading} steps={animationProcess.steps} />
+          <OurProcess
+            title={animationProcess.heading}
+            steps={animationProcess.steps}
+          />
         </div>
       </div>
       <div className="flex justify-center my-10">
@@ -150,6 +154,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

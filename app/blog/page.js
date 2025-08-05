@@ -5,7 +5,8 @@ import BannerImage from "../ui/bannerImage";
 import goldenGateBridge from "../../public/images/blog-page/golden-gate-bridge.jpg";
 import PageHeadingBanner from "../ui/pageHeadingBanner";
 
-const blogPageOgImgUrl = "https://www.mikemartinmedia.com/images/blog-page/blog-page-og-image.png";
+const blogPageOgImgUrl =
+  "https://www.mikemartinmedia.com/images/blog-page/blog-page-og-image.png";
 
 export const metadata = {
   title: "Blog | Mike Martin Media",
@@ -21,7 +22,7 @@ export const metadata = {
     siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Blog | Mike Martin Media",
     description:
-    "Go Beyond the lens and check out our latest adventures in the MMM Blog as we film and travel across town across the country, and around the world. Try to keep up, we move fast!",
+      "Go Beyond the lens and check out our latest adventures in the MMM Blog as we film and travel across town across the country, and around the world. Try to keep up, we move fast!",
     images: [
       {
         url: blogPageOgImgUrl,
@@ -47,7 +48,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className="flex-1 ">
+    <div className="flex-1 ">
       <div className="-mt-1">
         <BannerImage
           src={goldenGateBridge}
@@ -67,6 +68,6 @@ export default function Page() {
       <div className="my-6 xl:my-24">
         <BlogPostGallery number_of_posts={12} />
       </div>
-    </main>
+    </div>
   );
 }

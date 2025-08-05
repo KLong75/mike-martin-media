@@ -7,9 +7,13 @@ import IndustriesList from "@/app/ui/industriesList";
 import IndustrySupport from "@/app/ui/industrySupport";
 import BannerImage from "@/app/ui/bannerImage";
 //import data
-import { healthcarePageBannerText, healthcareSupport } from "@/app/lib/industries/healthcare";
+import {
+  healthcarePageBannerText,
+  healthcareSupport,
+} from "@/app/lib/industries/healthcare";
 
-const healthcarePageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/healthcare-og.png";
+const healthcarePageOgImgUrl =
+  "https://www.mikemartinmedia.com/images/open-graph/healthcare-og.png";
 
 export const metadata = {
   title: "Healthcare & Medical Videography | Mike Martin Media",
@@ -32,7 +36,7 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
+      // {
       //   url: ,
       //   width: 1920,
       //   height: 1080,
@@ -61,18 +65,18 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
-        //   url: ,
-        //   width: 800,
-        //   height: 418,
-        // },
+      // {
+      //   url: ,
+      //   width: 800,
+      //   height: 418,
+      // },
     ],
   },
 };
 
 export default function Page() {
   return (
-    <main className="grid grid-cols-1">
+    <div className="grid grid-cols-1">
       <BannerImage
         src="/images/industries/healthcare.png"
         alt="Healthcare Video Production"
@@ -115,6 +119,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

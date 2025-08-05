@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className="p-6 flex flex-col items-center justify-center">
+    <div className="p-6 flex flex-col items-center justify-center">
       <div className="lg:max-w-400 ">
         <h1 className="cookie-policy-h1 font-bold text-xl">Cookie Policy</h1>
         <p>
@@ -43,7 +43,7 @@ export default function Page() {
             do not collect any of your personally identifiable data.
           </p>{" "}
           <p className="p-2">
-            The third-party cookies used on our website are mainly for
+            The third-party cookies used on our website are divly for
             understanding how the website performs, how you interact with our
             website, keeping our services secure, providing advertisements that
             are relevant to you, and all in all providing you with a better and
@@ -128,6 +128,6 @@ export default function Page() {
           .
         </p>
       </div>
-    </main>
+    </div>
   );
 }

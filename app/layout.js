@@ -7,13 +7,13 @@ import { Analytics } from "@vercel/analytics/react";
 import { headers } from "next/headers";
 import Script from "next/script";
 // import from next/third-parties
-// import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 // import components
 import { PreloadResources } from "./preload-resources";
 import Header from "./ui/header";
 import Footer from "./ui/footer";
 import ScrollToTopButton from "./ui/scrollToTop";
-// import ContactFormWrapper from "./ui/contactFormWrapper";
+import ContactFormWrapper from "./ui/contactFormWrapper";
 import ActiveCampaignNewsletterSignup from "./ui/activeCampaignNewsletterSignup";
 // import styles
 import "./globals.css";
@@ -49,7 +49,7 @@ export default async function RootLayout({ children }) {
     <html
       lang="en"
       className={`overflow-x-hidden ${dm_sans.variable} font-sans`}>
-      {/* <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} />  */}
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} />
       <PreloadResources />
       <body className={`antialiased flex flex-col min-h-screen`}>
         <noscript>
@@ -59,19 +59,19 @@ export default async function RootLayout({ children }) {
             width="0"
             // style={{ display: "none", visibility: "hidden" }}
             title="Google Tag Manager"
-            className="hidden"
-          >
-          </iframe>
+            className="hidden"></iframe>
         </noscript>
         <NonceProvider nonce={nonce}>
           <Header />
-          {children}
+          <main>
+            {children}
+            <ContactFormWrapper />
+          </main>
           <ScrollToTopButton />
           <ActiveCampaignNewsletterSignup />
-          {/* <ContactFormWrapper /> */}
           <Footer />
           <Analytics />
-          <Script
+          {/* <Script
             id="_next-gtm-init"
             nonce={nonce}
             strategy="afterInteractive"
@@ -85,7 +85,7 @@ export default async function RootLayout({ children }) {
               })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');
             `,
             }}
-          />
+          /> */}
           <Script
             id="wc-load-script"
             strategy="afterInteractive"

@@ -10,11 +10,13 @@ import JoinTheTeam from "../ui/joinTheTeam";
 // import blackMmmLogo from "../../public/branding/black-mmm-logo-1642x560.png";
 import BannerVideoWithFadeEffect from "../ui/bannerVideoWithFadeEffect";
 
-const careersPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/careers-og.png";
+const careersPageOgImgUrl =
+  "https://www.mikemartinmedia.com/images/open-graph/careers-og.png";
 
 export const metadata = {
   title: "Video Production Jobs | Mike Martin Media",
-  description: "At MMM, we believe in creating more than just great video content. We're committed to making a positive impact through everything we do. If you're someone who shares our values of honesty, accountability, and community, we'd love to hear from you.",
+  description:
+    "At MMM, we believe in creating more than just great video content. We're committed to making a positive impact through everything we do. If you're someone who shares our values of honesty, accountability, and community, we'd love to hear from you.",
   alternates: {
     canonical: "/careers",
   },
@@ -24,14 +26,15 @@ export const metadata = {
     url: "https://www.mikemartinmedia.com/careers",
     siteName: "Mike Martin Media: St. Louis Video Production Company",
     title: "Video Production Jobs | Mike Martin Media",
-    description: "At MMM, we believe in creating more than just great video content. We're committed to making a positive impact through everything we do. If you're someone who shares our values of honesty, accountability, and community, we'd love to hear from you.",
+    description:
+      "At MMM, we believe in creating more than just great video content. We're committed to making a positive impact through everything we do. If you're someone who shares our values of honesty, accountability, and community, we'd love to hear from you.",
     images: [
       {
         url: careersPageOgImgUrl,
         width: 1200,
         height: 630,
       },
-        // {
+      // {
       //   url: ,
       //   width: 1920,
       //   height: 1080,
@@ -52,25 +55,26 @@ export const metadata = {
   twitter: {
     cardType: "summary_large_image",
     title: "Video Production Jobs | Mike Martin Media",
-    description: "At MMM, we believe in creating more than just great video content. We're committed to making a positive impact through everything we do. If you're someone who shares our values of honesty, accountability, and community, we'd love to hear from you.",
+    description:
+      "At MMM, we believe in creating more than just great video content. We're committed to making a positive impact through everything we do. If you're someone who shares our values of honesty, accountability, and community, we'd love to hear from you.",
     images: [
       {
         url: careersPageOgImgUrl,
         width: 1200,
         height: 630,
       },
-        // {
-        //   url: ,
-        //   width: 800,
-        //   height: 418,
-        // },
+      // {
+      //   url: ,
+      //   width: 800,
+      //   height: 418,
+      // },
     ],
   },
 };
 
 export default function Page() {
   return (
-    // <main className="flex flex-col justify-center items-center">
+    // <div className="flex flex-col justify-center items-center">
     //   <div className="w-52 sm:w-72 md:w-128 lg:w-144 py-12">
     //     <BannerImage
     //       src={blackMmmLogo}
@@ -89,8 +93,8 @@ export default function Page() {
     //   <div className="w-full mt-auto">
     //     <MMMLineLogoBlack />
     //   </div>
-    // </main>
-    <main className="grid grid-cols-1 ">
+    // </div>
+    <div className="grid grid-cols-1 ">
       <BannerVideoWithFadeEffect
         src="https://player.vimeo.com/video/943724347?h=791f0d08b9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="Mike Martin Media | We Travel"
@@ -111,6 +115,6 @@ export default function Page() {
       <div className="w-full mt-auto">
         <MMMLineLogoBlack />
       </div>
-    </main>
+    </div>
   );
 }

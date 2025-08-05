@@ -81,7 +81,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className="grid grid-cols-1">
+    <div className="grid grid-cols-1">
       <BannerVideoWithFadeEffect
         src="https://player.vimeo.com/video/1090994530?h=3259e9027e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="Mike Martin Media - Video Production"
@@ -152,6 +152,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

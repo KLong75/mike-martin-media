@@ -73,7 +73,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main>
+    <div>
       <div>
         <BannerVideoWithFadeEffect
           src="https://player.vimeo.com/video/953317163?h=21c26f1413&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
@@ -176,6 +176,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
