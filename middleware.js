@@ -12,15 +12,15 @@ export function middleware(request) {
     default-src 'self';
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval' https://mmmmarketing42.activehosted.com/;
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
-    img-src 'self' blob: data: https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png;
+    img-src 'self' blob: data: https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png https://www.google.com/pagead/;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com;
-    connect-src 'self' https://stats.g.doubleclick.net https://mmmmarketing42.activehosted.com/proc.php  https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://analytics.google.com;
+    connect-src 'self' https://stats.g.doubleclick.net https://mmmmarketing42.activehosted.com/proc.php  https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://analytics.google.com https://www.google.com;
     font-src 'self' data: https://fonts.bunny.net/;
     object-src 'none';
     base-uri 'self';
     form-action 'self';
     frame-ancestors 'none';
-    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://vercel.live/ https://vercel.com https://stats.g.doubleclick.net;
+    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://vercel.live/ https://vercel.com https://stats.g.doubleclick.net https://td.doubleclick.net/ https://www.googletagmanager.com/;
     upgrade-insecure-requests;
   `;
 
@@ -29,15 +29,15 @@ export function middleware(request) {
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* ;
     script-src-elem 'self' 'nonce-${nonce}' 'unsafe-inline' https://www.googletagmanager.com/gtm.js https://googletagmanager.com/* https://mmmmarketing42.activehosted.com/ https://prism.app-us1.com/ https://cdn-cookieyes.com/ ;
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
-    img-src 'self' blob: data: https://i.vimeocdn.com/video/* https://www.googletagmanager.com/ https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png;
+    img-src 'self' blob: data: https://i.vimeocdn.com/video/* https://www.googletagmanager.com/ https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png https://www.google.com/pagead/;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/*;
-    connect-src 'self' https://stats.g.doubleclick.net https://analytics.google.com *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://mmmmarketing42.activehosted.com/proc.php https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://stats.g.doubleclick.net;
+    connect-src 'self' https://stats.g.doubleclick.net https://analytics.google.com *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://mmmmarketing42.activehosted.com/proc.php https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://stats.g.doubleclick.net https://www.google.com;
     font-src 'self' data: https://fonts.bunny.net/;
     object-src 'none';
     base-uri 'self';
     form-action 'self';
     frame-ancestors 'none';
-    frame-src 'self' https://stats.g.doubleclick.net https://player.vimeo.com https://f.vimeocdn.com https://www.google.com;
+    frame-src 'self' https://stats.g.doubleclick.net https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://td.doubleclick.net/ https://www.googletagmanager.com/;
     upgrade-insecure-requests;
   `;
 
@@ -46,15 +46,15 @@ export function middleware(request) {
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://cdn.lightwidget.com/widgets/lightwidget.js cdn-cookieyes.com https://mmmmarketing42.activehosted.com;
     script-src-elem 'self' 'nonce-${nonce}' https://www.googletagmanager.com/gtm.js/* https://googletagmanager.com/*  https://mmmmarketing42.activehosted.com/ https://prism.app-us1.com/ https://cdn-cookieyes.com/ ;
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
-    img-src 'self' blob: data: https://i.vimeocdn.com/video/* https://cdn-cookieyes.com/assets/images/close.svg https://cdn-cookieyes.com/assets/images/poweredbtcky.svg cdn-cookieyes.com https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png https://www.googletagmanager.com/td https://www.googletagmanager.com/a;
+    img-src 'self' blob: data: https://i.vimeocdn.com/video/* https://cdn-cookieyes.com/assets/images/close.svg https://cdn-cookieyes.com/assets/images/poweredbtcky.svg cdn-cookieyes.com https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png https://www.googletagmanager.com/td https://www.googletagmanager.com/a https://www.google.com/pagead/;
     media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://i.vimeocdn.com/video/* https://player.vimeo.com/video/* https://scontent-hel3-1.cdninstagram.com/o1/;
-    connect-src 'self' 'nonce-${nonce}' https://analytics.google.com *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://mmmmarketing42.activehosted.com/proc.php https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://stats.g.doubleclick.net;
+    connect-src 'self' 'nonce-${nonce}' https://analytics.google.com *.cookieyes.com cdn-cookieyes.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com www.googletagmanager.com https://mmmmarketing42.activehosted.com/proc.php https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://stats.g.doubleclick.net https://www.google.com;
     font-src 'self' data: https://fonts.bunny.net/; 
     object-src 'none';
     base-uri 'self';
     form-action 'self';
     frame-ancestors 'none';
-    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://stats.g.doubleclick.net;
+    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://stats.g.doubleclick.net https://td.doubleclick.net/ https://www.googletagmanager.com/;
     upgrade-insecure-requests; 
   `;
 
