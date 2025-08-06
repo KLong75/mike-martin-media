@@ -74,7 +74,7 @@ export default async function RootLayout({ children }) {
           {/* <Script
             id="_next-gtm-init"
             nonce={nonce}
-            strategy="beforeInteractive"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
