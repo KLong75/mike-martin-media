@@ -62,13 +62,13 @@ export const teamData = [
       "Paul Baker is an Emmy award-winning, seasoned St. Louis-based motion designer. Over the last two decades, he has honed his abilities by creating animations and motion graphics for numerous entities and platforms including Fortune 500 corporations, television, film, corporate, and start-ups. Paul is a collaborator at heart with a love of visual storytelling as he executes his vision with artful ingenuity and pragmatic execution.",
     image_src: "/images/team/paulBaker.png",
   },
-  {
-    name: "Remi Heckert",
-    role: "Videographer/Editor",
-    about:
-      "Remi is a multimedia journalism graduate from Virginia Tech who began her career in news before discovering a passion for long-form video and storytelling with a Virginia-based video production team. Most recently, she honed her skills with the creative team at Homes.com. Now settled in St. Louis, Remi is thrilled to join the MMM team and make the Midwest her new home!",
-    image_src: "/images/team/remiHeckert.png",
-  },
+  // {
+  //   name: "Remi Heckert",
+  //   role: "Videographer/Editor",
+  //   about:
+  //     "Remi is a multimedia journalism graduate from Virginia Tech who began her career in news before discovering a passion for long-form video and storytelling with a Virginia-based video production team. Most recently, she honed her skills with the creative team at Homes.com. Now settled in St. Louis, Remi is thrilled to join the MMM team and make the Midwest her new home!",
+  //   image_src: "/images/team/remiHeckert.png",
+  // },
   {
     name: "Clark Martin",
     role: "Sales and Marketing Coordinator",
