@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Privacy Policy",
   description:
@@ -103,13 +105,13 @@ export default function Page() {
           <p className="privacy-policy-p p-2">
             To learn more about how we use these and your choices in relation to
             these tracking technologies, please refer to our{" "}
-            <a 
-              href="mikemartinmedia.com/cookie-policy"
+            <Link 
+              href="/cookie-policy"
               className="text-blue-600 underline"
               rel="noopenner noreferrer"
             >
               Cookie Policy.
-            </a>
+            </Link>
           </p>
         </li>
 
