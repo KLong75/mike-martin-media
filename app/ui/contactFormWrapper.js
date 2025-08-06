@@ -101,17 +101,49 @@
 //   }
 // }
 
+// "use client";
+// import Script from "next/script";
+
+// export default function ContactFormWrapper() {
+//   return (
+//     <>
+//       <div className="_form_1 px-4 sm:px-0"></div>
+//       <Script
+//         src="https://mmmmarketing42.activehosted.com/f/embed.php?id=1"
+//         strategy="afterInteractive"
+//       />
+//     </>
+//   );
+// }
+
 "use client";
-import Script from "next/script";
+import { useEffect } from "react";
 
 export default function ContactFormWrapper() {
-  return (
-    <>
-      <div className="_form_1 px-4 sm:px-0"></div>
-      <Script
-        src="https://mmmmarketing42.activehosted.com/f/embed.php?id=1"
-        strategy="afterInteractive"
-      />
-    </>
-  );
+  useEffect(() => {
+    // Clean up any previous form
+    const formDiv = document.querySelector("._form_1");
+    if (formDiv) formDiv.innerHTML = "";
+
+    // Remove any previous script
+    const oldScript = document.getElementById("ac-embed-script");
+    if (oldScript) oldScript.remove();
+
+    // Inject the script
+    const script = document.createElement("script");
+    script.id = "ac-embed-script";
+    script.src = "https://mmmmarketing42.activehosted.com/f/embed.php?id=1";
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Optional: cleanup on unmount
+    return () => {
+      const formDiv = document.querySelector("._form_1");
+      if (formDiv) formDiv.innerHTML = "";
+      const oldScript = document.getElementById("ac-embed-script");
+      if (oldScript) oldScript.remove();
+    };
+  }, []);
+
+  return <div className="_form_1 px-4 sm:px-0"></div>;
 }
