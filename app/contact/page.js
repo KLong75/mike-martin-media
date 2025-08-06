@@ -99,9 +99,9 @@ export default function Page() {
       </div> */}
 
       {/* <ActiveCampaignContactForm /> */}
-      {/* <div className="flex justify-center items-center">
+      <div>
         <ContactFormWrapper />
-      </div> */}
+      </div>
     </main>
   );
 }
