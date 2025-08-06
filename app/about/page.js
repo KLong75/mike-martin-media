@@ -130,11 +130,11 @@ export default function Page() {
         </div>
       </section>
       <section className="mt-8">
-        <div className="lg:px-6 2xl:px-0">
+        <div className="lg:px-6 2xl:px-0" id="team-gallery">
           <MMMLineLogoHeading headline="Meet The Team" heading_level={"h2"} />
         </div>
         <div className="flex justify-center">
-          <div className="max-w-600">
+          <div className="max-w-600" >
             <TeamGallery />
           </div>
         </div>

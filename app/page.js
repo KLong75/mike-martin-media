@@ -32,8 +32,14 @@ export default function Home() {
               Your Trusted St. Louis Video Production Partner
             </h1>
             <p className="md:text-lg xl:text-xl text-balance my-4 lg:my-6">
-              Our team brings decades of combined experience from the broadcast
-              and production industries to produce your ideal content. We are a
+              Our{" "}
+              <Link
+                href="/about#team-gallery"
+                className="underline font-semibold">
+                team
+              </Link>{" "}
+              brings decades of combined experience from the broadcast and
+              production industries to produce your ideal content. We are a
               tight-knit team and we keep our work in-house. We work hard, play
               hard, and spend a lot of time laughing.
             </p>
@@ -51,9 +57,9 @@ export default function Home() {
       {/* Our Work Section */}
       <section id="our-work-section">
         <BannerVideoWithFadeNoLogo
-            src="https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-            title="Mike Martin Media | Our Work"
-          />
+          src="https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          title="Mike Martin Media | Our Work"
+        />
         <div className="flex justify-center">
           <div className="max-w-800 lg:py-24">
             <MMMLineLogoHeading headline="Our Work" heading_level={"h2"} />
@@ -69,7 +75,9 @@ export default function Home() {
                   <Link href="/our-work" className="">
                     <div
                       className={`border-[3px] border-black text-black hover:transform hover:bg-black hover:text-white transition duration-1000 font-semibold rounded-full flex justify-center items-center cursor-pointer w-[14rem] py-1 px-1 mb-4 `}>
-                      <span className="lg:text-lg font-bold">Check Out Our Work</span>
+                      <span className="lg:text-lg font-bold">
+                        Check Out Our Work
+                      </span>
                     </div>
                   </Link>
                 </div>
