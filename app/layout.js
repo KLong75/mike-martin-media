@@ -18,12 +18,7 @@ import ActiveCampaignNewsletterSignup from "./ui/activeCampaignNewsletterSignup"
 // import styles
 import "./globals.css";
 // import fonts
-import { DM_Sans } from "next/font/google";
-// define fonts
-const dm_sans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
-});
+import { dm_sans } from "./fonts";
 // define metadata for the site
 export const metadata = {
   title: {
