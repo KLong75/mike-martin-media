@@ -7,13 +7,23 @@ export const metadata = {
 };
 
 export default function Page() {
+  // Helper to get the first day of the current month in DD-MMM-YYYY format
+  function getFirstOfMonth() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = now.toLocaleString("en-US", { month: "short" });
+    return `01-${month}-${year}`;
+  }
+
+  const lastUpdatedDate = getFirstOfMonth();
+
   return (
     <main className="p-6 flex flex-col items-center justify-center">
       <div className="lg:max-w-400 ">
         <h1 className="cookie-policy-h1 font-bold text-xl">Cookie Policy</h1>
         <p>
           Effective Date: 17-Aug-2024 <br />
-          Last Updated: 17-Aug-2024
+          Last Updated: {lastUpdatedDate}
         </p>
         &nbsp;
         <h2 className="font-bold text-lg">What are cookies?</h2>
