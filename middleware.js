@@ -26,7 +26,7 @@ export function middleware(request) {
 
   const previewCspHeader = `
     default-src 'none';
-    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* ;
+    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* https://*.googletagmanager.com https://mmmmarketing42.activehosted.com/ https://prism.app-us1.com/ https://cdn-cookieyes.com/;
     
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
     img-src 'self' blob: data: https://i.vimeocdn.com/video/* https://www.googletagmanager.com/ https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png https://www.google.com/pagead/;
@@ -43,7 +43,7 @@ export function middleware(request) {
 
   const productionCspHeader = `
     default-src 'none';
-    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* cdn-cookieyes.com https://mmmmarketing42.activehosted.com https://*.googletagmanager.com;
+    script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://f.vimeocdn.com/* https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js https://f.vimeocdn.com/p/4.37.12/js/player.module.js https://player.vimeo.com/* cdn-cookieyes.com https://mmmmarketing42.activehosted.com https://*.googletagmanager.com https://mmmmarketing42.activehosted.com/ https://prism.app-us1.com/ https://cdn-cookieyes.com/;
     
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css https://www.googletagmanager.com https://fonts.googleapis.com;
     img-src 'self' blob: data: https://i.vimeocdn.com/video/* https://cdn-cookieyes.com/assets/images/close.svg https://cdn-cookieyes.com/assets/images/poweredbtcky.svg cdn-cookieyes.com https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png https://www.googletagmanager.com/td https://www.googletagmanager.com/a https://www.google.com/pagead/ https://*.google-analytics.com https://*.googletagmanager.com fonts.gstatic.com;
