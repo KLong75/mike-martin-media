@@ -8,7 +8,7 @@ export const teamData = [
   },
   {
     name: "Rachel Lee",
-    role: "Executive Producer",
+    role: "Chief Operating Officer",
     about:
       "Rachel started working in video production in her hometown of Nashville in 2002. She honed her skill as a project manager, producer, and video editor while working for Barnes-Jewish Hospital and St. Louis Children's Hospital's marketing and communications departments. She loves working with clients and helping them bring their ideas to life.",
     image_src: "/images/team/rachelLee.png",
