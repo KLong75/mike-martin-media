@@ -49,15 +49,15 @@ export default function sitemap() {
   let urls = generateUrls(appDirectory);
 
   // Add the 404 page from the pages directory
-  const notFoundPagePath = path.join(pagesDirectory, '404.js');
-  if (fs.existsSync(notFoundPagePath)) {
-    urls.push({
-      url: 'https://www.mikemartinmedia.com/404',
-      lastModified: getLastModified(notFoundPagePath),
-      changeFrequency: 'never',
-      priority: 0.1,
-    });
-  }
+  // const notFoundPagePath = path.join(pagesDirectory, '404.js');
+  // if (fs.existsSync(notFoundPagePath)) {
+  //   urls.push({
+  //     url: 'https://www.mikemartinmedia.com/404',
+  //     lastModified: getLastModified(notFoundPagePath),
+  //     changeFrequency: 'never',
+  //     priority: 0.1,
+  //   });
+  // }
 
   // 1. Generate dynamic URLs from blogPosts
   // 2. For each blog post, push the slug-based route
