@@ -339,6 +339,13 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/evertrue-cover.jpg",
     src: "https://player.vimeo.com/video/1033942065?h=07edd2100d&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
   },
+  {
+    category: ["Corporate", "Animation"],
+    client: "Midland Wood Products",
+    title: "Midland Wood Products",
+    image_src: "/images/work-gallery-cover-images/midland-wood-products-cover.webp",
+    src: "https://player.vimeo.com/video/1114310789?h=890da453be&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+  },
 //   {
 //     category: ["Video Editing", "Video Production"],
 //     client: "",
