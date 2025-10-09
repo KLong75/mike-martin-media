@@ -92,7 +92,6 @@ export default function Home() {
       <div>
         <FourPicGrid />
       </div>
-
       {/* Testimonials Section */}
       <section className="grid grid-cols-1 bg-black ">
         <div className="">
