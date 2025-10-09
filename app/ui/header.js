@@ -34,10 +34,11 @@ export default function Header() {
           </Link>
         )}
       </div>
-      <div className="ml-auto xl:mr-6">
+      <div className="ml-auto lg:mr-6">
         <Nav />
       </div>
-      <div className="hidden lg:block mr-20 ">
+      {/* <div className="hidden lg:block ml-6 mr-12 3xl:mr-16"> */}
+      <div className="hidden xl:block flex justify-center items-center ml-2 mr-12 3xl:mr-16">
         <SocialMediaLinks />
       </div>
     </header>
