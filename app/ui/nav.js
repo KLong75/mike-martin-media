@@ -169,7 +169,7 @@ export default function Nav() {
           {navLinks.map((link) => (
             <li
               key={link.label}
-              className={`flex flex-col items-center justify-center font-bold whitespace-nowrap xl:text-lg 3xl:text-2xl ${
+              className={`flex flex-col items-center justify-center font-bold whitespace-nowrap xl:text-lg 3xl:text-xl ${
                 pathname === link.href ? "" : ""
               }`}>
               {link.label === "Capabilities" ? (

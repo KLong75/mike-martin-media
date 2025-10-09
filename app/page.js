@@ -26,7 +26,6 @@ export default function Home() {
           <div className="order-2 xl:order-1 relative flex justify-center items-center">
             <MMMTeamPhotoWithLogo />
           </div>
-
           <div className="flex flex-col justify-left order-1 xl:order-2 max-w-[708px]">
             <h1 className="font-semibold text-3xl sm:4xl md:text-5xl 2xl:text-6xl">
               Your Trusted St. Louis Video Production Partner
