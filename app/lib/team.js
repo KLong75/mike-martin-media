@@ -85,7 +85,7 @@ export const teamData = [
   },
   {
     name: "Sandon Scott",
-    role: " ",
+    role: "",
     about:
       "Sandon is a self-taught filmmaker who got his start creating music videos, where he developed a deep love for the craft. Before joining the team, Sandon spent four years at Vat19, sharpening his skills as a director and cinematographer and working on hundreds of creative projects. He is passionate about the technical side of filmmaking, especially lighting and camera work, and thrives on crafting cinematic images that elevate a story. Whether he is behind the lens or running a shoot, Sandon loves creating videos that look great and connect with audiences.",
     image_src: "/images/team/sandonScott.webp",

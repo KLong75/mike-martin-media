@@ -169,7 +169,7 @@ export default function Nav() {
           {navLinks.map((link) => (
             <li
               key={link.label}
-              className={`flex flex-col items-center justify-center font-bold whitespace-nowrap xl:text-lg 3xl:text-xl ${
+              className={`flex flex-col items-center justify-center whitespace-nowrap xl:text-lg 3xl:text-xl ${
                 pathname === link.href ? "" : ""
               }`}>
               {link.label === "Capabilities" ? (
@@ -189,10 +189,10 @@ export default function Nav() {
               ) : link.label === "Contact Us" ? (
                 <Link href={link.href}>
                   <span
-                    className={`hover:bg-white hover:text-black rounded-full border-4 p-2 px-4 mt-2 ${
+                    className={` rounded-full border-white border-4 p-2 px-4 mt-2 ${
                       pathname === link.href
-                        ? "hover:cursor-text disabled text-gray-300"
-                        : " "
+                        ? "hover:cursor-text disabled text-gray-300 border-gray-300"
+                        : "hover:bg-white hover:text-black"
                     } `}>
                     {link.label}
                   </span>

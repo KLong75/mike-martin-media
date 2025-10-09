@@ -11,7 +11,7 @@ import { HiChevronDown } from "react-icons/hi";
 export default function SubNavPopover({ category }) {
   return (
     <Popover className="relative">
-      <PopoverButton className="flex items-center gap-2 font-bold">
+      <PopoverButton className="flex items-center gap-2 ">
         {category.label}
         <HiChevronDown className="size-5 group-data-[open]:rotate-180" />
       </PopoverButton>

@@ -49,13 +49,6 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
           <p className="font-semibold text-xs uppercase text-shadow-black-background-black text-left">
             {role}
           </p>
-          {/* <div className="relative mt-  w-full">
-            <div className="mt-[1.5px] border-b border-2 border-white w-0 lg:group-hover:w-full opacity-0 lg:group-hover:opacity-100 transition-all duration-2000 ease-in-out"></div>
-            <div className="absolute right-[-3px] top-0 h-full w-0 lg:group-hover:w-4 opacity-0 lg:group-hover:opacity-100 transition-all duration-2000 ease-in-out">
-              <div className="border-b border-2 border-white transform -rotate-45 origin-bottom-right"></div>
-              <div className="border-b border-2 border-white transform rotate-45 origin-top-right"></div>
-            </div>
-          </div> */}
         </div>
       </div>
       <Dialog open={bioOpen} onClose={handleClose}>
@@ -63,7 +56,7 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
         <DialogPanel className="fixed inset-0 flex justify-center items-center z-50">
           <div className="relative bg-black text-white p-6 max-w-2xl w-[90vw] lg:w-3/4 h-auto">
             <div className="flex justify-end">
-              <button onClick={handleClose} className="absolute top-4 right-4">
+              <button onClick={handleClose} className="absolute top-4 right-4" aria-label="Close dialog">
                 <HiX className="text-2xl" />
               </button>
             </div>
