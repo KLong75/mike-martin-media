@@ -11,7 +11,7 @@ import CapabilityBlockContainer from "./ui/capabilityBlockContainer";
 import FourPicGrid from "./ui/fourPicGrid";
 import BlogPostGallery from "./ui/blogPostGallery";
 // import videos
-import homePageBannerVideo from "/videos/homepage-banner-video.mp4";
+import getStarted from "./../videos/get-started.mp4"
 // import from next video
 import Video from "next-video";
 
