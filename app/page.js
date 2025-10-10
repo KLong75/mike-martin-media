@@ -10,10 +10,15 @@ import MMMTeamPhotoWithLogo from "./ui/mmmTeamPhotoWithLogo";
 import CapabilityBlockContainer from "./ui/capabilityBlockContainer";
 import FourPicGrid from "./ui/fourPicGrid";
 import BlogPostGallery from "./ui/blogPostGallery";
+// import videos
+import homePageBannerVideo from "/videos/homepage-banner-video.mp4";
+// import from next video
+import Video from "next-video";
 
 export default function Home() {
   return (
     <main className="grid grid-cols-1 ">
+      <Video src={homePageBannerVideo} />
       <BannerVideoWithFadeEffect
         src="https://player.vimeo.com/video/1090631184?h=7363ce54f9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="Mike Martin Media - Ideas in Motion"
