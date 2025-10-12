@@ -1,7 +1,9 @@
-// "use client";
+"use client";
 // import from next
+import dynamic from "next/dynamic";
 import Link from "next/link";
 // import components
+import MuxVideoPlayerContainer from "./ui/MuxVideoPlayerContainer";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerVideoWithFadeNoLogo from "./ui/bannerVideoWithFadeNoLogo";
 import MMMLineLogoHeading from "./ui/mmmLineLogoHeading";
@@ -10,19 +12,22 @@ import MMMTeamPhotoWithLogo from "./ui/mmmTeamPhotoWithLogo";
 import CapabilityBlockContainer from "./ui/capabilityBlockContainer";
 import FourPicGrid from "./ui/fourPicGrid";
 import BlogPostGallery from "./ui/blogPostGallery";
-// import videos
-import getStarted from "./../videos/get-started.mp4"
 // import from next video
-import Video from "next-video";
+// import Video from "next-video";
+// import videos
+// import homePageBannerVideo from "./../videos/homepage-banner-video.mp4"
+// const MuxPlayerNoSSR = dynamic(() => import("@mux/mux-player-react"), {
+//   ssr: false,
+// });
 
 export default function Home() {
   return (
-    <main className="grid grid-cols-1 ">
-      <Video src={homePageBannerVideo} />
+    <main className="grid grid-cols-1 w-full h-full">
+      <MuxVideoPlayerContainer />
       <BannerVideoWithFadeEffect
-        src="https://player.vimeo.com/video/1090631184?h=7363ce54f9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-        title="Mike Martin Media - Ideas in Motion"
-        containerClassName="banner-vid-with-fade-container-no-logo"
+        // src="6uEZH2PfSpHBB11nHpqCflsCIu802byhTIHdNEZ8oQ5Y"
+        // title="Mike Martin Media - Ideas in Motion"
+        // containerClassName="banner-vid-with-fade-container-no-logo"
       />
       <section className="flex justify-center items-center p-6 md:p-12 lg:p-28 xl:p-42">
         <div
@@ -98,12 +103,12 @@ export default function Home() {
       </div>
       {/* Testimonials Section */}
       <section className="grid grid-cols-1 bg-black ">
-        <div className="">
+        <div>
           <TestimonialDisplay />
         </div>
       </section>
       <section className="lg:my-24" id="blog-section">
-        <div className="">
+        <div>
           <MMMLineLogoHeading headline="Beyond the Lens" heading_level={"h2"} />
         </div>
         <div className="px-2 pb-12 md:pb-6 lg:pb-0 pt-6">
