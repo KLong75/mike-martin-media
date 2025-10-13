@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
 // import components
-import MuxVideoPlayerContainer from "./ui/MuxVideoPlayerContainer";
+import MuxVideoPlayerContainer from "./ui/muxVideoPlayerContainer";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerVideoWithFadeNoLogo from "./ui/bannerVideoWithFadeNoLogo";
 import MMMLineLogoHeading from "./ui/mmmLineLogoHeading";
