@@ -58,7 +58,7 @@ export default async function RootLayout({ children }) {
           >
           </iframe>
         </noscript>
-        <NonceProvider nonce={nonce}>
+        {/* <NonceProvider nonce={nonce}> */}
           <Header />
           {children}
           <ScrollToTopButton />
@@ -112,7 +112,7 @@ export default async function RootLayout({ children }) {
           strategy="afterInteractive"
           nonce={nonce}
         /> */}
-        </NonceProvider>
+        {/* </NonceProvider> */}
       </body>
     </html>
   );
