@@ -13,7 +13,7 @@ import {
   importanceOfPhotography,
   photographyProcess,
   whoBenefitsFromPhotography,
-  examplePhotographyImageSrc,
+  examplePhotography,
 } from "../../lib/capabilities/photography.js";
 // import images
 // import { photographyCoverImages } from "../../lib/capabilities/photography.js";
@@ -72,11 +72,11 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
-        //   url: ,
-        //   width: 800,
-        //   height: 418,
-        // },
+      // {
+      //   url: ,
+      //   width: 800,
+      //   height: 418,
+      // },
     ],
   },
 };
@@ -84,10 +84,10 @@ export const metadata = {
 export default function Page() {
   return (
     <main className="grid grid-cols-1">
-       <BannerVideoWithFadeEffect
-       src="https://player.vimeo.com/video/905365877?h=71828ac5c8&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+      <BannerVideoWithFadeEffect
+        src="4qT2Obf2HwbrRle6QkWRUL5ykXzqyqnR4ZjkuDSj15M"
         title="Mike Martin Media | Photography"
-        containerClassName="banner-vid-with-fade-container-no-logo"
+        containerClassName="padding-top-42-19"
       />
       <div>
         <PageHeadingBanner
@@ -103,7 +103,8 @@ export default function Page() {
         <CapabilityHighLightsSection
           headline={importanceOfPhotography.heading}
           highlights={importanceOfPhotography.list_items}
-          video_src={examplePhotographyImageSrc}
+          video_src={examplePhotographyVideo.src}
+          video_title={examplePhotographyVideo.title}
         />
       </div>
       <div className="flex justify-center bg-[#F0F0F0]">

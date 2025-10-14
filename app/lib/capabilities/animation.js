@@ -26,7 +26,6 @@ export const animationCapabilities = {
   ],
 };
 
-
 export const benefitsOfAnimation = {
   heading: "Benefits of Animation for Your Business",
   sub_heading: "",
@@ -51,7 +50,6 @@ export const benefitsOfAnimation = {
     },
   ],
 };
-
 
 export const animationProcess = {
   heading: "Our Process",
@@ -98,11 +96,13 @@ export const whoBenefitsFromAnimation = {
     },
     {
       label: "Healthcare:",
-      description: "Educate your patients with friendly, understandable visuals.",
+      description:
+        "Educate your patients with friendly, understandable visuals.",
     },
     {
       label: "Education:",
-      description: "Make learning interactive and fun for students of all ages.",
+      description:
+        "Make learning interactive and fun for students of all ages.",
     },
     {
       label: "Finance:",
@@ -120,11 +120,13 @@ export const whyGoAnimated = {
   list_items: [
     {
       label: "Limitless Creativity:",
-      description: "No need to worry about location scouting or weather conditions.",
+      description:
+        "No need to worry about location scouting or weather conditions.",
     },
     {
       label: "Cost-Effective:",
-      description: "Animation can be a more cost-effective option for someone with a limited budget, or with more projects to complete.",
+      description:
+        "Animation can be a more cost-effective option for someone with a limited budget, or with more projects to complete.",
     },
     {
       label: "Timeless Appeal:",
@@ -137,5 +139,7 @@ export const whyGoAnimated = {
   ],
 };
 
-export const exampleAnimationVideoSrc =
-  "https://player.vimeo.com/video/948449576?h=378cc31a7c&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0";
+export const exampleAnimationVideo = {
+  src: "z56MD9KpKNo33ysimimzgmuMDLs4tl9awoh5TifQfF4",
+  title: "Mike Martin Media - Animation and Motion Graphics",
+};

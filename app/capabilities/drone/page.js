@@ -16,7 +16,7 @@ import {
   droneAdvantage,
   droneProcess,
   faaCertified,
-  exampleDroneVideoSrc,
+  exampleDroneVideo,
   whoBenefitsFromDrone,
 } from "../../lib/capabilities/drone.js";
 
@@ -45,7 +45,7 @@ export const metadata = {
         height: 630,
         alt: "Drone Video Services | Mike Martin Media",
       },
-        // {
+      // {
       //   url: ,
       //   width: 1920,
       //   height: 1080,
@@ -74,11 +74,11 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
-        //   url: ,
-        //   width: 800,
-        //   height: 418,
-        // },
+      // {
+      //   url: ,
+      //   width: 800,
+      //   height: 418,
+      // },
     ],
   },
 };
@@ -87,9 +87,9 @@ export default function Page() {
   return (
     <main className="grid grid-cols-1">
       <BannerVideoWithFadeEffect
-        src="https://player.vimeo.com/video/914904466?h=4da6b8b38e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        src="u6v3KIH6FP024epD7AqUkMS17kisRLSBCnX8vbPyzW6M"
         title="Drone Video Services | Mike Martin Media"
-        containerClassName="banner-vid-with-fade-container-no-logo"
+        containerClassName="padding-top-42-19"
       />
       <div className="">
         <PageHeadingBanner
@@ -112,7 +112,8 @@ export default function Page() {
         <CapabilityHighLightsSection
           headline={"Advantages of Aerial Videography and Photography"}
           highlights={droneAdvantage}
-          video_src={exampleDroneVideoSrc}
+          video_src={exampleDroneVideo.src}
+          video_title={exampleDroneVideo.title}
         />
       </div>
       <div className="flex justify-center bg-[#F0F0F0]">

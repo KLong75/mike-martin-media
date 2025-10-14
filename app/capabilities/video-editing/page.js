@@ -14,7 +14,7 @@ import {
   videoEditingProcess,
   videoEditingCapabilities,
   videoEditingAcrossIndustries,
-  exampleVideoEditingVideoSrc,
+  exampleVideoEditingVideo,
 } from "../../lib/capabilities/video-editing.js";
 
 const videoEditingPageOgImgUrl =
@@ -83,9 +83,9 @@ export default function Page() {
   return (
     <main className="grid grid-cols-1">
       <BannerVideoWithFadeEffect
-        src="https://player.vimeo.com/video/1090994552?h=756c4d7da5&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        src="89vMSTWqJg6Lf1kJX4UHsxVKi1oRuQKhTPLr00gd01CUA"
         title="Mike Martin Media - Video Editing"
-        containerClassName="banner-vid-with-fade-container-no-logo"
+        containerClassName="padding-top-42-19"
       />
       <div className="">
         <PageHeadingBanner
@@ -108,9 +108,8 @@ export default function Page() {
         <CapabilityHighLightsSection
           headline={videoEditingHighlights.heading}
           highlights={videoEditingHighlights.highlights}
-          video_src={
-            "https://player.vimeo.com/video/1090994552?h=756c4d7da5&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-          }
+          video_src={exampleVideoEditingVideo.src}
+          video_title={exampleVideoEditingVideo.title}
         />
       </div>
       <div className="flex justify-center bg-[#F0F0F0]">

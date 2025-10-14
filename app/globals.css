@@ -40,11 +40,11 @@ html {
 }
 
 /* bannerVideo.css */
-.padding-42-19 {
+.padding-top-42-19 {
   padding-top: 42.19%;
 }
 
-.padding-56-25 {
+.padding-top-56-25 {
   padding-top: 56.25%;
 }
 
@@ -307,8 +307,6 @@ a.cky-banner-element {
   }
 } */
 
-
-
 mux-player {
   /* Hide all controls at once */
   --controls: none;
@@ -330,7 +328,4 @@ mux-player {
   --time-display: none;
   --title-display: none;
   --duration-display: none; */
-
- 
 }
-

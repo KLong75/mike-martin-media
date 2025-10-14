@@ -1,5 +1,4 @@
 // import components
-// import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo"; 
 import BannerVideoWithFadeEffect from "@/app/ui/bannerVideoWithFadeEffect";
 import VideoGallery from "@/app/ui/videoGallery";
 import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
@@ -15,10 +14,11 @@ import {
   benefitsOfLivestreaming,
   livestreamingProcess,
   whoBenefitsFromLivestreaming,
-  exampleLivestreamingVideoSrc,
+  exampleLivestreamingVideo,
 } from "../../lib/capabilities/livestreaming.js";
 
-const livestreamingPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/livestreaming-og.png";
+const livestreamingPageOgImgUrl =
+  "https://www.mikemartinmedia.com/images/open-graph/livestreaming-og.png";
 
 export const metadata = {
   title: "Live Stream Video Company | Mike Martin Media",
@@ -41,7 +41,7 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
+      // {
       //   url: ,
       //   width: 1920,
       //   height: 1080,
@@ -70,11 +70,11 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
-        //   url: ,
-        //   width: 800,
-        //   height: 418,
-        // },
+      // {
+      //   url: ,
+      //   width: 800,
+      //   height: 418,
+      // },
     ],
   },
 };
@@ -83,9 +83,9 @@ export default function Page() {
   return (
     <main className="grid grid-cols-1">
       <BannerVideoWithFadeEffect
-        src="https://player.vimeo.com/video/904181398?h=c0efc97d6f&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        src="Mo3Fbv8T006pkds9eOmUjzY01r6iq9WLhb02JBWvBwafpI"
         title="Live Stream Video Company | Mike Martin Media"
-        containerClassName="banner-vid-with-fade-container-no-logo"
+        containerClassName="padding-top-42-19"
       />
       <div className="">
         <PageHeadingBanner
@@ -107,7 +107,8 @@ export default function Page() {
         <CapabilityHighLightsSection
           headline={benefitsOfLivestreaming.heading}
           highlights={benefitsOfLivestreaming.list_items}
-          video_src={exampleLivestreamingVideoSrc}
+          video_src={exampleLivestreamingVideo.src}
+          video_title={exampleLivestreamingVideo.title}
         />
       </div>
       <div className="flex justify-center bg-[#F0F0F0]">

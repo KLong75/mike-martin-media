@@ -1,13 +1,7 @@
 // import components
-// import BannerVideo from "../ui/bannerVideo";
-// import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
-// import BannerVideoWithFadeEffect from "../ui/bannerVideoWithFadeEffect";
 import PageHeadingBanner from "../ui/pageHeadingBanner";
 import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
-// import BannerImage from "../ui/bannerImage";
 import JoinTheTeam from "../ui/joinTheTeam";
-// import images
-// import blackMmmLogo from "../../public/branding/black-mmm-logo-1642x560.png";
 import BannerVideoWithFadeEffect from "../ui/bannerVideoWithFadeEffect";
 
 const careersPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/careers-og.png";
@@ -72,9 +66,9 @@ export default function Page() {
   return (
     <main className="grid grid-cols-1 ">
       <BannerVideoWithFadeEffect
-        src="https://player.vimeo.com/video/943724347?h=791f0d08b9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        src="R0000d7JrkYTLaFA6ulhx001SZLeNtO88JdHeCNWIHNmlA"
         title="Mike Martin Media | We Travel"
-        containerClassName={"banner-vid-with-fade-container"}
+        containerClassName="padding-top-56-25"
       />
       <div>
         <PageHeadingBanner

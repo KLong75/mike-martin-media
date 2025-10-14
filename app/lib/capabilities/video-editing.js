@@ -114,4 +114,7 @@ export const videoEditingAcrossIndustries = {
   ],
 };
 
-export const exampleVideoEditingVideoSrc = "https://player.vimeo.com/video/911636273?h=f61fbbc179&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0";
+export const exampleVideoEditingVideoSrc = {
+  src: "89vMSTWqJg6Lf1kJX4UHsxVKi1oRuQKhTPLr00gd01CUA",
+  title: "Mike Martin Media - Video Editing Services"
+};

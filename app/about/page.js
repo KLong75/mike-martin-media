@@ -76,9 +76,9 @@ export default function Page() {
     <main>
       <div>
         <BannerVideoWithFadeEffect
-          src="https://player.vimeo.com/video/953317163?h=21c26f1413&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          src="kAKae7jrwesAEGi01wUUY3rVgViFQEKftLO7cRAPAx18"
           title="About Mike Martin Media"
-          containerClassName="banner-vid-with-fade-container-no-logo"
+          containerClassName="padding-top-42-19"
         />
       </div>
       <div>
@@ -134,7 +134,7 @@ export default function Page() {
           <MMMLineLogoHeading headline="Meet The Team" heading_level={"h2"} />
         </div>
         <div className="flex justify-center">
-          <div className="max-w-600" >
+          <div className="max-w-600">
             <TeamGallery />
           </div>
         </div>

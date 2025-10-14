@@ -14,7 +14,7 @@ import {
   videoProductionProcess,
   videoProductionCapabilities,
   videoProductionForEveryIndustry,
-  exampleVideoProductionVideoSrc,
+  exampleVideoProductionVideo,
 } from "../../lib/capabilities/video-production.js";
 
 const videoProductionPageOgImgUrl =
@@ -83,9 +83,9 @@ export default function Page() {
   return (
     <main className="grid grid-cols-1">
       <BannerVideoWithFadeEffect
-        src="https://player.vimeo.com/video/1090994530?h=3259e9027e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        src="2uQ6kKU01qHa02lBmmsAOur01NqpLtHYQJk9hefphV5IUw"
         title="Mike Martin Media - Video Production"
-        containerClassName="banner-vid-with-fade-container-no-logo"
+        containerClassName="padding-top-42-19"
       />
       <div className="">
         <PageHeadingBanner
@@ -108,10 +108,8 @@ export default function Page() {
         <CapabilityHighLightsSection
           headline={videoProductionHighlights.heading}
           highlights={videoProductionHighlights.highlights}
-          // video_src={exampleVideoProductionVideoSrc}
-          video_src={
-            "https://player.vimeo.com/video/1090994530?h=3259e9027e&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
-          }
+          video_src={exampleVideoProductionVideo.src}
+          video_title={exampleVideoProductionVideo.title}
         />
       </div>
       <div className="flex justify-center bg-[#F0F0F0]">

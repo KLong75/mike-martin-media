@@ -1,19 +1,22 @@
+"use client";
 // import components
 import MMMLineLogoHeading from "@/app/ui/mmmLineLogoHeading";
+import MuxVideoPlayer from "./muxVideoPlayer";
 
 export default function CapabilityHighLightsSection({
   headline,
   highlights,
   video_src,
+  video_title,
 }) {
   return (
     <div className="flex flex-col items-center">
-    <div className="lg:px-6 2xl:px-0">
-      <MMMLineLogoHeading headline={headline} heading_level={"h3"} />
+      <div className="lg:px-6 2xl:px-0">
+        <MMMLineLogoHeading headline={headline} heading_level={"h3"} />
       </div>
       <div className="lg:m-10 grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-2xl">
-        <div className="flex justify-center hidden md:flex px-12">
-          <iframe
+        <div className="flex justify-center items-center hidden md:flex px-12">
+          {/* <iframe
             src={video_src}
             title="Video"
             width="100%"
@@ -21,7 +24,15 @@ export default function CapabilityHighLightsSection({
             allow="autoplay; fullscreen"
             loading="lazy"
             className="w-full h-auto">
-          </iframe>
+          </iframe> */}
+          <MuxVideoPlayer
+            playbackId={video_src}
+            title={video_title}
+            autoPlay={true}
+            loop={true}
+            muted={true}
+            className="bg-white"
+          />
         </div>
         <div className="flex justify-center px-6 ">
           <ul className="space-y-6 w-full">
