@@ -12,15 +12,15 @@ export function middleware(request) {
     default-src 'self';
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval' https://mmmmarketing42.activehosted.com/ https://cdn-cookieyes.com/;
     style-src 'self' 'unsafe-inline' https://fonts.bunny.net/css;
-    img-src 'self' blob: data: https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png https://www.google.com/pagead/;
-    media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com;
-    connect-src 'self' https://stats.g.doubleclick.net https://mmmmarketing42.activehosted.com/proc.php  https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://analytics.google.com https://www.google.com https://google.com;
+    img-src 'self' blob: data: https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png https://www.google.com/pagead/ https://image.mux.com/;
+    media-src 'self' blob: data: https://player.vimeo.com https://f.vimeocdn.com https://vimeo.com https://image.mux.com/;
+    connect-src 'self' https://stats.g.doubleclick.net https://mmmmarketing42.activehosted.com/proc.php  https://process.iconnode.com/google-ads/ https://*.ksrndkehqnwntyxlhgto.com https://www.google-analytics.com https://analytics.google.com https://www.google.com https://google.com https://stream.mux.com/ https://inferred.litix.io/ *.mux.com/;
     font-src 'self' data: https://fonts.bunny.net/;
     object-src 'none';
     base-uri 'self';
     form-action 'self';
     frame-ancestors 'none';
-    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://vercel.live/ https://vercel.com https://stats.g.doubleclick.net https://td.doubleclick.net/ https://www.googletagmanager.com/;
+    frame-src 'self' https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://vercel.live/ https://vercel.com https://stats.g.doubleclick.net https://td.doubleclick.net/ https://www.googletagmanager.com/ https://player.mux.com/;
     upgrade-insecure-requests;
   `;
 

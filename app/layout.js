@@ -46,7 +46,7 @@ export default async function RootLayout({ children }) {
       className={`overflow-x-hidden ${dm_sans.variable} font-sans`}>
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} /> 
       <PreloadResources />
-      <body className={`antialiased flex flex-col min-h-screen`}>
+      <body className={`antialiased  min-h-screen`}>
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
@@ -63,7 +63,6 @@ export default async function RootLayout({ children }) {
           {children}
           <ScrollToTopButton />
           <ActiveCampaignNewsletterSignup />
-          {/* <ContactFormWrapper /> */}
           <Footer />
           <Analytics />
           {/* <Script

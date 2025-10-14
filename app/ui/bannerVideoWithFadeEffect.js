@@ -5,10 +5,15 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 // import components
 import Image from "./image";
+import MuxVideoPlayer from "./muxVideoPlayer";
 // import images
 import whiteMmmLogo from "../../public/branding/white-mmm-logo-1200x488.png";
 
-export default function BannerVideoWithFadeEffect({ src, title, containerClassName }) {
+export default function BannerVideoWithFadeEffect({
+  src,
+  title,
+  containerClassName,
+}) {
   const [hideLogo, setHideLogo] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
   const [showHeading, setShowHeading] = useState(false);
@@ -55,38 +60,50 @@ export default function BannerVideoWithFadeEffect({ src, title, containerClassNa
             showVideo ? "bg-white" : "bg-black"
           }`}>
           <div
-            className={`${containerClassName} banner-video-aspect-ratio-container w-full transition-opacity duration-6000 ease-in-out ${
+            className={`banner-video-aspect-ratio-container w-full transition-opacity duration-6000 ease-in-out ${
               showVideo ? "opacity-100" : "opacity-0"
             }`}>
-            <iframe
+            {/* <iframe
               loading="lazy"
               title={title}
               src={src}
               allow="autoplay"
-              className="absolute top-0 left-0 w-full h-full"></iframe>
+              className="absolute top-0 left-0 w-full h-full">  
+            </iframe> */}
+            <div className={`relative w-full ${containerClassName}`}>
+              <div className="absolute top-0 left-0 w-full h-full">
+                <MuxVideoPlayer
+                  // playbackId="HCzGV1FOwCPf6qOVtFyMzj6Cv83GxGZMH5M0193zd01EU"
+                  playbackId={src}
+                  title={title}
+                  autoPlay={true}
+                  loop={true}
+                  muted={true}
+                />
+              </div>
+            </div>
           </div>
           {/* heading */}
           {pathname === "/" && (
-          <div>
-            <div
-              className={`absolute bottom-[-1rem] xs:bottom-[-1.25rem] sm:bottom-[-2.1rem] md:bottom-[-2.5rem] lg:bottom-[-3rem] xl:bottom-[-4rem] 2xl:bottom-[-4.5rem] 3xl:bottom-[-5.75rem] 4xl:bottom-[-7rem] 5xl:bottom-[-8rem] left-[-.1rem] lg:left-[-.15rem] xl:left-[-.25rem] 2xl:left-[-.65rem] 3xl:left-[-.25rem] right-0 text-center text-[12.5vw] text-white tracking-tight font-bold w-full whitespace-nowrap transition-opacity duration-4000 ease-in-out ${
-                showHeading ? "opacity-100" : "opacity-0"
-              }`}>
-              {letters.map((item, index) => (
+            <div>
+              <div
+                className={`absolute bottom-[-1rem] xs:bottom-[-1.25rem] sm:bottom-[-2.1rem] md:bottom-[-2.5rem] lg:bottom-[-3rem] xl:bottom-[-4rem] 2xl:bottom-[-4.5rem] 3xl:bottom-[-5.75rem] 4xl:bottom-[-7rem] 5xl:bottom-[-8rem] right-0 text-center text-[12.5vw] text-white tracking-tight font-bold w-full whitespace-nowrap transition-opacity duration-4000 ease-in-out ${
+                  showHeading ? "opacity-100" : "opacity-0"
+                }`}>
+                {letters.map((item, index) => (
                   <span
                     key={index}
                     className="fade-heading opacity-0 animate-fade-in"
-                    style={{ animationDelay: `${item.delay}ms` }}
-                  >
+                    style={{ animationDelay: `${item.delay}ms` }}>
                     {item.letter}
                   </span>
                 ))}
+              </div>
             </div>
-          </div>
           )}
           {/* Logo */}
           <div
-            className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 sm:w-100 md:w-144 lg:w-  justify-center items-center absolute transition-opacity duration-8000 ease-in-out ${
+            className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 sm:w-100 md:w-144 justify-center items-center absolute transition-opacity duration-8000 ease-in-out ${
               hideLogo ? "opacity-0" : "opacity-100"
             }`}>
             <Image priority src={whiteMmmLogo} alt="MMM logo" />

@@ -2,6 +2,8 @@
 // import from next
 import Link from "next/link";
 // import components
+import NextVideoPlayer from "./ui/nextVideoPlayer";
+import MuxVideoPlayer from "./ui/muxVideoPlayer";
 import BannerVideoWithFadeEffect from "./ui/bannerVideoWithFadeEffect";
 import BannerVideoWithFadeNoLogo from "./ui/bannerVideoWithFadeNoLogo";
 import MMMLineLogoHeading from "./ui/mmmLineLogoHeading";
@@ -13,12 +15,28 @@ import BlogPostGallery from "./ui/blogPostGallery";
 
 export default function Home() {
   return (
-    <main className="grid grid-cols-1 ">
+    <main className="">
+     
+        {/* <div className="relative w-full banner-vid-with-fade-container-no-logo">
+          <div className="absolute top-0 left-0 w-full h-full">
+            <MuxVideoPlayer
+              playbackId="HCzGV1FOwCPf6qOVtFyMzj6Cv83GxGZMH5M0193zd01EU"
+              title="Mike Martin Media | Ideas in Motion"
+            />
+          </div>
+        </div> */}
+      {/* <MuxVideoPlayer
+        playbackId={"HCzGV1FOwCPf6qOVtFyMzj6Cv83GxGZMH5M0193zd01EU"}
+        title="Mike Martin Media | Ideas in Motion"
+      /> */}
+
       <BannerVideoWithFadeEffect
-        src="https://player.vimeo.com/video/1090631184?h=7363ce54f9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+        src="HCzGV1FOwCPf6qOVtFyMzj6Cv83GxGZMH5M0193zd01EU"
+        // src="https://player.vimeo.com/video/1090631184?h=7363ce54f9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="Mike Martin Media - Ideas in Motion"
-        containerClassName="banner-vid-with-fade-container-no-logo"
+        containerClassName="padding-42-19"
       />
+
       <section className="flex justify-center items-center p-6 md:p-12 lg:p-28 xl:p-42">
         <div
           id="home-page-about-section"
@@ -56,8 +74,9 @@ export default function Home() {
       {/* Our Work Section */}
       <section id="our-work-section">
         <BannerVideoWithFadeNoLogo
-          src="https://player.vimeo.com/video/938224537?h=7b77483940&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
+          src="PtWJLW7g8zmVIlrDUQrHas45MGty0102w4tH9tiGwZIyQ"
           title="Mike Martin Media | Our Work"
+          containerClassName="padding-42-19"
         />
         <div className="flex justify-center">
           <div className="max-w-800 lg:py-24">
@@ -88,9 +107,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div>
+      <section>
         <FourPicGrid />
-      </div>
+      </section>
       {/* Testimonials Section */}
       <section className="grid grid-cols-1 bg-black ">
         <div className="">
