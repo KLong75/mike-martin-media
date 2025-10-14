@@ -1,12 +1,13 @@
-"use client";
+// "use client";
 // import from next
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 // import from react
 // import { useState } from "react";
+import MuxPlayer from "@mux/mux-player-react";
 
-const MuxPlayerNoSSR = dynamic(() => import("@mux/mux-player-react"), {
-  ssr: false,
-});
+// const MuxPlayerNoSSR = dynamic(() => import("@mux/mux-player-react"), {
+//   ssr: false,
+// });
 
 export default function MuxVideoPlayer({ playbackId, title, autoPlay, loop, muted }) {
   const handleError = (e) => {
@@ -18,7 +19,7 @@ export default function MuxVideoPlayer({ playbackId, title, autoPlay, loop, mute
   }
 
   return (
-    <MuxPlayerNoSSR
+    <MuxPlayer
       playbackId={playbackId}
       title={title}
       autoPlay={autoPlay}
@@ -28,7 +29,10 @@ export default function MuxVideoPlayer({ playbackId, title, autoPlay, loop, mute
       poster=""
       onError={handleError}
       onLoadedData={handleVideoDataLoaded}
-      // style={{ width: "100%", height: "100%" }}
+      // metadata={{
+      //   video_title: title,
+      //   title: title,
+      // }}
     />
   );
 }
