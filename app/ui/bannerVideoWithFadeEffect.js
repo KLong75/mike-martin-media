@@ -73,7 +73,6 @@ export default function BannerVideoWithFadeEffect({
             <div className={`relative w-full ${containerClassName}`}>
               <div className="absolute top-0 left-0 w-full h-full">
                 <MuxVideoPlayer
-                  // playbackId="HCzGV1FOwCPf6qOVtFyMzj6Cv83GxGZMH5M0193zd01EU"
                   playbackId={src}
                   title={title}
                   autoPlay={true}
