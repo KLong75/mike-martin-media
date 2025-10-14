@@ -13,7 +13,7 @@ import {
   importanceOfPhotography,
   photographyProcess,
   whoBenefitsFromPhotography,
-  examplePhotography,
+  examplePhotographyVideo,
 } from "../../lib/capabilities/photography.js";
 // import images
 // import { photographyCoverImages } from "../../lib/capabilities/photography.js";

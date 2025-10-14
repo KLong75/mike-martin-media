@@ -114,7 +114,7 @@ export const videoEditingAcrossIndustries = {
   ],
 };
 
-export const exampleVideoEditingVideoSrc = {
+export const exampleVideoEditingVideo = {
   src: "89vMSTWqJg6Lf1kJX4UHsxVKi1oRuQKhTPLr00gd01CUA",
   title: "Mike Martin Media - Video Editing Services"
 };

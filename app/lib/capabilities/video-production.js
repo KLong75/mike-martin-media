@@ -131,7 +131,7 @@ export const videoProductionForEveryIndustry = {
   ],
 };
 
-export const exampleVideoProductionVideoSrc = {
+export const exampleVideoProductionVideo = {
   src: "2uQ6kKU01qHa02lBmmsAOur01NqpLtHYQJk9hefphV5IUw",
   title: "Mike Martin Media - Video Production",
 };
