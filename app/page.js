@@ -15,11 +15,12 @@ export default function Home() {
     <main>
       <BannerVideoWithFadeEffect
         src="HCzGV1FOwCPf6qOVtFyMzj6Cv83GxGZMH5M0193zd01EU"
-        // src="https://player.vimeo.com/video/1090631184?h=7363ce54f9&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&controls=0&loop=1&background=1&title=0&muted=1&byline=0&portrait=0"
         title="Mike Martin Media - Ideas in Motion"
         containerClassName="padding-top-42-19"
+        autoPlay={true}
+        loop={true}
+        muted={true}
       />
-
       <section className="flex justify-center items-center p-6 md:p-12 lg:p-28 xl:p-42">
         <div
           id="home-page-about-section"
@@ -60,6 +61,9 @@ export default function Home() {
           src="PtWJLW7g8zmVIlrDUQrHas45MGty0102w4tH9tiGwZIyQ"
           title="Mike Martin Media | Our Work"
           containerClassName="padding-top-42-19"
+          autoPlay={true}
+          loop={true}
+          muted={true}
         />
         <div className="flex justify-center">
           <div className="max-w-800 lg:py-24">

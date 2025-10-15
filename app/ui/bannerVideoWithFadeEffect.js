@@ -13,6 +13,9 @@ export default function BannerVideoWithFadeEffect({
   src,
   title,
   containerClassName,
+  autoPlay,
+  loop,
+  muted,
 }) {
   const [hideLogo, setHideLogo] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
@@ -75,9 +78,9 @@ export default function BannerVideoWithFadeEffect({
                 <MuxVideoPlayer
                   playbackId={src}
                   title={title}
-                  autoPlay={true}
-                  loop={true}
-                  muted={true}
+                  autoPlay={autoPlay}
+                  loop={loop}
+                  muted={muted}
                 />
               </div>
             </div>
