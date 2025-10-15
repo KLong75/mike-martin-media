@@ -1,15 +1,8 @@
 // "use client";
 // import from vercel
 import { track } from "@vercel/analytics";
-// import from next
-// import dynamic from "next/dynamic";
-// import from react
-// import { useState } from "react";
+// import from mux
 import MuxPlayer from "@mux/mux-player-react";
-
-// const MuxPlayerNoSSR = dynamic(() => import("@mux/mux-player-react"), {
-//   ssr: false,
-// });
 
 export default function MuxVideoPlayer({ playbackId, title, autoPlay, loop, muted }) {
   const handleError = (e) => {
@@ -21,7 +14,7 @@ export default function MuxVideoPlayer({ playbackId, title, autoPlay, loop, mute
   }
 
   const handleVideoEnded = () => {
-    track("video ended", { video: title });
+    track("Full video play", { video: title });
   };
 
   return (
