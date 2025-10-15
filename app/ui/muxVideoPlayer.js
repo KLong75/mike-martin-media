@@ -1,4 +1,6 @@
 // "use client";
+// import from vercel
+import { track } from "@vercel/analytics";
 // import from next
 // import dynamic from "next/dynamic";
 // import from react
@@ -18,6 +20,10 @@ export default function MuxVideoPlayer({ playbackId, title, autoPlay, loop, mute
     console.log("Video data loaded");
   }
 
+  const handleVideoEnded = () => {
+    track("video ended", { video: title });
+  };
+
   return (
     <MuxPlayer
       playbackId={playbackId}
@@ -29,6 +35,7 @@ export default function MuxVideoPlayer({ playbackId, title, autoPlay, loop, mute
       poster=""
       onError={handleError}
       onLoadedData={handleVideoDataLoaded}
+      onEnded={handleVideoEnded}
       // metadata={{
       //   video_title: title,
       //   title: title,
