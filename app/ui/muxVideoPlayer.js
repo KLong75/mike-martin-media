@@ -67,7 +67,7 @@ export default function MuxVideoPlayer({
         const newCount = count + 1;
         if (newCount >= maxPlays) {
           setIsPaused(true);
-          console.log("Max plays reached, pausing video", { video: title });
+          // console.log("Max plays reached, pausing video", { video: title });
           setTimeout(() => {
             const video = playerRef.current?.querySelector("video");
             if (video) video.currentTime = 0;
@@ -76,7 +76,7 @@ export default function MuxVideoPlayer({
         return newCount;
       });
       track("Video looped", { video: title, loopCount: playCount + 1 });
-      console.log(`Video looped ${playCount + 1} times`);
+      // console.log(`Video looped ${playCount + 1} times`);
     }
 
     prevTimeRef.current = currentTime;
