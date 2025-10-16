@@ -310,7 +310,7 @@ a.cky-banner-element {
 mux-player {
   /* Hide all controls at once */
   --controls: none;
-
+  
   /* Target all sections by excluding the section prefix */
   /* --play-button: none;
   --live-button: none;
