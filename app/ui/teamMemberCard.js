@@ -2,7 +2,7 @@
 // import from react
 import { useState } from "react";
 // import components
-import Image from "./image";
+import Image from "next/image";
 // import icons
 import { HiX } from "react-icons/hi";
 // import from headless ui
@@ -56,7 +56,10 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
         <DialogPanel className="fixed inset-0 flex justify-center items-center z-50">
           <div className="relative bg-black text-white p-6 max-w-2xl w-[90vw] lg:w-3/4 h-auto">
             <div className="flex justify-end">
-              <button onClick={handleClose} className="absolute top-4 right-4" aria-label="Close dialog">
+              <button
+                onClick={handleClose}
+                className="absolute top-4 right-4"
+                aria-label="Close dialog">
                 <HiX className="text-2xl" />
               </button>
             </div>

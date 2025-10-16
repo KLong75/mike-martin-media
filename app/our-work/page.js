@@ -73,6 +73,9 @@ export default function Page() {
           src="PtWJLW7g8zmVIlrDUQrHas45MGty0102w4tH9tiGwZIyQ"
           title="Mike Martin Media | Our Work"
           containerClassName="padding-top-42-19"
+          autoPlay={true}
+          loop={true}
+          muted={true}
         />
       </div>
       <div className="flex justify-center items-center bg-black -mt-20">

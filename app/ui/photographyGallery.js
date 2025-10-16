@@ -4,9 +4,14 @@ import { track } from "@vercel/analytics";
 // import from react
 import { useState } from "react";
 // import components
-import Image from "./image";
+import Image from "next/image";
 // import from headlessui
-import { Dialog, DialogPanel, DialogBackdrop, DialogTitle } from "@headlessui/react";
+import {
+  Dialog,
+  DialogPanel,
+  DialogBackdrop,
+  DialogTitle,
+} from "@headlessui/react";
 // import icons
 import { HiX } from "react-icons/hi";
 // import from swiper

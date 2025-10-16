@@ -1,7 +1,7 @@
 // import from next
 // import Image from "next/image";
 // import components
-import Image from "./image";
+import Image from "next/image";
 
 export default function MMMInstaLogo() {
   return (
@@ -17,7 +17,9 @@ export default function MMMInstaLogo() {
               alt="Mike Martin Media"
             />
           </div>
-          <span className="text-xl md:text-3xl font-bold ml-1">on Instagram</span>
+          <span className="text-xl md:text-3xl font-bold ml-1">
+            on Instagram
+          </span>
         </div>
         <div className="bg-black rounded-full w-16 h-16 md:w-20 md:h-20 -mt-2 md:-mt-6 mb-1">
           <div className="flex justify-center items-center w-full h-auto ">
@@ -30,14 +32,15 @@ export default function MMMInstaLogo() {
             />
           </div>
         </div>
-        <a 
-          href="https://www.instagram.com/mikemartinmedia/" 
-          target="_blank" 
+        <a
+          href="https://www.instagram.com/mikemartinmedia/"
+          target="_blank"
           rel="noopener noreferrer"
-          className="underline"
-        >
-          <span className="text-center md:text-xl font-bold hover:transform hover:scale-105 transition-transform">@mikemartinmedia</span>
-       </a>
+          className="underline">
+          <span className="text-center md:text-xl font-bold hover:transform hover:scale-105 transition-transform">
+            @mikemartinmedia
+          </span>
+        </a>
       </div>
     </div>
   );

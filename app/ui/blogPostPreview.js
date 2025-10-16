@@ -4,7 +4,7 @@ import React from "react";
 // import from next
 import Link from "next/link";
 // import components
-import Image from "./image";
+import Image from "next/image";
 // import from utils
 // import { formatDate } from "../lib/utils";
 
@@ -71,7 +71,7 @@ export default function BlogPostPreview({
 // // import from next
 // import Link from "next/link";
 // // import components
-// import Image from "./image";
+// import Image from "next/image";
 // // import from utils
 // import { formatDate } from "../lib/utils";
 

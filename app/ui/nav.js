@@ -11,7 +11,7 @@ import { Dialog, DialogPanel, DialogBackdrop } from "@headlessui/react";
 import { MdDehaze } from "react-icons/md";
 import { HiX } from "react-icons/hi";
 // import components
-import Image from "./image";
+import Image from "next/image";
 import SubNavMenu from "./subNavMenu";
 import SubNavMenuMobile from "./subNavMenuMobile";
 // import data
@@ -91,67 +91,64 @@ export default function Nav() {
                 <HiX size={28} />
               </button>
               <div className="flex flex-col items-center">
-              <div className="mb-6 w-40 h-auto">
-                <Link href="/" aria-label="Mike Martin Media - Home">
-                  <Image
-                    src="/branding/mmm_logo_white.png"
-                    width={294}
-                    height={95}
-                    alt="MMM logo"
-                    priority
-                    as="image"
-                    onClick={() => setMenuOpen(false)}
-                  />
-                </Link>
-              </div>
-              {/* Nav Links */}
-              <ul className="space-y-4 text-xl">
-                {navLinks.map((link) => (
-                  <li
-                  onClick={() => setMenuOpen(false)}
-                    key={link.label}
-                    className={`font-bold text-left w-full p-2 ${
-                      pathname === link.href ? "disabled" : ""
-                    }`}>
-                    {link.label === "Capabilities" ? (
-                      <SubNavPopover
-                        category={{
-                          label: "Capabilities",
-                          sub_items: capabilities,
-                        }}
-                      />
-                    ) : link.label === "Industries" ? (
-                      <SubNavPopover
-                        category={{
-                          label: "Industries",
-                          sub_items: industries,
-                        }}
-                      />
-                    ) : link.label === "Contact Us" ? (
-                      <a href={link.href}>
-                        <span
-                          onClick={() =>
-                            setMenuOpen(false) 
-                          }
-                          className={` ${
-                            pathname === link.href
-                              ? "hover:cursor-text disabled text-gray-300"
-                              : " "
-                          } `}>
+                <div className="mb-6 w-40 h-auto">
+                  <Link href="/" aria-label="Mike Martin Media - Home">
+                    <Image
+                      src="/branding/mmm_logo_white.png"
+                      width={294}
+                      height={95}
+                      alt="MMM logo"
+                      priority
+                      as="image"
+                      onClick={() => setMenuOpen(false)}
+                    />
+                  </Link>
+                </div>
+                {/* Nav Links */}
+                <ul className="space-y-4 text-xl">
+                  {navLinks.map((link) => (
+                    <li
+                      onClick={() => setMenuOpen(false)}
+                      key={link.label}
+                      className={`font-bold text-left w-full p-2 ${
+                        pathname === link.href ? "disabled" : ""
+                      }`}>
+                      {link.label === "Capabilities" ? (
+                        <SubNavPopover
+                          category={{
+                            label: "Capabilities",
+                            sub_items: capabilities,
+                          }}
+                        />
+                      ) : link.label === "Industries" ? (
+                        <SubNavPopover
+                          category={{
+                            label: "Industries",
+                            sub_items: industries,
+                          }}
+                        />
+                      ) : link.label === "Contact Us" ? (
+                        <a href={link.href}>
+                          <span
+                            onClick={() => setMenuOpen(false)}
+                            className={` ${
+                              pathname === link.href
+                                ? "hover:cursor-text disabled text-gray-300"
+                                : " "
+                            } `}>
+                            {link.label}
+                          </span>
+                        </a>
+                      ) : (
+                        <Link
+                          href={link.href}
+                          onClick={() => setMenuOpen(false)}>
                           {link.label}
-                        </span>
-                      </a>
-                    ) : (
-                      <Link 
-                        href={link.href}
-                        onClick={() => setMenuOpen(false)}
-                      >
-                          {link.label}
-                      </Link>
-                    )}
-                  </li>
-                ))}
-              </ul>
+                        </Link>
+                      )}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
@@ -165,11 +162,11 @@ export default function Nav() {
       </div>
       {/* Desktop Nav Menu */}
       <div className={`z-50 flex ${menuOpen ? "" : "hidden lg:flex"} w-full`}>
-        <ul className="flex flex-row space-x-6 2xl:space-x-12">
+        <ul className="flex flex-row space-x-8 xl:space-x-10 2xl:space-x-12">
           {navLinks.map((link) => (
             <li
               key={link.label}
-              className={`flex flex-col items-center justify-center whitespace-nowrap xl:text-lg 3xl:text-xl ${
+              className={`flex flex-col items-center justify-center whitespace-nowrap ${
                 pathname === link.href ? "" : ""
               }`}>
               {link.label === "Capabilities" ? (

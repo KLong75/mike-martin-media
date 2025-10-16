@@ -2,7 +2,7 @@
 // import from vercel
 import { track } from "@vercel/analytics";
 // import components
-import Image from "./image";
+import Image from "next/image";
 import SocialMediaLinks from "./socialMediaLinks";
 import NewsletterSignupButton from "./newsletterSignupButton";
 

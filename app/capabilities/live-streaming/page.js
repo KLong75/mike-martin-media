@@ -86,6 +86,9 @@ export default function Page() {
         src="Mo3Fbv8T006pkds9eOmUjzY01r6iq9WLhb02JBWvBwafpI"
         title="Live Stream Video Company | Mike Martin Media"
         containerClassName="padding-top-42-19"
+        autoPlay={true}
+        loop={true}
+        muted={true}
       />
       <div className="">
         <PageHeadingBanner

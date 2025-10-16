@@ -5,7 +5,7 @@ import { track } from "@vercel/analytics";
 // import components
 import OurCapabilitiesList from "./ourCapabilitiesList";
 import IndustriesList from "./industriesList";
-import Image from "./image";
+import Image from "next/image";
 import ContactInfo from "./contactInfo";
 import TestimonialDisplay from "./testimonialDisplay";
 // import from next

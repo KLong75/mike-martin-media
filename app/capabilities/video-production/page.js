@@ -86,6 +86,9 @@ export default function Page() {
         src="2uQ6kKU01qHa02lBmmsAOur01NqpLtHYQJk9hefphV5IUw"
         title="Mike Martin Media - Video Production"
         containerClassName="padding-top-42-19"
+        autoPlay={true}
+        loop={true}
+        muted={true}
       />
       <div className="">
         <PageHeadingBanner

@@ -90,6 +90,9 @@ export default function Page() {
         src="u6v3KIH6FP024epD7AqUkMS17kisRLSBCnX8vbPyzW6M"
         title="Drone Video Services | Mike Martin Media"
         containerClassName="padding-top-42-19"
+         autoPlay={true}
+        loop={true}
+        muted={true}
       />
       <div className="">
         <PageHeadingBanner

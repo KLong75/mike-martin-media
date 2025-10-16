@@ -5,7 +5,7 @@ import { track } from "@vercel/analytics";
 import Link from "next/link";
 // import Image from "next/image";
 // import components
-import Image from "./image";
+import Image from "next/image";
 
 export default function ContactUsButton() {
   return (
@@ -13,9 +13,7 @@ export default function ContactUsButton() {
       <Link href="/contact" onClick={() => track("Contact us link clicked")}>
         <div className="flex justify-center items-center">
           <span className="text-xl md:text-2xl">Contact</span>
-          <div
-            className="flex justify-center items-center w-14 md:w-16 ml-2 h-auto contact-us-button-logo-container"
-          >
+          <div className="flex justify-center items-center w-14 md:w-16 ml-2 h-auto contact-us-button-logo-container">
             <Image
               src="/branding/mmm_logo_white.png"
               width={294}

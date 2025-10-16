@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 // import from next
 import { usePathname } from "next/navigation";
 // import components
-import Image from "./image";
+import Image from "next/image";
 import MuxVideoPlayer from "./muxVideoPlayer";
 // import images
 import whiteMmmLogo from "../../public/branding/white-mmm-logo-1200x488.png";

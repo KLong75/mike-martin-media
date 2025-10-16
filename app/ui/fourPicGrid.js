@@ -1,5 +1,5 @@
 //import components
-// import Image from "./image";
+// import Image from "next/image";
 import GridPic from "./gridPic";
 // import from next
 // import Link from "next/link";
@@ -10,25 +10,25 @@ export default function FourPicGrid() {
   return (
     <div className="flex justify-center w-full">
       <div className="grid grid-cols-2 w-full h-full">
-      {gridPics.map((gridPic) => (
-        <GridPic
-          key={gridPic.label}
-          label={gridPic.label}
-          href={gridPic.href}
-          alt={gridPic.alt}
-          src={gridPic.src}
-          width={gridPic.width}
-          height={gridPic.height}
-          priority={gridPic.priority}
-        />
-      ))}
-      </div>  
+        {gridPics.map((gridPic) => (
+          <GridPic
+            key={gridPic.label}
+            label={gridPic.label}
+            href={gridPic.href}
+            alt={gridPic.alt}
+            src={gridPic.src}
+            width={gridPic.width}
+            height={gridPic.height}
+            priority={gridPic.priority}
+          />
+        ))}
+      </div>
     </div>
   );
 }
 
 // //import components
-// import Image from "./image";
+// import Image from "next/image";
 // import GridPic from "./gridPic";
 // // import from next
 // import Link from "next/link";
@@ -120,9 +120,8 @@ export default function FourPicGrid() {
 //   );
 // }
 
-
 // import components
-// import Image from "./image";
+// import Image from "next/image";
 // import from next
 // import Link from "next/link";
 
