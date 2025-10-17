@@ -28,10 +28,9 @@ export default function CapabilityHighLightsSection({
           <MuxVideoPlayer
             playbackId={video_src}
             title={video_title}
-            autoPlay={true}
+            autoPlay={false}
             loop={true}
             muted={true}
-            className="bg-white"
           />
         </div>
         <div className="flex justify-center px-6 ">

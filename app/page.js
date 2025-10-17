@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main>
       <BannerVideoWithFadeEffect
-        src="HCzGV1FOwCPf6qOVtFyMzj6Cv83GxGZMH5M0193zd01EU"
+        src="L5JuSo02xaPTfj00YJr5W6ugZd6CDeuVa42DkDM6XjU9I"
         title="Mike Martin Media - Ideas in Motion"
         containerClassName="padding-top-42-19"
         autoPlay={true}
@@ -61,7 +61,7 @@ export default function Home() {
           src="PtWJLW7g8zmVIlrDUQrHas45MGty0102w4tH9tiGwZIyQ"
           title="Mike Martin Media | Our Work"
           containerClassName="padding-top-42-19"
-          autoPlay={true}
+          autoPlay={false}
           loop={true}
           muted={true}
         />
