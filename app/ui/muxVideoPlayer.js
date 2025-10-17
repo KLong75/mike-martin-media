@@ -39,9 +39,9 @@ export default function MuxVideoPlayer({
     console.log(`Video playing: ${title}`);
   };
 
-  const handlePaused = () => {
-    console.log(`Video paused: ${title}`);
-  };
+  // const handlePaused = () => {
+  //   console.log(`Video paused: ${title}`);
+  // };
 
   const handleVideoEnded = () => {
     track("Full video play", { video: title });
@@ -111,7 +111,7 @@ export default function MuxVideoPlayer({
       )}
       <div ref={playerRef}>
         <MuxPlayer
-          paused={isPaused || !inViewport && handlePaused()}
+          paused={isPaused || !inViewport}
           playbackId={playbackId}
           title={title}
           autoPlay={autoPlay}
