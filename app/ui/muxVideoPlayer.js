@@ -80,6 +80,20 @@ export default function MuxVideoPlayer({
     return () => observer.disconnect();
   }, []);
 
+  // useEffect(() => {
+  //   const observer = new window.IntersectionObserver(
+  //     ([entry]) => {
+  //       setInViewport(entry.isIntersecting);
+  //       if (!entry.isIntersecting) {
+  //         console.log(`Video "${title}" paused because it left the viewport`);
+  //       }
+  //     },
+  //     { threshold: 0.25 } // Adjust as needed
+  //   );
+  //   if (containerRef.current) observer.observe(containerRef.current);
+  //   return () => observer.disconnect();
+  // }, [title]);
+
   return (
     <div className="relative w-full" ref={containerRef}>
       {isPaused && (
