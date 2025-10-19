@@ -5,9 +5,9 @@ import BackLink from "@/app/ui/backLink";
 import BlogPost from "@/app/ui/blogPost";
 // import data
 import { blogPosts } from "@/app/lib/blogPostData";
+import { siteUrl } from "@/app/lib/site-url";
+// import images
 import goldenGateBridge from "../../../../public/images/blog-page/golden-gate-bridge.jpg";
-
-const siteUrl = "https://www.mikemartinmedia.com";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
