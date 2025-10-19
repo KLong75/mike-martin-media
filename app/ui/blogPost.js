@@ -1,5 +1,5 @@
 // import from utils
-import { formatDate } from "../lib/utils";
+// import { formatDate } from "../lib/utils";
 // import components
 import Image from "./image";
 
@@ -15,7 +15,7 @@ export default function BlogPost({post}) {
           {post.title}
         </h1>
         <h2 className="text-sm lg:text-lg mt-2 md:mt-4">
-          {formatDate(post.post_date)}
+          {post.post_date}
         </h2>
       </div>
       <div className="flex flex-col">
