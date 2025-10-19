@@ -9,30 +9,30 @@ import { siteUrl } from "@/app/lib/site-url";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const video = workSampleData.find((video) => video.slug === slug);
+  const sample = workSampleData.find((sample) => sample.slug === slug);
 
-  if (!video) {
+  if (!sample) {
     return {
-      title: "Video not found",
+      title: "Sample not found",
       description: "",
     };
   }
   
   return {
-    title: `${video.title}`,
-    description: video.description,
+    title: `${sample.title}`,
+    description: sample.description,
     alternates: {
-      canonical: `/${video.slug}`,
+      canonical: `/${sample.slug}`,
     },
     openGraph: {
       type: "website",
       locale: "en_US",
-      url: `${siteUrl}/blog/posts/${video.slug}`,
-      title: `Mike Martin Media Blog | Our Work: ${video.title}`,
-      description: video.description,
+      url: `${siteUrl}/blog/posts/${sample.slug}`,
+      title: `Mike Martin Media Blog | Our Work: ${sample.title}`,
+      description: sample.description,
       images: [
         {
-          url: `${siteUrl}${video.image_src}`,
+          url: `${siteUrl}${sample.image_src}`,
           width: video.image_width || 1200,
           height: video.image_height || 630,
         },
@@ -40,13 +40,13 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       cardType: "summary_large_image",
-      title: `Mike Martin Media Blog | Our Work: ${video.title}`,
-      description: video.description,
+      title: `Mike Martin Media Blog | Our Work: ${sample.title}`,
+      description: sample.description,
       images: [
         {
-          url: `${siteUrl}${video.image_src}`,
-          width: video.image_width || 1200,
-          height: video.image_height || 630,
+          url: `${siteUrl}${sample.image_src}`,
+          width: sample.image_width || 1200,
+          height: sample.image_height || 630,
         },
         // {
         //   url: ,

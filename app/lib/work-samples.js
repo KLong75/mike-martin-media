@@ -6,6 +6,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/synergy-living-cover.jpg",
     src: "https://player.vimeo.com/video/1024802262?h=7af899a007&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-drone",
+    slug: "synergy-living-kirkwood-development",
   },
   {
     category: ["Corporate", "Video Editing", "Video Production", "Animation"],
@@ -13,6 +14,8 @@ export const workSampleData = [
     title: "FSI Facilities",
     image_src: "/images/work-gallery-cover-images/fsi-cover.jpg",
     src: "https://player.vimeo.com/video/1035739098?h=7af899a007&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "fsi-facilities",
   },
   {
     category: ["Nonprofit", "Video Editing", "Video Production"],
@@ -21,6 +24,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/jcs-cover.jpg",
     src: "https://player.vimeo.com/video/838407827?h=3668c77c36&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-video-production",
+    slug: "jcs-gala",
   },
   {
     category: ["Nonprofit", "Video Editing", "Video Production"],
@@ -29,6 +33,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/uso-of-mo-cover.jpg",
     src: "https://player.vimeo.com/video/792679501?h=8a339c0ff3&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-video-editing",
+    slug: "uso-holiday-block-leave",
   },
   {
     category: ["Corporate", "Drone", "Video Editing", "Video Production"],
@@ -37,6 +42,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/artco-cover.jpg",
     src: "https://player.vimeo.com/video/901619462?h=4ab57402b0&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-drone",
+    slug: "artco-recruitment",
   },
   {
     category: ["Corporate", "Drone", "Video Editing", "Video Production"],
@@ -45,6 +51,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/mmm-cover.jpg",
     src: "https://player.vimeo.com/video/799944146?h=7ce1e106da&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-video-editing",
+    slug: "mmm-grand-center",
   },
   {
     category: ["Corporate", "Drone", "Video Editing", "Video Production"],
@@ -53,6 +60,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/gsem-cover.jpg",
     src: "https://player.vimeo.com/video/796701498?h=2711ae04fb&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-drone",
+    slug: "girl-scouts-paddle-raise",
   },
   {
     category: ["Corporate", "Video Editing", "Video Production"],
@@ -61,6 +69,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/mitek-cover.jpg",
     src: "https://player.vimeo.com/video/1090508426?h=db45733c16&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-video-editing",
+    slug: "mitek-houston-groundbreaking",
   },
   {
     category: ["Corporate", "Video Editing", "Video Production"],
@@ -69,6 +78,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/club-fitness-share-cover.jpg",
     src: "https://player.vimeo.com/video/1050824685?h=0a70bae50f&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-video-production",
+    slug: "club-fitness-share-to-inspire",
   },
   {
     category: ["Corporate", "Video Editing", "Video Production", "Drone"],
@@ -77,6 +87,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/mati-cover.jpg",
     src: "https://player.vimeo.com/video/862940886?h=48731807d6&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-drone",
+    slug: "music-at-the-intersection-highlight",
   },
   {
     category: ["Corporate", "Video Editing", "Video Production", "Drone"],
@@ -85,6 +96,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/five-star-auto-cover.jpg",
     src: "https://player.vimeo.com/video/755292157?h=e641dc365b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-video-production",
+    slug: "five-star-auto-body",
   },
   {
     category: ["Education", "Drone", "Video Editing", "Video Production"],
@@ -92,6 +104,8 @@ export const workSampleData = [
     title: "Recruitment",
     image_src: "/images/work-gallery-cover-images/eden-theological-cover.jpg",
     src: "https://player.vimeo.com/video/829943828?h=c4be815d3e&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "eden-theological-seminary",
   },
   {
     category: ["Education", "Video Editing", "Video Production"],
@@ -99,6 +113,8 @@ export const workSampleData = [
     title: "Training Demo",
     image_src: "/images/work-gallery-cover-images/murphy-company-cover.jpg",
     src: "https://player.vimeo.com/video/823476966?h=4efdfbf093&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "murphy-company-training-demo",
   },
   {
     category: ["Education", "Video Editing", "Video Production"],
@@ -107,6 +123,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/wash-u-cover.jpg",
     src: "https://player.vimeo.com/video/880289545?h=3226a6bf33&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-video-production",
+    slug: "washington-university-founders-day",
   },
   {
     category: ["Education", "Video Editing", "Video Production"],
@@ -114,6 +131,8 @@ export const workSampleData = [
     title: "Demo",
     image_src: "/images/work-gallery-cover-images/johnston-sales-cover.jpg",
     src: "https://player.vimeo.com/video/802838459?h=8ee67196b0&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "johnstone-sales-demo",
   },
   {
     category: ["Education", "Video Editing", "Video Production"],
@@ -121,6 +140,8 @@ export const workSampleData = [
     title: "Big Idea Bounce Contest",
     image_src: "/images/work-gallery-cover-images/wash-u-olin-cover.jpg",
     src: "https://player.vimeo.com/video/820666152?h=e4f8f6c5f6&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "washington-university-olin-business-school",
   },
   {
     category: ["Education", "Video Editing", "Video Production"],
@@ -129,6 +150,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/bio-stl-cover.jpg",
     src: "https://player.vimeo.com/video/849274086?h=843ea55285&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-video-production",
+    slug: "biostl-internships",
   },
   {
     category: ["Medical", "Video Editing", "Video Production"],
@@ -137,6 +159,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/ssm-cardinal-glennon-cover.jpg",
     src: "https://player.vimeo.com/video/872654095?h=2fbe224539&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-video-editing",
+    slug: "ssm-cardinal-glennon-residency-recruitment",
   },
   {
     category: ["Medical", "Video Editing", "Video Production", "Drone"],
@@ -145,6 +168,8 @@ export const workSampleData = [
     image_src:
       "/images/work-gallery-cover-images/wash-u-emergency-med-cover.jpg",
     src: "https://player.vimeo.com/video/866533299?h=90843c1f39&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "washington-university-emergency-medicine-residency-recruitment",
   },
   {
     category: ["Medical", "Video Editing", "Video Production", "Drone"],
@@ -153,6 +178,7 @@ export const workSampleData = [
     src: "https://player.vimeo.com/video/900179612?h=690b0e7751&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     image_src: "/images/work-gallery-cover-images/wash-u-nm-med-cover.jpg",
     featured: "featured-video-editing",
+    slug: "washington-university-neuromuscular-medicine-fellowship-recruitment",
   },
   {
     category: ["Medical", "Video Editing", "Video Production", "Drone"],
@@ -160,6 +186,8 @@ export const workSampleData = [
     title: "Brain Tumor Center",
     image_src: "/images/work-gallery-cover-images/siteman-cover.jpg",
     src: "https://player.vimeo.com/video/842642479?h=a33d343fee&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "siteman-cancer-center-brain-tumor-center",
   },
   {
     category: ["Medical", "Video Editing", "Video Production"],
@@ -167,6 +195,8 @@ export const workSampleData = [
     title: "Duck Pluckers Ball",
     image_src: "/images/work-gallery-cover-images/alton-memorial-cover.png",
     src: "https://player.vimeo.com/video/905668122?h=44f7031f29&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "alton-memorial-hospital-foundation-duck-pluckers-ball",
   },
   {
     category: ["Medical", "Video Editing", "Video Production", "Drone"],
@@ -174,6 +204,8 @@ export const workSampleData = [
     title: "Employee Giving",
     image_src: "/images/work-gallery-cover-images/childrens-hospital-cover.jpg",
     src: "https://player.vimeo.com/video/790947100?h=a476fa3e19&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "st-louis-childrens-hospital-employee-giving",
   },
   {
     category: ["Medical", "Video Editing", "Video Production", "Drone"],
@@ -182,13 +214,16 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/ascension-cover.jpg",
     src: "https://player.vimeo.com/video/942507749?h=5211a400f9&&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-drone",
+    slug: "ascension-healthcare-st-vincent",
   },
   {
     category: ["Medical", "Video Editing", "Video Production"],
     client: "SSM Health",
-    title: "Industrial Rehabilitaion Center",
+    title: "Industrial Rehabilitation Center",
     image_src: "/images/work-gallery-cover-images/ssm-health-cover.jpg",
     src: "https://player.vimeo.com/video/943675631?h=5cd1437083&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "ssm-health-industrial-rehabilitation-center",
   },
   {
     category: ["Nonprofit", "Video Editing", "Video Production"],
@@ -196,6 +231,8 @@ export const workSampleData = [
     title: "Illumination Gala",
     image_src: "/images/work-gallery-cover-images/bjaf-gala-cover.jpg",
     src: "https://player.vimeo.com/video/840455005?h=8cf0180342&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "barnes-jewish-hospital-foundation-illumination-gala",
   },
   {
     category: ["Nonprofit", "Video Editing", "Video Production"],
@@ -204,6 +241,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/ollie-hinkle-cover.jpg",
     src: "https://player.vimeo.com/video/812985606?h=a0fe83b76b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-video-production",
+    slug: "ollie-hinkle-heart-foundation-gala",
   },
   {
     category: ["Nonprofit", "Video Editing", "Video Production"],
@@ -211,6 +249,8 @@ export const workSampleData = [
     title: "Out Loud",
     image_src: "/images/work-gallery-cover-images/cid-cover.jpg",
     src: "https://player.vimeo.com/video/825959288?h=46ba69e53b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "central-institute-for-the-deaf-out-loud",
   },
   {
     category: ["Nonprofit", "Video Editing", "Video Production"],
@@ -218,6 +258,8 @@ export const workSampleData = [
     title: "Gala Fund-A-Need",
     image_src: "/images/work-gallery-cover-images/cardinal-ritter-cover.jpg",
     src: "https://player.vimeo.com/video/1074456622?h=cf9944567e&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+    featured: "",
+    slug: "cardinal-ritter-senior-services-gala",
   },
   {
     category: ["Nonprofit", "Video Editing", "Video Production"],
@@ -225,6 +267,8 @@ export const workSampleData = [
     title: "Gala Fund-A-Need",
     image_src: "/images/work-gallery-cover-images/cystic-fibrosis-cover.jpg",
     src: "https://player.vimeo.com/video/884469475?h=38bff527f4&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "cystic-fibrosis-foundation-gala",
   },
   {
     category: ["Nonprofit", "Video Editing", "Video Production"],
@@ -232,6 +276,8 @@ export const workSampleData = [
     title: "Mission Promo",
     image_src: "/images/work-gallery-cover-images/kitm-cover.jpg",
     src: "https://player.vimeo.com/video/862525134?h=722087be67&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "kids-in-the-middle-mission-promo",
   },
   {
     category: ["Nonprofit", "Livestream", "Video Editing", "Video Production"],
@@ -240,6 +286,8 @@ export const workSampleData = [
     image_src:
       "/images/work-gallery-cover-images/provident-livestream-cover.jpg",
     src: "https://player.vimeo.com/video/1074402240?h=cb4753e100&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "spirit-of-provident-gala-livestream",
   },
   {
     category: ["Animation", "Medical", "Video Editing", "Video Production"],
@@ -248,6 +296,8 @@ export const workSampleData = [
     image_src:
       "/images/work-gallery-cover-images/childrens-hospital-animation-cover.jpg",
     src: "https://player.vimeo.com/video/823498854?h=49fb6c4ebf&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "st-louis-childrens-hospital-what-to-expect-colonoscopy",
   },
   {
     category: ["Animation", "Education", "Video Editing", "Video Production"],
@@ -255,6 +305,8 @@ export const workSampleData = [
     title: "Always Olin",
     image_src: "/images/work-gallery-cover-images/wash-u-animation-cover.jpg",
     src: "https://player.vimeo.com/video/944136129?h=701f2488bb&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "washington-university-always-olin",
   },
   {
     category: ["Animation", "Education", "Video Editing", "Video Production"],
@@ -263,6 +315,8 @@ export const workSampleData = [
     image_src:
       "/images/work-gallery-cover-images/wash-u-olin-business-animation-cover.jpg",
     src: "https://player.vimeo.com/video/823498955?h=815218068d&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "washington-university-olin-mba",
   },
   {
     category: ["Corporate", "Video Editing", "Video Production"],
@@ -270,6 +324,8 @@ export const workSampleData = [
     title: "15 Second Promo",
     image_src: "/images/work-gallery-cover-images/club-fitness-promo-cover.jpg",
     src: "https://player.vimeo.com/video/1042932679?h=8032012bdc&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "club-fitness-15-second-promo",
   },
   {
     category: ["Corporate", "Video Editing", "Video Production", "Drone"],
@@ -278,6 +334,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/mccarthy-cover.jpg",
     src: "https://player.vimeo.com/video/1004659940?h=83dc5242f5&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-drone",
+    slug: "mccarthy-building-companies-project-spotlight",
   },
   {
     category: ["Medical", "Video Editing", "Video Production"],
@@ -286,6 +343,7 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/stlouis-childrens-hospital-foundation-cover.jpg",
     src: "https://player.vimeo.com/video/930793149?h=2a6f6a2764&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-video-editing",
+    slug: "st-louis-childrens-hospital-foundation",
   },
   {
     category: ["Education", "Video Editing", "Video Production"],
@@ -293,6 +351,8 @@ export const workSampleData = [
     title: "Marianist DIL",
     image_src: "/images/work-gallery-cover-images/marianists-cover.jpg",
     src: "https://player.vimeo.com/video/942118194?h=c9ee03bedc&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "the-marianists-dil",
   },
   {
     category: ["Education", "Livestream", "Video Editing", "Video Production"],
@@ -300,6 +360,8 @@ export const workSampleData = [
     title: "Sam Fox School Awards of Distinction 2023",
     image_src: "/images/work-gallery-cover-images/sam-fox-school-cover.jpg",
     src: "https://player.vimeo.com/video/815736728?badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "sam-fox-school-awards-of-distinction-2023",
   },
   {
     category: ["Photography", "Nonprofit"],
@@ -308,6 +370,8 @@ export const workSampleData = [
     image_src:
       "/images/work-gallery-cover-images/photography/catholic-charities-gallery-cover.png",
     src: "",
+    featured: "",
+    slug: "catholic-charities-of-st-louis-photo-gallery",
   },
   {
     category: ["Photography", "Corporate"],
@@ -316,6 +380,8 @@ export const workSampleData = [
     image_src:
       "/images/work-gallery-cover-images/photography/prasino-gallery-cover.png",
     src: "",
+    featured: "",
+    slug: "prasino-photo-gallery",
   },
   {
     category: ["Photography", "Corporate"],
@@ -324,6 +390,8 @@ export const workSampleData = [
     image_src:
       "/images/work-gallery-cover-images/photography/club-fitness-gallery-cover.png",
     src: "",
+    featured: "",
+    slug: "club-fitness-photo-gallery",
   },
   {
     category: ["Video Editing", "Video Production"],
@@ -331,6 +399,8 @@ export const workSampleData = [
     title: "CID Out Loud",
     image_src: "/images/work-gallery-cover-images/cid-outloud-cover.jpg",
     src: "https://player.vimeo.com/video/1049078237?h=6f4c1feb6f&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "cid-out-loud",
   },
   {
     category: ["Video Editing", "Video Production"],
@@ -338,6 +408,8 @@ export const workSampleData = [
     title: "ET IL Social Opportunities",
     image_src: "/images/work-gallery-cover-images/evertrue-cover.jpg",
     src: "https://player.vimeo.com/video/1033942065?h=07edd2100d&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "evertrue-social-opportunities",
   },
   {
     category: ["Corporate", "Animation"],
@@ -345,6 +417,8 @@ export const workSampleData = [
     title: "Midland Wood Products",
     image_src: "/images/work-gallery-cover-images/midland-wood-products-cover.webp",
     src: "https://player.vimeo.com/video/1114310789?h=890da453be&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "midland-wood-products",
   },
 //   {
 //     category: ["Video Editing", "Video Production"],
