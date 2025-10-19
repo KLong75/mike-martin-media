@@ -19,28 +19,31 @@ export default function MuxVideoPlayer({
   loop,
   muted,
 }) {
+  // console.log(`MuxVideoPlayer: ${title} autoPlay=`, autoPlay);
+  const now = Date.now();
+  // const now = new Date().toLocaleString();
   const maxPlays = 1;
   const playerRef = useRef(null);
   const imageRef = useRef(null);
   const containerRef = useRef(null);
   const prevTimeRef = useRef(0);
   const [playCount, setPlayCount] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
-  const [inViewport, setInViewport] = useState(true);
+  const [isPaused, setIsPaused] = useState(true);
+  const [inViewport, setInViewport] = useState(false);
   const handleError = (e) => {
     console.error("Mux Player Error:", e);
   };
 
   const handleVideoDataLoaded = (e) => {
-    console.log(`Video data loaded: ${title}`);
+    console.log(`Video data loaded: ${title}, ${now}`);
   };
 
   const handleVideoPlaying = () => {
-    console.log(`Video playing: ${title}`);
+    console.log(`Video playing: ${title}, ${now}`);
   };
 
   // const handlePaused = () => {
-  //   console.log(`Video paused: ${title}`);
+  //   console.log(`Video paused: ${title}, ${now}`);
   // };
 
   const handleVideoEnded = () => {
@@ -80,6 +83,21 @@ export default function MuxVideoPlayer({
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    // Only unpause if in viewport and maxPlays not reached
+    if (inViewport && playCount < maxPlays) {
+      setIsPaused(false);
+     } else {
+      setIsPaused(true);
+      console.log(`Video "${title}" paused (inViewport: ${inViewport}, playCount: ${playCount})`);
+    }
+    // if (!inViewport) {
+    //   console.log(`Video "${title}" paused because it left the viewport`);
+    //   setIsPaused(true);
+    //   // setPlayCount(0);
+    // }
+  }, [inViewport, playCount, maxPlays]);
+
   // useEffect(() => {
   //   const observer = new window.IntersectionObserver(
   //     ([entry]) => {
@@ -95,18 +113,17 @@ export default function MuxVideoPlayer({
   // }, [title]);
 
   return (
-    <div className="relative w-full" ref={containerRef}>
-      {isPaused && (
+    <div className="relative w-full h-full" ref={containerRef}>
+      {isPaused && playCount >= maxPlays && (
         <div
           ref={imageRef}
           className="absolute inset-0 flex flex-col items-center justify-center z-10">
-          <div className="absolute inset-0 bg-black opacity-40"></div>
+          <div className="absolute inset-0 bg-black opacity-40 w-full h-full"></div>
           <Image
             priority
             src={whiteMmmLogo}
             alt="MMM logo"
             className="w-80 h-auto opacity-100 z-20"
-            // style={{ opacity: 1 }}
           />
           <button
             className="text-white z-20 hover:text-gray-300 hover:scale-105 active:scale-95"
@@ -125,7 +142,7 @@ export default function MuxVideoPlayer({
       )}
       <div ref={playerRef}>
         <MuxPlayer
-          paused={isPaused || !inViewport}
+          paused={isPaused}
           playbackId={playbackId}
           title={title}
           autoPlay={autoPlay}

@@ -60,7 +60,7 @@ export default function BannerVideoWithFadeEffect({
       <section className="grid grid-cols-1 gap-4">
         <div
           className={`relative flex justify-center transition-colors duration-24000 ease-in-out ${
-            showVideo ? "bg-white" : "bg-black"
+            showVideo ? "bg-black" : "bg-black"
           }`}>
           <div
             className={`banner-video-aspect-ratio-container w-full transition-opacity duration-6000 ease-in-out ${

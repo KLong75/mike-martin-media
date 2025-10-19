@@ -43,7 +43,9 @@ export default async function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`overflow-x-hidden ${dm_sans.variable} font-sans`}>
+      className={`overflow-x-hidden ${dm_sans.variable} font-sans`}
+      data-scroll-behavior="smooth"
+    >
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} /> 
       <PreloadResources />
       <body className={`antialiased  min-h-screen`}>
