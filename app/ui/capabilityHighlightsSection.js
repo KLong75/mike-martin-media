@@ -16,15 +16,6 @@ export default function CapabilityHighLightsSection({
       </div>
       <div className="lg:m-10 grid grid-cols-1 lg:grid-cols-2 w-full max-w-screen-2xl">
         <div className="flex justify-center items-center hidden lg:flex pl-12 pr-6">
-          {/* <iframe
-            src={video_src}
-            title="Video"
-            width="100%"
-            height="100%"
-            allow="autoplay; fullscreen"
-            loading="lazy"
-            className="w-full h-auto">
-          </iframe> */}
           <MuxVideoPlayer
             playbackId={video_src}
             title={video_title}
