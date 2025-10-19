@@ -1,11 +1,13 @@
 // import components
-import Image from "./image";
+import Image from "next/image";
 import { createElement } from "react";
 
 const validHeadingLevels = ["h1", "h2", "h3", "h4", "h5", "h6"];
 
 export default function MMMLineLogoHeading({ headline, heading_level }) {
-  const HeadingTag = validHeadingLevels.includes(heading_level) ? heading_level : "h3";
+  const HeadingTag = validHeadingLevels.includes(heading_level)
+    ? heading_level
+    : "h3";
 
   return (
     <div className="flex flex-col items-center">

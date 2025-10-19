@@ -1,7 +1,7 @@
 // import from next
 import Link from "next/link";
 // import components
-import Image from "../ui/image";
+import Image from "next/image";
 import TeamGallery from "../ui/teamGallery";
 import BannerVideoWithFadeEffect from "../ui/bannerVideoWithFadeEffect";
 import MMMLineLogoHeading from "../ui/mmmLineLogoHeading";
@@ -79,6 +79,9 @@ export default function Page() {
           src="kAKae7jrwesAEGi01wUUY3rVgViFQEKftLO7cRAPAx18"
           title="About Mike Martin Media"
           containerClassName="padding-top-42-19"
+          autoPlay={true}
+          loop={true}
+          muted={true}
         />
       </div>
       <div>

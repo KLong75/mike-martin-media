@@ -1,10 +1,9 @@
 // import from utils
 import { formatDate } from "../lib/utils";
 // import components
-import Image from "./image";
+import Image from "next/image";
 
-export default function BlogPost({post}) {
-
+export default function BlogPost({ post }) {
   if (!post) {
     return <p>Post not found</p>;
   }

@@ -88,6 +88,9 @@ export default function Page() {
         src="z56MD9KpKNo33ysimimzgmuMDLs4tl9awoh5TifQfF4"
         title="Video Animation & Motion Graphics | Mike Martin Media"
         containerClassName="padding-top-42-19"
+        autoPlay={true}
+        loop={true}
+        muted={true}
       />
       <div className="">
         <PageHeadingBanner

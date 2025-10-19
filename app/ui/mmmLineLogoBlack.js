@@ -1,7 +1,7 @@
 // import from next
 // import Image from "next/image";
 // import components
-import Image from "./image";
+import Image from "next/image";
 
 export default function MMMLineLogoBlack() {
   return (

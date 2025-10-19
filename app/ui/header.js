@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 // import components
 import Nav from "./nav";
 import SocialMediaLinks from "./socialMediaLinks";
-import Image from "./image";
+import Image from "next/image";
 // import images
 import whiteMmmLogo from "../../public/branding/white-mmm-logo-294x95.png";
 

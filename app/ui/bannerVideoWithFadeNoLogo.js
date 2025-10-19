@@ -8,6 +8,9 @@ export default function BannerVideoWithFadeNoLogo({
   src,
   title,
   containerClassName,
+  autoPlay,
+  loop,
+  muted,
 }) {
   const [showVideo, setShowVideo] = useState(false);
 
@@ -30,20 +33,14 @@ export default function BannerVideoWithFadeNoLogo({
           className={`banner-video-aspect-ratio-container w-full transition-opacity duration-2000 ease-in-out ${
             showVideo ? "opacity-100" : "opacity-0"
           }`}>
-          {/* <iframe
-            title={title}
-            src={src}
-            allow="autoplay; fullscreen; picture-in-picture"
-            className="absolute top-0 left-0 w-full h-full">
-          </iframe> */}
           <div className={`relative w-full ${containerClassName}`}>
             <div className="absolute top-0 left-0 w-full h-full">
               <MuxVideoPlayer
                 playbackId={src}
                 title={title}
-                autoPlay={true}
-                loop={true}
-                muted={true}
+                autoPlay={autoPlay}
+                loop={loop}
+                muted={muted}
               />
             </div>
           </div>

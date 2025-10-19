@@ -14,27 +14,17 @@ export default function CapabilityHighLightsSection({
       <div className="lg:px-6 2xl:px-0">
         <MMMLineLogoHeading headline={headline} heading_level={"h3"} />
       </div>
-      <div className="lg:m-10 grid grid-cols-1 md:grid-cols-2 w-full max-w-screen-2xl">
-        <div className="flex justify-center items-center hidden md:flex px-12">
-          {/* <iframe
-            src={video_src}
-            title="Video"
-            width="100%"
-            height="100%"
-            allow="autoplay; fullscreen"
-            loading="lazy"
-            className="w-full h-auto">
-          </iframe> */}
+      <div className="lg:m-10 grid grid-cols-1 lg:grid-cols-2 w-full max-w-screen-2xl">
+        <div className="flex justify-center items-center hidden lg:flex pl-12 pr-6">
           <MuxVideoPlayer
             playbackId={video_src}
             title={video_title}
-            autoPlay={true}
+            autoPlay={false}
             loop={true}
             muted={true}
-            className="bg-white"
           />
         </div>
-        <div className="flex justify-center px-6 ">
+        <div className="flex justify-center pr-12 pl-6">
           <ul className="space-y-6 w-full">
             {highlights.map((highlight, index) => (
               <li key={index} className="relative lg:pb-6">
@@ -45,7 +35,9 @@ export default function CapabilityHighLightsSection({
                 </span>
                 <span
                   className="absolute bottom-0 left-0 border-b border-black"
-                  style={{ width: "calc(100% - 2rem)" }}></span>
+                  style={{ width: "100%" }}
+                >
+                </span>
               </li>
             ))}
           </ul>

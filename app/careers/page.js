@@ -69,6 +69,9 @@ export default function Page() {
         src="R0000d7JrkYTLaFA6ulhx001SZLeNtO88JdHeCNWIHNmlA"
         title="Mike Martin Media | We Travel"
         containerClassName="padding-top-56-25"
+        autoPlay={true}
+        loop={true}
+        muted={true}
       />
       <div>
         <PageHeadingBanner

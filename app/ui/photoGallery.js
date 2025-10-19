@@ -7,7 +7,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 // import Link from "next/link";
 // import components
-import Image from "./image";
+import Image from "next/image";
 // import from headlessui
 import {
   Dialog,
@@ -59,8 +59,7 @@ export default function PhotoGallery({
             e.preventDefault();
             handleCoverImageClick();
           }
-        }}
-      >
+        }}>
         {/* <Link href={href}> */}
         <Image
           alt={alt}

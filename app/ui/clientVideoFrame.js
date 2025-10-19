@@ -15,7 +15,7 @@ import {
 // import icons
 import { HiX } from "react-icons/hi";
 // import components
-import Image from "./image";
+import Image from "next/image";
 
 export default function ClientVideoFrame({
   src,
