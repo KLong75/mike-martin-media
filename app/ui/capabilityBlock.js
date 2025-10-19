@@ -10,7 +10,7 @@ export default function CapabilityBlock({
   description,
 }) {
   return (
-    <div className="m-2 flex flex-col bg-[#F0F0F0] p-4 xl:p-6 hover:invert transition duration-1000">
+    <div className="m-2 flex flex-col bg-[#F0F0F0] p-4 xl:p-6 hover:invert transition duration-1000 ease-in-out">
       <Link href={href} className="cursor-pointer">
         <div className="w-14 md:w-72 lg:w-96 h-auto py-4">
           <Image src={icon_src} alt="" width={96} height={96} />
