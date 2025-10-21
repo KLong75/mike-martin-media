@@ -1,15 +1,19 @@
 //import components
 // import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
-import VideoGallery from "@/app/ui/videoGallery";
+import VideoGallery from "@/app/ui/workGallery";
 import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
 import IndustrySupport from "@/app/ui/industrySupport";
 import BannerImage from "@/app/ui/bannerImage";
 //import data
-import { nonprofitPageBannerText, nonprofitSupport } from "@/app/lib/industries/nonprofit";
+import {
+  nonprofitPageBannerText,
+  nonprofitSupport,
+} from "@/app/lib/industries/nonprofit";
 
-const nonprofitPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/nonprofit-og.png";
+const nonprofitPageOgImgUrl =
+  "https://www.mikemartinmedia.com/images/open-graph/nonprofit-og.png";
 
 export const metadata = {
   title: "Nonprofit Video Production | Mike Martin Media",
@@ -32,7 +36,7 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
+      // {
       //   url: ,
       //   width: 1920,
       //   height: 1080,
@@ -61,11 +65,11 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
-        //   url: ,
-        //   width: 800,
-        //   height: 418,
-        // },
+      // {
+      //   url: ,
+      //   width: 800,
+      //   height: 418,
+      // },
     ],
   },
 };
@@ -90,7 +94,11 @@ export default function Page() {
       <div className="flex justify-center">
         <div className="w-full h-full">
           <VideoGallery
-            selectedCategories={["Nonprofit", "Video Production", "Video Editing"]}
+            selectedCategories={[
+              "Nonprofit",
+              "Video Production",
+              "Video Editing",
+            ]}
             excludedCategory={[]}
             numberOfVideos={3}
           />

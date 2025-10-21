@@ -1,6 +1,6 @@
 // import components
 import BannerVideoWithFadeEffect from "@/app/ui/bannerVideoWithFadeEffect";
-import VideoGallery from "@/app/ui/videoGallery";
+import VideoGallery from "@/app/ui/workGallery.js";
 import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import CapabilityHighLightsSection from "@/app/ui/capabilityHighlightsSection";
 import OurProcess from "@/app/ui/ourProcess";

@@ -1,15 +1,19 @@
 //import components
 // import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
-import VideoGallery from "@/app/ui/videoGallery";
+import VideoGallery from "@/app/ui/workGallery";
 import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
 import IndustrySupport from "@/app/ui/industrySupport";
 import BannerImage from "@/app/ui/bannerImage";
 //import data
-import { educationPageBannerText, educationSupport } from "@/app/lib/industries/education";
+import {
+  educationPageBannerText,
+  educationSupport,
+} from "@/app/lib/industries/education";
 
-const educationPageOgImgUrl = "https://www.mikemartinmedia.com/images/open-graph/education-og.png";
+const educationPageOgImgUrl =
+  "https://www.mikemartinmedia.com/images/open-graph/education-og.png";
 
 export const metadata = {
   title: "Education Video Production | Mike Martin Media",
@@ -32,7 +36,7 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
+      // {
       //   url: ,
       //   width: 1920,
       //   height: 1080,
@@ -61,11 +65,11 @@ export const metadata = {
         width: 1200,
         height: 630,
       },
-        // {
-        //   url: ,
-        //   width: 800,
-        //   height: 418,
-        // },
+      // {
+      //   url: ,
+      //   width: 800,
+      //   height: 418,
+      // },
     ],
   },
 };
@@ -117,4 +121,4 @@ export default function Page() {
       </div>
     </main>
   );
-};
+}

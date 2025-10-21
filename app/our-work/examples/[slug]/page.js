@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
       description: "",
     };
   }
-  
+
   return {
     title: `${sample.title}`,
     description: sample.description,
@@ -30,30 +30,68 @@ export async function generateMetadata({ params }) {
       url: `${siteUrl}/blog/posts/${sample.slug}`,
       title: `Mike Martin Media Blog | Our Work: ${sample.title}`,
       description: sample.description,
-      images: [
-        {
-          url: `${siteUrl}${sample.image_src}`,
-          width: video.image_width || 1200,
-          height: video.image_height || 630,
-        },
-      ],
+      // images: [
+      //   {
+      //     url: `${siteUrl}${sample.image_src}`,
+      //     width: sample.image_width || 1200,
+      //     height: sample.image_height || 630,
+      //   },
+      // ],
     },
     twitter: {
       cardType: "summary_large_image",
       title: `Mike Martin Media Blog | Our Work: ${sample.title}`,
       description: sample.description,
-      images: [
-        {
-          url: `${siteUrl}${sample.image_src}`,
-          width: sample.image_width || 1200,
-          height: sample.image_height || 630,
-        },
-        // {
-        //   url: ,
-        //   width: 800,
-        //   height: 418,
-        // },
-      ],
+      // images: [
+      //   {
+      //     url: `${siteUrl}${sample.image_src}`,
+      //     width: sample.image_width || 1200,
+      //     height: sample.image_height || 630,
+      //   },
+      //   // {
+      //   //   url: ,
+      //   //   width: 800,
+      //   //   height: 418,
+      //   // },
+      // ],
     },
   };
+}
+
+export default function WorkExamplePage({ params }) {
+  const { slug } = params;
+  const sample = workSampleData.find((sample) => sample.slug === slug);
+  console.log("work sample:", sample);
+  const isPhotography = sample?.category.includes("Photography");
+  console.log("isPhotography:", isPhotography);
+
+  if (!sample) {
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <BackLink href="/our-work" label="Back to Our Work" />
+        <h1 className="text-3xl font-bold mb-4">Sample Not Found</h1>
+        <p>The entry you are looking for does not exist.</p>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      <div className="mt-6 ml-2">
+        <BackLink href="/our-work" label="Back to Our Work" />
+      </div>
+      {isPhotography && (
+        <section className="mt-4">
+          <h1 className="text-3xl font-bold mb-4">{sample.title}</h1>
+          <h2>Photography sample</h2>
+        </section>
+      )}
+      {!isPhotography && (
+        <section className="mt-4">
+          <h1 className="text-3xl font-bold mb-4">{sample.title}</h1>
+          <h2>Video sample</h2>
+        </section>
+      )}
+    </>
+  );
 }

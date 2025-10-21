@@ -4,15 +4,15 @@ import { useEffect, useState } from "react";
 //import from next
 import { usePathname } from "next/navigation";
 // import components
-import ClientVideoFrame from "../ui/clientVideoFrame";
+import ClientVideoFrame from "./clientVideoFrame";
 // import PhotographyGallery from "./photographyGallery";
-import PhotoGallery from "./photoGallery";
+// import PhotoGallery from "./photoGallery";
 // import data
 import { workSampleData } from "../lib/work-samples";
 // import icons
 import { IoCloseCircleOutline } from "react-icons/io5";
 
-export default function VideoGallery({
+export default function WorkGallery({
   selectedCategories,
   excludedCategory,
   numberOfVideos,
@@ -47,9 +47,27 @@ export default function VideoGallery({
     );
 
     return (
-      isFeaturedMatch && matchesAllSelectedCategories && isNotExclusivelyExcluded
+      isFeaturedMatch &&
+      matchesAllSelectedCategories &&
+      isNotExclusivelyExcluded
     );
   });
+
+  const [isPageLoaded, setIsPageLoaded] = useState(false);
+
+  useEffect(() => {
+    if (document.readyState === "complete") {
+      setIsPageLoaded(true);
+    } else {
+      const handleLoad = () => setIsPageLoaded(true);
+      window.addEventListener("load", handleLoad);
+      return () => window.removeEventListener("load", handleLoad);
+    }
+  }, []);
+
+  if (!isPageLoaded) {
+    return null;
+  }
 
   return (
     <div className="flex justify-center w-full bg-black">
@@ -69,11 +87,10 @@ export default function VideoGallery({
             filteredVideos.length <= 2
               ? "lg:grid-cols-2"
               : "lg:grid-cols-3"
-          }`}
-        >
+          }`}>
           {filteredVideos.slice(0, numberOfVideos).map((video, index) => (
             <div key={index} className="text-white w-full h-auto">
-              {video.category.includes("Photography") ? (
+              {/* {video.category.includes("Photography") ? (
                 <PhotoGallery
                   src={video.image_src}
                   client={video.client}
@@ -84,19 +101,22 @@ export default function VideoGallery({
                   width={1920}
                   height={1080}
                 />
-              ) : (
-                <ClientVideoFrame
-                  src={video.src}
-                  client={video.client}
-                  title={video.title}
-                  category={video.category}
-                  image_src={video.image_src}
-                />
-              )}
+              ) : ( */}
+              <ClientVideoFrame
+                src={video.src}
+                client={video.client}
+                title={video.title}
+                category={video.category}
+                image_src={video.image_src}
+                slug={video.slug}
+              />
+              {/* )} */}
             </div>
-          ))}
+          )
+          )}
         </div>
-      )}
+      )
+      }
     </div>
   );
 }

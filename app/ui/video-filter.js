@@ -3,7 +3,7 @@
 import { useState } from "react";
 // import components
 import VideoCategories from "@/app/ui/videoCategories";
-import VideoGallery from "@/app/ui/videoGallery";
+import WorkGallery from "@/app/ui/workGallery";
 
 export default function VideoFilter() {
   const [selectedCategories, setSelectedCategories] = useState(["All"]);
@@ -21,7 +21,7 @@ export default function VideoFilter() {
         />
       </div>
       <div>
-        <VideoGallery
+        <WorkGallery
           selectedCategories={selectedCategories}
           excludedCategory={[""]}
           clearSelectedCategories={clearSelectedCategories}

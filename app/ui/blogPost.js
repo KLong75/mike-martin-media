@@ -9,7 +9,7 @@ export default function BlogPost({ post }) {
   }
   return (
     <>
-      <div className="flex flex-col items-center p-12 ">
+      <div className="flex flex-col items-center p-12">
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 text-center">
           {post.title}
         </h1>
