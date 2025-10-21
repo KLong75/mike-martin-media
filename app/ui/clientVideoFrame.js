@@ -1,32 +1,32 @@
 "use client";
 // import from vercel
-import { track } from "@vercel/analytics";
+// import { track } from "@vercel/analytics";
 // import from next
 import Link from "next/link";
 // import from react
-import { useState } from "react";
+// import { useState } from "react";
 // import from headlessui
-import {
-  Dialog,
-  DialogPanel,
-  DialogBackdrop,
-  DialogTitle,
-} from "@headlessui/react";
+// import {
+//   Dialog,
+//   DialogPanel,
+//   DialogBackdrop,
+//   DialogTitle,
+// } from "@headlessui/react";
 // import icons
-import { HiX } from "react-icons/hi";
+// import { HiX } from "react-icons/hi";
 // import components
 import Image from "next/image";
 
 export default function ClientVideoFrame({
-  src,
+  // src,
   client,
   title,
   category,
   image_src,
   slug,
 }) {
-  const [videoWindowOpen, setVideoWindowOpen] = useState(false);
-  const [imageVisible, setImageVisible] = useState(true);
+  // const [videoWindowOpen, setVideoWindowOpen] = useState(false);
+  // const [imageVisible, setImageVisible] = useState(true);
 
   // const handleClick = () => {
   //   setImageVisible(false);
@@ -34,10 +34,10 @@ export default function ClientVideoFrame({
   //   track("video view", { video: `${client} - ${title}` });
   // };
 
-  const handleDialogClose = () => {
-    setImageVisible(true);
-    setVideoWindowOpen(false);
-  };
+  // const handleDialogClose = () => {
+  //   setImageVisible(true);
+  //   setVideoWindowOpen(false);
+  // };
 
   return (
     <>
