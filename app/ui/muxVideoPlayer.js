@@ -18,6 +18,7 @@ export default function MuxVideoPlayer({
   autoPlay,
   loop,
   muted,
+  className,
 }) {
   // console.log(`MuxVideoPlayer: ${title} autoPlay=`, autoPlay);
   const now = Date.now();
@@ -156,6 +157,7 @@ export default function MuxVideoPlayer({
           onEnded={handleVideoEnded}
           // onCanPlayThrough={handleCanPlayThrough}
           onTimeUpdate={handleTimeUpdate}
+          className={className}
         />
       </div>
     </div>

@@ -81,6 +81,7 @@ export default function BannerVideoWithFadeEffect({
                   autoPlay={autoPlay}
                   loop={loop}
                   muted={muted}
+                  className="auto-play-banner-video"
                 />
               </div>
             </div>

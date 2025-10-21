@@ -48,11 +48,11 @@ export default function ScrollToTopButton() {
   };
 
   return (
-    <div className="flex ml-auto z-50">
+    // <div className="flex ml-auto z-50">
       <button
         aria-label="scroll to top button"
         name="scroll to top button"
-        className={`scroll-to-top-button fixed bottom-4 right-4 rounded-full bg-black p-2 w-12 hover:bg-gray-800 hover:transform hover:scale-110 transition-all duration-300 ease-in-out ${
+        className={`z-50 scroll-to-top-button fixed bottom-4 right-4 rounded-full bg-black p-2 w-12 hover:bg-gray-800 hover:transform hover:scale-110 transition-all duration-300 ease-in-out ${
           scrollToTopButtonVisible ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         onClick={scrollToTop}
@@ -61,6 +61,6 @@ export default function ScrollToTopButton() {
       >
         <HiOutlineArrowUp size={24} className="h-8 w-8" color="white" />
       </button>
-    </div>
+    // </div>
   );
 }

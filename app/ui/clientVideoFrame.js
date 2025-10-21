@@ -56,9 +56,7 @@ export default function ClientVideoFrame({
         >
           <Image
             id="video-thumbnail"
-            className={`w-full h-full object-cover transform transition-transform duration-2000 group-hover:scale-125 ease-in-out ${
-              imageVisible ? "" : "hidden"
-            }`}
+            className={`w-full h-full object-cover transform transition-transform duration-2000 group-hover:scale-125 ease-in-out `}
             src={image_src}
             height={540}
             width={960}
@@ -70,9 +68,7 @@ export default function ClientVideoFrame({
             className="lg:opacity-0 group-hover:opacity-100 duration-2000 ease-in-out"
             id="client-and-category-div">
             <span
-              className={`video-frame-client-span absolute font-bold text-left text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl ${
-                imageVisible ? "" : "hidden"
-              }`}>
+              className={`video-frame-client-span absolute font-bold text-left text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl`}>
               {client}
             </span>
             <span className="video-frame-category-span text-left absolute text-xs lg:text-sm font-bold">

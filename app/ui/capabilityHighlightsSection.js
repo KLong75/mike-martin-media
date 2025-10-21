@@ -22,6 +22,7 @@ export default function CapabilityHighLightsSection({
             autoPlay={false}
             loop={true}
             muted={true}
+            className="auto-play-banner-video"
           />
         </div>
         <div className="flex justify-center pr-12 pl-6">

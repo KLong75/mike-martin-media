@@ -301,7 +301,8 @@ a.cky-banner-element {
   }
 } */
 
-mux-player {
+/* mux-player { */
+.auto-play-banner-video {
   /* Hide all controls at once */
   --controls: none;
   

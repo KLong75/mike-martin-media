@@ -81,15 +81,22 @@ export default function WorkExamplePage({ params }) {
         <BackLink href="/our-work" label="Back to Our Work" />
       </div>
       {isPhotography && (
-        <section className="mt-4">
-          <h1 className="text-3xl font-bold mb-4">{sample.title}</h1>
-          <h2>Photography sample</h2>
+        <section className="">
+          <h1 className="text-xl font-bold ">{sample.client}</h1>
+          <h2>{sample.title}</h2>
         </section>
       )}
       {!isPhotography && (
-        <section className="mt-4">
-          <h1 className="text-3xl font-bold mb-4">{sample.title}</h1>
-          <h2>Video sample</h2>
+        <section className="p-12 text-center">
+          <h1 className="text-xl font-bold">{sample.client}</h1>
+          <h2>{sample.title}</h2>
+          <MuxVideoPlayer
+            playbackId={sample.playback_id}
+            title={sample.title}
+            autoPlay={false}
+            loop={false}
+            muted={false}
+          />
         </section>
       )}
     </>
