@@ -1,4 +1,3 @@
-import { NonceProvider } from "./NonceContext";
 // import from react
 import React from "react";
 // import from vercel
@@ -8,6 +7,9 @@ import { headers } from "next/headers";
 import Script from "next/script";
 // import from next/third-parties
 import { GoogleTagManager } from "@next/third-parties/google";
+// import context
+import { NonceProvider } from "../context/NonceContext";
+import { PreviousRouteProvider } from "../context/previous-route-context";
 // import components
 import { PreloadResources } from "./preload-resources";
 import Header from "./ui/header";
@@ -44,9 +46,8 @@ export default async function RootLayout({ children }) {
     <html
       lang="en"
       className={`overflow-x-hidden ${dm_sans.variable} font-sans`}
-      data-scroll-behavior="smooth"
-    >
-      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} /> 
+      data-scroll-behavior="smooth">
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} />
       <PreloadResources />
       <body className={`antialiased  min-h-screen`}>
         <noscript>
@@ -56,11 +57,10 @@ export default async function RootLayout({ children }) {
             width="0"
             // style={{ display: "none", visibility: "hidden" }}
             title="Google Tag Manager"
-            className="hidden"
-          >
-          </iframe>
+            className="hidden"></iframe>
         </noscript>
         <NonceProvider nonce={nonce}>
+      <PreviousRouteProvider>
           <Header />
           {children}
           <ScrollToTopButton />
@@ -113,6 +113,7 @@ export default async function RootLayout({ children }) {
           strategy="afterInteractive"
           nonce={nonce}
         /> */}
+        </PreviousRouteProvider>
         </NonceProvider>
       </body>
     </html>

@@ -2,13 +2,13 @@
 //import from next
 import Script from "next/script";
 // import { headers } from "next/headers";
-import { useNonce } from "../NonceContext";
+import { useNonce } from "../../context/NonceContext";
 
 export default function ActiveCampaignContactForm() {
   // const headersList = await headers();
   // const nonce = headersList.get("x-nonce");
   const nonce = useNonce();
-  
+
   return (
     <>
       <Script
@@ -19,4 +19,4 @@ export default function ActiveCampaignContactForm() {
       <div className="_form_1 px-4 sm:px-0"></div>
     </>
   );
-};
+}

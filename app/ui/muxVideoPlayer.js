@@ -15,7 +15,7 @@ import { BsPlayBtnFill } from "react-icons/bs";
 export default function MuxVideoPlayer({
   playbackId,
   title,
-  autoPlay,
+  autoPlay = false,
   loop,
   muted,
   className,

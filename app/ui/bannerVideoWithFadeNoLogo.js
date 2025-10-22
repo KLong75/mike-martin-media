@@ -41,6 +41,7 @@ export default function BannerVideoWithFadeNoLogo({
                 autoPlay={autoPlay}
                 loop={loop}
                 muted={muted}
+                className="auto-play-banner-video"
               />
             </div>
           </div>

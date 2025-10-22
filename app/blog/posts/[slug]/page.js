@@ -83,7 +83,8 @@ export default async function BlogPostPage({ params }) {
   return (
     <>
       <div className="mt-6 ml-2">
-        <BackLink href="/blog" label="Back to Blog" />
+        {/* <BackLink href="/blog" label="Back to Blog" /> */}
+        <BackLink />
       </div>
       <div>
         <BlogPost post={post} />
