@@ -131,7 +131,7 @@ export default async function WorkExamplePage({ params }) {
         </section>
       )}
       {!isPhotography && (
-        <section className="text-center max-w-6xl 3xl:max-w-600 mx-auto w-full  p-6 md:p-12">
+        <section className="text-center max-w-6xl 3xl:max-w-600 mx-auto w-full min-h-screen p-6 md:p-12 flex flex-col justify-center">
           <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold mb-6">
             {sample.client}
           </h1>
@@ -154,7 +154,7 @@ export default async function WorkExamplePage({ params }) {
             }}
           /> */}
           <div
-            className="mx-auto  w-full"
+            className="mx-auto w-full h-full"
             style={{ aspectRatio: aspectRatio }} // or aspect-[1200/678] with Tailwind 3.2+
           >
             <MuxPlayer
