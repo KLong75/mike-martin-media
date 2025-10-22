@@ -10,6 +10,7 @@ import { createBlurUp } from "@mux/blurup";
 // import data
 import { workSampleData } from "@/app/lib/work-samples";
 import { siteUrl } from "@/app/lib/site-url";
+import { track } from "@vercel/analytics/react";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${sample.title}`,
+    title: `${sample.client} - ${sample.title}`,
     description: sample.description,
     alternates: {
       canonical: `/${sample.slug}`,
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }) {
       type: "website",
       locale: "en_US",
       url: `${siteUrl}/blog/posts/${sample.slug}`,
-      title: `Mike Martin Media Blog | Our Work: ${sample.title}`,
+      title: `Mike Martin Media | Our Work | ${sample.client} - ${sample.title}`,
       description: sample.description,
       // images: [
       //   {
@@ -44,7 +45,7 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       cardType: "summary_large_image",
-      title: `Mike Martin Media Blog | Our Work: ${sample.title}`,
+      title: `Mike Martin Media | Our Work | ${sample.client} - ${sample.title}`,
       description: sample.description,
       // images: [
       //   {
@@ -78,6 +79,34 @@ export default async function WorkExamplePage({ params }) {
     options
   );
   console.log("blurDataURL:", blurDataURL, "aspectRatio:", aspectRatio);
+
+  const handleError = (e) => {
+    console.error("Mux Player Error:", e);
+  };
+
+  const handleVideoPlaying = () => {
+    track("Video started", { video: title });
+    console.log(`Video started: ${title}, ${now}`);
+  };
+
+  const handleVideoEnded = () => {
+    track("Full video play", { video: title });
+    console.log(`Full video play tracked for: ${sample.title}`);
+  };
+
+  const handleTimeUpdate = (event) => {
+    const currentTime = event.target.currentTime;
+    const duration = event.target.duration;
+    const halfwayPoint = duration / 2;
+    if (
+      !event.target.halfwayTracked &&
+      currentTime >= halfwayPoint
+    ) {
+      event.target.halfwayTracked = true;
+      track("Halfway video play", { video: sample.title });
+      console.log(`Halfway video play tracked for: ${sample.title}`);
+    }
+  };
 
   if (!sample) {
     return (
@@ -142,6 +171,10 @@ export default async function WorkExamplePage({ params }) {
                 video_id: sample.playback_id,
                 video_title: sample.title,
               }}
+              // onError={handleError}
+              // onPlaying={handleVideoPlaying}
+              // onEnded={handleVideoEnded}
+              // onTimeUpdate={handleTimeUpdate}
               style={{ width: "100%", height: "100%" }}
             />
             <div className="flex justify-center">

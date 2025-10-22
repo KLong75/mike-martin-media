@@ -41,7 +41,7 @@ export default function ClientVideoFrame({
 
   return (
     <>
-      <Link href={`/our-work/examples/${slug}`}>
+      <Link href={`/our-work/portfolio/${slug}`}>
         <div
           // tabIndex={0}
           // role="button"
