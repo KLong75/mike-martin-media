@@ -49,8 +49,8 @@ export default async function PortfolioVideo({ video }) {
   //   }
   // };
   return (
-    <section className="text-center max-w-6xl 3xl:max-w-600 mx-auto w-full  p-6 md:p-12 flex flex-col justify-center items-center mb-12 lg:mb-24">
-      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold mb-6">
+    <section className="text-center  mx-auto w-full p-6 md:p-12 flex flex-col justify-center items-center">
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold mb-8">
         {video.client}
       </h1>
       {/* <h2>{sample.title}</h2> */}
@@ -96,7 +96,7 @@ export default async function PortfolioVideo({ video }) {
           style={{ width: "100%", height: "100%" }}
         /> */}
         <ClientVideoContainer video={video} />
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <Image
             src="/branding/line-logo-black.png"
             alt=""
@@ -104,7 +104,7 @@ export default async function PortfolioVideo({ video }) {
             height={65}
             className="mt-2 lg:mt-6 lg:mb-6"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

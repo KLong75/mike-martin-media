@@ -127,16 +127,28 @@ export default async function PortfolioPage({ params }) {
         {/* <BackLink href="/our-work" label="Back to Our Work" /> */}
         <BackLink />
       </div>
-      {isPhotography && (
-        <section className="w-full h-full">
-          <h1 className="text-xl font-bold">{sample.client}</h1>
-          <h2>{sample.title}</h2>
-          <div className="flex justify-center items-center max-w-600 h-auto mx-auto p-6">
+      <div className="max-w-6xl 3xl:max-w-600 mx-auto">
+        {isPhotography && (
+          <div className="flex justify-center items-center w-full h-full mx-auto ">
             <PortfolioPhotoGallery client={client} />
           </div>
-        </section>
-      )}
-      {!isPhotography && <PortfolioVideo video={sample} />}
+        )}
+        {!isPhotography && (
+          <div>
+          <PortfolioVideo video={sample} />
+          </div>
+          )}
+          
+        <div className="flex justify-center">
+          <Image
+            src="/branding/line-logo-black.png"
+            alt=""
+            width={1440}
+            height={65}
+            className="mb-12"
+          />
+        </div>
+      </div>
     </>
   );
 }
