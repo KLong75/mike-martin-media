@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 // import components
 import Image from "next/image";
-import MuxVideoPlayer from "./muxVideoPlayer";
+import MuxBannerVideo from "./muxBannerVideo";
 // import images
 import whiteMmmLogo from "../../public/branding/white-mmm-logo-1200x488.png";
 
@@ -75,7 +75,7 @@ export default function BannerVideoWithFadeEffect({
             </iframe> */}
             <div className={`relative w-full ${containerClassName}`}>
               <div className="absolute top-0 left-0 w-full h-full">
-                <MuxVideoPlayer
+                <MuxBannerVideo
                   playbackId={src}
                   title={title}
                   autoPlay={autoPlay}

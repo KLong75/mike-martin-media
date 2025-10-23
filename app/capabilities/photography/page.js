@@ -6,6 +6,7 @@ import OurProcess from "@/app/ui/ourProcess";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
 import FormattedList from "@/app/ui/formattedList.js";
+import VideoGallery from "@/app/ui/workGallery.js";
 // import page data
 import {
   photographyPageHeadingBannerText,
@@ -99,8 +100,17 @@ export default function Page() {
           text={photographyPageHeadingBannerText.text}
         />
       </div>
-      <div className="">
+      {/* <div className="">
         <TriPicBanner />
+      </div> */}
+      <div className="flex justify-center">
+        <div className="w-full h-full">
+          <VideoGallery
+            selectedCategories={["Photography"]}
+            excludedCategory={[]}
+            numberOfVideos={3}
+          />
+        </div>
       </div>
       <div className="pb-8 lg:py-28">
         <CapabilityHighLightsSection

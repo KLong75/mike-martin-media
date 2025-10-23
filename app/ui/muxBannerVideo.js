@@ -12,7 +12,7 @@ import whiteMmmLogo from "../../public/branding/white-mmm-logo-1200x488.png";
 // import from react-icons
 import { BsPlayBtnFill } from "react-icons/bs";
 
-export default function MuxVideoPlayer({
+export default function MuxBannerVideo({
   playbackId,
   title,
   autoPlay = false,
@@ -20,7 +20,7 @@ export default function MuxVideoPlayer({
   muted,
   className,
 }) {
-  // console.log(`MuxVideoPlayer: ${title} autoPlay=`, autoPlay);
+  // console.log(`MuxBannerVideo: ${title} autoPlay=`, autoPlay);
   const now = Date.now();
   // const now = new Date().toLocaleString();
   const maxPlays = 1;
@@ -88,9 +88,11 @@ export default function MuxVideoPlayer({
     // Only unpause if in viewport and maxPlays not reached
     if (inViewport && playCount < maxPlays) {
       setIsPaused(false);
-     } else {
+    } else {
       setIsPaused(true);
-      console.log(`Video "${title}" paused (inViewport: ${inViewport}, playCount: ${playCount})`);
+      console.log(
+        `Video "${title}" paused (inViewport: ${inViewport}, playCount: ${playCount})`
+      );
     }
     // if (!inViewport) {
     //   console.log(`Video "${title}" paused because it left the viewport`);
@@ -172,7 +174,7 @@ export default function MuxVideoPlayer({
 // // import from mux
 // import MuxPlayer from "@mux/mux-player-react";
 
-// export default function MuxVideoPlayer({
+// export default function MuxBannerVideo({
 //   playbackId,
 //   title,
 //   autoPlay,

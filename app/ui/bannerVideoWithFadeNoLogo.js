@@ -2,7 +2,7 @@
 // import from react
 import { useState, useEffect } from "react";
 // import components
-import MuxVideoPlayer from "./muxVideoPlayer";
+import MuxBannerVideo from "./muxBannerVideo";
 
 export default function BannerVideoWithFadeNoLogo({
   src,
@@ -35,7 +35,7 @@ export default function BannerVideoWithFadeNoLogo({
           }`}>
           <div className={`relative w-full ${containerClassName}`}>
             <div className="absolute top-0 left-0 w-full h-full">
-              <MuxVideoPlayer
+              <MuxBannerVideo
                 playbackId={src}
                 title={title}
                 autoPlay={autoPlay}
