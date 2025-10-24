@@ -65,7 +65,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function PortfolioPage({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
   const sample = workSampleData.find((sample) => sample.slug === slug);
   const client = sample?.client || "Unknown Client";
   console.log("client:", client);
@@ -135,10 +135,9 @@ export default async function PortfolioPage({ params }) {
         )}
         {!isPhotography && (
           <div>
-          <PortfolioVideo video={sample} />
+            <PortfolioVideo video={sample} />
           </div>
-          )}
-          
+        )}
         <div className="flex justify-center">
           <Image
             src="/branding/line-logo-black.png"

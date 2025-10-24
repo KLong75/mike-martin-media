@@ -142,8 +142,10 @@ html {
 /* swiper slide */
 .swiper {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+   height: auto;
+  padding-bottom: 1rem;
 }
 
 .swiper-slide {
@@ -162,7 +164,7 @@ html {
 .swiper-button-prev {
   /* color: #fff; */
   cursor: pointer;
-}
+} 
 
 .photo-swiper {
   --swiper-navigation-color: #000000;
@@ -171,9 +173,6 @@ html {
   --swiper-pagination-bullet-inactive-color: #d3d3d3;
 }
 
-.swiper-pagination {
-  margin-top: 60px !important;
-}
 
 .scroll-to-top-button {
   transition: opacity 0.6s ease-in-out;

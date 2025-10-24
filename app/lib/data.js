@@ -123,8 +123,10 @@ export const photographyWorkSampleData = [
     client: "Club Fitness",
     alt: "Club Fitness Photo Gallery",
     categories: ["Photography"],
-    width: 3736,
-    height: 5356,
+    // width: 3736,
+    // height: 5356,
+    width: 1000,
+    height: 1434,
     images: [
       {
         title: "01",
@@ -132,7 +134,7 @@ export const photographyWorkSampleData = [
       },
       {
         title: "02",
-        src: "/images/photographyWorkSamples/clubFitness/02.jpg",
+        src: "/images/photographyWorkSamples/clubFitness/02.png",
       },
       {
         title: "03",
