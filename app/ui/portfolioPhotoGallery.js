@@ -4,6 +4,8 @@ import { track } from "@vercel/analytics/react";
 // import from next
 import Image from "next/image";
 // import Link from "next/link";
+// import from react
+import { useEffect, useRef, useState } from "react";
 // import from swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
@@ -16,19 +18,42 @@ import "swiper/css/navigation";
 import { photographyWorkSampleData } from "@/app/lib/data";
 
 export default function PortfolioPhotoGallery({ client }) {
-  console.log("PortfolioPhotoGallery client prop:", client);
+  const [fullScreenImage, setFullScreenImage] = useState(null);
+  const swiperRef = useRef(null);
   const clientPhotoData = photographyWorkSampleData.filter(
     (data) => data.client === client
   );
-  // console.log("clientPhotoData for client", client, ":", clientPhotoData);
   const clientImages = clientPhotoData[0].images;
-  console.log("clientImages:", clientImages);
   const isPrasino = client === "Prasino";
-  console.log("isPrasino:", isPrasino);
+
+  // Disable scroll and pause autoplay when fullscreen
+  useEffect(() => {
+    if (fullScreenImage !== null) {
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
+      if (swiperRef.current && swiperRef.current.autoplay) {
+        swiperRef.current.autoplay.stop();
+      }
+    } else {
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+      if (swiperRef.current && swiperRef.current.autoplay) {
+        swiperRef.current.autoplay.start();
+      }
+    }
+    // Clean up on unmount
+    return () => {
+      document.body.style.overflow = "";
+      if (swiperRef.current && swiperRef.current.autoplay) {
+        swiperRef.current.autoplay.start();
+      }
+    };
+  }, [fullScreenImage]);
+
   return (
-    <section className="text-center mx-auto w-full p-6 pb-0 md:p-12 md:pb-0 flex flex-col justify-center items-center">
-      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold mb-4 md:mb-0">
-        {`${clientPhotoData[0].client} Photo Gallery`}
+    <section className="text-center mx-auto w-full p-6 pb-0 md:p-12 md:pb-0 flex flex-col justify-center items-center font-bold">
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl md:-mb-6 ">
+        {`${clientPhotoData[0].client}`}
       </h1>
       <Swiper
         className="photo-swiper"
@@ -45,10 +70,21 @@ export default function PortfolioPhotoGallery({ client }) {
           delay: 3000,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay, EffectFade, Navigation, Pagination]}>
+        modules={[Autoplay, EffectFade, Navigation, Pagination]}
+         onSwiper={(swiper) => (swiperRef.current = swiper)}
+      >
         {clientImages.map((image, index) => (
           <SwiperSlide key={index}>
-            <div className={isPrasino ? "w-full md:p-4" : "w-full max-w-144 h-auto mx-auto"}>
+            <div
+              className={
+                isPrasino ? "w-full md:p-4" : "w-full max-w-144 h-auto mx-auto"
+              }
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                setFullScreenImage(image);
+                track("image_view", { client, image: image.title });
+              }}
+            >
               <Image
                 src={image.src}
                 alt={image.alt || "Gallery image"}
@@ -61,6 +97,22 @@ export default function PortfolioPhotoGallery({ client }) {
           </SwiperSlide>
         ))}
       </Swiper>
+      {fullScreenImage !== null && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
+          onClick={() => setFullScreenImage(null)}>
+          <Image
+            src={fullScreenImage.src}
+            alt={fullScreenImage.alt || "Gallery image"}
+            width={clientPhotoData[0].width}
+            height={clientPhotoData[0].height}
+            priority
+            // className="max-w-[90vw] max-h-[90vh] w-auto h-auto"
+            className="w-full h-full"
+            style={{ objectFit: "contain" }}
+          />
+        </div>
+      )}
     </section>
   );
 }
