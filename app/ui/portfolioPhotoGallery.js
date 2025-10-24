@@ -27,7 +27,7 @@ export default function PortfolioPhotoGallery({ client }) {
   console.log("isPrasino:", isPrasino);
   return (
     <section className="text-center mx-auto w-full p-6 pb-0 md:p-12 md:pb-0 flex flex-col justify-center items-center">
-      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold">
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold mb-4 md:mb-0">
         {`${clientPhotoData[0].client} Photo Gallery`}
       </h1>
       <Swiper
@@ -55,7 +55,7 @@ export default function PortfolioPhotoGallery({ client }) {
                 width={clientPhotoData[0].width}
                 height={clientPhotoData[0].height}
                 priority
-                className="p-12"
+                className="p-2 sm:p-6 md:p-8 lg:p-12 mb-12 sm:mb-6 md:mb-0"
               />
             </div>
           </SwiperSlide>
