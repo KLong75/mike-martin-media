@@ -14,15 +14,15 @@ import { createBlurUp } from "@mux/blurup";
 
 export default async function PortfolioVideo({ video }) {
   const categories = video?.category || [];
-  console.log("categories:", categories);
+  // console.log("categories:", categories);
   const options = {};
   const muxPlaybackId = video?.playback_id || "";
-  console.log("muxPlaybackId:", muxPlaybackId);
+  // console.log("muxPlaybackId:", muxPlaybackId);
   const { blurDataURL, aspectRatio } = await createBlurUp(
     muxPlaybackId,
     options
   );
-  console.log("blurDataURL:", blurDataURL, "aspectRatio:", aspectRatio);
+  // console.log("blurDataURL:", blurDataURL, "aspectRatio:", aspectRatio);
 
   // const handleError = (e) => {
   //   console.error("Mux Player Error:", e);

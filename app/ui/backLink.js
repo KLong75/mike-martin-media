@@ -22,7 +22,6 @@ import { usePreviousRoute } from "../../context/previous-route-context";
 
 export default function BackLink({ href, label }) {
   const previousRoute = usePreviousRoute();
-  console.log("previousRoute:", previousRoute);
   const backHref = href || previousRoute || "/";
   const backLabelPrefix = label || "Back To";
   let backLabelPage;

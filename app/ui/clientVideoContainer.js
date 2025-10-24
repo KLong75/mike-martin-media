@@ -5,7 +5,6 @@ import { track } from "@vercel/analytics/react";
 import MuxPlayer from "@mux/mux-player-react";
 
 export default function ClientVideoContainer({ video }) {
-  console.log("video in ClientVideoContainer:", video);
   let videoIndustry;
   const industries = ["Corporate", "Nonprofit", "Education", "Medical"];
   const videoCategories = video.category;
@@ -15,19 +14,16 @@ export default function ClientVideoContainer({ video }) {
       break;
     }
   }
-  console.log("videoIndustry:", videoIndustry);
   const handleError = (e) => {
     console.error("Mux Player Error:", e);
   };
 
   const handleVideoPlaying = () => {
     track("Video started", { video: video.title, client: video.client, industry: videoIndustry });
-    console.log(`Video started: ${video.client} - ${video.title}`);
   };
 
   const handleVideoEnded = () => {
     track("Full video play", { video: video.title, client: video.client, industry: videoIndustry });
-    console.log(`Full video play tracked for: ${video.client} - ${video.title}`);
   };
 
   const handleTimeUpdate = (event) => {
@@ -37,7 +33,6 @@ export default function ClientVideoContainer({ video }) {
     if (!event.target.halfwayTracked && currentTime >= halfwayPoint) {
       event.target.halfwayTracked = true;
       track("Halfway video play", { video: video.title, client: video.client, industry: videoIndustry });
-      console.log(`Halfway video play tracked for: ${video.client} - ${video.title}`);
     }
   };
   return (

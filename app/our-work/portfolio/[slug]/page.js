@@ -68,48 +68,8 @@ export default async function PortfolioPage({ params }) {
   const { slug } = await params;
   const sample = workSampleData.find((sample) => sample.slug === slug);
   const client = sample?.client || "Unknown Client";
-  console.log("client:", client);
-  console.log("work sample:", sample);
   const isPhotography = sample?.category.includes("Photography");
-  // console.log("isPhotography:", isPhotography);
   const categories = sample?.category || [];
-  console.log("categories:", categories);
-  // const options = {};
-  // const muxPlaybackId = sample?.playback_id || "";
-  // console.log("muxPlaybackId:", muxPlaybackId);
-  // const { blurDataURL, aspectRatio } = await createBlurUp(
-  //   muxPlaybackId,
-  //   options
-  // );
-  // console.log("blurDataURL:", blurDataURL, "aspectRatio:", aspectRatio);
-
-  // const handleError = (e) => {
-  //   console.error("Mux Player Error:", e);
-  // };
-
-  // const handleVideoPlaying = () => {
-  //   track("Video started", { video: title });
-  //   console.log(`Video started: ${title}, ${now}`);
-  // };
-
-  // const handleVideoEnded = () => {
-  //   track("Full video play", { video: title });
-  //   console.log(`Full video play tracked for: ${sample.title}`);
-  // };
-
-  // const handleTimeUpdate = (event) => {
-  //   const currentTime = event.target.currentTime;
-  //   const duration = event.target.duration;
-  //   const halfwayPoint = duration / 2;
-  //   if (
-  //     !event.target.halfwayTracked &&
-  //     currentTime >= halfwayPoint
-  //   ) {
-  //     event.target.halfwayTracked = true;
-  //     track("Halfway video play", { video: sample.title });
-  //     console.log(`Halfway video play tracked for: ${sample.title}`);
-  //   }
-  // };
 
   if (!sample) {
     return (
@@ -124,7 +84,6 @@ export default async function PortfolioPage({ params }) {
   return (
     <>
       <div className="mt-6 ml-2">
-        {/* <BackLink href="/our-work" label="Back to Our Work" /> */}
         <BackLink />
       </div>
       <div className="max-w-6xl 3xl:max-w-600 mx-auto">
@@ -150,66 +109,4 @@ export default async function PortfolioPage({ params }) {
       </div>
     </>
   );
-}
-
-{
-  /* <section className="text-center max-w-6xl 3xl:max-w-600 mx-auto w-full  p-6 md:p-12 flex flex-col justify-center items-center mb-12 lg:mb-24">
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold mb-6">
-            {sample.client}
-          </h1>
-          {/* <h2>{sample.title}</h2> */
-}
-{
-  /* <MuxPlayer
-            accentColor="#000"
-            playbackId={sample.playback_id}
-            // placeholder={blurDataURL}
-            title={sample.title}
-            autoPlay={false}
-            loop={false}
-            muted={true}
-            // poster="https://image.mux.com/R0000d7JrkYTLaFA6ulhx001SZLeNtO88JdHeCNWIHNmlA/thumbnail.png?width=1200&height=678&time=1.75"
-            poster={sample.image_src}
-            disableCookies={true}
-            metadata={{
-              video_id: sample.playback_id,
-              video_title: sample.title,
-              // viewer_user_id: "user-id-bc-789",
-            }}
-          /> 
-          <div
-            className="mx-auto w-full h-full"
-            style={{ aspectRatio: aspectRatio }} // or aspect-[1200/678] with Tailwind 3.2+
-          >
-            <MuxPlayer
-              accentColor="#000"
-              playbackId={sample.playback_id}
-              // placeholder={blurDataURL}
-              title={sample.title}
-              autoPlay={false}
-              loop={false}
-              muted={true}
-              poster={sample.image_src}
-              disableCookies={true}
-              metadata={{
-                video_id: sample.playback_id,
-                video_title: sample.title,
-              }}
-              // onError={handleError}
-              // onPlaying={handleVideoPlaying}
-              // onEnded={handleVideoEnded}
-              // onTimeUpdate={handleTimeUpdate}
-              style={{ width: "100%", height: "100%" }}
-            />
-            <div className="flex justify-center">
-              <Image
-                src="/branding/line-logo-black.png"
-                alt=""
-                width={1440}
-                height={65}
-                className="mt-2 lg:mt-6 lg:mb-6"
-              />
-            </div>
-          </div>
-        </section> */
 }
