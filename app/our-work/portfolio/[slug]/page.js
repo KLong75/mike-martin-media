@@ -97,7 +97,7 @@ export default async function PortfolioPage({ params }) {
             <PortfolioVideo video={sample} />
           </div>
         )}
-        <div className="flex justify-center">
+        <div className="flex justify-center px-6 md:px-12">
           <Image
             src="/branding/line-logo-black.png"
             alt=""
