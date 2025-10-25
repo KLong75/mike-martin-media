@@ -59,6 +59,7 @@ export default function PortfolioPhotoGallery({ client }) {
         className="photo-swiper"
         spaceBetween={30}
         loop={true}
+        slidesPerView={"auto"}
         effect={"fade"}
         navigation={{
           clickable: true,

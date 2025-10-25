@@ -22,8 +22,9 @@ export default function TestimonialDisplay() {
         modules={[Autoplay, Navigation]}
         autoplay={{ delay: 6000, disableOnInteraction: false }}
         navigation={{ prevEl: ".testimonial-prev", nextEl: ".testimonial-next" }}
-        loop
+        loop={true}
         slidesPerView={1}
+        slidesPerGroup={1}
         speed={2000}
         className="relative w-full max-w-4xl"
       >
