@@ -21,13 +21,15 @@ export default function TestimonialDisplay() {
       <Swiper
         modules={[Autoplay, Navigation]}
         autoplay={{ delay: 6000, disableOnInteraction: false }}
-        navigation={{ prevEl: ".testimonial-prev", nextEl: ".testimonial-next" }}
+        navigation={{
+          prevEl: ".testimonial-prev",
+          nextEl: ".testimonial-next",
+        }}
         loop={true}
         slidesPerView={1}
         slidesPerGroup={1}
         speed={2000}
-        className="relative w-full max-w-4xl"
-      >
+        className="relative w-full max-w-4xl">
         {shuffledTestimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
             <div className="flex flex-row space-x-4 lg:space-x-8 py-12 px-4 max-w-800">
@@ -38,20 +40,29 @@ export default function TestimonialDisplay() {
                 <p className="lg:text-lg xl:text-xl 2xl:text-xl lg:px-12 font-bold pr-2">
                   {testimonial.text}
                 </p>
-                <p className="text-sm lg:text-lg lg:px-12 mt-6">{testimonial.name}</p>
-                <p className="text-xs lg:text-sm italic lg:px-12">{testimonial.org}</p>
-                <p className="text-xs lg:text-sm italic lg:px-12">{testimonial.role}</p>
+                <p className="text-sm lg:text-lg lg:px-12 mt-6">
+                  {testimonial.name}
+                </p>
+                <p className="text-xs lg:text-sm italic lg:px-12">
+                  {testimonial.org}
+                </p>
+                <p className="text-xs lg:text-sm italic lg:px-12">
+                  {testimonial.role}
+                </p>
               </div>
             </div>
           </SwiperSlide>
         ))}
-
         <div className="absolute bottom-[4rem] lg:bottom-20 right-0 lg:right-24 flex space-x-2 -mb-10 p-2 pr-6 lg:pr-0 z-10">
-          <button aria-label="previous testimonial" className="testimonial-prev rounded-full border-2 p-1 cursor-pointer">
+          <button
+            aria-label="previous testimonial"
+            className="testimonial-prev rounded-full border-2 p-1 cursor-pointer">
             <FaArrowLeft size={14} />
             <span className="sr-only">previous testimonial</span>
           </button>
-          <button aria-label="next testimonial" className="testimonial-next rounded-full border-2 p-1 cursor-pointer">
+          <button
+            aria-label="next testimonial"
+            className="testimonial-next rounded-full border-2 p-1 cursor-pointer">
             <FaArrowRight size={14} />
             <span className="sr-only">next testimonial</span>
           </button>
