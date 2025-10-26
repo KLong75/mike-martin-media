@@ -124,7 +124,7 @@ export default function MuxBannerVideo({
             priority
             src={whiteMmmLogo}
             alt="MMM logo"
-            className="w-80 h-auto opacity-100 z-20"
+            className="w-40 md:w-48 lg:w-56 xl:w-64 2xl:w-72 h-auto opacity-100 z-20"
           />
           <button
             className="text-white z-20 hover:text-gray-300 hover:scale-105 active:scale-95"
@@ -137,7 +137,7 @@ export default function MuxBannerVideo({
               // }, 100);
             }}
             title={`Play ${title}`}>
-            <BsPlayBtnFill size={40} />
+            <BsPlayBtnFill size={36} />
           </button>
         </div>
       )}
