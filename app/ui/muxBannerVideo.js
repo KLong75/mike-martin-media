@@ -20,7 +20,7 @@ export default function MuxBannerVideo({
   muted,
   className,
 }) {
-  const now = Date.now();
+  // const now = Date.now();
   const maxPlays = 1;
   const playerRef = useRef(null);
   const imageRef = useRef(null);
