@@ -19,11 +19,19 @@ export default function ClientVideoContainer({ video }) {
   };
 
   const handleVideoPlaying = () => {
-    track("Video started", { video: video.title, client: video.client, industry: videoIndustry });
+    track("Video started", {
+      video: video.title,
+      client: video.client,
+      industry: videoIndustry,
+    });
   };
 
   const handleVideoEnded = () => {
-    track("Full video play", { video: video.title, client: video.client, industry: videoIndustry });
+    track("Full video play", {
+      video: video.title,
+      client: video.client,
+      industry: videoIndustry,
+    });
   };
 
   const handleTimeUpdate = (event) => {
@@ -32,7 +40,11 @@ export default function ClientVideoContainer({ video }) {
     const halfwayPoint = duration / 2;
     if (!event.target.halfwayTracked && currentTime >= halfwayPoint) {
       event.target.halfwayTracked = true;
-      track("Halfway video play", { video: video.title, client: video.client, industry: videoIndustry });
+      track("Halfway video play", {
+        video: video.title,
+        client: video.client,
+        industry: videoIndustry,
+      });
     }
   };
   return (
@@ -56,7 +68,13 @@ export default function ClientVideoContainer({ video }) {
       onPlaying={handleVideoPlaying}
       onEnded={handleVideoEnded}
       onTimeUpdate={handleTimeUpdate}
-      style={{ width: "100%", height: "100%"}}
+      style={{ width: "100%", height: "100%" }}
+      thumbnailTrack={{
+        src: `https://image.mux.com/${video.playback_id}/storyboard.vtt`, 
+        kind: "metadata",
+        srclang: "en",
+        label: "storyboard",
+      }}
     />
   );
 }
