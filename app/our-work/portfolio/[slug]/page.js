@@ -69,7 +69,7 @@ export default async function PortfolioPage({ params }) {
   const sample = workSampleData.find((sample) => sample.slug === slug);
   const client = sample?.client || "Unknown Client";
   const isPhotography = sample?.category.includes("Photography");
-  const categories = sample?.category || [];
+  // const categories = sample?.category || [];
 
   if (!sample) {
     return (

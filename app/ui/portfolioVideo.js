@@ -18,7 +18,8 @@ export default async function PortfolioVideo({ video }) {
   const options = {};
   const muxPlaybackId = video?.playback_id || "";
   // console.log("muxPlaybackId:", muxPlaybackId);
-  const { blurDataURL, aspectRatio } = await createBlurUp(
+  // const { blurDataURL, aspectRatio } = await createBlurUp(
+  const { aspectRatio } = await createBlurUp(
     muxPlaybackId,
     options
   );
