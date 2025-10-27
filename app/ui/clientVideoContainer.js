@@ -56,7 +56,7 @@ export default function ClientVideoContainer({ video }) {
       onPlaying={handleVideoPlaying}
       onEnded={handleVideoEnded}
       onTimeUpdate={handleTimeUpdate}
-      style={{ width: "100%", height: "100%" }}
+      style={{ width: "100%", height: "100%"}}
     />
   );
 }

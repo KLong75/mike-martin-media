@@ -101,7 +101,7 @@ export default function sitemap() {
         title: sample.title,
         description: sample.description,
         thumbnail_loc: sample.image_src,
-        content_loc: sample.video_src || "",
+        content_loc: sample.mux_src || "",
         player_loc: entry.url,
       };
     }

@@ -13,7 +13,7 @@ import { createBlurUp } from "@mux/blurup";
 // import { track } from "@vercel/analytics/react";
 
 export default async function PortfolioVideo({ video }) {
-  const categories = video?.category || [];
+  // const categories = video?.category || [];
   // console.log("categories:", categories);
   const options = {};
   const muxPlaybackId = video?.playback_id || "";
