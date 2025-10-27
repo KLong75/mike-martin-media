@@ -29,9 +29,9 @@ export default function CapabilityHighLightsSection({
           <ul className="space-y-6 w-full">
             {highlights.map((highlight, index) => (
               <li key={index} className="relative lg:pb-6">
-                <span className="lg:text-2xl font-bold">{highlight.label}</span>
+                <span className="lg:text-xl font-bold">{highlight.label}</span>
                 <br />
-                <span className="text-sm lg:text-xl inline-block">
+                <span className="text-sm lg:text-lg inline-block">
                   {highlight.description}
                 </span>
                 <span
