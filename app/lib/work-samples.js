@@ -31,14 +31,14 @@ export const workSampleData = [
     category: ["Nonprofit", "Video Editing", "Video Production"],
     client: "Joshua Chamberlain Society",
     description:
-      "Promotional video for the Joshua Chamberlain Society's Gala Fund-A-Need event. Produced by Mike Martin Media.",
-    title: "Gala Fund-A-Need",
+      "Promotional video for the Joshua Chamberlain Society. Produced by Mike Martin Media.",
+    title: "Joshua Chamberlain Society",
     image_src: "/images/work-gallery-cover-images/jcs-cover.jpg",
     vimeo_src:
       "https://player.vimeo.com/video/838407827?h=3668c77c36&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     mux_src: "https://player.mux.com/BH5LJ023ms4BhtIMsTbYR8NBFyvIfGuYi02CYK01CcQXPY",
     featured: "featured-video-production",
-    slug: "jcs-gala",
+    slug: "joshua-chamberlain-society",
     playback_id: "BH5LJ023ms4BhtIMsTbYR8NBFyvIfGuYi02CYK01CcQXPY",
   },
   {
@@ -371,14 +371,14 @@ export const workSampleData = [
     category: ["Nonprofit", "Video Editing", "Video Production"],
     client: "Ollie Hinkle Heart Foundation",
     description:
-      "Promotional video for the Ollie Hinkle Heart Foundation's Gala Fund-A-Need event. Produced by Mike Martin Media.",
-    title: "Gala Fund-A-Need",
+      "Promotional video for the Ollie Hinkle Heart Foundation. Produced by Mike Martin Media.",
+    title: "Ollie Hinkle Heart Foundation",
     image_src: "/images/work-gallery-cover-images/ollie-hinkle-cover.jpg",
     vimeo_src:
       "https://player.vimeo.com/video/812985606?h=a0fe83b76b&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     mux_src: "https://player.mux.com/s01s3jW6LygKI00Eihn01Botr14al1x7Nbl8RbWVNrSX74",
     featured: "featured-video-production",
-    slug: "ollie-hinkle-heart-foundation-gala",
+    slug: "ollie-hinkle-heart-foundation",
     playback_id: "s01s3jW6LygKI00Eihn01Botr14al1x7Nbl8RbWVNrSX74",
   },
   {
@@ -399,8 +399,8 @@ export const workSampleData = [
     category: ["Nonprofit", "Video Editing", "Video Production"],
     client: "Cardinal Ritter Senior Services",
     description:
-      "Promotional video for Cardinal Ritter Senior Services' Gala Fund-A-Need event. Produced by Mike Martin Media.",
-    title: "Gala Fund-A-Need",
+      "Promotional video for Cardinal Ritter Senior Services'. Produced by Mike Martin Media.",
+    title: "Cardinal Ritter Senior Services",
     image_src: "/images/work-gallery-cover-images/cardinal-ritter-cover.jpg",
     vimeo_src:
       "https://player.vimeo.com/video/1074456622?h=cf9944567e&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
@@ -413,8 +413,8 @@ export const workSampleData = [
     category: ["Nonprofit", "Video Editing", "Video Production"],
     client: "Cystic Fibrosis Foundation",
     description:
-      "Promotional video for the Cystic Fibrosis Foundation's Gala Fund-A-Need event. Produced by Mike Martin Media.",
-    title: "Gala Fund-A-Need",
+      "Promotional video for the Cystic Fibrosis Foundation. Produced by Mike Martin Media.",
+    title: "Cystic Fibrosis Foundation",
     image_src: "/images/work-gallery-cover-images/cystic-fibrosis-cover.jpg",
     vimeo_src:
       "https://player.vimeo.com/video/884469475?h=38bff527f4&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
@@ -562,10 +562,10 @@ export const workSampleData = [
     image_src: "/images/work-gallery-cover-images/sam-fox-school-cover.jpg",
     vimeo_src:
       "https://player.vimeo.com/video/815736728?badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
-    mux_src: "https://player.mux.com/lkgYelFzR02CBGGvSa00JDl902GCfp02X5Uyro7Gi00iOFhE",
+    mux_src: "https://player.mux.com/5YrtZaS2cxlVXzzK5svS49PyeL01tUnDv11c3dmLOuC4",
     featured: "",
     slug: "sam-fox-school-awards-of-distinction-2023",
-    playback_id: "lkgYelFzR02CBGGvSa00JDl902GCfp02X5Uyro7Gi00iOFhE",
+    playback_id: "5YrtZaS2cxlVXzzK5svS49PyeL01tUnDv11c3dmLOuC4",
   },
   {
     category: ["Video Editing", "Video Production"],
