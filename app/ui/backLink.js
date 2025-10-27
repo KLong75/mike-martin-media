@@ -43,6 +43,14 @@ export default function BackLink({ href, label }) {
     backLabelPage = "Live Streaming";
   } else if (previousRoute === "/capabilities/animation-motion-graphics") {
     backLabelPage = "Animation & Motion Graphics";
+  } else if (previousRoute === "/industries/corporate") {
+    backLabelPage = "Corporate";
+  } else if (previousRoute === "/industries/nonprofit") {
+    backLabelPage = "Nonprofit";
+  } else if (previousRoute === "/industries/education") {
+    backLabelPage = "Education";
+  } else if (previousRoute === "/industries/healthcare") {
+    backLabelPage = "Healthcare";
   } else {
     backLabelPage = "Previous Page";
   }
