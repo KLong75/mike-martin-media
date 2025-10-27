@@ -55,7 +55,7 @@ export default function ClientVideoContainer({ video }) {
       title={video.title}
       autoPlay={false}
       loop={false}
-      // muted={false}
+      muted={false}
       poster={video.image_src}
       disableCookies={true}
       disableTracking={true}
