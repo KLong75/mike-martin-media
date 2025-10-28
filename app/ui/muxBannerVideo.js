@@ -143,7 +143,7 @@ export default function MuxBannerVideo({
       )}
       <div ref={playerRef}>
         <MuxPlayer
-          preload="auto"
+          // preload="auto"
           paused={isPaused}
           playbackId={playbackId}
           title={title}

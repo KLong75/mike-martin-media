@@ -49,7 +49,6 @@ export default function ClientVideoContainer({ video }) {
   };
   return (
     <MuxPlayer
-      preload="auto"
       accentColor="#000"
       playbackId={video.playback_id}
       // placeholder={blurDataURL}
