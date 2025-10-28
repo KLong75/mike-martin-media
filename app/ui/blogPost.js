@@ -1,9 +1,18 @@
 // import from utils
 // import { formatDate } from "../lib/utils";
+// import from mux
+import { createBlurUp } from "@mux/blurup";
 // import components
+import ClientVideoContainer from "./clientVideoContainer";
+// import from next
 import Image from "next/image";
 
-export default function BlogPost({ post }) {
+export default async function BlogPost({ post }) {
+  const options = {};
+  const muxPlaybackId = post?.video?.playback_id || "";
+  // console.log("muxPlaybackId:", muxPlaybackId);
+  // const { blurDataURL, aspectRatio } = await createBlurUp(
+  const { aspectRatio } = await createBlurUp(muxPlaybackId, options);
   if (!post) {
     return <p>Post not found</p>;
   }
@@ -13,9 +22,7 @@ export default function BlogPost({ post }) {
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold text-center">
           {post.title}
         </h1>
-        <h2 className="text-sm lg:text-lg mt-2 md:mt-4">
-          {post.post_date}
-        </h2>
+        <h2 className="text-sm lg:text-lg mt-2 md:mt-4">{post.post_date}</h2>
       </div>
       <div className="flex flex-col">
         <div className="flex justify-center items-center px-12">
@@ -49,11 +56,20 @@ export default function BlogPost({ post }) {
           <p className="mb-4">{post.closing_tag}</p>
           <p className="-mb-4">- {post.author}</p>
         </div>
-        {post.video_src && (
+        {/* {post.vimeo_src && (
           <iframe
-            src={post.video_src}
+            src={post.vimeo_src}
             allow="autoplay; fullscreen; picture-in-picture"
             className="w-full h-80 p-4 lg:my-4"></iframe>
+        )} */}
+        {post.video && (
+          <div className="py-12">
+          <div
+            className="mx-auto w-full h-full max-w-2xl "
+            style={{ aspectRatio: aspectRatio }}>
+            <ClientVideoContainer video={post.video} />
+          </div>
+          </div>
         )}
       </div>
       <div className="max-w-3xl mx-auto flex justify-center px-6">

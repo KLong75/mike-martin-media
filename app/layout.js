@@ -11,7 +11,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import { NonceProvider } from "../context/NonceContext";
 import { PreviousRouteProvider } from "../context/previous-route-context";
 // import components
-import { PreloadResources } from "./preload-resources";
+// import { PreloadResources } from "./preload-resources";
 import Header from "./ui/header";
 import Footer from "./ui/footer";
 import ScrollToTopButton from "./ui/scrollToTop";
@@ -48,7 +48,7 @@ export default async function RootLayout({ children }) {
       className={`overflow-x-hidden ${dm_sans.variable} font-sans`}
       data-scroll-behavior="smooth">
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} />
-      <PreloadResources />
+      {/* <PreloadResources /> */}
       <body className={`antialiased  min-h-screen`}>
         <noscript>
           <iframe
@@ -60,14 +60,14 @@ export default async function RootLayout({ children }) {
             className="hidden"></iframe>
         </noscript>
         <NonceProvider nonce={nonce}>
-      <PreviousRouteProvider>
-          <Header />
-          {children}
-          <ScrollToTopButton />
-          <ActiveCampaignNewsletterSignup />
-          <Footer />
-          <Analytics />
-          {/* <Script
+          <PreviousRouteProvider>
+            <Header />
+            {children}
+            <ScrollToTopButton />
+            <ActiveCampaignNewsletterSignup />
+            <Footer />
+            <Analytics />
+            {/* <Script
             id="_next-gtm-init"
             nonce={nonce}
             strategy="afterInteractive"
@@ -82,17 +82,17 @@ export default async function RootLayout({ children }) {
             `,
             }}
           /> */}
-          <Script
-            id="wc-load-script"
-            strategy="afterInteractive"
-            nonce={nonce}
-            dangerouslySetInnerHTML={{
-              __html: `
+            <Script
+              id="wc-load-script"
+              strategy="afterInteractive"
+              nonce={nonce}
+              dangerouslySetInnerHTML={{
+                __html: `
               var $wc_load=function(a){return JSON.parse(JSON.stringify(a))},$wc_leads=$wc_leads||{doc:{url:$wc_load(document.URL),ref:$wc_load(document.referrer),search:$wc_load(location.search),hash:$wc_load(location.hash)}};
             `,
-            }}
-          />
-          {/* <Script
+              }}
+            />
+            {/* <Script
           id="wc-log-script"
           strategy="afterInteractive"
           nonce={nonce}
@@ -102,18 +102,18 @@ export default async function RootLayout({ children }) {
             `,
           }}
         /> */}
-          <Script
-            src="//s.ksrndkehqnwntyxlhgto.com/136008.js"
-            strategy="afterInteractive"
-            nonce={nonce}
-          />
-          {/* <Script
+            <Script
+              src="//s.ksrndkehqnwntyxlhgto.com/136008.js"
+              strategy="afterInteractive"
+              nonce={nonce}
+            />
+            {/* <Script
           // src="https://www.googletagmanager.com/gtm.js?id=GTM-5W7VWSTB"
           src="https://www.googletagmanager.com/gtag/js"
           strategy="afterInteractive"
           nonce={nonce}
         /> */}
-        </PreviousRouteProvider>
+          </PreviousRouteProvider>
         </NonceProvider>
       </body>
     </html>
