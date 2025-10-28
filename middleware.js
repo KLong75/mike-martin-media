@@ -36,7 +36,7 @@ export function middleware(request) {
     base-uri 'self';
     form-action 'self';
     frame-ancestors 'none';
-    frame-src 'self' https://stats.g.doubleclick.net https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://td.doubleclick.net/ https://www.googletagmanager.com/;
+    frame-src 'self' https://stats.g.doubleclick.net https://player.vimeo.com https://f.vimeocdn.com https://www.google.com https://td.doubleclick.net/ https://www.googletagmanager.com/ https://player.mux.com/;
     upgrade-insecure-requests;
   `;
 
