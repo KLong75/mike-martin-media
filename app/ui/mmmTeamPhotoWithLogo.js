@@ -5,7 +5,7 @@ export default function MMMTeamPhotoWithLogo() {
   return (
     <div className="relative w-full">
       <Image
-        priority
+        // priority
         src="/images/home-page/mmm-team-big.png"
         width={819}
         height={546}
@@ -14,7 +14,7 @@ export default function MMMTeamPhotoWithLogo() {
         className="w-full h-auto"
       />
       <Image
-        priority
+        // priority
         src="/branding/mmm-line-logo-left-white.png"
         width={708}
         height={65}
