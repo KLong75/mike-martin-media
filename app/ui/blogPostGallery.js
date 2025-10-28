@@ -44,7 +44,7 @@ export default function BlogPostGallery({ number_of_posts }) {
               post_date={post.post_date}
               closing_tag={post.closing_tag}
               author={post.author}
-              video_src={post.video_src}
+              vimeo_src={post.vimeo_src}
               priority={index === 0} // Set priority for the first blog post
               className="justify-center"
             />

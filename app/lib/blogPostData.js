@@ -41,38 +41,42 @@ export const blogPosts = [
     closing_tag: "Stay tuned—sun, shoots, and SPF.",
     author: "Luke Bradshaw",
     slug: "next-stop-san-diego",
-    description: "Luke shares his excitement about his upcoming solo travel trip to San Diego with Mike Martin Media, reflecting on his positive experiences at the company and his eagerness to explore a new city."
+    description:
+      "Luke shares his excitement about his upcoming solo travel trip to San Diego with Mike Martin Media, reflecting on his positive experiences at the company and his eagerness to explore a new city.",
   },
   {
-      title: "The end of an era",
-      post_date: "June 2025",
-      image_src: "/images/blog-page/blog-post-images/2025/2025-june-a.png",
-      image_alt: "Zoë and the MMM team",
-      image_width: 456,
-      image_height: 342,
-      second_image_src: "/images/blog-page/blog-post-images/2025/2025-june-b.png",
-      second_image_width: 456,
-      second_image_height: 342,
-      second_image_alt: "Zoë's office. How it started and how it's ending.",
-      text: [
-        "If I have not had the pleasure of meeting you yet, my name is Zoë. I started working at MMM the same day that we all moved into the new studio at 3333 in 2021. It kind of felt like everyone got a 'fresh start' at the same time. Me with the company, and everyone else with the new studio. That was four years ago now. So wow, how time flies!",
-        "In that time, both the insides and the outsides of the company look a little different. People have come and gone, we've acquired new space and new gear, and our company behaviours and habits have also changed. I definitely relate to the studio in that way. I'm four years older, I've grown so much in my career and abilities, which means I've also embraced new challenges and met new obstacles.",
-        "MMM has given me my first full-time job and an incredible introduction to the world of video production. I've learned more than I could have imagined. I made friends for a lifetime where I just expected to meet coworkers. I am definitely a different person than I was before MMM, and for the better. This incredible team of people has helped shape me into the filmmaker that I am today and I could not be more grateful for them. I am so sad to be leaving MMM after an amazing four years here, but the company will live without me (I don't know how but I am sure y'all will manage). I will never forget this company, the people it brought me, or the many lessons I've learned here. I hope y'all dont forget me either.",
-        "Time changes everything, but I can tell that the heart and soul of MMM will forever be intact.",
-      ],
-      closing_tag: "MMM, weird but in a good way -- always.",
-      author: "Zoë Calsyn",
-      slug: "end-of-an-era",
-      description: "Zoë reflects on her four years at Mike Martin Media and the changes she's seen in the company and herself as she prepares to move on to a new professional chapter."
-    },
+    title: "The end of an era",
+    post_date: "June 2025",
+    image_src: "/images/blog-page/blog-post-images/2025/2025-june-a.png",
+    image_alt: "Zoë and the MMM team",
+    image_width: 456,
+    image_height: 342,
+    second_image_src: "/images/blog-page/blog-post-images/2025/2025-june-b.png",
+    second_image_width: 456,
+    second_image_height: 342,
+    second_image_alt: "Zoë's office. How it started and how it's ending.",
+    text: [
+      "If I have not had the pleasure of meeting you yet, my name is Zoë. I started working at MMM the same day that we all moved into the new studio at 3333 in 2021. It kind of felt like everyone got a 'fresh start' at the same time. Me with the company, and everyone else with the new studio. That was four years ago now. So wow, how time flies!",
+      "In that time, both the insides and the outsides of the company look a little different. People have come and gone, we've acquired new space and new gear, and our company behaviours and habits have also changed. I definitely relate to the studio in that way. I'm four years older, I've grown so much in my career and abilities, which means I've also embraced new challenges and met new obstacles.",
+      "MMM has given me my first full-time job and an incredible introduction to the world of video production. I've learned more than I could have imagined. I made friends for a lifetime where I just expected to meet coworkers. I am definitely a different person than I was before MMM, and for the better. This incredible team of people has helped shape me into the filmmaker that I am today and I could not be more grateful for them. I am so sad to be leaving MMM after an amazing four years here, but the company will live without me (I don't know how but I am sure y'all will manage). I will never forget this company, the people it brought me, or the many lessons I've learned here. I hope y'all dont forget me either.",
+      "Time changes everything, but I can tell that the heart and soul of MMM will forever be intact.",
+    ],
+    closing_tag: "MMM, weird but in a good way -- always.",
+    author: "Zoë Calsyn",
+    slug: "end-of-an-era",
+    description:
+      "Zoë reflects on her four years at Mike Martin Media and the changes she's seen in the company and herself as she prepares to move on to a new professional chapter.",
+  },
   {
     title: "My MMM Family",
     post_date: "April 2025",
     image_src: "/images/blog-page/blog-post-images/2025/2025-april-a.png",
-    image_alt: "Adam, Kevin, and Mikey hanging out with the team mascot as they take in a ballgame.",
+    image_alt:
+      "Adam, Kevin, and Mikey hanging out with the team mascot as they take in a ballgame.",
     image_width: 456,
     image_height: 342,
-    second_image_src: "/images/blog-page/blog-post-images/2025/2025-april-b.png",
+    second_image_src:
+      "/images/blog-page/blog-post-images/2025/2025-april-b.png",
     second_image_width: 456,
     second_image_height: 342,
     second_image_alt: "Adam and Zoë enjoying a beverage.",
@@ -83,7 +87,8 @@ export const blogPosts = [
     closing_tag: "Until next time,",
     author: "Adam Buchheit",
     slug: "my-mmm-family",
-    description: "Adam reflects on the family-like atmosphere and the tight-night culture that makes working at MMM special."
+    description:
+      "Adam reflects on the family-like atmosphere and the tight-night culture that makes working at MMM special.",
   },
   {
     slug: "learning-never-stops",
@@ -105,7 +110,8 @@ export const blogPosts = [
     ],
     closing_tag: "Till next time,",
     author: "Remi Heckert",
-    description: "Remi talks about the importance of learning and growth in her new role at Mike Martin Media."
+    description:
+      "Remi talks about the importance of learning and growth in her new role at Mike Martin Media.",
   },
   {
     slug: "growth-and-gratitude",
@@ -123,9 +129,9 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Tom Young",
-    description: "Tom refelcts on 15 years of growth at Mike Martin Media."
+    description: "Tom refelcts on 15 years of growth at Mike Martin Media.",
   },
-  { 
+  {
     slug: "starting-my-career",
     title: "Starting My Career At MMM",
     post_date: "Jan 2025",
@@ -145,7 +151,8 @@ export const blogPosts = [
     ],
     closing_tag: "Keep on trekking,",
     author: "Robert",
-    description: "Robert reflects on his first few months on the job at Mike Martin Media."
+    description:
+      "Robert reflects on his first few months on the job at Mike Martin Media.",
   },
   {
     slug: "year-end-review",
@@ -165,7 +172,8 @@ export const blogPosts = [
     ],
     closing_tag: "Happy Holidays",
     author: "Clark Martin",
-    description: "Clark reflects on the year that was 2024 at Mike Martin Media."
+    description:
+      "Clark reflects on the year that was 2024 at Mike Martin Media.",
   },
   {
     slug: "note-from-ceo",
@@ -174,7 +182,8 @@ export const blogPosts = [
     image_src: `${basePath}2024/2024-nov.png`,
     image_width: 456,
     image_height: 282,
-    image_alt: "The MMM team. We work hard, play hard, and spend a lot of time laughing.",
+    image_alt:
+      "The MMM team. We work hard, play hard, and spend a lot of time laughing.",
     // second_image_src: "/images/blog-post-images/.png",
     // second_image_width: 208,
     // second_image_height: 109,
@@ -188,7 +197,7 @@ export const blogPosts = [
       "• MMM has served over 1,500 clients.",
       "• MMM has completed over 4,700 projects.",
       "• MMM has captured video in 45 states and 7 countries.",
-      
+
       "I have more equally impressive stats, but I'm not one to brag...  :)",
       "Fall is always busy for us, and 2024 is no different. I'm fortunate to have such a great team, and if you work with us you'll see why!",
     ],
@@ -196,7 +205,8 @@ export const blogPosts = [
       "https://player.vimeo.com/video/799944146?h=7ce1e106da&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     closing_tag: "Peace!",
     author: "Mike Martin",
-    description: "Mike shares some thoughts on the growth and impact of Mike Martin Media over the past 15 years."
+    description:
+      "Mike shares some thoughts on the growth and impact of Mike Martin Media over the past 15 years.",
   },
   {
     slug: "note-from-mary",
@@ -205,7 +215,8 @@ export const blogPosts = [
     image_src: `${basePath}2024/2024-oct.png`,
     image_width: 456,
     image_height: 342,
-    image_alt: "The MMM office decorated for the annual Music at the Intersection festival.",
+    image_alt:
+      "The MMM office decorated for the annual Music at the Intersection festival.",
     // second_image_src: "/images/blog-post-images/sept-2024-pic2.png",
     // second_image_width: 208,
     // second_image_height: 109,
@@ -218,7 +229,8 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Mary Scott",
-    description: "Mary talks about her first year at Mike Martin Media and the creative freedom she's been given. She describes the experience of painting a sign for the annual Music at the Intersection festival."
+    description:
+      "Mary talks about her first year at Mike Martin Media and the creative freedom she's been given. She describes the experience of painting a sign for the annual Music at the Intersection festival.",
   },
   {
     slug: "olympic-fever",
@@ -238,11 +250,18 @@ export const blogPosts = [
       "After we finished our interview and captured footage of him working out to prepare for the 2024 Paralympics in Paris, he let me hold one of his medals, a silver from the Tokyo games. Before the video shoot was over, I met his sweet little boy and we all took a photo. ",
       "Video production can take you all around the world and sometimes, you might meet some heroes, lifelong and new. Every new experience is a reminder that video production is exactly where I'm supposed to be; meeting some seemingly ordinary people who do extraordinary things. I don't get to be on-location as much as I used to when I first started producing, shooting and editing, but when I get the opportunity, I get excited all over again. Here's hoping USA Wheelchair Rugby brings home the Gold. ",
     ],
-    video_src:
+    vimeo_src:
       "https://player.vimeo.com/video/1001383081?badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
+    mux_src: "",
+    video: {
+      playback_id: "uAJfCDRMKASXG4wAjX5vSrSu4Qi8h2T2xlp5TzDY8uM",
+      title: "Club Fitness Share to Inspire - Eric Newby",
+      image_src: "https://image.mux.com/uAJfCDRMKASXG4wAjX5vSrSu4Qi8h2T2xlp5TzDY8uM/thumbnail.png?width=576&height=324&time=52",
+    },
     closing_tag: "Until next time,",
     author: "Rachel Lee",
-    description: "Rachel shares her experiences meeting Olympians Jackie Joyner-Kersee and Eric Newby."
+    description:
+      "Rachel shares her experiences meeting Olympians Jackie Joyner-Kersee and Eric Newby.",
   },
   {
     slug: "note-from-tom",
@@ -260,7 +279,8 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Tom Young",
-    description: "Tom shares his experiences traveling to Germany and France for work and pleasure."
+    description:
+      "Tom shares his experiences traveling to Germany and France for work and pleasure.",
   },
   {
     slug: "note-from-luke",
@@ -277,7 +297,8 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Luke Bradshaw",
-    description: "Luke shares his experiences working at Mike Martin Media and the fun he had with his coworkers on a camping trip."
+    description:
+      "Luke shares his experiences working at Mike Martin Media and the fun he had with his coworkers on a camping trip.",
   },
   {
     slug: "dayton-ohio-adventure",
@@ -286,7 +307,8 @@ export const blogPosts = [
     image_src: `${basePath}2024/2024-may.png`,
     image_width: 456,
     image_height: 342,
-    image_alt: "Welcome to Ohio sign on a bridge overpass viewed from the dashboard of a car",
+    image_alt:
+      "Welcome to Ohio sign on a bridge overpass viewed from the dashboard of a car",
     text: [
       "Hello and thank you for reading my blogpost! I'm Phillip, a passionate videographer and editor with Mike Martin Media. I recently embarked on a memorable work trip to Dayton, Ohio. Dayton greeted us with open arms. Although the weather was bitter cold, the welcome from our client and the town was warm. This wasn't just a business trip; it was the beginning of a story waiting to be told through our lenses.",
       "Our client's vision for corporate videos aimed at recruitment came to life over a focused three-day shoot. They shared their insights, enhancing the promotional pieces we crafted. This collaborative spirit affirmed that impactful video storytelling is as much about the message as it is about the medium.",
@@ -297,7 +319,8 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Phillip Person",
-    description: "Phillip shares his experiences on a work trip to Dayton, Ohio. He talks about the video shoots, the Dayton arcades, and the video editing process."
+    description:
+      "Phillip shares his experiences on a work trip to Dayton, Ohio. He talks about the video shoots, the Dayton arcades, and the video editing process.",
   },
   {
     slug: "out-and-about-2024",
@@ -314,7 +337,8 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Mary Scott",
-    description: "Mary shares the MMM team's adventures in 2024, including trips around the US, the eclipse, and the internal sticker competition."
+    description:
+      "Mary shares the MMM team's adventures in 2024, including trips around the US, the eclipse, and the internal sticker competition.",
   },
   {
     slug: "inside-mmm-arizona-trip",
@@ -323,7 +347,8 @@ export const blogPosts = [
     image_src: `${basePath}2023/2023-mar.png`,
     image_width: 456,
     image_height: 342,
-    image_alt: "The MMM team in action at the leadership conference in Phoenix, Arizona",
+    image_alt:
+      "The MMM team in action at the leadership conference in Phoenix, Arizona",
     text: [
       "Spring is one of MMM's busiest times of the year, perhaps even the busiest. This month has certainly been no exception. Last week we had a team fly out to Arizona for a 3-day conference, and today we touched down in China — more on that later.",
       "The leadership conference that our team captured in Phoenix provided the perfect example of the full service events we can cover, including everything from photography to live-streaming. Whether the objective was honoring award winners or recording day-long sessions, we were able to meet changing requests with ease.",
@@ -332,7 +357,8 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "MMM",
-    description: "The MMM team travels to Phoenix, Arizona for a leadership conference."
+    description:
+      "The MMM team travels to Phoenix, Arizona for a leadership conference.",
   },
   {
     slug: "reflecting-on-the-season",
@@ -353,7 +379,7 @@ export const blogPosts = [
     ],
     closing_tag: "Stay tuned to find out!",
     author: "MMM",
-    description: "The MMM team reflects on their annual Mario Kart tournament."
+    description: "The MMM team reflects on their annual Mario Kart tournament.",
   },
   {
     slug: "six-months-down-six-more-to-go",
@@ -371,7 +397,8 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "MMM",
-    description: "The MMM team reflects on the first six months of 2022 and looks forward to the next six."
+    description:
+      "The MMM team reflects on the first six months of 2022 and looks forward to the next six.",
   },
   {
     slug: "letter-from-kevin",
@@ -380,7 +407,8 @@ export const blogPosts = [
     image_src: `${basePath}2022/2022-april.png`,
     image_width: 456,
     image_height: 342,
-    image_alt: "a selfie of Kevin in front of a city skyline on a road trip for MMM",
+    image_alt:
+      "a selfie of Kevin in front of a city skyline on a road trip for MMM",
     text: [
       "I'm lucky. I'm lucky to have an amazing daughter who is in her junior year at Murray State. I'm lucky to have an amazing job at Mike Martin Media. I'm lucky to have a job where I wake up every day and love going to work. I'm lucky to get to travel all over the country as part of that job. I mean we even have a hashtag we use, #MMMgood.",
       "My work trips with Mike Martin Media come with a lot of perks. MMM client trips have taken me to cities I have been to, cities I have never been to, and cities I have always wanted to go to. Some of the best trips are when they are close to my hometown of Hagerstown, Maryland, because I can meet up with my parents for lunch or dinner after work is done.",
@@ -396,7 +424,8 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Kevin",
-    description: "Kevin expresses his gratitude for his job at Mike Martin Media and shares his experiences traveling for work."
+    description:
+      "Kevin expresses his gratitude for his job at Mike Martin Media and shares his experiences traveling for work.",
   },
   {
     slug: "note-from-rachel",
@@ -405,7 +434,8 @@ export const blogPosts = [
     image_src: `${basePath}2022/2022-march.png`,
     image_width: 456,
     image_height: 342,
-    image_alt: "Rachel from MMM in front of a camera interviewing a client during a video shoot",
+    image_alt:
+      "Rachel from MMM in front of a camera interviewing a client during a video shoot",
     text: [
       "For years, I had the pleasure of working with MMM as a client and when I made the move to being a producer on the team, it felt like I had come home.",
       "Small businesses are so integral in every workforce sector and I'm so proud of the work we do for corporations, non-profits, and educational and medical institutions around the world. The work is fast-paced and we are so nimble and able to pivot at a moment's notice. This is rare and something our clients love.",
@@ -414,7 +444,8 @@ export const blogPosts = [
     ],
     closing_tag: "",
     author: "Rachel",
-    description: "Rachel talks about the evolution of her relationship with Mike Martin Media, as a client and part of the team."
+    description:
+      "Rachel talks about the evolution of her relationship with Mike Martin Media, as a client and part of the team.",
   },
   {
     slug: "note-from-mike",
@@ -423,7 +454,8 @@ export const blogPosts = [
     image_src: `${basePath}2022/2022-feb.png`,
     image_width: 456,
     image_height: 304,
-    image_alt: "Mike Martin and some of the MMM team taking a break during a video shoot",
+    image_alt:
+      "Mike Martin and some of the MMM team taking a break during a video shoot",
     text: [
       "MMM is in full swing to start 2022!  Local shoots in St. Louis, Zoom recordings, Live Stream events and shoots from Texas to Nevada have highlighted the start to our year. We are booked for shoots from coast to coast over the next couple of months and we are looking forward to sharing our journey with all of you.",
       "Our new Midtown studio has proven to be a huge benefit for our local clients. This week, we are shooting a podcast in our brand new podcast studio. If you haven't been here yet, just reach out and we'll set up a time for a tour and grab you some lunch at one of our neighborhood favorites!",
@@ -431,6 +463,7 @@ export const blogPosts = [
     ],
     closing_tag: "Until next time,",
     author: "Mike Martin",
-    description: "Mike shares some thoughts on the start of 2022 at Mike Martin Media."
+    description:
+      "Mike shares some thoughts on the start of 2022 at Mike Martin Media.",
   },
 ];

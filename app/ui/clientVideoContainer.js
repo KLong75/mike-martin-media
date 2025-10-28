@@ -9,7 +9,7 @@ export default function ClientVideoContainer({ video }) {
   const industries = ["Corporate", "Nonprofit", "Education", "Medical"];
   const videoCategories = video.category;
   for (const industry of industries) {
-    if (videoCategories.includes(industry)) {
+    if (videoCategories && videoCategories.includes(industry)) {
       videoIndustry = industry;
       break;
     }
