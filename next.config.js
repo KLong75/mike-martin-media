@@ -171,8 +171,8 @@ const nextConfig = {
           {
             key: "Cache-Control",
             // Adjust time values as needed
-            // value: "public, max-age=600, s-maxage=1200",
-            value: "private, max-age=0, must-revalidate",
+            value: "public, max-age=600, s-maxage=1200",
+            // value: "private, max-age=0, must-revalidate",
           },
         ],
       },
