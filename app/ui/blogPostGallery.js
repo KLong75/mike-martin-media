@@ -9,7 +9,7 @@ import { blogPosts } from "../lib/blogPostData";
 // import components
 import BlogPostPreview from "./blogPostPreview";
 
-export default function BlogPostGallery({ number_of_posts }) {
+export default function BlogPostGallery({ number_of_posts, priorityFirstImage = false }) {
   const currentPath = usePathname();
   const totalPosts = blogPosts.length;
   const totalPages = Math.ceil(totalPosts / number_of_posts);
@@ -45,7 +45,7 @@ export default function BlogPostGallery({ number_of_posts }) {
               closing_tag={post.closing_tag}
               author={post.author}
               vimeo_src={post.vimeo_src}
-              priority={index === 0} // Set priority for the first blog post
+              priority={priorityFirstImage && index === 0}
               className="justify-center"
             />
           ))}

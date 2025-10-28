@@ -108,7 +108,7 @@ export default function Home() {
           <MMMLineLogoHeading headline="Beyond the Lens" heading_level={"h2"} />
         </div>
         <div className="px-2 pb-12 md:pb-6 lg:pb-0 pt-6">
-          <BlogPostGallery number_of_posts={3} />
+          <BlogPostGallery number_of_posts={3} priorityFirstImage={false} />
         </div>
       </section>
     </main>
