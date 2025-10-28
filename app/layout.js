@@ -10,11 +10,9 @@ import { GoogleTagManager } from "@next/third-parties/google";
 // import context
 import { PreviousRouteProvider } from "../context/previous-route-context";
 // import components
-// import { PreloadResources } from "./preload-resources";
 import Header from "./ui/header";
 import Footer from "./ui/footer";
 import ScrollToTopButton from "./ui/scrollToTop";
-// import ContactFormWrapper from "./ui/contactFormWrapper";
 import ActiveCampaignNewsletterSignup from "./ui/activeCampaignNewsletterSignup";
 // import styles
 import "./globals.css";
@@ -52,18 +50,17 @@ export default async function RootLayout({ children }) {
           href="https://www.googletagmanager.com"
           crossOrigin=""
         />
-        <link
+        {/* <link
           rel="preconnect"
           href="https://googleads.g.doubleclick.net"
           crossOrigin=""
-        />
-        <link rel="preconnect" href="https://www.google.com" crossOrigin="" />
-        <link rel="preconnect" href="https://www.gstatic.com" crossOrigin="" />
+        /> */}
+        {/* <link rel="preconnect" href="https://www.google.com" crossOrigin="" /> */}
+        {/* <link rel="preconnect" href="https://www.gstatic.com" crossOrigin="" /> */}
         <link rel="preconnect" href="https://stream.mux.com" crossOrigin="" />
         <link rel="preconnect" href="https://image.mux.com" crossOrigin="" />
       </head>
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} />
-      {/* <PreloadResources /> */}
       <body className={`antialiased  min-h-screen`}>
         <noscript>
           <iframe
@@ -73,7 +70,6 @@ export default async function RootLayout({ children }) {
             title="Google Tag Manager"
             className="hidden"></iframe>
         </noscript>
-        {/* <NonceProvider nonce={nonce}> */}
         <PreviousRouteProvider>
           <Header />
           {children}
@@ -97,7 +93,6 @@ export default async function RootLayout({ children }) {
             nonce={nonce}
           />
         </PreviousRouteProvider>
-        {/* </NonceProvider> */}
       </body>
     </html>
   );
