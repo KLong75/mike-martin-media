@@ -21,7 +21,7 @@ export default function Home() {
         loop={true}
         muted={true}
         // poster="https://image.mux.com/L5JuSo02xaPTfj00YJr5W6ugZd6CDeuVa42DkDM6XjU9I/thumbnail.png?width=1920&height=1080&time=0"
-        poster="/banner-vid-thumbs/ideas-in-motion-thumbnail.webp"
+        poster="/banner-vid-thumbs/ideas-in-motion-thumbnail-800x338.webp"
       />
       <section className="flex justify-center items-center p-6 md:p-12 lg:p-28 xl:p-42">
         <div
