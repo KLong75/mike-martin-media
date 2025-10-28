@@ -165,16 +165,17 @@ const nextConfig = {
   },
   async headers() {
     return [
-      // {
-      //   source: "/(.*)",
-      //   headers: [
-      //     {
-      //       key: "Cache-Control",
-      //       // Adjust time values as needed
-      //       value: "public, max-age=600, s-maxage=1200",
-      //     },
-      //   ],
-      // },
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            // Adjust time values as needed
+            // value: "public, max-age=600, s-maxage=1200",
+            value: "private, max-age=0, must-revalidate",
+          },
+        ],
+      },
       {
         source: '/api/proxy/:path*',
         headers: [
