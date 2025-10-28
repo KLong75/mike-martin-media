@@ -50,6 +50,7 @@ export default async function RootLayout({ children }) {
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
         <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossOrigin="" />
         <link rel="preconnect" href="https://www.google.com" crossOrigin="" />
+        <link rel="preconnect" href="https://www.gstatic.com" crossOrigin="" />
       </head>
       <GoogleTagManager 
         gtmId={process.env.NEXT_PUBLIC_GTM_ID} 
