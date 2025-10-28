@@ -46,7 +46,15 @@ export default async function RootLayout({ children }) {
       lang="en"
       className={`overflow-x-hidden ${dm_sans.variable} font-sans`}
       data-scroll-behavior="smooth">
-      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} />
+       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
+        <link rel="preconnect" href="https://googleads.g.doubleclick.net" crossOrigin="" />
+        <link rel="preconnect" href="https://www.google.com" crossOrigin="" />
+      </head>
+      <GoogleTagManager 
+        gtmId={process.env.NEXT_PUBLIC_GTM_ID} 
+        nonce={nonce}
+      />
       {/* <PreloadResources /> */}
       <body className={`antialiased  min-h-screen`}>
         <noscript>
