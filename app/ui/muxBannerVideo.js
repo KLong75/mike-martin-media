@@ -34,9 +34,10 @@ export default function MuxBannerVideo({
     console.error("Mux Player Error:", e);
   };
 
-  // const handleVideoDataLoaded = (e) => {
-  //   console.log(`Video data loaded: ${title}, ${now}`);
-  // };
+  const handleVideoDataLoaded = (e) => {
+    console.log(`Video data loaded: ${title}`);
+    setIsPaused(false);
+  };
 
   // const handleVideoPlaying = () => {
   //   console.log(`Video playing: ${title}, ${now}`);
@@ -100,19 +101,7 @@ export default function MuxBannerVideo({
     // }
   }, [inViewport, playCount, maxPlays]);
 
-  // useEffect(() => {
-  //   const observer = new window.IntersectionObserver(
-  //     ([entry]) => {
-  //       setInViewport(entry.isIntersecting);
-  //       if (!entry.isIntersecting) {
-  //         console.log(`Video "${title}" paused because it left the viewport`);
-  //       }
-  //     },
-  //     { threshold: 0.25 } // Adjust as needed
-  //   );
-  //   if (containerRef.current) observer.observe(containerRef.current);
-  //   return () => observer.disconnect();
-  // }, [title]);
+
 
   return (
     <div className="relative w-full h-full" ref={containerRef}>
@@ -132,10 +121,6 @@ export default function MuxBannerVideo({
             onClick={() => {
               setIsPaused(false);
               setPlayCount(0);
-              // setTimeout(() => {
-              //   const video = playerRef.current?.querySelector("video");
-              //   if (video) video.currentTime = 0;
-              // }, 100);
             }}
             title={`Play ${title}`}>
             <BsPlayBtnFill size={36} />
@@ -155,9 +140,8 @@ export default function MuxBannerVideo({
           disableTracking={true}
           respectDoNotTrack={true}
           poster={poster}
-          // poster="https://image.mux.com/L5JuSo02xaPTfj00YJr5W6ugZd6CDeuVa42DkDM6XjU9I/thumbnail.png?width=1920&height=1080&time=0"
           onError={handleError}
-          // onLoadedData={handleVideoDataLoaded}
+          onLoadedData={handleVideoDataLoaded}
           // onPlay={handleVideoPlaying}
           onEnded={handleVideoEnded}
           // onCanPlayThrough={handleCanPlayThrough}
