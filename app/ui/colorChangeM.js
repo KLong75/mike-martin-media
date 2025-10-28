@@ -1,7 +1,0 @@
-// import from next
-// import Image from "next/image";
-import Image from "next/image";
-
-export default function ColorChangeM({ src }) {
-  return <Image src={src} width={349} height={271} alt="M" priority={true} />;
-}

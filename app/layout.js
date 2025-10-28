@@ -59,7 +59,7 @@ export default async function RootLayout({ children }) {
             title="Google Tag Manager"
             className="hidden"></iframe>
         </noscript>
-        <NonceProvider nonce={nonce}>
+        {/* <NonceProvider nonce={nonce}> */}
           <PreviousRouteProvider>
             <Header />
             {children}
@@ -114,7 +114,7 @@ export default async function RootLayout({ children }) {
           nonce={nonce}
         /> */}
           </PreviousRouteProvider>
-        </NonceProvider>
+        {/* </NonceProvider> */}
       </body>
     </html>
   );

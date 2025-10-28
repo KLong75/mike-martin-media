@@ -72,7 +72,7 @@ export default function PortfolioPhotoGallery({ client }) {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
-         onSwiper={(swiper) => (swiperRef.current = swiper)}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
       >
         {clientImages.map((image, index) => (
           <SwiperSlide key={index}>
@@ -84,8 +84,7 @@ export default function PortfolioPhotoGallery({ client }) {
               onClick={() => {
                 setFullScreenImage(image);
                 track("image_view", { client, image: image.title });
-              }}
-            >
+              }}>
               <Image
                 src={image.src}
                 alt={image.alt || "Gallery image"}

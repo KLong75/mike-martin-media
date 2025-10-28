@@ -30,7 +30,7 @@ export default function BannerVideoWithFadeEffect({
     }, 200);
     const videoFadeTimer = setTimeout(() => {
       setShowVideo(true);
-    }, 100);
+    }, 0);
     const showHeadingTimer = setTimeout(() => {
       setShowHeading(true);
     }, 0);
