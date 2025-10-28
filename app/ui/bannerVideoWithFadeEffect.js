@@ -59,14 +59,14 @@ export default function BannerVideoWithFadeEffect({
   return (
     <>
       <section className="grid grid-cols-1 gap-4">
-        {/* <div
+        <div
           className={`relative flex justify-center transition-colors duration-24000 ease-in-out ${
             showVideo ? "bg-black" : "bg-black"
           }`}>
           <div
             className={`banner-video-aspect-ratio-container w-full transition-opacity duration-6000 ease-in-out ${
               showVideo ? "opacity-100" : "opacity-0"
-            }`}> */}
+            }`}>
             <div className={`relative w-full ${containerClassName}`}>
               <div className="absolute top-0 left-0 w-full h-full">
                 <MuxBannerVideo
@@ -80,7 +80,7 @@ export default function BannerVideoWithFadeEffect({
                 />
               </div>
             </div>
-          {/* </div> */}
+          </div>
           {/* heading */}
           {pathname === "/" && (
             <div>
@@ -106,7 +106,7 @@ export default function BannerVideoWithFadeEffect({
             }`}>
             <Image priority src={whiteMmmLogo} alt="MMM logo" />
           </div>
-        {/* </div> */}
+        </div>
       </section>
     </>
   );
