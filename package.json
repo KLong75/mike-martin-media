@@ -9,13 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.1.0",
     "@headlessui/react": "^2.2.0",
     "@mux/blurup": "^1.0.2",
     "@mux/mux-player-react": "^3.6.1",
     "@next/third-parties": "^15.5.4",
     "@vercel/analytics": "^1.2.2",
-    "http-proxy-middleware": "^3.0.5",
     "next": "^15.5.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
