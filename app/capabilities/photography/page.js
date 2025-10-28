@@ -18,7 +18,6 @@ import {
 } from "../../lib/capabilities/photography.js";
 // import images
 // import { photographyCoverImages } from "../../lib/capabilities/photography.js";
-import TriPicBanner from "@/app/ui/triPicBanner.js";
 
 const photographyPageOgImgUrl =
   "https://www.mikemartinmedia.com/images/open-graph/photography-og.png";
@@ -100,9 +99,6 @@ export default function Page() {
           text={photographyPageHeadingBannerText.text}
         />
       </div>
-      {/* <div className="">
-        <TriPicBanner />
-      </div> */}
       <div className="flex justify-center">
         <div className="w-full h-full">
           <VideoGallery

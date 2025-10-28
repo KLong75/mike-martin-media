@@ -1,18 +1,6 @@
 // import components
-// import Image from "next/image";
-// import ContactForm from "../ui/contactForm";
-// import ContactInfo from "../ui/contactInfo";
-// import SocialMediaLinks from "../ui/socialMediaLinks";
-// import InstagramWidget from "../ui/instagramWidget";
-// import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
 import PageHeadingBanner from "../ui/pageHeadingBanner";
 import GoogleMap from "../ui/googleMap";
-// import BannerVideoWithFadeEffect from "../ui/bannerVideoWithFadeEffect";
-// import BannerVideoWithFadeNoLogo from "../ui/bannerVideoWithFadeNoLogo";
-// import images
-// import whiteMmmLogo from "../../public/branding/white-mmm-logo-294x95.png";
-// import ActiveCampaignContactForm from "../ui/activeCampaignContactForm";
-// import NewsletterSignupButton from "../ui/newsletterSignupButton";
 import ContactFormWrapper from "../ui/contactFormWrapper.js";
 
 const contactPageOgImgUrl =
@@ -93,12 +81,6 @@ export default function Page() {
           }
         />
       </div>
-
-      {/* <div className="flex justify-center items-center">
-        <ContactForm />
-      </div> */}
-
-      {/* <ActiveCampaignContactForm /> */}
       <div>
         <ContactFormWrapper />
       </div>

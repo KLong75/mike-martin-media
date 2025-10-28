@@ -86,7 +86,7 @@ export default async function PortfolioPage({ params }) {
       <div className="mt-6 ml-2">
         <BackLink />
       </div>
-      <div className="max-w-6xl 3xl:max-w-600 mx-auto">
+      <div className="max-w-5xl 3xl:max-w-500 mx-auto">
         {isPhotography && (
           <div className="flex justify-center items-center w-full h-full mx-auto ">
             <PortfolioPhotoGallery client={client} />

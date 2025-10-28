@@ -68,7 +68,7 @@ export default function PortfolioPhotoGallery({ client }) {
           clickable: true,
         }}
         autoplay={{
-          delay: 2400,
+          delay: 4800,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
