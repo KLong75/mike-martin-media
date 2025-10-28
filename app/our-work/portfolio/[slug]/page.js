@@ -4,10 +4,6 @@ import Image from "next/image";
 import BackLink from "@/app/ui/backLink";
 import PortfolioVideo from "@/app/ui/portfolioVideo";
 import PortfolioPhotoGallery from "@/app/ui/portfolioPhotoGallery";
-// import MuxBannerVideo from "@/app/ui/MuxBannerVideo";
-// import from mux
-// import MuxPlayer from "@mux/mux-player-react";
-// import { createBlurUp } from "@mux/blurup";
 // import data
 import { workSampleData } from "@/app/lib/work-samples";
 import { siteUrl } from "@/app/lib/site-url";
