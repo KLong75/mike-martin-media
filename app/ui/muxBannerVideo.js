@@ -18,6 +18,7 @@ export default function MuxBannerVideo({
   autoPlay = false,
   loop,
   muted,
+  poster,
   className,
 }) {
   // const now = Date.now();
@@ -153,7 +154,8 @@ export default function MuxBannerVideo({
           disableCookies={true}
           disableTracking={true}
           respectDoNotTrack={true}
-          poster=""
+          poster={poster}
+          // poster="https://image.mux.com/L5JuSo02xaPTfj00YJr5W6ugZd6CDeuVa42DkDM6XjU9I/thumbnail.png?width=1920&height=1080&time=0"
           onError={handleError}
           // onLoadedData={handleVideoDataLoaded}
           // onPlay={handleVideoPlaying}

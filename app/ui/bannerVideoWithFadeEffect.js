@@ -16,6 +16,7 @@ export default function BannerVideoWithFadeEffect({
   autoPlay,
   loop,
   muted,
+  poster
 }) {
   const [hideLogo, setHideLogo] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
@@ -81,6 +82,7 @@ export default function BannerVideoWithFadeEffect({
                   autoPlay={autoPlay}
                   loop={loop}
                   muted={muted}
+                  poster={poster}
                   className="auto-play-banner-video"
                 />
               </div>
