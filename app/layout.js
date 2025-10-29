@@ -56,7 +56,7 @@ export default async function RootLayout({ children }) {
           crossOrigin=""
         /> */}
         {/* <link rel="preconnect" href="https://www.google.com" crossOrigin="" /> */}
-        {/* <link rel="preconnect" href="https://www.gstatic.com" crossOrigin="" /> */}
+        <link rel="preconnect" href="https://www.gstatic.com" crossOrigin="" />
         <link rel="preconnect" href="https://stream.mux.com" crossOrigin="" />
         <link rel="preconnect" href="https://image.mux.com" crossOrigin="" />
       </head>
