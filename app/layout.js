@@ -79,8 +79,8 @@ export default async function RootLayout({ children }) {
           <Analytics />
           <Script
             id="wc-load-script"
-            strategy="beforeInteractive"
-            // strategy="afterInteractive"
+            // strategy="beforeInteractive"
+            strategy="afterInteractive"
             // strategy="lazyOnload"
             nonce={nonce}
             dangerouslySetInnerHTML={{
@@ -91,8 +91,8 @@ export default async function RootLayout({ children }) {
           />
           <Script
             src="//s.ksrndkehqnwntyxlhgto.com/136008.js"
-            strategy="beforeInteractive"
-            // strategy="afterInteractive"
+            // strategy="beforeInteractive"
+            strategy="afterInteractive"
             // strategy="lazyOnload"
             nonce={nonce}
           />
