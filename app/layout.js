@@ -34,6 +34,7 @@ export const metadata = {
 
 // set dynamic
 // export const dynamic = "force-dynamic";
+export const dynamic = "auto";
 
 export default async function RootLayout({ children }) {
   const headersList = await headers();
