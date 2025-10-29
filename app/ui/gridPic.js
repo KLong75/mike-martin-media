@@ -22,7 +22,7 @@ export default function GridPic({
           height={height}
           priority={priority}
           className="w-full h-full object-cover transform transition-transform duration-2000 lg:group-hover:scale-125 ease-in-out"
-          sizes="(max-width: 768px) 400px, (max-width: 1024px) 900px, (max-width: 1280px) 1200px, 1600px"
+          sizes="(max-width: 768px) 200px, (max-width: 1024px) 600px, (max-width: 1280px) 1200px, 1600px"
         />
         <div className="absolute inset-0 bg-black opacity-0 lg:group-hover:opacity-50 transition-opacity duration-2000 ease-in-out"></div>
 

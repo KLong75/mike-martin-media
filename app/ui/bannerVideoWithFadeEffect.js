@@ -104,7 +104,12 @@ export default function BannerVideoWithFadeEffect({
             className={`left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-50 sm:w-72 md:w-96 lg:w-128 xl:w-144 justify-center items-center absolute transition-opacity duration-8000 ease-in-out ${
               hideLogo ? "opacity-0" : "opacity-100"
             }`}>
-            <Image priority src={whiteMmmLogo} alt="MMM logo" />
+            <Image
+              priority
+              src={whiteMmmLogo}
+              alt="MMM logo"
+              sizes="(max-width: 768px) 200px, (max-width: 1024px) 288px, (max-width: 1280px) 384px, 576px"
+            />
           </div>
         </div>
       </section>
