@@ -19,7 +19,7 @@ export default function BannerVideoWithFadeEffect({
   poster
 }) {
   const [hideLogo, setHideLogo] = useState(false);
-  const [showVideo, setShowVideo] = useState(false);
+  const [showVideo, setShowVideo] = useState(true);
   const [showHeading, setShowHeading] = useState(false);
   const [letters, setLetters] = useState([]);
 
