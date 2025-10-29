@@ -105,7 +105,6 @@ export default function BannerVideoWithFadeEffect({
               hideLogo ? "opacity-0" : "opacity-100"
             }`}>
             <Image
-              fetchPriority="high"
               priority
               src={whiteMmmLogo}
               alt="MMM logo"
