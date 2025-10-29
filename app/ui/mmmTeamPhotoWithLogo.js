@@ -5,6 +5,7 @@ export default function MMMTeamPhotoWithLogo() {
   return (
     <div className="relative w-full">
       <Image
+        fetchPriority="high"
         priority
         src="/images/home-page/mmm-team-900x600.webp"
         width={900}
