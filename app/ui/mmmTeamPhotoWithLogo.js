@@ -12,6 +12,7 @@ export default function MMMTeamPhotoWithLogo() {
         alt="The MMM Team"
         aria-label="The MMM Team"
         className="w-full h-auto"
+        sizes="(max-width: 768px) 150px, (max-width: 1200px) 300px, 600px"
       />
       <Image
         // priority
@@ -20,6 +21,7 @@ export default function MMMTeamPhotoWithLogo() {
         height={65}
         alt=""
         className="absolute bottom-[2rem] sm:bottom-[3rem] md:bottom-[3rem] lg:bottom-15 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full"
+        sizes="(max-width: 768px) 150px, (max-width: 1200px) 300px, 600px"
       />
     </div>
   );
