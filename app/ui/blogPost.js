@@ -10,9 +10,18 @@ import Image from "next/image";
 export default async function BlogPost({ post }) {
   const options = {};
   const muxPlaybackId = post?.video?.playback_id || "";
+  let aspectRatio = 16 / 9; // fallback aspect ratio
   // console.log("muxPlaybackId:", muxPlaybackId);
   // const { blurDataURL, aspectRatio } = await createBlurUp(
-  const { aspectRatio } = await createBlurUp(muxPlaybackId, options);
+  // const { aspectRatio } = await createBlurUp(muxPlaybackId, options);
+  if (muxPlaybackId) {
+    try {
+      const result = await createBlurUp(muxPlaybackId, options);
+      aspectRatio = result.aspectRatio;
+    } catch (err) {
+      console.warn("Could not fetch Mux thumbnail:", err);
+    }
+  }
   if (!post) {
     return <p>Post not found</p>;
   }

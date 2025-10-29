@@ -5,8 +5,6 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 // import components
 import ClientVideoFrame from "./clientVideoFrame";
-// import PhotographyGallery from "./photographyGallery";
-// import PhotoGallery from "./photoGallery";
 // import data
 import { workSampleData } from "../lib/work-samples";
 // import icons

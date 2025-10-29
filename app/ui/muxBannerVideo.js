@@ -34,10 +34,10 @@ export default function MuxBannerVideo({
     console.error("Mux Player Error:", e);
   };
 
-  const handleVideoDataLoaded = (e) => {
-    console.log(`Video data loaded: ${title}`);
-    setIsPaused(false);
-  };
+  // const handleVideoDataLoaded = (e) => {
+  //   console.log(`Video data loaded: ${title}`);
+  //   setIsPaused(false);
+  // };
 
   // const handleVideoPlaying = () => {
   //   console.log(`Video playing: ${title}, ${now}`);
@@ -141,7 +141,7 @@ export default function MuxBannerVideo({
           respectDoNotTrack={true}
           poster={poster}
           onError={handleError}
-          onLoadedData={handleVideoDataLoaded}
+          // onLoadedData={handleVideoDataLoaded}
           // onPlay={handleVideoPlaying}
           onEnded={handleVideoEnded}
           // onCanPlayThrough={handleCanPlayThrough}
