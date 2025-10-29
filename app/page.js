@@ -1,4 +1,3 @@
-export const dynamic = "force-static";
 // import from next
 import Link from "next/link";
 // import components
