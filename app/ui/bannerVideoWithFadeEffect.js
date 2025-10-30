@@ -106,6 +106,7 @@ export default function BannerVideoWithFadeEffect({
             }`}>
             <Image
               priority
+              fetchPriority="high"
               src={whiteMmmLogo}
               alt="MMM logo"
               sizes="(max-width: 768px) 200px, (max-width: 1024px) 288px, (max-width: 1280px) 384px, 576px"

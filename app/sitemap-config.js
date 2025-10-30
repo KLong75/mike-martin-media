@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { blogPosts } from "@/app/lib/blogPostData";
-import { workSampleData } from "./lib/work-samples"; 
+import { workSampleData } from "./lib/work-samples";
 
 const urlConfig = {
   // "": { changeFrequency: "yearly", priority: 1.0 },
@@ -100,9 +100,9 @@ export default function sitemap() {
       entry.video = {
         title: sample.title,
         description: sample.description,
-        thumbnail_loc: sample.image_src,
-        content_loc: sample.mux_src || "",
-        player_loc: entry.url,
+        thumbnail_loc: `https://www.mikemartinmedia.com/${sample.image_src}`,
+        content_loc: `https://stream.mux.com/${sample.playback_id}.m3u8` || "",
+        player_loc: `https://player.mux.com/${sample.playback_id}` || "",
       };
     }
     return entry;

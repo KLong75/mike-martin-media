@@ -22,7 +22,7 @@ import { usePreviousRoute } from "../../context/previous-route-context";
 
 export default function BackLink({ href, label }) {
   const previousRoute = usePreviousRoute();
-  const backHref = href || previousRoute || "/";
+  let backHref = href || previousRoute || "/";
   const backLabelPrefix = label || "Back To";
   let backLabelPage;
   if (previousRoute === "/blog") {
@@ -33,7 +33,7 @@ export default function BackLink({ href, label }) {
     backLabelPage = "Home Page";
   } else if (previousRoute === "/capabilities/video-production") {
     backLabelPage = "Video Production";
-    } else if (previousRoute === "/capabilities/video-editing") {
+  } else if (previousRoute === "/capabilities/video-editing") {
     backLabelPage = "Video Editing";
   } else if (previousRoute === "/capabilities/photography") {
     backLabelPage = "Photography";
@@ -51,6 +51,9 @@ export default function BackLink({ href, label }) {
     backLabelPage = "Education";
   } else if (previousRoute === "/industries/healthcare") {
     backLabelPage = "Healthcare";
+  } else if (previousRoute.includes("/blog/posts/")) {
+    backLabelPage = "Blog"
+    backHref = "/blog";
   } else {
     backLabelPage = "Previous Page";
   }
@@ -60,7 +63,9 @@ export default function BackLink({ href, label }) {
     <Link href={backHref}>
       <div className="ml-2 flex">
         <IoIosArrowBack className="text-3xl " />
-        <span className="text-xs mt-2 -ml-1 md:text-sm md:mt-1.5">{backLabel}</span>
+        <span className="text-xs mt-2 -ml-1 md:text-sm md:mt-1.5">
+          {backLabel}
+        </span>
       </div>
     </Link>
   );

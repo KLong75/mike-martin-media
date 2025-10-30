@@ -252,7 +252,6 @@ export const blogPosts = [
     ],
     vimeo_src:
       "https://player.vimeo.com/video/1001383081?badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=1&byline=0&portrait=0",
-    mux_src: "",
     video: {
       playback_id: "uAJfCDRMKASXG4wAjX5vSrSu4Qi8h2T2xlp5TzDY8uM",
       title: "Club Fitness Share to Inspire - Eric Newby",
