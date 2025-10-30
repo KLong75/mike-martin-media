@@ -101,8 +101,6 @@ export default function MuxBannerVideo({
     // }
   }, [inViewport, playCount, maxPlays]);
 
-
-
   return (
     <div className="relative w-full h-full" ref={containerRef}>
       {isPaused && playCount >= maxPlays && (
@@ -147,6 +145,7 @@ export default function MuxBannerVideo({
           // onCanPlayThrough={handleCanPlayThrough}
           onTimeUpdate={handleTimeUpdate}
           className={className}
+          playsInline
         />
       </div>
     </div>
