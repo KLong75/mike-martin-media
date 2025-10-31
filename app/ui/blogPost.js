@@ -41,24 +41,38 @@ export default async function BlogPost({ post }) {
           />
         </div>
         <div className="p-8 max-w-3xl mx-auto lg:text-lg lg:mt-6">
-          {post.text.map((paragraph, index) => (
-            <div key={index}>
-              <p className="my-6 max-w-180">{paragraph}</p>
-              {index === 0 && post.second_image_src && (
-                <div className="flex justify-center items-center">
-                  <div className="px-12 my-6">
-                    <Image
-                      src={post.second_image_src}
-                      width={post.second_image_width}
-                      height={post.second_image_height}
-                      alt={post.second_image_alt}
-                      className="w-125"
-                    />
+          {post.text.map((paragraph, index) => {
+            // Detect code block: starts with '//' or contains multiple lines
+            const isCode =
+              typeof paragraph === "string" &&
+              (paragraph.trim().startsWith("//") ||
+                paragraph.split("\n").length > 3);
+
+            return (
+              <div key={index}>
+                {isCode ? (
+                  <pre className="my-6 max-w-180 overflow-x-auto bg-gray-100 rounded p-4 text-sm">
+                    <code>{paragraph.trim()}</code>
+                  </pre>
+                ) : (
+                  <p className="my-6 max-w-180">{paragraph}</p>
+                )}
+                {index === 0 && post.second_image_src && (
+                  <div className="flex justify-center items-center">
+                    <div className="px-12 my-6">
+                      <Image
+                        src={post.second_image_src}
+                        width={post.second_image_width}
+                        height={post.second_image_height}
+                        alt={post.second_image_alt}
+                        className="w-125"
+                      />
+                    </div>
                   </div>
-                </div>
-              )}
-            </div>
-          ))}
+                )}
+              </div>
+            );
+          })}
           <p className="mb-4">{post.closing_tag}</p>
           <p className="-mb-4">- {post.author}</p>
         </div>
@@ -70,11 +84,11 @@ export default async function BlogPost({ post }) {
         )} */}
         {post.video && (
           <div className="py-12">
-          <div
-            className="mx-auto w-full h-full max-w-2xl "
-            style={{ aspectRatio: aspectRatio }}>
-            <ClientVideoContainer video={post.video} />
-          </div>
+            <div
+              className="mx-auto w-full h-full max-w-2xl "
+              style={{ aspectRatio: aspectRatio }}>
+              <ClientVideoContainer video={post.video} />
+            </div>
           </div>
         )}
       </div>

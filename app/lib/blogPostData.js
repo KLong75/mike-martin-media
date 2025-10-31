@@ -23,6 +23,82 @@ export const blogPosts = [
   //   slug: "",
   //   description: ""
   // },
+  //  {
+  //   slug: "",
+  //   title: "",
+  //   post_date: "",
+  //   image_src: `${basePath}`,
+  //   image_width: 456,
+  //   image_height: 342,
+  //   image_alt:"",
+  //   second_image_src: `${basePath}`,
+  //   second_image_width: 208,
+  //   second_image_height: 109,
+  //   second_image_alt: "",
+  //   text: [
+  //     "",
+  //     "",
+  //     "",
+  //   ],
+  //   vimeo_src: "",
+  //   video: {
+  //     playback_id: "",
+  //     title: "",
+  //     image_src: "",
+  //   },
+  //   closing_tag: "Until next time,",
+  //   author: "",
+  //   description:"",
+  // },
+  {
+    slug: "life-between-keyframes",
+    title: "Life Between Keyframes",
+    post_date: "November 2025",
+    image_src: `${basePath}2025/2025-nov-a.webp`,
+    image_width: 456,
+    image_height: 342,
+    image_alt: "",
+    second_image_src: `${basePath}2025/2025-nov-b.webp`,
+    second_image_width: 456,
+    second_image_height: 342,
+    second_image_alt: "",
+    text: [
+      "At Mike Martin Media, as an editor, most of my days are spent inside Premiere and After Effects. Cutting, cleaning, compositing, and making things feel seamless. It is a lot of trial and error, a lot of long hours, and a lot of fixing problems that no one ever sees.",
+      "Sometimes that means masking out peanut butter on someone's chin during an interview. Other times it's removing an outlet that snuck into a shot. It's the kind of detail no one ever notices, which is the goal.",
+      "I am lucky to work with a team that trusts the process and keeps pushing the craft forward. We make it work, frame by frame.",
+      "P.S. Here is a fully functional After Effects expression for Position that adds a realistic settle after your last keyframe. It uses sliders so you can dial it in fast.",
+      `// Apply to Position
+amp = effect("Amp")("Slider");      // 0.02 to 0.2 is common
+freq = effect("Freq")("Slider");    // 2 to 5
+decay = effect("Decay")("Slider");  // 3 to 7
+
+n = 0;
+if (numKeys > 0){
+  n = nearestKey(time).index;
+  if (key(n).time > time) n--;
+}
+
+if (n == 0){
+  value
+} else {
+  t = time - key(n).time;
+  v = velocityAtTime(key(n).time - thisComp.frameDuration/10);
+  value + v*amp*Math.sin(freq*2*Math.PI*t)/Math.exp(decay*t)
+}
+      `,
+      "What it does:",
+      "After the final keyframe this adds a damped bounce based on the incoming velocity. Amp controls how far it overshoots, Freq controls how fast it oscillates, Decay controls how quickly it settles. If there are no keyframes it returns the base value. Create three Sliders on the same layer named Amp, Freq, and Decay, then paste this on Position. Works in 2D or 3D and respects your actual keyframed motion.",
+    ],
+    // vimeo_src: "",
+    // video: {
+    //   playback_id: "",
+    //   title: "",
+    //   image_src: "",
+    // },
+    closing_tag: "Until next time,",
+    author: "Paul Baker",
+    description: "",
+  },
   {
     title: "Next Stop: San Diego, Cameras Ready",
     post_date: "July 2025",
@@ -255,7 +331,8 @@ export const blogPosts = [
     video: {
       playback_id: "uAJfCDRMKASXG4wAjX5vSrSu4Qi8h2T2xlp5TzDY8uM",
       title: "Club Fitness Share to Inspire - Eric Newby",
-      image_src: "https://image.mux.com/uAJfCDRMKASXG4wAjX5vSrSu4Qi8h2T2xlp5TzDY8uM/thumbnail.png?width=576&height=324&time=52",
+      image_src:
+        "https://image.mux.com/uAJfCDRMKASXG4wAjX5vSrSu4Qi8h2T2xlp5TzDY8uM/thumbnail.png?width=576&height=324&time=52",
     },
     closing_tag: "Until next time,",
     author: "Rachel Lee",
