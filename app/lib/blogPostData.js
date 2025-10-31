@@ -55,11 +55,11 @@ export const blogPosts = [
     title: "Life Between Keyframes",
     post_date: "November 2025",
     image_src: `${basePath}2025/2025-nov-a.webp`,
-    image_width: 456,
+    image_width: 432,
     image_height: 342,
     image_alt: "",
     second_image_src: `${basePath}2025/2025-nov-b.webp`,
-    second_image_width: 456,
+    second_image_width: 432,
     second_image_height: 342,
     second_image_alt: "",
     text: [
