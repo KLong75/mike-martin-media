@@ -34,7 +34,7 @@ export default function BlogPostPreview({
     <div className="p-6 md:hover:bg-black md:hover:text-white transition-colors duration-1000 ease-in-out group shadow-2xl md:shadow-none rounded-2xl md:rounded-none">
       <Link href={`blog/posts/${slug}`}>
         <div className="w-full">
-          <div className="flex justify-center w-full">
+          <div className="flex justify-center w-full h-auto">
             <Image
               className="shadow-xl mt-6"
               src={image_src}

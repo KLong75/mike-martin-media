@@ -1,5 +1,6 @@
 export default function NewsletterSignupButton() {
   const handleClick = () => {
+    console.log('Newsletter signup button clicked');
     // Check for the cookie named '_form_3_'
     const cookieName = "_form_3_";
     const cookies = document.cookie.split(";");

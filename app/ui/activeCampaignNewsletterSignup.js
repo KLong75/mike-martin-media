@@ -1,4 +1,4 @@
-//import from next
+// import from next
 import Script from "next/script";
 import { headers } from "next/headers";
 
