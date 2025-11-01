@@ -4,7 +4,7 @@ import { track } from "@vercel/analytics";
 // import components
 import Image from "next/image";
 import SocialMediaLinks from "./socialMediaLinks";
-// import NewsletterSignupButton from "./newsletterSignupButton";
+import NewsletterSignupButton from "./newsletterSignupButton";
 
 export default function ContactInfo() {
   return (
@@ -57,9 +57,9 @@ export default function ContactInfo() {
       <div className="my-2 flex justify-center lg:justify-start">
         <SocialMediaLinks />
       </div>
-      {/* <div className="my-2 flex justify-center lg:justify-start">
+      <div className="my-2 flex justify-center lg:justify-start">
         <NewsletterSignupButton />
-      </div> */}
+      </div>
     </div>
   );
 }
