@@ -135,7 +135,7 @@ export default function MuxBannerVideo({
           loop={loop}
           muted={muted}
           disableCookies={true}
-          disableTracking={true}
+          disableTracking={false}
           respectDoNotTrack={true}
           poster={poster}
           onError={handleError}

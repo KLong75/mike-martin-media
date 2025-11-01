@@ -59,7 +59,7 @@ export default function ClientVideoContainer({ video }) {
       muted={false}
       poster={video.image_src}
       disableCookies={true}
-      disableTracking={true}
+      disableTracking={false}
       respectDoNotTrack={true}
       metadata={{
         video_id: video.playback_id,
