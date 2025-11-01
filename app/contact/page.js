@@ -81,7 +81,7 @@ export default function Page() {
           }
         />
       </div>
-      <div>
+      <div className="mt-8 mb-10">
         <ContactFormWrapper />
       </div>
     </main>
