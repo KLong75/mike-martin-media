@@ -73,15 +73,9 @@ export default async function BlogPost({ post }) {
               </div>
             );
           })}
-          <p className="mb-4">{post.closing_tag}</p>
-          <p className="-mb-4">- {post.author}</p>
+          <p className="mt-12 mb-4">{post.closing_tag}</p>
+          <p className="">- {post.author}</p>
         </div>
-        {/* {post.vimeo_src && (
-          <iframe
-            src={post.vimeo_src}
-            allow="autoplay; fullscreen; picture-in-picture"
-            className="w-full h-80 p-4 lg:my-4"></iframe>
-        )} */}
         {post.video && (
           <div className="py-12">
             <div
@@ -104,3 +98,11 @@ export default async function BlogPost({ post }) {
     </>
   );
 }
+
+
+ {/* {post.vimeo_src && (
+          <iframe
+            src={post.vimeo_src}
+            allow="autoplay; fullscreen; picture-in-picture"
+            className="w-full h-80 p-4 lg:my-4"></iframe>
+        )} */}

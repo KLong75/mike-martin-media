@@ -66,28 +66,28 @@ export const blogPosts = [
       "At Mike Martin Media, as an editor, most of my days are spent inside Premiere and After Effects. Cutting, cleaning, compositing, and making things feel seamless. It is a lot of trial and error, a lot of long hours, and a lot of fixing problems that no one ever sees.",
       "Sometimes that means masking out peanut butter on someone's chin during an interview. Other times it's removing an outlet that snuck into a shot. It's the kind of detail no one ever notices, which is the goal.",
       "I am lucky to work with a team that trusts the process and keeps pushing the craft forward. We make it work, frame by frame.",
-      "P.S. Here is a fully functional After Effects expression for Position that adds a realistic settle after your last keyframe. It uses sliders so you can dial it in fast.",
-      `// Apply to Position
-amp = effect("Amp")("Slider");      // 0.02 to 0.2 is common
-freq = effect("Freq")("Slider");    // 2 to 5
-decay = effect("Decay")("Slider");  // 3 to 7
+      // "P.S. Here is a fully functional After Effects expression for Position that adds a realistic settle after your last keyframe. It uses sliders so you can dial it in fast.",
+//       `// Apply to Position
+// amp = effect("Amp")("Slider");      // 0.02 to 0.2 is common
+// freq = effect("Freq")("Slider");    // 2 to 5
+// decay = effect("Decay")("Slider");  // 3 to 7
 
-n = 0;
-if (numKeys > 0){
-  n = nearestKey(time).index;
-  if (key(n).time > time) n--;
-}
+// n = 0;
+// if (numKeys > 0){
+//   n = nearestKey(time).index;
+//   if (key(n).time > time) n--;
+// }
 
-if (n == 0){
-  value
-} else {
-  t = time - key(n).time;
-  v = velocityAtTime(key(n).time - thisComp.frameDuration/10);
-  value + v*amp*Math.sin(freq*2*Math.PI*t)/Math.exp(decay*t)
-}
-      `,
-      "What it does:",
-      "After the final keyframe this adds a damped bounce based on the incoming velocity. Amp controls how far it overshoots, Freq controls how fast it oscillates, Decay controls how quickly it settles. If there are no keyframes it returns the base value. Create three Sliders on the same layer named Amp, Freq, and Decay, then paste this on Position. Works in 2D or 3D and respects your actual keyframed motion.",
+// if (n == 0){
+//   value
+// } else {
+//   t = time - key(n).time;
+//   v = velocityAtTime(key(n).time - thisComp.frameDuration/10);
+//   value + v*amp*Math.sin(freq*2*Math.PI*t)/Math.exp(decay*t)
+// }
+//       `,
+      // "What it does:",
+      // "After the final keyframe this adds a damped bounce based on the incoming velocity. Amp controls how far it overshoots, Freq controls how fast it oscillates, Decay controls how quickly it settles. If there are no keyframes it returns the base value. Create three Sliders on the same layer named Amp, Freq, and Decay, then paste this on Position. Works in 2D or 3D and respects your actual keyframed motion.",
     ],
     // vimeo_src: "",
     // video: {
