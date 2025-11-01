@@ -61,13 +61,14 @@ export default function MuxBannerVideo({
         const newCount = count + 1;
         if (newCount >= maxPlays) {
           setIsPaused(true);
+          track("Max video plays reached. Video paused", { video: title });
           // console.log("Max plays reached, pausing video", { video: title });
           // setTimeout(() => {
           //   const video = playerRef.current?.querySelector("video");
           //   if (video) video.currentTime = 0;
           // }, 100);
         }
-        // track("Video looped", { video: title, loopCount: newCount });
+        track("Video looped", { video: title, loopCount: newCount });
         // console.log(`${title} Video looped ${newCount} times`);
         return newCount;
       });
@@ -90,15 +91,7 @@ export default function MuxBannerVideo({
       setIsPaused(false);
     } else {
       setIsPaused(true);
-      // console.log(
-      //   `Video "${title}" paused (inViewport: ${inViewport}, playCount: ${playCount})`
-      // );
     }
-    // if (!inViewport) {
-    //   console.log(`Video "${title}" paused because it left the viewport`);
-    //   setIsPaused(true);
-    //   // setPlayCount(0);
-    // }
   }, [inViewport, playCount, maxPlays]);
 
   return (
