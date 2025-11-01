@@ -13,27 +13,37 @@ export default function NewsletterSignupButton() {
       document.cookie = `${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
     }
 
+    const localStorageCookie = localStorage.getItem(cookieName);
+    if (localStorageCookie) {
+      localStorage.removeItem(cookieName);
+    }
+
+    // if the script already exists, remove it
+    const existingScript = document.getElementById("active-campaign-script");
+    if (existingScript) {
+      console.log('Removing existing Active Campaign script');
+      existingScript.remove();
+    }
+
+     const existingFormWrapper = document.querySelector("._form-wrapper");
+    if (existingFormWrapper) {
+      console.log('Removing existing form wrapper');
+      existingFormWrapper.remove();
+    }
+
     // Create a script element
     const script = document.createElement("script");
     script.src = "https://mmmmarketing42.activehosted.com/f/embed.php?id=3";
     script.id = "active-campaign-script";
     script.async = true;
 
-    // if the script already exists, remove it
-    const existingScript = document.getElementById("active-campaign-script");
-    if (existingScript) {
-      existingScript.remove();
-    }
     //if the form box already exists, remove it
     // const existingForm = document.getElementById("_form_6792CD3A3BD32_");
     // if (existingForm) {
     //   existingForm.remove();
     // }
 
-    const existingFormWrapper = document.querySelector("._form-wrapper");
-    if (existingFormWrapper) {
-      existingFormWrapper.remove();
-    }
+   
 
     // Append the script to the document body
     document.body.appendChild(script);
