@@ -51,11 +51,18 @@ export default async function BlogPost({ post }) {
             return (
               <div key={index}>
                 {isCode ? (
-                  <pre className="my-6 max-w-180 overflow-x-auto bg-gray-100 rounded p-4 text-sm">
-                    <code>{paragraph.trim()}</code>
-                  </pre>
+                  <>
+                    <div className="hidden w-full h-full sm:flex justify-center items">
+                      <pre className="overflow-x-auto bg-gray-100 p-4 text-sm">
+                        <code>{paragraph.trim()}</code>
+                      </pre>
+                    </div>
+                    <div className="block sm:hidden my-6 w-full text-xs italic text-gray-500">
+                      Code snippet available on larger screens.
+                    </div>
+                  </>
                 ) : (
-                  <p className="my-6 max-w-180">{paragraph}</p>
+                  <p className="my-6">{paragraph}</p>
                 )}
                 {index === 0 && post.second_image_src && (
                   <div className="flex justify-center items-center">
@@ -99,10 +106,11 @@ export default async function BlogPost({ post }) {
   );
 }
 
-
- {/* {post.vimeo_src && (
+{
+  /* {post.vimeo_src && (
           <iframe
             src={post.vimeo_src}
             allow="autoplay; fullscreen; picture-in-picture"
             className="w-full h-80 p-4 lg:my-4"></iframe>
-        )} */}
+        )} */
+}
