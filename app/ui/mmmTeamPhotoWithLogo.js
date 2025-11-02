@@ -13,7 +13,7 @@ export default function MMMTeamPhotoWithLogo() {
         alt="The MMM Team"
         aria-label="The MMM Team"
         className="w-full h-auto"
-        sizes="(max-width: 768px) 150px, (max-width: 1024px) 710px, (max-width: 1280px) 710px, (max-width: 1440px) 600px, (max-width: 1600px) 900px, 1200px"
+        sizes="(max-width: 768px) 150px, (max-width: 1024px) 710px, (max-width: 1280px) 710px, (max-width: 1440px) 600px, (max-width: 1600px) 700px, 708px"
       />
       <Image
         // priority
