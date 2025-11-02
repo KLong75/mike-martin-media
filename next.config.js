@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  htmlLimitedBots: '.*',
+  // htmlLimitedBots: '.*',
+  // htmlLimitedBots: /.*/,
   async redirects() {
     return [
       {
