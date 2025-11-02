@@ -58,7 +58,7 @@ export default async function BlogPost({ post }) {
                       </pre>
                     </div>
                     <div className="block sm:hidden my-6 w-full text-xs italic text-gray-500">
-                      The code for Paul's After Effects expression is available on larger screens.
+                      The code for Paul &apos;s After Effects expression is available on larger screens.
                     </div>
                   </>
                 ) : (
