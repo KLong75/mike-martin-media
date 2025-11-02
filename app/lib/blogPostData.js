@@ -57,11 +57,11 @@ export const blogPosts = [
     image_src: `${basePath}2025/2025-nov-a.webp`,
     image_width: 432,
     image_height: 342,
-    image_alt: "",
+    image_alt: "The user interface of video editing software",
     second_image_src: `${basePath}2025/2025-nov-b.webp`,
     second_image_width: 432,
     second_image_height: 342,
-    second_image_alt: "",
+    second_image_alt: "A graphic showing keyframes and motion paths.",
     text: [
       "At Mike Martin Media, as an editor, most of my days are spent inside Premiere and After Effects. Cutting, cleaning, compositing, and making things feel seamless. It is a lot of trial and error, a lot of long hours, and a lot of fixing problems that no one ever sees.",
       "Sometimes that means masking out peanut butter on someone's chin during an interview. Other times it's removing an outlet that snuck into a shot. It's the kind of detail no one ever notices, which is the goal.",
