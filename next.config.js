@@ -2,7 +2,7 @@
 
 const nextConfig = {
   // htmlLimitedBots: '.*',
-  // htmlLimitedBots: /.*/,
+  htmlLimitedBots: /.*/,
   async redirects() {
     return [
       {
