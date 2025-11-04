@@ -30,22 +30,12 @@ export default function MuxBannerVideo({
   const [playCount, setPlayCount] = useState(0);
   const [isPaused, setIsPaused] = useState(true);
   const [inViewport, setInViewport] = useState(false);
+  const [videoError, setVideoError] = useState(false);
+
   const handleError = (e) => {
     console.error("Mux Player Error:", e);
+    setVideoError(true);
   };
-
-  // const handleVideoDataLoaded = (e) => {
-  //   console.log(`Video data loaded: ${title}`);
-  //   setIsPaused(false);
-  // };
-
-  // const handleVideoPlaying = () => {
-  //   console.log(`Video playing: ${title}, ${now}`);
-  // };
-
-  // const handlePaused = () => {
-  //   console.log(`Video paused: ${title}, ${now}`);
-  // };
 
   const handleVideoEnded = () => {
     track("Full video play", { video: title });
@@ -118,28 +108,40 @@ export default function MuxBannerVideo({
           </button>
         </div>
       )}
-      <div ref={playerRef}>
-        <MuxPlayer
-          preload="auto"
-          paused={isPaused}
-          playbackId={playbackId}
-          title={title}
-          autoPlay={autoPlay}
-          loop={loop}
-          muted={muted}
-          disableCookies={true}
-          disableTracking={false}
-          respectDoNotTrack={true}
-          poster={poster}
-          onError={handleError}
-          // onLoadedData={handleVideoDataLoaded}
-          // onPlay={handleVideoPlaying}
-          onEnded={handleVideoEnded}
-          // onCanPlayThrough={handleCanPlayThrough}
-          onTimeUpdate={handleTimeUpdate}
-          className={className}
-          playsInline
-        />
+      <div ref={playerRef} >
+        {videoError ? (
+          <div className="flex flex-col items-center justify-center text-center mt-2 sm:mt-6 md:mt-10 lg:mt-16 xl:mt-20 2xl:mt-24 3xl:mt-28 p-6">
+          <Image
+            src={poster || whiteMmmLogo}
+            alt="Video unavailable"
+            className="w-3/5 mx-auto h-auto max-w-4xl"
+            priority
+          />
+          <h3 className="sm:text-lg lg:text-xl xl:text-2xl text-white">Video unavailable</h3>
+          </div>
+        ) : (
+          <MuxPlayer
+            preload="auto"
+            paused={isPaused}
+            playbackId={playbackId}
+            title={title}
+            autoPlay={autoPlay}
+            loop={loop}
+            muted={muted}
+            disableCookies={true}
+            disableTracking={false}
+            respectDoNotTrack={true}
+            poster={poster}
+            onError={handleError}
+            // onLoadedData={handleVideoDataLoaded}
+            // onPlay={handleVideoPlaying}
+            onEnded={handleVideoEnded}
+            // onCanPlayThrough={handleCanPlayThrough}
+            onTimeUpdate={handleTimeUpdate}
+            className={className}
+            playsInline
+          />
+        )}
       </div>
     </div>
   );

@@ -28,10 +28,10 @@ export default function BannerVideoWithFadeEffect({
   useEffect(() => {
     const hideLogoTimer = setTimeout(() => {
       setHideLogo(true);
-    }, 200);
+    }, 600);
     const videoFadeTimer = setTimeout(() => {
       setShowVideo(true);
-    }, 100);
+    }, 0);
     const showHeadingTimer = setTimeout(() => {
       setShowHeading(true);
     }, 0);
