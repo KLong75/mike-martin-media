@@ -117,7 +117,7 @@ export default function MuxBannerVideo({
             className="w-3/5 mx-auto h-auto max-w-4xl"
             priority
           />
-          <h3 className="sm:text-lg lg:text-xl xl:text-2xl text-white">Video unavailable</h3>
+          <p className="sm:text-lg lg:text-xl xl:text-2xl text-white">Video unavailable</p>
           </div>
         ) : (
           <MuxPlayer
