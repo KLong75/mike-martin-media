@@ -33,7 +33,7 @@ export default function MuxBannerVideo({
   const [videoError, setVideoError] = useState(false);
 
   const handleError = (e) => {
-    console.error("Mux Player Error:", e);
+    // console.error("Mux Player Error:", e);
     setVideoError(true);
   };
 
