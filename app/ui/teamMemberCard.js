@@ -33,7 +33,7 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
             handleTeamCardClick();
           }
         }}
-        className="relative aspect-[3/4] w-full overflow-hidden cursor-pointer shadow-2xl group"
+        className="relative w-full h-full overflow-hidden cursor-pointer shadow-2xl group"
         onClick={handleTeamCardClick}>
         <Image
           className="shadow-2xl w-full h-full object-cover transform transition-transform duration-2000 lg:group-hover:scale-110 ease-in-out"
@@ -41,12 +41,6 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
           alt={`Tap or click to learn more about ${name} and their role at MMM.`}
           width={900}
           height={1200}
-          sizes="
-            (max-width: 639px) 90vw,
-            (max-width: 1023px) 45vw,
-            (max-width: 1279px) 30vw,
-            22vw
-          "
         />
         <div className="absolute bottom-0 left-0 w-full h-1/8 z-50 bg-black bg-opacity-50 flex flex-col justify-center text-white p-4 lg:group-hover:bg-opacity-100 transition-bg duration-2000 ease-in-out">
           <p className="font-semibold text-xl text-shadow-black-background-black text-left">
