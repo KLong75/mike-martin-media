@@ -61,8 +61,8 @@ export default function ClientVideoFrame({
             height={540}
             width={960}
             alt={`${client} ${title}`}
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
           />
-
           <div className="absolute inset-0 bg-[#484848] opacity-45 group-hover:opacity-75 group-hover:bg-black transition-bg duration-2000 ease-in-out"></div>
           <div
             className="lg:opacity-0 group-hover:opacity-100 duration-2000 ease-in-out"
