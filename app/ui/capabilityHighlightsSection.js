@@ -23,6 +23,7 @@ export default function CapabilityHighLightsSection({
             loop={true}
             muted={true}
             className="auto-play-banner-video"
+            poster=""
           />
         </div>
         <div className="flex justify-center pr-12 pl-6">
