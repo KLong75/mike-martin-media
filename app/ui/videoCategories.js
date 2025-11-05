@@ -25,7 +25,7 @@ export default function VideoCategories({
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 500) {
         setIsMobile(false);
       } else {
         setIsMobile(true);
@@ -116,56 +116,55 @@ export default function VideoCategories({
           <h3 className="font-bold text-center">
             Filter by Capability and Industry:
           </h3>
-          <ul className="flex flex-col items-center">
+          {/* "All" button centered above the grid */}
+          <ul className="grid grid-cols-2 items-center justify-center text-center">
             <li
               key={categoryOptions[0].name}
               onClick={() => handleCategorySelected(categoryOptions[0].name)}
-              className={`text-sm cursor-pointer px-4 rounded-full my-2 mx-4 ${
+              className={`col-span-2 justify-self-center text-sm cursor-pointer px-4 rounded-full my-2 mx-4 ${
                 selectedCategories.includes(categoryOptions[0].name)
                   ? "bg-white text-black font-bold"
                   : "font-semibold text-white hover:bg-white hover:text-black"
-              }`}>
-              <span>{categoryOptions[0].icon}</span>
-              <span className="mt-2 -mb-4">{categoryOptions[0].name}</span>
+              }`}
+              style={{ display: "inline-block" }}>
+              <span className="mt-2">{categoryOptions[0].name}</span>
             </li>
-            <div className="flex flex-wrap justify-center px-6 lg:py-4">
-              {categoryOptions.slice(1).map((category) => (
-                <li
-                  key={category.name}
-                  onClick={() => handleCategorySelected(category.name)}
-                  className={`text-sm cursor-pointer px-4 rounded-full my-2 mx-4 ${
-                    selectedCategories.includes(category.name)
-                      ? "bg-white text-black font-bold"
-                      : "font-semibold text-white md:hover:bg-white md:hover:text-black"
-                  }`}>
-                  <span className="mt-2">{category.name}</span>
-                </li>
-              ))}
-            </div>
-          </ul>
-        </>
-      ) : (
-        <>
-          <ul className="flex flex-wrap justify-center px-6 lg:py-4">
-            {categoryOptions.map((category) => (
+            {categoryOptions.slice(1).map((category) => (
               <li
-                tabIndex={0}
-                role="button"
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    e.preventDefault();
-                    handleCategorySelected(category.name);
-                  }
-                }}
                 key={category.name}
                 onClick={() => handleCategorySelected(category.name)}
                 className={`text-sm cursor-pointer px-4 rounded-full my-2 mx-4 ${
                   selectedCategories.includes(category.name)
                     ? "bg-white text-black font-bold"
-                    : "font-semibold text-white hover:bg-white hover:text-black"
+                    : "font-semibold text-white md:hover:bg-white md:hover:text-black"
                 }`}>
-                {/* <span>{category.icon}</span> */}
                 <span className="mt-2">{category.name}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      ) : (
+        <>
+          <ul className="flex flex-wrap justify-center px-6 lg:py-4 max-w-4xl mx-auto">
+            {categoryOptions.map((category) => (
+              <li key={category.name}>
+                <button
+                  // tabIndex={0}
+                  type="button"
+                  onClick={() => handleCategorySelected(category.name)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      handleCategorySelected(category.name);
+                    }
+                  }}
+                  className={`text-sm lg:text-base cursor-pointer px-4 rounded-full my-2 mx-4 ${
+                    selectedCategories.includes(category.name)
+                      ? "bg-white text-black font-bold"
+                      : "font-semibold text-white hover:bg-white hover:text-black"
+                  }`}>
+                  <span className="mt-2">{category.name}</span>
+                </button>
               </li>
             ))}
           </ul>

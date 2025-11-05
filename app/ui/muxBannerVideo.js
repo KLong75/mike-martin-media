@@ -108,16 +108,23 @@ export default function MuxBannerVideo({
           </button>
         </div>
       )}
-      <div ref={playerRef} >
+      <div ref={playerRef}>
         {videoError ? (
-          <div className="flex flex-col items-center justify-center text-center mt-2 sm:mt-6 md:mt-10 lg:mt-16 xl:mt-20 2xl:mt-24 3xl:mt-28 p-6">
-          <Image
+          <div className="left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-50 sm:w-72 md:w-96 lg:w-128 xl:w-144 justify-center items-center absolute">
+            {/* <Image
             src={poster || whiteMmmLogo}
             alt="Video unavailable"
             className="w-3/5 mx-auto h-auto max-w-4xl"
             priority
-          />
-          <p className="sm:text-lg lg:text-xl xl:text-2xl text-white">Video unavailable</p>
+          /> */}
+            <Image
+              priority
+              fetchPriority="high"
+              src={whiteMmmLogo}
+              alt="MMM logo"
+              sizes="(max-width: 768px) 200px, (max-width: 1024px) 288px, (max-width: 1280px) 384px, 576px"
+            />
+            {/* <p className="sm:text-lg lg:text-xl xl:text-2xl text-white">Video unavailable</p> */}
           </div>
         ) : (
           <MuxPlayer

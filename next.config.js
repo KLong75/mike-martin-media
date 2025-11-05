@@ -155,6 +155,12 @@ const nextConfig = {
         port: "", // Leave empty if no specific port is required
         pathname: "/**", // Allows any path
       },
+      {
+        protocol: "https",
+        hostname: "image.mux.com",
+        port: "", // Leave empty if no specific port is required
+        pathname: "/**", // Allows any path
+      },
     ],
   },
   async rewrites() {
