@@ -91,6 +91,7 @@ export default function Page() {
         autoPlay={true}
         loop={true}
         muted={true}
+        poster=""
       />
       <div className="">
         <PageHeadingBanner

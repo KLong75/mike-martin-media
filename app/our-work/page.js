@@ -76,6 +76,7 @@ export default function Page() {
           autoPlay={true}
           loop={true}
           muted={true}
+          poster=""
         />
       </div>
       <div className="flex justify-center items-center bg-black -mt-20">
