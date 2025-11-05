@@ -269,11 +269,11 @@ a.cky-banner-element {
 }
 
 /* hide newsletter signup for mobile */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   ._form-wrapper {
     display: none; 
   }
-} */
+}
 
 /* mux-player { */
 .auto-play-banner-video {
