@@ -55,13 +55,12 @@ export default function ClientVideoFrame({
           // onClick={handleClick}
         >
           <Image
-            id="video-thumbnail"
             className={`w-full h-full object-cover transform transition-transform duration-2000 group-hover:scale-125 ease-in-out `}
             src={image_src}
             height={540}
             width={960}
             alt={`${client} ${title}`}
-            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
           />
           <div className="absolute inset-0 bg-[#484848] opacity-45 group-hover:opacity-75 group-hover:bg-black transition-bg duration-2000 ease-in-out"></div>
           <div
