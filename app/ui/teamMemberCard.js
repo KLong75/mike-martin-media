@@ -33,7 +33,7 @@ export default function TeamMemberCard({ name, role, about, image_src }) {
             handleTeamCardClick();
           }
         }}
-        className="relative w-full h-full overflow-hidden cursor-pointer shadow-2xl group"
+        className="relative aspect-[3/4] w-full overflow-hidden cursor-pointer shadow-2xl group"
         onClick={handleTeamCardClick}>
         <Image
           className="shadow-2xl w-full h-full object-cover transform transition-transform duration-2000 lg:group-hover:scale-110 ease-in-out"
