@@ -21,7 +21,7 @@ export default function MMMTeamPhotoWithLogo() {
         width={708}
         height={65}
         alt=""
-        className="absolute bottom-[2rem] sm:bottom-[3rem] md:bottom-[3rem] lg:bottom-15 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full"
+        className="absolute bottom-[2rem] sm:bottom-[3rem] md:bottom-[3rem] lg:bottom-15 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full h-auto"
         sizes="(max-width: 768px) 150px, (max-width: 1200px) 300px, 600px"
       />
     </div>
