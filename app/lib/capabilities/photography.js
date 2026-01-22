@@ -9,7 +9,7 @@ export const photographyCapabilities = {
   sub_heading: "",
   list_items: [
     {
-      label: "Commercial Photography",
+      label: "Commercial Photography: ",
       description:
         " Perfect for advertising campaigns, product showcasing, and promotional materials.",
     },
@@ -35,6 +35,7 @@ export const photographyCapabilities = {
     {
       label: "Product Photography: ",
       description: "Use detailed, attractive images to promote your products.",
+      href: "/capabilities/product-photography",
     },
   ],
 };

@@ -41,4 +41,11 @@ export const capabilities = [
     icon_src: "/images/capability-icons/photography.png",
     description: "Capture your event with professional photos, professional headshots, and group pictures. In-studio or onlocation.",
   },
+  {
+    label: "Product Photography",
+    short_label: "Product Photography",
+    href: "/capabilities/product-photography",
+    icon_src: "/images/capability-icons/product-photography.png",
+    description: "Showcase your products with high-quality images that highlight their features and benefits, driving sales and engagement.",
+  },
 ];
