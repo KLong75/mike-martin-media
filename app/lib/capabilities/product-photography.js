@@ -1,5 +1,3 @@
-import { list } from "postcss";
-
 export const productPhotographyPageHeadingBannerText = {
   title: "Product Photography Services",
   heading: "Product Photography That Sells",
@@ -88,7 +86,7 @@ export const whoBenefitsFromProductPhotography = {
 };
 
 export const exampleProductPhotographyVideo = {
-  src: "4qT2Obf2HwbrRle6QkWRUL5ykXzqyqnR4ZjkuDSj15M",
+  src: "akjTIQF8yJS02VYgmpzxVpElq01q026jckyQcF028JnTGkU",
   title: "Mike Martin Media - Product Photography"
 };
 

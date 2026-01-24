@@ -88,8 +88,8 @@ export default function Page() {
   return (
     <main className="grid grid-cols-1">
       <BannerVideoWithFadeEffect
-        src="4qT2Obf2HwbrRle6QkWRUL5ykXzqyqnR4ZjkuDSj15M"
-        title="Mike Martin Media | Photography"
+        src="akjTIQF8yJS02VYgmpzxVpElq01q026jckyQcF028JnTGkU"
+        title="Mike Martin Media | Product Photography"
         containerClassName="padding-top-42-19"
         autoPlay={true}
         loop={true}
