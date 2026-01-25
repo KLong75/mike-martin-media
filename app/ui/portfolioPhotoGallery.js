@@ -136,7 +136,7 @@ export default function PortfolioPhotoGallery({ client }) {
                 <button
                   aria-label="View Fullscreen"
                   title="Enlarge Image"
-                  className="text-white bg-black/80 rounded-full my-4 p-2 hover:bg-opacity-75 cursor-pointer"
+                  className="text-white bg-black rounded-full my-4 p-2 hover:bg-opacity-75 cursor-pointer"
                   onClick={(e) => {
                     e.stopPropagation();
                     setFullScreenImage(image);
@@ -151,7 +151,7 @@ export default function PortfolioPhotoGallery({ client }) {
       </Swiper>
       {fullScreenImage !== null && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-100 flex items-center justify-center z-50"
           onClick={() => setFullScreenImage(null)}>
           <Image
             src={fullScreenImage.src}
