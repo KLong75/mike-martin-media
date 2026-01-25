@@ -8,7 +8,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 // import from swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // import swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -56,7 +56,7 @@ export default function PortfolioPhotoGallery({ client }) {
 
   return (
     <section className="text-center mx-auto w-full p-6 pb-0 md:p-12 md:pb-0 flex flex-col justify-center items-center font-bold">
-      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl md:-mb-6 ">
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xlfont-semibold mb-6">
         {`${clientPhotoData[0].client}`}
       </h1>
       <Swiper
@@ -108,26 +108,42 @@ export default function PortfolioPhotoGallery({ client }) {
           return (
             <SwiperSlide key={index}>
               <div
-                className={
-                  isPortrait
-                    ? "w-full max-w-lg h-auto mx-auto cursor-pointer"
-                    : "w-full max-w-3xl h-auto mx-auto cursor-pointer"
+                className="w-full max-w-3xl mx-auto flex flex-col items-center justify-center bg-white mb-12 aspect-[3/2]"
+                style={
+                  {
+                    // aspectRatio: "3/2", // Use the widest ratio you expect (e.g., 3/2 for landscape)
+                    // minHeight: "500px", // Fallback for browsers that don't support aspect-ratio
+                    // maxHeight: "80vh",
+                    // cursor: "pointer",
+                  }
                 }
-                
-                onClick={() => {
-                  setFullScreenImage(image);
-                  track("image_view", { client, image: image.title });
-                }}>
-                <div className="p-2 sm:p-6 md:p-8 lg:p-12 mb-12 sm:mb-6 md:mb-0">
+                // onClick={() => {
+                //   setFullScreenImage(image);
+                //   track("image_view", { client, image: image.title });
+                // }}
+              >
                 <Image
                   src={image.src}
                   alt={image.alt || "Gallery image"}
                   width={imageWidth}
                   height={imageHeight}
                   priority
-                  className="p-2 sm:p-6 md:p-8 lg:p-12 mb-12 sm:mb-6 md:mb-0"
+                  className="object-contain w-full h-full"
                 />
-                </div>
+                {/* <caption className="text-sm neutral-600 my-6">
+                Click or tap image to view fullscreen
+              </caption> */}
+                <button
+                  aria-label="View Fullscreen"
+                  title="Enlarge Image"
+                  className="text-white bg-black/80 rounded-full my-4 p-2 hover:bg-opacity-75 cursor-pointer"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setFullScreenImage(image);
+                    track("image_view", { client, image: image.title });
+                  }}>
+                  <SlSizeFullscreen size={16} />
+                </button>
               </div>
             </SwiperSlide>
           );
