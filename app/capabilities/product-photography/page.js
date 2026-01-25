@@ -90,7 +90,8 @@ export default function Page() {
       <BannerVideoWithFadeEffect
         src="akjTIQF8yJS02VYgmpzxVpElq01q026jckyQcF028JnTGkU"
         title="Mike Martin Media | Product Photography"
-        containerClassName="padding-top-42-19"
+        // containerClassName="padding-top-42-19"
+        containerClassName="padding-top-56-25"
         autoPlay={true}
         loop={true}
         muted={true}
