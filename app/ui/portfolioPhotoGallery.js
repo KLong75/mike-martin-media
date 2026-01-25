@@ -16,6 +16,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import data
 import { photographyWorkSampleData } from "@/app/lib/photographyWorkSampleData";
+// import icons
+import { SlSizeFullscreen } from "react-icons/sl";
 
 export default function PortfolioPhotoGallery({ client }) {
   const [fullScreenImage, setFullScreenImage] = useState(null);
@@ -23,8 +25,10 @@ export default function PortfolioPhotoGallery({ client }) {
   const clientPhotoData = photographyWorkSampleData.filter(
     (data) => data.client === client,
   );
+  console.log("Client Photo Data:", clientPhotoData);
   const clientImages = clientPhotoData[0].images;
-  const isPrasino = client === "Prasino";
+  console.log("Client Images:", clientImages);
+  // const isPrasino = client === "Prasino";
 
   // Disable scroll and pause autoplay when fullscreen
   useEffect(() => {
@@ -56,11 +60,13 @@ export default function PortfolioPhotoGallery({ client }) {
         {`${clientPhotoData[0].client}`}
       </h1>
       <Swiper
+        autoHeight={true}
         className="photo-swiper"
         spaceBetween={30}
         loop={true}
         slidesPerView={"auto"}
-        effect={"fade"}
+        speed={1000}
+        // effect={"fade"}
         navigation={{
           clickable: true,
         }}
@@ -71,13 +77,13 @@ export default function PortfolioPhotoGallery({ client }) {
           delay: 4800,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay, EffectFade, Navigation, Pagination]}
+        modules={[Autoplay, Navigation, Pagination]}
         onSwiper={(swiper) => (swiperRef.current = swiper)}>
-        {clientImages.map((image, index) => (
+        {/* {clientImages.map((image, index) => (
           <SwiperSlide key={index}>
             <div
               className={
-                isPrasino ? "w-full md:p-4" : "w-full max-w-144 h-auto mx-auto"
+               isPortrait ? "w-full max-w-lg h-auto mx-auto" : "w-full max-w-3xl h-auto mx-auto"
               }
               style={{ cursor: "pointer" }}
               onClick={() => {
@@ -87,14 +93,45 @@ export default function PortfolioPhotoGallery({ client }) {
               <Image
                 src={image.src}
                 alt={image.alt || "Gallery image"}
-                width={clientPhotoData[0].width}
-                height={clientPhotoData[0].height}
+                width={imageWidth}
+                height={imageHeight}
                 priority
                 className="p-2 sm:p-6 md:p-8 lg:p-12 mb-12 sm:mb-6 md:mb-0"
               />
             </div>
           </SwiperSlide>
-        ))}
+        ))} */}
+        {clientImages.map((image, index) => {
+          const isPortrait = image.orientation === "portrait";
+          const imageWidth = isPortrait ? 1280 : 1920;
+          const imageHeight = isPortrait ? 1920 : 1280;
+          return (
+            <SwiperSlide key={index}>
+              <div
+                className={
+                  isPortrait
+                    ? "w-full max-w-lg h-auto mx-auto cursor-pointer"
+                    : "w-full max-w-3xl h-auto mx-auto cursor-pointer"
+                }
+                
+                onClick={() => {
+                  setFullScreenImage(image);
+                  track("image_view", { client, image: image.title });
+                }}>
+                <div className="p-2 sm:p-6 md:p-8 lg:p-12 mb-12 sm:mb-6 md:mb-0">
+                <Image
+                  src={image.src}
+                  alt={image.alt || "Gallery image"}
+                  width={imageWidth}
+                  height={imageHeight}
+                  priority
+                  className="p-2 sm:p-6 md:p-8 lg:p-12 mb-12 sm:mb-6 md:mb-0"
+                />
+                </div>
+              </div>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
       {fullScreenImage !== null && (
         <div
