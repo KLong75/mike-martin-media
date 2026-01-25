@@ -6,7 +6,7 @@ import OurProcess from "@/app/ui/ourProcess";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
 import FormattedList from "@/app/ui/formattedList.js";
-import VideoGallery from "@/app/ui/workGallery.js";
+import WorkGallery from "@/app/ui/workGallery.js";
 // import page data
 import {
   photographyPageHeadingBannerText,
@@ -102,10 +102,11 @@ export default function Page() {
       </div>
       <div className="flex justify-center">
         <div className="w-full h-full">
-          <VideoGallery
+          <WorkGallery
             selectedCategories={["Photography"]}
             excludedCategory={[]}
-            numberOfVideos={3}
+            numberOfVideos={10}
+            featured={""}
           />
         </div>
       </div>

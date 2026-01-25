@@ -15,13 +15,13 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import data
-import { photographyWorkSampleData } from "@/app/lib/data";
+import { photographyWorkSampleData } from "@/app/lib/photographyWorkSampleData";
 
 export default function PortfolioPhotoGallery({ client }) {
   const [fullScreenImage, setFullScreenImage] = useState(null);
   const swiperRef = useRef(null);
   const clientPhotoData = photographyWorkSampleData.filter(
-    (data) => data.client === client
+    (data) => data.client === client,
   );
   const clientImages = clientPhotoData[0].images;
   const isPrasino = client === "Prasino";
@@ -72,8 +72,7 @@ export default function PortfolioPhotoGallery({ client }) {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
-      >
+        onSwiper={(swiper) => (swiperRef.current = swiper)}>
         {clientImages.map((image, index) => (
           <SwiperSlide key={index}>
             <div

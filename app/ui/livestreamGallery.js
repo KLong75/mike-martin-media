@@ -1,7 +1,7 @@
 // import components
 import ClientVideoFrame from "../ui/clientVideoFrame";
 // import data
-import { livestreamData } from "../lib/data";
+import { livestreamData } from "../lib/photographyWorkSampleData";
 
 export default function LivestreamGallery() {
   return (

@@ -23,7 +23,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 // import data
-import { photographyWorkSampleData } from "@/app/lib/data";
+import { photographyWorkSampleData } from "@/app/lib/photographyWorkSampleData";
 
 export default function PhotographyGallery({
   client,

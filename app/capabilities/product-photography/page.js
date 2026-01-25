@@ -106,9 +106,10 @@ export default function Page() {
       <div className="flex justify-center">
         <div className="w-full h-full">
           <VideoGallery
-            selectedCategories={["Photography"]}
+            selectedCategories={["Product Photography"]}
             excludedCategory={[]}
             numberOfVideos={3}
+            featured={"featured-product-photography"}
           />
         </div>
       </div>
