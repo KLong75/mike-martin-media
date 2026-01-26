@@ -23,7 +23,7 @@ import {
 // import { photographyCoverImages } from "../../lib/capabilities/photography.js";
 
 const productPhotographyPageOgImgUrl =
-  "https://www.mikemartinmedia.com/images/open-graph/photography-og.png";
+  "https://www.mikemartinmedia.com/images/open-graph/product-photography-og.png";
 
 export const metadata = {
   type: "website",
