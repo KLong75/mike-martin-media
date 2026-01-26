@@ -86,6 +86,6 @@ export const whoBenefitsFromProductPhotography = {
 };
 
 export const exampleProductPhotographyVideo = {
-  src: "akjTIQF8yJS02VYgmpzxVpElq01q026jckyQcF028JnTGkU",
+  src: "fJmUGVR5xPMsWbZOwb9ZxBQxPSllczqmhPKw0001ZHxuM",
   title: "Mike Martin Media - Product Photography"
 };

@@ -22,7 +22,7 @@ export default function CapabilityHighLightsSection({
             autoPlay={false}
             loop={true}
             muted={true}
-            className="auto-play-banner-video"
+            className="auto-play-banner-video border-black border-2"
             poster=""
           />
         </div>
