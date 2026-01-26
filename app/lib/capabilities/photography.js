@@ -112,7 +112,7 @@ export const whoBenefitsFromPhotography = {
     },
     {
       label: "Events & Conferences:",
-      description: "Conduct virtual investor meetings and financial briefings.",
+      description: "Photos that documentthe experience and atmosphere.",
     },
     {
       label: "Food & Beverage:",
@@ -125,63 +125,3 @@ export const examplePhotographyVideo = {
   src: "4qT2Obf2HwbrRle6QkWRUL5ykXzqyqnR4ZjkuDSj15M",
   title: "Mike Martin Media - Photography"
 };
-
-// export const photographyCoverImages = [
-//   {
-//     client: "Catholic Charities of St. Louis",
-//     src: "/images/photography-cover-images/catholic-charities.png",
-//     width: 437,
-//     height: 655,
-//     href: "",
-//     alt: "Photo gallery for Catholic Charities of St. Louis",
-//     category: ["Photography", "Nonprofit"]
-//   },
-//   {
-//     client: "Prasino",
-//     src: "/images/photography-cover-images/prasino-cover-img.png",
-//     width: 437,
-//     height: 655,
-//     href: "",
-//     alt: "Photo gallery for Prasino",
-//     category: ["Photography", "Corporate"]
-//   },
-//   {
-//     client: "Club Fitness",
-//     src: "/images/photography-cover-images/club-fitness-cover-img.png",
-//     width: 437,
-//     height: 655,
-//     href: "",
-//     alt: "Photo gallery for Club Fitness",
-//     category: ["Photography", "Corporate"]
-//   },
-// ];
-
-// export const mobilePhotographyCoverImages = [
-//   {
-//     client: "Catholic Charities of St. Louis",
-//     src: "/images/work-gallery-cover-images/photography/catholic-charities-gallery-cover.png",
-//     width: 1920,
-//     height: 1080,
-//     href: "",
-//     alt: "Photo gallery for Catholic Charities of St. Louis",
-//     category: ["Photography", "Nonprofit"]
-//   },
-//   {
-//     client: "Prasino",
-//     src: "/images/work-gallery-cover-images/photography/prasino-gallery-cover.png",
-//     width: 1920,
-//     height: 61080,
-//     href: "",
-//     alt: "Photo gallery for Prasino",
-//     category: ["Photography", "Corporate"]
-//   },
-//   {
-//     client: "Club Fitness",
-//     src: "/images/work-gallery-cover-images/photography/club-fitness-gallery-cover.png",
-//     width: 1920,
-//     height: 1080,
-//     href: "",
-//     alt: "Photo gallery for Club Fitness",
-//     category: ["Photography", "Corporate"]
-//   },
-// ];

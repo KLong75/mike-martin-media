@@ -612,7 +612,7 @@ export const workSampleData = [
     title: "Plancorp Photo Gallery",
     image_src: "/images/work-gallery-cover-images/photography/plancorp.png",
     vimeo_src: "",
-    featured: "",
+    featured: "featured-photography",
     slug: "plancorp-photo-gallery",
   },
   {
@@ -634,7 +634,7 @@ export const workSampleData = [
     image_src:
       "/images/work-gallery-cover-images/photography/rottler.png",
     vimeo_src: "",
-    featured: "featured-photography",
+    featured: "",
     slug: "rottler-pest-control-photo-gallery",
   },
   {
