@@ -79,6 +79,7 @@ export const videoEditingCapabilities = {
     {
       label: "Motion Graphics Integration:",
       description: "Adding titles, logos, and graphics to your video makes sure your brand stands out.",
+      href: "/capabilities/animation-motion-graphics",
     },
     {
       label: "Multi-Camera Editing:",

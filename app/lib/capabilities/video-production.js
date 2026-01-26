@@ -88,17 +88,19 @@ export const videoProductionCapabilities = {
     {
       label: "Sound Design:",
       description:
-        "We make sure your video’s audio quality elevates the viewer experience.",
+        "We make sure your video's audio quality elevates the viewer experience.",
     },
     {
       label: "Post-Production Editing:",
       description:
         "Our team crafts your story so that it captures attention and keeps your audience engaged.",
+      href: "/capabilities/video-editing",
     },
     {
       label: "Motion Graphics and Visual Effects:",
       description:
         "Using motion graphics and other visual effects enhances your video and elevates your story.",
+      href: "/capabilities/animation-motion-graphics",
     },
   ],
 };
