@@ -1,7 +1,7 @@
 export const videoProductionPageHeadingBannerText = {
   title: "Business Video Production Services",
   heading: "Capturing Stories with Purpose and Precision",
-  text: "At MMM, we create videos and stories that make a lasting impact. We are dedicated to producing videos that keep your audience’s attention, inspire action and drive real results. From product launches to cause-driven storytelling, our team is committed to creating a positive impact and bringing your story to life.",
+  text: "At MMM, we create videos and stories that make a lasting impact. We are dedicated to producing videos that keep your audience's attention, inspire action and drive real results. From product launches to cause-driven storytelling, our team is committed to creating a positive impact and bringing your story to life.",
 };
 
 export const videoProductionHighlights = {
@@ -113,7 +113,7 @@ export const videoProductionForEveryIndustry = {
     {
       label: "Corporate:",
       description:
-        "Highlight your brand’s story and connect with your audience.",
+        "Highlight your brand's story and connect with your audience.",
     },
     {
       label: "Non-Profit:",
