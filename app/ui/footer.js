@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="flex grid grid-cols-1 lg:grid-cols-3 justify-center items-center py-2 m-4 mt-12">
             <div className="order-2 md:order-1 text-center xl:mr-auto">
               <span className="text-xs lg:text-sm">
-                ©2025 Mike Martin Media
+                ©2026 Mike Martin Media
               </span>
             </div>
             <div className="order-1 md:order-2 text-center">
