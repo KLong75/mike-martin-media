@@ -1,6 +1,5 @@
 export default function NewsletterSignupButton() {
   const handleClick = () => {
-    console.log("Newsletter signup button clicked");
     // Check for the cookie named '_form_3_'
     const cookieName = "_form_3_";
     const cookies = document.cookie.split(";");
@@ -21,13 +20,13 @@ export default function NewsletterSignupButton() {
     // if the script already exists, remove it
     const existingScript = document.getElementById("active-campaign-script");
     if (existingScript) {
-      console.log("Removing existing Active Campaign script");
+      // console.log("Removing existing Active Campaign script");
       existingScript.remove();
     }
 
     const existingFormWrapper = document.querySelector("._form-wrapper");
     if (existingFormWrapper) {
-      console.log("Removing existing form wrapper");
+      // console.log("Removing existing form wrapper");
       existingFormWrapper.remove();
     }
 

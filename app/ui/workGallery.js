@@ -51,7 +51,7 @@ export default function WorkGallery({
     );
   });
 
-  console.log("Filtered Videos:", filteredVideos);
+  // console.log("Filtered Videos:", filteredVideos);
 
   const [isPageLoaded, setIsPageLoaded] = useState(false);
 

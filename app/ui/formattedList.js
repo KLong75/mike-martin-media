@@ -6,7 +6,6 @@ export default function FormattedList({
   sub_heading,
   list_items,
 }) {
-  console.log("FormattedList list_items:", list_items);
   return (
     <div className="lg:m-6">
       {/* <h6 className="font-bold text-xl lg:text-2xl xl:text-4xl">{heading}</h6> */}

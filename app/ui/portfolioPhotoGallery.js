@@ -25,9 +25,9 @@ export default function PortfolioPhotoGallery({ client }) {
   const clientPhotoData = photographyWorkSampleData.filter(
     (data) => data.client === client,
   );
-  console.log("Client Photo Data:", clientPhotoData);
+  // console.log("Client Photo Data:", clientPhotoData);
   const clientImages = clientPhotoData[0].images;
-  console.log("Client Images:", clientImages);
+  // console.log("Client Images:", clientImages);
   // const isPrasino = client === "Prasino";
 
   // Disable scroll and pause autoplay when fullscreen
