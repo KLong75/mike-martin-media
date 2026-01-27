@@ -38,6 +38,7 @@ export default async function BlogPost({ post }) {
             height={post.image_height}
             alt={post.image_alt}
             className="w-175"
+            sizes="(max-width: 768px) 80vw, 432px"
           />
         </div>
         <div className="p-8 max-w-3xl mx-auto lg:text-lg lg:mt-6">
@@ -73,6 +74,7 @@ export default async function BlogPost({ post }) {
                         height={post.second_image_height}
                         alt={post.second_image_alt}
                         className="w-125"
+                        sizes="(max-width: 768px) 80vw, 500px"
                       />
                     </div>
                   </div>
@@ -86,7 +88,7 @@ export default async function BlogPost({ post }) {
         {post.video && (
           <div className="py-12">
             <div
-              className="mx-auto w-full h-full max-w-2xl "
+              className="mx-auto w-[90vw] md:w-full h-auto max-w-2xl"
               style={{ aspectRatio: aspectRatio }}>
               <ClientVideoContainer video={post.video} />
             </div>
