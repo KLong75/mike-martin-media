@@ -40,10 +40,8 @@ export const blogPosts = [
     second_image_height: 342,
     second_image_alt: "",
     text: [
-      "One of the most satisfying things we do at MMM is create fundraising and awareness videos for nonprofit organizations. We have had the privilege of working with dozens of nonprofits in the STL area and around the country. These videos have helped to raise millions of dollars for our nonprofit clients.",
-      "We have provided many discounts and in-kind donations to nonprofits over the years, because I know how important these organizations are to our communities. The live-saving work that they do is essential for all of us, not just the clients they serve. We are excited about our plans for working with nonprofits in 2026, and can't wait to share them with you and continue to play a vital role in helping those that need it the most.",
-      "Happy Holidays and New Year to all!",
-      "",
+      "One of the most satisfying things we do at MMM is create fundraising and awareness videos for nonprofit organizations. In our 17 years as a company, we have had the privilege of working with dozens and dozens of nonprofits in the St. Louis area and around the country. These videos have helped raise millions of dollars for our nonprofit clients and that is why we do this work.",
+      "I know how important these organizations are for our communities and the clients they serve. Gratitude House is just one example of essential life-saving work being done every day by nonprofit organizations. We are excited about our plans for working with nonprofits in 2026 and can't wait to share them with you and continue to play a vital role in helping those that need it the most.",
     ],
     video: {
       playback_id: "PRhLtcYJZFLOtXvt02gP45eolkvlty2QlUAKo4hdlfl4",
@@ -51,10 +49,10 @@ export const blogPosts = [
       image_src:
         "https://image.mux.com/PRhLtcYJZFLOtXvt02gP45eolkvlty2QlUAKo4hdlfl4/thumbnail.png?width=576&height=324&time=42",
     },
-    closing_tag: "MMM",
+    closing_tag: "Until next time,",
     author: "Mike Martin",
     slug: "supporting-nonprofits-through-storytelling",
-    description: " A look at Mike Martin Media’s ongoing work with nonprofit organizations and the impact of fundraising and awareness videos."
+    description: " A look at Mike Martin Media's ongoing work with nonprofit organizations and the impact of fundraising and awareness videos."
   },
   {
     slug: "life-between-keyframes",
