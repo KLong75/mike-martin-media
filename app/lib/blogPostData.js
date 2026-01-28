@@ -47,7 +47,7 @@ export const blogPosts = [
       playback_id: "PRhLtcYJZFLOtXvt02gP45eolkvlty2QlUAKo4hdlfl4",
       title: "Gratitude House",
       image_src:
-        "https://image.mux.com/PRhLtcYJZFLOtXvt02gP45eolkvlty2QlUAKo4hdlfl4/thumbnail.png?width=576&height=324&time=42",
+        "https://image.mux.com/PRhLtcYJZFLOtXvt02gP45eolkvlty2QlUAKo4hdlfl4/thumbnail.webp?width=576&height=324&time=42",
     },
     closing_tag: "Until next time,",
     author: "Mike Martin",
@@ -336,7 +336,7 @@ if (n == 0){
       playback_id: "uAJfCDRMKASXG4wAjX5vSrSu4Qi8h2T2xlp5TzDY8uM",
       title: "Club Fitness Share to Inspire - Eric Newby",
       image_src:
-        "https://image.mux.com/uAJfCDRMKASXG4wAjX5vSrSu4Qi8h2T2xlp5TzDY8uM/thumbnail.png?width=576&height=324&time=52",
+        "https://image.mux.com/uAJfCDRMKASXG4wAjX5vSrSu4Qi8h2T2xlp5TzDY8uM/thumbnail.webp?width=576&height=324&time=52",
     },
     closing_tag: "Until next time,",
     author: "Rachel Lee",
