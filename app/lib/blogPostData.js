@@ -196,7 +196,7 @@ if (n == 0){
   {
     slug: "growth-and-gratitude",
     title: "15 Years of Growth and Gratitude",
-    post_date: "Feb 2025",
+    post_date: "February 2025",
     image_src: `${basePath}2025/2025-feb.webp`,
     image_alt: "A young Tom with an old school video camera.",
     image_width: 456,
@@ -214,7 +214,7 @@ if (n == 0){
   {
     slug: "starting-my-career",
     title: "Starting My Career At MMM",
-    post_date: "Jan 2025",
+    post_date: "January 2025",
     image_src: `${basePath}2025/2025-jan.webp`,
     image_alt: "Robert showing off his photographer credentials. ",
     image_width: 456,
@@ -237,7 +237,7 @@ if (n == 0){
   {
     slug: "year-end-review",
     title: "2024 Review",
-    post_date: "Dec 2024",
+    post_date: "December 2024",
     image_src: `${basePath}2024/2024-dec.png`,
     image_alt: "The MMM team at work in the studio using a green screen.",
     image_width: 456,
@@ -258,16 +258,12 @@ if (n == 0){
   {
     slug: "note-from-ceo",
     title: "A Note from the CEO",
-    post_date: "Nov 2024",
+    post_date: "November 2024",
     image_src: `${basePath}2024/2024-nov.png`,
     image_width: 456,
     image_height: 282,
     image_alt:
       "The MMM team. We work hard, play hard, and spend a lot of time laughing.",
-    // second_image_src: "/images/blog-post-images/.png",
-    // second_image_width: 208,
-    // second_image_height: 109,
-    // second_image_alt: "",
     text: [
       "I started MMM in my basement in 2009 after a decade of working in television news. I discovered that there were so many stories that needed telling in St. Louis and around the world. Stories that would create positive impacts and help people achieve their goals. I wanted to make a difference.",
       "I was armed with a Mac Pro, Final Cut software, and one of the first affordable HD cameras that came to the market. I had one client, St. Patrick Center (who we still work with today)",
@@ -291,7 +287,7 @@ if (n == 0){
   {
     slug: "note-from-mary",
     title: "A Note from Mary",
-    post_date: "Oct 2024",
+    post_date: "October 2024",
     image_src: `${basePath}2024/2024-oct.png`,
     image_width: 456,
     image_height: 342,
@@ -315,7 +311,7 @@ if (n == 0){
   {
     slug: "olympic-fever",
     title: "Olympic Fever",
-    post_date: "Sept 2024",
+    post_date: "September 2024",
     image_src: `${basePath}2024/2024-sept.png`,
     image_width: 456,
     image_height: 342,
@@ -443,7 +439,7 @@ if (n == 0){
   {
     slug: "reflecting-on-the-season",
     title: "Reflecting on the Season",
-    post_date: "Jan 2023",
+    post_date: "January 2023",
     image_src: `${basePath}2023/2023-jan.png`,
     image_width: 456,
     image_height: 342,
@@ -510,7 +506,7 @@ if (n == 0){
   {
     slug: "note-from-rachel",
     title: "A Note from Rachel",
-    post_date: "Feb 2023",
+    post_date: "February 2023",
     image_src: `${basePath}2022/2022-march.png`,
     image_width: 456,
     image_height: 342,
@@ -530,7 +526,7 @@ if (n == 0){
   {
     slug: "note-from-mike",
     title: "A Note from Mike",
-    post_date: "Feb 2022",
+    post_date: "February 2022",
     image_src: `${basePath}2022/2022-feb.png`,
     image_width: 456,
     image_height: 304,
