@@ -74,7 +74,7 @@ export default async function BlogPost({ post }) {
                         height={post.second_image_height}
                         alt={post.second_image_alt}
                         className="w-125"
-                        sizes="(max-width: 768px) 80vw, 500px"
+                        sizes="(max-width: 768px) 80vw, 432px"
                       />
                     </div>
                   </div>

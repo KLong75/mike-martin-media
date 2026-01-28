@@ -113,10 +113,10 @@ export default async function BlogPostPage({ params }) {
         <div className="mr-52 sm:mr-72 md:mr-144">
           {prevPost ? (
             <Link href={`/blog/posts/${prevPost.slug}`} aria-label={`Previous blog post: ${prevPost.title}`}>
-              <span className="font-semibold">&lt;&lt; Prev</span>
+              <span className="font-semibold">&lt;&lt; Previous</span>
             </Link>
           ) : (
-            <span className="text-gray-500">&lt;&lt; Prev</span>
+            <span className="text-gray-500">&lt;&lt; Previous</span>
           )}
         </div>
         <div>
