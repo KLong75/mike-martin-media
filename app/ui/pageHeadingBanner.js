@@ -1,4 +1,4 @@
-export default function PageHeadingBanner({ title, heading, text }) {
+export default function PageHeadingBanner({ title, heading, text, text2 }) {
   return (
     <div className="bg-black text-white flex justify-center">
       <div className="bg-black text-white w-full h-auto flex grid grid-cols-1 md:grid-cols-2 max-w-1000 my-5">
@@ -11,7 +11,10 @@ export default function PageHeadingBanner({ title, heading, text }) {
           </h2>
         </div>
         <div className="mt-1 lg:mt-0 flex flex-col justify-center px-12 lg:mr-28 xl:mr-36 ">
-          <p className="lg:py-10 text-sm xl:text-base 2xl:text-xl">{text}</p>
+          <p className="lg:py-6 text-sm xl:text-base 2xl:text-xl">{text}</p>
+          {text2 && (
+            <p className="py-4 lg:pb-6 lg:pt-0 text-sm xl:text-base 2xl:text-xl">{text2}</p>
+          )}
         </div>
       </div>
     </div>

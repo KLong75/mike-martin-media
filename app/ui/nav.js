@@ -12,8 +12,8 @@ import { MdDehaze } from "react-icons/md";
 import { HiX } from "react-icons/hi";
 // import components
 import Image from "next/image";
-import SubNavMenu from "./subNavMenu";
-import SubNavMenuMobile from "./subNavMenuMobile";
+// import SubNavMenu from "./subNavMenu";
+// import SubNavMenuMobile from "./subNavMenuMobile";
 // import data
 import { capabilities } from "../lib/capabilities/capabilities";
 import { industries } from "../lib/industries/industries";
@@ -39,6 +39,10 @@ const navLinks = [
   {
     href: "/blog",
     label: "Blog",
+  },
+  {
+    href: "/case-studies",
+    label: "Case Studies",
   },
   {
     href: "/careers",
@@ -162,7 +166,7 @@ export default function Nav() {
       </div>
       {/* Desktop Nav Menu */}
       <div className={`z-50 flex ${menuOpen ? "" : "hidden lg:flex"} w-full`}>
-        <ul className="flex flex-row space-x-8 xl:space-x-10 2xl:space-x-12">
+        <ul className="flex flex-row space-x-6 xl:space-x-8 2xl:space-x-10">
           {navLinks.map((link) => (
             <li
               key={link.label}

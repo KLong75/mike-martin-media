@@ -1,6 +1,6 @@
 //import components
 // import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
-import VideoGallery from "@/app/ui/workGallery";
+// import VideoGallery from "@/app/ui/workGallery";
 import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
@@ -10,13 +10,14 @@ import {
   corporatePageBannerText,
   corporateSupport,
 } from "@/app/lib/industries/corporate";
+import { caseStudiesPageBannerText, howWeSupportOurClients } from "../lib/case-studies/case-studies";
 import BannerImage from "@/app/ui/bannerImage";
 
-const corporatePageOgImgUrl =
-  "https://www.mikemartinmedia.com/images/open-graph/corporate-og.png";
+const caseStudiesPageOgImgUrl =
+  "https://www.mikemartinmedia.com/images/open-graph/case-studies-og.png";
 
 export const metadata = {
-  title: "Corporate Video Production | Mike Martin Media",
+  title: "Mike Martin Media | Case Studies",
   description:
     "Full-service corporate video production company delivering training, executive communications & promotional content. Professional team elevates your brand with compelling visuals. Contact us.",
   alternates: {
@@ -31,11 +32,11 @@ export const metadata = {
     description:
       "Full-service corporate video production company delivering training, executive communications & promotional content. Professional team elevates your brand with compelling visuals. Contact us.",
     images: [
-      {
-        url: corporatePageOgImgUrl,
-        width: 1200,
-        height: 630,
-      },
+      // {
+      //   url: corporatePageOgImgUrl,
+      //   width: 1200,
+      //   height: 630,
+      // },
       // {
       //   url: ,
       //   width: 1920,
@@ -60,11 +61,11 @@ export const metadata = {
     description:
       "Full-service corporate video production company delivering training, executive communications & promotional content. Professional team elevates your brand with compelling visuals. Contact us.",
     images: [
-      {
-        url: corporatePageOgImgUrl,
-        width: 1200,
-        height: 630,
-      },
+      // {
+      //   url: corporatePageOgImgUrl,
+      //   width: 1200,
+      //   height: 630,
+      // },
       // {
       //   url: ,
       //   width: 800,
@@ -78,20 +79,21 @@ export default function Page() {
   return (
     <main className="grid grid-cols-1">
       <BannerImage
-        src="/images/industries/corporate.png"
-        alt="Mike Martin Media | Corporate Video Production"
-        title="Corporate Video Production"
+        src="/images/case-studies/option-1.png"
+        alt="Mike Martin Media | Case Studies"
+        title="Case Studies"
         width={1920}
         height={1080}
       />
       <div className="">
         <PageHeadingBanner
-          title={corporatePageBannerText.title}
-          heading={corporatePageBannerText.heading}
-          text={corporatePageBannerText.text}
+          title={caseStudiesPageBannerText.title}
+          heading={caseStudiesPageBannerText.heading}
+          text={caseStudiesPageBannerText.text}
+          text2={caseStudiesPageBannerText.text2}
         />
       </div>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <div className="w-full h-full">
           <VideoGallery
             selectedCategories={[
@@ -103,14 +105,14 @@ export default function Page() {
             numberOfVideos={3}
           />
         </div>
-      </div>
+      </div> */}
       <div className="flex justify-center lg:my-6 2xl:my-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 p-8 lg:p-12 lg:m-6 max-w-1200">
           <div className="lg:ml-28 lg:mr-36 col-span-2 ">
             <IndustrySupport
-              heading={corporateSupport.heading}
-              helperText={corporateSupport.sub_heading}
-              supportList={corporateSupport.list_items}
+              heading={howWeSupportOurClients.heading}
+              helperText={howWeSupportOurClients.sub_heading}
+              supportList={howWeSupportOurClients.list_items}
             />
           </div>
           <div className=" hidden lg:block ">
