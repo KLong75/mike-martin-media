@@ -35,6 +35,7 @@ export const howWeSupportOurClients = {
 
 export const caseStudies = [
   {
+    slug: "washu-advancing-our-mission",
     client: "Washington University in St. Louis",
     title: "WashU: People of the Plan",
     campaign: "Advancing Our Mission",
