@@ -101,43 +101,12 @@ export default function Page() {
           title={caseStudiesPageBannerText.title}
           heading={caseStudiesPageBannerText.heading}
           text={caseStudiesPageBannerText.text}
-          // text2={caseStudiesPageBannerText.text2}
+          text2={caseStudiesPageBannerText.text2}
         />
       </div>
 
       <div className="px-2 pb-12 md:pb-6 lg:pb-0 pt-6">
         <BlogPostGallery number_of_posts={3} priorityFirstImage={false} />
-      </div>
-      {/* <div className="flex justify-center">
-        <div className="w-full h-full">
-          <VideoGallery
-            selectedCategories={[
-              "Corporate",
-              "Video Production",
-              "Video Editing",
-            ]}
-            excludedCategory={[]}
-            numberOfVideos={3}
-          />
-        </div>
-      </div> */}
-      {/* <div className="flex justify-center lg:my-6 2xl:my-12"> */}
-
-      <div className="w-full relative flex flex-col items-center justify-center">
-        <p className="flex justify-center items-center text-center italic font-semibold  text-lg absolute bottom-2 left-24">
-          These stories highlight how thoughtful video production can build
-          trust, drive engagement, and support real business and mission-driven
-          goals.
-        </p>
-        
-          <Image
-            src="/branding/line-logo-black.png"
-            alt=""
-            width={1440}
-            height={65}
-            className=""
-          />
-        
       </div>
 
       <div className="flex justify-center">
