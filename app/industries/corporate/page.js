@@ -81,8 +81,8 @@ export default function Page() {
         src="/images/industries/corporate.png"
         alt="Mike Martin Media | Corporate Video Production"
         title="Corporate Video Production"
-        width={1920}
-        height={1080}
+        width={1728}
+        height={728}
       />
       <div className="">
         <PageHeadingBanner

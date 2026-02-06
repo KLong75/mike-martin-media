@@ -86,7 +86,7 @@ export default function Page() {
       <div className=" flex flex-col justify-center mt-6">
         <JoinTheTeam />
       </div>
-      <div className="w-full mt-auto">
+      <div className="w-full mt-auto mb-6">
         <MMMLineLogoBlack />
       </div>
     </main>

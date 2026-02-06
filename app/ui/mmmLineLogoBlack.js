@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function MMMLineLogoBlack() {
   return (
-    <div className="p-2 flex justify-center items-center -mt-3">
+    <div className="p- flex justify-center items-center">
       <Image
         src="/branding/mmm_line_logo.png"
         height={60}
