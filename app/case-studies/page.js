@@ -1,19 +1,21 @@
 // import from next
 import Image from "next/image";
 //import components
-import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
-import MMMLineLogoHeading from "../ui/mmmLineLogoHeading";
+// import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
+// import MMMLineLogoHeading from "../ui/mmmLineLogoHeading";
 // import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
 // import VideoGallery from "@/app/ui/workGallery";
 import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
 import IndustrySupport from "@/app/ui/industrySupport";
-import BlogPostGallery from "../ui/blogPostGallery";
+// import BlogPostGallery from "../ui/blogPostGallery";
+import CaseStudyPreview from "@/app/ui/case-study-preview";
 //import data
 import {
   caseStudiesPageBannerText,
   howWeSupportOurClients,
+  caseStudies,
 } from "../lib/case-studies/case-studies";
 import BannerImage from "@/app/ui/bannerImage";
 
@@ -105,9 +107,15 @@ export default function Page() {
         />
       </div>
 
-      <div className="px-2 pb-12 md:pb-6 lg:pb-0 pt-6">
-        <BlogPostGallery number_of_posts={3} priorityFirstImage={false} />
+      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6 px-2 md:px-6 lg:px-12 py-6">
+        {caseStudies.map((caseStudy) => (
+          <CaseStudyPreview key={caseStudy.slug} caseStudy={caseStudy} />
+        ))}
       </div>
+
+      {/* <div className="px-2 pb-12 md:pb-6 lg:pb-0 pt-6">
+        <BlogPostGallery number_of_posts={3} priorityFirstImage={false} />
+      </div> */}
 
       <div className="flex justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-3 p-8 lg:p-12 lg:m-6 max-w-1200">

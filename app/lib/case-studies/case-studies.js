@@ -46,7 +46,7 @@ export const caseStudies = [
     ],
     approach: [
       "Mike Martin Media partnered with WashU to produce a five-part video vignette series featuring on-camera conversations with key leaders and contributors across initiatives.",
-      "Filmed on campus, each interview was guided by a producer to feel natural and unscripted. A multi-camera setup provided visual variety while maintaining an intimate, conversational tone. Curated campus locations served as intentional backdrops, grounding each story in WashU’s environment and mission.",
+      "Filmed on campus, each interview was guided by a producer to feel natural and unscripted. A multi-camera setup provided visual variety while maintaining an intimate, conversational tone. Curated campus locations served as intentional backdrops, grounding each story in WashU's environment and mission.",
       "Subtle graphics, music, and intro/outro elements created cohesion across the series and connected each vignette back to the larger campaign and hero video. Campus and subject b-roll was integrated throughout to add visual depth and context.",
     ],
     result: [

@@ -65,7 +65,9 @@ export default async function CaseStudyPage({ params }) {
   }
   return (
     <div>
-      <h1>{caseStudy.client}: {caseStudy.title}</h1>
-      </div>
+      <h1>
+        {caseStudy.client}: {caseStudy.title}
+      </h1>
+    </div>
   );
 }
