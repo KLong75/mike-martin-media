@@ -107,15 +107,11 @@ export default function Page() {
         />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6 px-2 md:px-6 lg:px-12 py-6 max-w-800 mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 px-2 md:px-6 lg:px-12 pt-6 max-w-800 mx-auto">
         {caseStudies.map((caseStudy) => (
           <CaseStudyPreview key={caseStudy.slug} caseStudy={caseStudy} />
         ))}
       </div>
-
-      {/* <div className="px-2 pb-12 md:pb-6 lg:pb-0 pt-6">
-        <BlogPostGallery number_of_posts={3} priorityFirstImage={false} />
-      </div> */}
 
       <div className="flex justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-3 p-8 lg:p-12 lg:m-6 max-w-1200">
