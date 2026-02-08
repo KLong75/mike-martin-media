@@ -10,6 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.font-courier-prime {
+  font-family: "Courier Prime", monospace;
+}
+
 /* home page */
 
 .banner-video-aspect-ratio-container {
@@ -94,6 +98,11 @@ html {
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+}
+
+
+.text-shadow-black {
+  text-shadow: 2px 2px 0 black;
 }
 
 /* .text-shadow-white-background-black {

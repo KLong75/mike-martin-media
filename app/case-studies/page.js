@@ -1,7 +1,7 @@
 // import from next
 import Image from "next/image";
 //import components
-// import MMMLineLogoBlack from "../ui/mmmLineLogoBlack";
+// import MMMLineLogo from "../ui/mmmLineLogo";
 // import MMMLineLogoHeading from "../ui/mmmLineLogoHeading";
 // import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
 // import VideoGallery from "@/app/ui/workGallery";
@@ -107,7 +107,7 @@ export default function Page() {
         />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 px-2 md:px-6 lg:px-12 pt-6 max-w-800 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 px-2 md:px-6 lg:px-12 pt-6 max-w-800 mx-auto">
         {caseStudies.map((caseStudy) => (
           <CaseStudyPreview key={caseStudy.slug} caseStudy={caseStudy} />
         ))}
