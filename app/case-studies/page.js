@@ -103,8 +103,13 @@ export default function Page() {
           title={caseStudiesPageBannerText.title}
           heading={caseStudiesPageBannerText.heading}
           text={caseStudiesPageBannerText.text}
-          text2={caseStudiesPageBannerText.text2}
+          // text2={caseStudiesPageBannerText.text2}
         />
+      </div>
+      <div>
+        <p className="text-center text-xl font-semibold max-w-3xl mx-auto my-12 px-4 italic">
+          {caseStudiesPageBannerText.text2}
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 px-2 md:px-6 lg:px-12 pt-6 max-w-800 mx-auto">

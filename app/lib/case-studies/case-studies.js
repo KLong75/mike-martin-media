@@ -3,7 +3,7 @@ export const caseStudiesPageBannerText = {
   heading: "What Collaboration Looks Like in Practice",
   text:
     "If you are considering a video partner, you want more than a highlight reel — you want proof. Our case studies take a closer look at the projects we've created, the challenges our clients faced, and how video helped them communicate more clearly and effectively.",
-    // text2: "These stories highlight how thoughtful video production can build trust, drive engagement, and support real business and mission-driven goals.",
+    text2: "These stories highlight how thoughtful video production can build trust, drive engagement, and support real business and mission-driven goals.",
 };
 
 export const howWeSupportOurClients = {

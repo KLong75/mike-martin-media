@@ -72,7 +72,7 @@
 //             <div className="px-4 hidden group-hover:block">
 //               <MMMLineLogo color={"white"} />
 //             </div>
-        
+
 //             </div>
 //         </Link>
 //       ) : (
@@ -83,8 +83,6 @@
 //   );
 // }
 
-
-
 "use client";
 // import from react
 import { useState } from "react";
@@ -94,7 +92,8 @@ import Image from "next/image";
 // import components
 import MMMLineLogo from "./mmmLineLogo";
 // import MMMLineLogoHeading from "../ui/mmmLineLogoHeading";
-import clsx from "clsx";
+// import images
+import whiteMmmLogo from "../../public/branding/white-mmm-logo-294x95.png";
 // import from utils
 import { shortenPostText } from "@/utils/utils";
 
@@ -135,8 +134,13 @@ export default function CaseStudyPreview({ caseStudy }) {
                   />
                   {/* CHANGED: Overlay uses group-hover to match other hover effects */}
                   <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-shadow-black">
-                    <h4 className="text-white text-2xl font-courier-prime">CASE STUDY:</h4>
+                    <h4 className="text-white text-2xl font-courier-prime">
+                      CASE STUDY:
+                    </h4>
                     <h5 className="text-white text-lg">{caseStudy.client}</h5>
+                    <div className="w-20 h-auto mt-2">
+                      <Image src={whiteMmmLogo} alt="Mike Martin Media" />
+                    </div>
                   </div>
                 </div>
               </div>
