@@ -1,16 +1,9 @@
-// import from next
-import Image from "next/image";
 //import components
-// import MMMLineLogo from "../ui/mmmLineLogo";
-// import MMMLineLogoHeading from "../ui/mmmLineLogoHeading";
-// import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
-// import VideoGallery from "@/app/ui/workGallery";
 import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
 import IndustrySupport from "@/app/ui/industrySupport";
-// import BlogPostGallery from "../ui/blogPostGallery";
-import CaseStudyPreview from "@/app/ui/case-study-preview";
+import CaseStudyPreview from "@/app/ui/caseStudyPreview";
 //import data
 import {
   caseStudiesPageBannerText,

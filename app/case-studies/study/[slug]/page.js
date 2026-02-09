@@ -2,6 +2,7 @@
 import Link from "next/link";
 // import components
 import BackLink from "@/app/ui/backLink";
+import CaseStudyDisplay from "@/app/ui/caseStudyDisplay";
 // import data
 import { caseStudies } from "@/app/lib/case-studies/case-studies";
 import { siteUrl } from "@/app/lib/site-url";
@@ -65,9 +66,8 @@ export default async function CaseStudyPage({ params }) {
   }
   return (
     <div>
-      <h1>
-        {caseStudy.client}: {caseStudy.title}
-      </h1>
+        <BackLink href="/case-studies" />
+      <CaseStudyDisplay caseStudy={caseStudy} />
     </div>
   );
 }
