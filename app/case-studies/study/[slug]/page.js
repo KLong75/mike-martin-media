@@ -66,7 +66,7 @@ export default async function CaseStudyPage({ params }) {
   }
   return (
     <div>
-        <BackLink href="/case-studies" />
+      <BackLink href="/case-studies" />
       <CaseStudyDisplay caseStudy={caseStudy} />
     </div>
   );
