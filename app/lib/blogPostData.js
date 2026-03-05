@@ -31,11 +31,11 @@ export const blogPosts = [
    {
     title: "Sandon's Introduction",
     post_date: "February 2026",
-    image_src: "/images/blog-page/blog-post-images/2026/february-a.png",
+    image_src: "/images/blog-page/blog-post-images/2026/feb/february-a.webp",
     image_alt: "Sandon with a camera taking pictures of a guitarist performing on stage.",
     image_width: 456,
     image_height: 342,
-    second_image_src: "/images/blog-page/blog-post-images/2026/february-b.png",
+    second_image_src: "/images/blog-page/blog-post-images/2026/feb/february-b.webp",
     second_image_width: 456,
     second_image_height: 342,
     second_image_alt: "",
