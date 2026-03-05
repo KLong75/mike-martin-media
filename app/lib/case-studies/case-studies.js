@@ -13,22 +13,27 @@ export const howWeSupportOurClients = {
     {
       label: "Strategic Planning & Creative Direction ",
       description: "We help define messaging, audience, and objectives before production begins",
+      image: "/images/case-studies/support-images/greeting.webp"
     },
     {
       label: "Production & Field Crews",
       description: "Professional, efficient and flexible crews that keep shoots running smoothly and on schedule.",
+      image: "/images/case-studies/support-images/prompter.webp"
     },
     {
       label: "Interviews & Messaging Support",
       description: "Guiding executives, staff, and clients to feel comfortable and authentic on camera.",
+      image: "/images/case-studies/support-images/interview.webp"
     },
     {
       label: "Post-Production & Editing",
       description: "Clear storytelling, clean pacing, and polished multi-format delivery",
+      image: "/images/case-studies/support-images/edit.webp"
     },
     {
       label: "Motion Graphics & Visual Enhancements ",
       description: "Purposeful graphics that clarify information and support the story.",
+      image: "/images/case-studies/support-images/motion-graphics.webp"
     },
   ],
 };
