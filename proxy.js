@@ -1,6 +1,7 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export function middleware(request) {
+// export function middleware(request) {
+export function proxy(request) {
   let cspHeader;
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
   const environment = process.env.NEXT_PUBLIC_ENV || process.env.NODE_ENV;
@@ -93,10 +94,28 @@ export function middleware(request) {
   return response;
 }
 
-export const config = {
-  matcher: "/:path*",
-};
+// export const config = {
+//   matcher: "/:path*",
+// };
 
+export const config = {
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - api (API routes)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     */
+    {
+      source: "/((?!api|_next/static|_next/image|favicon.ico).*)",
+      missing: [
+        { type: "header", key: "next-router-prefetch" },
+        { type: "header", key: "purpose", value: "prefetch" },
+      ],
+    },
+  ],
+};
 
 
 // from preview:
