@@ -118,7 +118,6 @@ export const config = {
 };
 
 
-
 // from preview:
 // script-src-elem 'self' 'nonce-${nonce}' 'unsafe-inline' https://www.googletagmanager.com/gtm.js https://googletagmanager.com/* https://mmmmarketing42.activehosted.com/ https://prism.app-us1.com/ https://cdn-cookieyes.com/ ;
 

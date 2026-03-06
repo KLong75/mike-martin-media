@@ -28,11 +28,37 @@ export const blogPosts = [
   //   slug: "",
   //   description: ""
   // },
+   {
+    title: "Sandon's Introduction",
+    post_date: "February 2026",
+    image_src: "/images/blog-page/blog-post-images/2026/feb/february-a.webp",
+    image_alt: "Sandon with a camera taking pictures of a guitarist performing on stage.",
+    image_width: 456,
+    image_height: 342,
+    second_image_src: "/images/blog-page/blog-post-images/2026/feb/february-b.webp",
+    second_image_width: 456,
+    second_image_height: 342,
+    second_image_alt: "",
+    text: [
+      "Hi! I'm Sandon, and I'm fairly new to the MMM team, joining in August 2025. My previous job was as a video director for a large YouTube channel in St. Louis. During my time there, I got to do a bunch of crazy things. I filled bathtubs with slime, played hide-and-seek with my boss, and ate lots and lots of weird candies. The most valuable thing, however, was how much I learned about directing, lighting, and cinematography, which is my true passion. What I found myself longing for was the ability to use those skills to tell unique and meaningful stories. Enter Mike Martin Media.",
+      "When I joined the team, it was immediately clear how much everyone at MMM cares about finding the story behind every shoot. Being surrounded by curious, talented creatives who value people as much as the final product is incredibly energizing. No two days look the same and getting to meet new people while helping turn their experiences into meaningful, compelling stories is what drives my love for video production. I'm excited to be part of a team that's always pushing to go above and beyond, and I can't wait to see what the future holds.",
+    ],
+    // video: {
+    //   playback_id: "PRhLtcYJZFLOtXvt02gP45eolkvlty2QlUAKo4hdlfl4",
+    //   title: "Gratitude House",
+    //   image_src:
+    //     "https://image.mux.com/PRhLtcYJZFLOtXvt02gP45eolkvlty2QlUAKo4hdlfl4/thumbnail.webp?width=576&height=324&time=42",
+    // },
+    closing_tag: "Until next time,",
+    author: "Sandon Scott",
+    slug: "introducing-sandon",
+    description: "Sandon introduces himself and describes his early experiences at Mike Martin Media."
+  },
   {
     title: "Supporting Nonprofits Through Storytelling",
     post_date: "January 2026",
     image_src: "/images/blog-page/blog-post-images/2026/2026-january.webp",
-    image_alt: "Logo for Gartitude House, a sober-living home for women",
+    image_alt: "Logo for Gratitude House, a sober-living home for women",
     image_width: 456,
     image_height: 342,
     // second_image_src: "/images/blog-page/blog-post-images/2026/",
@@ -52,7 +78,7 @@ export const blogPosts = [
     closing_tag: "Until next time,",
     author: "Mike Martin",
     slug: "supporting-nonprofits-through-storytelling",
-    description: " A look at Mike Martin Media's ongoing work with nonprofit organizations and the impact of fundraising and awareness videos."
+    description: "A look at Mike Martin Media's ongoing work with nonprofit organizations and the impact of fundraising and awareness videos."
   },
   {
     slug: "life-between-keyframes",
