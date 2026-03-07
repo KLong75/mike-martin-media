@@ -160,6 +160,5 @@ export const caseStudies = [
   //       id: "",
   //     },
   //   ],
-
   // },
 ];
