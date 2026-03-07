@@ -42,11 +42,11 @@ export const caseStudies = [
   {
     slug: "washu-advancing-our-mission",
     client: "Washington University in St. Louis",
-    title: "WashU: People of the Plan",
-    campaign: "Advancing Our Mission",
-    format: "Video vignette series (5 videos)",
+    title: "Advancing Our Mission",
+    campaign: "Strategic Plan 2019-2025",
+    format: "Video vignette series ",
     challenge: [
-      "As Washington University launched its Here and Next initiative, leadership wanted more than a formal announcement. The goal was to recognize the people behind the work — elevating early contributors, capturing their personal investment, and sharing authentic stories that could inspire the broader WashU community through ongoing campaign communications.",
+      "As Washington University concluded its Strategic Plan for 2019 to 2025, leadership wanted to recognize the people behind the work — elevating early contributors, capturing their personal investment, and sharing authentic stories that could inspire the broader WashU community through ongoing campaign communications.",
       "This project focused on real pride, collaboration, and the earned feeling of “we actually did this.”",
     ],
     approach: [
@@ -55,14 +55,17 @@ export const caseStudies = [
       "Subtle graphics, music, and intro/outro elements created cohesion across the series and connected each vignette back to the larger campaign and hero video. Campus and subject b-roll was integrated throughout to add visual depth and context.",
     ],
     result: [
-      "The People of the Plan series showcases the collaboration, ownership, and impact behind WashU’s Here and Next initiative. These videos now serve as core storytelling assets within WashU’s monthly communications, supporting the Advancing Our Mission campaign while honoring the people who helped bring it to life.",
+      "The series showcases the collaboration, ownership, and impact behind WashU's Strategic Plan. These videos now serve as core storytelling assets within WashU's monthly communications, supporting the Advancing Our Mission campaign while honoring the people who helped bring it to life.",
     ],
-    long_term_partnership: "Mike Martin Media has partnered with Washington University in St. Louis for more than 17 years, collaborating across a wide range of initiatives and campaigns. We’re grateful for the continued trust WashU places in our team and for the opportunity to help tell stories that matter — especially those centered on people, purpose, and lasting impact.",
+    partnership: {
+      type: "long-term",
+      text: "Mike Martin Media has partnered with Washington University in St. Louis for more than 17 years, collaborating across a wide range of initiatives and campaigns. We're grateful for the continued trust WashU places in our team and for the opportunity to help tell stories that matter — especially those centered on people, purpose, and lasting impact."
+    },
     preview_image: {
       alt: "",
       url: "https://image.mux.com/00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44/thumbnail.webp?width=576&height=324&time=04",
-      width: 1080,
-      height: 1080,
+      width: 576,
+      height: 324,
     },
     videos: [
       {
@@ -71,65 +74,70 @@ export const caseStudies = [
     ],
   },
   {
-    slug: "washu-advancing-our-mission2",
-    client: "Washington University in St. Louis",
-    title: "WashU: People of the Plan",
-    campaign: "Advancing Our Mission",
-    format: "Video vignette series (5 videos)",
+    slug: "circus-harmony",
+    client: "Circus Harmony",
+    title: "25 Years of Impact",
+    campaign: "25th Anniversary Celebration",
+    format: "Video vignette series (25 videos)",
     challenge: [
-      "As Washington University launched its Here and Next initiative, leadership wanted more than a formal announcement. The goal was to recognize the people behind the work — elevating early contributors, capturing their personal investment, and sharing authentic stories that could inspire the broader WashU community through ongoing campaign communications.",
-      "This project focused on real pride, collaboration, and the earned feeling of “we actually did this.”",
+      "As Circus Harmony approached its 25th anniversary as a nonprofit organization, the team wanted to celebrate the milestone by capturing the voices of alumni whose lives were shaped by the program. The goal was to produce a collection of authentic alumni stories that could be shared across social media, the organization's website, and anniversary campaign communications, while also contributing to a longer-form celebration video.",
+      "Beyond documenting the past, the project aimed to highlight the lasting impact of Circus Harmony's mission — demonstrating how the acrobatic arts can build confidence, community, and life-changing opportunities for young people.",
     ],
     approach: [
-      "Mike Martin Media partnered with WashU to produce a five-part video vignette series featuring on-camera conversations with key leaders and contributors across initiatives.",
-      "Filmed on campus, each interview was guided by a producer to feel natural and unscripted. A multi-camera setup provided visual variety while maintaining an intimate, conversational tone. Curated campus locations served as intentional backdrops, grounding each story in WashU's environment and mission.",
-      "Subtle graphics, music, and intro/outro elements created cohesion across the series and connected each vignette back to the larger campaign and hero video. Campus and subject b-roll was integrated throughout to add visual depth and context.",
+      "For the 25-part video vignette series, interviews were recorded at the Mike Martin Media production studio in St. Louis and remotely with alumni located across the United States and internationally, including participants in Israel. To deepen the narrative, the production team incorporated more than a decade of archival footage from Circus Harmony performances and programs previously captured by MMM. "
     ],
     result: [
-      "The People of the Plan series showcases the collaboration, ownership, and impact behind WashU’s Here and Next initiative. These videos now serve as core storytelling assets within WashU’s monthly communications, supporting the Advancing Our Mission campaign while honoring the people who helped bring it to life.",
+      "The 25 Years of Circus Harmony video series celebrates the organization's legacy through the voices of its alumni. The short-form videos were released throughout the year on social media, helping build awareness and excitement leading up to Circus Harmony's annual Soirée fundraising event.",
+      "Together, the vignettes showcase the impact of Circus Harmony's programs while reinforcing the organization's mission — demonstrating how nonprofit storytelling through video can inspire audiences, strengthen community connections, and support fundraising efforts."
     ],
-    long_term_partnership: "Mike Martin Media has partnered with Washington University in St. Louis for more than 17 years, collaborating across a wide range of initiatives and campaigns. We’re grateful for the continued trust WashU places in our team and for the opportunity to help tell stories that matter — especially those centered on people, purpose, and lasting impact.",
+    partnership: {
+      type: "long-term",
+      text: "Circus Harmony was one of the earliest clients of Mike Martin Media, and our team has had the privilege of capturing their annual performances and programs for many years. It's an honor to help celebrate their 25th anniversary and to continue partnering with an organization dedicated to changing lives through the circus arts."
+    },
     preview_image: {
       alt: "",
-      url: "https://image.mux.com/00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44/thumbnail.webp?width=576&height=324&time=04",
-      width: 1080,
-      height: 1080,
+      url: "https://image.mux.com/Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc/thumbnail.webp?width=576&height=324&time=22",
+      width: 576,
+      height: 324,
     },
     videos: [
       {
-        id: "00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44",
+        id: "Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc",
       },
     ],
 
   },
   {
-    slug: "washu-advancing-our-mission3",
-    client: "Washington University in St. Louis",
-    title: "WashU: People of the Plan",
-    campaign: "Advancing Our Mission",
-    format: "Video vignette series (5 videos)",
+    slug: "smith-saint-talent-agency",
+    client: "Smith & Saint Talent Agency",
+    brand_partner: "Panera Bread",
+    title: "Panera Social Campaign",
+    campaign: "Mix & Match with the Stars",
+    format: "Commercial social media video",
     challenge: [
-      "As Washington University launched its Here and Next initiative, leadership wanted more than a formal announcement. The goal was to recognize the people behind the work — elevating early contributors, capturing their personal investment, and sharing authentic stories that could inspire the broader WashU community through ongoing campaign communications.",
-      "This project focused on real pride, collaboration, and the earned feeling of “we actually did this.”",
+      "When Smith & Saint Talent Agency secured a brand partnership between Panera for their clients, dancers on the Dancing With the Stars tour, they needed a production partner who could move quickly. The team reached out to Mike Martin Media on a Wednesday afternoon with a request to film a branded social media commercial by Friday.",
+      "With a tight timeline and talent schedules to coordinate, the goal was to produce a polished 60-second social media video promoting Panera’s Mix & Match menu while capturing the personality and energy of the dancers featured in the campaign."
     ],
     approach: [
-      "Mike Martin Media partnered with WashU to produce a five-part video vignette series featuring on-camera conversations with key leaders and contributors across initiatives.",
-      "Filmed on campus, each interview was guided by a producer to feel natural and unscripted. A multi-camera setup provided visual variety while maintaining an intimate, conversational tone. Curated campus locations served as intentional backdrops, grounding each story in WashU's environment and mission.",
-      "Subtle graphics, music, and intro/outro elements created cohesion across the series and connected each vignette back to the larger campaign and hero video. Campus and subject b-roll was integrated throughout to add visual depth and context.",
+      "The concept featured the dancers visiting Panera for lunch, highlighting their new Mix & Match menu through a playful interaction that builds to the familiar rhythm cue “five, six, seven, ate,” after a quick dance sequence.",
+      "Our team captured the commercial on location using an efficient production setup designed to move quickly while maintaining the quality expected from a professional commercial video production team."
     ],
     result: [
-      "The People of the Plan series showcases the collaboration, ownership, and impact behind WashU’s Here and Next initiative. These videos now serve as core storytelling assets within WashU’s monthly communications, supporting the Advancing Our Mission campaign while honoring the people who helped bring it to life.",
+      "The final 60-second branded social media video combined Panera's product messaging with the high-energy style of the Dancing With the Stars performers. Delivered on an accelerated timeline, the video supported the brand partnership campaign while providing engaging content optimized for social media platforms.",
     ],
-    long_term_partnership: "Mike Martin Media has partnered with Washington University in St. Louis for more than 17 years, collaborating across a wide range of initiatives and campaigns. We’re grateful for the continued trust WashU places in our team and for the opportunity to help tell stories that matter — especially those centered on people, purpose, and lasting impact.",
+    partnership: {
+      type: "new",
+      text: "This project began with a simple online search and a quick introduction, but it quickly turned into a great collaboration and our first project with Smith & Saint Talent Agency. Despite the short turnaround, the production ran smoothly from pre-production through delivery — a reminder that with the right team in place, even a fast-moving concept can quickly become polished commercial and social media content. We appreciated the opportunity to help bring their Panera Bread brand partnership campaign to life and hope to work together again in the future."
+    },
     preview_image: {
       alt: "",
-      url: "https://image.mux.com/00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44/thumbnail.webp?width=576&height=324&time=04",
-      width: 1080,
-      height: 1080,
+      url: "/images/case-studies/panera-thumb.png",
+      width: 365,
+      height: 648,
     },
     videos: [
       {
-        id: "00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44",
+        id: "NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00",
       },
     ],
   },

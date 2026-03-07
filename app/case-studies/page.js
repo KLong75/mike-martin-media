@@ -1,4 +1,5 @@
 //import components
+import BannerVideoWithFadeEffect from "@/app/ui/bannerVideoWithFadeEffect";
 import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
@@ -77,12 +78,15 @@ export const metadata = {
 export default function Page() {
   return (
     <main className="grid grid-cols-1">
-      <BannerImage
-        src="/images/case-studies/option-1.png"
-        alt="Mike Martin Media | Case Studies"
-        title="Case Studies"
-        width={1536}
-        height={1024}
+      <BannerVideoWithFadeEffect
+        // src="4qT2Obf2HwbrRle6QkWRUL5ykXzqyqnR4ZjkuDSj15M"
+        src="ifZrW02klS2hW64gqdWpSr7FjcN7hYU3EmHu00ld8InXU"
+        title="Mike Martin Media | Case Studies"
+        containerClassName="padding-top-42-19"
+        autoPlay={true}
+        loop={true}
+        muted={true}
+        poster=""
       />
       <div>
         <PageHeadingBanner
