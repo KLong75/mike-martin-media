@@ -131,9 +131,9 @@ export const caseStudies = [
     },
     preview_image: {
       alt: "",
-      url: "/images/case-studies/panera-thumb.png",
-      width: 365,
-      height: 648,
+      url: "/images/case-studies/panera-preview-img.png",
+      width: 576,
+      height: 324,
     },
     videos: [
       {

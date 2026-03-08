@@ -54,19 +54,23 @@ export async function generateMetadata({ params }) {
 export default async function CaseStudyPage({ params }) {
   const { slug } = await params;
   const caseStudy = caseStudies.find((study) => study.slug === slug);
-  console.log("Case Study:", caseStudy);
+  // console.log("Case Study:", caseStudy);
   if (!caseStudy) {
     return (
       <div>
         <h1>Case Study Not Found</h1>
         <p>The case study you are looking for does not exist.</p>
-        <BackLink href="/case-studies">Back to Case Studies</BackLink>
+        <BackLink href="/case-studies" />
       </div>
     );
   }
   return (
     <div>
-      <BackLink href="/case-studies" />
+    
+      {/* <BackLink href="/case-studies" /> */}
+      <div className="mt-6 ml-2">
+              <BackLink />
+            </div>
       <CaseStudyDisplay caseStudy={caseStudy} />
     </div>
   );
