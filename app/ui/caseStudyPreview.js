@@ -100,8 +100,8 @@ import { shortenPostText } from "@/utils/utils";
 export default function CaseStudyPreview({ caseStudy }) {
   // CHANGED: overlayOpen removed, use group-hover for all hover effects
   return (
-    <>
-      <div className="w-full p-6 max-w-md mx-auto">
+   
+      <div className="w-full md:p-6 max-w-md mx-auto">
         {caseStudy ? (
           <Link href={`/case-studies/study/${caseStudy.slug}`}>
             {/* CHANGED: Use Tailwind's group class for unified hover effects */}
@@ -150,7 +150,7 @@ export default function CaseStudyPreview({ caseStudy }) {
                   </div>
                 </div>
               </div>
-              <div className="p-4 pb-0">
+              <div className="p-4 pb">
                 {Array.isArray(caseStudy.challenge) ? (
                   <p>
                     <span className="font-bold">The Challenge:</span>{" "}
@@ -176,7 +176,7 @@ export default function CaseStudyPreview({ caseStudy }) {
           <p>Case study data is not available.</p>
         )}
       </div>
-    </>
+   
   );
 }
 // CHANGES MARKED: overlayOpen removed, overlay moved to image container, hover effects unified with group-hover

@@ -3,7 +3,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
     <div className="w-full p-12 flex flex-col justify-center items-center">
       {caseStudy ? (
         <div>
-        <h1>Case Study</h1>
+          <h1>Case Study</h1>
           <h2>{caseStudy.title}</h2>
           <p>{caseStudy.client}</p>
           <p>{caseStudy.campaign}</p>
@@ -53,21 +53,17 @@ export default function CaseStudyDisplay({ caseStudy }) {
             ) : (
               <p>
                 <span className="font-span">The Result:</span>{" "}
-                {caseStudy.result}              </p>
+                {caseStudy.result}{" "}
+              </p>
             )}
           </div>
           <p>
-           
             {caseStudy.partnership.type === "long-term" ? (
-              <span>
-                Long-term{" "}
-                </span>
+              <span>Long-term </span>
             ) : (
-              <span>
-                New{" "}
-              </span>
+              <span>New </span>
             )}
-             partnership: {caseStudy.partnership.text}
+            partnership: {caseStudy.partnership.text}
           </p>
         </div>
       ) : (
@@ -167,7 +163,6 @@ export default function CaseStudyDisplay({ caseStudy }) {
 //     </div>
 //   );
 // }
-
 
 // "use client";
 

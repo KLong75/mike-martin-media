@@ -102,16 +102,14 @@ export default function Page() {
           {caseStudiesPageBannerText.text2}
         </p>
       </div> */}
-
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 px-2 md:px-6 lg:px-12 p-16 max-w-800 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-0 p-6 md:p-12 max-w-800 mx-auto">
         {caseStudies.map((caseStudy) => (
           <CaseStudyPreview key={caseStudy.slug} caseStudy={caseStudy} />
         ))}
       </div>
-
       <div className="flex justify-center">
-        <div className="grid grid-cols-1 lg:grid-cols-3 p-8 lg:p-12 lg:m-6 lg:mt-0 max-w-1200">
-          <div className="lg:ml-28 lg:mr-36 col-span-2 ">
+        <div className="grid grid-cols-1 lg:grid-cols-3 p-8 lg:p-12  max-w-1200">
+          <div className="lg:ml-28 lg:mr-36 col-span-2">
             <IndustrySupport
               heading={howWeSupportOurClients.heading}
               helperText={howWeSupportOurClients.sub_heading}
