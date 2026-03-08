@@ -1,6 +1,6 @@
 export default function CaseStudyDisplay({ caseStudy }) {
   return (
-    <div className="w-full">
+    <div className="w-full p-12 flex flex-col justify-center items-center">
       {caseStudy ? (
         <div>
         <h1>Case Study</h1>
@@ -57,8 +57,17 @@ export default function CaseStudyDisplay({ caseStudy }) {
             )}
           </div>
           <p>
-            <span className="font-span">Long-term Partnership:</span>{" "}
-            {caseStudy.long_term_partnership}
+           
+            {caseStudy.partnership.type === "long-term" ? (
+              <span>
+                Long-term{" "}
+                </span>
+            ) : (
+              <span>
+                New{" "}
+              </span>
+            )}
+             partnership: {caseStudy.partnership.text}
           </p>
         </div>
       ) : (

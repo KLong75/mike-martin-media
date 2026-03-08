@@ -116,7 +116,7 @@ export const caseStudies = [
     format: "Commercial social media video",
     challenge: [
       "When Smith & Saint Talent Agency secured a brand partnership between Panera for their clients, dancers on the Dancing With the Stars tour, they needed a production partner who could move quickly. The team reached out to Mike Martin Media on a Wednesday afternoon with a request to film a branded social media commercial by Friday.",
-      "With a tight timeline and talent schedules to coordinate, the goal was to produce a polished 60-second social media video promoting Panera’s Mix & Match menu while capturing the personality and energy of the dancers featured in the campaign."
+      "With a tight timeline and talent schedules to coordinate, the goal was to produce a polished 60-second social media video promoting Panera's Mix & Match menu while capturing the personality and energy of the dancers featured in the campaign."
     ],
     approach: [
       "The concept featured the dancers visiting Panera for lunch, highlighting their new Mix & Match menu through a playful interaction that builds to the familiar rhythm cue “five, six, seven, ate,” after a quick dance sequence.",
@@ -131,7 +131,39 @@ export const caseStudies = [
     },
     preview_image: {
       alt: "",
-      url: "/images/case-studies/panera-preview-img.png",
+      url: "/images/case-studies/preview-images/panera-preview-img.png",
+      width: 576,
+      height: 324,
+    },
+    videos: [
+      {
+        id: "NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00",
+      },
+    ],
+  },
+  {
+    slug: "siteman-cancer-center",
+    client: "Siteman Cancer Center",
+    title: "Mammography Van Patient Education",
+    campaign: "Mammography Van - What to Expect",
+    format: "Patient education video and marketing photography",
+    challenge: [
+      "Nearly a decade after producing the original patient education video for Siteman Cancer Center's Mammography Van, the organization updated the vehicle with a new exterior wrap and refreshed branding. The team wanted to update their “What to Expect” video to reflect the new look while also capturing updated photography for marketing and outreach materials.",
+      "The goal was to create a modernized video that would help patients feel comfortable and informed before visiting the mobile screening unit, while maintaining the trusted tone and messaging established in the original video."
+    ],
+    approach: [
+      "Mike Martin Media partnered with Siteman Cancer Center to produce an updated healthcare patient education video featuring new footage of the Mammography Van, drone videography to showcase the mobile unit in context, refreshed graphics, and an updated voice-over. Because MMM had produced the original video and worked with Siteman on numerous projects over the years, our team was able to quickly align with the organization's brand guidelines and messaging. We also leveraged archived footage from previous productions, allowing the updated video to build on existing visuals while incorporating new footage that reflects the van's current design and patient experience.",
+    ],
+    result: [
+      "The updated Mammography Van patient education video provides patients with a clear and welcoming overview of what to expect during their visit, while supporting Siteman's ongoing outreach and early detection efforts. Alongside the video, new still photography captured during the shoot provided updated marketing assets for digital and print materials.",
+    ],
+    partnership: {
+      type: "long-term",
+      text: "Mike Martin Media has enjoyed a long-standing partnership with Siteman Cancer Center, collaborating on projects that help communicate important healthcare information to patients and the community. Because our team understands Siteman's brand and maintains a library of archived footage from past productions, we're able to efficiently update and refresh content when needs evolve. We're grateful for the trust Siteman places in our team and proud to support their mission of improving cancer prevention, detection, and care."
+    },
+    preview_image: {
+      alt: "",
+      url: "/images/case-studies/preview-images/panera-preview-img.png",
       width: 576,
       height: 324,
     },
