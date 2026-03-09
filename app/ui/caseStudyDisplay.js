@@ -1,70 +1,74 @@
 export default function CaseStudyDisplay({ caseStudy }) {
   return (
-    <div className="w-full p-12 flex flex-col justify-center items-center">
+    <div className="w-full p-12 pt-6 flex flex-col justify-center items-center">
       {caseStudy ? (
-        <div>
-          <h1>Case Study</h1>
-          <h2>{caseStudy.title}</h2>
-          <p>{caseStudy.client}</p>
-          <p>{caseStudy.campaign}</p>
-          <p>{caseStudy.format}</p>
+        <div className="w-full">
+          <span className="text-2xl font-courier-prime">CASE STUDY</span>
+          <h1 className="font-bold">{caseStudy.title}</h1>
+          <h2>
+            <span className="font-bold">Client:</span> "{caseStudy.client}"
+          </h2>
+          <h3>
+            <span className="font-bold">Campaign:</span> "{caseStudy.campaign}"
+          </h3>
+          <h4>
+            <span className="font-bold">Format:</span> "{caseStudy.format}"
+          </h4>
           <div>
-            {caseStudy.challenge.length > 1 ? (
+            {Array.isArray(caseStudy.challenge) ? (
               <div>
-                <p>
-                  <span className="font-span">The Challenge:</span>{" "}
-                  {caseStudy.challenge[0]}
-                </p>
-                <p>{caseStudy.challenge[1]}</p>
+                <h5 className="font-span font-bold">The Challenge:</h5>{" "}
+                {caseStudy.challenge.map((item, index) => (
+                  <p key={index}>{item}</p>
+                ))}
               </div>
             ) : (
-              <p>
-                <span className="font-span">The Challenge:</span>{" "}
-                {caseStudy.challenge}
-              </p>
+              <div>
+                <h5 className="font-span font-bold">The Challenge:</h5>{" "}
+                <p>{caseStudy.challenge}</p>
+              </div>
             )}
           </div>
           <div>
-            {caseStudy.approach.length > 1 ? (
-              <div>
-                <p>
-                  <span className="font-span">The Approach:</span>{" "}
-                  {caseStudy.approach[0]}
-                </p>
-                <p>{caseStudy.approach[1]}</p>
-                <p>{caseStudy.approach[2]}</p>
-              </div>
+            <h5 className="font-span font-bold">The Approach:</h5>
+            {Array.isArray(caseStudy.approach) ? (
+              caseStudy.approach.map((item, index) => <p key={index}>{item}</p>)
             ) : (
-              <p>
-                <span className="font-span">The Approach:</span>{" "}
-                {caseStudy.approach}
-              </p>
+              <p>{caseStudy.approach}</p>
             )}
           </div>
           <div>
-            {caseStudy.result.length > 1 ? (
+            {Array.isArray(caseStudy.result) ? (
               <div>
-                <p>
-                  <span className="font-span">The Result:</span>{" "}
-                  {caseStudy.result[0]}
-                </p>
-                <p>{caseStudy.result[1]}</p>
+                <h5 className="font-span font-bold">The Result:</h5>{" "}
+                {caseStudy.result.map((item, index) => (
+                  <p key={index}>{item}</p>
+                ))}
               </div>
             ) : (
-              <p>
-                <span className="font-span">The Result:</span>{" "}
-                {caseStudy.result}{" "}
-              </p>
+              <div>
+                <h5 className="font-span font-bold">The Result:</h5>{" "}
+                <p>{caseStudy.result}</p>
+              </div>
             )}
           </div>
-          <p>
-            {caseStudy.partnership.type === "long-term" ? (
-              <span>Long-term </span>
+          <div>
+            <h5 className="font-bold">
+              {caseStudy.partnership.type === "long-term" ? (
+                <span>Long-term </span>
+              ) : (
+                <span>New </span>
+              )}
+              partnership:{" "}
+            </h5>
+            {Array.isArray(caseStudy.partnership.text) ? (
+              caseStudy.partnership.text.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))
             ) : (
-              <span>New </span>
+              <p>{caseStudy.partnership.text}</p>
             )}
-            partnership: {caseStudy.partnership.text}
-          </p>
+          </div>
         </div>
       ) : (
         <p>Case study data is not available.</p>
@@ -98,7 +102,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
 //           <div>
 //             <span className="font-span">The Challenge:</span>{" "}
 //             {Array.isArray(caseStudy.challenge)
-//               ? caseStudy.challenge.map((item, idx) => <p key={idx}>{item}</p>)
+//               ? caseStudy.challenge.map((item, index) => <p key={index}>{item}</p>)
 //               : <p>{caseStudy.challenge}</p>}
 //           </div>
 //         );
@@ -107,7 +111,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
 //           <div>
 //             <span className="font-span">The Approach:</span>{" "}
 //             {Array.isArray(caseStudy.approach)
-//               ? caseStudy.approach.map((item, idx) => <p key={idx}>{item}</p>)
+//               ? caseStudy.approach.map((item, index) => <p key={index}>{item}</p>)
 //               : <p>{caseStudy.approach}</p>}
 //           </div>
 //         );
@@ -116,7 +120,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
 //           <div>
 //             <span className="font-span">The Result:</span>{" "}
 //             {Array.isArray(caseStudy.result)
-//               ? caseStudy.result.map((item, idx) => <p key={idx}>{item}</p>)
+//               ? caseStudy.result.map((item, index) => <p key={index}>{item}</p>)
 //               : <p>{caseStudy.result}</p>}
 //           </div>
 //         );

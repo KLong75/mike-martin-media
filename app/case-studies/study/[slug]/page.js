@@ -2,7 +2,9 @@
 import Link from "next/link";
 // import components
 import BackLink from "@/app/ui/backLink";
+import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import CaseStudyDisplay from "@/app/ui/caseStudyDisplay";
+import BannerImageGallery from "@/app/ui/bannerImageGallery";
 // import data
 import { caseStudies } from "@/app/lib/case-studies/case-studies";
 import { siteUrl } from "@/app/lib/site-url";
@@ -54,7 +56,14 @@ export async function generateMetadata({ params }) {
 export default async function CaseStudyPage({ params }) {
   const { slug } = await params;
   const caseStudy = caseStudies.find((study) => study.slug === slug);
-  // console.log("Case Study:", caseStudy);
+  const caseStudyImages = caseStudy.images;
+  const caseStudyLandscapeImages = caseStudyImages.filter(
+    (image) => image.orientation === "landscape",
+  );
+  const caseStudyPortraitImages = caseStudyImages.filter(
+    (image) => image.orientation === "portrait",
+  );
+  const caseStudyBannerImages = caseStudy.banner_images;
   if (!caseStudy) {
     return (
       <div>
@@ -65,13 +74,22 @@ export default async function CaseStudyPage({ params }) {
     );
   }
   return (
-    <div>
-    
-      {/* <BackLink href="/case-studies" /> */}
+    <>
       <div className="mt-6 ml-2">
-              <BackLink />
-            </div>
-      <CaseStudyDisplay caseStudy={caseStudy} />
-    </div>
+        <BackLink />
+      </div>
+      {/* <BannerImageGallery images={caseStudyBannerImages} /> */}
+
+      {/* <PageHeadingBanner
+        title="CASE STUDY"
+        subtitle={caseStudy.client}
+        heading={caseStudy.title}
+        text={caseStudy.challenge}
+        // text2={caseStudiesPageBannerText.text2}
+      /> */}
+      <div className="w-full max-w-800 mx-auto">
+        <CaseStudyDisplay caseStudy={caseStudy} />
+      </div>
+    </>
   );
 }

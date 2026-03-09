@@ -1,39 +1,45 @@
 export const caseStudiesPageBannerText = {
   title: "Case Studies",
   heading: "What Collaboration Looks Like in Practice",
-  text:
-    "If you are considering a video partner, you want more than a highlight reel — you want proof. Our case studies take a closer look at the projects we've created, the challenges our clients faced, and how video helped them communicate more clearly and effectively.",
-    text2: "These stories highlight how thoughtful video production can build trust, drive engagement, and support real business and mission-driven goals.",
+  text: "If you are considering a video partner, you want more than a highlight reel — you want proof. Our case studies take a closer look at the projects we've created, the challenges our clients faced, and how video helped them communicate more clearly and effectively.",
+  text2:
+    "These stories highlight how thoughtful video production can build trust, drive engagement, and support real business and mission-driven goals.",
 };
 
 export const howWeSupportOurClients = {
   heading: "How We Support Our Clients",
-  sub_heading: "Our approach: listen first, plan carefully, and deliver work that serves a purpose.",
+  sub_heading:
+    "Our approach: listen first, plan carefully, and deliver work that serves a purpose.",
   list_items: [
     {
       label: "Strategic Planning & Creative Direction ",
-      description: "We help define messaging, audience, and objectives before production begins",
-      image: "/images/case-studies/support-images/greeting.webp"
+      description:
+        "We help define messaging, audience, and objectives before production begins",
+      image: "/images/case-studies/support-images/greeting.webp",
     },
     {
       label: "Production & Field Crews",
-      description: "Professional, efficient and flexible crews that keep shoots running smoothly and on schedule.",
-      image: "/images/case-studies/support-images/prompter.webp"
+      description:
+        "Professional, efficient and flexible crews that keep shoots running smoothly and on schedule.",
+      image: "/images/case-studies/support-images/prompter.webp",
     },
     {
       label: "Interviews & Messaging Support",
-      description: "Guiding executives, staff, and clients to feel comfortable and authentic on camera.",
-      image: "/images/case-studies/support-images/interview.webp"
+      description:
+        "Guiding executives, staff, and clients to feel comfortable and authentic on camera.",
+      image: "/images/case-studies/support-images/interview.webp",
     },
     {
       label: "Post-Production & Editing",
-      description: "Clear storytelling, clean pacing, and polished multi-format delivery",
-      image: "/images/case-studies/support-images/edit.webp"
+      description:
+        "Clear storytelling, clean pacing, and polished multi-format delivery",
+      image: "/images/case-studies/support-images/edit.webp",
     },
     {
       label: "Motion Graphics & Visual Enhancements ",
-      description: "Purposeful graphics that clarify information and support the story.",
-      image: "/images/case-studies/support-images/motion-graphics.webp"
+      description:
+        "Purposeful graphics that clarify information and support the story.",
+      image: "/images/case-studies/support-images/motion-graphics.webp",
     },
   ],
 };
@@ -42,9 +48,11 @@ export const caseStudies = [
   {
     slug: "washu-advancing-our-mission",
     client: "Washington University in St. Louis",
-    title: "Advancing Our Mission",
-    campaign: "Strategic Plan 2019-2025",
-    format: "Video vignette series ",
+    title: "WashU: Advancing Our Mission",
+    short_title: "Advancing Our Mission",
+    campaign: "Advancing Our Mission: Strategic Plan 2019-25",
+    short_campaign: "Strategic Plan 2019-2025",
+    format: "Video vignette series (5 videos)",
     challenge: [
       "As Washington University concluded its Strategic Plan for 2019 to 2025, leadership wanted to recognize the people behind the work — elevating early contributors, capturing their personal investment, and sharing authentic stories that could inspire the broader WashU community through ongoing campaign communications.",
       "This project focused on real pride, collaboration, and the earned feeling of “we actually did this.”",
@@ -59,7 +67,7 @@ export const caseStudies = [
     ],
     partnership: {
       type: "long-term",
-      text: "Mike Martin Media has partnered with Washington University in St. Louis for more than 17 years, collaborating across a wide range of initiatives and campaigns. We're grateful for the continued trust WashU places in our team and for the opportunity to help tell stories that matter — especially those centered on people, purpose, and lasting impact."
+      text: "Mike Martin Media has partnered with Washington University in St. Louis for more than 17 years, collaborating across a wide range of initiatives and campaigns. We're grateful for the continued trust WashU places in our team and for the opportunity to help tell stories that matter — especially those centered on people, purpose, and lasting impact.",
     },
     preview_image: {
       alt: "",
@@ -67,6 +75,66 @@ export const caseStudies = [
       width: 576,
       height: 324,
     },
+    banner_images: [
+      {
+        url: "/images/case-studies/wash-u/banner-images/a.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/wash-u/banner-images/b.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+    ],
+    images: [
+      {
+        url: "/images/case-studies/wash-u/1.webp",
+        alt: "",
+        width: 1920,
+        height: 1080,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/wash-u/2.webp",
+        alt: "",
+        width: 1920,
+        height: 1080,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/3.webp",
+        alt: "",
+        width: 1920,
+        height: 1080,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/4.webp",
+        alt: "",
+        width: 1920,
+        height: 1080,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/5.webp",
+        alt: "",
+        width: 1920,
+        height: 1080,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/6.webp",
+        alt: "",
+        width: 1920,
+        height: 1080,
+        orientation: "landscape",
+      },
+    ],
     videos: [
       {
         id: "00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44",
@@ -84,15 +152,15 @@ export const caseStudies = [
       "Beyond documenting the past, the project aimed to highlight the lasting impact of Circus Harmony's mission — demonstrating how the acrobatic arts can build confidence, community, and life-changing opportunities for young people.",
     ],
     approach: [
-      "For the 25-part video vignette series, interviews were recorded at the Mike Martin Media production studio in St. Louis and remotely with alumni located across the United States and internationally, including participants in Israel. To deepen the narrative, the production team incorporated more than a decade of archival footage from Circus Harmony performances and programs previously captured by MMM. "
+      "For the 25-part video vignette series, interviews were recorded at the Mike Martin Media production studio in St. Louis and remotely with alumni located across the United States and internationally, including participants in Israel. To deepen the narrative, the production team incorporated more than a decade of archival footage from Circus Harmony performances and programs previously captured by MMM. ",
     ],
     result: [
       "The 25 Years of Circus Harmony video series celebrates the organization's legacy through the voices of its alumni. The short-form videos were released throughout the year on social media, helping build awareness and excitement leading up to Circus Harmony's annual Soirée fundraising event.",
-      "Together, the vignettes showcase the impact of Circus Harmony's programs while reinforcing the organization's mission — demonstrating how nonprofit storytelling through video can inspire audiences, strengthen community connections, and support fundraising efforts."
+      "Together, the vignettes showcase the impact of Circus Harmony's programs while reinforcing the organization's mission — demonstrating how nonprofit storytelling through video can inspire audiences, strengthen community connections, and support fundraising efforts.",
     ],
     partnership: {
       type: "long-term",
-      text: "Circus Harmony was one of the earliest clients of Mike Martin Media, and our team has had the privilege of capturing their annual performances and programs for many years. It's an honor to help celebrate their 25th anniversary and to continue partnering with an organization dedicated to changing lives through the circus arts."
+      text: "Circus Harmony was one of the earliest clients of Mike Martin Media, and our team has had the privilege of capturing their annual performances and programs for many years. It's an honor to help celebrate their 25th anniversary and to continue partnering with an organization dedicated to changing lives through the circus arts.",
     },
     preview_image: {
       alt: "",
@@ -105,7 +173,6 @@ export const caseStudies = [
         id: "Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc",
       },
     ],
-
   },
   {
     slug: "smith-saint-talent-agency",
@@ -116,18 +183,18 @@ export const caseStudies = [
     format: "Commercial social media video",
     challenge: [
       "When Smith & Saint Talent Agency secured a brand partnership between Panera for their clients, dancers on the Dancing With the Stars tour, they needed a production partner who could move quickly. The team reached out to Mike Martin Media on a Wednesday afternoon with a request to film a branded social media commercial by Friday.",
-      "With a tight timeline and talent schedules to coordinate, the goal was to produce a polished 60-second social media video promoting Panera's Mix & Match menu while capturing the personality and energy of the dancers featured in the campaign."
+      "With a tight timeline and talent schedules to coordinate, the goal was to produce a polished 60-second social media video promoting Panera's Mix & Match menu while capturing the personality and energy of the dancers featured in the campaign.",
     ],
     approach: [
       "The concept featured the dancers visiting Panera for lunch, highlighting their new Mix & Match menu through a playful interaction that builds to the familiar rhythm cue “five, six, seven, ate,” after a quick dance sequence.",
-      "Our team captured the commercial on location using an efficient production setup designed to move quickly while maintaining the quality expected from a professional commercial video production team."
+      "Our team captured the commercial on location using an efficient production setup designed to move quickly while maintaining the quality expected from a professional commercial video production team.",
     ],
     result: [
       "The final 60-second branded social media video combined Panera's product messaging with the high-energy style of the Dancing With the Stars performers. Delivered on an accelerated timeline, the video supported the brand partnership campaign while providing engaging content optimized for social media platforms.",
     ],
     partnership: {
       type: "new",
-      text: "This project began with a simple online search and a quick introduction, but it quickly turned into a great collaboration and our first project with Smith & Saint Talent Agency. Despite the short turnaround, the production ran smoothly from pre-production through delivery — a reminder that with the right team in place, even a fast-moving concept can quickly become polished commercial and social media content. We appreciated the opportunity to help bring their Panera Bread brand partnership campaign to life and hope to work together again in the future."
+      text: "This project began with a simple online search and a quick introduction, but it quickly turned into a great collaboration and our first project with Smith & Saint Talent Agency. Despite the short turnaround, the production ran smoothly from pre-production through delivery — a reminder that with the right team in place, even a fast-moving concept can quickly become polished commercial and social media content. We appreciated the opportunity to help bring their Panera Bread brand partnership campaign to life and hope to work together again in the future.",
     },
     preview_image: {
       alt: "",
@@ -149,7 +216,7 @@ export const caseStudies = [
     format: "Patient education video and marketing photography",
     challenge: [
       "Nearly a decade after producing the original patient education video for Siteman Cancer Center's Mammography Van, the organization updated the vehicle with a new exterior wrap and refreshed branding. The team wanted to update their “What to Expect” video to reflect the new look while also capturing updated photography for marketing and outreach materials.",
-      "The goal was to create a modernized video that would help patients feel comfortable and informed before visiting the mobile screening unit, while maintaining the trusted tone and messaging established in the original video."
+      "The goal was to create a modernized video that would help patients feel comfortable and informed before visiting the mobile screening unit, while maintaining the trusted tone and messaging established in the original video.",
     ],
     approach: [
       "Mike Martin Media partnered with Siteman Cancer Center to produce an updated healthcare patient education video featuring new footage of the Mammography Van, drone videography to showcase the mobile unit in context, refreshed graphics, and an updated voice-over. Because MMM had produced the original video and worked with Siteman on numerous projects over the years, our team was able to quickly align with the organization's brand guidelines and messaging. We also leveraged archived footage from previous productions, allowing the updated video to build on existing visuals while incorporating new footage that reflects the van's current design and patient experience.",
@@ -159,7 +226,7 @@ export const caseStudies = [
     ],
     partnership: {
       type: "long-term",
-      text: "Mike Martin Media has enjoyed a long-standing partnership with Siteman Cancer Center, collaborating on projects that help communicate important healthcare information to patients and the community. Because our team understands Siteman's brand and maintains a library of archived footage from past productions, we're able to efficiently update and refresh content when needs evolve. We're grateful for the trust Siteman places in our team and proud to support their mission of improving cancer prevention, detection, and care."
+      text: "Mike Martin Media has enjoyed a long-standing partnership with Siteman Cancer Center, collaborating on projects that help communicate important healthcare information to patients and the community. Because our team understands Siteman's brand and maintains a library of archived footage from past productions, we're able to efficiently update and refresh content when needs evolve. We're grateful for the trust Siteman places in our team and proud to support their mission of improving cancer prevention, detection, and care.",
     },
     preview_image: {
       alt: "",

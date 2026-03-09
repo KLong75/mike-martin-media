@@ -11,7 +11,6 @@ import {
   howWeSupportOurClients,
   caseStudies,
 } from "../lib/case-studies/case-studies";
-import BannerImage from "@/app/ui/bannerImage";
 
 const caseStudiesPageOgImgUrl =
   "https://www.mikemartinmedia.com/images/open-graph/case-studies-og.png";

@@ -164,10 +164,10 @@ export default function CaseStudyPreview({ caseStudy }) {
                 )}
               </div>
               {/* CHANGED: Logo hover effect unified with group-hover */}
-              <div className="px-4 group-hover:hidden">
+              <div className="px-4 mb-2 group-hover:hidden">
                 <MMMLineLogo />
               </div>
-              <div className="px-4 hidden group-hover:block">
+              <div className="px-4 mb-2 hidden group-hover:block">
                 <MMMLineLogo color={"white"} />
               </div>
             </div>
