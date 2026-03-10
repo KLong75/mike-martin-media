@@ -5,6 +5,7 @@ import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
 import IndustriesList from "@/app/ui/industriesList";
 import IndustrySupport from "@/app/ui/industrySupport";
 import CaseStudyPreview from "@/app/ui/caseStudyPreview";
+import MMMLineLogoHeading from "../ui/mmmLineLogoHeading";
 //import data
 import {
   caseStudiesPageBannerText,
@@ -78,8 +79,8 @@ export default function Page() {
   return (
     <main className="grid grid-cols-1">
       <BannerVideoWithFadeEffect
-        // src="4qT2Obf2HwbrRle6QkWRUL5ykXzqyqnR4ZjkuDSj15M"
-        src="ifZrW02klS2hW64gqdWpSr7FjcN7hYU3EmHu00ld8InXU"
+        // src="ifZrW02klS2hW64gqdWpSr7FjcN7hYU3EmHu00ld8InXU"
+        src="MHzRSO01AYYKn34z49VsFLTZaRXCKmbiJeXi8KcxBUTE"
         title="Mike Martin Media | Case Studies"
         containerClassName="padding-top-42-19"
         autoPlay={true}
@@ -95,12 +96,6 @@ export default function Page() {
           text2={caseStudiesPageBannerText.text2}
         />
       </div>
-
-      {/* <div>
-        <p className="text-center text-xl font-semibold max-w-3xl mx-auto my-12 px-4 italic">
-          {caseStudiesPageBannerText.text2}
-        </p>
-      </div> */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-0 p-6 md:p-12 max-w-800 mx-auto">
         {caseStudies.map((caseStudy) => (
           <CaseStudyPreview key={caseStudy.slug} caseStudy={caseStudy} />

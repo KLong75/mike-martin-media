@@ -15,7 +15,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 export default function BannerImageGallery({ images }) {
-  const swiper = document.querySelector(".swiper");
 
   return (
     <div className="relative w-full h-full overflow-hidden group">
