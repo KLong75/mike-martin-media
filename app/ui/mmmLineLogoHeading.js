@@ -16,11 +16,11 @@ export default function MMMLineLogoHeading({ headline, heading_level }) {
           HeadingTag,
           {
             className:
-              "text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-bold -mb-6 lg:-mb-10 w-3/4",
+              "text-xl sm:text-2xl md:text-3xl font-bold -mb-6 lg:-mb-10 w-3/4",
           },
           headline
         )}
-        <div className="xl:-mt-12 w-full">
+        <div className="sm:-mt-8 xl:-mt-12 w-full">
           <Image
             src="/branding/line-logo-black.png"
             alt=""

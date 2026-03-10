@@ -1,4 +1,5 @@
 // import components
+import LineLogoHeading from "./lineLogoHeading";
 
 export default function CaseStudyDisplay({ caseStudy }) {
   return (
@@ -11,24 +12,30 @@ export default function CaseStudyDisplay({ caseStudy }) {
           <h1 className="font-bold text-center">{caseStudy.title}</h1>
           <div className="my-6">
             <h2 className="">
-              <span className="font-bold">Client:</span>{" "}{caseStudy.client}
+              <span className="font-bold">Client:</span> {caseStudy.client}
             </h2>
             {caseStudy.brand_partner && (
               <h2 className="">
-                <span className="font-bold">Brand Partner:</span>{" "}{caseStudy.brand_partner}
+                <span className="font-bold">Brand Partner:</span>{" "}
+                {caseStudy.brand_partner}
               </h2>
             )}
             <h3>
-              <span className="font-bold">Campaign:</span>{" "}{caseStudy.campaign}
+              <span className="font-bold">Campaign:</span> {caseStudy.campaign}
             </h3>
             <h4>
-              <span className="font-bold">Format:</span>{" "}{caseStudy.format}
+              <span className="font-bold">Format:</span> {caseStudy.format}
             </h4>
           </div>
           <div className="my-6">
             {Array.isArray(caseStudy.challenge) ? (
               <div>
-                <h5 className="font-span font-bold">The Challenge:</h5>{" "}
+                {/* <h5 className="font-span font-bold">The Challenge:</h5>{" "} */}
+                <LineLogoHeading
+                  text="The Challenge:"
+                  htmlElement={"h5"}
+                  textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+                />
                 {caseStudy.challenge.map((item, index) => (
                   <p className="my-2" key={index}>
                     {item}
@@ -37,13 +44,23 @@ export default function CaseStudyDisplay({ caseStudy }) {
               </div>
             ) : (
               <div>
-                <h5 className="font-span font-bold">The Challenge:</h5>{" "}
+                {/* <h5 className="font-span font-bold">The Challenge:</h5>{" "} */}
+                <LineLogoHeading
+                  text="The Challenge:"
+                  htmlElement={"h5"}
+                  textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+                />
                 <p className="my-2">{caseStudy.challenge}</p>
               </div>
             )}
           </div>
           <div className="my-6">
-            <h5 className="font-span font-bold">The Approach:</h5>
+            {/* <h5 className="font-span font-bold">The Approach:</h5> */}
+            <LineLogoHeading
+              text="The Approach:"
+              htmlElement={"h5"}
+              textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+            />
             {Array.isArray(caseStudy.approach) ? (
               caseStudy.approach.map((item, index) => (
                 <p className="my-2" key={index}>
@@ -57,7 +74,11 @@ export default function CaseStudyDisplay({ caseStudy }) {
           <div className="my-6">
             {Array.isArray(caseStudy.result) ? (
               <div>
-                <h5 className="font-span font-bold">The Result:</h5>{" "}
+                <LineLogoHeading
+                  text="The Result:"
+                  htmlElement={"h5"}
+                  textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+                />
                 {caseStudy.result.map((item, index) => (
                   <p className="my-2" key={index}>
                     {item}
@@ -66,21 +87,34 @@ export default function CaseStudyDisplay({ caseStudy }) {
               </div>
             ) : (
               <div>
-                <h5 className="font-span font-bold">The Result:</h5>{" "}
+                <LineLogoHeading
+                  text="The Result:"
+                  htmlElement={"h5"}
+                  textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+                />
                 <p className="my-2">{caseStudy.result}</p>
               </div>
             )}
           </div>
 
           <div className="mt-6">
-            <h5 className="font-bold">
+            {/* <h5 className="font-bold">
               {caseStudy.partnership.type === "long-term" ? (
                 <span>Long-term </span>
               ) : (
                 <span>New </span>
               )}
               partnership:{" "}
-            </h5>
+            </h5> */}
+            <LineLogoHeading
+              text={
+                caseStudy.partnership.type === "long-term"
+                  ? "Long-term Partnership:"
+                  : "New Partnership:"
+              }
+              htmlElement={"h5"}
+              textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+            />
             {Array.isArray(caseStudy.partnership.text) ? (
               caseStudy.partnership.text.map((item, index) => (
                 <p className="my-2" key={index}>
