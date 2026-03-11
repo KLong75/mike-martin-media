@@ -3,7 +3,7 @@ import LineLogoHeading from "./lineLogoHeading";
 
 export default function CaseStudyDisplay({ caseStudy }) {
   return (
-    <div className="w-full p-12 pt-6 flex flex-col justify-center items-center">
+    <div className="w-full p-8 md:p-12 flex flex-col justify-center items-center">
       {caseStudy ? (
         <div className="w-full max-w-6xl mx-auto">
           <span className="text-2xl font-courier-prime text-center block">
