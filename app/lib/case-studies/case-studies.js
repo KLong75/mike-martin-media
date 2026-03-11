@@ -68,7 +68,9 @@ export const caseStudies = [
     ],
     partnership: {
       type: "long-term",
-      text: "Mike Martin Media has partnered with Washington University in St. Louis for more than 17 years, collaborating across a wide range of initiatives and campaigns. We're grateful for the continued trust WashU places in our team and for the opportunity to help tell stories that matter — especially those centered on people, purpose, and lasting impact.",
+      text: [
+        "Mike Martin Media has partnered with Washington University in St. Louis for more than 17 years, collaborating across a wide range of initiatives and campaigns. We're grateful for the continued trust WashU places in our team and for the opportunity to help tell stories that matter — especially those centered on people, purpose, and lasting impact.",
+      ],
     },
     preview_image: {
       alt: "",

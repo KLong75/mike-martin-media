@@ -161,7 +161,6 @@ html {
   --swiper-pagination-bullet-inactive-color: #d3d3d3;
 }
 
-
 .scroll-to-top-button {
   transition: opacity 0.6s ease-in-out;
 }
@@ -194,7 +193,6 @@ html {
     display: none !important;
   }
 }
-
 
 @keyframes scale-in {
   from {
