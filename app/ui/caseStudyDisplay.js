@@ -34,11 +34,13 @@ export default function CaseStudyDisplay({ caseStudy }) {
                 htmlElement={"h5"}
                 textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
               />
+              <div>
               {caseStudy.challenge.map((item, index) => (
                 <p className="my-2" key={index}>
                   {item}
                 </p>
               ))}
+              </div>
             </div>
           </div>
           <div className="my-6">
