@@ -93,8 +93,15 @@ export const caseStudies = [
         height: 728,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/wash-u/banner-images/c.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/wash-u/banner-images/d.png",
         alt: "",
         width: 1728,
         height: 728,

@@ -6,7 +6,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
     <div className="w-full p-8 md:p-12 flex flex-col justify-center items-center">
       {caseStudy ? (
         <div className="w-full max-w-6xl mx-auto">
-          <span className="text-4xl font-courier-prime text-center block">
+          {/* <span className="text-4xl font-courier-prime text-center block">
             CASE STUDY
           </span>
           <h1 className="font-bold text-center text-xl">{caseStudy.title}</h1>
@@ -26,8 +26,8 @@ export default function CaseStudyDisplay({ caseStudy }) {
             <h4>
               <span className="font-bold">Format:</span> {caseStudy.format}
             </h4>
-          </div>
-          <div className="my-6">
+          </div> */}
+          <div className="">
             <div>
               <LineLogoHeading
                 text="The Challenge"

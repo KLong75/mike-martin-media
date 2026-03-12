@@ -2,7 +2,7 @@
 import Link from "next/link";
 // import components
 import BackLink from "@/app/ui/backLink";
-import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
+import CaseStudyBannerHeading from "@/app/ui/caseStudyBannerHeading";
 import CaseStudyDisplay from "@/app/ui/caseStudyDisplay";
 import BannerImageGallery from "@/app/ui/bannerImageGallery";
 import BannerImage from "@/app/ui/bannerImage";
@@ -65,6 +65,7 @@ export default async function CaseStudyPage({ params }) {
     (image) => image.orientation === "portrait",
   );
   const caseStudyBannerImages = caseStudy.banner_images;
+  console.log("Case Study Banner Images:", caseStudyBannerImages);
   if (!caseStudy) {
     return (
       <div>
@@ -76,25 +77,27 @@ export default async function CaseStudyPage({ params }) {
   }
   return (
     <>
-      <BannerImage
-        src="/images/case-studies/wash-u/banner-images/b.png"
+      {/* <BannerImage
+        src="/images/case-studies/wash-u/banner-images/d.png"
         alt="Mike Martin Media | Corporate Video Production"
         title="Corporate Video Production"
         width={1728}
         height={728}
-      />
+      /> */}
       {/* <div className="mt-6 ml-2">
         <BackLink />
       </div> */}
-      {/* <BannerImageGallery images={caseStudyBannerImages} /> */}
+      <BannerImageGallery images={caseStudyBannerImages} />
 
-      {/* <PageHeadingBanner
+      <CaseStudyBannerHeading
+        
         title="CASE STUDY"
+        caseStudy={caseStudy}
         subtitle={caseStudy.client}
         heading={caseStudy.title}
         text={caseStudy.challenge}
         // text2={caseStudiesPageBannerText.text2}
-      /> */}
+      />
       <div className="w-full max-w-800 mx-auto">
         <CaseStudyDisplay caseStudy={caseStudy} />
       </div>
