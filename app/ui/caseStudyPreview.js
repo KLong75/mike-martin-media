@@ -83,9 +83,7 @@
 //   );
 // }
 
-"use client";
-// import from react
-import { useState } from "react";
+
 // import from next
 import Link from "next/link";
 import Image from "next/image";
