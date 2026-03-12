@@ -77,7 +77,7 @@ export default async function CaseStudyPage({ params }) {
   return (
     <>
       <BannerImage
-        src="/images/case-studies/wash-u/banner.png"
+        src="/images/case-studies/wash-u/banner-images/b.png"
         alt="Mike Martin Media | Corporate Video Production"
         title="Corporate Video Production"
         width={1728}
