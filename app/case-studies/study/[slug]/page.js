@@ -5,6 +5,7 @@ import BackLink from "@/app/ui/backLink";
 import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import CaseStudyDisplay from "@/app/ui/caseStudyDisplay";
 import BannerImageGallery from "@/app/ui/bannerImageGallery";
+import BannerImage from "@/app/ui/bannerImage";
 // import data
 import { caseStudies } from "@/app/lib/case-studies/case-studies";
 import { siteUrl } from "@/app/lib/site-url";
@@ -75,9 +76,16 @@ export default async function CaseStudyPage({ params }) {
   }
   return (
     <>
-      <div className="mt-6 ml-2">
+      <BannerImage
+        src="/images/case-studies/wash-u/banner.png"
+        alt="Mike Martin Media | Corporate Video Production"
+        title="Corporate Video Production"
+        width={1728}
+        height={728}
+      />
+      {/* <div className="mt-6 ml-2">
         <BackLink />
-      </div>
+      </div> */}
       {/* <BannerImageGallery images={caseStudyBannerImages} /> */}
 
       {/* <PageHeadingBanner
