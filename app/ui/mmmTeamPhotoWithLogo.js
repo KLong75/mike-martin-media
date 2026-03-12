@@ -8,7 +8,7 @@ export default function MMMTeamPhotoWithLogo() {
         fetchPriority="high"
         priority
         // src="/images/home-page/mmm-team-900x600.webp"
-        src="/images/home-page/team-feb-2026.webp"
+        src="/images/home-page/team-march-2026.webp"
         width={900}
         height={600}
         alt="The MMM Team"
