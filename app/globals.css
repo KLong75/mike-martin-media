@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
 
 body {
   overflow-x: hidden !important;
@@ -304,4 +303,21 @@ a.cky-banner-element {
   --time-display: none;
   --title-display: none;
   --duration-display: none; */
+}
+
+@layer utilities {
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-50vw);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-in {
+    animation: slideIn 1s ease-in-out forwards;
+  }
 }

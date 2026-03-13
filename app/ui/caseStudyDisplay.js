@@ -2,7 +2,7 @@
 import Image from "next/image";
 // import components
 import LineLogoHeading from "./lineLogoHeading";
-
+import AnimateOnScroll from "./animateOnScroll";
 export default function CaseStudyDisplay({ caseStudy }) {
   return (
     <div className="w-full p-8 md:p-12 flex flex-col justify-center items-center">
@@ -31,11 +31,13 @@ export default function CaseStudyDisplay({ caseStudy }) {
           </div> */}
           <div className="">
             <div>
+            <AnimateOnScroll>
               <LineLogoHeading
                 text="The Challenge"
                 htmlElement={"h5"}
                 textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
               />
+              </AnimateOnScroll>
               <div className="grid grid-cols-2 flex justify-center items-center gap-4">
                 <div className="w-full h-auto p-2">
                   {caseStudy.challenge.map((item, index) => (
@@ -57,11 +59,13 @@ export default function CaseStudyDisplay({ caseStudy }) {
             </div>
           </div>
           <div className="my-6">
+          <AnimateOnScroll>
             <LineLogoHeading
               text="The Approach"
               htmlElement={"h5"}
               textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
             />
+            </AnimateOnScroll>
             {caseStudy.approach.map((item, index) => (
               <p className="my-2" key={index}>
                 {item}
@@ -70,11 +74,13 @@ export default function CaseStudyDisplay({ caseStudy }) {
           </div>
           <div className="my-6">
             <div>
+            <AnimateOnScroll>
               <LineLogoHeading
                 text="The Result"
                 htmlElement={"h5"}
                 textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
               />
+              </AnimateOnScroll>
               {caseStudy.result.map((item, index) => (
                 <p className="my-2" key={index}>
                   {item}
@@ -83,6 +89,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
             </div>
           </div>
           <div className="mt-6">
+          <AnimateOnScroll>
             <LineLogoHeading
               text={
                 caseStudy.partnership.type === "long-term"
@@ -92,6 +99,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
               htmlElement={"h5"}
               textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
             />
+            </AnimateOnScroll>
             {caseStudy.partnership.text.map((item, index) => (
               <p className="my-2" key={index}>
                 {item}
