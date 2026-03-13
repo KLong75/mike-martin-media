@@ -1,3 +1,5 @@
+// import from next
+import Image from "next/image";
 // import components
 import LineLogoHeading from "./lineLogoHeading";
 
@@ -34,12 +36,23 @@ export default function CaseStudyDisplay({ caseStudy }) {
                 htmlElement={"h5"}
                 textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
               />
-              <div>
-              {caseStudy.challenge.map((item, index) => (
-                <p className="my-2" key={index}>
-                  {item}
-                </p>
-              ))}
+              <div className="grid grid-cols-2 flex justify-center items-center gap-4">
+                <div className="w-full h-auto p-2">
+                  {caseStudy.challenge.map((item, index) => (
+                    <p className="my-2 p-2 text-lg" key={index}>
+                      {item}
+                    </p>
+                  ))}
+                </div>
+                <div className="w-full h-auto p-2">
+                  <Image
+                    src={caseStudy.images[1].url}
+                    alt={caseStudy.images[1].alt || "Case Study Image"}
+                    width={caseStudy.images[1].width / 4}
+                    height={caseStudy.images[1].height / 4}
+                    className="my-4 shadow-xl mx-auto"
+                  />
+                </div>
               </div>
             </div>
           </div>

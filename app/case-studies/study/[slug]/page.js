@@ -1,5 +1,6 @@
 // import from next
 import Link from "next/link";
+import Image from "next/image";
 // import components
 import BackLink from "@/app/ui/backLink";
 import CaseStudyBannerHeading from "@/app/ui/caseStudyBannerHeading";
@@ -65,7 +66,7 @@ export default async function CaseStudyPage({ params }) {
     (image) => image.orientation === "portrait",
   );
   const caseStudyBannerImages = caseStudy.banner_images;
-  console.log("Case Study Banner Images:", caseStudyBannerImages);
+
   if (!caseStudy) {
     return (
       <div>
@@ -90,7 +91,6 @@ export default async function CaseStudyPage({ params }) {
       <BannerImageGallery images={caseStudyBannerImages} />
 
       <CaseStudyBannerHeading
-        
         title="CASE STUDY"
         caseStudy={caseStudy}
         subtitle={caseStudy.client}
@@ -98,9 +98,13 @@ export default async function CaseStudyPage({ params }) {
         text={caseStudy.challenge}
         // text2={caseStudiesPageBannerText.text2}
       />
-      <div className="w-full max-w-800 mx-auto">
+      <div className="p-6 max-w-800 mx-auto">
         <CaseStudyDisplay caseStudy={caseStudy} />
       </div>
+     
+      {/* <div className="mb-6 ml-2">
+        <BackLink />
+      </div> */}
     </>
   );
 }
