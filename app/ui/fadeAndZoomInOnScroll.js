@@ -7,7 +7,7 @@ export default function FadeAndZoomInOnScroll({
   className = "",
   threshold = 0.1,
   triggerOnce = true, // Added triggerOnce prop
-  durationClass = "duration-1000",
+  durationClass = "duration-2000",
 }) {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);

@@ -1,70 +1,44 @@
-
-
 // import from next
 import Image from "next/image";
 // import components
 import LineLogoHeading from "./lineLogoHeading";
 import SlideInOnScroll from "./slideInOnScroll";
 import FadeAndZoomInOnScroll from "./fadeAndZoomInOnScroll";
+import ClientVideoFrame from "./clientVideoFrame";
+
 export default function CaseStudyDisplay({ caseStudy }) {
   return (
-    <div className="w-full p-8 md:p-12 flex flex-col justify-center items-center">
+    <div className="w-full flex flex-col justify-center items-center">
       {caseStudy ? (
-        <div className="w-full max-w-6xl mx-auto">
-          {/* <span className="text-4xl font-courier-prime text-center block">
-            CASE STUDY
-          </span>
-          <h1 className="font-bold text-center text-xl">{caseStudy.title}</h1>
-          <div className="my-6">
-            <h2 className="">
-              <span className="font-bold">Client:</span> {caseStudy.client}
-            </h2>
-            {caseStudy.brand_partner && (
-              <h2 className="">
-                <span className="font-bold">Brand Partner:</span>{" "}
-                {caseStudy.brand_partner}
-              </h2>
-            )}
-            <h3>
-              <span className="font-bold">Campaign:</span> {caseStudy.campaign}
-            </h3>
-            <h4>
-              <span className="font-bold">Format:</span> {caseStudy.format}
-            </h4>
-          </div> */}
+        <div className="w-full max-w-6xl mx-auto ">
           <div className="">
             <div>
               <SlideInOnScroll>
                 <LineLogoHeading
                   text="The Challenge"
                   htmlElement={"h5"}
-                  textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+                  textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-10 text-lg sm:text-xl md:text-2xl"
                 />
               </SlideInOnScroll>
               <FadeAndZoomInOnScroll>
-                <div className="grid grid-cols-2 flex justify-center items-center gap-4">
-                  {/* <div className="w-full h-auto p-2 animate-in fade-in zoom-in duration-1000"> */}
-
-                  <div className="w-full h-auto p-2 ">
-                    {/* <FadeAndZoomInOnScroll> */}
+                <div className="w-full max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 lg:mt-12 lg:mb-12">
+                  <div className="w-full h-auto lg:mt-4 pb-0 lg:pb-6 lg:p-6 flex flex-col justify-center items-center">
                     {caseStudy.challenge.map((item, index) => (
-                      <p className="my-2 p-2 text-lg" key={index}>
+                      <p
+                        className="my-2 lg:px-6 md:text-lg 2xl:text-xl"
+                        key={index}>
                         {item}
                       </p>
                     ))}
-                    {/* </FadeAndZoomInOnScroll> */}
                   </div>
-
-                  <div className="w-full h-auto p-2 my-6">
-                    {/* <FadeAndZoomInOnScroll> */}
+                  <div className="w-full h-auto lg:p-6 lg:pr-12 lg:my-6">
                     <Image
-                      src={caseStudy.images[16].url}
-                      alt={caseStudy.images[16].alt || "Case Study Image"}
-                      width={caseStudy.images[16].width / 4}
-                      height={caseStudy.images[16].height / 4}
-                      className="my-4 shadow-xl mx-auto"
+                      src={caseStudy.images[0].url}
+                      alt={caseStudy.images[0].alt || "Case Study Image"}
+                      width={caseStudy.images[0].width / 4}
+                      height={caseStudy.images[0].height / 4}
+                      className="lg:my-4 shadow-xl mx-auto"
                     />
-                    {/* </FadeAndZoomInOnScroll> */}
                   </div>
                 </div>
               </FadeAndZoomInOnScroll>
@@ -78,11 +52,28 @@ export default function CaseStudyDisplay({ caseStudy }) {
                 textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
               />
             </SlideInOnScroll>
-            {caseStudy.approach.map((item, index) => (
-              <p className="my-2" key={index}>
-                {item}
-              </p>
-            ))}
+            <FadeAndZoomInOnScroll>
+              <div className="w-full max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 lg:mt-12 lg:mb-12">
+                <div className="w-full h-auto lg:mt-4 lg:p-6 lg:pl-12 lg:my-6">
+                  <Image
+                    src={caseStudy.images[5].url}
+                    alt={caseStudy.images[5].alt || "Case Study Image"}
+                    width={caseStudy.images[5].width / 4}
+                    height={caseStudy.images[5].height / 4}
+                    className="mt-6 shadow-xl mx-auto"
+                  />
+                </div>
+                <div className="w-full h-auto lg:mt-4 pb-0 lg:pb-6 lg:p-6 flex flex-col justify-center items-center">
+                  {caseStudy.approach.map((item, index) => (
+                    <p
+                      className="my-2 lg:px-6 md:text-lg 2xl:text-xl"
+                      key={index}>
+                      {item}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </FadeAndZoomInOnScroll>
           </div>
           <div className="my-6">
             <div>
@@ -93,11 +84,13 @@ export default function CaseStudyDisplay({ caseStudy }) {
                   textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
                 />
               </SlideInOnScroll>
-              {caseStudy.result.map((item, index) => (
-                <p className="my-2" key={index}>
-                  {item}
-                </p>
-              ))}
+              <div>
+                {caseStudy.result.map((item, index) => (
+                  <p className="my-2 text-lg" key={index}>
+                    {item}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
           <div className="mt-6">
@@ -113,7 +106,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
               />
             </SlideInOnScroll>
             {caseStudy.partnership.text.map((item, index) => (
-              <p className="my-2" key={index}>
+              <p className="my-2 text-lg" key={index}>
                 {item}
               </p>
             ))}

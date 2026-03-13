@@ -98,7 +98,7 @@ export default async function CaseStudyPage({ params }) {
         text={caseStudy.challenge}
         // text2={caseStudiesPageBannerText.text2}
       />
-      <div className="p-6 max-w-800 mx-auto">
+      <div className="p-8 md:p-12">
         <CaseStudyDisplay caseStudy={caseStudy} />
       </div>
      

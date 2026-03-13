@@ -110,6 +110,13 @@ export const caseStudies = [
     ],
     images: [
       {
+        url: "/images/case-studies/wash-u/washu-campus.webp",
+        alt: "Campus of Washington University in St. Louis, MO",
+        width: 1920,
+        height: 1280,
+        orientation: "landscape",
+      },
+      {
         url: "/images/case-studies/wash-u/1.webp",
         alt: "",
         width: 1920,
@@ -228,10 +235,29 @@ export const caseStudies = [
         height: 1920,
         orientation: "portrait",
       },
+      {
+        url: "/images/case-studies/wash-u/18.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
     ],
     videos: [
       {
         id: "00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44",
+        mux_title: "washu-case-study-people-of-the-plan",
+        title: "Video One",
+      },
+      {
+        id: "BeftU6Kems01qacztypoakEKPK5np3WwB5yR02EMk8qcA",
+        mux_title: "washu-case-study-video-2",
+        title: "Video Two",
+      },
+      {
+        id: "JrTVAliKf01Ot7lWyjCW6vXyf8WLwYJyP15DSzSpWlz4",
+        mux_title: "washu-case-study-video-3",
+        title: "Video Three",
       },
     ],
   },
