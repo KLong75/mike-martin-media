@@ -321,3 +321,18 @@ a.cky-banner-element {
     animation: slideIn 1s ease-in-out forwards;
   }
 }
+
+@layer utilities {
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+}

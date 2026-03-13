@@ -1,8 +1,143 @@
+// "use client";
+// // import from next
+// import Image from "next/image";
+// // import components
+// import LineLogoHeading from "./lineLogoHeading";
+// import SlideInOnScroll from "./slideInOnScroll";
+// // Removed FadeInOnScroll import
+
+// // Added: import hooks for scroll animation
+// import { useEffect, useRef, useState } from "react";
+
+// export default function CaseStudyDisplay({ caseStudy }) {
+//   // Added: state and ref for scroll-triggered animation
+//   const [challengeVisible, setChallengeVisible] = useState(false);
+//   const challengeRef = useRef(null);
+
+//   // Added: Intersection Observer logic
+//   useEffect(() => {
+//     const observer = new window.IntersectionObserver(
+//       ([entry]) => {
+//         setChallengeVisible(entry.isIntersecting);
+//       },
+//       { threshold: 0.1 }
+//     );
+//     if (challengeRef.current) {
+//       observer.observe(challengeRef.current);
+//     }
+//     return () => {
+//       if (challengeRef.current) {
+//         observer.unobserve(challengeRef.current);
+//       }
+//     };
+//   }, []);
+
+//   return (
+//     <div className="w-full p-8 md:p-12 flex flex-col justify-center items-center">
+//       {caseStudy ? (
+//         <div className="w-full max-w-6xl mx-auto">
+//           {/* ... */}
+//           <div className="">
+//             <div>
+//               <SlideInOnScroll>
+//                 <LineLogoHeading
+//                   text="The Challenge"
+//                   htmlElement={"h5"}
+//                   textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+//                 />
+//               </SlideInOnScroll>
+//               <div className="grid grid-cols-2 flex justify-center items-center gap-4">
+//                 {/* Changed: challenge section now scroll-animated */}
+//                 <div
+//                   ref={challengeRef} // Added ref
+//                   className={`w-full h-auto p-2 ${
+//                     challengeVisible
+//                       ? "animate-in fade-in zoom-in duration-1000"
+//                       : "opacity-0"
+//                   }`}
+//                 >
+//                   {caseStudy.challenge.map((item, index) => (
+//                     <p className="my-2 p-2 text-lg" key={index}>
+//                       {item}
+//                     </p>
+//                   ))}
+//                 </div>
+//                 {/* No change to image section */}
+//                 <div className="w-full h-auto p-2">
+//                   <Image
+//                     src={caseStudy.images[1].url}
+//                     alt={caseStudy.images[1].alt || "Case Study Image"}
+//                     width={caseStudy.images[1].width / 4}
+//                     height={caseStudy.images[1].height / 4}
+//                     className="my-4 shadow-xl mx-auto"
+//                   />
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//           {/* ...rest of your component unchanged... */}
+//           <div className="my-6">
+//             <SlideInOnScroll>
+//               <LineLogoHeading
+//                 text="The Approach"
+//                 htmlElement={"h5"}
+//                 textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+//               />
+//             </SlideInOnScroll>
+//             {caseStudy.approach.map((item, index) => (
+//               <p className="my-2" key={index}>
+//                 {item}
+//               </p>
+//             ))}
+//           </div>
+//           <div className="my-6">
+//             <div>
+//               <SlideInOnScroll>
+//                 <LineLogoHeading
+//                   text="The Result"
+//                   htmlElement={"h5"}
+//                   textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+//                 />
+//               </SlideInOnScroll>
+//               {caseStudy.result.map((item, index) => (
+//                 <p className="my-2" key={index}>
+//                   {item}
+//                 </p>
+//               ))}
+//             </div>
+//           </div>
+//           <div className="mt-6">
+//             <SlideInOnScroll>
+//               <LineLogoHeading
+//                 text={
+//                   caseStudy.partnership.type === "long-term"
+//                     ? "Long-term Partnership"
+//                     : "New Partnership"
+//                 }
+//                 htmlElement={"h5"}
+//                 textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+//               />
+//             </SlideInOnScroll>
+//             {caseStudy.partnership.text.map((item, index) => (
+//               <p className="my-2" key={index}>
+//                 {item}
+//               </p>
+//             ))}
+//           </div>
+//         </div>
+//       ) : (
+//         <p>Case study data is not available.</p>
+//       )}
+//     </div>
+//   );
+// }
+
 // import from next
 import Image from "next/image";
 // import components
 import LineLogoHeading from "./lineLogoHeading";
-import AnimateOnScroll from "./animateOnScroll";
+import SlideInOnScroll from "./slideInOnScroll";
+import FadeAndZoomInOnScroll from "./fadeAndZoomInOnScroll";
 export default function CaseStudyDisplay({ caseStudy }) {
   return (
     <div className="w-full p-8 md:p-12 flex flex-col justify-center items-center">
@@ -31,41 +166,48 @@ export default function CaseStudyDisplay({ caseStudy }) {
           </div> */}
           <div className="">
             <div>
-            <AnimateOnScroll>
-              <LineLogoHeading
-                text="The Challenge"
-                htmlElement={"h5"}
-                textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
-              />
-              </AnimateOnScroll>
+              <SlideInOnScroll>
+                <LineLogoHeading
+                  text="The Challenge"
+                  htmlElement={"h5"}
+                  textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+                />
+              </SlideInOnScroll>
               <div className="grid grid-cols-2 flex justify-center items-center gap-4">
-                <div className="w-full h-auto p-2">
-                  {caseStudy.challenge.map((item, index) => (
-                    <p className="my-2 p-2 text-lg" key={index}>
-                      {item}
-                    </p>
-                  ))}
+                {/* <div className="w-full h-auto p-2 animate-in fade-in zoom-in duration-1000"> */}
+
+                <div className="w-full h-auto p-2 ">
+                  <FadeAndZoomInOnScroll>
+                    {caseStudy.challenge.map((item, index) => (
+                      <p className="my-2 p-2 text-lg" key={index}>
+                        {item}
+                      </p>
+                    ))}
+                  </FadeAndZoomInOnScroll>
                 </div>
-                <div className="w-full h-auto p-2">
-                  <Image
-                    src={caseStudy.images[1].url}
-                    alt={caseStudy.images[1].alt || "Case Study Image"}
-                    width={caseStudy.images[1].width / 4}
-                    height={caseStudy.images[1].height / 4}
-                    className="my-4 shadow-xl mx-auto"
-                  />
+
+                <div className="w-full h-auto p-2 my-6">
+                  <FadeAndZoomInOnScroll>
+                    <Image
+                      src={caseStudy.images[16].url}
+                      alt={caseStudy.images[16].alt || "Case Study Image"}
+                      width={caseStudy.images[16].width / 4}
+                      height={caseStudy.images[16].height / 4}
+                      className="my-4 shadow-xl mx-auto"
+                    />
+                  </FadeAndZoomInOnScroll>
                 </div>
               </div>
             </div>
           </div>
           <div className="my-6">
-          <AnimateOnScroll>
-            <LineLogoHeading
-              text="The Approach"
-              htmlElement={"h5"}
-              textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
-            />
-            </AnimateOnScroll>
+            <SlideInOnScroll>
+              <LineLogoHeading
+                text="The Approach"
+                htmlElement={"h5"}
+                textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+              />
+            </SlideInOnScroll>
             {caseStudy.approach.map((item, index) => (
               <p className="my-2" key={index}>
                 {item}
@@ -74,13 +216,13 @@ export default function CaseStudyDisplay({ caseStudy }) {
           </div>
           <div className="my-6">
             <div>
-            <AnimateOnScroll>
-              <LineLogoHeading
-                text="The Result"
-                htmlElement={"h5"}
-                textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
-              />
-              </AnimateOnScroll>
+              <SlideInOnScroll>
+                <LineLogoHeading
+                  text="The Result"
+                  htmlElement={"h5"}
+                  textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+                />
+              </SlideInOnScroll>
               {caseStudy.result.map((item, index) => (
                 <p className="my-2" key={index}>
                   {item}
@@ -89,17 +231,17 @@ export default function CaseStudyDisplay({ caseStudy }) {
             </div>
           </div>
           <div className="mt-6">
-          <AnimateOnScroll>
-            <LineLogoHeading
-              text={
-                caseStudy.partnership.type === "long-term"
-                  ? "Long-term Partnership"
-                  : "New Partnership"
-              }
-              htmlElement={"h5"}
-              textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
-            />
-            </AnimateOnScroll>
+            <SlideInOnScroll>
+              <LineLogoHeading
+                text={
+                  caseStudy.partnership.type === "long-term"
+                    ? "Long-term Partnership"
+                    : "New Partnership"
+                }
+                htmlElement={"h5"}
+                textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+              />
+            </SlideInOnScroll>
             {caseStudy.partnership.text.map((item, index) => (
               <p className="my-2" key={index}>
                 {item}

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function AnimateOnScroll({
+export default function SlideInOnScroll({
   children,
   className = "",
   threshold = 0.1,
@@ -23,7 +23,7 @@ export default function AnimateOnScroll({
           setIsVisible(false);
         }
       },
-      { threshold }
+      { threshold },
     );
 
     if (elementRef.current) {
@@ -40,8 +40,7 @@ export default function AnimateOnScroll({
   return (
     <div
       ref={elementRef}
-      className={`${className} ${isVisible ? "animate-slide-in" : "opacity-0"}`}
-    >
+      className={`${className} ${isVisible ? "animate-slide-in" : "opacity-0"}`}>
       {children}
     </div>
   );
