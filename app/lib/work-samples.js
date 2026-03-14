@@ -551,7 +551,7 @@ export const workSampleData = [
     playback_id: "3Kt3bRKuoXCImNBvTslgsgnhnM02X2HB4GgFghb01JwHs",
   },
   {
-    category: ["Corporate", "Animation"],
+    category: ["Corporate", "Animation", "Video Editing", "Video Production"],
     client: "Midland Wood Products",
     description:
       "Animated promotional video for Midland Wood Products. Produced by Mike Martin Media.",
@@ -563,6 +563,20 @@ export const workSampleData = [
     featured: "",
     slug: "midland-wood-products",
     playback_id: "rAK91DoZ8Gat9ZB01LHwPhF3rrzz2Fir00cZHx95xs7J4",
+  },
+   {
+    category: ["Corporate", "Animation", "Video Editing", "Video Production"],
+    client: "Mitek Ecosystem",
+    description:
+      "Animated promotional video for Mitek Ecosystem. Produced by Mike Martin Media.",
+    title: "Mitek Ecosystem",
+    image_src:
+      "/images/work-gallery-cover-images/mitek-ecosystem-cover.webp",
+    vimeo_src:
+      "https://player.vimeo.com/video/1114310789?h=890da453be&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+    featured: "",
+    slug: "mitek-ecosystem",
+    playback_id: "6nvLNWtEeccNPGKUhm4Apz0200nbEpqQ02Upl01kd5jc3Lw",
   },
   {
     category: ["Photography", "Nonprofit"],
