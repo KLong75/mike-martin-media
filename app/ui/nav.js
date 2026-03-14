@@ -40,10 +40,10 @@ const navLinks = [
     href: "/blog",
     label: "Blog",
   },
-  // {
-  //   href: "/case-studies",
-  //   label: "Case Studies",
-  // },
+  {
+    href: "/case-studies",
+    label: "Case Studies",
+  },
   {
     href: "/careers",
     label: "Careers",
