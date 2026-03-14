@@ -566,10 +566,10 @@ export const workSampleData = [
   },
    {
     category: ["Corporate", "Animation", "Video Editing", "Video Production"],
-    client: "Mitek Ecosystem",
+    client: "MiTek Ecosystem",
     description:
-      "Animated promotional video for Mitek Ecosystem. Produced by Mike Martin Media.",
-    title: "Mitek Ecosystem",
+      "Animated promotional video for MiTek Ecosystem. Produced by Mike Martin Media.",
+    title: "MiTek Ecosystem",
     image_src:
       "/images/work-gallery-cover-images/mitek-ecosystem-cover.webp",
     vimeo_src:
