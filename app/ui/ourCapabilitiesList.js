@@ -5,7 +5,7 @@ export default function OurCapabilitiesList() {
     <div className="text-white">
       <span className="text-xl mb-10 relative font-semibold">
         Our Capabilities
-        <span className="absolute bottom-[-1rem] left-0 w-[calc(100%+4rem)] xl:w-[calc(100%+4rem)] border-b border-white border-2"></span>
+        <span className="absolute -bottom-4 left-0 w-[calc(100%+4rem)] xl:w-[calc(100%+4rem)] border-b border-white border-2"></span>
       </span>
 
       <ul className="relative space-y-4 lg:space-y-6 min-w-[16rem] mt-6">

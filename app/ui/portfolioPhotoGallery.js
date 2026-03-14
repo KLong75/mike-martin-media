@@ -108,7 +108,7 @@ export default function PortfolioPhotoGallery({ client }) {
           return (
             <SwiperSlide key={index}>
               <div
-                className="w-full max-w-3xl mx-auto flex flex-col items-center justify-center bg-white mb-12 aspect-[3/2]"
+                className="w-full max-w-3xl mx-auto flex flex-col items-center justify-center bg-white mb-12 aspect-3/2"
                 style={
                   {
                     // aspectRatio: "3/2", // Use the widest ratio you expect (e.g., 3/2 for landscape)
