@@ -9,13 +9,11 @@ import { Autoplay, EffectFade} from "swiper/modules";
 // import swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 
-export default function BannerImageGallery({ images }) {
+export default function AutoFadeImageGallery({ images }) {
 
   return (
-    <div className="relative w-full h-full overflow-hidden group">
+    <div className="relative w-2/3 mx-auto h-full overflow-hidden group">
       <Swiper
         className="photo-swiper"
         spaceBetween={30}
@@ -36,7 +34,7 @@ export default function BannerImageGallery({ images }) {
               width={image.width}
               height={image.height}
               priority={image.priority}
-              className="w-full h-full object-cover"
+              className=""
             />
           </SwiperSlide>
         ))}

@@ -5,8 +5,14 @@ import LineLogoHeading from "./lineLogoHeading";
 import SlideInOnScroll from "./slideInOnScroll";
 import FadeAndZoomInOnScroll from "./fadeAndZoomInOnScroll";
 import ClientVideoFrame from "./clientVideoFrame";
+import AutoFadeImageGallery from "./autoFadeImageGallery";
 
 export default function CaseStudyDisplay({ caseStudy }) {
+  const caseStudyImages = caseStudy.images;
+  const portraitImages = caseStudyImages.filter(
+    (image) => image.width < image.height,
+  );
+
   return (
     <div className="w-full flex flex-col justify-center items-center">
       {caseStudy ? (
@@ -118,11 +124,31 @@ export default function CaseStudyDisplay({ caseStudy }) {
                 textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
               />
             </SlideInOnScroll>
-            {caseStudy.partnership.text.map((item, index) => (
-              <p className="my-2 text-lg" key={index}>
-                {item}
-              </p>
-            ))}
+            <FadeAndZoomInOnScroll>
+              <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:mt-12 lg:mb-12">
+                <div className="w-full h-auto lg:px-6 flex flex-col">
+                  {caseStudy.partnership.text.map((item, index) => (
+                    <p
+                      className="my-2 lg:px-6 md:text-lg 2xl:text-xl"
+                      key={index}>
+                      {item}
+                    </p>
+                  ))}
+                  <div className="w-2/3 h-auto mx-auto flex justify-center items-center mt-32">
+                    <Image 
+                      src="/branding/black_mmm_large_crop_resize.png"
+                      alt="MMM Logo"
+                      width={1642}
+                      height={560}
+                    />
+                  </div>
+                </div>
+
+                <div className="w-full h-auto lg:mt-4 flex flex-col justify-center items-center">
+                  <AutoFadeImageGallery images={portraitImages} />
+                </div>
+              </div>
+            </FadeAndZoomInOnScroll>
           </div>
         </div>
       ) : (
