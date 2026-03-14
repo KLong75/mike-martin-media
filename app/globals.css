@@ -1,6 +1,139 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --text-10xl: 10rem;
+  --text-11xl: 11rem;
+  --text-12xl: 12rem;
+  --text-13xl: 13rem;
+  --text-14xl: 14rem;
+  --text-15xl: 15rem;
+  --text-16xl: 16rem;
+  --text-17xl: 17rem;
+  --text-18xl: 18rem;
+  --text-19xl: 19rem;
+  --text-20xl: 20rem;
+
+  --color-light-green: #a4b555;
+  --color-dark-green: #4d6710;
+
+  --font-sans: var(--font-dm-sans);
+
+  --margin-128: 32rem;
+  --margin-144: 36rem;
+  --margin-160: 40rem;
+  --margin-180: 44rem;
+  --margin-200: 48rem;
+  --margin-300: 64rem;
+  --margin-400: 76rem;
+  --margin-500: 88rem;
+  --margin-600: 96rem;
+  --margin-700: 104rem;
+  --margin-800: 112rem;
+  --margin-900: 120rem;
+  --margin-1000: 128rem;
+  --margin-1100: 136rem;
+  --margin-1200: 144rem;
+
+  --height-128: 32rem;
+  --height-144: 36rem;
+  --height-160: 40rem;
+
+  --width-100: 25rem;
+  --width-128: 32rem;
+  --width-144: 36rem;
+  --width-150: 37.5rem;
+  --width-152: 38rem;
+  --width-160: 40rem;
+  --width-170: 42.5rem;
+  --width-175: 43.75rem;
+  --width-180: 44rem;
+  --width-200: 48rem;
+  --width-300: 64rem;
+  --width-400: 76rem;
+  --width-500: 88rem;
+  --width-600: 96rem;
+  --width-700: 104rem;
+  --width-800: 112rem;
+  --width-900: 120rem;
+  --width-1000: 128rem;
+  --width-1100: 136rem;
+  --width-1200: 144rem;
+
+  --container-128: 32rem;
+  --container-144: 36rem;
+  --container-160: 40rem;
+  --container-180: 44rem;
+  --container-200: 48rem;
+  --container-300: 64rem;
+  --container-400: 76rem;
+  --container-500: 88rem;
+  --container-600: 96rem;
+  --container-700: 104rem;
+  --container-800: 112rem;
+  --container-900: 120rem;
+  --container-1000: 128rem;
+  --container-1100: 136rem;
+  --container-1200: 144rem;
+  --container-1300: 152rem;
+  --container-1400: 160rem;
+  --container-1500: 168rem;
+  --container-1600: 176rem;
+  --container-1700: 184rem;
+  --container-1800: 192rem;
+  --container-1900: 200rem;
+  --container-2000: 208rem;
+
+  --transition-duration-2000: 2000ms;
+  --transition-duration-3000: 3000ms;
+  --transition-duration-4000: 4000ms;
+  --transition-duration-5000: 5000ms;
+  --transition-duration-5500: 5500ms;
+  --transition-duration-6000: 6000ms;
+  --transition-duration-7000: 7000ms;
+  --transition-duration-8000: 8000ms;
+  --transition-duration-9000: 9000ms;
+  --transition-duration-10000: 10000ms;
+  --transition-duration-11000: 11000ms;
+  --transition-duration-12000: 12000ms;
+  --transition-duration-13000: 13000ms;
+  --transition-duration-14000: 14000ms;
+  --transition-duration-15000: 15000ms;
+  --transition-duration-16000: 16000ms;
+  --transition-duration-17000: 17000ms;
+  --transition-duration-18000: 18000ms;
+  --transition-duration-19000: 19000ms;
+  --transition-duration-20000: 20000ms;
+  --transition-duration-21000: 21000ms;
+  --transition-duration-22000: 22000ms;
+  --transition-duration-23000: 23000ms;
+  --transition-duration-24000: 24000ms;
+
+  --breakpoint-xs: 400px;
+  --breakpoint-3xl: 1800px;
+  --breakpoint-4xl: 2200px;
+  --breakpoint-5xl: 2600px;
+  --breakpoint-6xl: 2800px;
+  --breakpoint-7xl: 3000px;
+  --breakpoint-8xl: 3200px;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 body {
   overflow-x: hidden !important;

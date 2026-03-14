@@ -14,7 +14,7 @@ export default function CapabilityHighLightsSection({
       <div className="lg:px-6 2xl:px-0">
         <MMMLineLogoHeading headline={headline} heading_level={"h3"} />
       </div>
-      <div className="lg:m-10 grid grid-cols-1 lg:grid-cols-2 w-full max-w-screen-2xl flex justify-center items-center">
+      <div className="lg:m-10 grid grid-cols-1 lg:grid-cols-2 w-full max-w-(--breakpoint-2xl) flex justify-center items-center">
         <div className="hidden lg:flex pl-12 pr-6">
           <MuxBannerVideo
             playbackId={video_src}

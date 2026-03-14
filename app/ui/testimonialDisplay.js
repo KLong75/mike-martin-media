@@ -17,7 +17,7 @@ export default function TestimonialDisplay() {
   }, []);
 
   return (
-    <div className="bg-black text-white lg:h-[22.5rem] flex justify-center items-center">
+    <div className="bg-black text-white lg:h-90 flex justify-center items-center">
       <Swiper
         modules={[Autoplay, Navigation]}
         autoplay={{ delay: 6000, disableOnInteraction: false }}
@@ -53,7 +53,7 @@ export default function TestimonialDisplay() {
             </div>
           </SwiperSlide>
         ))}
-        <div className="absolute bottom-[4rem] lg:bottom-20 right-0 lg:right-24 flex space-x-2 -mb-10 p-2 pr-6 lg:pr-0 z-10">
+        <div className="absolute bottom-16 lg:bottom-20 right-0 lg:right-24 flex space-x-2 -mb-10 p-2 pr-6 lg:pr-0 z-10">
           <button
             aria-label="previous testimonial"
             className="testimonial-prev rounded-full border-2 p-1 cursor-pointer">

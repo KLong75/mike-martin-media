@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function DisplayCard({ title, image, author, text, date }) {
   return (
-    <div className="rounded-xl bg-gray-200 p-2 shadow-sm max-w-96 ">
+    <div className="rounded-xl bg-gray-200 p-2 shadow-xs max-w-96 ">
       <div className="flex p-4">
         <h3 className=" text-sm font-medium">{title}</h3>
 
@@ -19,7 +19,7 @@ export default function DisplayCard({ title, image, author, text, date }) {
           className="rounded-xl"
         />
       </div>
-      <p className="rounded-xl bg-white p-4 text-center overflow-wrap break-words m-2">
+      <p className="rounded-xl bg-white p-4 text-center overflow-wrap wrap-break-word m-2">
         {text}
       </p>
     </div>

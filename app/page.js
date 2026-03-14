@@ -81,7 +81,7 @@ export default function Home() {
                 <div className="flex justify-center md:justify-start">
                   <Link href="/our-work" className="">
                     <div
-                      className={`border-[3px] border-black text-black hover:transform hover:bg-black hover:text-white transition duration-1000 font-semibold rounded-full flex justify-center items-center cursor-pointer w-[14rem] py-1 px-1 mb-4 `}>
+                      className={`border-[3px] border-black text-black hover:transform hover:bg-black hover:text-white transition duration-1000 font-semibold rounded-full flex justify-center items-center cursor-pointer w-56 py-1 px-1 mb-4 `}>
                       <span className="lg:text-lg font-bold">
                         Check Out Our Work
                       </span>

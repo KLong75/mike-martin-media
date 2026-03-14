@@ -35,7 +35,7 @@ export default function GridPic({
               3. Rotated label and border at bottom of this container. 
               Use pointer-events-auto on label so the link still works. 
             */}
-          <div className="absolute bottom-0 left-[1rem] md:left-[2rem] lg:bottom-[1rem] lg:left-[3rem] text-white transform -rotate-90 origin-left pointer-events-auto font-bold text-sm sm:text-lg lg:text-xl xl:text-2xl xl:text-3xl">
+          <div className="absolute bottom-0 left-4 md:left-8 lg:bottom-4 lg:left-12 text-white transform -rotate-90 origin-left pointer-events-auto font-bold text-sm sm:text-lg lg:text-xl xl:text-2xl xl:text-3xl">
             <div className="relative inline-block">
               <span className="text-shadow-black-background-black">
                 {label}

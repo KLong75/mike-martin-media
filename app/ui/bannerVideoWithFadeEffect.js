@@ -85,7 +85,7 @@ export default function BannerVideoWithFadeEffect({
           {pathname === "/" && (
             <div>
               <div
-                className={`absolute bottom-[-1rem] xs:bottom-[-1.25rem] sm:bottom-[-2.1rem] md:bottom-[-2.5rem] lg:bottom-[-3rem] xl:bottom-[-4rem] 2xl:bottom-[-4.5rem] 3xl:bottom-[-5.75rem] 4xl:bottom-[-7rem] 5xl:bottom-[-8rem] right-0 text-center text-[12.5vw] text-white tracking-tight font-bold w-full whitespace-nowrap transition-opacity duration-4000 ease-in-out ${
+                className={`absolute -bottom-4 xs:-bottom-5 sm:bottom-[-2.1rem] md:-bottom-10 lg:-bottom-12 xl:-bottom-16 2xl:-bottom-18 3xl:-bottom-23 4xl:-bottom-28 5xl:-bottom-32 right-0 text-center text-[12.5vw] text-white tracking-tight font-bold w-full whitespace-nowrap transition-opacity duration-4000 ease-in-out ${
                   showHeading ? "opacity-100" : "opacity-0"
                 }`}>
                 {letters.map((item, index) => (
