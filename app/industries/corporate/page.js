@@ -1,5 +1,5 @@
 //import components
-import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
+// import BannerVideoWithFadeNoLogo from "@/app/ui/bannerVideoWithFadeNoLogo";
 import VideoGallery from "@/app/ui/workGallery";
 import PageHeadingBanner from "@/app/ui/pageHeadingBanner";
 import OurCapabilitiesList from "@/app/ui/ourCapabilitiesList";
@@ -81,8 +81,8 @@ export default function Page() {
         src="/images/industries/corporate.png"
         alt="Mike Martin Media | Corporate Video Production"
         title="Corporate Video Production"
-        width={1920}
-        height={1080}
+        width={1728}
+        height={728}
       />
       <div className="">
         <PageHeadingBanner

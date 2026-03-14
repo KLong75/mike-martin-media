@@ -18,6 +18,7 @@ import ActiveCampaignNewsletterSignup from "./ui/activeCampaignNewsletterSignup"
 import "./globals.css";
 // import fonts
 import { dm_sans } from "./fonts";
+import { courier_prime } from "./fonts";
 // define metadata for the site
 export const metadata = {
   title: {
@@ -42,7 +43,7 @@ export default async function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`overflow-x-hidden ${dm_sans.variable} font-sans`}
+      className={`overflow-x-hidden ${dm_sans.variable} ${courier_prime.variable} font-sans`}
       data-scroll-behavior="smooth">
       <head>
         <link
@@ -61,7 +62,7 @@ export default async function RootLayout({ children }) {
         <link rel="preconnect" href="https://image.mux.com" crossOrigin="" />
       </head>
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} nonce={nonce} />
-      <body className={`antialiased  min-h-screen`}>
+      <body className={`antialiased  min-h-screen ${courier_prime.variable} ${dm_sans.variable} font-sans`}>
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}

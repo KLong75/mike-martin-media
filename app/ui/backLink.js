@@ -22,6 +22,7 @@ import { usePreviousRoute } from "../../context/previous-route-context";
 
 export default function BackLink({ href, label }) {
   const previousRoute = usePreviousRoute();
+  // console.log("Previous Route:", previousRoute);
   let backHref = href || previousRoute || "/";
   const backLabelPrefix = label || "Back To";
   let backLabelPage;
@@ -51,6 +52,8 @@ export default function BackLink({ href, label }) {
     backLabelPage = "Education";
   } else if (previousRoute === "/industries/healthcare") {
     backLabelPage = "Healthcare";
+  } else if (previousRoute === "/case-studies") {
+    backLabelPage = "Case Studies"; 
   } else if (previousRoute.includes("/blog/posts/")) {
     backLabelPage = "Blog"
     backHref = "/blog";

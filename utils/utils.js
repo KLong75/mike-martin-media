@@ -42,3 +42,14 @@ export const randomizeArray = (array) => {
   const shuffledArray = [...array].sort(() => Math.random() - 0.5);
   return shuffledArray;
 }
+
+export const shortenPostText = (text, num) => {
+    if (text.length < num) {
+      return text + "..";
+    }
+    if (text.length > num) {
+      return text.slice(0, num) + "...";
+    } else {
+      return text;
+    }
+  };

@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
 
 body {
   overflow-x: hidden !important;
@@ -8,6 +7,10 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.font-courier-prime {
+  font-family: "Courier Prime", monospace;
 }
 
 /* home page */
@@ -96,6 +99,11 @@ html {
   -moz-background-clip: text;
 }
 
+
+.text-shadow-black {
+  text-shadow: 2px 2px 0 black;
+}
+
 /* .text-shadow-white-background-black {
   text-shadow: 2px 2px 0 white;
   background-color: rgba(0, 0, 0, 1);
@@ -125,7 +133,7 @@ html {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   height: auto;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
 }
 
 .swiper-slide {
@@ -151,7 +159,6 @@ html {
   /* --swiper-pagination-bullet-size: 10px; */
   --swiper-pagination-bullet-inactive-color: #d3d3d3;
 }
-
 
 .scroll-to-top-button {
   transition: opacity 0.6s ease-in-out;
@@ -185,7 +192,6 @@ html {
     display: none !important;
   }
 }
-
 
 @keyframes scale-in {
   from {
@@ -297,4 +303,36 @@ a.cky-banner-element {
   --time-display: none;
   --title-display: none;
   --duration-display: none; */
+}
+
+@layer utilities {
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-50vw);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-in {
+    animation: slideIn 1s ease-in-out forwards;
+  }
+}
+
+@layer utilities {
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
 }

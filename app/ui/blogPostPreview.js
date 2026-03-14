@@ -6,6 +6,7 @@ import Link from "next/link";
 // import components
 import Image from "next/image";
 // import from utils
+import { shortenPostText } from "@/utils/utils";
 // import { formatDate } from "../lib/utils";
 
 export default function BlogPostPreview({
@@ -19,17 +20,16 @@ export default function BlogPostPreview({
   post_date,
   priority,
 }) {
-  const shortenPostText = (text, num) => {
-    if (text.length < num) {
-      return text + "..";
-    }
-    if (text.length > num) {
-      return text.slice(0, num) + "...";
-    } else {
-      return text;
-    }
-  };
-
+  // const shortenPostText = (text, num) => {
+  //   if (text.length < num) {
+  //     return text + "..";
+  //   }
+  //   if (text.length > num) {
+  //     return text.slice(0, num) + "...";
+  //   } else {
+  //     return text;
+  //   }
+  // };
   return (
     <div className="p-6 md:hover:bg-black md:hover:text-white transition-colors duration-1000 ease-in-out group shadow-2xl md:shadow-none rounded-2xl md:rounded-none">
       <Link href={`blog/posts/${slug}`}>

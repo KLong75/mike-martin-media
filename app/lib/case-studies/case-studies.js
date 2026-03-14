@@ -1,0 +1,413 @@
+export const caseStudiesPageBannerText = {
+  title: "Case Studies",
+  heading: "What Collaboration Looks Like in Practice",
+  text: "If you are considering a video partner, you want more than a highlight reel — you want proof. Our case studies take a closer look at the projects we've created, the challenges our clients faced, and how video helped them communicate more clearly and effectively.",
+  text2:
+    "These stories highlight how thoughtful video production can build trust, drive engagement, and support real business and mission-driven goals.",
+};
+
+export const howWeSupportOurClients = {
+  heading: "How We Support Our Clients",
+  sub_heading:
+    "Our approach: listen first, plan carefully, and deliver work that serves a purpose.",
+  list_items: [
+    {
+      label: "Strategic Planning & Creative Direction ",
+      description:
+        "We help define messaging, audience, and objectives before production begins",
+      image: "/images/case-studies/support-images/greeting.webp",
+    },
+    {
+      label: "Production & Field Crews",
+      description:
+        "Professional, efficient and flexible crews that keep shoots running smoothly and on schedule.",
+      image: "/images/case-studies/support-images/prompter.webp",
+    },
+    {
+      label: "Interviews & Messaging Support",
+      description:
+        "Guiding executives, staff, and clients to feel comfortable and authentic on camera.",
+      image: "/images/case-studies/support-images/interview.webp",
+    },
+    {
+      label: "Post-Production & Editing",
+      description:
+        "Clear storytelling, clean pacing, and polished multi-format delivery",
+      image: "/images/case-studies/support-images/edit.webp",
+    },
+    {
+      label: "Motion Graphics & Visual Enhancements ",
+      description:
+        "Purposeful graphics that clarify information and support the story.",
+      image: "/images/case-studies/support-images/motion-graphics.webp",
+    },
+  ],
+};
+
+export const caseStudies = [
+  {
+    slug: "washu-advancing-our-mission",
+    client: "Washington University in St. Louis",
+    title: "WashU: Advancing Our Mission",
+    short_title: "Advancing Our Mission",
+    campaign: "Advancing Our Mission: Strategic Plan 2019-25",
+    short_campaign: "Strategic Plan 2019-2025",
+    format: "Video Vignette Series (5 videos)",
+    short_format: "Video Vignette Series",
+    challenge: [
+      "As Washington University concluded its Strategic Plan for 2019 to 2025, leadership wanted to recognize the people behind the work — elevating early contributors, capturing their personal investment, and sharing authentic stories that could inspire the broader WashU community through ongoing campaign communications.",
+      "This project focused on real pride, collaboration, and the earned feeling of “we actually did this.”",
+    ],
+    approach: [
+      "Mike Martin Media partnered with WashU to produce a five-part video vignette series featuring on-camera conversations with key leaders and contributors across initiatives.",
+      "Filmed on campus, each interview was guided by a producer to feel natural and unscripted. A multi-camera setup provided visual variety while maintaining an intimate, conversational tone. Curated campus locations served as intentional backdrops, grounding each story in WashU's environment and mission.",
+      "Subtle graphics, music, and intro/outro elements created cohesion across the series and connected each vignette back to the larger campaign and hero video. Campus and subject b-roll was integrated throughout to add visual depth and context.",
+    ],
+    result: [
+      "The series showcases the collaboration, ownership, and impact behind WashU's Strategic Plan. These videos now serve as core storytelling assets within WashU's monthly communications, supporting the Advancing Our Mission campaign while honoring the people who helped bring it to life.",
+    ],
+    partnership: {
+      type: "long-term",
+      text: [
+        "Mike Martin Media has partnered with Washington University in St. Louis for more than 17 years, collaborating across a wide range of initiatives and campaigns. We're grateful for the continued trust WashU places in our team and for the opportunity to help tell stories that matter — especially those centered on people, purpose, and lasting impact.",
+      ],
+    },
+    preview_image: {
+      alt: "",
+      url: "https://image.mux.com/00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44/thumbnail.webp?width=576&height=324&time=04",
+      width: 576,
+      height: 324,
+    },
+    banner_images: [
+      {
+        url: "/images/case-studies/wash-u/banner-images/a.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/wash-u/banner-images/b.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/wash-u/banner-images/c.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/wash-u/banner-images/d.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+    ],
+    images: [
+      {
+        url: "/images/case-studies/wash-u/washu-campus.webp",
+        alt: "Campus of Washington University in St. Louis, MO",
+        width: 1920,
+        height: 1280,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/wash-u/1.webp",
+        alt: "",
+        width: 1920,
+        height: 1280,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/wash-u/2.webp",
+        alt: "",
+        width: 1920,
+        height: 1280,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/wash-u/3.webp",
+        alt: "",
+        width: 1920,
+        height: 1280,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/wash-u/4.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/5.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/6.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/7.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/8.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/9.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/10.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/11.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/12.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/13.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/14.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/15.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/16.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/17.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/wash-u/18.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+    ],
+    videos: [
+      {
+        category: ["Education"],
+        client: "Washington University in St. Louis",
+        id: "00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44",
+        mux_title: "washu-case-study-people-of-the-plan",
+        title: "Video One",
+        image_src: "https://image.mux.com/00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44/thumbnail.webp?width=576&height=324&time=04",
+        featured: "",
+        slug: "washu-case-study-people-of-the-plan",
+        playback_id: "00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44",
+      },
+      {
+        id: "BeftU6Kems01qacztypoakEKPK5np3WwB5yR02EMk8qcA",
+        mux_title: "washu-case-study-video-2",
+        title: "Video Two",
+        category: ["Education"],
+        client: "Washington University in St. Louis",
+        image_src: "https://image.mux.com/BeftU6Kems01qacztypoakEKPK5np3WwB5yR02EMk8qcA/thumbnail.webp?width=576&height=324&time=04",
+        featured: "",
+        slug: "washu-case-study-video-2",
+        playback_id: "BeftU6Kems01qacztypoakEKPK5np3WwB5yR02EMk8qcA",
+
+      },
+      {
+        id: "JrTVAliKf01Ot7lWyjCW6vXyf8WLwYJyP15DSzSpWlz4",
+        mux_title: "washu-case-study-video-3",
+        title: "Video Three",
+        category: ["Education"],
+        client: "Washington University in St. Louis",
+        image_src: "https://image.mux.com/JrTVAliKf01Ot7lWyjCW6vXyf8WLwYJyP15DSzSpWlz4/thumbnail.webp?width=576&height=324&time=04",
+        featured: "",
+        slug: "washu-case-study-video-3",
+        playback_id: "JrTVAliKf01Ot7lWyjCW6vXyf8WLwYJyP15DSzSpWlz4",
+      },
+    ],
+  },
+  {
+    slug: "circus-harmony",
+    client: "Circus Harmony",
+    title: "Circus Harmony: 25 Years of Impact",
+    short_title: "25 Years of Impact",
+    short_campaign: "25th Anniversary Celebration",
+    campaign: "25th Anniversary Celebration",
+    format: "Video Vignette Series (25 videos)",
+    short_format: "Video Vignette Series",
+    challenge: [
+      "As Circus Harmony approached its 25th anniversary as a nonprofit organization, the team wanted to celebrate the milestone by capturing the voices of alumni whose lives were shaped by the program. The goal was to produce a collection of authentic alumni stories that could be shared across social media, the organization's website, and anniversary campaign communications, while also contributing to a longer-form celebration video.",
+      "Beyond documenting the past, the project aimed to highlight the lasting impact of Circus Harmony's mission — demonstrating how the acrobatic arts can build confidence, community, and life-changing opportunities for young people.",
+    ],
+    approach: [
+      "For the 25-part video vignette series, interviews were recorded at the Mike Martin Media production studio in St. Louis and remotely with alumni located across the United States and internationally, including participants in Israel. To deepen the narrative, the production team incorporated more than a decade of archival footage from Circus Harmony performances and programs previously captured by MMM. ",
+    ],
+    result: [
+      "The 25 Years of Circus Harmony video series celebrates the organization's legacy through the voices of its alumni. The short-form videos were released throughout the year on social media, helping build awareness and excitement leading up to Circus Harmony's annual Soirée fundraising event.",
+      "Together, the vignettes showcase the impact of Circus Harmony's programs while reinforcing the organization's mission — demonstrating how nonprofit storytelling through video can inspire audiences, strengthen community connections, and support fundraising efforts.",
+    ],
+    partnership: {
+      type: "long-term",
+      text: "Circus Harmony was one of the earliest clients of Mike Martin Media, and our team has had the privilege of capturing their annual performances and programs for many years. It's an honor to help celebrate their 25th anniversary and to continue partnering with an organization dedicated to changing lives through the circus arts.",
+    },
+    preview_image: {
+      alt: "",
+      url: "https://image.mux.com/Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc/thumbnail.webp?width=576&height=324&time=22",
+      width: 576,
+      height: 324,
+    },
+    videos: [
+      {
+        id: "Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc",
+      },
+    ],
+  },
+  {
+    slug: "smith-saint-talent-agency",
+    client: "Smith & Saint Talent Agency",
+    brand_partner: "Panera Bread",
+    title: "Smith & Saint Talent Agency: Panera Social Campaign",
+    short_title: "Panera Social Campaign",
+    campaign: "Mix & Match with the Stars",
+    short_campaign: "Mix & Match with the Stars",
+    format: "Commercial social media video",
+    short_format: "Commercial Social Media Video",
+    challenge: [
+      "When Smith & Saint Talent Agency secured a brand partnership between Panera for their clients, dancers on the Dancing With the Stars tour, they needed a production partner who could move quickly. The team reached out to Mike Martin Media on a Wednesday afternoon with a request to film a branded social media commercial by Friday.",
+      "With a tight timeline and talent schedules to coordinate, the goal was to produce a polished 60-second social media video promoting Panera's Mix & Match menu while capturing the personality and energy of the dancers featured in the campaign.",
+    ],
+    approach: [
+      "The concept featured the dancers visiting Panera for lunch, highlighting their new Mix & Match menu through a playful interaction that builds to the familiar rhythm cue “five, six, seven, ate,” after a quick dance sequence.",
+      "Our team captured the commercial on location using an efficient production setup designed to move quickly while maintaining the quality expected from a professional commercial video production team.",
+    ],
+    result: [
+      "The final 60-second branded social media video combined Panera's product messaging with the high-energy style of the Dancing With the Stars performers. Delivered on an accelerated timeline, the video supported the brand partnership campaign while providing engaging content optimized for social media platforms.",
+    ],
+    partnership: {
+      type: "new",
+      text: "This project began with a simple online search and a quick introduction, but it quickly turned into a great collaboration and our first project with Smith & Saint Talent Agency. Despite the short turnaround, the production ran smoothly from pre-production through delivery — a reminder that with the right team in place, even a fast-moving concept can quickly become polished commercial and social media content. We appreciated the opportunity to help bring their Panera Bread brand partnership campaign to life and hope to work together again in the future.",
+    },
+    preview_image: {
+      alt: "",
+      url: "/images/case-studies/preview-images/panera-preview-img.webp",
+      width: 576,
+      height: 324,
+    },
+    videos: [
+      {
+        id: "NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00",
+      },
+    ],
+  },
+  {
+    slug: "siteman-cancer-center",
+    client: "Siteman Cancer Center",
+    title: "Mammography Van Patient Education",
+    short_title: "Mammography Van Education",
+    campaign: "Mammography Van - What to Expect",
+    short_campaign: "What to Expect",
+    format: "Patient education video and marketing photography",
+    short_format: "Educational Video & Photography",
+    challenge: [
+      "Nearly a decade after producing the original patient education video for Siteman Cancer Center's Mammography Van, the organization updated the vehicle with a new exterior wrap and refreshed branding. The team wanted to update their “What to Expect” video to reflect the new look while also capturing updated photography for marketing and outreach materials.",
+      "The goal was to create a modernized video that would help patients feel comfortable and informed before visiting the mobile screening unit, while maintaining the trusted tone and messaging established in the original video.",
+    ],
+    approach: [
+      "Mike Martin Media partnered with Siteman Cancer Center to produce an updated healthcare patient education video featuring new footage of the Mammography Van, drone videography to showcase the mobile unit in context, refreshed graphics, and an updated voice-over. Because MMM had produced the original video and worked with Siteman on numerous projects over the years, our team was able to quickly align with the organization's brand guidelines and messaging. We also leveraged archived footage from previous productions, allowing the updated video to build on existing visuals while incorporating new footage that reflects the van's current design and patient experience.",
+    ],
+    result: [
+      "The updated Mammography Van patient education video provides patients with a clear and welcoming overview of what to expect during their visit, while supporting Siteman's ongoing outreach and early detection efforts. Alongside the video, new still photography captured during the shoot provided updated marketing assets for digital and print materials.",
+    ],
+    partnership: {
+      type: "long-term",
+      text: "Mike Martin Media has enjoyed a long-standing partnership with Siteman Cancer Center, collaborating on projects that help communicate important healthcare information to patients and the community. Because our team understands Siteman's brand and maintains a library of archived footage from past productions, we're able to efficiently update and refresh content when needs evolve. We're grateful for the trust Siteman places in our team and proud to support their mission of improving cancer prevention, detection, and care.",
+    },
+    preview_image: {
+      alt: "",
+      url: "/images/case-studies/preview-images/siteman.png",
+      width: 576,
+      height: 324,
+    },
+    videos: [
+      {
+        id: "NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00",
+      },
+    ],
+  },
+  // {
+  //   client: "",
+  //   title: "",
+  //   short_title: "",
+  //   campaign: "",
+  //   short_campaign: "",
+  //   format: "",
+  //   challenge: [],
+  //   approach: [],
+  //   result: [],
+  //   preview_image: {
+  //     alt: "",
+  //     url: "",
+  //     width: 1080,
+  //     height: 1080,
+  //   },
+  //   videos: [
+  //     {
+  //       id: "",
+  //     },
+  //   ],
+  // },
+];

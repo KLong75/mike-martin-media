@@ -81,8 +81,8 @@ export default function Page() {
         src="/images/industries/nonprofit.png"
         alt="Nonprofit Video Production"
         title="Nonprofit Video Production"
-        width={1920}
-        height={1080}
+        width={1728}
+        height={728}
       />
       <div>
         <PageHeadingBanner

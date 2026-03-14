@@ -79,10 +79,10 @@ export default function Page() {
     <main className="grid grid-cols-1">
       <BannerImage
         src="/images/industries/education.png"
-        alt="Corporate Video Production"
-        title="Corporate Video Production"
-        width={1920}
-        height={1080}
+        alt="Education Video Production"
+        title="Education Video Production"
+        width={1728}
+        height={728}
       />
       <div>
         <PageHeadingBanner

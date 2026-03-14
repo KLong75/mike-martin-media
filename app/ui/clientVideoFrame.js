@@ -70,9 +70,9 @@ export default function ClientVideoFrame({
               className={`video-frame-client-span absolute font-bold text-left text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl`}>
               {client}
             </span>
-            <span className="video-frame-category-span text-left absolute text-xs lg:text-sm font-bold">
-              {category.join(", ")}
-            </span>
+           <span className="video-frame-category-span text-left absolute text-xs lg:text-sm font-bold">
+  {Array.isArray(category) ? category.join(", ") : category || ""}
+</span>
           </div>
         </div>
         {/* <Dialog open={videoWindowOpen} onClose={() => setVideoWindowOpen(false)}>
