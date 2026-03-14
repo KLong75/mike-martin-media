@@ -50,7 +50,7 @@ export default function CaseStudyPreview({ caseStudy }) {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   {/* CHANGED: Overlay uses group-hover to match other hover effects */}
-                  <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-shadow-black">
+                  <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-shadow-black">
                     <span className="text-white text-2xl font-courier-prime">
                       CASE STUDY:
                     </span>
