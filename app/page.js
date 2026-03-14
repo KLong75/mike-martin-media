@@ -22,7 +22,7 @@ export default function Home() {
         muted={true}
         poster=""
       />
-      <section className="flex justify-center items-center p-6 md:p-12 lg:p-28 xl:p-42">
+      <section className="flex justify-center items-center p-6 md:p-12 lg:p-28">
         <div
           id="home-page-about-section"
           className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-12 xl:gap-16 max-w-800 flex justify-center items-center">
