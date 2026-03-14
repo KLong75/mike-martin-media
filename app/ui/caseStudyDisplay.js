@@ -21,7 +21,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
                 />
               </SlideInOnScroll>
               <FadeAndZoomInOnScroll>
-                <div className="w-full max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 lg:mt-12 lg:mb-12">
+                <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 lg:mt-12 lg:mb-12">
                   <div className="w-full h-auto lg:mt-4 pb-0 lg:pb-6 lg:p-6 flex flex-col justify-center items-center">
                     {caseStudy.challenge.map((item, index) => (
                       <p
@@ -53,7 +53,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
               />
             </SlideInOnScroll>
             <FadeAndZoomInOnScroll>
-              <div className="w-full max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 lg:mt-12 lg:mb-12">
+              <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 lg:mt-12 lg:mb-12">
                 <div className="w-full h-auto lg:mt-4 lg:p-6 lg:pl-12 lg:my-6">
                   <Image
                     src={caseStudy.images[5].url}
@@ -76,22 +76,35 @@ export default function CaseStudyDisplay({ caseStudy }) {
             </FadeAndZoomInOnScroll>
           </div>
           <div className="my-6">
-            <div>
-              <SlideInOnScroll>
-                <LineLogoHeading
-                  text="The Result"
-                  htmlElement={"h5"}
-                  textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
-                />
-              </SlideInOnScroll>
-              <div>
+            <SlideInOnScroll>
+              <LineLogoHeading
+                text="The Result"
+                htmlElement={"h5"}
+                textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+              />
+            </SlideInOnScroll>
+            <FadeAndZoomInOnScroll>
+              <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 md:mt-8 lg:mt-12 xl:mt-16 lg:mb-12 flex justify-center items-center">
+                {caseStudy.videos.map((video, index) => (
+                  <div className="w-full" key={index}>
+                    <ClientVideoFrame
+                      videoUrl={video}
+                      category=" "
+                      image_src={video.image_src}
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="w-full h-auto lg:mt-4 flex flex-col justify-center items-center lg:mb-24">
                 {caseStudy.result.map((item, index) => (
-                  <p className="my-2 text-lg" key={index}>
+                  <p
+                    className="my-8 lg:my-0 lg:px-60 md:text-lg 2xl:text-xl italic font-semibold"
+                    key={index}>
                     {item}
                   </p>
                 ))}
               </div>
-            </div>
+            </FadeAndZoomInOnScroll>
           </div>
           <div className="mt-6">
             <SlideInOnScroll>
