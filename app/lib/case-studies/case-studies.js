@@ -69,7 +69,8 @@ export const caseStudies = [
     partnership: {
       type: "long-term",
       text: [
-        "Mike Martin Media has partnered with Washington University in St. Louis for more than 17 years, collaborating across a wide range of initiatives and campaigns. We're grateful for the continued trust WashU places in our team and for the opportunity to help tell stories that matter — especially those centered on people, purpose, and lasting impact.",
+        "Mike Martin Media has partnered with Washington University in St. Louis for more than 17 years, collaborating across a wide range of initiatives and campaigns.",
+        "We're grateful for the continued trust WashU places in our team and for the opportunity to help tell stories that matter — especially those centered on people, purpose, and lasting impact.",
       ],
     },
     preview_image: {
@@ -345,7 +346,7 @@ export const caseStudies = [
       },
     ],
     images: [
-     {
+      {
         url: "/images/case-studies/circus-harmony/1.webp",
         alt: "",
         width: 1920,
@@ -411,7 +412,9 @@ export const caseStudies = [
     partnership: {
       type: "new",
       text: [
-        "This project began with a simple online search and a quick introduction, but it quickly turned into a great collaboration and our first project with Smith & Saint Talent Agency.", "Despite the short turnaround, the production ran smoothly from pre-production through delivery — a reminder that with the right team in place, even a fast-moving concept can quickly become polished commercial and social media content.", "We appreciated the opportunity to help bring their Panera Bread brand partnership campaign to life and hope to work together again in the future.",
+        "This project began with a simple online search and a quick introduction, but it quickly turned into a great collaboration and our first project with Smith & Saint Talent Agency.",
+        "Despite the short turnaround, the production ran smoothly from pre-production through delivery — a reminder that with the right team in place, even a fast-moving concept can quickly become polished commercial and social media content.",
+        "We appreciated the opportunity to help bring their Panera Bread brand partnership campaign to life and hope to work together again in the future.",
       ],
     },
     preview_image: {
@@ -521,189 +524,189 @@ export const caseStudies = [
         height: 1920,
         orientation: "portrait",
       },
-         {
+      {
         url: "/images/case-studies/smith-saint/11.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-         {
+      {
         url: "/images/case-studies/smith-saint/12.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/13.webp",
         alt: "",
         width: 1280,
         height: 1920,
         orientation: "portrait",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/14.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/15.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/16.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/17.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/18.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/19.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/20.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/21.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/22.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/23.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/24.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/25.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/26.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/27.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/28.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/29.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/30.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/31.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/32.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/33.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/34.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/35.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/36.webp",
         alt: "",
         width: 1920,
         height: 1280,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/smith-saint/37.webp",
         alt: "",
         width: 1920,
@@ -731,15 +734,15 @@ export const caseStudies = [
       "The goal was to create a modernized video that would help patients feel comfortable and informed before visiting the mobile screening unit, while maintaining the trusted tone and messaging established in the original video.",
     ],
     approach: [
-      "Mike Martin Media partnered with Siteman Cancer Center to produce an updated healthcare patient education video featuring new footage of the Mammography Van, drone videography to showcase the mobile unit in context, refreshed graphics, and an updated voice-over. Because MMM had produced the original video and worked with Siteman on numerous projects over the years, our team was able to quickly align with the organization's brand guidelines and messaging. We also leveraged archived footage from previous productions, allowing the updated video to build on existing visuals while incorporating new footage that reflects the van's current design and patient experience.",
+      "Mike Martin Media partnered with Siteman Cancer Center to produce an updated healthcare patient education video featuring new footage of the Mammography Van, drone videography to showcase the mobile unit in context, refreshed graphics, and an updated voice-over.", "Because MMM had produced the original video and worked with Siteman on numerous projects over the years, our team was able to quickly align with the organization's brand guidelines and messaging.", "We also leveraged archived footage from previous productions, allowing the updated video to build on existing visuals while incorporating new footage that reflects the van's current design and patient experience.",
     ],
     result: [
-      "The updated Mammography Van patient education video provides patients with a clear and welcoming overview of what to expect during their visit, while supporting Siteman's ongoing outreach and early detection efforts. Alongside the video, new still photography captured during the shoot provided updated marketing assets for digital and print materials.",
+      "The updated Mammography Van patient education video provides patients with a clear and welcoming overview of what to expect during their visit, while supporting Siteman's ongoing outreach and early detection efforts.", "Alongside the video, new still photography captured during the shoot provided updated marketing assets for digital and print materials.",
     ],
     partnership: {
       type: "long-term",
       text: [
-        "Mike Martin Media has enjoyed a long-standing partnership with Siteman Cancer Center, collaborating on projects that help communicate important healthcare information to patients and the community. Because our team understands Siteman's brand and maintains a library of archived footage from past productions, we're able to efficiently update and refresh content when needs evolve. We're grateful for the trust Siteman places in our team and proud to support their mission of improving cancer prevention, detection, and care.",
+        "Mike Martin Media has enjoyed a long-standing partnership with Siteman Cancer Center, collaborating on projects that help communicate important healthcare information to patients and the community.", "Because our team understands Siteman's brand and maintains a library of archived footage from past productions, we're able to efficiently update and refresh content when needs evolve.", "We're grateful for the trust Siteman places in our team and proud to support their mission of improving cancer prevention, detection, and care.",
       ],
     },
     preview_image: {
@@ -748,6 +751,101 @@ export const caseStudies = [
       width: 576,
       height: 324,
     },
+    banner_images: [
+      {
+        url: "/images/case-studies/siteman-cancer-center/banner-images/a.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/siteman-cancer-center/banner-images/b.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/siteman-cancer-center/banner-images/c.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/siteman-cancer-center/banner-images/d.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/siteman-cancer-center/banner-images/e.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/siteman-cancer-center/banner-images/f.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+    ],
+    images: [
+      {
+        url: "/images/case-studies/siteman-cancer-center/1.webp",
+        alt: "",
+        width: 1920,
+        height: 1280,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/siteman-cancer-center/2.webp",
+        alt: "",
+        width: 1920,
+        height: 1280,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/siteman-cancer-center/3.webp",
+        alt: "",
+        width: 1920,
+        height: 1280,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/siteman-cancer-center/4.webp",
+        alt: "",
+        width: 1920,
+        height: 1280,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/siteman-cancer-center/5.webp",
+        alt: "",
+        width: 1920,
+        height: 1280,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/siteman-cancer-center/6.webp",
+        alt: "",
+        width: 1920,
+        height: 1280,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/siteman-cancer-center/7.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+    ],
     videos: [
       {
         id: "NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00",

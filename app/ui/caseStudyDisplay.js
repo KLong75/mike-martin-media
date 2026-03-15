@@ -104,7 +104,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
               <div className="w-full h-auto lg:mt-4 flex flex-col justify-center items-center lg:mb-24">
                 {caseStudy.result.map((item, index) => (
                   <p
-                    className="lg:px-60 md:text-lg 2xl:text-xl italic font-semibold"
+                    className="lg:px-60 md:text-lg 2xl:text-xl italic font-medium my-2"
                     key={index}>
                     {item}
                   </p>
@@ -137,7 +137,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
   
                 </div>
 
-                <div className="w-full h-auto lg:p-6 lg:p-12">
+                <div className="w-full h-auto p-6 px-18">
                   <AutoFadeImageGallery images={portraitImages} />
                 </div>
               </div>
