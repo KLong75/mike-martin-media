@@ -87,28 +87,27 @@ export default function CaseStudyDisplay({ caseStudy }) {
               />
             </SlideInOnScroll>
             <FadeAndZoomInOnScroll>
-              <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 flex justify-center items-center gap-6 lg:mt-6 mb-6 ">
-              
-              
-                {caseStudy.videos.map((video, index) => (
-                  <div key={index} className="mb-6">
-                  <ClientVideoFrame
-                    videoUrl={video}
-                    category=" "
-                    image_src={video.image_src}
-                  />
-                  </div>
-                ))}
-             
-              </div>
-              <div className="w-full h-auto lg:mt-4 flex flex-col justify-center items-center lg:mb-24">
-                {caseStudy.result.map((item, index) => (
-                  <p
-                    className="lg:px-60 md:text-lg 2xl:text-xl italic font-medium my-2"
-                    key={index}>
-                    {item}
-                  </p>
-                ))}
+              <div className="lg:my-12 w-full mx-auto flex flex-col justify-center items-center">
+                <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 flex justify-center items-center gap-6">
+                  {caseStudy.videos.map((video, index) => (
+                    <div key={index} className="my-6 ">
+                      <ClientVideoFrame
+                        videoUrl={video}
+                        category=" "
+                        image_src={video.image_src}
+                      />
+                    </div>
+                  ))}
+                </div>
+                <div className="w-full h-auto flex flex-col justify-center items-center ">
+                  {caseStudy.result.map((item, index) => (
+                    <p
+                      className="lg:px-60 md:text-lg 2xl:text-xl italic font-medium my-2"
+                      key={index}>
+                      {item}
+                    </p>
+                  ))}
+                </div>
               </div>
             </FadeAndZoomInOnScroll>
           </div>
@@ -134,7 +133,6 @@ export default function CaseStudyDisplay({ caseStudy }) {
                       {item}
                     </p>
                   ))}
-  
                 </div>
 
                 <div className="w-full h-auto p-6 px-18">
