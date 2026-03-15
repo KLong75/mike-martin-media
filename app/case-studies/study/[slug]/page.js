@@ -58,13 +58,13 @@ export async function generateMetadata({ params }) {
 export default async function CaseStudyPage({ params }) {
   const { slug } = await params;
   const caseStudy = caseStudies.find((study) => study.slug === slug);
-  const caseStudyImages = caseStudy.images;
-  const caseStudyLandscapeImages = caseStudyImages.filter(
-    (image) => image.orientation === "landscape",
-  );
-  const caseStudyPortraitImages = caseStudyImages.filter(
-    (image) => image.orientation === "portrait",
-  );
+  // const caseStudyImages = caseStudy.images;
+  // const caseStudyLandscapeImages = caseStudyImages.filter(
+  //   (image) => image.orientation === "landscape",
+  // );
+  // const caseStudyPortraitImages = caseStudyImages.filter(
+  //   (image) => image.orientation === "portrait",
+  // );
   const caseStudyBannerImages = caseStudy.banner_images;
 
   if (!caseStudy) {
@@ -95,9 +95,11 @@ export default async function CaseStudyPage({ params }) {
         caseStudy={caseStudy}
         subtitle={caseStudy.client}
         heading={caseStudy.title}
-        text={caseStudy.challenge}
-        // text2={caseStudiesPageBannerText.text2}
+        // text={caseStudy.challenge}
       />
+       {/* <div className="mt-6 ml-2">
+        <BackLink />
+      </div> */}
       <div className="p-8 md:p-12">
         <CaseStudyDisplay caseStudy={caseStudy} />
       </div>

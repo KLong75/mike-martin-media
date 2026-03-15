@@ -93,7 +93,6 @@ export default function CaseStudyDisplay({ caseStudy }) {
                 {caseStudy.videos.map((video, index) => (
                   <div key={index} className="mb-6">
                   <ClientVideoFrame
-                   
                     videoUrl={video}
                     category=" "
                     image_src={video.image_src}
@@ -135,17 +134,10 @@ export default function CaseStudyDisplay({ caseStudy }) {
                       {item}
                     </p>
                   ))}
-                  {/* <div className="w-2/3 h-auto mx-auto flex justify-center items-center mt-24">
-                    <Image 
-                      src="/branding/black_mmm_large_crop_resize.png"
-                      alt="MMM Logo"
-                      width={1642}
-                      height={560}
-                    />
-                  </div> */}
+  
                 </div>
 
-                <div className="w-full h-auto lg:p-6 lg:pr-12 lg:my-6">
+                <div className="w-full h-auto lg:p-6 lg:p-12">
                   <AutoFadeImageGallery images={portraitImages} />
                 </div>
               </div>

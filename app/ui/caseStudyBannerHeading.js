@@ -11,7 +11,7 @@ export default function CaseStudyBannerHeading({ title, heading, caseStudy }) {
             <h2 className="text-2xl lg:text-3xl xl:text-4xl font-semibold">{heading}</h2>
           </div>
 
-          <div className="lg:mx-auto">
+          <div className="lg:mx-auto flex flex-col justify-center items-start">
             <h2>
               <span className="">Client:</span> <span>{caseStudy.client}</span>
             </h2>

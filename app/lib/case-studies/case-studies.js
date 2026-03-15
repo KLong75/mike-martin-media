@@ -109,13 +109,13 @@ export const caseStudies = [
       },
     ],
     images: [
-      {
-        url: "https://image.mux.com/00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44/thumbnail.webp?width=576&height=324&time=04",
-        alt: "Campus of Washington University in St. Louis, MO",
-        width: 1920,
-        height: 1080,
-        orientation: "landscape",
-      },
+      // {
+      //   url: "https://image.mux.com/00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44/thumbnail.webp?width=576&height=324&time=04",
+      //   alt: "Campus of Washington University in St. Louis, MO",
+      //   width: 1920,
+      //   height: 1080,
+      //   orientation: "landscape",
+      // },
       {
         url: "/images/case-studies/wash-u/1.webp",
         alt: "",
@@ -345,11 +345,11 @@ export const caseStudies = [
       },
     ],
     images: [
-      {
-        url: "https://image.mux.com/Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc/thumbnail.webp?width=576&height=324&time=22",
+     {
+        url: "/images/case-studies/circus-harmony/1.webp",
         alt: "",
         width: 1920,
-        height: 1080,
+        height: 1280,
         orientation: "landscape",
       },
       {
@@ -411,7 +411,7 @@ export const caseStudies = [
     partnership: {
       type: "new",
       text: [
-        "This project began with a simple online search and a quick introduction, but it quickly turned into a great collaboration and our first project with Smith & Saint Talent Agency. Despite the short turnaround, the production ran smoothly from pre-production through delivery — a reminder that with the right team in place, even a fast-moving concept can quickly become polished commercial and social media content. We appreciated the opportunity to help bring their Panera Bread brand partnership campaign to life and hope to work together again in the future.",
+        "This project began with a simple online search and a quick introduction, but it quickly turned into a great collaboration and our first project with Smith & Saint Talent Agency.", "Despite the short turnaround, the production ran smoothly from pre-production through delivery — a reminder that with the right team in place, even a fast-moving concept can quickly become polished commercial and social media content.", "We appreciated the opportunity to help bring their Panera Bread brand partnership campaign to life and hope to work together again in the future.",
       ],
     },
     preview_image: {
