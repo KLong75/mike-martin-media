@@ -72,8 +72,8 @@ export default function SlideInOnScroll({
         }
       },
       {
-        threshold: 0.5, // CHANGED: Trigger as soon as 50% of the element is visible
-        rootMargin: "0px 0px -20% 0px", // CHANGED: Bottom 20% of viewport is ignored
+        threshold: 0, // CHANGED: Trigger as soon as the element is visible
+        rootMargin: "0px 0px -10% 0px", // CHANGED: Bottom 10% of viewport is ignored
       },
     );
 

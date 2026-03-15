@@ -9,8 +9,12 @@ import AutoFadeImageGallery from "./autoFadeImageGallery";
 
 export default function CaseStudyDisplay({ caseStudy }) {
   const caseStudyImages = caseStudy.images;
+  console.log("Case Study Images:", caseStudyImages); // Debugging log to check images data
   const portraitImages = caseStudyImages.filter(
     (image) => image.width < image.height,
+  );
+  const landscapeImages = caseStudyImages.filter(
+    (image) => image.orientation === "landscape",
   );
 
   return (
@@ -18,37 +22,35 @@ export default function CaseStudyDisplay({ caseStudy }) {
       {caseStudy ? (
         <div className="w-full max-w-6xl mx-auto ">
           <div className="">
-            <div>
-              <SlideInOnScroll>
-                <LineLogoHeading
-                  text="The Challenge"
-                  htmlElement={"h5"}
-                  textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-10 text-lg sm:text-xl md:text-2xl"
-                />
-              </SlideInOnScroll>
-              <FadeAndZoomInOnScroll>
-                <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 lg:mt-12 lg:mb-12">
-                  <div className="w-full h-auto lg:mt-4 pb-0 lg:pb-6 lg:p-6 flex flex-col justify-center items-center">
-                    {caseStudy.challenge.map((item, index) => (
-                      <p
-                        className="my-2 lg:px-6 md:text-lg 2xl:text-xl"
-                        key={index}>
-                        {item}
-                      </p>
-                    ))}
-                  </div>
-                  <div className="w-full h-auto lg:p-6 lg:pr-12 lg:my-6">
-                    <Image
-                      src={caseStudy.images[0].url}
-                      alt={caseStudy.images[0].alt || "Case Study Image"}
-                      width={caseStudy.images[0].width / 4}
-                      height={caseStudy.images[0].height / 4}
-                      className="lg:my-4 shadow-xl mx-auto"
-                    />
-                  </div>
+            <SlideInOnScroll>
+              <LineLogoHeading
+                text="The Challenge"
+                htmlElement={"h5"}
+                textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-10 text-lg sm:text-xl md:text-2xl"
+              />
+            </SlideInOnScroll>
+            <FadeAndZoomInOnScroll>
+              <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 lg:mt-6 lg:mb-12">
+                <div className="w-full h-auto lg:mt-4 lg:p-6 flex flex-col justify-center items-center">
+                  {caseStudy.challenge.map((item, index) => (
+                    <p
+                      className="my-2 lg:px-6 md:text-lg 2xl:text-xl"
+                      key={index}>
+                      {item}
+                    </p>
+                  ))}
                 </div>
-              </FadeAndZoomInOnScroll>
-            </div>
+                <div className="w-full h-auto lg:p-6 lg:pr-12 lg:my-6">
+                  <Image
+                    src={caseStudy.preview_image.url}
+                    alt={caseStudy.preview_image.alt || "Case Study Image"}
+                    width={caseStudy.preview_image.width}
+                    height={caseStudy.preview_image.height}
+                    className="lg:my-4 shadow-xl mx-auto"
+                  />
+                </div>
+              </div>
+            </FadeAndZoomInOnScroll>
           </div>
           <div className="my-6">
             <SlideInOnScroll>
@@ -59,16 +61,11 @@ export default function CaseStudyDisplay({ caseStudy }) {
               />
             </SlideInOnScroll>
             <FadeAndZoomInOnScroll>
-              <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 lg:mt-12 lg:mb-12">
-                <div className="w-full h-auto lg:mt-4 lg:p-6 lg:pl-12 lg:my-6">
-                  <Image
-                    src={caseStudy.images[5].url}
-                    alt={caseStudy.images[5].alt || "Case Study Image"}
-                    width={caseStudy.images[5].width / 4}
-                    height={caseStudy.images[5].height / 4}
-                    className="mt-6 shadow-xl mx-auto"
-                  />
+              <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 lg:mt-6 lg:mb-12">
+                <div className="w-full h-auto lg:py-6 lg:px-12 lg:my-6">
+                  <AutoFadeImageGallery images={landscapeImages} />
                 </div>
+
                 <div className="w-full h-auto lg:mt-4 pb-0 lg:pb-6 lg:p-6 flex flex-col justify-center items-center">
                   {caseStudy.approach.map((item, index) => (
                     <p
@@ -90,21 +87,25 @@ export default function CaseStudyDisplay({ caseStudy }) {
               />
             </SlideInOnScroll>
             <FadeAndZoomInOnScroll>
-              <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 md:mt-8 lg:mt-12 xl:mt-16 lg:mb-12 flex justify-center items-center">
+              <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 flex justify-center items-center gap-6 lg:mt-6 mb-6 ">
+              
+              
                 {caseStudy.videos.map((video, index) => (
-                  <div className="w-full" key={index}>
-                    <ClientVideoFrame
-                      videoUrl={video}
-                      category=" "
-                      image_src={video.image_src}
-                    />
+                  <div key={index} className="mb-6">
+                  <ClientVideoFrame
+                   
+                    videoUrl={video}
+                    category=" "
+                    image_src={video.image_src}
+                  />
                   </div>
                 ))}
+             
               </div>
               <div className="w-full h-auto lg:mt-4 flex flex-col justify-center items-center lg:mb-24">
                 {caseStudy.result.map((item, index) => (
                   <p
-                    className="my-8 lg:my-0 lg:px-60 md:text-lg 2xl:text-xl italic font-semibold"
+                    className="lg:px-60 md:text-lg 2xl:text-xl italic font-semibold"
                     key={index}>
                     {item}
                   </p>
@@ -126,7 +127,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
             </SlideInOnScroll>
             <FadeAndZoomInOnScroll>
               <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:mt-12 lg:mb-12">
-                <div className="w-full h-auto lg:px-6 flex flex-col">
+                <div className="w-full h-auto lg:px-6 flex flex-col items-center justify-center">
                   {caseStudy.partnership.text.map((item, index) => (
                     <p
                       className="my-2 lg:px-6 md:text-lg 2xl:text-xl"
@@ -134,17 +135,17 @@ export default function CaseStudyDisplay({ caseStudy }) {
                       {item}
                     </p>
                   ))}
-                  <div className="w-2/3 h-auto mx-auto flex justify-center items-center mt-32">
+                  {/* <div className="w-2/3 h-auto mx-auto flex justify-center items-center mt-24">
                     <Image 
                       src="/branding/black_mmm_large_crop_resize.png"
                       alt="MMM Logo"
                       width={1642}
                       height={560}
                     />
-                  </div>
+                  </div> */}
                 </div>
 
-                <div className="w-full h-auto lg:mt-4 flex flex-col justify-center items-center">
+                <div className="w-full h-auto lg:p-6 lg:pr-12 lg:my-6">
                   <AutoFadeImageGallery images={portraitImages} />
                 </div>
               </div>

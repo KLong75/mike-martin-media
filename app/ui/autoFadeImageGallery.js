@@ -13,12 +13,12 @@ import "swiper/css/effect-fade";
 export default function AutoFadeImageGallery({ images }) {
 
   return (
-    <div className="relative w-2/3 mx-auto h-full overflow-hidden group">
+    <div className="relative w-full mx-auto h-full overflow-hidden group">
       <Swiper
         className="photo-swiper"
         spaceBetween={30}
         loop={true}
-        speed={4000}
+        speed={2000}
         effect={"fade"}
         autoplay={{
           delay: 2000,

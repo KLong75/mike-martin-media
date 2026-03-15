@@ -79,8 +79,8 @@ export default function FadeAndZoomInOnScroll({
         }
       },
       {
-        threshold: 0, // CHANGED: Trigger as soon as any part is visible
-        rootMargin: "0px 0px -20% 0px", // CHANGED: Bottom 25% of viewport is ignored
+        threshold: 0.1, // CHANGED: Trigger as soon as the element is 10% visible
+        rootMargin: "0px 0px -10% 0px", // CHANGED: Bottom 10% of viewport is ignored
       },
     );
 
@@ -99,7 +99,7 @@ export default function FadeAndZoomInOnScroll({
     <div
       ref={elementRef}
       className={`${className} ${
-        isVisible ? `animate-in fade-in zoom-in ${durationClass}` : "opacity-0"
+        isVisible ? `animate-in fade-in  ${durationClass}` : "opacity-0"
       }`}>
       {children}
     </div>
