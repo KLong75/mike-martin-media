@@ -100,7 +100,7 @@ export default async function CaseStudyPage({ params }) {
        {/* <div className="mt-6 ml-2">
         <BackLink />
       </div> */}
-      <div className="p-8 md:p-12">
+      <div className="p-8 md:p-12 md:pb-0">
         <CaseStudyDisplay caseStudy={caseStudy} />
       </div>
      

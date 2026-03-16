@@ -21,7 +21,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
   return (
     <div className="w-full flex flex-col justify-center items-center">
       {caseStudy ? (
-        <div className="w-full max-w-6xl mx-auto ">
+        <div className="w-full max-w-6xl mx-auto">
           {/* <div className="">
             <SlideInOnScroll>
               <LineLogoHeading
@@ -53,7 +53,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
               </div>
             </FadeAndZoomInOnScroll>
           </div> */}
-          <CaseStudySection
+          {/* <CaseStudySection
             heading="The Challenge"
             headingClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-10 text-lg sm:text-xl md:text-2xl"
             left={
@@ -78,55 +78,43 @@ export default function CaseStudyDisplay({ caseStudy }) {
                 />
               </div>
             }
-          />
-          {/* <div className="my-6">
-            <SlideInOnScroll>
-              <LineLogoHeading
-                text="The Approach"
-                htmlElement={"h5"}
-                textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
-              />
-            </SlideInOnScroll>
-            <FadeAndZoomInOnScroll>
-              <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 mt-6 lg:mb-12">
-                <div className="w-full h-auto lg:py-6 lg:px-12 lg:my-6">
-                  <AutoFadeImageGallery images={landscapeImages} />
-                </div>
-
-                <div className="w-full h-auto lg:mt-4 pb-0 lg:pb-6 lg:p-6 flex flex-col justify-center items-center">
-                  {caseStudy.approach.map((item, index) => (
-                    <p
-                      className="my-2 lg:px-6 md:text-lg 2xl:text-xl"
-                      key={index}>
-                      {item}
-                    </p>
-                  ))}
-                </div>
-              </div>
-            </FadeAndZoomInOnScroll>
-          </div> */}
-
-          <CaseStudySection
-            heading="The Approach"
-            headingClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+          /> */}
+          {/* <CaseStudySection
+            heading="The Challenge"
             left={
-              <div className="w-full h-auto lg:py-6 lg:px-12 lg:my-6">
-                <AutoFadeImageGallery images={landscapeImages} />
-              </div>
-            }
-            right={
-              <div className="w-full h-auto lg:mt-4 pb-0 lg:pb-6 lg:p-6 flex flex-col justify-center items-center">
-                {caseStudy.approach.map((item, index) => (
-                  <p
-                    className="my-2 lg:px-6 md:text-lg 2xl:text-xl"
-                    key={index}>
+              <div className="w-full h-auto flex flex-col justify-center items-center">
+                {caseStudy.challenge.map((item, index) => (
+                  <p className="my-2 px-6 md:text-lg 2xl:text-xl" key={index}>
                     {item}
                   </p>
                 ))}
               </div>
             }
-            gridClassName="mt-6 lg:mb-12"
-            reverse={false}
+            right={
+              <div className="w-full h-auto flex justify-center items-center">
+                <Image
+                  src={caseStudy.preview_image.url}
+                  alt={caseStudy.preview_image.alt || "Case Study Image"}
+                  width={caseStudy.preview_image.width}
+                  height={caseStudy.preview_image.height}
+                  className="shadow-xl mx-auto"
+                />
+              </div>
+            }
+          /> */}
+          <CaseStudySection
+            heading="The Challenge"
+            text={caseStudy.challenge}
+            media={caseStudy.preview_image}
+            mediaType="image"
+          />
+
+          <CaseStudySection
+            heading="The Approach"
+            text={caseStudy.approach}
+            media={landscapeImages}
+            mediaType="gallery"
+            reverse
           />
 
           <div className="my-6">
@@ -162,6 +150,87 @@ export default function CaseStudyDisplay({ caseStudy }) {
               </div>
             </FadeAndZoomInOnScroll>
           </div>
+
+          <CaseStudySection
+            heading={
+              caseStudy.partnership.type === "long-term"
+                ? "Long-term Partnership"
+                : "New Partnership"
+            }
+            text={caseStudy.partnership.text}
+            media={portraitImages}
+            mediaType="gallery"
+          />
+          {/* <div className="my-6">
+            <SlideInOnScroll>
+              <LineLogoHeading
+                text="The Approach"
+                htmlElement={"h5"}
+                textClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+              />
+            </SlideInOnScroll>
+            <FadeAndZoomInOnScroll>
+              <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 mt-6 lg:mb-12">
+                <div className="w-full h-auto lg:py-6 lg:px-12 lg:my-6">
+                  <AutoFadeImageGallery images={landscapeImages} />
+                </div>
+
+                <div className="w-full h-auto lg:mt-4 pb-0 lg:pb-6 lg:p-6 flex flex-col justify-center items-center">
+                  {caseStudy.approach.map((item, index) => (
+                    <p
+                      className="my-2 lg:px-6 md:text-lg 2xl:text-xl"
+                      key={index}>
+                      {item}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </FadeAndZoomInOnScroll>
+          </div> */}
+
+          {/* <CaseStudySection
+            heading="The Approach"
+            headingClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+            left={
+              <div className="w-full h-auto lg:py-6 lg:px-12 lg:my-6">
+                <AutoFadeImageGallery images={landscapeImages} />
+              </div>
+            }
+            right={
+              <div className="w-full h-auto lg:mt-4 pb-0 lg:pb-6 lg:p-6 flex flex-col justify-center items-center">
+                {caseStudy.approach.map((item, index) => (
+                  <p
+                    className="my-2 lg:px-6 md:text-lg 2xl:text-xl"
+                    key={index}>
+                    {item}
+                  </p>
+                ))}
+              </div>
+            }
+            gridClassName="mt-6 lg:mb-12"
+            reverse={false}
+          /> */}
+
+          {/* <CaseStudySection
+            heading="The Approach"
+            left={
+              <div className="w-full h-auto flex justify-center items-center">
+                <AutoFadeImageGallery images={landscapeImages} />
+              </div>
+            }
+            right={
+              <div className="w-full h-auto flex flex-col justify-center items-center">
+                {caseStudy.approach.map((item, index) => (
+                  <p className="my-2 px-6 md:text-lg 2xl:text-xl" key={index}>
+                    {item}
+                  </p>
+                ))}
+              </div>
+            }
+            
+          /> */}
+
+          
           {/* <div className="mt-6">
             <SlideInOnScroll>
               <LineLogoHeading
@@ -193,7 +262,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
             </FadeAndZoomInOnScroll>
           </div> */}
 
-          <CaseStudySection
+          {/* <CaseStudySection
             heading={
               caseStudy.partnership.type === "long-term"
                 ? "Long-term Partnership"
@@ -218,7 +287,28 @@ export default function CaseStudyDisplay({ caseStudy }) {
             }
             gridClassName="lg:mt-12"
             wrapperClassName="mt-6"
-          />
+          /> */}
+          {/* <CaseStudySection
+            heading={
+              caseStudy.partnership.type === "long-term"
+                ? "Long-term Partnership"
+                : "New Partnership"
+            }
+            left={
+              <div className="w-full h-auto flex flex-col items-center justify-center">
+                {caseStudy.partnership.text.map((item, index) => (
+                  <p className="my-2 px-6 md:text-lg 2xl:text-xl" key={index}>
+                    {item}
+                  </p>
+                ))}
+              </div>
+            }
+            right={
+              <div className="w-full h-auto flex justify-center items-center">
+                <AutoFadeImageGallery images={portraitImages} />
+              </div>
+            }
+          /> */}
         </div>
       ) : (
         <p>Case study data is not available.</p>

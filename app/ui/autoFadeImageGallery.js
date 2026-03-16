@@ -13,7 +13,7 @@ import "swiper/css/effect-fade";
 export default function AutoFadeImageGallery({ images }) {
 
   return (
-    <div className="relative w-full mx-auto h-full overflow-hidden group shadow-xl">
+    <div className="relative w-full mx-auto h-full overflow-hidden group">
       <Swiper
         className="photo-swiper"
         spaceBetween={30}
@@ -28,6 +28,7 @@ export default function AutoFadeImageGallery({ images }) {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
+          <div className="w-md mx-auto">
             <Image
               alt={image.alt}
               src={image.url}
@@ -36,6 +37,7 @@ export default function AutoFadeImageGallery({ images }) {
               priority={image.priority}
               className="w-full h-full object-cover"
             />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
