@@ -139,7 +139,7 @@ export default function CaseStudySection({ heading, text, media, mediaType, reve
   } else if (mediaType === "gallery" && Array.isArray(media)) {
     mediaBlock = (
       <div className="w-full h-auto flex justify-center items-center">
-        <AutoFadeImageGallery images={media} />
+        <AutoFadeImageGallery images={media} orientation={media[0]?.orientation || "landscape"} />
       </div>
     );
   }

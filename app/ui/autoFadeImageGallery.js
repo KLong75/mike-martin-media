@@ -10,7 +10,7 @@ import { Autoplay, EffectFade} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
-export default function AutoFadeImageGallery({ images }) {
+export default function AutoFadeImageGallery({ images, orientation }) {
 
   return (
     <div className="relative w-full mx-auto h-full overflow-hidden group">
@@ -28,7 +28,8 @@ export default function AutoFadeImageGallery({ images }) {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-          <div className="w-md mx-auto">
+          {/* <div className="w-md mx-auto"> */}
+          <div className={`w-md mx-auto ${orientation === "portrait" ? "px-12" : " "}`}>
             <Image
               alt={image.alt}
               src={image.url}
