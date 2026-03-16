@@ -734,15 +734,20 @@ export const caseStudies = [
       "The goal was to create a modernized video that would help patients feel comfortable and informed before visiting the mobile screening unit, while maintaining the trusted tone and messaging established in the original video.",
     ],
     approach: [
-      "Mike Martin Media partnered with Siteman Cancer Center to produce an updated healthcare patient education video featuring new footage of the Mammography Van, drone videography to showcase the mobile unit in context, refreshed graphics, and an updated voice-over.", "Because MMM had produced the original video and worked with Siteman on numerous projects over the years, our team was able to quickly align with the organization's brand guidelines and messaging.", "We also leveraged archived footage from previous productions, allowing the updated video to build on existing visuals while incorporating new footage that reflects the van's current design and patient experience.",
+      "Mike Martin Media partnered with Siteman Cancer Center to produce an updated healthcare patient education video featuring new footage of the Mammography Van, drone videography to showcase the mobile unit in context, refreshed graphics, and an updated voice-over.",
+      "Because MMM had produced the original video and worked with Siteman on numerous projects over the years, our team was able to quickly align with the organization's brand guidelines and messaging.",
+      "We also leveraged archived footage from previous productions, allowing the updated video to build on existing visuals while incorporating new footage that reflects the van's current design and patient experience.",
     ],
     result: [
-      "The updated Mammography Van patient education video provides patients with a clear and welcoming overview of what to expect during their visit, while supporting Siteman's ongoing outreach and early detection efforts.", "Alongside the video, new still photography captured during the shoot provided updated marketing assets for digital and print materials.",
+      "The updated Mammography Van patient education video provides patients with a clear and welcoming overview of what to expect during their visit, while supporting Siteman's ongoing outreach and early detection efforts.",
+      "Alongside the video, new still photography captured during the shoot provided updated marketing assets for digital and print materials.",
     ],
     partnership: {
       type: "long-term",
       text: [
-        "Mike Martin Media has enjoyed a long-standing partnership with Siteman Cancer Center, collaborating on projects that help communicate important healthcare information to patients and the community.", "Because our team understands Siteman's brand and maintains a library of archived footage from past productions, we're able to efficiently update and refresh content when needs evolve.", "We're grateful for the trust Siteman places in our team and proud to support their mission of improving cancer prevention, detection, and care.",
+        "Mike Martin Media has enjoyed a long-standing partnership with Siteman Cancer Center, collaborating on projects that help communicate important healthcare information to patients and the community.",
+        "Because our team understands Siteman's brand and maintains a library of archived footage from past productions, we're able to efficiently update and refresh content when needs evolve.",
+        "We're grateful for the trust Siteman places in our team and proud to support their mission of improving cancer prevention, detection, and care.",
       ],
     },
     preview_image: {
@@ -789,6 +794,13 @@ export const caseStudies = [
       },
       {
         url: "/images/case-studies/siteman-cancer-center/banner-images/f.png",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/siteman-cancer-center/banner-images/g.png",
         alt: "",
         width: 1728,
         height: 728,
