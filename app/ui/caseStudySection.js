@@ -113,9 +113,9 @@ import AutoFadeImageGallery from "./autoFadeImageGallery";
 export default function CaseStudySection({ heading, text, media, mediaType, reverse = false }) {
   // Text block
   const textBlock = (
-    <div className="w-md h-auto flex flex-col justify-center items-center  mx-auto">
+    <div className="md:w-md h-auto flex flex-col justify-center items-center mx-auto gap-4">
       {text.map((item, index) => (
-        <p className="my-2 md:text-lg 2xl:text-xl" key={index}>
+        <p className="lg:text-lg" key={index}>
           {item}
         </p>
       ))}
@@ -126,7 +126,7 @@ export default function CaseStudySection({ heading, text, media, mediaType, reve
   let mediaBlock = null;
   if (mediaType === "image" && media) {
     mediaBlock = (
-      <div className="w-md mx-auto h-auto flex justify-center items-center">
+      <div className="md:w-md mx-auto h-auto flex justify-center items-center">
         <Image
           src={media.url}
           alt={media.alt || "Case Study Image"}
@@ -159,7 +159,7 @@ export default function CaseStudySection({ heading, text, media, mediaType, reve
         />
       </SlideInOnScroll>
       <FadeAndZoomInOnScroll>
-        <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:mt-8 lg:mb-16 items-center">
+        <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6 lg:mt-8 lg:mb-16 items-center">
           {content.map((el, i) => (
             <div key={i}>{el}</div>
           ))}

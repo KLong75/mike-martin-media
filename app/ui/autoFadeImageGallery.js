@@ -29,7 +29,7 @@ export default function AutoFadeImageGallery({ images, orientation }) {
         {images.map((image, index) => (
           <SwiperSlide key={index}>
           {/* <div className="w-md mx-auto"> */}
-          <div className={`w-md mx-auto ${orientation === "portrait" ? "px-12" : " "}`}>
+          <div className={`md:w-md mx-auto ${orientation === "portrait" ? "px-12" : " "}`}>
             <Image
               alt={image.alt}
               src={image.url}
