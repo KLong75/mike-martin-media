@@ -10,7 +10,6 @@ import CaseStudySection from "./caseStudySection";
 
 export default function CaseStudyDisplay({ caseStudy }) {
   const caseStudyImages = caseStudy.images;
-  console.log("Case Study Images:", caseStudyImages); // Debugging log to check images data
   const portraitImages = caseStudyImages.filter(
     (image) => image.width < image.height,
   );
