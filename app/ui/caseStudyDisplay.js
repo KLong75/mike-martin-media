@@ -6,6 +6,7 @@ import SlideInOnScroll from "./slideInOnScroll";
 import FadeAndZoomInOnScroll from "./fadeAndZoomInOnScroll";
 import ClientVideoFrame from "./clientVideoFrame";
 import AutoFadeImageGallery from "./autoFadeImageGallery";
+import CaseStudySection from "./caseStudySection";
 
 export default function CaseStudyDisplay({ caseStudy }) {
   const caseStudyImages = caseStudy.images;
@@ -21,7 +22,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
     <div className="w-full flex flex-col justify-center items-center">
       {caseStudy ? (
         <div className="w-full max-w-6xl mx-auto ">
-          <div className="">
+          {/* <div className="">
             <SlideInOnScroll>
               <LineLogoHeading
                 text="The Challenge"
@@ -51,8 +52,34 @@ export default function CaseStudyDisplay({ caseStudy }) {
                 </div>
               </div>
             </FadeAndZoomInOnScroll>
-          </div>
-          <div className="my-6">
+          </div> */}
+          <CaseStudySection
+            heading="The Challenge"
+            headingClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-10 text-lg sm:text-xl md:text-2xl"
+            left={
+              <div className="w-full h-auto lg:mt-4 lg:p-6 flex flex-col justify-center items-center">
+                {caseStudy.challenge.map((item, index) => (
+                  <p
+                    className="my-2 lg:px-6 md:text-lg 2xl:text-xl"
+                    key={index}>
+                    {item}
+                  </p>
+                ))}
+              </div>
+            }
+            right={
+              <div className="w-full h-auto lg:p-6 lg:pr-12 lg:my-6">
+                <Image
+                  src={caseStudy.preview_image.url}
+                  alt={caseStudy.preview_image.alt || "Case Study Image"}
+                  width={caseStudy.preview_image.width}
+                  height={caseStudy.preview_image.height}
+                  className="lg:my-4 shadow-xl mx-auto"
+                />
+              </div>
+            }
+          />
+          {/* <div className="my-6">
             <SlideInOnScroll>
               <LineLogoHeading
                 text="The Approach"
@@ -61,7 +88,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
               />
             </SlideInOnScroll>
             <FadeAndZoomInOnScroll>
-              <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 lg:mt-6 lg:mb-12">
+              <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 flex justify-center items-center gap-6 mt-6 lg:mb-12">
                 <div className="w-full h-auto lg:py-6 lg:px-12 lg:my-6">
                   <AutoFadeImageGallery images={landscapeImages} />
                 </div>
@@ -77,7 +104,31 @@ export default function CaseStudyDisplay({ caseStudy }) {
                 </div>
               </div>
             </FadeAndZoomInOnScroll>
-          </div>
+          </div> */}
+
+          <CaseStudySection
+            heading="The Approach"
+            headingClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+            left={
+              <div className="w-full h-auto lg:py-6 lg:px-12 lg:my-6">
+                <AutoFadeImageGallery images={landscapeImages} />
+              </div>
+            }
+            right={
+              <div className="w-full h-auto lg:mt-4 pb-0 lg:pb-6 lg:p-6 flex flex-col justify-center items-center">
+                {caseStudy.approach.map((item, index) => (
+                  <p
+                    className="my-2 lg:px-6 md:text-lg 2xl:text-xl"
+                    key={index}>
+                    {item}
+                  </p>
+                ))}
+              </div>
+            }
+            gridClassName="mt-6 lg:mb-12"
+            reverse={false}
+          />
+
           <div className="my-6">
             <SlideInOnScroll>
               <LineLogoHeading
@@ -111,7 +162,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
               </div>
             </FadeAndZoomInOnScroll>
           </div>
-          <div className="mt-6">
+          {/* <div className="mt-6">
             <SlideInOnScroll>
               <LineLogoHeading
                 text={
@@ -140,7 +191,34 @@ export default function CaseStudyDisplay({ caseStudy }) {
                 </div>
               </div>
             </FadeAndZoomInOnScroll>
-          </div>
+          </div> */}
+
+          <CaseStudySection
+            heading={
+              caseStudy.partnership.type === "long-term"
+                ? "Long-term Partnership"
+                : "New Partnership"
+            }
+            headingClassName="font-bold -mb-2 sm:-mb-4 md:-mb-6 lg:-mb-8 xl:-mb-12 text-lg sm:text-xl md:text-2xl"
+            left={
+              <div className="w-full h-auto lg:px-6 flex flex-col items-center justify-center">
+                {caseStudy.partnership.text.map((item, index) => (
+                  <p
+                    className="my-2 lg:px-6 md:text-lg 2xl:text-xl"
+                    key={index}>
+                    {item}
+                  </p>
+                ))}
+              </div>
+            }
+            right={
+              <div className="w-full h-auto p-6 px-12">
+                <AutoFadeImageGallery images={portraitImages} />
+              </div>
+            }
+            gridClassName="lg:mt-12"
+            wrapperClassName="mt-6"
+          />
         </div>
       ) : (
         <p>Case study data is not available.</p>
