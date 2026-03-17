@@ -407,7 +407,7 @@ export const caseStudies = [
       "Our team captured the commercial on location using an efficient production setup designed to move quickly while maintaining the quality expected from a professional commercial video production team.",
     ],
     result: [
-      "The final 60-second branded social media video combined Panera's product messaging with the high-energy style of the Dancing With the Stars performers. Delivered on an accelerated timeline, the video supported the brand partnership campaign while providing engaging content optimized for social media platforms.",
+      "The final 60-second branded social media video combined Panera's product messaging with the high-energy style of the Dancing With the Stars performers.",  "Delivered on an accelerated timeline, the video supported the brand partnership campaign while providing engaging content optimized for social media platforms.",
     ],
     partnership: {
       type: "new",

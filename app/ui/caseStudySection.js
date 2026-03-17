@@ -159,7 +159,7 @@ export default function CaseStudySection({ heading, text, media, mediaType, reve
         />
       </SlideInOnScroll>
       <FadeAndZoomInOnScroll>
-        <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6 lg:mt-8 lg:mb-16 items-center">
+        <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6 lg:mt-12 lg:mb-16 items-center">
           {content.map((el, i) => (
             <div key={i}>{el}</div>
           ))}
