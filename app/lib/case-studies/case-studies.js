@@ -420,6 +420,7 @@ export const caseStudies = [
     preview_image: {
       alt: "",
       url: "/images/case-studies/preview-images/panera-preview-img.webp",
+      // url: "/images/case-studies/smith-saint/preview.png",
       width: 576,
       height: 324,
     },
