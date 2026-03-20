@@ -25,16 +25,10 @@ export default function ClientVideoFrame({
   image_src,
   slug,
 }) {
-
-
   return (
     <>
       <Link href={`/our-work/portfolio/${slug}`}>
-        <div
-    
-          className="relative flex justify-center items-center w-full h-full overflow-hidden group cursor-pointer"
-        
-        >
+        <div className="relative flex justify-center items-center w-full h-full overflow-hidden group cursor-pointer">
           <Image
             className={`w-full h-full object-cover transform transition-transform duration-2000 group-hover:scale-125 ease-in-out `}
             src={image_src}
@@ -48,12 +42,12 @@ export default function ClientVideoFrame({
             className="lg:opacity-0 group-hover:opacity-100 duration-2000 ease-in-out"
             id="client-and-category-div">
             <span
-              className={`video-frame-client-span absolute font-bold text-left text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl 5xl:text-4xl`}>
+              className={`video-frame-client-span absolute font-bold text-left text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-4xl  5xl:text-4xl`}>
               {client}
             </span>
-           <span className="video-frame-category-span text-left absolute text-xs lg:text-sm font-bold">
-  {Array.isArray(category) ? category.join(", ") : category || ""}
-</span>
+            <span className="video-frame-category-span text-left absolute text-xs lg:text-sm font-bold">
+              {Array.isArray(category) ? category.join(", ") : category || ""}
+            </span>
           </div>
         </div>
       </Link>

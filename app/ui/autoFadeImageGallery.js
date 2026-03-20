@@ -1,6 +1,4 @@
 "use client";
-// import from vercel
-import { track } from "@vercel/analytics/react";
 // import from next
 import Image from "next/image";
 // import from swiper

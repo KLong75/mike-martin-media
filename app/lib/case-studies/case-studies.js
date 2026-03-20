@@ -64,7 +64,7 @@ export const caseStudies = [
       "Subtle graphics, music, and intro/outro elements created cohesion across the series and connected each vignette back to the larger campaign and hero video. Campus and subject b-roll was integrated throughout to add visual depth and context.",
     ],
     result: [
-      "The series showcases the collaboration, ownership, and impact behind WashU's Strategic Plan. These videos now serve as core storytelling assets within WashU's monthly communications, supporting the Advancing Our Mission campaign while honoring the people who helped bring it to life.",
+      "The series showcases the collaboration, ownership, and impact behind WashU's Strategic Plan.", "These videos now serve as core storytelling assets within WashU's monthly communications, supporting the Advancing Our Mission campaign while honoring the people who helped bring it to life.",
     ],
     partnership: {
       type: "long-term",
@@ -245,10 +245,24 @@ export const caseStudies = [
       },
     ],
     videos: [
+      // {
+      //   category: ["Corporate", "Video Editing", "Video Production"],
+      //   client: "MiTek",
+      //   description:
+      //     "Promotional video for MiTek's Houston Groundbreaking event. Produced by Mike Martin Media for MiTek.",
+      //   title: "Houston Groundbreaking",
+      //   image_src: "/images/work-gallery-cover-images/mitek-cover.jpg",
+      //   vimeo_src:
+      //     "https://player.vimeo.com/video/1090508426?h=db45733c16&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
+      //   featured: "featured-video-editing",
+      //   slug: "mitek-houston-groundbreaking",
+      //   playback_id: "6CimxoElh8LuHWW01DTnRVnFwGzyIxKb1fsYhtMr6jMo",
+      // },
       {
-        category: ["Education"],
+        category: ["Case Study", "Education", "Video Production"],
         client: "Washington University in St. Louis",
-        id: "00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44",
+        // id: "00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44",
+        description: "",
         mux_title: "washu-case-study-people-of-the-plan",
         title: "Video One",
         image_src:
@@ -256,30 +270,35 @@ export const caseStudies = [
         featured: "",
         slug: "washu-case-study-people-of-the-plan",
         playback_id: "00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44",
+        orientation: "horizontal",
       },
       {
-        id: "BeftU6Kems01qacztypoakEKPK5np3WwB5yR02EMk8qcA",
+        // id: "BeftU6Kems01qacztypoakEKPK5np3WwB5yR02EMk8qcA",
+        category: ["Education", "Case Study", "Video Production"],
+        client: "Washington University in St. Louis",
+        description: "",
         mux_title: "washu-case-study-video-2",
         title: "Video Two",
-        category: ["Education"],
-        client: "Washington University in St. Louis",
         image_src:
           "https://image.mux.com/BeftU6Kems01qacztypoakEKPK5np3WwB5yR02EMk8qcA/thumbnail.webp?width=576&height=324&time=04",
         featured: "",
         slug: "washu-case-study-video-2",
         playback_id: "BeftU6Kems01qacztypoakEKPK5np3WwB5yR02EMk8qcA",
+        orientation: "horizontal",
       },
       {
-        id: "JrTVAliKf01Ot7lWyjCW6vXyf8WLwYJyP15DSzSpWlz4",
+        // id: "JrTVAliKf01Ot7lWyjCW6vXyf8WLwYJyP15DSzSpWlz4",
+        category: ["Case Study", "Education", "Video Production"],
+        client: "Washington University in St. Louis",
+        description: "",
         mux_title: "washu-case-study-video-3",
         title: "Video Three",
-        category: ["Education"],
-        client: "Washington University in St. Louis",
         image_src:
           "https://image.mux.com/JrTVAliKf01Ot7lWyjCW6vXyf8WLwYJyP15DSzSpWlz4/thumbnail.webp?width=576&height=324&time=04",
         featured: "",
         slug: "washu-case-study-video-3",
         playback_id: "JrTVAliKf01Ot7lWyjCW6vXyf8WLwYJyP15DSzSpWlz4",
+        orientation: "horizontal",
       },
     ],
   },
@@ -385,6 +404,7 @@ export const caseStudies = [
     videos: [
       {
         id: "Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc",
+        orientation: "horizontal",
       },
     ],
   },
@@ -407,7 +427,8 @@ export const caseStudies = [
       "Our team captured the commercial on location using an efficient production setup designed to move quickly while maintaining the quality expected from a professional commercial video production team.",
     ],
     result: [
-      "The final 60-second branded social media video combined Panera's product messaging with the high-energy style of the Dancing With the Stars performers.",  "Delivered on an accelerated timeline, the video supported the brand partnership campaign while providing engaging content optimized for social media platforms.",
+      "The final 60-second branded social media video combined Panera's product messaging with the high-energy style of the Dancing With the Stars performers.",
+      "Delivered on an accelerated timeline, the video supported the brand partnership campaign while providing engaging content optimized for social media platforms.",
     ],
     partnership: {
       type: "new",
@@ -920,7 +941,18 @@ export const caseStudies = [
     ],
     videos: [
       {
-        id: "NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00",
+        // id: "NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00",
+        category: ["Corporate", "Video Editing", "Video Production", "Case Study", "Social Media"],
+        client: "Smith & Saint Talent Agency",
+        description: "",
+        mux_title: "smith-saint-panera",
+        title: "Mix and Match with the Stars",
+        image_src:
+          "https://image.mux.com/NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00/thumbnail.webp?width=576&height=324&time=26",
+        featured: "",
+        slug: "smith-saint-panera",
+        playback_id: "NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00",
+        orientation: "vertical",
       },
     ],
   },
@@ -1064,7 +1096,17 @@ export const caseStudies = [
     ],
     videos: [
       {
-        id: "NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00",
+        category: ["Medical", "Video Editing", "Video Production", "Case Study"],
+        client: "Siteman Cancer Center",
+        description: "",
+        mux_title: "siteman-cancer-center",
+        title: "Mix and Match with the Stars",
+        image_src:
+          "/images/case-studies/preview-images/siteman.png",
+        featured: "",
+        slug: "siteman-cancer-center",
+        playback_id: "",
+        orientation: "horizontal",
       },
     ],
   },

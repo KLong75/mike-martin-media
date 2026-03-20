@@ -1,11 +1,12 @@
 "use client";
-
 import { useEffect, useRef, useState } from "react";
 
-export default function SlideInOnScroll({
+// FadeInOnScroll: fade/zoom in only once when scrolled into view
+export default function FadeInOnScroll({
   children,
   className = "",
-  triggerOnce = true,
+  triggerOnce = true, // Kept triggerOnce prop
+  durationClass = "duration-2000",
 }) {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
@@ -17,14 +18,14 @@ export default function SlideInOnScroll({
         if (entry.isIntersecting) {
           setIsVisible(true);
           if (triggerOnce && elementRef.current) {
-            observer.unobserve(elementRef.current);
+            observer.unobserve(elementRef.current); // Unobserve after first animation
           }
         } else if (!triggerOnce) {
           setIsVisible(false);
         }
       },
       {
-        threshold: 0, // CHANGED: Trigger as soon as the element is visible
+        threshold: 0.1, // CHANGED: Trigger as soon as the element is 10% visible
         rootMargin: "0px 0px -10% 0px", // CHANGED: Bottom 10% of viewport is ignored
       },
     );
@@ -43,7 +44,9 @@ export default function SlideInOnScroll({
   return (
     <div
       ref={elementRef}
-      className={`${className} ${isVisible ? "animate-slide-in" : "opacity-0"}`}>
+      className={`${className} ${
+        isVisible ? `animate-in fade-in  ${durationClass}` : "opacity-0"
+      }`}>
       {children}
     </div>
   );

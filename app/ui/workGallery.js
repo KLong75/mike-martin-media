@@ -16,6 +16,7 @@ export default function WorkGallery({
   numberOfVideos,
   clearSelectedCategories,
   featured,
+  isCaseStudy,
 }) {
   const pathname = usePathname();
   const [shuffledVideos, setShuffledVideos] = useState([]);
@@ -38,10 +39,10 @@ export default function WorkGallery({
       return isFeaturedMatch;
     }
     const matchesAllSelectedCategories = selectedCategories.every((cat) =>
-      video.category.includes(cat)
+      video.category.includes(cat),
     );
     const isNotExclusivelyExcluded = !video.category.every((cat) =>
-      excludedCategory.includes(cat)
+      excludedCategory.includes(cat),
     );
 
     return (
@@ -112,11 +113,9 @@ export default function WorkGallery({
               />
               {/* )} */}
             </div>
-          )
-          )}
+          ))}
         </div>
-      )
-      }
+      )}
     </div>
   );
 }
