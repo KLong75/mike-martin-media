@@ -1100,7 +1100,7 @@ export const caseStudies = [
         client: "Siteman Cancer Center",
         description: "",
         mux_title: "siteman-cancer-center",
-        title: "Mix and Match with the Stars",
+        title: "",
         image_src:
           "/images/case-studies/preview-images/siteman.png",
         featured: "",
