@@ -1,3 +1,5 @@
+// import clsx
+import clsx from "clsx";
 // import components
 import ClientVideoContainer from "./clientVideoContainer";
 import LineLogoHeading from "./lineLogoHeading";
@@ -5,11 +7,12 @@ import SlideInOnScroll from "./slideInOnScroll";
 import FadeInOnScroll from "./fadeInOnScroll";
 export default function CaseStudyResultVideoDisplay({
   videos,
+  resultText,
   orientation,
   numOfVids,
 }) {
   return (
-    <div>
+    <div className="my-8">
       <SlideInOnScroll>
         <LineLogoHeading
           text="The Result"
@@ -19,16 +22,33 @@ export default function CaseStudyResultVideoDisplay({
       </SlideInOnScroll>
 
       <FadeInOnScroll>
-        <div className="">
-          {/* <ClientVideoContainer video={videos[0]} /> */}
-          {videos.map((video, index) => (
-            <div
-              key={index}
-              className={`my-6 ${numOfVids === 1 ? "w-full" : "w-full lg:w-1/2"}`}>
-              <ClientVideoContainer video={video} />
-            </div>
-          ))}
-        </div>
+        <>
+          {/* CHANGED: Using clsx for dynamic grid columns based on numOfVids */}
+          <div
+            className={clsx(
+              " mx-auto mt-6 lg:mt-12 grid grid-cols-1 gap-8",
+              {
+                "lg:grid-cols-1 w-xs": numOfVids === 1 && orientation === "vertical",
+                "lg:grid-cols-2": numOfVids === 2,
+                "lg:grid-cols-3 w-md lg:w-full": numOfVids === 3,
+              }
+            )}
+          >
+            {videos.map((video, index) => (
+              <ClientVideoContainer video={video} key={index} />
+            ))}
+          </div>
+          <div className="w-full h-auto flex flex-col lg:mb-16 mt-6 gap-4">
+            {resultText.map((item, index) => (
+              <p
+                className="md:w-md lg:w-lg xl:w-xl 2xl:w-4xl mx-auto lg:text-lg italic font-medium "
+                key={index}
+              >
+                {item}
+              </p>
+            ))}
+          </div>
+        </>
       </FadeInOnScroll>
     </div>
   );

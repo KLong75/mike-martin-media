@@ -31,10 +31,11 @@ export default function CaseStudyDisplay({ caseStudy }) {
           />
           <CaseStudyResultVideoDisplay
             videos={caseStudy.videos}
+            resultText={caseStudy.result}
             orientation={caseStudy.videos[0]?.orientation || "horizontal"}
             numOfVids={caseStudy.videos.length}
           />
-          <div className="w-full h-auto flex flex-col justify-center items-center ">
+          {/* <div className="w-full h-auto flex flex-col justify-center items-center ">
             {caseStudy.result.map((item, index) => (
               <p
                 className="lg:px-60 md:text-lg 2xl:text-xl italic font-medium my-2"
@@ -42,7 +43,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
                 {item}
               </p>
             ))}
-          </div>
+          </div> */}
           <CaseStudySection
             heading={
               caseStudy.partnership.type === "long-term"

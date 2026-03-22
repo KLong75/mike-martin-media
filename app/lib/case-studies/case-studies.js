@@ -266,7 +266,7 @@ export const caseStudies = [
         mux_title: "washu-case-study-people-of-the-plan",
         title: "Video One",
         image_src:
-          "https://image.mux.com/00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44/thumbnail.webp?width=576&height=324&time=04",
+          "https://image.mux.com/00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44/thumbnail.webp?width=576&height=324&time=12",
         featured: "",
         slug: "washu-case-study-people-of-the-plan",
         playback_id: "00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44",
@@ -948,7 +948,7 @@ export const caseStudies = [
         mux_title: "smith-saint-panera",
         title: "Mix and Match with the Stars",
         image_src:
-          "https://image.mux.com/NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00/thumbnail.webp?width=576&height=324&time=26",
+          "https://image.mux.com/NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00/thumbnail.webp?width=320&height=568&time=26",
         featured: "",
         slug: "smith-saint-panera",
         playback_id: "NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00",
