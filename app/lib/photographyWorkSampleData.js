@@ -689,4 +689,89 @@ export const photographyWorkSampleData = [
       }
     ],
   },
+   {
+    client: "IFF",
+    alt: "Photo Gallery for IFF",
+    categories: ["Photography", ],
+    width: 1920,
+    height: 1280,
+    // orientation: "landscape",
+    images: [
+      {
+        title: "01",
+        src: "/images/photographyWorkSamples/iff/01.webp",
+        orientation: "landscape",
+      },
+      {
+        title: "02",
+        src: "/images/photographyWorkSamples/iff/02.webp",
+        orientation: "landscape",
+      },
+      {
+        title: "03",
+        src: "/images/photographyWorkSamples/iff/03.webp",
+        orientation: "landscape",
+      },
+      {
+        title: "04",
+        src: "/images/photographyWorkSamples/iff/04.webp",
+        orientation: "landscape",
+      },
+      {
+        title: "05",
+        src: "/images/photographyWorkSamples/iff/05.webp",
+        orientation: "landscape",
+      },
+      {
+        title: "06",
+        src: "/images/photographyWorkSamples/iff/06.webp",
+        orientation: "landscape",
+      },
+      {
+        title: "07",
+        src: "/images/photographyWorkSamples/iff/07.webp",
+        orientation: "landscape",
+      },
+      {
+        title: "08",
+        src: "/images/photographyWorkSamples/iff/08.webp",
+        orientation: "landscape",
+      },
+       {
+        title: "09",
+        src: "/images/photographyWorkSamples/iff/09.webp",
+        orientation: "landscape",
+      },
+       {
+        title: "10",
+        src: "/images/photographyWorkSamples/iff/10.webp",
+        orientation: "landscape",
+      },
+       {
+        title: "11",
+        src: "/images/photographyWorkSamples/iff/11.webp",
+        orientation: "landscape",
+      },
+       {
+        title: "12",
+        src: "/images/photographyWorkSamples/iff/12.webp",
+        orientation: "portrait",
+      },
+       {
+        title: "13",
+        src: "/images/photographyWorkSamples/iff/13.webp",
+        orientation: "portrait",
+      },
+       {
+        title: "14",
+        src: "/images/photographyWorkSamples/iff/14.webp",
+        orientation: "portrait",
+      },
+       {
+        title: "15",
+        src: "/images/photographyWorkSamples/iff/15.webp",
+        orientation: "portrait",
+      },
+    ],
+  },
 ];
