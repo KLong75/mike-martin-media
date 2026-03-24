@@ -402,8 +402,47 @@ export const caseStudies = [
       },
     ],
     videos: [
+      // {
+      //   id: "Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc",
+      //   orientation: "horizontal",
+      // },
+       {
+        category: ["Case Study", "Nonprofit", "Video Production"],
+        client: "Circus Harmony",
+        description: "",
+        mux_title: "circus-harmony-case-study-video",
+        title: "Nathan",
+        image_src:
+          "https://image.mux.com/Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc/thumbnail.webp?width=576&height=324&time=01",
+        featured: "",
+        slug: "circus-harmony-nathan",
+        playback_id: "Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc",
+        orientation: "horizontal",
+      },
       {
-        id: "Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc",
+        category: ["Case Study", "Nonprofit", "Video Production"],
+        client: "Circus Harmony",
+        description: "",
+        mux_title: "circus-harmony-case-study-video",
+        title: "Nathan",
+        image_src:
+          "https://image.mux.com/Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc/thumbnail.webp?width=576&height=324&time=010",
+        featured: "",
+        slug: "circus-harmony-nathan",
+        playback_id: "Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc",
+        orientation: "horizontal",
+      },
+      {
+        category: ["Case Study", "Nonprofit", "Video Production"],
+        client: "Circus Harmony",
+        description: "",
+        mux_title: "circus-harmony-case-study-video",
+        title: "Nathan",
+        image_src:
+          "https://image.mux.com/Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc/thumbnail.webp?width=576&height=324&time=03",
+        featured: "",
+        slug: "circus-harmony-nathan",
+        playback_id: "Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc",
         orientation: "horizontal",
       },
     ],
