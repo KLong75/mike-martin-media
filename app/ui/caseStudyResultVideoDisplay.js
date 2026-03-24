@@ -26,12 +26,14 @@ export default function CaseStudyResultVideoDisplay({
           {/* CHANGED: Using clsx for dynamic grid columns based on numOfVids */}
           <div
             className={clsx(
-              " mx-auto mt-6 lg:mt-12 grid grid-cols-1 gap-8",
+              "mx-auto mt-6 lg:mt-12 grid grid-cols-1 gap-8",
               {
                 "lg:grid-cols-1 w-xs": numOfVids === 1 && orientation === "vertical",
                 "lg:grid-cols-1 w-full md:w-md lg:w-lg xl:w-xl mx-auto ": numOfVids === 1 && orientation === "horizontal",
-                "lg:grid-cols-2": numOfVids === 2,
-                "lg:grid-cols-3 w-md lg:w-full": numOfVids === 3,
+                "lg:grid-cols-2 md:w-md lg:w-full lg:px-12": numOfVids === 2 && orientation === "horizontal",
+                "lg:grid-cols-2 md:w-md lg:w-3xl": numOfVids === 2 && orientation === "vertical",
+                "lg:grid-cols-3 w-md lg:w-full": numOfVids === 3 && orientation === "horizontal",
+                "lg:grid-cols-3 md:w-md lg:w-5xl": numOfVids === 3 && orientation === "vertical",
               }
             )}
           >
