@@ -83,8 +83,7 @@ export const workSampleData = [
     description:
       "Promotional video for the Girl Scouts of Eastern Missouri's Paddle Raise event. Produced by Mike Martin Media.",
     title: "Paddle Raise",
-    // image_src: "/images/work-gallery-cover-images/gsem-cover.jpg",
-    image_src: "/images/photographyWorkSamples/gsem/01.webp",
+    image_src: "/images/work-gallery-cover-images/gsem-cover.jpg",
     vimeo_src:
       "https://player.vimeo.com/video/796701498?h=2711ae04fb&badge=0&autopause=0&player_id=0&app_id=58479&controls=1&loop=1&muted=0&byline=0&portrait=0",
     featured: "featured-drone",
