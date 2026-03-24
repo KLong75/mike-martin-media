@@ -106,7 +106,7 @@ export default function Page() {
           <WorkGallery
             selectedCategories={["Photography"]}
             excludedCategory={[]}
-            numberOfVideos={10}
+            numberOfVideos={6}
             featured={"featured-photography"}
           />
         </div>
