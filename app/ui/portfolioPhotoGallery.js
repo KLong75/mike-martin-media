@@ -122,7 +122,7 @@ export default function PortfolioPhotoGallery({ client }) {
               >
                 <Image
                   src={image.src}
-                  alt={image.alt || `${client} Gallery image`}
+                  alt={image.alt || `${client} photo gallery image by MMM`}
                   width={imageWidth}
                   height={imageHeight}
                   priority
