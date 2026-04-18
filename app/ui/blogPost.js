@@ -48,18 +48,25 @@ export default async function BlogPost({ post }) {
               typeof paragraph === "string" &&
               (paragraph.trim().startsWith("//") ||
                 paragraph.split("\n").length > 3);
+            const isHeading =
+              typeof paragraph === "object" && paragraph.type === "heading";
 
             return (
               <div key={index}>
-                {isCode ? (
+                {isHeading ? (
+                  <h2 className="text-xl font-bold my-6">
+                    {paragraph.content}
+                  </h2>
+                ) : isCode ? (
                   <>
-                    <div className="hidden w-full h-full sm:flex justify-center items">
+                    <div className="hidden w-full h-full sm:flex justify-center items-center">
                       <pre className="overflow-x-auto bg-gray-100 p-4 text-sm">
                         <code>{paragraph.trim()}</code>
                       </pre>
                     </div>
                     <div className="block sm:hidden my-6 w-full text-xs italic text-gray-500">
-                      The code for Paul &apos;s After Effects expression is available on larger screens.
+                      The code for Paul&apos;s After Effects expression is
+                      available for viewing on larger screens.
                     </div>
                   </>
                 ) : (
@@ -106,13 +113,4 @@ export default async function BlogPost({ post }) {
       </div>
     </>
   );
-}
-
-{
-  /* {post.vimeo_src && (
-          <iframe
-            src={post.vimeo_src}
-            allow="autoplay; fullscreen; picture-in-picture"
-            className="w-full h-80 p-4 lg:my-4"></iframe>
-        )} */
 }

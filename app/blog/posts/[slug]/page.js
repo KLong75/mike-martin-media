@@ -88,11 +88,11 @@ export default async function BlogPostPage({ params }) {
       <div>
         <BlogPost post={post} />
       </div>
-      <div className="mt-4 mb-12 lg:mb-36 flex justify-center">
-        <div className="mr-52 sm:mr-72 md:mr-144">
+      <div className="text-sm mt-6 mb-12 lg:mb-36 flex justify-center items-center gap-28 sm:gap-96">
+        <div className="">
           {prevPost ? (
             <Link href={`/blog/posts/${prevPost.slug}`} aria-label={`Previous blog post: ${prevPost.title}`}>
-              <span className="font-semibold">&lt;&lt; {prevPost.post_date}</span>
+              <span className="font-medium">&lt;&lt; {prevPost.post_date}</span>
             </Link>
           ) : (
             <span className="text-gray-500">&lt;&lt; Previous</span>
@@ -101,7 +101,7 @@ export default async function BlogPostPage({ params }) {
         <div>
           {nextPost ? (
             <Link href={`/blog/posts/${nextPost.slug}`} aria-label={`Next blog post: ${nextPost.title}`}>
-              <span className="font-semibold"> {nextPost.post_date} &gt;&gt;</span>
+              <span className="font-medium"> {nextPost.post_date} &gt;&gt;</span>
             </Link>
           ) : (
             <span className="text-gray-500">Next &gt;&gt;</span>
