@@ -8,13 +8,13 @@ export default function MMMTeamPhotoWithLogo() {
         fetchPriority="high"
         priority
         // src="/images/home-page/mmm-team-900x600.webp"
-        src="/images/home-page/team-march-2026.webp"
+        src="/images/home-page/team-april-2026.webp"
         width={900}
         height={600}
         alt="The MMM Team"
         aria-label="The MMM Team"
         className="w-full h-auto"
-        sizes="(max-width: 768px) 150px, (max-width: 1024px) 710px, (max-width: 1280px) 710px, (max-width: 1440px) 600px, (max-width: 1600px) 700px, 708px"
+        sizes="(max-width: 768px) 400px, (max-width: 1024px) 710px, 900px"
       />
       <Image
         // priority
