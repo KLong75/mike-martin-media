@@ -4,38 +4,72 @@ export const blogPosts = [
   // {
   //   title: "",
   //   post_date: "",
-  //   image_src: "/images/blog-page/blog-post-images/2025/",
+  //   image_src: "/images/blog-page/blog-post-images/2026/.webp",
   //   image_alt: "",
   //   image_width: 456,
   //   image_height: 342,
-  //   second_image_src: "/images/blog-page/blog-post-images/2025/",
+  //   second_image_src: "/images/blog-page/blog-post-images/.webp",
   //   second_image_width: 456,
   //   second_image_height: 342,
   //   second_image_alt: "",
   //   text: [
   //     "",
   //     "",
-  //     "",
-  //     "",
   //   ],
-  // video: {
-  //     playback_id: "",
-  //     title: "",
-  //     image_src: "",
-  //   },
-  //   closing_tag: "",
+  //   // video: {
+  //   //   playback_id: "",
+  //   //   title: "",
+  //   //   image_src: "",
+  //   // },
+  //   closing_tag: "Until next time,",
   //   author: "",
   //   slug: "",
   //   description: ""
   // },
-   {
+  {
+    title: "March at MMM: What You Didn't See (But Will Soon)",
+    post_date: "March 2026",
+    image_src: "/images/blog-page/blog-post-images/2026/march/march.webp",
+    image_alt: "",
+    image_width: 456,
+    image_height: 342,
+    // second_image_src: "/images/blog-page/blog-post-images/.webp",
+    // second_image_width: 456,
+    // second_image_height: 342,
+    // second_image_alt: "",
+    text: [
+      "The payoff for any video is the final, polished cut, which is typically the version you see.",
+      "Lately, though, we've been putting more intention into capturing what happens along the way.",
+      "Not just the shoot itself, but everything around it. The setup, the adjustments, the small decisions that quietly shape the end result. We think that's where a lot of the real story lives.",
+      { type: "heading", content: "Why Behind-the-Scenes?" },
+      "Even a straightforward shoot has more going on than most people ever see: Early call times, last-minute pivots, or small tweaks that end up making a big difference.",
+      "We've always done this work but we just haven't shown much of it. We'd like to bring you inside our world. Not in a staged way, just a more honest look at what the process actually feels like.",
+      { type: "heading", content: "What This Means for You" },
+      "Our crew is what makes MMM so special and we want you to “meet” them so to speak. If you're considering working with us, this gives you a clearer sense of what to expect.",
+      "The final video matters, but so does the experience of getting there.",
+      { type: "heading", content: "What's Coming" },
+      "Be on the look out for all new case studies we'll be sharing soon. They'll go deeper into the thinking behind each project and include more of the real moments from production. We are looking forward to working with you soon!",
+    ],
+    // video: {
+    //   playback_id: "",
+    //   title: "",
+    //   image_src: "",
+    // },
+    closing_tag: "Until next time,",
+    author: "Clark Martin",
+    slug: "march-at-mmm",
+    description: "",
+  },
+  {
     title: "Sandon's Introduction",
     post_date: "February 2026",
     image_src: "/images/blog-page/blog-post-images/2026/feb/february-a.webp",
-    image_alt: "Sandon with a camera taking pictures of a guitarist performing on stage.",
+    image_alt:
+      "Sandon with a camera taking pictures of a guitarist performing on stage.",
     image_width: 456,
     image_height: 342,
-    second_image_src: "/images/blog-page/blog-post-images/2026/feb/february-b.webp",
+    second_image_src:
+      "/images/blog-page/blog-post-images/2026/feb/february-b.webp",
     second_image_width: 456,
     second_image_height: 342,
     second_image_alt: "",
@@ -44,15 +78,15 @@ export const blogPosts = [
       "When I joined the team, it was immediately clear how much everyone at MMM cares about finding the story behind every shoot. Being surrounded by curious, talented creatives who value people as much as the final product is incredibly energizing. No two days look the same and getting to meet new people while helping turn their experiences into meaningful, compelling stories is what drives my love for video production. I'm excited to be part of a team that's always pushing to go above and beyond, and I can't wait to see what the future holds.",
     ],
     // video: {
-    //   playback_id: "PRhLtcYJZFLOtXvt02gP45eolkvlty2QlUAKo4hdlfl4",
-    //   title: "Gratitude House",
-    //   image_src:
-    //     "https://image.mux.com/PRhLtcYJZFLOtXvt02gP45eolkvlty2QlUAKo4hdlfl4/thumbnail.webp?width=576&height=324&time=42",
+    //   playback_id: "",
+    //   title: "",
+    //   image_src: "",
     // },
     closing_tag: "Until next time,",
     author: "Sandon Scott",
     slug: "introducing-sandon",
-    description: "Sandon introduces himself and describes his early experiences at Mike Martin Media."
+    description:
+      "Sandon introduces himself and describes his early experiences at Mike Martin Media.",
   },
   {
     title: "Supporting Nonprofits Through Storytelling",
@@ -78,7 +112,8 @@ export const blogPosts = [
     closing_tag: "Until next time,",
     author: "Mike Martin",
     slug: "supporting-nonprofits-through-storytelling",
-    description: "A look at Mike Martin Media's ongoing work with nonprofit organizations and the impact of fundraising and awareness videos."
+    description:
+      "A look at Mike Martin Media's ongoing work with nonprofit organizations and the impact of fundraising and awareness videos.",
   },
   {
     slug: "life-between-keyframes",
@@ -127,7 +162,8 @@ if (n == 0){
     // },
     closing_tag: "Until next time,",
     author: "Paul Baker",
-    description: "Paul shares insights into the detailed work of video editing and provides a useful After Effects expression for adding realistic motion to animations.",
+    description:
+      "Paul shares insights into the detailed work of video editing and provides a useful After Effects expression for adding realistic motion to animations.",
   },
   {
     title: "Next Stop: San Diego, Cameras Ready",
@@ -157,7 +193,8 @@ if (n == 0){
     image_alt: "Zoë and the MMM team",
     image_width: 456,
     image_height: 342,
-    second_image_src: "/images/blog-page/blog-post-images/2025/2025-june-b.webp",
+    second_image_src:
+      "/images/blog-page/blog-post-images/2025/2025-june-b.webp",
     second_image_width: 456,
     second_image_height: 342,
     second_image_alt: "Zoë's office. How it started and how it's ending.",
