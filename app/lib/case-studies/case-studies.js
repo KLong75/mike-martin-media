@@ -1137,14 +1137,14 @@ export const caseStudies = [
       {
         category: ["Medical", "Video Editing", "Video Production", "Case Study"],
         client: "Siteman Cancer Center",
-        description: "",
+        description: "The updated Mammography Van patient education video provides patients with a clear and welcoming overview of what to expect during their visit, while supporting Siteman's ongoing outreach and early detection efforts.",
         mux_title: "siteman-cancer-center",
-        title: "",
+        title: "Siteman Cancer Center - Mammography Van",
         image_src:
-          "/images/case-studies/preview-images/siteman.png",
+          "https://image.mux.com/Hwh01HHmGfBtLqlOwGyyVjS01yJtpFETmFMjtigAo3i38/thumbnail.webp?width=1920&height=1080&time=03",
         featured: "",
         slug: "siteman-cancer-center",
-        playback_id: "00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44",
+        playback_id: "Hwh01HHmGfBtLqlOwGyyVjS01yJtpFETmFMjtigAo3i38",
         orientation: "horizontal",
       },
       // {
