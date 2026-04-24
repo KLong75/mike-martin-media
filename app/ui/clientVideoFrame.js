@@ -28,15 +28,28 @@ export default function ClientVideoFrame({
   return (
     <>
       <Link href={`/our-work/portfolio/${slug}`}>
-        <div className="relative flex justify-center items-center w-full h-full overflow-hidden group cursor-pointer">
-          <Image
-            className={`w-full h-full object-cover transform transition-transform duration-2000 group-hover:scale-125 ease-in-out `}
-            src={image_src}
-            height={540}
-            width={960}
-            alt={`${client} ${title}`}
-            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-          />
+        <div
+          // tabIndex={0}
+          // role="button"
+          // onKeyDown={(e) => {
+          //   if (e.key === "Enter" || e.key === " ") {
+          //     e.preventDefault();
+          //     // handleClick();
+          //   }
+          // }}
+          className="relative flex justify-center items-center w-full h-full overflow-hidden group cursor-pointer"
+          // onClick={handleClick}
+        >
+          {image_src && image_src.trim() !== "" ? (
+            <Image
+              className={`w-full h-full object-cover transform transition-transform duration-2000 group-hover:scale-125 ease-in-out`}
+              src={image_src}
+              height={540}
+              width={960}
+              alt={`${client} ${title}`}
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+            />
+          ) : null}
           <div className="absolute inset-0 bg-[#484848] opacity-45 group-hover:opacity-75 group-hover:bg-black transition-bg duration-2000 ease-in-out"></div>
           <div
             className="lg:opacity-0 group-hover:opacity-100 duration-2000 ease-in-out"

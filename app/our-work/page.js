@@ -1,7 +1,7 @@
 // import components
 import BannerVideoWithFadeEffect from "../ui/bannerVideoWithFadeEffect";
 import PageHeadingBanner from "../ui/pageHeadingBanner";
-import VideoFilter from "../ui/video-filter";
+import VideoFilter from "../ui/videoFilter";
 
 const ourWorkPageOgImgUrl =
   "https://www.mikemartinmedia.com/images/open-graph/our-work-og.png";
