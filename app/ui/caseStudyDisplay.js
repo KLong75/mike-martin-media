@@ -3,13 +3,8 @@ import CaseStudySection from "./caseStudySection";
 import CaseStudyResultVideoDisplay from "./caseStudyResultVideoDisplay";
 
 export default function CaseStudyDisplay({ caseStudy }) {
-  const caseStudyImages = caseStudy.images;
-  const portraitImages = caseStudyImages.filter(
-    (image) => image.width < image.height,
-  );
-  const landscapeImages = caseStudyImages.filter(
-    (image) => image.orientation === "landscape",
-  );
+  const portraitImages = caseStudy.portrait_images;
+  const landscapeImages = caseStudy.landscape_images;
 
   return (
     <div className="w-full flex flex-col justify-center items-center">
