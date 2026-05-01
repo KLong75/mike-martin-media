@@ -32,7 +32,7 @@ export default function CaseStudyResultVideoDisplay({
                 "lg:grid-cols-1 w-full md:w-md lg:w-lg xl:w-xl mx-auto ": numOfVids === 1 && orientation === "horizontal",
                 "lg:grid-cols-2 md:w-md lg:w-full lg:px-12": numOfVids === 2 && orientation === "horizontal",
                 "lg:grid-cols-2 md:w-md lg:w-3xl": numOfVids === 2 && orientation === "vertical",
-                "lg:grid-cols-3 w-md lg:w-full": numOfVids === 3 && orientation === "horizontal",
+                " md:px-32 lg:px-0 lg:grid-cols-3 w-full": numOfVids === 3 && orientation === "horizontal",
                 "lg:grid-cols-3 md:w-md lg:w-5xl": numOfVids === 3 && orientation === "vertical",
               }
             )}
