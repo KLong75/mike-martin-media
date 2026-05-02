@@ -31,7 +31,7 @@ export default function BlogPostPreview({
   //   }
   // };
   return (
-    <div className="p-6 md:hover:bg-black md:hover:text-white transition-colors duration-1000 ease-in-out group shadow-2xl md:shadow-none rounded-2xl md:rounded-none">
+    <div className="p-6 md:hover:bg-black md:hover:text-white transition-colors duration-1000 ease-in-out group shadow-2xl md:shadow-none ">
       <Link href={`blog/posts/${slug}`}>
         <div className="w-full">
           <div className="flex justify-center w-full h-auto">
@@ -46,7 +46,7 @@ export default function BlogPostPreview({
             />
           </div>
         </div>
-        <div className="max-w-[460px] pt-6">
+        <div className="max-w-115 pt-6">
           <p className="flex items-center">
             {/* {formatDate(post_date)} */}
             {post_date}

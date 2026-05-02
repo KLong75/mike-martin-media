@@ -16,7 +16,7 @@ export default function CaseStudyPreview({ caseStudy }) {
         {caseStudy ? (
           <Link href={`/case-studies/study/${caseStudy.slug}`}>
             {/* CHANGED: Use Tailwind's group class for unified hover effects */}
-            <div className="p-2 bg-neutral-100 transition-colors duration-1000 ease-in-out group shadow-2xl md:shadow-md md:hover:shadow-xl rounded-2xl md:rounded-none flex flex-col justify-center md:hover:bg-black md:hover:text-white relative">
+            <div className="p-2 bg-neutral-100 transition-colors duration-1000 ease-in-out group shadow-2xl md:shadow-md md:hover:shadow-xl flex flex-col justify-center md:hover:bg-black md:hover:text-white relative">
               <div className="mx-auto mb-2">
                 <h3 className="text-center text-xl font-semibold my-1">
                   {caseStudy.short_title}

@@ -3,18 +3,6 @@
 // import { track } from "@vercel/analytics";
 // import from next
 import Link from "next/link";
-// import from react
-// import { useState } from "react";
-// import from headlessui
-// import {
-//   Dialog,
-//   DialogPanel,
-//   DialogBackdrop,
-//   DialogTitle,
-// } from "@headlessui/react";
-// import icons
-// import { HiX } from "react-icons/hi";
-// import components
 import Image from "next/image";
 
 export default function ClientVideoFrame({
@@ -29,16 +17,7 @@ export default function ClientVideoFrame({
     <>
       <Link href={`/our-work/portfolio/${slug}`}>
         <div
-          // tabIndex={0}
-          // role="button"
-          // onKeyDown={(e) => {
-          //   if (e.key === "Enter" || e.key === " ") {
-          //     e.preventDefault();
-          //     // handleClick();
-          //   }
-          // }}
           className="relative flex justify-center items-center w-full h-full overflow-hidden group cursor-pointer"
-          // onClick={handleClick}
         >
           {image_src && image_src.trim() !== "" ? (
             <Image
