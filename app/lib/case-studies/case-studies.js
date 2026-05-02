@@ -446,7 +446,7 @@ export const caseStudies = [
         mux_title: "circus-harmony-case-study-video",
         title: "Nathan",
         image_src:
-          "https://image.mux.com/Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc/thumbnail.webp?width=576&height=324&time=01",
+          "https://image.mux.com/Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc/thumbnail.webp?width=1920&height=1080&time=01",
         featured: "",
         slug: "circus-harmony-nathan",
         playback_id: "Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc",
@@ -459,7 +459,7 @@ export const caseStudies = [
         mux_title: "circus-harmony-case-study-video",
         title: "Nathan",
         image_src:
-          "https://image.mux.com/Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc/thumbnail.webp?width=576&height=324&time=010",
+          "https://image.mux.com/Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc/thumbnail.webp?width=1920&height=1080&time=010",
         featured: "",
         slug: "circus-harmony-nathan",
         playback_id: "Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc",
@@ -472,7 +472,7 @@ export const caseStudies = [
         mux_title: "circus-harmony-case-study-video",
         title: "Nathan",
         image_src:
-          "https://image.mux.com/Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc/thumbnail.webp?width=576&height=324&time=03",
+          "https://image.mux.com/Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc/thumbnail.webp?width=1920&height=1080&time=03",
         featured: "",
         slug: "circus-harmony-nathan",
         playback_id: "Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc",

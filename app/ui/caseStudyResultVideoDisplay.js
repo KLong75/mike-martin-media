@@ -24,10 +24,10 @@ export default function CaseStudyResultVideoDisplay({
 
       <FadeInOnScroll>
         <>
-          <div className="w-full h-auto flex flex-col my-6 gap-4">
+          <div className="w-full h-auto flex flex-col my-6 xl:my-12 gap-4">
             {resultText.map((item, index) => (
               <p
-                className="md:w-md lg:w-lg xl:w-xl 2xl:w-4xl mx-auto lg:text-lg italic font-medium "
+                className="md:w-md lg:w-lg xl:w-xl mx-auto lg:text-lg italic font-medium "
                 key={index}>
                 {item}
               </p>
@@ -35,7 +35,7 @@ export default function CaseStudyResultVideoDisplay({
           </div>
           {/* CHANGED: Using clsx for dynamic grid columns based on numOfVids */}
           <div
-            className={clsx("mx-auto grid grid-cols-1 gap-8", {
+            className={clsx("text-white mb-12 mx-auto grid grid-cols-1 gap-8", {
               "lg:grid-cols-1 w-xs":
                 numOfVids === 1 && orientation === "vertical",
               "lg:grid-cols-1 w-full md:w-md lg:w-lg xl:w-xl mx-auto ":
@@ -44,25 +44,23 @@ export default function CaseStudyResultVideoDisplay({
                 numOfVids === 2 && orientation === "horizontal",
               "lg:grid-cols-2 md:w-md lg:w-3xl":
                 numOfVids === 2 && orientation === "vertical",
-              " ":
+              "lg:grid-cols-3 lg:px-12 w-full":
                 numOfVids === 3 && orientation === "horizontal",
               "lg:grid-cols-3 md:w-md lg:w-5xl":
                 numOfVids === 3 && orientation === "vertical",
             })}>
-            {videos.map((video, index) => (
-              <ClientVideoContainer video={video} key={index} />
-            ))}
             {/* {videos.map((video, index) => (
-              <ClientVideoFrame
-                src={video.src}
-                key={index}
+              <ClientVideoContainer video={video} key={index} />
+            ))} */}
+              {videos.map((video, index) => (
+              <ClientVideoFrame  src={video.src}
                 client={video.client}
                 title={video.title}
                 category={video.category}
                 image_src={video.image_src}
-                slug={video.slug}
-              />
-            ))} */}
+                slug={video.slug} key={index} />
+            ))}
+          
           </div>
           {/* <div className="w-full h-auto flex flex-col lg:mb-16 mt-6 gap-4">
             {resultText.map((item, index) => (
@@ -74,6 +72,9 @@ export default function CaseStudyResultVideoDisplay({
               </p>
             ))}
           </div> */}
+          <div>
+
+          </div>
         </>
       </FadeInOnScroll>
     </div>

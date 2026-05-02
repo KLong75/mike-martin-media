@@ -70,7 +70,7 @@ export default async function PortfolioPage({ params }) {
   if (!sample) {
     return (
       <div className="container  mx-auto px-4 py-8">
-        <BackLink href="/our-work" />
+        <BackLink />
         <div className="flex  flex-col justify-center items-center">
           <h1 className="text-3xl font-bold mb-4">Sample Not Found</h1>
           <p>The entry you are looking for does not exist.</p>
