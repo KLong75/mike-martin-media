@@ -47,6 +47,14 @@ export async function generateMetadata({ params }) {
       //     height: sample.image_height || 630,
       //   },
       // ],
+      videos: [
+        {
+          url: `https://stream.mux.com/${sample.playback_id}.m3u8`,
+          type: "application/x-mpegurl",
+          width: 1920,
+          height: 1080,
+        },
+      ],
     },
   };
 }
