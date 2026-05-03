@@ -24,10 +24,10 @@ export default function CaseStudyResultVideoDisplay({
 
       <FadeInOnScroll>
         <>
-          <div className="w-full h-auto flex flex-col my-6 xl:my-12 gap-4">
+          <div className="w-full h-auto flex flex-col my-6 lg:mt-12">
             {/* {resultText.map((item, index) => ( */}
               <p
-                className="md:w-md lg:w-lg xl:w-xl mx-auto lg:text-lg italic font-medium "
+                className="md:w-md lg:w-2xl mx-auto lg:text-lg italic font-medium "
                 // key={index}
                 >
                 {resultText[0]}
@@ -36,7 +36,7 @@ export default function CaseStudyResultVideoDisplay({
           </div>
           {/* CHANGED: Using clsx for dynamic grid columns based on numOfVids */}
           <div
-            className={clsx("text-white mb-12 mx-auto grid grid-cols-1 gap-8", {
+            className={clsx("text-white mx-auto grid grid-cols-1 gap-6", {
               "lg:grid-cols-1 w-xs":
                 numOfVids === 1 && orientation === "vertical",
               "lg:grid-cols-1 w-full md:w-md lg:w-lg xl:w-xl mx-auto ":
@@ -45,7 +45,7 @@ export default function CaseStudyResultVideoDisplay({
                 numOfVids === 2 && orientation === "horizontal",
               "lg:grid-cols-2 md:w-md lg:w-3xl":
                 numOfVids === 2 && orientation === "vertical",
-              "lg:grid-cols-3 lg:px-12 w-full":
+              "lg:grid-cols-3 md:px-28 lg:px-0 w-full":
                 numOfVids === 3 && orientation === "horizontal",
               "lg:grid-cols-3 md:w-md lg:w-5xl":
                 numOfVids === 3 && orientation === "vertical",
@@ -73,10 +73,10 @@ export default function CaseStudyResultVideoDisplay({
               </p>
             ))}
           </div> */}
-          <div className="w-full h-auto flex flex-col my-6 xl:my-12 gap-4">
+          <div className="w-full h-auto flex flex-col my-6 lg:mb-12">
             {/* {resultText.map((item, index) => ( */}
               <p
-                className="md:w-md lg:w-lg xl:w-xl mx-auto lg:text-lg italic font-medium "
+                className="md:w-md lg:w-2xl mx-auto lg:text-lg italic font-medium "
                 // key={index}
                 >
                 {resultText[1]}
