@@ -710,31 +710,26 @@ export const workSampleData = [
     mux_title: "smith-saint-panera",
     title: "Mix and Match with the Stars",
     image_src:
-      "https://image.mux.com/NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00/thumbnail.webp?width=320&height=568&time=26",
+      "https://image.mux.com/NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00/thumbnail.webp?width=1080&height=1920&time=46",
     featured: "",
     slug: "smith-saint-panera",
     playback_id: "NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00",
     orientation: "vertical",
   },
   {
-        category: [
-          "Medical",
-          "Video Editing",
-          "Video Production",
-          "Case Study",
-        ],
-        client: "Siteman Cancer Center",
-        description:
-          "The updated Mammography Van patient education video provides patients with a clear and welcoming overview of what to expect during their visit, while supporting Siteman's ongoing outreach and early detection efforts.",
-        mux_title: "siteman-cancer-center",
-        title: "Siteman Cancer Center - Mammography Van",
-        image_src:
-          "https://image.mux.com/Hwh01HHmGfBtLqlOwGyyVjS01yJtpFETmFMjtigAo3i38/thumbnail.webp?width=1920&height=1080&time=03",
-        featured: "",
-        slug: "siteman-cancer-center",
-        playback_id: "Hwh01HHmGfBtLqlOwGyyVjS01yJtpFETmFMjtigAo3i38",
-        orientation: "horizontal",
-      },
+    category: ["Medical", "Video Editing", "Video Production", "Case Study"],
+    client: "Siteman Cancer Center",
+    description:
+      "The updated Mammography Van patient education video provides patients with a clear and welcoming overview of what to expect during their visit, while supporting Siteman's ongoing outreach and early detection efforts.",
+    mux_title: "siteman-cancer-center",
+    title: "Siteman Cancer Center - Mammography Van",
+    image_src:
+      "https://image.mux.com/Hwh01HHmGfBtLqlOwGyyVjS01yJtpFETmFMjtigAo3i38/thumbnail.webp?width=1920&height=1080&time=03",
+    featured: "",
+    slug: "siteman-cancer-center",
+    playback_id: "Hwh01HHmGfBtLqlOwGyyVjS01yJtpFETmFMjtigAo3i38",
+    orientation: "horizontal",
+  },
   // {
   //   category: [],
   //   client: "",

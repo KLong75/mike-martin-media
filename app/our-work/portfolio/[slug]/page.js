@@ -12,7 +12,7 @@ import { siteUrl } from "@/app/lib/site-url";
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const sample = workSampleData.find((sample) => sample.slug === slug);
-
+  console.log("Sample found for slug:", sample);
   if (!sample) {
     return {
       title: "Sample not found",
@@ -29,32 +29,23 @@ export async function generateMetadata({ params }) {
     openGraph: {
       type: "website",
       locale: "en_US",
-      url: `${siteUrl}/blog/posts/${sample.slug}`,
+      url: `${siteUrl}/our-work/portfolio/${sample.slug}`,
       title: `Mike Martin Media | Our Work | ${sample.client} - ${sample.title}`,
       description: sample.description,
+      videos: [
+        {
+          url: `https://stream.mux.com/${sample.playback_id}.m3u8`,
+          type: "application/x-mpegurl",
+          width: 1920,
+          height: 1080,
+        },
+      ],
       // images: [
       //   {
       //     url: `${siteUrl}${sample.image_src}`,
       //     width: sample.image_width || 1200,
       //     height: sample.image_height || 630,
       //   },
-      // ],
-    },
-    twitter: {
-      cardType: "summary_large_image",
-      title: `Mike Martin Media | Our Work | ${sample.client} - ${sample.title}`,
-      description: sample.description,
-      // images: [
-      //   {
-      //     url: `${siteUrl}${sample.image_src}`,
-      //     width: sample.image_width || 1200,
-      //     height: sample.image_height || 630,
-      //   },
-      //   // {
-      //   //   url: ,
-      //   //   width: 800,
-      //   //   height: 418,
-      //   // },
       // ],
     },
   };
@@ -79,8 +70,27 @@ export default async function PortfolioPage({ params }) {
     );
   }
 
+   const jsonLd = {
+    "@context": "https://schema.org/",
+    "@type": "VideoObject",
+    name: sample.title,
+    description: sample.description,
+    thumbnailUrl: sample.image_src,
+    uploadDate: sample.date || new Date().toISOString(),
+    duration: "PT2M30S",
+    contentUrl: `https://stream.mux.com/${sample.playback_id}.m3u8`,
+  };
+
   return (
     <>
+    {/* <div> */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      {/* </div> */}
       <div className="mt-6 ml-2">
         <BackLink />
       </div>

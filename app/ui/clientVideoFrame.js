@@ -5,6 +5,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { BsPlayFill } from "react-icons/bs";
 
 export default function ClientVideoFrame({
   // src,
@@ -47,7 +48,9 @@ export default function ClientVideoFrame({
               </span>
             </div>
           )}
-         
+          {isCaseStudyVideo && (
+            <BsPlayFill className="absolute inset-0 m-auto text-white" size={50} />
+          )}
         </div>
       </Link>
     </>
