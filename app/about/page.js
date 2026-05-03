@@ -108,7 +108,7 @@ export default function Page() {
         <div className="flex justify-center items-center p-6 md:p-12 lg:p-28 xl:p-42 max-w-700">
           <div
             id="home-page-about-section"
-            className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-12 xl:gap-16 flex justify-center items-center">
+            className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-12 xl:gap-16 justify-center items-center">
             <div className="order-2 xl:order-1 relative flex justify-center items-center">
               <MMMTeamPhotoWithLogo />
             </div>
