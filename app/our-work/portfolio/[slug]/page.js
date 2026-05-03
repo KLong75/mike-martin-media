@@ -29,33 +29,17 @@ export async function generateMetadata({ params }) {
     openGraph: {
       type: "website",
       locale: "en_US",
-      url: `${siteUrl}/blog/posts/${sample.slug}`,
+      url: `${siteUrl}/our-work/portfolio/${sample.slug}`,
       title: `Mike Martin Media | Our Work | ${sample.client} - ${sample.title}`,
       description: sample.description,
-      // images: [
-      //   {
-      //     url: `${siteUrl}${sample.image_src}`,
-      //     width: sample.image_width || 1200,
-      //     height: sample.image_height || 630,
-      //   },
-      // ],
-    },
-    twitter: {
-      cardType: "summary_large_image",
-      title: `Mike Martin Media | Our Work | ${sample.client} - ${sample.title}`,
-      description: sample.description,
-      // images: [
-      //   {
-      //     url: `${siteUrl}${sample.image_src}`,
-      //     width: sample.image_width || 1200,
-      //     height: sample.image_height || 630,
-      //   },
-      //   // {
-      //   //   url: ,
-      //   //   width: 800,
-      //   //   height: 418,
-      //   // },
-      // ],
+      videos: [
+        {
+          url: `https://stream.mux.com/${sample.playback_id}.m3u8`,
+          type: "application/x-mpegurl",
+          width: 1920,
+          height: 1080,
+        },
+      ],
     },
   };
 }
