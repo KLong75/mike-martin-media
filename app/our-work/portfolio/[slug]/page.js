@@ -56,6 +56,23 @@ export async function generateMetadata({ params }) {
         },
       ],
     },
+    twitter: {
+      cardType: "summary_large_image",
+      title: `Mike Martin Media | Our Work | ${sample.client} - ${sample.title}`,
+      description: sample.description,
+      // images: [
+      //   {
+      //     url: `${siteUrl}${sample.image_src}`,
+      //     width: sample.image_width || 1200,
+      //     height: sample.image_height || 630,
+      //   },
+      //   // {
+      //   //   url: ,
+      //   //   width: 800,
+      //   //   height: 418,
+      //   // },
+      // ],
+    },
   };
 }
 
