@@ -32,6 +32,13 @@ export async function generateMetadata({ params }) {
       url: `${siteUrl}/our-work/portfolio/${sample.slug}`,
       title: `Mike Martin Media | Our Work | ${sample.client} - ${sample.title}`,
       description: sample.description,
+      // images: [
+      //   {
+      //     url: `${siteUrl}${sample.image_src}`,
+      //     width: sample.image_width || 1200,
+      //     height: sample.image_height || 630,
+      //   },
+      // ],
       videos: [
         {
           url: `https://stream.mux.com/${sample.playback_id}.m3u8`,
@@ -40,6 +47,23 @@ export async function generateMetadata({ params }) {
           height: 1080,
         },
       ],
+    },
+    twitter: {
+      cardType: "summary_large_image",
+      title: `Mike Martin Media | Our Work | ${sample.client} - ${sample.title}`,
+      description: sample.description,
+      // images: [
+      //   {
+      //     url: `${siteUrl}${sample.image_src}`,
+      //     width: sample.image_width || 1200,
+      //     height: sample.image_height || 630,
+      //   },
+      //   // {
+      //   //   url: ,
+      //   //   width: 800,
+      //   //   height: 418,
+      //   // },
+      // ],
     },
   };
 }
