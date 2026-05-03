@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import ClientVideoFrame from "./clientVideoFrame";
 // import data
 import { workSampleData } from "../lib/work-samples";
+console.log("workSampleData in WorkGallery:", workSampleData);
 // import icons
 import { IoCloseCircleOutline } from "react-icons/io5";
 
@@ -16,7 +17,7 @@ export default function WorkGallery({
   numberOfVideos,
   clearSelectedCategories,
   featured,
-  isCaseStudy,
+  // isCaseStudy,
 }) {
   const pathname = usePathname();
   const [shuffledVideos, setShuffledVideos] = useState([]);
@@ -25,9 +26,18 @@ export default function WorkGallery({
     return [...array].sort(() => Math.random() - 0.5);
   };
 
+  const caseStudyVideos = workSampleData.filter((sample) =>
+    sample.category.includes("Case Study"),
+  );
+
+  // filter out caseStudyVideos
+  const filteredWorkSampleData = workSampleData.filter(
+    (sample) => !caseStudyVideos.includes(sample),
+  );
+
   useEffect(() => {
     // Re-randomize in the client whenever selectedCategories or featured changes
-    const shuffled = randomizeArray(workSampleData);
+    const shuffled = randomizeArray(filteredWorkSampleData);
     setShuffledVideos(shuffled);
   }, [selectedCategories, featured]);
 

@@ -435,10 +435,6 @@ export const caseStudies = [
       },
     ],
     videos: [
-      // {
-      //   id: "Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc",
-      //   orientation: "horizontal",
-      // },
       {
         category: ["Case Study", "Nonprofit", "Video Production"],
         client: "Circus Harmony",
@@ -513,7 +509,6 @@ export const caseStudies = [
     preview_image: {
       alt: "",
       url: "/images/case-studies/preview-images/panera-preview-img.webp",
-      // url: "/images/case-studies/smith-saint/preview.png",
       width: 576,
       height: 324,
     },
@@ -1004,7 +999,6 @@ export const caseStudies = [
     ],
     videos: [
       {
-        // id: "NPVK80292isMIo2n5x02j00u3u00pprN3Azi5aaqxO5YWx00",
         category: [
           "Corporate",
           "Video Editing",
@@ -1185,20 +1179,6 @@ export const caseStudies = [
         playback_id: "Hwh01HHmGfBtLqlOwGyyVjS01yJtpFETmFMjtigAo3i38",
         orientation: "horizontal",
       },
-      // {
-      //   category: ["Case Study", "Education", "Video Production"],
-      //   client: "Washington University in St. Louis",
-      //   // id: "00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44",
-      //   description: "",
-      //   mux_title: "washu-case-study-people-of-the-plan",
-      //   title: "Video One",
-      //   image_src:
-      //     "/images/case-studies/preview-images/siteman.png",
-      //   featured: "",
-      //   slug: "washu-case-study-people-of-the-plan",
-      //   playback_id: "00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44",
-      //   orientation: "horizontal",
-      // },
     ],
   },
   // {

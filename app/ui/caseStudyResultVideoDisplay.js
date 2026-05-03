@@ -25,13 +25,14 @@ export default function CaseStudyResultVideoDisplay({
       <FadeInOnScroll>
         <>
           <div className="w-full h-auto flex flex-col my-6 xl:my-12 gap-4">
-            {resultText.map((item, index) => (
+            {/* {resultText.map((item, index) => ( */}
               <p
                 className="md:w-md lg:w-lg xl:w-xl mx-auto lg:text-lg italic font-medium "
-                key={index}>
-                {item}
+                // key={index}
+                >
+                {resultText[0]}
               </p>
-            ))}
+            {/* ))} */}
           </div>
           {/* CHANGED: Using clsx for dynamic grid columns based on numOfVids */}
           <div
@@ -72,6 +73,16 @@ export default function CaseStudyResultVideoDisplay({
               </p>
             ))}
           </div> */}
+          <div className="w-full h-auto flex flex-col my-6 xl:my-12 gap-4">
+            {/* {resultText.map((item, index) => ( */}
+              <p
+                className="md:w-md lg:w-lg xl:w-xl mx-auto lg:text-lg italic font-medium "
+                // key={index}
+                >
+                {resultText[1]}
+              </p>
+            {/* ))} */}
+          </div>
           <div>
 
           </div>
