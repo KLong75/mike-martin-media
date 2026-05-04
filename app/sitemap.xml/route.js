@@ -1,5 +1,14 @@
 import sitemap from "../sitemap-config";
 
+function escapeXml(unsafe) {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
 function generateSitemapXml(urls) {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -8,7 +17,7 @@ ${urls
   .map((entry) => {
     let xml = `
   <url>
-    <loc>${entry.url}</loc>
+    <loc>${escapeXml(entry.url)}</loc>
     <lastmod>${new Date(entry.lastModified).toISOString()}</lastmod>
     <changefreq>${entry.changeFrequency}</changefreq>
     <priority>${entry.priority}</priority>`;
@@ -19,13 +28,13 @@ ${urls
       <video:description><![CDATA[${
         entry.video.description || ""
       }]]></video:description>
-      <video:thumbnail_loc>${entry.video.thumbnail_loc}</video:thumbnail_loc>
-      ${
-        entry.video.content_loc
-          ? `<video:content_loc>${entry.video.content_loc}</video:content_loc>`
-          : ""
-      }
-      <video:player_loc>${entry.video.player_loc}</video:player_loc>
+      <video:thumbnail_loc>${escapeXml(entry.video.thumbnail_loc)}</video:thumbnail_loc>
+${
+  entry.video.content_loc
+    ? `<video:content_loc>${escapeXml(entry.video.content_loc)}</video:content_loc>`
+    : ""
+}
+<video:player_loc>${escapeXml(entry.video.player_loc)}</video:player_loc>
     </video:video>`;
     }
     xml += `
