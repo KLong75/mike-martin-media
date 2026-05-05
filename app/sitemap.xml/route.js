@@ -17,7 +17,7 @@ ${urls
   .map((entry) => {
     let xml = `
   <url>
-    <loc>${entry.url}</loc>
+    <loc>${escapeXml(entry.url)}</loc>
     <lastmod>${new Date(entry.lastModified).toISOString()}</lastmod>
     <changefreq>${entry.changeFrequency}</changefreq>
     <priority>${entry.priority}</priority>`;
@@ -28,13 +28,13 @@ ${urls
       <video:description><![CDATA[${
         entry.video.description || ""
       }]]></video:description>
-      <video:thumbnail_loc>${entry.video.thumbnail_loc}</video:thumbnail_loc>
-      ${
-        entry.video.content_loc
-          ? `<video:content_loc>${entry.video.content_loc}</video:content_loc>`
-          : ""
-      }
-      <video:player_loc>${entry.video.player_loc}</video:player_loc>
+      <video:thumbnail_loc>${escapeXml(entry.video.thumbnail_loc)}</video:thumbnail_loc>
+${
+  entry.video.content_loc
+    ? `<video:content_loc>${escapeXml(entry.video.content_loc)}</video:content_loc>`
+    : ""
+}
+<video:player_loc>${escapeXml(entry.video.player_loc)}</video:player_loc>
     </video:video>`;
     }
     xml += `

@@ -4,6 +4,7 @@ export const workSampleData = [
     client: "Synergy Living",
     description:
       "Aerial footage and promotional video for Kirkwood development. Produced by Mike Martin Media for Synergy Living.",
+    duration: "PT1M09S",
     title: "Synergy Living Kirkwood Development",
     image_src: "/images/work-gallery-cover-images/synergy-living-cover.jpg",
     featured: "featured-drone",
@@ -15,6 +16,7 @@ export const workSampleData = [
     client: "FSI",
     description:
       "Promotional video showcasing FSI's facilities. Produced by Mike Martin Media for FSI.",
+    duration: "PT1M53S",
     title: "FSI Facilities",
     image_src: "/images/work-gallery-cover-images/fsi-cover.jpg",
     featured: "",
@@ -26,6 +28,7 @@ export const workSampleData = [
     client: "Joshua Chamberlain Society",
     description:
       "Promotional video for the Joshua Chamberlain Society. Produced by Mike Martin Media.",
+    duration: "PT5M44S",
     title: "Joshua Chamberlain Society",
     image_src: "/images/work-gallery-cover-images/jcs-cover.jpg",
     featured: "featured-video-production",
@@ -37,6 +40,7 @@ export const workSampleData = [
     client: "USO of Missouri",
     description:
       "Promotional video for the USO of Missouri's Holiday Block Leave event. Produced by Mike Martin Media.",
+    duration: "PT57S",
     title: "Holiday Block Leave",
     image_src: "/images/work-gallery-cover-images/uso-of-mo-cover.jpg",
     featured: "featured-video-editing",
@@ -48,6 +52,7 @@ export const workSampleData = [
     client: "ARTCO",
     description:
       "Promotional video for ARTCO's recruitment efforts. Produced by Mike Martin Media.",
+    duration: "PT3M49S",
     title: "Recruitment",
     image_src: "/images/work-gallery-cover-images/artco-cover.jpg",
     featured: "featured-drone",
@@ -59,6 +64,7 @@ export const workSampleData = [
     client: "MMM",
     description:
       "Video showcasing the Grand Center Arts District in the Heart of Midtown St. Louis where the Mike Martin Media studio is located. Produced by Mike Martin Media for MMM.",
+    duration: "PT1M00S",
     title: "MMM In Grand Center",
     image_src: "/images/work-gallery-cover-images/mmm-cover.jpg",
     featured: "featured-video-editing",
@@ -70,6 +76,7 @@ export const workSampleData = [
     client: "Girl Scouts of Eastern Missouri",
     description:
       "Promotional video for the Girl Scouts of Eastern Missouri's Paddle Raise event. Produced by Mike Martin Media.",
+    duration: "PT2M21S",
     title: "Paddle Raise",
     image_src: "/images/work-gallery-cover-images/gsem-cover.jpg",
     featured: "featured-drone",
@@ -82,6 +89,7 @@ export const workSampleData = [
     description:
       "Promotional video for MiTek's Houston Groundbreaking event. Produced by Mike Martin Media for MiTek.",
     title: "Houston Groundbreaking",
+    duration: "PT1M59S",
     image_src: "/images/work-gallery-cover-images/mitek-cover.jpg",
     featured: "featured-video-editing",
     slug: "mitek-houston-groundbreaking",
@@ -93,6 +101,7 @@ export const workSampleData = [
     description:
       "Video for Club Fitness's Share to Inspire campaign. Produced by Mike Martin Media for Club Fitness.",
     title: "Share to Inspire",
+    duration: "PT2M32S",
     image_src: "/images/work-gallery-cover-images/club-fitness-share-cover.jpg",
     featured: "featured-video-production",
     slug: "club-fitness-share-to-inspire",
@@ -104,6 +113,7 @@ export const workSampleData = [
     description:
       "Highlight video for the Music at the Intersection festival. Produced by Mike Martin Media.",
     title: "Highlights",
+    duration: "PT31S",
     image_src: "/images/work-gallery-cover-images/mati-cover.jpg",
     featured: "featured-drone",
     slug: "music-at-the-intersection-highlight",
@@ -114,6 +124,7 @@ export const workSampleData = [
     client: "Five Star Auto Body",
     description:
       "Recruitment video for Five Star Auto Body. Produced by Mike Martin Media for Five Star Auto Body.",
+    duration: "PT58S",
     title: "Recruitment",
     image_src: "/images/work-gallery-cover-images/five-star-auto-cover.jpg",
     featured: "featured-video-production",
@@ -125,6 +136,7 @@ export const workSampleData = [
     client: "Eden Theological Seminary",
     description:
       "Recruitment video for Eden Theological Seminary. Produced by Mike Martin Media.",
+    duration: "PT3M18S",
     title: "Recruitment",
     image_src: "/images/work-gallery-cover-images/eden-theological-cover.jpg",
     featured: "",
@@ -136,6 +148,7 @@ export const workSampleData = [
     client: "Murphy Company",
     description:
       "Training video for Murphy Company. Produced by Mike Martin Media.",
+    duration: "PT3M57S",
     title: "Training Demo",
     image_src: "/images/work-gallery-cover-images/murphy-company-cover.jpg",
     featured: "",
@@ -147,6 +160,7 @@ export const workSampleData = [
     client: "Washington University",
     description:
       "Promotional video for Washington University's Founders Day event. Produced by Mike Martin Media for Washington University in St. Louis, Missouri.",
+    duration: "PT2M39S",
     title: "Founders Day",
     image_src: "/images/work-gallery-cover-images/wash-u-cover.jpg",
     featured: "featured-video-production",
@@ -158,6 +172,7 @@ export const workSampleData = [
     client: "Johnstone Sales",
     description:
       "Demo video for Johnstone Sales. Produced by Mike Martin Media.",
+    duration: "PT4M17S",
     title: "Demo",
     image_src: "/images/work-gallery-cover-images/johnston-sales-cover.jpg",
     featured: "",
@@ -169,6 +184,7 @@ export const workSampleData = [
     client: "Washington University Olin Business School",
     description:
       "Promotional video for the Big Idea Bounce Contest at Washington University Olin Business School in St. Louis, Missouri. Produced by Mike Martin Media.",
+    duration: "PT45M02S",
     title: "Big Idea Bounce Contest",
     image_src: "/images/work-gallery-cover-images/wash-u-olin-cover.jpg",
     featured: "",
@@ -180,6 +196,7 @@ export const workSampleData = [
     client: "BioSTL",
     description:
       "Promotional video for BioSTL's Internships program. Produced by Mike Martin Media.",
+    duration: "PT2M36S",
     title: "Internships",
     image_src: "/images/work-gallery-cover-images/bio-stl-cover.jpg",
     featured: "featured-video-production",
@@ -191,6 +208,7 @@ export const workSampleData = [
     client: "SSM Cardinal Glennon",
     description:
       "Recruitment video for SSM Cardinal Glennon's Residency program. Produced by Mike Martin Media.",
+    duration: "PT42S",
     title: "Residency Recruitment",
     image_src:
       "/images/work-gallery-cover-images/ssm-cardinal-glennon-cover.jpg",
@@ -203,6 +221,7 @@ export const workSampleData = [
     client: "Washington University Emergency Medicine",
     description:
       "Recruitment video for Washington University Emergency Medicine's Residency program. Produced by Mike Martin Media.",
+    duration: "PT4M12S",
     title: "Residency Recruitment",
     image_src:
       "/images/work-gallery-cover-images/wash-u-emergency-med-cover.jpg",
@@ -215,6 +234,7 @@ export const workSampleData = [
     client: "Washington University Neuromuscular Medicine",
     description:
       "Recruitment video for Washington University Neuromuscular Medicine's Fellowship program. Produced by Mike Martin Media.",
+    duration: "PT5M34S",
     title: "Fellowship Recruitment",
     image_src: "/images/work-gallery-cover-images/wash-u-nm-med-cover.jpg",
     featured: "featured-video-editing",
@@ -226,6 +246,7 @@ export const workSampleData = [
     client: "Siteman Cancer Center",
     description:
       "Promotional video for Siteman Cancer Center's Brain Tumor Center. Produced by Mike Martin Media.",
+    duration: "PT2M57S",
     title: "Brain Tumor Center",
     image_src: "/images/work-gallery-cover-images/siteman-cover.jpg",
     featured: "",
@@ -237,6 +258,7 @@ export const workSampleData = [
     client: "Alton Memorial Hospital Foundation",
     description:
       "Promotional video for Alton Memorial Hospital Foundation's Duck Pluckers Ball event. Produced by Mike Martin Media.",
+    duration: "PT2M26S",
     title: "Duck Pluckers Ball",
     image_src: "/images/work-gallery-cover-images/alton-memorial-cover.png",
     featured: "",
@@ -248,6 +270,7 @@ export const workSampleData = [
     client: "St Louis Children's Hospital",
     description:
       "Promotional video for St. Louis Children's Hospital's Employee Giving program. Produced by Mike Martin Media.",
+    duration: "PT2M20S",
     title: "Employee Giving",
     image_src: "/images/work-gallery-cover-images/childrens-hospital-cover.jpg",
     featured: "",
@@ -259,6 +282,7 @@ export const workSampleData = [
     client: "Ascension Healthcare",
     description:
       "Promotional video for Ascension Healthcare St. Vincent's new facility. Produced by Mike Martin Media.",
+    duration: "PT4M22S",
     title: "St. Vincent Hospital",
     image_src: "/images/work-gallery-cover-images/ascension-cover.jpg",
     featured: "featured-drone",
@@ -270,6 +294,7 @@ export const workSampleData = [
     client: "SSM Health",
     description:
       "Promotional video for SSM Health's Industrial Rehabilitation Center. Produced by Mike Martin Media.",
+    duration: "PT3M11S",
     title: "Industrial Rehabilitation Center",
     image_src: "/images/work-gallery-cover-images/ssm-health-cover.jpg",
     featured: "",
@@ -281,6 +306,7 @@ export const workSampleData = [
     client: "Barnes-Jewish Hospital Foundation",
     description:
       "Promotional video for Barnes-Jewish Hospital Foundation's Illumination Gala. Produced by Mike Martin Media.",
+    duration: "PT4M47S",
     title: "Illumination Gala",
     image_src: "/images/work-gallery-cover-images/bjaf-gala-cover.jpg",
     featured: "",
@@ -292,6 +318,7 @@ export const workSampleData = [
     client: "Ollie Hinkle Heart Foundation",
     description:
       "Promotional video for the Ollie Hinkle Heart Foundation. Produced by Mike Martin Media.",
+    duration: "PT7M34S",
     title: "Ollie Hinkle Heart Foundation",
     image_src: "/images/work-gallery-cover-images/ollie-hinkle-cover.jpg",
     featured: "featured-video-production",
@@ -303,6 +330,7 @@ export const workSampleData = [
     client: "Central Institute for the Deaf",
     description:
       "An inspirational video from the Central Institute for the Deaf. Produced by Mike Martin Media.",
+    duration: "PT4M32S",
     title: "CID Out Loud",
     image_src: "/images/work-gallery-cover-images/cid-cover.jpg",
     featured: "",
@@ -314,6 +342,7 @@ export const workSampleData = [
     client: "Cardinal Ritter Senior Services",
     description:
       "Promotional video for Cardinal Ritter Senior Services'. Produced by Mike Martin Media.",
+    duration: "PT2M52S",
     title: "Cardinal Ritter Senior Services",
     image_src: "/images/work-gallery-cover-images/cardinal-ritter-cover.jpg",
     featured: "",
@@ -325,6 +354,7 @@ export const workSampleData = [
     client: "Cystic Fibrosis Foundation",
     description:
       "Promotional video for the Cystic Fibrosis Foundation. Produced by Mike Martin Media.",
+    duration: "PT5M50S",
     title: "Cystic Fibrosis Foundation",
     image_src: "/images/work-gallery-cover-images/cystic-fibrosis-cover.jpg",
     featured: "",
@@ -336,6 +366,7 @@ export const workSampleData = [
     client: "Kids in the Middle",
     description:
       "Promotional video for Kids in the Middle's mission and services. Produced by Mike Martin Media.",
+    duration: "PT3M21S",
     title: "Mission Promo",
     image_src: "/images/work-gallery-cover-images/kitm-cover.jpg",
     featured: "",
@@ -347,6 +378,7 @@ export const workSampleData = [
     client: "Spirit of Provident",
     description:
       "Livestream video for Spirit of Provident's Gala. Produced live by Mike Martin Media.",
+    duration: "PT1H08M41S",
     title: "Gala Livestream",
     image_src:
       "/images/work-gallery-cover-images/provident-livestream-cover.jpg",
@@ -359,6 +391,7 @@ export const workSampleData = [
     client: "St. Louis Children's Hospital",
     description:
       "Animated video for St. Louis Children's Hospital explaining what to expect during a colonoscopy procedure. Produced by Mike Martin Media.",
+    duration: "PT2M03S",
     title: "What to Expect - Colonoscopy",
     image_src:
       "/images/work-gallery-cover-images/childrens-hospital-animation-cover.jpg",
@@ -371,6 +404,7 @@ export const workSampleData = [
     client: "Washington University",
     description:
       "Animated video for Washington University's Olin Business School. Produced by Mike Martin Media.",
+    duration: "PT2M44S",
     title: "Always Olin",
     image_src: "/images/work-gallery-cover-images/wash-u-animation-cover.jpg",
     featured: "",
@@ -382,6 +416,7 @@ export const workSampleData = [
     client: "Washington University",
     description:
       "Animated video for Washington University's Olin Business School. Produced by Mike Martin Media.",
+    duration: "PT2M29S",
     title: "Olin MBA Digital Impact Project",
     image_src:
       "/images/work-gallery-cover-images/wash-u-olin-business-animation-cover.jpg",
@@ -394,6 +429,7 @@ export const workSampleData = [
     client: "Club Fitness",
     description:
       "Promotional video for Club Fitness. Produced by Mike Martin Media.",
+    duration: "PT15S",
     title: "15 Second Promo",
     image_src: "/images/work-gallery-cover-images/club-fitness-promo-cover.jpg",
     featured: "",
@@ -405,6 +441,7 @@ export const workSampleData = [
     client: "McCarthy Building Companies",
     description:
       "Promotional video for McCarthy Building Companies. Produced by Mike Martin Media.",
+    duration: "PT2M57S",
     title: "Project Spotlight",
     image_src: "/images/work-gallery-cover-images/mccarthy-cover.jpg",
     featured: "featured-drone",
@@ -416,6 +453,7 @@ export const workSampleData = [
     client: "St. Louis Children's Hospital Foundation",
     description:
       "Promotional video for St. Louis Children's Hospital Foundation. Produced by Mike Martin Media.",
+    duration: "PT4M33S",
     title: "CMN Patient Ambassadors",
     image_src:
       "/images/work-gallery-cover-images/stlouis-childrens-hospital-foundation-cover.jpg",
@@ -428,6 +466,7 @@ export const workSampleData = [
     client: "The Marianists",
     description:
       "Promotional video for The Marianists DIL program. Produced by Mike Martin Media.",
+    duration: "PT1M0S",
     title: "Marianist DIL",
     image_src: "/images/work-gallery-cover-images/marianists-cover.jpg",
     featured: "",
@@ -439,6 +478,7 @@ export const workSampleData = [
     client: "Sam Fox School",
     description:
       "Livestream video for the Sam Fox School Awards of Distinction 2023. Produced live by Mike Martin Media.",
+    duration: "PT1H42M04S",
     title: "Sam Fox School Awards of Distinction 2023",
     image_src: "/images/work-gallery-cover-images/sam-fox-school-cover.jpg",
     featured: "",
@@ -450,6 +490,7 @@ export const workSampleData = [
     client: "Central Institute for the Deaf",
     description:
       "Inspirational video from the Central Institute for the Deaf. Produced by Mike Martin Media.",
+    duration: "PT5M16S",
     title: "CID Out Loud - Wyatt's Story",
     image_src: "/images/work-gallery-cover-images/cid-outloud-cover.jpg",
     featured: "",
@@ -461,6 +502,7 @@ export const workSampleData = [
     client: "Evertrue",
     description:
       "Promotional video for highlighting social opportunities at Evertrue's Illinois facility. Produced by Mike Martin Media.",
+    duration: "PT1M55S",
     title: "Social Opportunities at Evertrue - Illinois",
     image_src: "/images/work-gallery-cover-images/evertrue-cover.jpg",
     featured: "",
@@ -472,6 +514,7 @@ export const workSampleData = [
     client: "Midland Wood Products",
     description:
       "Animated promotional video for Midland Wood Products. Produced by Mike Martin Media.",
+    duration: "PT30S",
     title: "Midland Wood Products",
     image_src:
       "/images/work-gallery-cover-images/midland-wood-products-cover.webp",
@@ -484,6 +527,7 @@ export const workSampleData = [
     client: "MiTek Ecosystem",
     description:
       "Animated promotional video for MiTek Ecosystem. Produced by Mike Martin Media.",
+    duration: "PT1M27S",
     title: "MiTek Ecosystem",
     image_src: "/images/work-gallery-cover-images/mitek-ecosystem-cover.webp",
     featured: "",
@@ -599,6 +643,7 @@ export const workSampleData = [
     client: "Tiller-Hewitt HealthCare Strategies",
     description:
       "A promotional video for Tiller-Hewitt HealthCare Strategies. Produced by Mike Martin Media.",
+    duration: "PT4M10S",
     title: "Tiller-Hewitt HealthCare Strategies",
     image_src:
       "https://image.mux.com/InuffvovdpvcE3hT6S017xFv3qUP8WZFjWKv01SCloUbc/thumbnail.webp?width=1920&height=1080&time=07",
@@ -611,6 +656,7 @@ export const workSampleData = [
     client: "Harbinger Health",
     description:
       "An animated video for Harbinger Health. Produced by Mike Martin Media.",
+    duration: "PT52S",
     title: "Harbinger Health - Resolve",
     image_src:
       "https://image.mux.com/n00VeL9Uo8JMKaBD5WRacffCh7501R1cjrPMZngVPVIMA/thumbnail.webp?width=1920&height=1080&time=21.25",
