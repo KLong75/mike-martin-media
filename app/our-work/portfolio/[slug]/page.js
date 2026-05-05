@@ -99,6 +99,11 @@ export default async function PortfolioPage({ params }) {
         uploadDate: sample.date || new Date().toISOString(),
         duration: sample.duration || "PT2M30S",
         contentUrl: `https://stream.mux.com/${sample.playback_id}.m3u8`,
+        author: {
+          "@type": "Organization",
+          name: "Mike Martin Media",
+          url: siteUrl,
+        },
       }
     : null;
 
