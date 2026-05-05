@@ -12,6 +12,7 @@ import { siteUrl } from "@/app/lib/site-url";
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const sample = workSampleData.find((sample) => sample.slug === slug);
+  const isPhotography = sample?.category.includes("Photography");
 
   if (!sample) {
     return {
@@ -39,14 +40,17 @@ export async function generateMetadata({ params }) {
       //     height: sample.image_height || 630,
       //   },
       // ],
-      videos: [
-        {
-          url: `https://stream.mux.com/${sample.playback_id}.m3u8`,
-          type: "application/x-mpegurl",
-          width: 1920,
-          height: 1080,
-        },
-      ],
+      ...(sample.playback_id &&
+        !isPhotography && {
+          videos: [
+            {
+              url: `https://stream.mux.com/${sample.playback_id}.m3u8`,
+              type: "application/x-mpegurl",
+              width: 1920,
+              height: 1080,
+            },
+          ],
+        }),
     },
     twitter: {
       cardType: "summary_large_image",
@@ -85,8 +89,29 @@ export default async function PortfolioPage({ params }) {
     );
   }
 
+  const jsonLd = !isPhotography
+    ? {
+        "@context": "https://schema.org/",
+        "@type": "VideoObject",
+        name: sample.title,
+        description: sample.description,
+        thumbnailUrl: sample.image_src,
+        uploadDate: sample.date || new Date().toISOString(),
+        duration: "PT2M30S",
+        contentUrl: `https://stream.mux.com/${sample.playback_id}.m3u8`,
+      }
+    : null;
+
   return (
     <>
+      {jsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+      )}
       <div className="mt-6 ml-2">
         <BackLink />
       </div>
