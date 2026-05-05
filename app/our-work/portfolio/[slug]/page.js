@@ -95,7 +95,7 @@ export default async function PortfolioPage({ params }) {
         "@type": "VideoObject",
         name: sample.title,
         description: sample.description,
-        thumbnailUrl: sample.image_src,
+        thumbnailUrl: `${siteUrl}${sample.image_src}`,
         uploadDate: sample.date || new Date().toISOString(),
         duration: "PT2M30S",
         contentUrl: `https://stream.mux.com/${sample.playback_id}.m3u8`,
