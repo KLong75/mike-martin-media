@@ -12,12 +12,8 @@ import { siteUrl } from "@/app/lib/site-url";
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const sample = workSampleData.find((sample) => sample.slug === slug);
-<<<<<<< HEAD
-  console.log("Sample found for slug:", sample);
-=======
   const isPhotography = sample?.category.includes("Photography");
 
->>>>>>> 9e8e6a9cad95218ccdc19a2ea3e81a19524247e9
   if (!sample) {
     return {
       title: "Sample not found",
