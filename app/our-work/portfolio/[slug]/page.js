@@ -97,7 +97,7 @@ export default async function PortfolioPage({ params }) {
         description: sample.description,
         thumbnailUrl: `${siteUrl}${sample.image_src}`,
         uploadDate: sample.date || new Date().toISOString(),
-        duration: "PT2M30S",
+        duration: sample.duration || "PT2M30S",
         contentUrl: `https://stream.mux.com/${sample.playback_id}.m3u8`,
       }
     : null;
