@@ -50,9 +50,9 @@ export default function CaseStudyResultVideoDisplay({
               "lg:grid-cols-3 md:w-md lg:w-5xl":
                 numOfVids === 3 && orientation === "vertical",
             })}>
-            {/* {videos.map((video, index) => (
+            {videos.map((video, index) => (
               <ClientVideoContainer video={video} key={index} />
-            ))} */}
+            ))}
               {videos.map((video, index) => (
               <ClientVideoFrame  src={video.src}
                 client={video.client}
