@@ -70,38 +70,3 @@ export default function BlogPostGallery({ number_of_posts, priorityFirstImage = 
     </div>
   );
 }
-
-// "use client";
-// // import data
-// import { blogPosts } from "../lib/blogPostData";
-// // import components
-// import BlogPostPreview from "./blogPostPreview";
-
-// export default function BlogPostGallery() {
-//   return (
-//     <div className="flex justify-center px-4 lg:px-20">
-//       <div className="grid grid-cols-1 max-w-800" >
-//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-6">
-//           {blogPosts.map((post, index) => (
-//             <BlogPostPreview
-//               key={index}
-//               slug={post.slug}
-//               title={post.title}
-//               image_src={post.image_src}
-//               image_width={post.image_width}
-//               image_height={post.image_height}
-//               image_alt={post.image_alt}
-//               text={post.text}
-//               post_date={post.post_date}
-//               closing_tag={post.closing_tag}
-//               author={post.author}
-//               video_src={post.video_src}
-//               priority={index === 0} // Set priority for the first blog post
-//               className="justify-center"
-//             />
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }

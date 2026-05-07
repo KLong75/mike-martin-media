@@ -1,6 +1,6 @@
 // import from next
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 // import components
 import BackLink from "@/app/ui/backLink";
 import CaseStudyBannerHeading from "@/app/ui/caseStudyBannerHeading";
@@ -10,6 +10,8 @@ import BannerImage from "@/app/ui/bannerImage";
 // import data
 import { caseStudies } from "@/app/lib/case-studies/case-studies";
 import { siteUrl } from "@/app/lib/site-url";
+// import from react-icons
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -66,6 +68,17 @@ export default async function CaseStudyPage({ params }) {
   //   (image) => image.orientation === "portrait",
   // );
   const caseStudyBannerImages = caseStudy.banner_images;
+  const nextCaseStudyIndex =
+    caseStudies.findIndex((study) => study.slug === slug) + 1;
+  const nextCaseStudy = caseStudies[nextCaseStudyIndex % caseStudies.length];
+  const nextCaseStudySlug = nextCaseStudy.slug;
+  const previousCaseStudyIndex =
+    caseStudies.findIndex((study) => study.slug === slug) - 1;
+  const previousCaseStudy =
+    caseStudies[
+      (previousCaseStudyIndex + caseStudies.length) % caseStudies.length
+    ];
+  const previousCaseStudySlug = previousCaseStudy.slug;
 
   if (!caseStudy) {
     return (
@@ -78,35 +91,49 @@ export default async function CaseStudyPage({ params }) {
   }
   return (
     <>
-      {/* <BannerImage
-        src="/images/case-studies/wash-u/banner-images/d.png"
-        alt="Mike Martin Media | Corporate Video Production"
-        title="Corporate Video Production"
-        width={1728}
-        height={728}
-      /> */}
-      {/* <div className="mt-6 ml-2">
-        <BackLink />
-      </div> */}
       <BannerImageGallery images={caseStudyBannerImages} />
-
       <CaseStudyBannerHeading
         title="CASE STUDY"
         caseStudy={caseStudy}
         subtitle={caseStudy.client}
         heading={caseStudy.title}
-        // text={caseStudy.challenge}
       />
-       {/* <div className="mt-6 ml-2">
+      {/* <div className="mt-6 ml-2">
         <BackLink />
       </div> */}
       <div className="p-8 md:p-12 md:pb-0">
         <CaseStudyDisplay caseStudy={caseStudy} />
       </div>
-     
-      {/* <div className="mb-6 ml-2">
-        <BackLink />
-      </div> */}
+
+      <div className="relative w-full py-6 flex items-center justify-center font-semibold max-w-6xl mx-auto">
+        <Link
+          href={`/case-studies/study/${previousCaseStudySlug}`}
+          className="absolute left-0"
+          >
+          <div className="ml-2 flex items-center">
+            <IoIosArrowBack className="text-3xl " />
+            <span className="text-xs -ml-1 md:text-sm ">
+              Previous<span className="hidden md:inline-block">: {previousCaseStudy.client}</span>
+            </span>
+          </div>
+        </Link>
+        <Link href={`/case-studies/study/${nextCaseStudySlug}`}
+          className="absolute right-0"
+        >
+          <div className="flex items-center">
+             <span className="text-xs -mr-1 md:text-sm">
+              Next<span className="hidden md:inline-block">: {nextCaseStudy.client}</span>
+            </span>
+            <IoIosArrowForward className="text-3xl " />
+          </div>
+        </Link>
+      </div>
+
+      <div className="flex justify-center items-center pt-6 pb-12">
+        <Link href="/case-studies" className="underline font-semibold">
+          Case Studies
+        </Link>
+      </div>
     </>
   );
 }
