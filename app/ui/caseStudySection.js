@@ -59,7 +59,7 @@ export default function CaseStudySection({
   const content = reverse ? [mediaBlock, textBlock] : [textBlock, mediaBlock];
 
   return (
-    <div className="my-8">
+    <div className="md:mt-8 mb-8">
       <SlideInOnScroll>
         <LineLogoHeading
           text={heading}

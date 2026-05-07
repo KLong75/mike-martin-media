@@ -57,6 +57,9 @@ export default function BackLink({ href, label }) {
   } else if (previousRoute.includes("/blog/posts/")) {
     backLabelPage = "Blog"
     backHref = "/blog";
+  } else if (previousRoute.includes("/case-studies/study/")) {
+    backLabelPage = "Case Study"
+    backHref = "/case-studies/study/" + previousRoute.split("/case-studies/study/")[1];
   } else {
     backLabelPage = "Previous Page";
   }

@@ -1141,13 +1141,6 @@ export const caseStudies = [
         height: 728,
         orientation: "landscape",
       },
-      {
-        url: "/images/case-studies/siteman-cancer-center/banner-images/12.png",
-        alt: "",
-        width: 1728,
-        height: 728,
-        orientation: "landscape",
-      },
     ],
     landscape_images: [
       {

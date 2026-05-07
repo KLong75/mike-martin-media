@@ -60,13 +60,6 @@ export async function generateMetadata({ params }) {
 export default async function CaseStudyPage({ params }) {
   const { slug } = await params;
   const caseStudy = caseStudies.find((study) => study.slug === slug);
-  // const caseStudyImages = caseStudy.images;
-  // const caseStudyLandscapeImages = caseStudyImages.filter(
-  //   (image) => image.orientation === "landscape",
-  // );
-  // const caseStudyPortraitImages = caseStudyImages.filter(
-  //   (image) => image.orientation === "portrait",
-  // );
   const caseStudyBannerImages = caseStudy.banner_images;
   const nextCaseStudyIndex =
     caseStudies.findIndex((study) => study.slug === slug) + 1;
@@ -98,40 +91,48 @@ export default async function CaseStudyPage({ params }) {
         subtitle={caseStudy.client}
         heading={caseStudy.title}
       />
-      {/* <div className="mt-6 ml-2">
+      <div className="md:mt-6 ml-2 hidden md:block">
         <BackLink />
-      </div> */}
+      </div>
       <div className="p-8 md:p-12 md:pb-0">
         <CaseStudyDisplay caseStudy={caseStudy} />
       </div>
 
-      <div className="relative w-full py-6 flex items-center justify-center font-semibold max-w-6xl mx-auto">
+      <div className="relative w-full py-12 flex items-center justify-center font-semibold max-w-6xl mx-auto">
         <Link
           href={`/case-studies/study/${previousCaseStudySlug}`}
-          className="absolute left-0"
-          >
+          className="absolute left-0">
           <div className="ml-2 flex items-center">
             <IoIosArrowBack className="text-3xl " />
             <span className="text-xs -ml-1 md:text-sm ">
-              Previous<span className="hidden md:inline-block">: {previousCaseStudy.client}</span>
+              Previous
+              <span className="hidden md:inline-block">
+                : {previousCaseStudy.client}
+              </span>
             </span>
           </div>
         </Link>
-        <Link href={`/case-studies/study/${nextCaseStudySlug}`}
-          className="absolute right-0"
-        >
+        <Link
+          href={`/case-studies/study/${nextCaseStudySlug}`}
+          className="absolute right-0">
           <div className="flex items-center">
-             <span className="text-xs -mr-1 md:text-sm">
-              Next<span className="hidden md:inline-block">: {nextCaseStudy.client}</span>
+            <span className="text-xs -mr-1 md:text-sm">
+              Next
+              <span className="hidden md:inline-block">
+                : {nextCaseStudy.client}
+              </span>
             </span>
             <IoIosArrowForward className="text-3xl " />
           </div>
         </Link>
       </div>
 
-      <div className="flex justify-center items-center pt-6 pb-12">
-        <Link href="/case-studies" className="underline font-semibold">
-          Case Studies
+      <div className="flex justify-center items-center py-12">
+        <Link href="/case-studies">
+          <div
+            className={`border-2 border-black text-black hover:transform hover:bg-black hover:text-white transition-transform font-semibold rounded-full flex justify-center items-center cursor-pointer w-32 lg:w-36 py-1 lg:px-2`}>
+            <span className="lg:text-lg">Case Studies</span>
+          </div>
         </Link>
       </div>
     </>
