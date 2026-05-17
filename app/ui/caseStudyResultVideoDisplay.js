@@ -53,14 +53,14 @@ export default function CaseStudyResultVideoDisplay({
             {videos.map((video, index) => (
               <ClientVideoContainer video={video} key={index} />
             ))}
-              {videos.map((video, index) => (
+              {/* {videos.map((video, index) => (
               <ClientVideoFrame  src={video.src}
                 client={video.client}
                 title={video.title}
                 category={video.category}
                 image_src={video.image_src}
                 slug={video.slug} key={index} />
-            ))}
+            ))} */}
           
           </div>
           {/* <div className="w-full h-auto flex flex-col lg:mb-16 mt-6 gap-4">
