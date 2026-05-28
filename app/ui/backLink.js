@@ -15,62 +15,129 @@
 //   );
 // }
 
+// "use client";
+// import Link from "next/link";
+// import { IoIosArrowBack } from "react-icons/io";
+// import { usePreviousRoute } from "../../context/previous-route-context";
+
+// export default function BackLink({ href, label }) {
+//   const previousRoute = usePreviousRoute();
+//   // console.log("Previous Route:", previousRoute);
+//   let backHref = href || previousRoute || "/";
+//   const backLabelPrefix = label || "Back To";
+//   let backLabelPage;
+//   if (previousRoute === "/blog") {
+//     backLabelPage = "Blog";
+//   } else if (previousRoute === "/our-work") {
+//     backLabelPage = "Our Work";
+//   } else if (previousRoute === "/") {
+//     backLabelPage = "Home Page";
+//   } else if (previousRoute === "/capabilities/video-production") {
+//     backLabelPage = "Video Production";
+//   } else if (previousRoute === "/capabilities/video-editing") {
+//     backLabelPage = "Video Editing";
+//   } else if (previousRoute === "/capabilities/photography") {
+//     backLabelPage = "Photography";
+//   } else if (previousRoute === "/capabilities/drone") {
+//     backLabelPage = "Drone";
+//   } else if (previousRoute === "/capabilities/live-streaming") {
+//     backLabelPage = "Live Streaming";
+//   } else if (previousRoute === "/capabilities/animation-motion-graphics") {
+//     backLabelPage = "Animation & Motion Graphics";
+//   } else if (previousRoute === "/industries/corporate") {
+//     backLabelPage = "Corporate";
+//   } else if (previousRoute === "/industries/nonprofit") {
+//     backLabelPage = "Nonprofit";
+//   } else if (previousRoute === "/industries/education") {
+//     backLabelPage = "Education";
+//   } else if (previousRoute === "/industries/healthcare") {
+//     backLabelPage = "Healthcare";
+//   } else if (previousRoute === "/case-studies") {
+//     backLabelPage = "Case Studies"; 
+//   } else if (previousRoute.includes("/blog/posts/")) {
+//     backLabelPage = "Blog"
+//     backHref = "/blog";
+//   } else if (previousRoute.includes("/case-studies/study/")) {
+//     backLabelPage = "Case Study"
+//     backHref = "/case-studies/study/" + previousRoute.split("/case-studies/study/")[1];
+//   } else {
+//     backLabelPage = "Previous Page";
+//   }
+//   const backLabel = `${backLabelPrefix} ${backLabelPage}`;
+
+//   return (
+//     <Link href={backHref}>
+//       <div className="ml-2 flex">
+//         <IoIosArrowBack className="text-3xl " />
+//         <span className="text-xs mt-2 -ml-1 md:text-sm md:mt-1.5">
+//           {backLabel}
+//         </span>
+//       </div>
+//     </Link>
+//   );
+// }
+
+
+
 "use client";
+
 import Link from "next/link";
 import { IoIosArrowBack } from "react-icons/io";
 import { usePreviousRoute } from "../../context/previous-route-context";
 
 export default function BackLink({ href, label }) {
-  const previousRoute = usePreviousRoute();
-  // console.log("Previous Route:", previousRoute);
-  let backHref = href || previousRoute || "/";
-  const backLabelPrefix = label || "Back To";
-  let backLabelPage;
+  const previousRoute = usePreviousRoute() || "/";
+
+  // Default target/label derived from previous route.
+  let derivedHref = previousRoute;
+  let derivedPageLabel = "Previous Page";
+
   if (previousRoute === "/blog") {
-    backLabelPage = "Blog";
+    derivedPageLabel = "Blog";
   } else if (previousRoute === "/our-work") {
-    backLabelPage = "Our Work";
+    derivedPageLabel = "Our Work";
   } else if (previousRoute === "/") {
-    backLabelPage = "Home Page";
+    derivedPageLabel = "Home Page";
   } else if (previousRoute === "/capabilities/video-production") {
-    backLabelPage = "Video Production";
+    derivedPageLabel = "Video Production";
   } else if (previousRoute === "/capabilities/video-editing") {
-    backLabelPage = "Video Editing";
+    derivedPageLabel = "Video Editing";
   } else if (previousRoute === "/capabilities/photography") {
-    backLabelPage = "Photography";
+    derivedPageLabel = "Photography";
   } else if (previousRoute === "/capabilities/drone") {
-    backLabelPage = "Drone";
+    derivedPageLabel = "Drone";
   } else if (previousRoute === "/capabilities/live-streaming") {
-    backLabelPage = "Live Streaming";
+    derivedPageLabel = "Live Streaming";
   } else if (previousRoute === "/capabilities/animation-motion-graphics") {
-    backLabelPage = "Animation & Motion Graphics";
+    derivedPageLabel = "Animation & Motion Graphics";
   } else if (previousRoute === "/industries/corporate") {
-    backLabelPage = "Corporate";
+    derivedPageLabel = "Corporate";
   } else if (previousRoute === "/industries/nonprofit") {
-    backLabelPage = "Nonprofit";
+    derivedPageLabel = "Nonprofit";
   } else if (previousRoute === "/industries/education") {
-    backLabelPage = "Education";
+    derivedPageLabel = "Education";
   } else if (previousRoute === "/industries/healthcare") {
-    backLabelPage = "Healthcare";
+    derivedPageLabel = "Healthcare";
   } else if (previousRoute === "/case-studies") {
-    backLabelPage = "Case Studies"; 
-  } else if (previousRoute.includes("/blog/posts/")) {
-    backLabelPage = "Blog"
-    backHref = "/blog";
-  } else if (previousRoute.includes("/case-studies/study/")) {
-    backLabelPage = "Case Study"
-    backHref = "/case-studies/study/" + previousRoute.split("/case-studies/study/")[1];
-  } else {
-    backLabelPage = "Previous Page";
+    derivedPageLabel = "Case Studies";
+  } else if (previousRoute.startsWith("/blog/posts/")) {
+    derivedPageLabel = "Blog";
+    derivedHref = "/blog";
+  } else if (previousRoute.startsWith("/case-studies/study/")) {
+    derivedPageLabel = "Case Study";
+    derivedHref = previousRoute;
   }
-  const backLabel = `${backLabelPrefix} ${backLabelPage}`;
+
+  // Props take full precedence.
+  const finalHref = href || derivedHref || "/";
+  const finalLabel = label || `Back To ${derivedPageLabel}`;
 
   return (
-    <Link href={backHref}>
+    <Link href={finalHref}>
       <div className="ml-2 flex">
         <IoIosArrowBack className="text-3xl " />
         <span className="text-xs mt-2 -ml-1 md:text-sm md:mt-1.5">
-          {backLabel}
+          {finalLabel}
         </span>
       </div>
     </Link>
