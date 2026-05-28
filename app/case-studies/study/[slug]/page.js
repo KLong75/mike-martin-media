@@ -92,7 +92,7 @@ export default async function CaseStudyPage({ params }) {
         heading={caseStudy.title}
       />
       <div className="md:mt-6 ml-2 hidden md:block">
-        <BackLink />
+        <BackLink href="/case-studies" label="Back to Case Studies" />
       </div>
       <div className="p-8 md:p-12 md:pb-0">
         <CaseStudyDisplay caseStudy={caseStudy} />
