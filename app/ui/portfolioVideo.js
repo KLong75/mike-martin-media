@@ -6,7 +6,7 @@ import { createBlurUp } from "@mux/blurup";
 import clsx from "clsx";
 
 export default async function PortfolioVideo({ video }) {
-  console.log("Video data:", video);
+  // console.log("Video data:", video);
   const options = {};
   const muxPlaybackId = video?.playback_id || "";
   const { aspectRatio } = await createBlurUp(
