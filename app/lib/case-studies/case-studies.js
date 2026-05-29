@@ -379,7 +379,7 @@ export const caseStudies = [
         client: "Washington University in St. Louis",
         description: "",
         mux_title: "washu-case-study-video-3",
-        title: "Center for the Environment",
+        title: "Washington University - Center for the Environment",
         image_src:
           "https://image.mux.com/JrTVAliKf01Ot7lWyjCW6vXyf8WLwYJyP15DSzSpWlz4/thumbnail.webp?width=1920&height=1080&time=04",
         featured: "",
@@ -539,7 +539,7 @@ export const caseStudies = [
         description:
           "Circus Harmony Coach Laura shares her experience with the organization.",
         mux_title: "circus-harmony-case-study-video",
-        title: "Laura",
+        title: "Circus Harmony Coach - Laura Lippert",
         image_src:
           "https://image.mux.com/P4ckNQA46Uy2zx6XbJi3hC4pz9gLN1GCL010172zqeATQ/thumbnail.webp?width=1920&height=1080&time=02",
         featured: "",
@@ -863,7 +863,7 @@ export const caseStudies = [
           "Social Media",
         ],
         client: "Smith & Saint Talent Agency",
-        description: "",
+        description: "A 60-second commercial social media video promoting Panera's Mix & Match menu featuring dancers from the Dancing With the Stars tour.",
         mux_title: "smith-saint-panera",
         title: "Mix and Match with the Stars",
         image_src:
