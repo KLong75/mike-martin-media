@@ -38,7 +38,7 @@ export default function CaseStudyPreview({ caseStudy }) {
                   <span className="font-semibold">Format:</span> {caseStudy.short_format}
                 </h6>
               </div>
-              {/* CHANGED: Overlay is positioned relative to image, not container */}
+              {/* Overlay is positioned relative to image, not container */}
               <div className="flex justify-center w-full px-4">
                 <div className="">
                   <Image

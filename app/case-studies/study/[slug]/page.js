@@ -262,9 +262,9 @@ export default async function CaseStudyPage({ params }) {
         ) : (
           <div
             aria-disabled="true"
-            className="absolute left-0 ml-2 flex items-center text-gray-400 cursor-not-allowed select-none">
+            className="absolute left-0 flex items-center text-gray-400 cursor-not-allowed select-none">
             <IoIosArrowBack className="text-3xl" />
-            <span className="text-xs -ml-1 md:text-sm">Previous Case Study</span>
+            <span className="text-xs -ml-1 md:text-sm">Previous </span>
           </div>
         )}
 
@@ -285,8 +285,8 @@ export default async function CaseStudyPage({ params }) {
         ) : (
           <div
             aria-disabled="true"
-            className="absolute right-0 mr-2 flex items-center text-gray-400 cursor-not-allowed select-none">
-            <span className="text-xs -mr-1 md:text-sm">Next Case Study</span>
+            className="absolute right-0 flex items-center text-gray-400 cursor-not-allowed select-none">
+            <span className="text-xs -mr-1 md:text-sm">Next</span>
             <IoIosArrowForward className="text-3xl" />
           </div>
         )}
