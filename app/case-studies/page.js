@@ -13,7 +13,7 @@ import {
   caseStudies,
 } from "../lib/case-studies/case-studies";
 
-const caseStudiesPageOgImgUrl =
+// const caseStudiesPageOgImgUrl =
   "https://www.mikemartinmedia.com/images/open-graph/case-studies-og.png";
 
 export const metadata = {
@@ -79,7 +79,6 @@ export default function Page() {
   return (
     <main className="grid grid-cols-1">
       <BannerVideoWithFadeEffect
-        // src="ifZrW02klS2hW64gqdWpSr7FjcN7hYU3EmHu00ld8InXU"
         src="MHzRSO01AYYKn34z49VsFLTZaRXCKmbiJeXi8KcxBUTE"
         title="Mike Martin Media | Case Studies"
         containerClassName="padding-top-42-19"

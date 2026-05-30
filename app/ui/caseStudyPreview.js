@@ -15,7 +15,7 @@ export default function CaseStudyPreview({ caseStudy }) {
       <div className="w-full md:p-6 max-w-md mx-auto">
         {caseStudy ? (
           <Link href={`/case-studies/study/${caseStudy.slug}`}>
-            {/* CHANGED: Use Tailwind's group class for unified hover effects */}
+            {/* Use Tailwind's group class for unified hover effects */}
             <div className="p-2 bg-neutral-100 transition-colors duration-1000 ease-in-out group shadow-2xl md:shadow-md md:hover:shadow-xl flex flex-col justify-center md:hover:bg-black md:hover:text-white relative">
               <div className="mx-auto mb-2">
                 <h3 className="text-center text-xl font-semibold my-1">
@@ -48,8 +48,9 @@ export default function CaseStudyPreview({ caseStudy }) {
                     height={caseStudy.preview_image.height}
                     alt={caseStudy.preview_image.alt}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    loading="eager"
                   />
-                  {/* CHANGED: Overlay uses group-hover to match other hover effects */}
+                  {/* Overlay uses group-hover to match other hover effects */}
                   <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-shadow-black">
                     <span className="text-white text-2xl font-courier-prime">
                       CASE STUDY:
@@ -90,7 +91,7 @@ export default function CaseStudyPreview({ caseStudy }) {
                   </p>
                 )}
               </div>
-              {/* CHANGED: Logo hover effect unified with group-hover */}
+              {/* Logo hover effect unified with group-hover */}
               <div className="px-4 -mt-4 mb-2 group-hover:hidden">
                 <MMMLineLogo />
               </div>
@@ -103,7 +104,5 @@ export default function CaseStudyPreview({ caseStudy }) {
           <p>Case study data is not available.</p>
         )}
       </div>
-   
   );
 }
-// CHANGES MARKED: overlayOpen removed, overlay moved to image container, hover effects unified with group-hover

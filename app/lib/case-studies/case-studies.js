@@ -76,7 +76,7 @@ export const caseStudies = [
     },
     preview_image: {
       alt: "The campus of Washington University in St. Louis photographed from a drone",
-      url: "https://image.mux.com/00sfSproISGGO00iyCl7p1pO1eScJ01vtUWPj55z004SP44/thumbnail.webp?width=576&height=324&time=04",
+      url: "https://image.mux.com/JrTVAliKf01Ot7lWyjCW6vXyf8WLwYJyP15DSzSpWlz4/thumbnail.webp?width=576&height=324&time=15",
       width: 576,
       height: 324,
     },
@@ -417,7 +417,7 @@ export const caseStudies = [
     },
     preview_image: {
       alt: "The Circus Harmony 25th Anniversary logo, which features a red banner that says '25th Anniversary' and silhouettes of circus performers on and around the banner",
-      url: "https://image.mux.com/Tk6HdpoJ77V1JHESDJA21QVhq8WXJ4tKlhfPIvl5Hwc/thumbnail.webp?width=576&height=324&time=22",
+      url: "https://image.mux.com/P4ckNQA46Uy2zx6XbJi3hC4pz9gLN1GCL010172zqeATQ/thumbnail.webp?width=576&height=324&time=54",
       width: 576,
       height: 324,
     },
