@@ -249,7 +249,7 @@ export default async function CaseStudyPage({ params }) {
           <Link
             href={`/case-studies/study/${previousCaseStudy.slug}`}
             className="absolute left-0">
-            <div className="ml-2 flex items-center">
+            <div className="flex items-center">
               <IoIosArrowBack className="text-3xl" />
               <span className="text-xs -ml-1 md:text-sm">
                 Previous
