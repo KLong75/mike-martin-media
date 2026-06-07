@@ -2,7 +2,7 @@
 
 ## Description
 
-A fully responsive website for Mike Martin Media, a video production company in St. Louis, MO. Built by Kevin Long at Rhythm Code Studio with Next.js and Tailwind CSS.
+A fully responsive website for Mike Martin Media, a video production company in St. Louis, MO. Built by Kevin Long at Rhythm Code Studio with Next.js and Tailwind CSS.Featuring a custom-built video player using Mux's React Player, the site showcases Mike Martin Media's portfolio of work, including case studies and client testimonials. The website is designed to be visually appealing and easy to navigate, with a focus on highlighting the company's expertise in multi-media production.
 
 ## URL of Deployed Application
 

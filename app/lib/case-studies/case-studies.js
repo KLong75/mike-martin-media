@@ -1073,7 +1073,7 @@ export const caseStudies = [
       {
         url: "/images/case-studies/siteman-cancer-center/portrait/7.webp",
         alt: "A patient fills out intake paperwork at a desk inside the Siteman Cancer Center Mammogram Van with the assistance of a healthcare worker while the MMM crew captures the moment.",
-        width: 1080,
+        width: 1280,
         height: 1920,
         orientation: "portrait",
       },
@@ -1094,7 +1094,7 @@ export const caseStudies = [
         image_src:
           "https://image.mux.com/Hwh01HHmGfBtLqlOwGyyVjS01yJtpFETmFMjtigAo3i38/thumbnail.webp?width=1920&height=1080&time=03",
         featured: "",
-        slug: "siteman-cancer-center",
+        slug: "siteman-cancer-center-mammography-van",
         playback_id: "Hwh01HHmGfBtLqlOwGyyVjS01yJtpFETmFMjtigAo3i38",
         orientation: "horizontal",
       },
