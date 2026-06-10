@@ -29,11 +29,11 @@ export const blogPosts = [
   {
     title: "From Rehearsal to Gala",
     post_date: "May 2026",
-    image_src: "/images/blog-page/blog-post-images/2026/may-a.webp",
+    image_src: "/images/blog-page/blog-post-images/2026/may/may-a.webp",
     image_alt: "",
     image_width: 456,
     image_height: 342,
-    second_image_src: "/images/blog-page/blog-post-images/2026/may-b.webp",
+    second_image_src: "/images/blog-page/blog-post-images/2026/may/may-b.webp",
     second_image_width: 456,
     second_image_height: 342,
     second_image_alt: "",
