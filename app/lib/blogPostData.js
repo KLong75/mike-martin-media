@@ -145,7 +145,7 @@ export const blogPosts = [
   {
     title: "Supporting Nonprofits Through Storytelling",
     post_date: "January 2026",
-    image_src: "/images/blog-page/blog-post-images/2026/2026-january.webp",
+    image_src: "/images/blog-page/blog-post-images/2026/jan/jan-a.webp",
     image_alt: "Logo for Gratitude House, a sober-living home for women",
     image_width: 456,
     image_height: 342,
