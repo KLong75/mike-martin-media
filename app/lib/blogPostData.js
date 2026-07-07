@@ -1,7 +1,7 @@
 const basePath = "/images/blog-page/blog-post-images/";
 
 export const blogPosts = [
-  // {
+    // {
   //   title: "",
   //   post_date: "",
   //   image_src: "/images/blog-page/blog-post-images/2026/.webp",
@@ -27,16 +27,46 @@ export const blogPosts = [
   //   description: ""
   // },
   {
+    title: "Ten Years. One World Cup. Countless Memories.",
+    post_date: "June 2026",
+    image_src: "/images/blog-page/blog-post-images/2026/june/june-a.webp",
+    image_alt: "Kevin and his friend Aaron at the 2026 FIFA World Cup in Seattle, WA.",
+    image_width: 456,
+    image_height: 342,
+    second_image_src: "/images/blog-page/blog-post-images/2026/june/june-b.webp",
+    second_image_width: 456,
+    second_image_height: 342,
+    second_image_alt: "Kevin enjoying the 2026 FIFA World Cup in Seattle, WA.",
+    text: [
+      "April 1, 2026 I celebrated my 10 year anniversary at Mike Martin Media. It's been an incredible journey. I count my blessings everyday that Mike Martin had confidence to bring me aboard in 2016. What an amazing ride it has been.",
+      "Everyone at MMM has interests, hobbies, and passions outside of work. One of my biggest passions is soccer. I am a member of the St. Louligans, the largest supporter group of St. Louis CITY. You can find me at any home match helping run the Silly Tailgate at Schafly Beer before all the home matches.",
+      "But my 1st soccer love will always be USA SOCCER, I bleed Red, White, and Blue. I love supporting everything about US Soccer, the USMNT, USWNT, and anything in between. I've been a longtime member of the American Outlaws.  The American Outlaws are the largest supporters group for the United States Men's and Women's National Soccer Teams. 200+ chapters, 30,000 members across the country.One voice. I am currently serving as the President of the American Outlaws St. Louis Chapter(AOSTL). We have an official chapter bar, Amsterdam Tavern, one of the best soccer bars in the country located in the Tower Grove South neighborhood. You can find AOSTL members watching all the US matches there.",
+      "That brings us to the 2026 FIFA World Cup. Hosted by the USA, Canada, and Mexico. The watch parties at Amsterdam have been epic. The US opening match vs Paraguay had Morganford Ave closed for an outdoor watch party. The US won 4-1. The excitement was building for the next match. I was lucky enough to get tickets for that match, USA vs Australia match in Seattle, WA. This would be the 1st World Cup match I have attended in person. Needless to say I was super excited.",
+      "My friend Aaron and I headed to Seattle on Wednesday evening, the match was scheduled for Friday at noon local time. After attending the Orioles-Mariners game on Thursday afternoon, it was time for the WC activities to begin. The American Outlaws have a tradition of hosting a Night before party before any US soccer match.Thursday evening we enjoyed hanging out with other AO members from across the country, the buzz around the city was building. Honestly, I couldn't sleep much that night, anticipating my 1st World Cup match. The next morning it was time for the AO tailgate at 8 am. It was unlike any other I had been to before, USA fans were ready. So much red, white, and blue. Of course I was decked out, USA bandana, our local AOSTL jersey, USA sunglasses and our AOSTL soccer scarves.",
+      "Now it was gametime….we made our way to Lumen Field. We had gotten tickets through the American Outlaws lottery, all of us together in the 300 level of the stadium, our seats were in the 2nd to last row. None of that mattered, we were at our 1st WC match. The atmosphere was ELECTRIC! What happened next was totally unexpected. Our seats were upgraded, we couldn't believe it when we found out we would be sitting in the front row! LUCKY was an understatement.",
+      "After the match, we partied the day and night away with the American Outlaws and fellow USA supporters, and what was even cooler was the Australian fans that partied with us. We all came together to celebrate the beautiful game of soccer. That was what I was looking forward to the most and it lived up to what I was hoping it would be. What an incredible 1st World Cup experience. #WhyNotUs has been the rallying cry for the USMNT this World Cup, I for one BELIEVE! GO U-S-A!",
+    ],
+    // video: {
+    //   playback_id: "",
+    //   title: "",
+    //   image_src: "",
+    // },
+    closing_tag: "Until next time,",
+    author: "Kevin Marshall",
+    slug: "ten-years-one-world-cup-countless-memories",
+    description: "Kevin reflects on his 10-year anniversary at Mike Martin Media and shares his experiences attending the 2026 FIFA World Cup, highlighting the excitement of supporting the U.S. Men's National Soccer Team and the camaraderie among fans.",
+  },
+  {
     title: "From Rehearsal to Gala",
     post_date: "May 2026",
     image_src: "/images/blog-page/blog-post-images/2026/may/may-a.webp",
-    image_alt: "",
+    image_alt: "The St. Louis Children's Choirs performing on stage during their 2026 In Harmony Gala Celebration.",
     image_width: 456,
     image_height: 342,
     second_image_src: "/images/blog-page/blog-post-images/2026/may/may-b.webp",
     second_image_width: 456,
     second_image_height: 342,
-    second_image_alt: "",
+    second_image_alt: "The St. Louis Children's Choirs performing on stage during their 2026 In Harmony Gala Celebration.",
     text: [
       "Earlier this spring, MMM had the opportunity to create the fundraising video for The St. Louis Children's Choirs' 2026 In Harmony Gala Celebration. On April 11, I attended the event and watched the piece come to life in the room it was made for.",
       "There's always something different about seeing a story play in front of a live audience, especially when it supports an organization doing meaningful work in the community. The energy in the room, the reactions from attendees, and the response following the video made it clear just how much people care about the impact The St. Louis Children's Choirs continues to have on young singers across our region.",
