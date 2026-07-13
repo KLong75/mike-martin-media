@@ -5,7 +5,7 @@ import { Courier_Prime } from "next/font/google";
 
 export const dm_sans = DM_Sans({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "500", "600", "700"],
   variable: "--font-dm-sans",
 });
 

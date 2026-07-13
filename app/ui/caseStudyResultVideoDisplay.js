@@ -6,6 +6,9 @@ import ClientVideoContainer from "./clientVideoContainer";
 import LineLogoHeading from "./lineLogoHeading";
 import SlideInOnScroll from "./slideInOnScroll";
 import FadeInOnScroll from "./fadeInOnScroll";
+// import from utils
+import { renderBold } from "@/utils/utils";
+
 export default function CaseStudyResultVideoDisplay({
   videos,
   resultText,
@@ -27,10 +30,10 @@ export default function CaseStudyResultVideoDisplay({
           <div className="w-full h-auto flex flex-col my-6 lg:mt-12">
             {/* {resultText.map((item, index) => ( */}
               <p
-                className="md:w-md lg:w-2xl mx-auto lg:text-lg italic font-medium "
+                className="md:w-md lg:w-2xl mx-auto lg:text-lg italic"
                 // key={index}
                 >
-                {resultText[0]}
+                {renderBold(resultText[0])}
               </p>
             {/* ))} */}
           </div>
@@ -76,10 +79,10 @@ export default function CaseStudyResultVideoDisplay({
           <div className="w-full h-auto flex flex-col my-6 lg:mb-12">
             {/* {resultText.map((item, index) => ( */}
               <p
-                className="md:w-md lg:w-2xl mx-auto lg:text-lg italic font-medium "
+                className="md:w-md lg:w-2xl mx-auto lg:text-lg italic"
                 // key={index}
                 >
-                {resultText[1]}
+                {renderBold(resultText[1])}
               </p>
             {/* ))} */}
           </div>

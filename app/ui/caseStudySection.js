@@ -3,6 +3,8 @@ import FadeInOnScroll from "./fadeInOnScroll";
 import LineLogoHeading from "./lineLogoHeading";
 import Image from "next/image";
 import AutoFadeImageGallery from "./autoFadeImageGallery";
+// import from utils
+import { renderBold } from "@/utils/utils";
 
 /**
  * Props:
@@ -24,7 +26,7 @@ export default function CaseStudySection({
     <div className="md:w-md h-auto flex flex-col justify-center items-center mx-auto gap-4">
       {text.map((item, index) => (
         <p className="lg:text-lg" key={index}>
-          {item}
+          {renderBold(item)}
         </p>
       ))}
     </div>
