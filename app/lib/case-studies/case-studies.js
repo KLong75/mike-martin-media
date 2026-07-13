@@ -766,13 +766,6 @@ export const caseStudies = [
         height: 1920,
         orientation: "portrait",
       },
-      {
-        url: "/images/case-studies/wash-u/portrait/15.webp",
-        alt: "The MMM team onsite for a photo shoot on the campus of Washington University in St. Louis",
-        width: 1280,
-        height: 1920,
-        orientation: "portrait",
-      },
     ],
     videos: [
       {
