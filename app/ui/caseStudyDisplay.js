@@ -34,7 +34,7 @@ export default function CaseStudyDisplay({ caseStudy }) {
             heading={
               caseStudy.partnership.type === "long-term"
                 ? "Long-term Partnership"
-                : "New Partnership"
+                : "Growing Partnership"
             }
             text={caseStudy.partnership.text}
             media={landscapeImages}

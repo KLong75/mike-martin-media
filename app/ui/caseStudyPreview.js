@@ -80,7 +80,7 @@ export default function CaseStudyPreview({ caseStudy }) {
             <div className="p-4 pb">
               <p>
                 <span className="font-semibold">The Challenge:</span>{" "}
-                {renderBold(shortenPostText(caseStudy.challenge, 240))}
+                {renderBold(shortenPostText(caseStudy.challenge, 300))}
               </p>
             </div>
             {/* Logo hover effect unified with group-hover */}

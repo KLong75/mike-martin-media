@@ -1,7 +1,8 @@
- export const caseStudiesPageBannerText = {
+export const caseStudiesPageBannerText = {
   title: "Case Studies",
   heading: "What Collaboration Looks Like in Practice",
-  text: "If you are considering a video partner, you want more than a highlight reel — you want proof. Our case studies take a closer look at the projects we've created, the challenges our clients faced, and how video helped them communicate more clearly and effectively.",
+  // text: "If you are considering a video partner, you want more than a highlight reel — you want proof. Our case studies take a closer look at the projects we've created, the challenges our clients faced, and how video helped them communicate more clearly and effectively.",
+  text: "Our case studies take a closer look at the projects we've created, the challenges our clients faced, and how video helped them communicate more clearly and effectively.",
   text2:
     "These stories highlight how thoughtful video production can build trust, drive engagement, and support real business and mission-driven goals.",
 };
@@ -61,7 +62,6 @@ export const caseStudies = [
   //   approach: [
   //     "",
   //     "",
-  //     "",
   //   ],
   //   result: [
   //     "",
@@ -82,35 +82,42 @@ export const caseStudies = [
   //   },
   //   banner_images: [
   //     {
-  //       url: "/images/case-studies/",
+  //       url: "/images/case-studies//banner-images/1.webp",
   //       alt: "",
   //       width: 1728,
   //       height: 728,
   //       orientation: "landscape",
   //     },
   //      {
-  //       url: "/images/case-studies/",
+  //       url: "/images/case-studies//banner-images/2.webp",
   //       alt: "",
   //       width: 1728,
   //       height: 728,
   //       orientation: "landscape",
   //     },
   //     {
-  //       url: "/images/case-studies/",
+  //       url: "/images/case-studies//banner-images/3.webp",
   //       alt: "",
   //       width: 1728,
   //       height: 728,
   //       orientation: "landscape",
   //     },
   //      {
-  //       url: "/images/case-studies/",
+  //       url: "/images/case-studies//banner-images/4.webp",
   //       alt: "",
   //       width: 1728,
   //       height: 728,
   //       orientation: "landscape",
   //     },
   //      {
-  //       url: "/images/case-studies/",
+  //       url: "/images/case-studies//banner-images/5.webp",
+  //       alt: "",
+  //       width: 1728,
+  //       height: 728,
+  //       orientation: "landscape",
+  //     },
+  //     {
+  //       url: "/images/case-studies//banner-images/6.webp",
   //       alt: "",
   //       width: 1728,
   //       height: 728,
@@ -118,13 +125,6 @@ export const caseStudies = [
   //     },
   //   ],
   //   landscape_images: [
-  //     {
-  //       url: "/images/case-studies//landscape/0.webp",
-  //       alt: "",
-  //       width: 1920,
-  //       height: 1080,
-  //       orientation: "landscape",
-  //     },
   //     {
   //       url: "/images/case-studies//landscape/1.webp",
   //       alt: "",
@@ -166,23 +166,9 @@ export const caseStudies = [
   //       width: 1920,
   //       height: 1080,
   //       orientation: "landscape",
-  //     },
-  //     {
-  //       url: "/images/case-studies//landscape/7.webp",
-  //       alt: "",
-  //       width: 1920,
-  //       height: 1080,
-  //       orientation: "landscape",
-  //     },
+  //     }
   //   ],
   //   portrait_images: [
-  //     {
-  //       url: "/images/case-studies/wash-u/portrait/0.webp",
-  //       alt: "",
-  //       width: 1280,
-  //       height: 1920,
-  //       orientation: "portrait",
-  //     },
   //     {
   //       url: "/images/case-studies//portrait/1.webp",
   //       alt: "",
@@ -224,35 +210,7 @@ export const caseStudies = [
   //       width: 1280,
   //       height: 1920,
   //       orientation: "portrait",
-  //     },
-  //     {
-  //       url: "/images/case-studies//portrait/7.webp",
-  //       alt: "",
-  //       width: 1280,
-  //       height: 1920,
-  //       orientation: "portrait",
-  //     },
-  //     {
-  //       url: "/images/case-studies/wash-u/portrait/8.webp",
-  //       alt: "",
-  //       width: 1280,
-  //       height: 1920,
-  //       orientation: "portrait",
-  //     },
-  //     {
-  //       url: "/images/case-studies/wash-u/portrait/9.webp",
-  //       alt: "",
-  //       width: 1280,
-  //       height: 1920,
-  //       orientation: "portrait",
-  //     },
-  //     {
-  //       url: "/images/case-studies/wash-u/portrait/10.webp",
-  //       alt: "",
-  //       width: 1280,
-  //       height: 1920,
-  //       orientation: "portrait",
-  //     },
+  //     }
   //   ],
   //   videos: [
   //     {
@@ -271,13 +229,195 @@ export const caseStudies = [
   //   ],
   // },
   {
+    slug: "go-st-louis",
+    client: "GO! St. Louis",
+    title: "GO! St. Louis: Inspiring Movement Through Community",
+    short_title: "Inspiring Movement",
+    campaign: "2026 Gala Mission Video",
+    short_campaign: "2026 Gala Mission Video",
+    format: "Fundraising & Mission Video",
+    short_format: "Fundraising & Mission Video",
+    challenge: [
+      "GO! St. Louis needed a compelling mission video for its annual fundraising gala that would showcase the impact of its community programs and inspire support for its mission. The video needed to highlight three key initiatives: **Read, Right & Run, Students on the GO**, and **Mature Mile** — while demonstrating how these programs positively impact participants of all ages throughout the St. Louis region.",
+      "",
+    ],
+    approach: [
+      "Mike Martin Media partnered with GO! St. Louis to develop a mission-driven fundraising video centered around authentic participant stories. By combining interviews with educators, students, and program leaders with footage from ongoing training sessions, community events, and marathon weekend activities, the video connected viewers directly to the people impacted by GO! St. Louis programs.",
+      "To maximize the limited production schedule, our team strategically incorporated existing footage from previous events while identifying and capturing key moments needed to complete the story. This approach allowed us to move quickly without sacrificing quality, ensuring the final video reflected both the organization's mission and the energy of its programs.",
+    ],
+    result: [
+      "",
+      "The final **video** premiered at the GO! St. Louis gala. By focusing on real participants and authentic experiences, the video demonstrated the lasting community impact of GO! St. Louis and helped reinforce the importance of supporting its programs.",
+    ],
+    partnership: {
+      type: "growing",
+      text: [
+        "Our relationship with GO! St. Louis began with a simple request for event photography. What started as a conversation quickly evolved into a broader creative partnership that included this gala video, marathon event coverage, and additional storytelling projects.",
+        "We appreciate the trust GO! St. Louis has placed in our team and are proud to support an organization that continues to create opportunities for people of all ages to live healthier, more active lives throughout our community.",
+      ],
+    },
+    preview_image: {
+      alt: "",
+      url: "https://image.mux.com/QAcQq00CasDqZ2rqE2O2VVf566hck8mESqGfXgnRCAYk/thumbnail.webp?width=1920&height=1080&time=04",
+      width: 576,
+      height: 324,
+    },
+    banner_images: [
+      {
+        url: "/images/case-studies/go-st-louis/banner-images/1.webp",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+       {
+        url: "/images/case-studies/go-st-louis/banner-images/2.webp",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/go-st-louis/banner-images/3.webp",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+       {
+        url: "/images/case-studies/go-st-louis/banner-images/4.webp",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+       {
+        url: "/images/case-studies/go-st-louis/banner-images/5.webp",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/go-st-louis/banner-images/6.webp",
+        alt: "",
+        width: 1728,
+        height: 728,
+        orientation: "landscape",
+      },
+    ],
+    landscape_images: [
+      {
+        url: "/images/case-studies/go-st-louis/landscape/1.webp",
+        alt: "",
+        width: 1920,
+        height: 1080,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/go-st-louis/landscape/2.webp",
+        alt: "",
+        width: 1920,
+        height: 1080,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/go-st-louis/landscape/3.webp",
+        alt: "",
+        width: 1920,
+        height: 1080,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/go-st-louis/landscape/4.webp",
+        alt: "",
+        width: 1920,
+        height: 1080,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/go-st-louis/landscape/5.webp",
+        alt: "",
+        width: 1920,
+        height: 1080,
+        orientation: "landscape",
+      },
+      {
+        url: "/images/case-studies/go-st-louis/landscape/6.webp",
+        alt: "",
+        width: 1920,
+        height: 1080,
+        orientation: "landscape",
+      }
+    ],
+    portrait_images: [
+      {
+        url: "/images/case-studies/go-st-louis/portrait/1.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/go-st-louis/portrait/2.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/go-st-louis/portrait/3.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/go-st-louis/portrait/4.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/go-st-louis/portrait/5.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      },
+      {
+        url: "/images/case-studies/go-st-louis/portrait/6.webp",
+        alt: "",
+        width: 1280,
+        height: 1920,
+        orientation: "portrait",
+      }
+    ],
+    videos: [
+      {
+        category: ["Case Study"],
+        client: "",
+        description: "",
+        mux_title: "go_st_louis_2026_gala",
+        title: "",
+        image_src:
+          "https://image.mux.com/QAcQq00CasDqZ2rqE2O2VVf566hck8mESqGfXgnRCAYk/thumbnail.webp?width=1920&height=1080&time=04",
+        featured: "",
+        slug: "",
+        playback_id: "QAcQq00CasDqZ2rqE2O2VVf566hck8mESqGfXgnRCAYk",
+        orientation: "",
+      },
+    ],
+  },
+  {
     slug: "advertising-savants",
     client: "Advertising Savants",
-    title: "A Beat Above the Rest",
+    title: "Advertising Savants: St. Luke's Heart & Vascular Institute - A Beat Above the Rest",
     short_title: "A Beat Above the Rest",
-    campaign: "A Beat Above the Rest",
-    short_campaign: "A Beat Above the Rest",
-    format: "Broadcast television commercial and social media campaign",
+    campaign: "St. Luke's Heart & Vascular Institute - A Beat Above the Rest",
+    short_campaign: "St. Luke's Heart & Vascular Institute",
+    format: "Broadcast Television Commercial and Social Media Campaign",
     short_format: "TV Commercial and Social Media",
     challenge: [
       "Advertising Savants approached Mike Martin Media to help produce a healthcare advertising campaign promoting the partnership between **St. Luke's Heart & Vascular Institute and Cleveland Clinic's Heart, Vascular & Thoracic Institute**. The goal was to communicate St. Luke's nationally recognized cardiac care while highlighting the benefits of its alliance with one of the country's leading heart programs.",
@@ -286,7 +426,6 @@ export const caseStudies = [
     approach: [
       "Working closely with Advertising Savants, our team brought the **A Beat Above the Rest** campaign to life through a 1.5-day commercial production filmed at **Forest Park and St. Luke's Hospital**. The creative centered around patients and families enjoying life beyond treatment while showcasing St. Luke's physicians, advanced cardiac care, and its collaboration with Cleveland Clinic.",
       "Professional actors provided by Talent Plus helped create relatable patient stories that reflected the campaign's message that heart care is about more than treatment—it's about helping people live their best lives.",
-
     ],
     result: [
       "MMM produced **60-second, 30-second, and 15-second broadcast commercials, along with vertical social media versions** optimized for digital platforms.",
@@ -313,7 +452,7 @@ export const caseStudies = [
         height: 728,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/advertising-savants/banner-images/2.webp",
         alt: "Wide shot of a family and dog by a park pond, with a video crew filming nearby",
         width: 1728,
@@ -327,21 +466,21 @@ export const caseStudies = [
         height: 728,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/advertising-savants/banner-images/4.webp",
         alt: "Family walking outdoors with a dog beside a reflecting pond",
         width: 1728,
         height: 728,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/advertising-savants/banner-images/5.webp",
         alt: "Surgical team performing a procedure in an operating room",
         width: 1728,
         height: 728,
         orientation: "landscape",
       },
-       {
+      {
         url: "/images/case-studies/advertising-savants/banner-images/6.webp",
         alt: "Multi-generational family sharing a picnic in the park",
         width: 1728,
@@ -428,15 +567,20 @@ export const caseStudies = [
         width: 1280,
         height: 1920,
         orientation: "portrait",
-      }
+      },
     ],
     videos: [
       {
-        category: ["Case Study", "Medical", "Video Production", "Video Editing"],
+        category: [
+          "Case Study",
+          "Medical",
+          "Video Production",
+          "Video Editing",
+        ],
         client: "Advertising Savants",
         description: "",
         mux_title: "",
-        title: "",
+        title: "A Beat Above the Rest",
         image_src:
           "https://image.mux.com/iLPj1tdpoHi4sSTGPG202PGXuvdG8nj702c9hQozA02j7c/thumbnail.webp?width=1920&height=1080&time=22",
         featured: "",
@@ -1257,7 +1401,8 @@ export const caseStudies = [
           "Social Media",
         ],
         client: "Smith & Saint Talent Agency",
-        description: "A 60-second commercial social media video promoting Panera's Mix & Match menu featuring dancers from the Dancing With the Stars tour.",
+        description:
+          "A 60-second commercial social media video promoting Panera's Mix & Match menu featuring dancers from the Dancing With the Stars tour.",
         mux_title: "smith-saint-panera",
         title: "Mix and Match with the Stars",
         image_src:
@@ -1336,7 +1481,7 @@ export const caseStudies = [
       },
       {
         url: "/images/case-studies/siteman-cancer-center/banner-images/4.png",
-         alt: "The pink Siteman Cancer Center Mammogram Van parked in a parking lot, while the MMM crew pilots a drone to capture aerial footage and everyone gets ready for the shoot.",
+        alt: "The pink Siteman Cancer Center Mammogram Van parked in a parking lot, while the MMM crew pilots a drone to capture aerial footage and everyone gets ready for the shoot.",
         width: 1728,
         height: 728,
         orientation: "landscape",
